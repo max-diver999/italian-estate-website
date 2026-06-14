@@ -17,7 +17,7 @@ function parseFile(raw) {
 
 function allSlugs() {
   const map = new Map();
-  for (const c of ['guides', 'compare', 'areas']) {
+  for (const c of ['guides', 'compare', 'areas', 'projects']) {
     const dir = join(ROOT, c);
     for (const f of readdirSync(dir).filter((x) => x.endsWith('.mdx'))) {
       const raw = readFileSync(join(ROOT, c, f), 'utf8');
@@ -65,21 +65,28 @@ const TITLE_FIXES = {
   'polignano-a-mare': 'Polignano a Mare Coastal Property Guide: Yields 2026',
   'valle-d-itria': "Valle d'Itria Trulli Property Investment Guide 2026",
   'puglia-vs-tuscany-property': 'Puglia vs Tuscany Property Investment: Yields 2026',
+  'airbnb-investment-italy-guide': 'Airbnb Investment Italy Guide: Rules & Yields 2026',
+  'mistakes-foreign-buyers-italy': 'Italy Property Mistakes Foreign Buyers Must Avoid 2026',
+  'short-term-rental-rules-italy': 'Short-Term Rental Rules in Italy: Complete STR Guide 2026',
+  'italy-vs-portugal-property-investment': 'Italy vs Portugal Property Investment Compared 2026',
+  'inspire-uptown-milan': 'Inspire UpTown Milan Apartments from €348,500 2028',
+  'ostuni-new-villa-pool-470k': 'Ostuni New Villa with Pool: €470k Investment Review 2026',
+  'ostuni-trulli-modern-villa': 'Ostuni Trulli Modern Villa: Full Project Review 2026',
 };
 
 function fixTitle(fm, slug) {
   if (TITLE_FIXES[slug]) {
-    return fm.replace(/^title:\s*["'][^"']+["']/m, `title: "${TITLE_FIXES[slug]}"`);
+    return fm.replace(/^title:\s*["'](?:[^"\\]|\\.)*["']/m, `title: "${TITLE_FIXES[slug]}"`);
   }
   const tm = fm.match(/^title:\s*["'](.+?)["']/m);
   if (!tm) return fm;
   let t = tm[1].replace(/….*$/, '').replace(/, Italy 202.*$/, '').trim();
   if (t.includes("'") && t.length >= 50 && t.length <= 60) {
-    return fm.replace(/^title:\s*["'][^"']+["']/m, `title: "${t}"`);
+    return fm.replace(/^title:\s*["'](?:[^"\\]|\\.)*["']/m, `title: "${t}"`);
   }
   if (t.length > 60) t = t.slice(0, 57).replace(/\s+\S*$/, '') + '…';
   if (t.length < 50) t = (t + ' — Italy 2026 guide').slice(0, 60);
-  return fm.replace(/^title:\s*["'][^"']+["']/m, `title: "${t}"`);
+  return fm.replace(/^title:\s*["'](?:[^"\\]|\\.)*["']/m, `title: "${t}"`);
 }
 
 function stripExcessBold(body, maxPairs = 32) {
@@ -111,7 +118,19 @@ function fixTldrBlock(body) {
   return body;
 }
 
+function ensureUpdatedDate(fm) {
+  if (/^updatedDate:/m.test(fm)) return fm;
+  const pub = fm.match(/^pubDate:\s*(\S+)/m);
+  const date = pub ? pub[1] : '2026-06-14';
+  return fm.replace(/^(pubDate:\s*\S+\n)/m, `$1updatedDate: ${date}\n`);
+}
+
 function ensureQuickAnswer(body) {
+  if (/^\*\*Quick answer:\*\*/m.test(body)) return body;
+  const plain = body.match(/^Quick answer:\s*(.+)$/m);
+  if (plain) {
+    return body.replace(/^Quick answer:\s*(.+)$/m, '**Quick answer:** $1');
+  }
   if (/quick answer|tl;dr/i.test(body.slice(0, 800))) return body;
   const firstPara = body.match(/^(?!import|#)([^\n#<][^\n]{80,400})/m);
   const text = firstPara
@@ -147,7 +166,9 @@ function getRelatedPaths(fm, slug, slugMap) {
 }
 
 function ensureInternalLinks(body, fm, slug, slugMap) {
-  const existing = [...body.matchAll(/\]\((\/(?:guides|compare)\/[a-z0-9\-]+\/)\)/g)].map((m) => m[1]);
+  const existing = [
+    ...body.matchAll(/\]\((\/(?:guides|compare|areas|projects)\/[a-z0-9\-]+\/)\)/g),
+  ].map((m) => m[1]);
   if (existing.length >= 5) return body;
   const have = new Set(existing);
   const links = [];
@@ -192,7 +213,7 @@ function ensureImports(body) {
 const slugMap = allSlugs();
 let n = 0;
 
-for (const c of ['guides', 'compare', 'areas']) {
+for (const c of ['guides', 'compare', 'areas', 'projects']) {
   for (const f of readdirSync(join(ROOT, c)).filter((x) => x.endsWith('.mdx'))) {
     const path = join(ROOT, c, f);
     const slug = f.replace(/\.mdx$/, '');
@@ -202,6 +223,7 @@ for (const c of ['guides', 'compare', 'areas']) {
     let { fm, body } = parsed;
     const before = raw;
     fm = convertFaqJsonToYaml(fm);
+    fm = ensureUpdatedDate(fm);
     fm = trimDescription(fm);
     fm = fixTitle(fm, slug);
     body = ensureImports(body);
