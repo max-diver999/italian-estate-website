@@ -72,6 +72,11 @@ const TITLE_FIXES = {
   'inspire-uptown-milan': 'Inspire UpTown Milan Apartments from €348,500 2028',
   'ostuni-new-villa-pool-470k': 'Ostuni New Villa with Pool: €470k Investment Review 2026',
   'ostuni-trulli-modern-villa': 'Ostuni Trulli Modern Villa: Full Project Review 2026',
+  'tuscany-property-investment-guide': 'Tuscany Property Investment Guide for Foreigners 2026',
+  'florence': 'Florence Property Investment Guide for Buyers 2026',
+  'chianti': 'Chianti Real Estate Investment: Vineyards Guide 2026',
+  'siena': 'Siena Property Investment Guide: Tuscany Prices 2026',
+  'florence-vs-siena-property': 'Florence vs Siena Property Investment Compared 2026',
 };
 
 function fixTitle(fm, slug) {
