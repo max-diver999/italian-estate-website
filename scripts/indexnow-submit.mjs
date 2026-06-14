@@ -1,12 +1,16 @@
-// IndexNow — submit invest-spain-property.com URLs to Bing ONLY (never api.indexnow.org / Yandex)
+// IndexNow — submit italian-estate.com URLs to Bing ONLY (never api.indexnow.org / Yandex)
 // Run: node scripts/indexnow-submit.mjs
 //   or: node scripts/indexnow-submit.mjs --explicit URL URL ...
 
-import { readdirSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 
-const KEY = '118a89dc4861fe92497a4f8fc1ff0f2a';
-const HOST = 'invest-spain-property.com';
-const BASE = `https://${HOST}`;
+const __dir = dirname(fileURLToPath(import.meta.url));
+const siteConfig = JSON.parse(readFileSync(join(__dir, '..', 'site.config.json'), 'utf8'));
+const KEY = siteConfig.indexNow?.key || '326cf10d167118cd94780f774c0457e4';
+const HOST = siteConfig.siteHost || 'italian-estate.com';
+const BASE = siteConfig.siteUrl?.replace(/\/$/, '') || `https://${HOST}`;
 
 const args = process.argv.slice(2);
 const explicitIdx = args.indexOf('--explicit');
@@ -19,6 +23,9 @@ function buildAllUrls() {
     `${BASE}/guides/`,
     `${BASE}/areas/`,
     `${BASE}/compare/`,
+    `${BASE}/projects/`,
+    `${BASE}/developers/`,
+    `${BASE}/news/`,
     `${BASE}/about/`,
     `${BASE}/methodology/`,
     `${BASE}/contact/`,
@@ -31,9 +38,12 @@ function buildAllUrls() {
     ['guides', './src/content/guides'],
     ['areas', './src/content/areas'],
     ['compare', './src/content/compare'],
+    ['projects', './src/content/projects'],
+    ['developers', './src/content/developers'],
+    ['news', './src/content/news'],
   ]) {
     try {
-      for (const file of readdirSync(subPath)) {
+      for (const file of readdirSync(join(__dir, '..', subPath))) {
         if (file.endsWith('.mdx')) {
           const slug = file.replace('.mdx', '');
           urls.push(`${BASE}/${section}/${slug}/`);
@@ -52,7 +62,7 @@ const urls = explicitUrls.length > 0 ? explicitUrls : buildAllUrls();
 if (explicitUrls.length > 0) {
   console.log(`IndexNow explicit mode: ${urls.length} URL(s)`);
 } else {
-  console.log(`Submitting ${urls.length} URLs to Bing IndexNow...`);
+  console.log(`Submitting ${urls.length} URLs to Bing IndexNow (${HOST}, key ${KEY.slice(0, 8)}…)...`);
 }
 
 const body = JSON.stringify({
