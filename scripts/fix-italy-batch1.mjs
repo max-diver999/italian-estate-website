@@ -17,7 +17,7 @@ function parseFile(raw) {
 
 function allSlugs() {
   const map = new Map();
-  for (const c of ['guides', 'compare']) {
+  for (const c of ['guides', 'compare', 'areas']) {
     const dir = join(ROOT, c);
     for (const f of readdirSync(dir).filter((x) => x.endsWith('.mdx'))) {
       const raw = readFileSync(join(ROOT, c, f), 'utf8');
@@ -48,11 +48,11 @@ function convertFaqJsonToYaml(fm) {
 }
 
 function trimDescription(fm) {
-  return fm.replace(/^description:\s*["'](.+?)["']/m, (_, desc) => {
-    let d = desc.trim();
+  return fm.replace(/^description:\s*"([^"]*)"/m, (_, desc) => {
+    let d = desc.replace(/ Independent guide for foreign buyers on italian-estate\.com\./g, '').trim();
     if (d.length > 160) d = d.slice(0, 157).replace(/\s+\S*$/, '') + '…';
     if (d.length < 120) {
-      d = (d + ' Independent guide for foreign buyers on italian-estate.com.').slice(0, 160);
+      d = (d + ' Guide for foreign buyers on italian-estate.com.').slice(0, 160);
     }
     return `description: "${d}"`;
   });
@@ -60,8 +60,11 @@ function trimDescription(fm) {
 
 const TITLE_FIXES = {
   'due-diligence-italy-property': 'Italy Property Due Diligence: Checklist for Buyers 2026',
-  'is-italy-property-good-investment-2026': 'Is Italy Property a Good Investment in 2026?',
-  'best-regions-invest-italy-property-2026': 'Best Regions to Invest in Italy Property 2026',
+  'is-italy-property-good-investment-2026': 'Is Italy Property a Good Investment in 2026? Guide',
+  'best-regions-invest-italy-property-2026': 'Best Regions for Italy Property Investment 2026 Guide',
+  'polignano-a-mare': 'Polignano a Mare Coastal Property Guide: Yields 2026',
+  'valle-d-itria': "Valle d'Itria Trulli Property Investment Guide 2026",
+  'puglia-vs-tuscany-property': 'Puglia vs Tuscany Property Investment: Yields 2026',
 };
 
 function fixTitle(fm, slug) {
@@ -70,7 +73,10 @@ function fixTitle(fm, slug) {
   }
   const tm = fm.match(/^title:\s*["'](.+?)["']/m);
   if (!tm) return fm;
-  let t = tm[1];
+  let t = tm[1].replace(/….*$/, '').replace(/, Italy 202.*$/, '').trim();
+  if (t.includes("'") && t.length >= 50 && t.length <= 60) {
+    return fm.replace(/^title:\s*["'][^"']+["']/m, `title: "${t}"`);
+  }
   if (t.length > 60) t = t.slice(0, 57).replace(/\s+\S*$/, '') + '…';
   if (t.length < 50) t = (t + ' — Italy 2026 guide').slice(0, 60);
   return fm.replace(/^title:\s*["'][^"']+["']/m, `title: "${t}"`);
@@ -124,12 +130,14 @@ function getRelatedPaths(fm, slug, slugMap) {
   }
   if (!rel.includes(ITALY_HUB) && slug !== ITALY_HUB && slugMap.has(ITALY_HUB)) rel.unshift(ITALY_HUB);
   const defaults = [
+    'puglia-property-investment-guide',
+    'italy-property-investment-guide',
+    'ostuni',
+    'valle-d-itria',
     'buy-property-italy-foreigner',
-    'cost-of-buying-property-italy',
-    'due-diligence-italy-property',
     'italy-rental-yield-guide',
-    'can-foreigners-buy-property-italy',
-    'how-to-buy-italy-property-step-by-step',
+    'due-diligence-italy-property',
+    'cost-of-buying-property-italy',
   ];
   for (const s of defaults) {
     if (rel.length >= 6) break;
@@ -184,7 +192,7 @@ function ensureImports(body) {
 const slugMap = allSlugs();
 let n = 0;
 
-for (const c of ['guides', 'compare']) {
+for (const c of ['guides', 'compare', 'areas']) {
   for (const f of readdirSync(join(ROOT, c)).filter((x) => x.endsWith('.mdx'))) {
     const path = join(ROOT, c, f);
     const slug = f.replace(/\.mdx$/, '');
