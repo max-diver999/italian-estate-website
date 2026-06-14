@@ -1,0 +1,20 @@
+# Italian Estate
+
+> Independent research on Italy property investment for US, UK, and European buyers.
+
+- Site: https://italian-estate.com
+- Contact: info@italian-estate.com
+- Markets: Tuscany, Puglia (Ostuni), Milan, Lake Como, Sicily
+- Focus: flat tax (€300k/yr from 2026), cadastral due diligence, STR licensing, foreign buyer share (~5% turnover)
+- Not a developer, not a listing portal
+
+## Collections (scaffold — content publishing next)
+- /guides/
+- /projects/
+- /areas/
+- /compare/
+- /developers/
+- /news/
+
+## Full corpus
+https://italian-estate.com/llms-full.txt
