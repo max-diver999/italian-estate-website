@@ -15,7 +15,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, 'google-indexing-key.json');
-const SITE_URL = 'https://invest-spain-property.com/';
+const SITE_URL = 'https://italian-estate.com/';
 const PUBLIC_DIR = join(__dirname, '..', 'public');
 
 const key = JSON.parse(readFileSync(KEY_PATH, 'utf8'));
@@ -49,7 +49,7 @@ async function getToken() {
   console.log(`Saved to: public/${token}`);
   console.log('\nNext steps:');
   console.log('  1. Deploy the site (git commit + push or vercel --prod)');
-  console.log(`  2. Verify file is live: curl https://invest-spain-property.com/${token}`);
+  console.log(`  2. Verify file is live: curl https://italian-estate.com/${token}`);
   console.log('  3. Run: node scripts/verify-sa-ownership.mjs --verify');
 }
 
