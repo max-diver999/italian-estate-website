@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-15T23:22:49.552Z",
+  "updatedAt": "2026-06-15T23:40:21.601Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -38,10 +38,16 @@
     "https://italian-estate.com/guides/due-diligence-italy-property",
     "https://italian-estate.com/guides/how-to-buy-italy-property-remotely",
     "https://italian-estate.com/guides/how-to-buy-italy-property-step-by-step",
+    "https://italian-estate.com/guides/imu-property-tax-italy",
     "https://italian-estate.com/guides/is-italy-property-good-investment-2026",
+    "https://italian-estate.com/guides/italy-flat-tax-regime-new-residents",
+    "https://italian-estate.com/guides/italy-investor-visa-property",
+    "https://italian-estate.com/guides/italy-prima-casa-vs-second-home-tax",
+    "https://italian-estate.com/guides/italy-property-closing-costs-breakdown",
     "https://italian-estate.com/guides/italy-property-investment-guide",
     "https://italian-estate.com/guides/italy-property-scams-avoid",
     "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
+    "https://italian-estate.com/guides/italy-registration-tax-property",
     "https://italian-estate.com/guides/italy-rental-yield-guide",
     "https://italian-estate.com/guides/lake-como-property-investment-guide",
     "https://italian-estate.com/guides/mistakes-foreign-buyers-italy",
@@ -465,6 +471,36 @@
       "url": "https://italian-estate.com/guides/notaio-italy-property-role",
       "channel": "google",
       "at": "2026-06-15T23:22:49.552Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-investor-visa-property",
+      "channel": "google",
+      "at": "2026-06-15T23:39:07.868Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-flat-tax-regime-new-residents",
+      "channel": "google",
+      "at": "2026-06-15T23:39:24.527Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-closing-costs-breakdown",
+      "channel": "google",
+      "at": "2026-06-15T23:40:21.601Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-registration-tax-property",
+      "channel": "google",
+      "at": "2026-06-15T23:40:21.601Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/imu-property-tax-italy",
+      "channel": "google",
+      "at": "2026-06-15T23:40:21.601Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-prima-casa-vs-second-home-tax",
+      "channel": "google",
+      "at": "2026-06-15T23:40:21.601Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
