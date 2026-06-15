@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-15T23:02:57.747Z",
+  "updatedAt": "2026-06-15T23:12:04.144Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -34,6 +34,7 @@
     "https://italian-estate.com/guides/can-foreigners-buy-property-italy",
     "https://italian-estate.com/guides/cost-of-buying-property-italy",
     "https://italian-estate.com/guides/due-diligence-italy-property",
+    "https://italian-estate.com/guides/how-to-buy-italy-property-remotely",
     "https://italian-estate.com/guides/how-to-buy-italy-property-step-by-step",
     "https://italian-estate.com/guides/is-italy-property-good-investment-2026",
     "https://italian-estate.com/guides/italy-property-investment-guide",
@@ -41,6 +42,7 @@
     "https://italian-estate.com/guides/italy-rental-yield-guide",
     "https://italian-estate.com/guides/lake-como-property-investment-guide",
     "https://italian-estate.com/guides/mistakes-foreign-buyers-italy",
+    "https://italian-estate.com/guides/power-of-attorney-property-italy",
     "https://italian-estate.com/guides/puglia-property-investment-guide",
     "https://italian-estate.com/guides/short-term-rental-rules-italy",
     "https://italian-estate.com/guides/sicily-property-investment-guide",
@@ -404,6 +406,16 @@
       "url": "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
       "channel": "google",
       "at": "2026-06-15T23:02:57.747Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/power-of-attorney-property-italy",
+      "channel": "google",
+      "at": "2026-06-15T23:10:49.772Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/how-to-buy-italy-property-remotely",
+      "channel": "google",
+      "at": "2026-06-15T23:12:04.144Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
