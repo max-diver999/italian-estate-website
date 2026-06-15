@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-15T23:17:54.101Z",
+  "updatedAt": "2026-06-15T23:22:49.552Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -460,6 +460,11 @@
       "url": "https://italian-estate.com/guides/italy-property-scams-avoid",
       "channel": "google",
       "at": "2026-06-15T23:17:54.101Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/notaio-italy-property-role",
+      "channel": "google",
+      "at": "2026-06-15T23:22:49.552Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
