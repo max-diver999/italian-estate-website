@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-15T23:12:40.664Z",
+  "updatedAt": "2026-06-15T23:17:54.101Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -32,16 +32,20 @@
     "https://italian-estate.com/guides/best-regions-invest-italy-property-2026",
     "https://italian-estate.com/guides/buy-property-italy-foreigner",
     "https://italian-estate.com/guides/can-foreigners-buy-property-italy",
+    "https://italian-estate.com/guides/codice-fiscale-italy-property",
+    "https://italian-estate.com/guides/compromesso-italy-property-contract",
     "https://italian-estate.com/guides/cost-of-buying-property-italy",
     "https://italian-estate.com/guides/due-diligence-italy-property",
     "https://italian-estate.com/guides/how-to-buy-italy-property-remotely",
     "https://italian-estate.com/guides/how-to-buy-italy-property-step-by-step",
     "https://italian-estate.com/guides/is-italy-property-good-investment-2026",
     "https://italian-estate.com/guides/italy-property-investment-guide",
+    "https://italian-estate.com/guides/italy-property-scams-avoid",
     "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
     "https://italian-estate.com/guides/italy-rental-yield-guide",
     "https://italian-estate.com/guides/lake-como-property-investment-guide",
     "https://italian-estate.com/guides/mistakes-foreign-buyers-italy",
+    "https://italian-estate.com/guides/notaio-italy-property-role",
     "https://italian-estate.com/guides/power-of-attorney-property-italy",
     "https://italian-estate.com/guides/puglia-property-investment-guide",
     "https://italian-estate.com/guides/short-term-rental-rules-italy",
@@ -421,6 +425,41 @@
       "url": "https://italian-estate.com/guides/how-to-buy-italy-property-remotely",
       "channel": "google",
       "at": "2026-06-15T23:12:40.664Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
+      "channel": "google",
+      "at": "2026-06-15T23:17:54.101Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/codice-fiscale-italy-property",
+      "channel": "google",
+      "at": "2026-06-15T23:17:54.101Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/how-to-buy-italy-property-remotely",
+      "channel": "google",
+      "at": "2026-06-15T23:17:54.101Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/power-of-attorney-property-italy",
+      "channel": "google",
+      "at": "2026-06-15T23:17:54.101Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/notaio-italy-property-role",
+      "channel": "google",
+      "at": "2026-06-15T23:17:54.101Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/compromesso-italy-property-contract",
+      "channel": "google",
+      "at": "2026-06-15T23:17:54.101Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-scams-avoid",
+      "channel": "google",
+      "at": "2026-06-15T23:17:54.101Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
