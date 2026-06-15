@@ -77,6 +77,11 @@ const TITLE_FIXES = {
   'chianti': 'Chianti Real Estate Investment: Vineyards Guide 2026',
   'siena': 'Siena Property Investment Guide: Tuscany Prices 2026',
   'florence-vs-siena-property': 'Florence vs Siena Property Investment Compared 2026',
+  'sicily-property-investment-guide': 'Sicily Property Investment Guide for Foreign Buyers 2026',
+  'palermo': 'Palermo Sicily Property Investment Guide: Prices 2026',
+  'syracuse': 'Syracuse Sicily Property Investment Guide for Buyers 2026',
+  'taormina': 'Taormina Sicily Property Investment Guide: Yields 2026',
+  'sicily-vs-puglia-property': 'Sicily vs Puglia Property Investment Compared 2026',
 };
 
 function fixTitle(fm, slug) {
