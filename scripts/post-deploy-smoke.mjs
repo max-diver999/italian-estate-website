@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Post-deploy smoke test for invest-spain-property.com
+ * Post-deploy smoke test for italian-estate.com
  * Usage: node scripts/post-deploy-smoke.mjs [--http-only]
  *        SITE_URL=https://invest-spain-property.com node scripts/post-deploy-smoke.mjs
  */

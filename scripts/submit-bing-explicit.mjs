@@ -1,10 +1,14 @@
 #!/usr/bin/env node
-/** Bing IndexNow — explicit URLs only (invest-spain-property.com). Never api.indexnow.org. */
+/** Bing IndexNow — explicit URLs only (italian-estate.com). Never api.indexnow.org. */
 import { readFileSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const KEY = 'mexicoinvest2026indexnowkey01';
-const HOST = 'invest-spain-property.com';
-const BASE = `https://${HOST}`;
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const siteConfig = JSON.parse(readFileSync(join(__dirname, '..', 'site.config.json'), 'utf8'));
+const KEY = siteConfig.indexNow?.key || '326cf10d167118cd94780f774c0457e4';
+const HOST = siteConfig.siteHost || 'italian-estate.com';
+const BASE = (siteConfig.siteUrl || `https://${HOST}`).replace(/\/$/, '');
 
 const arg = process.argv[2];
 let urls = process.argv.slice(2).filter((u) => /^https?:\/\//.test(u));
@@ -17,8 +21,14 @@ if (urls.length === 0 && arg && arg.endsWith('.txt')) {
 }
 
 if (!urls.length) {
-  console.error('Usage: node scripts/submit-bing-explicit.mjs URL ...');
-  console.error('   or: node scripts/submit-bing-explicit.mjs scripts/wave6-8-urls.txt');
+  console.error(`Usage: node scripts/submit-bing-explicit.mjs https://${HOST}/...`);
+  process.exit(1);
+}
+
+const bad = urls.filter((u) => !u.includes(HOST));
+if (bad.length) {
+  console.error(`Refusing cross-site URLs (expected host ${HOST}):`);
+  bad.forEach((u) => console.error(`  ${u}`));
   process.exit(1);
 }
 
@@ -35,7 +45,7 @@ const res = await fetch('https://www.bing.com/indexnow', {
   body,
 });
 
-console.log(`Bing IndexNow: ${res.status} ${res.statusText} (${urls.length} URLs)`);
+console.log(`Bing IndexNow (${HOST}): ${res.status} ${res.statusText} (${urls.length} URLs)`);
 if (![200, 202].includes(res.status)) {
   console.log(await res.text());
   process.exit(1);

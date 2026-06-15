@@ -6,7 +6,8 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const HOST = 'https://invest-spain-property.com';
+const siteConfig = JSON.parse(readFileSync(join(ROOT, 'site.config.json'), 'utf8'));
+const HOST = (siteConfig.siteUrl || `https://${siteConfig.siteHost}`).replace(/\/$/, '');
 
 const NOINDEX_SLUGS = new Set();
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Verify SA ownership for invest-spain-property.com via Site Verification API.
+ * Verify SA ownership for italian-estate.com via Site Verification API.
  *
  * Usage:
  *   node scripts/verify-sa-ownership.mjs --get-token   # get verification file, save to public/

@@ -1,19 +1,23 @@
-// Google Indexing API — invest-spain-property.com
+// Google Indexing API — italian-estate.com
 // Usage:
 //   node scripts/google-indexing-api.mjs [--batch N] [--offset N]
 //   node scripts/google-indexing-api.mjs --explicit URL URL ...
 //
 // Daily quota: 200 URL/day. Use --offset for multi-day batches.
-// NEVER run without explicit «отправляй» from Maksim.
+// NEVER run without explicit approval — prefer submit-google-explicit.mjs for new URLs.
 
-import { GoogleAuth } from 'google-auth-library';
-import { readdirSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { GoogleAuth } from 'google-auth-library';
+import { recordSubmitted } from '../../scripts/lib/record-submitted.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+const ROOT = join(__dirname, '..');
 const KEY_PATH = join(__dirname, 'google-indexing-key.json');
-const HOST = 'https://invest-spain-property.com';
+const SITE_FOLDER = 'italian-estate-website';
+const siteConfig = JSON.parse(readFileSync(join(ROOT, 'site.config.json'), 'utf8'));
+const HOST = (siteConfig.siteUrl || `https://${siteConfig.siteHost}`).replace(/\/$/, '');
 const ENDPOINT = 'https://indexing.googleapis.com/v3/urlNotifications:publish';
 
 const args = process.argv.slice(2);
@@ -29,6 +33,8 @@ function collectUrls() {
     `${HOST}/guides/`,
     `${HOST}/areas/`,
     `${HOST}/compare/`,
+    `${HOST}/projects/`,
+    `${HOST}/developers/`,
     `${HOST}/about/`,
     `${HOST}/methodology/`,
     `${HOST}/contact/`,
@@ -38,9 +44,12 @@ function collectUrls() {
   ];
 
   const contentDirs = {
-    guides: join(__dirname, '..', 'src', 'content', 'guides'),
-    areas: join(__dirname, '..', 'src', 'content', 'areas'),
-    compare: join(__dirname, '..', 'src', 'content', 'compare'),
+    guides: join(ROOT, 'src', 'content', 'guides'),
+    areas: join(ROOT, 'src', 'content', 'areas'),
+    compare: join(ROOT, 'src', 'content', 'compare'),
+    projects: join(ROOT, 'src', 'content', 'projects'),
+    developers: join(ROOT, 'src', 'content', 'developers'),
+    news: join(ROOT, 'src', 'content', 'news'),
   };
 
   for (const [section, dir] of Object.entries(contentDirs)) {
@@ -60,6 +69,13 @@ function collectUrls() {
 }
 
 async function main() {
+  const key = JSON.parse(readFileSync(KEY_PATH, 'utf8'));
+  if (key.project_id !== 'italian-estate-indexing') {
+    console.error(`Wrong GCP project: ${key.project_id}`);
+    process.exit(1);
+  }
+  console.log(`Preflight OK: ${key.project_id} | ${HOST}`);
+
   let allUrls;
   if (explicitUrls.length > 0) {
     allUrls = explicitUrls;
@@ -89,6 +105,7 @@ async function main() {
 
   let success = 0;
   let errors = 0;
+  const okUrls = [];
 
   for (let i = 0; i < batch.length; i++) {
     const url = batch[i];
@@ -101,6 +118,7 @@ async function main() {
 
       if (res.status === 200) {
         success++;
+        okUrls.push(url);
         if (success % 20 === 0 || i === batch.length - 1) {
           console.log(`  [${i + 1}/${batch.length}] ${success} OK, ${errors} errors`);
         }
@@ -123,6 +141,11 @@ async function main() {
     if (i % 50 === 49) {
       await new Promise((r) => setTimeout(r, 1000));
     }
+  }
+
+  if (okUrls.length) {
+    const r = recordSubmitted({ siteFolder: SITE_FOLDER, urls: okUrls, channel: 'google' });
+    console.log(`Log: +${r.added} → ${SITE_FOLDER}/scripts/submitted-urls.json (${r.total} total)`);
   }
 
   console.log(`\nDone! Success: ${success}, Errors: ${errors}`);
