@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-15T23:40:21.601Z",
+  "updatedAt": "2026-06-15T23:48:00.814Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -36,8 +36,10 @@
     "https://italian-estate.com/guides/compromesso-italy-property-contract",
     "https://italian-estate.com/guides/cost-of-buying-property-italy",
     "https://italian-estate.com/guides/due-diligence-italy-property",
+    "https://italian-estate.com/guides/gross-vs-net-yield-italy",
     "https://italian-estate.com/guides/how-to-buy-italy-property-remotely",
     "https://italian-estate.com/guides/how-to-buy-italy-property-step-by-step",
+    "https://italian-estate.com/guides/how-to-calculate-rental-yield-italy",
     "https://italian-estate.com/guides/imu-property-tax-italy",
     "https://italian-estate.com/guides/is-italy-property-good-investment-2026",
     "https://italian-estate.com/guides/italy-flat-tax-regime-new-residents",
@@ -45,7 +47,9 @@
     "https://italian-estate.com/guides/italy-prima-casa-vs-second-home-tax",
     "https://italian-estate.com/guides/italy-property-closing-costs-breakdown",
     "https://italian-estate.com/guides/italy-property-investment-guide",
+    "https://italian-estate.com/guides/italy-property-market-forecast-2026-2027",
     "https://italian-estate.com/guides/italy-property-scams-avoid",
+    "https://italian-estate.com/guides/italy-real-estate-market-data-2025",
     "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
     "https://italian-estate.com/guides/italy-registration-tax-property",
     "https://italian-estate.com/guides/italy-rental-yield-guide",
@@ -501,6 +505,36 @@
       "url": "https://italian-estate.com/guides/italy-prima-casa-vs-second-home-tax",
       "channel": "google",
       "at": "2026-06-15T23:40:21.601Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-market-forecast-2026-2027",
+      "channel": "google",
+      "at": "2026-06-15T23:47:15.741Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/gross-vs-net-yield-italy",
+      "channel": "google",
+      "at": "2026-06-15T23:47:15.741Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/how-to-calculate-rental-yield-italy",
+      "channel": "google",
+      "at": "2026-06-15T23:47:15.741Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-real-estate-market-data-2025",
+      "channel": "google",
+      "at": "2026-06-15T23:48:00.814Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/how-to-calculate-rental-yield-italy",
+      "channel": "google",
+      "at": "2026-06-15T23:48:00.814Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/gross-vs-net-yield-italy",
+      "channel": "google",
+      "at": "2026-06-15T23:48:00.814Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
