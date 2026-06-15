@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-15T00:14:05.560Z",
+  "updatedAt": "2026-06-15T23:02:57.747Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -37,6 +37,7 @@
     "https://italian-estate.com/guides/how-to-buy-italy-property-step-by-step",
     "https://italian-estate.com/guides/is-italy-property-good-investment-2026",
     "https://italian-estate.com/guides/italy-property-investment-guide",
+    "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
     "https://italian-estate.com/guides/italy-rental-yield-guide",
     "https://italian-estate.com/guides/lake-como-property-investment-guide",
     "https://italian-estate.com/guides/mistakes-foreign-buyers-italy",
@@ -323,6 +324,86 @@
       "url": "https://italian-estate.com/compare/lake-como-vs-liguria-property",
       "channel": "google",
       "at": "2026-06-15T00:14:05.560Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/lake-como-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:58:10.678Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/como",
+      "channel": "google",
+      "at": "2026-06-15T10:58:10.678Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/bellagio",
+      "channel": "google",
+      "at": "2026-06-15T10:58:10.678Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/lake-como-vs-liguria-property",
+      "channel": "google",
+      "at": "2026-06-15T10:58:10.678Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/sicily-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:58:10.678Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/palermo",
+      "channel": "google",
+      "at": "2026-06-15T10:58:10.678Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/syracuse",
+      "channel": "google",
+      "at": "2026-06-15T10:58:10.678Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/taormina",
+      "channel": "google",
+      "at": "2026-06-15T10:58:10.678Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/is-italy-property-good-investment-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:58:10.678Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/short-term-rental-rules-italy",
+      "channel": "google",
+      "at": "2026-06-15T10:58:10.678Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/italy-vs-spain-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:58:10.678Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/tuscany-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-15T11:02:13.571Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/sicily-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-15T11:02:13.571Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/chianti",
+      "channel": "google",
+      "at": "2026-06-15T11:02:13.571Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/italy-vs-spain-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T11:02:13.571Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
+      "channel": "google",
+      "at": "2026-06-15T23:02:57.747Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
