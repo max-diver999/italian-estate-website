@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "site": "https://italian-estate.com",
+  "projectId": "italian-estate-indexing",
+  "dailyQuota": 200,
+  "updatedAt": "2026-06-15T11:08:00Z",
+  "methodology": "Truth = live sitemap vs submitted-urls.json entries[] (italian-estate.com only). Explicit URL batches only.",
+  "scripts": {
+    "google": "node scripts/submit-google-explicit.mjs URL...",
+    "indexnow": "node scripts/indexnow-submit.mjs --explicit URL...",
+    "stateFile": "scripts/indexing-queue-state.json",
+    "sitemapList": "scripts/italy-sitemap-urls.txt"
+  },
+  "summary": {
+    "sitemapTotal": 50,
+    "backlogRemaining": 0,
+    "quotaUsedToday": 69,
+    "quotaRemainingToday": 131,
+    "estimatedDaysLeft": 0,
+    "note": "Google 50/50 complete earlier today (69 API calls incl. 13 resubmits). Bing 50/50 sent in batch-bing."
+  },
+  "batches": [
+    {
+      "id": "2026-06-15-batch-bing",
+      "at": "2026-06-15T11:08:00Z",
+      "count": 50,
+      "reason": "bing_full_sitemap",
+      "google": "skipped (already complete)",
+      "indexnow": "50/50 OK",
+      "archive": "scripts/indexing-batch-2026-06-15-done.json"
+    },
+    {
+      "id": "2026-06-15-batch-google",
+      "at": "2026-06-15",
+      "count": 69,
+      "uniqueUrls": 50,
+      "reason": "initial_full_sitemap_plus_fixes",
+      "google": "69 API calls, 50 unique",
+      "indexnow": "not sent until batch-bing"
+    }
+  ],
+  "tomorrow": null
+}
