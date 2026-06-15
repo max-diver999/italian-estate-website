@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-15T23:12:04.144Z",
+  "updatedAt": "2026-06-15T23:12:40.664Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -416,6 +416,11 @@
       "url": "https://italian-estate.com/guides/how-to-buy-italy-property-remotely",
       "channel": "google",
       "at": "2026-06-15T23:12:04.144Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/how-to-buy-italy-property-remotely",
+      "channel": "google",
+      "at": "2026-06-15T23:12:40.664Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
