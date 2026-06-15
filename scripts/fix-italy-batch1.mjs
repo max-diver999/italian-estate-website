@@ -82,6 +82,10 @@ const TITLE_FIXES = {
   'syracuse': 'Syracuse Sicily Property Investment Guide for Buyers 2026',
   'taormina': 'Taormina Sicily Property Investment Guide: Yields 2026',
   'sicily-vs-puglia-property': 'Sicily vs Puglia Property Investment Compared 2026',
+  'lake-como-property-investment-guide': 'Lake Como Property Investment Guide for Foreigners 2026',
+  'como': 'Como Property Investment Guide: Prices & Yields 2026',
+  'bellagio': 'Bellagio Lake Como Property: Investment Guide 2026',
+  'lake-como-vs-liguria-property': 'Lake Como vs Liguria Property Investment Compared 2026',
 };
 
 function fixTitle(fm, slug) {
