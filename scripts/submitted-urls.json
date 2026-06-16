@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-16T00:25:38.422Z",
+  "updatedAt": "2026-06-16T00:33:31.727Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -34,6 +34,9 @@
     "https://italian-estate.com/compare/tuscany-vs-lake-como-property",
     "https://italian-estate.com/contact",
     "https://italian-estate.com/developers",
+    "https://italian-estate.com/developers/apulia-deluxe",
+    "https://italian-estate.com/developers/near-milan",
+    "https://italian-estate.com/developers/okam-italy",
     "https://italian-estate.com/get-shortlist",
     "https://italian-estate.com/guides",
     "https://italian-estate.com/guides/airbnb-investment-italy-guide",
@@ -90,11 +93,16 @@
     "https://italian-estate.com/guides/us-tax-italy-rental-property",
     "https://italian-estate.com/methodology",
     "https://italian-estate.com/news",
+    "https://italian-estate.com/news/foreign-buyers-italy-5-5-billion-2025",
+    "https://italian-estate.com/news/gate-away-international-buyers-report-2025",
+    "https://italian-estate.com/news/italy-residential-transactions-767000-2025",
+    "https://italian-estate.com/news/milan-living-sector-investment-2025",
     "https://italian-estate.com/privacy-policy",
     "https://italian-estate.com/projects",
     "https://italian-estate.com/projects/inspire-uptown-milan",
     "https://italian-estate.com/projects/ostuni-new-villa-pool-470k",
     "https://italian-estate.com/projects/ostuni-trulli-modern-villa",
+    "https://italian-estate.com/projects/prandina-navigli-milan",
     "https://italian-estate.com/terms"
   ],
   "entries": [
@@ -697,6 +705,46 @@
       "url": "https://italian-estate.com/guides/uk-tax-italy-holiday-home",
       "channel": "google",
       "at": "2026-06-16T00:25:38.422Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/prandina-navigli-milan",
+      "channel": "google",
+      "at": "2026-06-16T00:33:31.727Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/okam-italy",
+      "channel": "google",
+      "at": "2026-06-16T00:33:31.727Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/near-milan",
+      "channel": "google",
+      "at": "2026-06-16T00:33:31.727Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/apulia-deluxe",
+      "channel": "google",
+      "at": "2026-06-16T00:33:31.727Z"
+    },
+    {
+      "url": "https://italian-estate.com/news/italy-residential-transactions-767000-2025",
+      "channel": "google",
+      "at": "2026-06-16T00:33:31.727Z"
+    },
+    {
+      "url": "https://italian-estate.com/news/foreign-buyers-italy-5-5-billion-2025",
+      "channel": "google",
+      "at": "2026-06-16T00:33:31.727Z"
+    },
+    {
+      "url": "https://italian-estate.com/news/gate-away-international-buyers-report-2025",
+      "channel": "google",
+      "at": "2026-06-16T00:33:31.727Z"
+    },
+    {
+      "url": "https://italian-estate.com/news/milan-living-sector-investment-2025",
+      "channel": "google",
+      "at": "2026-06-16T00:33:31.727Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
