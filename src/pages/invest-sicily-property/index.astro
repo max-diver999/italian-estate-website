@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
+const faqItems = [
+  {
+    question: 'Is Sicily cheaper than northern Italy for property?',
+    answer: 'Yes. Many Sicilian communes still trade under €1,500/m² versus €3,500–6,000/m² in Milan or Florence. Taormina and Ortigia command premiums; interior towns offer lowest entry with higher renovation risk.',
+  },
+  {
+    question: 'What yields can Sicily holiday lets achieve?',
+    answer: 'Coastal short-term lets in Taormina, Cefalù, or Syracuse can reach 7–10% gross in strong seasons. Long-term city lets in Palermo or Catania are lower but more stable. Always model IMU, management, and cedolare secca or IRPEF.',
+  },
+  {
+    question: 'Are there restrictions on foreign buyers in Sicily?',
+    answer: 'No additional regional restrictions. Standard Italian reciprocity, codice fiscale, and notary checks apply. Coastal and historic properties may face landscape or heritage constraints.',
+  },
+  {
+    question: 'How does Sicily compare to Puglia for investors?',
+    answer: 'Puglia leads Gate-away enquiry volume; Sicily offers lower prices and higher headline yields with more operational and renovation variance. See our Sicily vs Puglia comparison.',
+  },
+  {
+    question: 'What should I verify before buying in Sicily?',
+    answer: 'Cadastral consistency, seismic classification, absentee landlord issues, and STR registration with the comune. Earthquake retrofit costs can materially change renovation budgets.',
+  },
+];
+---
+<BaseLayout
+  title="Invest in Sicily Property: Free Shortlist 2026"
+  description="Independent Sicily property shortlist for foreign buyers. Taormina, Syracuse, Palermo — coastal and city options from €120k. Partner review within one business day."
+>
+  <section class="site-container py-12 md:py-16 max-w-3xl">
+    <header class="mb-8">
+      <span class="badge-pill mb-4">Sicily · Commercial</span>
+      <h1 class="mb-4">Invest in Sicily property</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        Shortlist for Taormina, Ortigia, Palermo, and interior value towns — with yield bands and renovation risk flags.
+      </p>
+    </header>
+
+    <div class="prose mb-10 text-[var(--color-muted)]">
+      <p><strong>Quick answer:</strong> Sicily offers some of Italy's lowest entry prices and highest headline holiday-let yields. Budget from roughly €120k for interior apartments needing work and €350k+ for turnkey coastal units. Foreign share of enquiries is rising in premium coastal comuni.</p>
+      <h2 class="text-xl text-[var(--color-ink)]">Market snapshot</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Area</th><th>€/m² (indicative)</th><th>Gross yield</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Taormina</td><td>€3,500–6,500</td><td>5–7%</td></tr>
+          <tr><td>Syracuse / Ortigia</td><td>€2,000–4,500</td><td>6–8%</td></tr>
+          <tr><td>Palermo centre</td><td>€1,200–2,500</td><td>4–6%</td></tr>
+          <tr><td>Interior towns</td><td>€600–1,200</td><td>6–10%*</td></tr>
+        </tbody>
+      </table>
+      <p>*Interior yields assume renovation completed and active letting; vacancy and capex risk is higher.</p>
+      <p>Guides: <a href="/guides/sicily-property-investment-guide/">Sicily investment guide</a> · <a href="/areas/taormina/">Taormina</a> · <a href="/areas/syracuse/">Syracuse</a> · <a href="/compare/sicily-vs-puglia-property/">Sicily vs Puglia</a> · <a href="/guides/how-to-calculate-rental-yield-italy/">Calculate rental yield</a></p>
+    </div>
+
+    <LeadForm
+      title="Get your Sicily property shortlist"
+      subtitle="Coastal · historic centre · renovation value"
+      context="Invest Sicily property landing"
+    />
+    <FaqBlock items={faqItems} />
+    <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
+  </section>
+</BaseLayout>

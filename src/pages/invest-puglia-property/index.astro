@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
+const faqItems = [
+  {
+    question: 'Why is Puglia popular with foreign buyers?',
+    answer: 'Puglia combines lower entry prices (often €800–2,500/m²), strong holiday-rental demand, and direct flights to Bari and Brindisi. Ostuni ranked among the top enquiry comuni in Gate-away\'s 2025 report for international buyers.',
+  },
+  {
+    question: 'What budget do I need for a villa with pool near Ostuni?',
+    answer: 'New-build villas with pools often list from €350k–550k in the Ostuni countryside. Trulli restoration and masseria projects typically start higher once land, pool, and heritage permits are included.',
+  },
+  {
+    question: 'Can I run Airbnb in Puglia legally?',
+    answer: 'Yes with a CIN code, SCIA where required, and compliance with regional STR rules. Coastal and historic towns may cap short-term lets — verify the comune before you buy for yield.',
+  },
+  {
+    question: 'What yields are realistic in Puglia?',
+    answer: 'Well-managed holiday lets in Ostuni or Valle d\'Itria often achieve 6–8% gross before IMU, management, and tax. Long-term leases are lower but more stable in Lecce and Bari.',
+  },
+  {
+    question: 'How do you vet Puglia developers?',
+    answer: 'We prioritise agencies with documented building permits, escrow-style payment schedules, and site visits. See our Apulia Deluxe and Ostuni project reviews for examples of due diligence questions.',
+  },
+];
+---
+<BaseLayout
+  title="Invest in Puglia Property: Free Shortlist 2026"
+  description="Independent Puglia property shortlist for foreign buyers. Ostuni, Valle d'Itria, Lecce — villas and trulli from €250k. Partner review within one business day."
+>
+  <section class="site-container py-12 md:py-16 max-w-3xl">
+    <header class="mb-8">
+      <span class="badge-pill mb-4">Puglia · Commercial</span>
+      <h1 class="mb-4">Invest in Puglia property</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        Vetted shortlist for Ostuni, Itria Valley, and Salento — trulli, masserie, and new-build villas with yield and compliance notes.
+      </p>
+    </header>
+
+    <div class="prose mb-10 text-[var(--color-muted)]">
+      <p><strong>Quick answer:</strong> Puglia remains Italy's highest-intent region for US and UK buyers seeking lifestyle yield. Entry from roughly €150k for inland apartments and €350k for countryside villas with pools. Registration tax is 9% on second homes unless prima casa conditions apply.</p>
+      <h2 class="text-xl text-[var(--color-ink)]">Who this is for</h2>
+      <ul>
+        <li>Buyers comparing Puglia vs Sicily or Tuscany on net yield</li>
+        <li>Remote purchasers needing pool-villa or trulli project diligence</li>
+        <li>STR investors who will register CIN and model IMU correctly</li>
+      </ul>
+      <h2 class="text-xl text-[var(--color-ink)]">Market snapshot</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Area</th><th>€/m² (indicative)</th><th>Gross yield</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ostuni countryside</td><td>€1,800–3,200</td><td>6–8%</td></tr>
+          <tr><td>Valle d'Itria</td><td>€2,000–3,500</td><td>5–7%</td></tr>
+          <tr><td>Polignano / coast</td><td>€3,500–6,000</td><td>4–6%</td></tr>
+          <tr><td>Lecce city</td><td>€1,500–2,800</td><td>4–5%</td></tr>
+        </tbody>
+      </table>
+      <p>Research: <a href="/guides/puglia-property-investment-guide/">Puglia investment guide</a> · <a href="/areas/ostuni/">Ostuni</a> · <a href="/projects/ostuni-new-villa-pool-470k/">Ostuni villa project</a> · <a href="/developers/apulia-deluxe/">Apulia Deluxe</a> · <a href="/guides/short-term-rental-rules-italy/">STR rules Italy</a></p>
+    </div>
+
+    <LeadForm
+      title="Get your Puglia property shortlist"
+      subtitle="Ostuni · Itria Valley · Salento · trulli or villa"
+      context="Invest Puglia property landing"
+    />
+    <FaqBlock items={faqItems} />
+    <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
+  </section>
+</BaseLayout>

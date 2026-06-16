@@ -8,8 +8,8 @@ interface Props {
 }
 
 const {
-  title = 'Get your Spain property shortlist',
-  subtitle = 'Share your budget and target market — we respond within one business day.',
+  title = 'Get your Italy property shortlist',
+  subtitle = 'Share your budget and target region — we respond within one business day.',
   context = '',
 } = Astro.props;
 ---
@@ -38,23 +38,26 @@ const {
         <label class="block text-xs font-medium mb-1" for="lf-market">Target market</label>
         <select id="lf-market" name="market">
           <option value="">— Select —</option>
-          <option value="riviera-maya">Riviera Maya</option>
-          <option value="los-cabos">Los Cabos</option>
-          <option value="puerto-vallarta">Puerto Vallarta / Nayarit</option>
-          <option value="tulum">Tulum</option>
-          <option value="merida">Mérida / Yucatán</option>
+          <option value="tuscany">Tuscany</option>
+          <option value="puglia">Puglia</option>
+          <option value="milan-lombardy">Milan / Lombardy</option>
+          <option value="lake-como">Lake Como</option>
+          <option value="sicily">Sicily</option>
+          <option value="sardinia">Sardinia</option>
+          <option value="liguria">Liguria / Riviera</option>
+          <option value="rome-lazio">Rome / Lazio</option>
           <option value="multi">Multiple / not sure</option>
         </select>
       </div>
       <div>
-        <label class="block text-xs font-medium mb-1" for="lf-budget">Budget (USD)</label>
+        <label class="block text-xs font-medium mb-1" for="lf-budget">Budget (EUR)</label>
         <select id="lf-budget" name="budget">
           <option value="">— Select —</option>
-          <option value="under-300k">Under $300k</option>
-          <option value="300-500k">$300k – $500k</option>
-          <option value="500k-1m">$500k – $1M</option>
-          <option value="1m-2m">$1M – $2M</option>
-          <option value="2m+">$2M+</option>
+          <option value="under-200k">Under €200k</option>
+          <option value="200-300k">€200k – €300k</option>
+          <option value="300-500k">€300k – €500k</option>
+          <option value="500k-1m">€500k – €1M</option>
+          <option value="1m+">€1M+</option>
         </select>
       </div>
     </div>
@@ -63,15 +66,16 @@ const {
       <select id="lf-goal" name="goal">
         <option value="">— Select —</option>
         <option value="investment">Rental yield / investment</option>
-        <option value="fideicomiso">Fideicomiso / residency</option>
-        <option value="relocation">Relocation / end-use</option>
-        <option value="off-plan">Off-plan / payment plan</option>
+        <option value="holiday-home">Holiday home / personal use</option>
+        <option value="relocation">Relocation / residency planning</option>
+        <option value="off-plan">Off-plan / new build</option>
+        <option value="renovation">Renovation / 1-euro project</option>
         <option value="explore">Just researching</option>
       </select>
     </div>
     <div>
       <label class="block text-xs font-medium mb-1" for="lf-message">Message (optional)</label>
-      <textarea id="lf-message" name="message" rows="3" placeholder="E.g. 2BR condo in Playa del Carmen, STR income, $250K budget…"></textarea>
+      <textarea id="lf-message" name="message" rows="3" placeholder="E.g. 2-bed apartment in Ostuni, holiday let, €350k budget…"></textarea>
     </div>
     <label class="flex items-start gap-2 text-xs text-[var(--color-muted)] cursor-pointer">
       <input type="checkbox" name="consent" required class="mt-1 w-4 h-4" />

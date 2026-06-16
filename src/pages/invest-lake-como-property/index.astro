@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
+const faqItems = [
+  {
+    question: 'Can foreigners buy property on Lake Como?',
+    answer: 'Yes. Lake Como has no special foreign-buyer restrictions beyond standard Italian reciprocity checks. Prime lakefront and Bellagio villages command premium prices; secondary towns offer lower entry with ferry or road access.',
+  },
+  {
+    question: 'What is the minimum budget for Lake Como?',
+    answer: 'Apartments in secondary comuni sometimes start near €400k–600k. Lakefront villas and Bellagio often exceed €1.5M. Budget 10–12% closing costs and annual IMU on second homes.',
+  },
+  {
+    question: 'Is Lake Como a good rental investment?',
+    answer: 'Lake Como skews capital preservation and luxury lifestyle. Gross yields of 2–4% are common; peak-season short lets can improve cash flow but face strict local marketing and compliance rules.',
+  },
+  {
+    question: 'How does Como compare to Liguria?',
+    answer: 'Como trades at higher lakefront premiums; Liguria offers more coastal apartment stock under €1M. See our Lake Como vs Liguria comparison for buyer profiles.',
+  },
+  {
+    question: 'What due diligence matters on Como lakefront?',
+    answer: 'Verify shore rights, boat dock concessions, landslide or flooding constraints, and condominium rules on short lets. Landscape vincoli apply widely — check Soprintendenza files before renovation.',
+  },
+];
+---
+<BaseLayout
+  title="Invest in Lake Como Property: Free Shortlist 2026"
+  description="Independent Lake Como property shortlist for foreign buyers. Bellagio, Como, Menaggio — lakefront and hillside options. Licensed partner review within one day."
+>
+  <section class="site-container py-12 md:py-16 max-w-3xl">
+    <header class="mb-8">
+      <span class="badge-pill mb-4">Lake Como · Commercial</span>
+      <h1 class="mb-4">Invest in Lake Como property</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        Curated shortlist for lakefront apartments, hillside villas, and renovation projects — with landscape and rental compliance notes.
+      </p>
+    </header>
+
+    <div class="prose mb-10 text-[var(--color-muted)]">
+      <p><strong>Quick answer:</strong> Lake Como lakefront trades roughly €8,000–25,000/m² at the top; hillside and secondary towns start lower. Foreign buyers are typically HNW lifestyle purchasers or dual-use owners accepting lower yields than Puglia or Sicily.</p>
+      <h2 class="text-xl text-[var(--color-ink)]">Who this is for</h2>
+      <ul>
+        <li>Luxury buyers comparing Como vs Liguria or Tuscany lakes</li>
+        <li>Owners planning part-time residence with selective short lets</li>
+        <li>Investors accepting 2–3% net yields for prime location scarcity</li>
+      </ul>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Area</th><th>€/m² (indicative)</th><th>Profile</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bellagio</td><td>€10,000+</td><td>Ultra-prime lakefront</td></tr>
+          <tr><td>Como city</td><td>€4,500–7,000</td><td>Urban + lake access</td></tr>
+          <tr><td>Menaggio / Tremezzo</td><td>€6,000–12,000</td><td>Central lake lifestyle</td></tr>
+          <tr><td>Lecco arm</td><td>€3,500–5,500</td><td>Value vs west lake</td></tr>
+        </tbody>
+      </table>
+      <p>Guides: <a href="/guides/lake-como-property-investment-guide/">Lake Como investment guide</a> · <a href="/areas/bellagio/">Bellagio</a> · <a href="/areas/como/">Como town</a> · <a href="/compare/lake-como-vs-liguria-property/">Como vs Liguria</a> · <a href="/compare/tuscany-vs-lake-como-property/">Tuscany vs Como</a></p>
+    </div>
+
+    <LeadForm
+      title="Get your Lake Como shortlist"
+      subtitle="Lakefront · hillside · renovation scope"
+      context="Invest Lake Como property landing"
+    />
+    <FaqBlock items={faqItems} />
+    <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
+  </section>
+</BaseLayout>

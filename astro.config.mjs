@@ -40,6 +40,14 @@ export default defineConfig({
         if (item.url.includes('/news/')) {
           return { ...item, priority: 0.65, changefreq: 'weekly' };
         }
+        if (
+          item.url.includes('/invest-') ||
+          item.url.includes('/tier-') ||
+          item.url.includes('/italy-property-consultation') ||
+          item.url.includes('/get-shortlist')
+        ) {
+          return { ...item, priority: 0.88, changefreq: 'monthly' };
+        }
         return { ...item, priority: 0.7, changefreq: 'monthly' };
       },
     }),

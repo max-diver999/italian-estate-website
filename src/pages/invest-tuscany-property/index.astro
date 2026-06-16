@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
+const faqItems = [
+  {
+    question: 'Can foreigners buy property in Tuscany?',
+    answer: 'Yes. US, UK, EU, and most other nationals buy freehold residential property in Tuscany after reciprocity verification at the notary. Budget from roughly €200k for countryside apartments and €400k+ for Chianti farmhouses needing light renovation.',
+  },
+  {
+    question: 'What rental yields are realistic in Tuscany?',
+    answer: 'Long-term lets in Florence and Siena often net 3–4% after costs. Short-term holiday lets in Chianti or Val d\'Orcia can reach 5–7% gross in peak seasons but require CIN registration, IMU, and local STR caps in historic centres.',
+  },
+  {
+    question: 'How fast do you send a Tuscany shortlist?',
+    answer: 'Within one business day after you submit budget and goal. Options include resale apartments, restoration projects, and vetted agency off-plan where available.',
+  },
+  {
+    question: 'What due diligence applies to Tuscan farmhouses?',
+    answer: 'Check cadastral category, agricultural ties, Soprintendenza restrictions, and septic compliance. Our heritage guide covers listed buildings and landscape constraints before you pay a compromesso deposit.',
+  },
+  {
+    question: 'Is Tuscany better for lifestyle or yield?',
+    answer: 'Tuscany skews lifestyle and capital preservation with selective yield in secondary towns. Compare net returns using our gross vs net yield guide and factor 10–12% purchase costs on a second home.',
+  },
+];
+---
+<BaseLayout
+  title="Invest in Tuscany Property: Free Shortlist 2026"
+  description="Independent Tuscany property shortlist for foreign buyers. Chianti, Florence, Siena — yield and lifestyle options from €200k. Licensed partner review within one day."
+>
+  <section class="site-container py-12 md:py-16 max-w-3xl">
+    <header class="mb-8">
+      <span class="badge-pill mb-4">Tuscany · Commercial</span>
+      <h1 class="mb-4">Invest in Tuscany property</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        Request a vetted shortlist matched to your budget, hold period, and rental strategy — independent research, licensed partner handoff.
+      </p>
+    </header>
+
+    <div class="prose mb-10 text-[var(--color-muted)]">
+      <p><strong>Quick answer:</strong> Tuscany asking prices average €1,500–4,000/m² in countryside communes and €4,000–6,000/m² in Florence prime. Foreign buyers focus on Chianti, Val d'Orcia, Lucca province, and Florence Oltrarno. Budget 9% registration tax on second homes plus notary fees.</p>
+      <h2 class="text-xl text-[var(--color-ink)]">Who this is for</h2>
+      <ul>
+        <li>First-time Italy buyers comparing Tuscany vs Puglia or Lake Como</li>
+        <li>Holiday-home owners planning regulated short-term lets</li>
+        <li>Investors seeking farmhouse restoration with heritage checks</li>
+      </ul>
+      <h2 class="text-xl text-[var(--color-ink)]">Market snapshot</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Area</th><th>€/m² (indicative)</th><th>Gross yield</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Florence centre</td><td>€4,500–7,000</td><td>3–4%</td></tr>
+          <tr><td>Chianti countryside</td><td>€2,500–4,500</td><td>4–6%</td></tr>
+          <tr><td>Lucca / Versilia</td><td>€3,000–5,500</td><td>3–5%</td></tr>
+          <tr><td>Siena province</td><td>€2,000–3,800</td><td>4–5%</td></tr>
+        </tbody>
+      </table>
+      <p>Deep dives: <a href="/guides/tuscany-property-investment-guide/">Tuscany investment guide</a> · <a href="/areas/chianti/">Chianti area</a> · <a href="/areas/lucca/">Lucca</a> · <a href="/guides/heritage-restricted-property-italy/">Heritage restrictions</a> · <a href="/compare/puglia-vs-tuscany-property/">Puglia vs Tuscany</a></p>
+    </div>
+
+    <LeadForm
+      title="Get your Tuscany property shortlist"
+      subtitle="Budget · Chianti / Florence / Lucca · resale or renovation"
+      context="Invest Tuscany property landing"
+    />
+    <FaqBlock items={faqItems} />
+    <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
+  </section>
+</BaseLayout>
