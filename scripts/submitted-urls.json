@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-16T00:33:31.727Z",
+  "updatedAt": "2026-06-16T00:38:45.812Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -91,6 +91,11 @@
     "https://italian-estate.com/guides/tuscany-property-investment-guide",
     "https://italian-estate.com/guides/uk-tax-italy-holiday-home",
     "https://italian-estate.com/guides/us-tax-italy-rental-property",
+    "https://italian-estate.com/invest-lake-como-property",
+    "https://italian-estate.com/invest-puglia-property",
+    "https://italian-estate.com/invest-sicily-property",
+    "https://italian-estate.com/invest-tuscany-property",
+    "https://italian-estate.com/italy-property-consultation",
     "https://italian-estate.com/methodology",
     "https://italian-estate.com/news",
     "https://italian-estate.com/news/foreign-buyers-italy-5-5-billion-2025",
@@ -103,7 +108,10 @@
     "https://italian-estate.com/projects/ostuni-new-villa-pool-470k",
     "https://italian-estate.com/projects/ostuni-trulli-modern-villa",
     "https://italian-estate.com/projects/prandina-navigli-milan",
-    "https://italian-estate.com/terms"
+    "https://italian-estate.com/terms",
+    "https://italian-estate.com/tier-entry",
+    "https://italian-estate.com/tier-luxury",
+    "https://italian-estate.com/tier-mid"
   ],
   "entries": [
     {
@@ -745,6 +753,51 @@
       "url": "https://italian-estate.com/news/milan-living-sector-investment-2025",
       "channel": "google",
       "at": "2026-06-16T00:33:31.727Z"
+    },
+    {
+      "url": "https://italian-estate.com/get-shortlist",
+      "channel": "google",
+      "at": "2026-06-16T00:38:45.812Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-tuscany-property",
+      "channel": "google",
+      "at": "2026-06-16T00:38:45.812Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-puglia-property",
+      "channel": "google",
+      "at": "2026-06-16T00:38:45.812Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-lake-como-property",
+      "channel": "google",
+      "at": "2026-06-16T00:38:45.812Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-sicily-property",
+      "channel": "google",
+      "at": "2026-06-16T00:38:45.812Z"
+    },
+    {
+      "url": "https://italian-estate.com/italy-property-consultation",
+      "channel": "google",
+      "at": "2026-06-16T00:38:45.812Z"
+    },
+    {
+      "url": "https://italian-estate.com/tier-entry",
+      "channel": "google",
+      "at": "2026-06-16T00:38:45.812Z"
+    },
+    {
+      "url": "https://italian-estate.com/tier-mid",
+      "channel": "google",
+      "at": "2026-06-16T00:38:45.812Z"
+    },
+    {
+      "url": "https://italian-estate.com/tier-luxury",
+      "channel": "google",
+      "at": "2026-06-16T00:38:45.812Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
