@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-15T23:48:00.814Z",
+  "updatedAt": "2026-06-16T00:25:38.422Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -8,12 +8,18 @@
     "https://italian-estate.com/areas/bellagio",
     "https://italian-estate.com/areas/chianti",
     "https://italian-estate.com/areas/como",
+    "https://italian-estate.com/areas/costa-smeralda",
     "https://italian-estate.com/areas/florence",
     "https://italian-estate.com/areas/lecce",
+    "https://italian-estate.com/areas/lucca",
+    "https://italian-estate.com/areas/milan-navigli",
     "https://italian-estate.com/areas/ostuni",
     "https://italian-estate.com/areas/palermo",
     "https://italian-estate.com/areas/polignano-a-mare",
+    "https://italian-estate.com/areas/portofino",
+    "https://italian-estate.com/areas/rome-centro-storico",
     "https://italian-estate.com/areas/siena",
+    "https://italian-estate.com/areas/sorrento",
     "https://italian-estate.com/areas/syracuse",
     "https://italian-estate.com/areas/taormina",
     "https://italian-estate.com/areas/valle-d-itria",
@@ -22,31 +28,45 @@
     "https://italian-estate.com/compare/italy-vs-portugal-property-investment",
     "https://italian-estate.com/compare/italy-vs-spain-property-investment",
     "https://italian-estate.com/compare/lake-como-vs-liguria-property",
+    "https://italian-estate.com/compare/milan-vs-rome-property-investment",
     "https://italian-estate.com/compare/puglia-vs-tuscany-property",
     "https://italian-estate.com/compare/sicily-vs-puglia-property",
+    "https://italian-estate.com/compare/tuscany-vs-lake-como-property",
     "https://italian-estate.com/contact",
     "https://italian-estate.com/developers",
     "https://italian-estate.com/get-shortlist",
     "https://italian-estate.com/guides",
     "https://italian-estate.com/guides/airbnb-investment-italy-guide",
+    "https://italian-estate.com/guides/amalfi-coast-property-investment-guide",
     "https://italian-estate.com/guides/best-regions-invest-italy-property-2026",
     "https://italian-estate.com/guides/buy-property-italy-foreigner",
+    "https://italian-estate.com/guides/cadastral-value-vs-market-price-italy",
     "https://italian-estate.com/guides/can-foreigners-buy-property-italy",
     "https://italian-estate.com/guides/codice-fiscale-italy-property",
     "https://italian-estate.com/guides/compromesso-italy-property-contract",
     "https://italian-estate.com/guides/cost-of-buying-property-italy",
     "https://italian-estate.com/guides/due-diligence-italy-property",
     "https://italian-estate.com/guides/gross-vs-net-yield-italy",
+    "https://italian-estate.com/guides/heritage-restricted-property-italy",
+    "https://italian-estate.com/guides/hidden-costs-buying-property-italy",
     "https://italian-estate.com/guides/how-to-buy-italy-property-remotely",
     "https://italian-estate.com/guides/how-to-buy-italy-property-step-by-step",
     "https://italian-estate.com/guides/how-to-calculate-rental-yield-italy",
     "https://italian-estate.com/guides/imu-property-tax-italy",
     "https://italian-estate.com/guides/is-italy-property-good-investment-2026",
+    "https://italian-estate.com/guides/italy-1-euro-homes-program",
+    "https://italian-estate.com/guides/italy-capital-gains-tax-property",
     "https://italian-estate.com/guides/italy-flat-tax-regime-new-residents",
+    "https://italian-estate.com/guides/italy-holiday-let-licensing",
+    "https://italian-estate.com/guides/italy-inheritance-law-property-foreigners",
     "https://italian-estate.com/guides/italy-investor-visa-property",
     "https://italian-estate.com/guides/italy-prima-casa-vs-second-home-tax",
     "https://italian-estate.com/guides/italy-property-closing-costs-breakdown",
+    "https://italian-estate.com/guides/italy-property-for-americans",
+    "https://italian-estate.com/guides/italy-property-for-germans",
+    "https://italian-estate.com/guides/italy-property-for-uk-buyers",
     "https://italian-estate.com/guides/italy-property-investment-guide",
+    "https://italian-estate.com/guides/italy-property-management-costs",
     "https://italian-estate.com/guides/italy-property-market-forecast-2026-2027",
     "https://italian-estate.com/guides/italy-property-scams-avoid",
     "https://italian-estate.com/guides/italy-real-estate-market-data-2025",
@@ -54,13 +74,20 @@
     "https://italian-estate.com/guides/italy-registration-tax-property",
     "https://italian-estate.com/guides/italy-rental-yield-guide",
     "https://italian-estate.com/guides/lake-como-property-investment-guide",
+    "https://italian-estate.com/guides/liguria-property-investment-guide",
+    "https://italian-estate.com/guides/milan-property-investment-guide",
     "https://italian-estate.com/guides/mistakes-foreign-buyers-italy",
+    "https://italian-estate.com/guides/non-resident-mortgage-italy",
     "https://italian-estate.com/guides/notaio-italy-property-role",
     "https://italian-estate.com/guides/power-of-attorney-property-italy",
     "https://italian-estate.com/guides/puglia-property-investment-guide",
+    "https://italian-estate.com/guides/rome-property-investment-guide",
+    "https://italian-estate.com/guides/sardinia-property-investment-guide",
     "https://italian-estate.com/guides/short-term-rental-rules-italy",
     "https://italian-estate.com/guides/sicily-property-investment-guide",
     "https://italian-estate.com/guides/tuscany-property-investment-guide",
+    "https://italian-estate.com/guides/uk-tax-italy-holiday-home",
+    "https://italian-estate.com/guides/us-tax-italy-rental-property",
     "https://italian-estate.com/methodology",
     "https://italian-estate.com/news",
     "https://italian-estate.com/privacy-policy",
@@ -535,6 +562,141 @@
       "url": "https://italian-estate.com/guides/gross-vs-net-yield-italy",
       "channel": "google",
       "at": "2026-06-15T23:48:00.814Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-management-costs",
+      "channel": "google",
+      "at": "2026-06-15T23:59:16.258Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-holiday-let-licensing",
+      "channel": "google",
+      "at": "2026-06-15T23:59:16.258Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/heritage-restricted-property-italy",
+      "channel": "google",
+      "at": "2026-06-16T00:07:09.466Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/non-resident-mortgage-italy",
+      "channel": "google",
+      "at": "2026-06-16T00:07:09.466Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-inheritance-law-property-foreigners",
+      "channel": "google",
+      "at": "2026-06-16T00:07:09.466Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-capital-gains-tax-property",
+      "channel": "google",
+      "at": "2026-06-16T00:07:09.466Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/cadastral-value-vs-market-price-italy",
+      "channel": "google",
+      "at": "2026-06-16T00:07:09.466Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/hidden-costs-buying-property-italy",
+      "channel": "google",
+      "at": "2026-06-16T00:07:09.466Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-1-euro-homes-program",
+      "channel": "google",
+      "at": "2026-06-16T00:07:09.466Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/milan-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-16T00:13:04.127Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/rome-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-16T00:13:04.127Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/milan-navigli",
+      "channel": "google",
+      "at": "2026-06-16T00:13:04.127Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/rome-centro-storico",
+      "channel": "google",
+      "at": "2026-06-16T00:13:04.127Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/milan-vs-rome-property-investment",
+      "channel": "google",
+      "at": "2026-06-16T00:13:04.127Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/tuscany-vs-lake-como-property",
+      "channel": "google",
+      "at": "2026-06-16T00:13:04.127Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/liguria-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-16T00:18:53.103Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/sardinia-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-16T00:18:53.103Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/amalfi-coast-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-16T00:18:53.103Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/portofino",
+      "channel": "google",
+      "at": "2026-06-16T00:18:53.103Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/costa-smeralda",
+      "channel": "google",
+      "at": "2026-06-16T00:18:53.103Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/sorrento",
+      "channel": "google",
+      "at": "2026-06-16T00:18:53.103Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/lucca",
+      "channel": "google",
+      "at": "2026-06-16T00:18:53.103Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-for-americans",
+      "channel": "google",
+      "at": "2026-06-16T00:25:38.422Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-for-uk-buyers",
+      "channel": "google",
+      "at": "2026-06-16T00:25:38.422Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-for-germans",
+      "channel": "google",
+      "at": "2026-06-16T00:25:38.422Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/us-tax-italy-rental-property",
+      "channel": "google",
+      "at": "2026-06-16T00:25:38.422Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/uk-tax-italy-holiday-home",
+      "channel": "google",
+      "at": "2026-06-16T00:25:38.422Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
