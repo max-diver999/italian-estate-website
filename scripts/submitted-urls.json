@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-17T23:39:08.301Z",
+  "updatedAt": "2026-06-17T23:46:35.651Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -14,6 +14,7 @@
     "https://italian-estate.com/areas/como",
     "https://italian-estate.com/areas/costa-smeralda",
     "https://italian-estate.com/areas/florence",
+    "https://italian-estate.com/areas/genoa",
     "https://italian-estate.com/areas/lecce",
     "https://italian-estate.com/areas/lucca",
     "https://italian-estate.com/areas/milan-navigli",
@@ -27,6 +28,9 @@
     "https://italian-estate.com/areas/polignano-a-mare",
     "https://italian-estate.com/areas/portofino",
     "https://italian-estate.com/areas/rome-centro-storico",
+    "https://italian-estate.com/areas/sanremo",
+    "https://italian-estate.com/areas/santa-margherita-ligure",
+    "https://italian-estate.com/areas/savona",
     "https://italian-estate.com/areas/scalea",
     "https://italian-estate.com/areas/siena",
     "https://italian-estate.com/areas/sorrento",
@@ -39,6 +43,7 @@
     "https://italian-estate.com/compare/bologna-vs-florence-property",
     "https://italian-estate.com/compare/florence-vs-rome-property-investment",
     "https://italian-estate.com/compare/florence-vs-siena-property",
+    "https://italian-estate.com/compare/genoa-vs-florence-property",
     "https://italian-estate.com/compare/italy-vs-france-property-investment",
     "https://italian-estate.com/compare/italy-vs-greece-property-investment",
     "https://italian-estate.com/compare/italy-vs-portugal-property-investment",
@@ -164,6 +169,7 @@
     "https://italian-estate.com/projects/feel-uptown-milan",
     "https://italian-estate.com/projects/fivizzano-village-property",
     "https://italian-estate.com/projects/florence-oltrarno-apartment",
+    "https://italian-estate.com/projects/genoa-waterfront-apartments",
     "https://italian-estate.com/projects/innesto-milan-social-housing",
     "https://italian-estate.com/projects/inspire-uptown-milan",
     "https://italian-estate.com/projects/lecce-urbs20-villas",
@@ -184,6 +190,7 @@
     "https://italian-estate.com/projects/porto-cervo-villa-development",
     "https://italian-estate.com/projects/portofino-apartment-renovation",
     "https://italian-estate.com/projects/prandina-navigli-milan",
+    "https://italian-estate.com/projects/rapallo-sea-view-apartments",
     "https://italian-estate.com/projects/rome-jubilee-centro-storico",
     "https://italian-estate.com/projects/sanremo-sea-view-apartments",
     "https://italian-estate.com/projects/scalea-calabria-coastal",
@@ -1493,6 +1500,41 @@
       "url": "https://italian-estate.com/areas/parma",
       "channel": "google",
       "at": "2026-06-17T23:39:08.301Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/genoa",
+      "channel": "google",
+      "at": "2026-06-17T23:46:35.651Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/sanremo",
+      "channel": "google",
+      "at": "2026-06-17T23:46:35.651Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/savona",
+      "channel": "google",
+      "at": "2026-06-17T23:46:35.651Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/santa-margherita-ligure",
+      "channel": "google",
+      "at": "2026-06-17T23:46:35.651Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/genoa-vs-florence-property",
+      "channel": "google",
+      "at": "2026-06-17T23:46:35.651Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/genoa-waterfront-apartments",
+      "channel": "google",
+      "at": "2026-06-17T23:46:35.651Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/rapallo-sea-view-apartments",
+      "channel": "google",
+      "at": "2026-06-17T23:46:35.651Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
