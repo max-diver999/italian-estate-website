@@ -1,28 +1,37 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-17T20:31:26.271Z",
+  "updatedAt": "2026-06-17T22:36:45.652Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
     "https://italian-estate.com/areas",
+    "https://italian-estate.com/areas/bari",
     "https://italian-estate.com/areas/bellagio",
+    "https://italian-estate.com/areas/carovigno",
     "https://italian-estate.com/areas/chianti",
+    "https://italian-estate.com/areas/cisternino",
     "https://italian-estate.com/areas/como",
     "https://italian-estate.com/areas/costa-smeralda",
     "https://italian-estate.com/areas/florence",
     "https://italian-estate.com/areas/lecce",
     "https://italian-estate.com/areas/lucca",
     "https://italian-estate.com/areas/milan-navigli",
+    "https://italian-estate.com/areas/monte-argentario",
+    "https://italian-estate.com/areas/naples",
+    "https://italian-estate.com/areas/noto",
     "https://italian-estate.com/areas/ostuni",
     "https://italian-estate.com/areas/palermo",
     "https://italian-estate.com/areas/polignano-a-mare",
     "https://italian-estate.com/areas/portofino",
     "https://italian-estate.com/areas/rome-centro-storico",
+    "https://italian-estate.com/areas/scalea",
     "https://italian-estate.com/areas/siena",
     "https://italian-estate.com/areas/sorrento",
     "https://italian-estate.com/areas/syracuse",
     "https://italian-estate.com/areas/taormina",
+    "https://italian-estate.com/areas/turin",
     "https://italian-estate.com/areas/valle-d-itria",
+    "https://italian-estate.com/areas/versilia",
     "https://italian-estate.com/compare",
     "https://italian-estate.com/compare/florence-vs-rome-property-investment",
     "https://italian-estate.com/compare/florence-vs-siena-property",
@@ -40,8 +49,13 @@
     "https://italian-estate.com/contact",
     "https://italian-estate.com/developers",
     "https://italian-estate.com/developers/apulia-deluxe",
+    "https://italian-estate.com/developers/coima",
+    "https://italian-estate.com/developers/damico-gruppo",
+    "https://italian-estate.com/developers/frimm",
     "https://italian-estate.com/developers/near-milan",
     "https://italian-estate.com/developers/okam-italy",
+    "https://italian-estate.com/developers/ostuni-domus",
+    "https://italian-estate.com/developers/pregio-immobiliare",
     "https://italian-estate.com/get-shortlist",
     "https://italian-estate.com/guides",
     "https://italian-estate.com/guides/agriturismo-investment-italy-guide",
@@ -107,7 +121,11 @@
     "https://italian-estate.com/guides/us-tax-italy-rental-property",
     "https://italian-estate.com/guides/vineyard-property-investment-italy-guide",
     "https://italian-estate.com/invest-lake-como-property",
+    "https://italian-estate.com/invest-liguria-property",
+    "https://italian-estate.com/invest-milan-property",
     "https://italian-estate.com/invest-puglia-property",
+    "https://italian-estate.com/invest-rome-property",
+    "https://italian-estate.com/invest-sardinia-property",
     "https://italian-estate.com/invest-sicily-property",
     "https://italian-estate.com/invest-tuscany-property",
     "https://italian-estate.com/italy-property-consultation",
@@ -119,10 +137,36 @@
     "https://italian-estate.com/news/milan-living-sector-investment-2025",
     "https://italian-estate.com/privacy-policy",
     "https://italian-estate.com/projects",
+    "https://italian-estate.com/projects/bellagio-villa-lake-view",
+    "https://italian-estate.com/projects/bliss-uptown-milan",
+    "https://italian-estate.com/projects/carovigno-villa-new-build",
+    "https://italian-estate.com/projects/chianti-farmhouse-restoration",
+    "https://italian-estate.com/projects/coima-guido-reni-rome",
+    "https://italian-estate.com/projects/coima-olympic-village-milan",
+    "https://italian-estate.com/projects/coima-via-carcani-trastevere",
+    "https://italian-estate.com/projects/como-lakefront-residence",
+    "https://italian-estate.com/projects/feel-uptown-milan",
+    "https://italian-estate.com/projects/florence-oltrarno-apartment",
     "https://italian-estate.com/projects/inspire-uptown-milan",
+    "https://italian-estate.com/projects/lecce-urbs20-villas",
+    "https://italian-estate.com/projects/maciachini-urban-retreat",
+    "https://italian-estate.com/projects/meli-navigli-milan",
+    "https://italian-estate.com/projects/monte-argentario-sea-view",
+    "https://italian-estate.com/projects/noto-baroque-masseria",
+    "https://italian-estate.com/projects/ostuni-lamia-chiavi-in-mano",
+    "https://italian-estate.com/projects/ostuni-masseria-pool-apuliadeluxe",
     "https://italian-estate.com/projects/ostuni-new-villa-pool-470k",
+    "https://italian-estate.com/projects/ostuni-rascina-villa-construction",
     "https://italian-estate.com/projects/ostuni-trulli-modern-villa",
+    "https://italian-estate.com/projects/porto-cervo-villa-development",
     "https://italian-estate.com/projects/prandina-navigli-milan",
+    "https://italian-estate.com/projects/rome-jubilee-centro-storico",
+    "https://italian-estate.com/projects/scalea-calabria-coastal",
+    "https://italian-estate.com/projects/taormina-sea-view-residence",
+    "https://italian-estate.com/projects/tranio-puglia-masseria-new",
+    "https://italian-estate.com/projects/tranio-rome-eur-apartment",
+    "https://italian-estate.com/projects/tranio-sicily-noto-stone-house",
+    "https://italian-estate.com/projects/valle-d-itria-trulli-restoration",
     "https://italian-estate.com/terms",
     "https://italian-estate.com/tier-entry",
     "https://italian-estate.com/tier-luxury",
@@ -998,6 +1042,271 @@
       "url": "https://italian-estate.com/compare/naples-vs-rome-property-investment",
       "channel": "google",
       "at": "2026-06-17T20:31:26.271Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/meli-navigli-milan",
+      "channel": "google",
+      "at": "2026-06-17T20:48:50.336Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/feel-uptown-milan",
+      "channel": "google",
+      "at": "2026-06-17T20:48:50.336Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/ostuni-rascina-villa-construction",
+      "channel": "google",
+      "at": "2026-06-17T20:48:50.336Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/como-lakefront-residence",
+      "channel": "google",
+      "at": "2026-06-17T20:48:50.336Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/versilia",
+      "channel": "google",
+      "at": "2026-06-17T20:48:50.336Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-milan-property",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-sardinia-property",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-liguria-property",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/get-shortlist",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/italy-property-consultation",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-tuscany-property",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-puglia-property",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-lake-como-property",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-sicily-property",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/tier-entry",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/tier-mid",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/tier-luxury",
+      "channel": "google",
+      "at": "2026-06-17T20:58:06.031Z"
+    },
+    {
+      "url": "https://italian-estate.com/invest-rome-property",
+      "channel": "google",
+      "at": "2026-06-17T21:03:30.479Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/maciachini-urban-retreat",
+      "channel": "google",
+      "at": "2026-06-17T21:11:52.958Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/bliss-uptown-milan",
+      "channel": "google",
+      "at": "2026-06-17T21:11:52.958Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/ostuni-lamia-chiavi-in-mano",
+      "channel": "google",
+      "at": "2026-06-17T21:11:52.958Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/damico-gruppo",
+      "channel": "google",
+      "at": "2026-06-17T21:11:52.958Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/ostuni-domus",
+      "channel": "google",
+      "at": "2026-06-17T21:11:52.958Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/naples",
+      "channel": "google",
+      "at": "2026-06-17T21:25:19.790Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/bari",
+      "channel": "google",
+      "at": "2026-06-17T21:25:19.790Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/turin",
+      "channel": "google",
+      "at": "2026-06-17T21:25:19.790Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/coima-guido-reni-rome",
+      "channel": "google",
+      "at": "2026-06-17T21:25:19.790Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/lecce-urbs20-villas",
+      "channel": "google",
+      "at": "2026-06-17T21:25:19.790Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/carovigno",
+      "channel": "google",
+      "at": "2026-06-17T21:39:00.561Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/noto",
+      "channel": "google",
+      "at": "2026-06-17T21:39:00.561Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/monte-argentario",
+      "channel": "google",
+      "at": "2026-06-17T21:39:00.561Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/carovigno-villa-new-build",
+      "channel": "google",
+      "at": "2026-06-17T21:39:00.561Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/noto-baroque-masseria",
+      "channel": "google",
+      "at": "2026-06-17T21:39:00.561Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/scalea",
+      "channel": "google",
+      "at": "2026-06-17T21:46:58.858Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/coima",
+      "channel": "google",
+      "at": "2026-06-17T21:46:58.858Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/monte-argentario-sea-view",
+      "channel": "google",
+      "at": "2026-06-17T21:46:58.858Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/scalea-calabria-coastal",
+      "channel": "google",
+      "at": "2026-06-17T21:46:58.858Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/coima-olympic-village-milan",
+      "channel": "google",
+      "at": "2026-06-17T21:46:58.858Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/pregio-immobiliare",
+      "channel": "google",
+      "at": "2026-06-17T22:06:11.722Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/ostuni-masseria-pool-apuliadeluxe",
+      "channel": "google",
+      "at": "2026-06-17T22:06:11.722Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/valle-d-itria-trulli-restoration",
+      "channel": "google",
+      "at": "2026-06-17T22:06:11.722Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/tranio-puglia-masseria-new",
+      "channel": "google",
+      "at": "2026-06-17T22:06:11.722Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/cisternino",
+      "channel": "google",
+      "at": "2026-06-17T22:06:11.722Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/taormina-sea-view-residence",
+      "channel": "google",
+      "at": "2026-06-17T22:22:08.905Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/tranio-sicily-noto-stone-house",
+      "channel": "google",
+      "at": "2026-06-17T22:22:08.905Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/chianti-farmhouse-restoration",
+      "channel": "google",
+      "at": "2026-06-17T22:22:08.905Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/coima-via-carcani-trastevere",
+      "channel": "google",
+      "at": "2026-06-17T22:22:08.905Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/frimm",
+      "channel": "google",
+      "at": "2026-06-17T22:22:08.905Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/rome-jubilee-centro-storico",
+      "channel": "google",
+      "at": "2026-06-17T22:36:45.652Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/tranio-rome-eur-apartment",
+      "channel": "google",
+      "at": "2026-06-17T22:36:45.652Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/bellagio-villa-lake-view",
+      "channel": "google",
+      "at": "2026-06-17T22:36:45.652Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/porto-cervo-villa-development",
+      "channel": "google",
+      "at": "2026-06-17T22:36:45.652Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/florence-oltrarno-apartment",
+      "channel": "google",
+      "at": "2026-06-17T22:36:45.652Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
