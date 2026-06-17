@@ -1,12 +1,13 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-17T23:56:14.033Z",
+  "updatedAt": "2026-06-17T23:59:53.240Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
     "https://italian-estate.com/areas",
     "https://italian-estate.com/areas/alba",
     "https://italian-estate.com/areas/arezzo",
+    "https://italian-estate.com/areas/assisi",
     "https://italian-estate.com/areas/bari",
     "https://italian-estate.com/areas/bellagio",
     "https://italian-estate.com/areas/bologna",
@@ -28,6 +29,7 @@
     "https://italian-estate.com/areas/ostuni",
     "https://italian-estate.com/areas/palermo",
     "https://italian-estate.com/areas/parma",
+    "https://italian-estate.com/areas/perugia",
     "https://italian-estate.com/areas/polignano-a-mare",
     "https://italian-estate.com/areas/portofino",
     "https://italian-estate.com/areas/rome-centro-storico",
@@ -56,6 +58,7 @@
     "https://italian-estate.com/compare/lake-como-vs-liguria-property",
     "https://italian-estate.com/compare/milan-vs-rome-property-investment",
     "https://italian-estate.com/compare/naples-vs-rome-property-investment",
+    "https://italian-estate.com/compare/perugia-vs-assisi-property",
     "https://italian-estate.com/compare/puglia-vs-tuscany-property",
     "https://italian-estate.com/compare/sicily-vs-puglia-property",
     "https://italian-estate.com/compare/turin-vs-milan-property",
@@ -144,6 +147,7 @@
     "https://italian-estate.com/guides/tuscany-inland-property-guide",
     "https://italian-estate.com/guides/tuscany-property-investment-guide",
     "https://italian-estate.com/guides/uk-tax-italy-holiday-home",
+    "https://italian-estate.com/guides/umbria-property-investment-guide",
     "https://italian-estate.com/guides/us-tax-italy-rental-property",
     "https://italian-estate.com/guides/vineyard-property-investment-italy-guide",
     "https://italian-estate.com/invest-lake-como-property",
@@ -166,6 +170,7 @@
     "https://italian-estate.com/projects/amalfi-ravello-villa",
     "https://italian-estate.com/projects/arezzo-centro-apartments",
     "https://italian-estate.com/projects/aria-ex-macello-milan",
+    "https://italian-estate.com/projects/assisi-historic-apartments",
     "https://italian-estate.com/projects/bellagio-villa-lake-view",
     "https://italian-estate.com/projects/bliss-uptown-milan",
     "https://italian-estate.com/projects/bologna-bloom-living",
@@ -198,6 +203,7 @@
     "https://italian-estate.com/projects/ostuni-rascina-villa-construction",
     "https://italian-estate.com/projects/ostuni-trulli-modern-villa",
     "https://italian-estate.com/projects/palermo-centro-renovation",
+    "https://italian-estate.com/projects/perugia-centro-apartments",
     "https://italian-estate.com/projects/porto-cervo-villa-development",
     "https://italian-estate.com/projects/portofino-apartment-renovation",
     "https://italian-estate.com/projects/prandina-navigli-milan",
@@ -1613,6 +1619,36 @@
       "url": "https://italian-estate.com/projects/val-dorcia-agriturismo-farmhouse",
       "channel": "google",
       "at": "2026-06-17T23:56:14.033Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/umbria-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-17T23:59:53.240Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/perugia",
+      "channel": "google",
+      "at": "2026-06-17T23:59:53.240Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/assisi",
+      "channel": "google",
+      "at": "2026-06-17T23:59:53.240Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/perugia-vs-assisi-property",
+      "channel": "google",
+      "at": "2026-06-17T23:59:53.240Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/perugia-centro-apartments",
+      "channel": "google",
+      "at": "2026-06-17T23:59:53.240Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/assisi-historic-apartments",
+      "channel": "google",
+      "at": "2026-06-17T23:59:53.240Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
