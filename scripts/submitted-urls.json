@@ -1,10 +1,11 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-17T23:46:35.651Z",
+  "updatedAt": "2026-06-17T23:51:43.437Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
     "https://italian-estate.com/areas",
+    "https://italian-estate.com/areas/alba",
     "https://italian-estate.com/areas/bari",
     "https://italian-estate.com/areas/bellagio",
     "https://italian-estate.com/areas/bologna",
@@ -15,6 +16,7 @@
     "https://italian-estate.com/areas/costa-smeralda",
     "https://italian-estate.com/areas/florence",
     "https://italian-estate.com/areas/genoa",
+    "https://italian-estate.com/areas/langhe",
     "https://italian-estate.com/areas/lecce",
     "https://italian-estate.com/areas/lucca",
     "https://italian-estate.com/areas/milan-navigli",
@@ -53,6 +55,7 @@
     "https://italian-estate.com/compare/naples-vs-rome-property-investment",
     "https://italian-estate.com/compare/puglia-vs-tuscany-property",
     "https://italian-estate.com/compare/sicily-vs-puglia-property",
+    "https://italian-estate.com/compare/turin-vs-milan-property",
     "https://italian-estate.com/compare/tuscany-vs-lake-como-property",
     "https://italian-estate.com/compare/venice-vs-milan-property-investment",
     "https://italian-estate.com/contact",
@@ -127,6 +130,8 @@
     "https://italian-estate.com/guides/mistakes-foreign-buyers-italy",
     "https://italian-estate.com/guides/non-resident-mortgage-italy",
     "https://italian-estate.com/guides/notaio-italy-property-role",
+    "https://italian-estate.com/guides/piedmont-property-investment-guide",
+    "https://italian-estate.com/guides/piedmont-property-investment-guide/[@",
     "https://italian-estate.com/guides/power-of-attorney-property-italy",
     "https://italian-estate.com/guides/puglia-property-investment-guide",
     "https://italian-estate.com/guides/rome-property-investment-guide",
@@ -172,6 +177,7 @@
     "https://italian-estate.com/projects/genoa-waterfront-apartments",
     "https://italian-estate.com/projects/innesto-milan-social-housing",
     "https://italian-estate.com/projects/inspire-uptown-milan",
+    "https://italian-estate.com/projects/langhe-barolo-vineyard-property",
     "https://italian-estate.com/projects/lecce-urbs20-villas",
     "https://italian-estate.com/projects/lendlease-mind-milan",
     "https://italian-estate.com/projects/lucca-villa-historic-renovation",
@@ -203,6 +209,7 @@
     "https://italian-estate.com/projects/tranio-puglia-masseria-new",
     "https://italian-estate.com/projects/tranio-rome-eur-apartment",
     "https://italian-estate.com/projects/tranio-sicily-noto-stone-house",
+    "https://italian-estate.com/projects/turin-crocetta-apartments",
     "https://italian-estate.com/projects/unapavia-pavia-residential",
     "https://italian-estate.com/projects/valle-d-itria-trulli-restoration",
     "https://italian-estate.com/terms",
@@ -1535,6 +1542,41 @@
       "url": "https://italian-estate.com/projects/rapallo-sea-view-apartments",
       "channel": "google",
       "at": "2026-06-17T23:46:35.651Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/piedmont-property-investment-guide/[@",
+      "channel": "google",
+      "at": "2026-06-17T23:51:37.303Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/piedmont-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-17T23:51:43.437Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/alba",
+      "channel": "google",
+      "at": "2026-06-17T23:51:43.437Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/langhe",
+      "channel": "google",
+      "at": "2026-06-17T23:51:43.437Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/turin-vs-milan-property",
+      "channel": "google",
+      "at": "2026-06-17T23:51:43.437Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/turin-crocetta-apartments",
+      "channel": "google",
+      "at": "2026-06-17T23:51:43.437Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/langhe-barolo-vineyard-property",
+      "channel": "google",
+      "at": "2026-06-17T23:51:43.437Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
