@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-17T22:41:10.175Z",
+  "updatedAt": "2026-06-17T22:48:04.412Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -51,6 +51,7 @@
     "https://italian-estate.com/developers/apulia-deluxe",
     "https://italian-estate.com/developers/coima",
     "https://italian-estate.com/developers/damico-gruppo",
+    "https://italian-estate.com/developers/engel-volkers-italy",
     "https://italian-estate.com/developers/frimm",
     "https://italian-estate.com/developers/lendlease",
     "https://italian-estate.com/developers/near-milan",
@@ -146,11 +147,13 @@
     "https://italian-estate.com/projects/coima-olympic-village-milan",
     "https://italian-estate.com/projects/coima-via-carcani-trastevere",
     "https://italian-estate.com/projects/como-lakefront-residence",
+    "https://italian-estate.com/projects/costa-smeralda-apartment",
     "https://italian-estate.com/projects/feel-uptown-milan",
     "https://italian-estate.com/projects/florence-oltrarno-apartment",
     "https://italian-estate.com/projects/inspire-uptown-milan",
     "https://italian-estate.com/projects/lecce-urbs20-villas",
     "https://italian-estate.com/projects/lendlease-mind-milan",
+    "https://italian-estate.com/projects/lucca-villa-historic-renovation",
     "https://italian-estate.com/projects/maciachini-urban-retreat",
     "https://italian-estate.com/projects/meli-navigli-milan",
     "https://italian-estate.com/projects/monte-argentario-sea-view",
@@ -160,9 +163,12 @@
     "https://italian-estate.com/projects/ostuni-new-villa-pool-470k",
     "https://italian-estate.com/projects/ostuni-rascina-villa-construction",
     "https://italian-estate.com/projects/ostuni-trulli-modern-villa",
+    "https://italian-estate.com/projects/palermo-centro-renovation",
     "https://italian-estate.com/projects/porto-cervo-villa-development",
+    "https://italian-estate.com/projects/portofino-apartment-renovation",
     "https://italian-estate.com/projects/prandina-navigli-milan",
     "https://italian-estate.com/projects/rome-jubilee-centro-storico",
+    "https://italian-estate.com/projects/sanremo-sea-view-apartments",
     "https://italian-estate.com/projects/scalea-calabria-coastal",
     "https://italian-estate.com/projects/siena-country-villa-pool",
     "https://italian-estate.com/projects/sorrento-coastal-apartment",
@@ -1343,6 +1349,36 @@
       "url": "https://italian-estate.com/developers/lendlease",
       "channel": "google",
       "at": "2026-06-17T22:41:10.175Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/lucca-villa-historic-renovation",
+      "channel": "google",
+      "at": "2026-06-17T22:48:04.412Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/portofino-apartment-renovation",
+      "channel": "google",
+      "at": "2026-06-17T22:48:04.412Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/sanremo-sea-view-apartments",
+      "channel": "google",
+      "at": "2026-06-17T22:48:04.412Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/palermo-centro-renovation",
+      "channel": "google",
+      "at": "2026-06-17T22:48:04.412Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/costa-smeralda-apartment",
+      "channel": "google",
+      "at": "2026-06-17T22:48:04.412Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/engel-volkers-italy",
+      "channel": "google",
+      "at": "2026-06-17T22:48:04.412Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
