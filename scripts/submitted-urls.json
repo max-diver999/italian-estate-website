@@ -1,11 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-17T23:51:43.437Z",
+  "updatedAt": "2026-06-17T23:56:14.033Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
     "https://italian-estate.com/areas",
     "https://italian-estate.com/areas/alba",
+    "https://italian-estate.com/areas/arezzo",
     "https://italian-estate.com/areas/bari",
     "https://italian-estate.com/areas/bellagio",
     "https://italian-estate.com/areas/bologna",
@@ -39,9 +40,11 @@
     "https://italian-estate.com/areas/syracuse",
     "https://italian-estate.com/areas/taormina",
     "https://italian-estate.com/areas/turin",
+    "https://italian-estate.com/areas/val-dorcia",
     "https://italian-estate.com/areas/valle-d-itria",
     "https://italian-estate.com/areas/versilia",
     "https://italian-estate.com/compare",
+    "https://italian-estate.com/compare/arezzo-vs-siena-property",
     "https://italian-estate.com/compare/bologna-vs-florence-property",
     "https://italian-estate.com/compare/florence-vs-rome-property-investment",
     "https://italian-estate.com/compare/florence-vs-siena-property",
@@ -138,6 +141,7 @@
     "https://italian-estate.com/guides/sardinia-property-investment-guide",
     "https://italian-estate.com/guides/short-term-rental-rules-italy",
     "https://italian-estate.com/guides/sicily-property-investment-guide",
+    "https://italian-estate.com/guides/tuscany-inland-property-guide",
     "https://italian-estate.com/guides/tuscany-property-investment-guide",
     "https://italian-estate.com/guides/uk-tax-italy-holiday-home",
     "https://italian-estate.com/guides/us-tax-italy-rental-property",
@@ -160,6 +164,7 @@
     "https://italian-estate.com/privacy-policy",
     "https://italian-estate.com/projects",
     "https://italian-estate.com/projects/amalfi-ravello-villa",
+    "https://italian-estate.com/projects/arezzo-centro-apartments",
     "https://italian-estate.com/projects/aria-ex-macello-milan",
     "https://italian-estate.com/projects/bellagio-villa-lake-view",
     "https://italian-estate.com/projects/bliss-uptown-milan",
@@ -211,6 +216,7 @@
     "https://italian-estate.com/projects/tranio-sicily-noto-stone-house",
     "https://italian-estate.com/projects/turin-crocetta-apartments",
     "https://italian-estate.com/projects/unapavia-pavia-residential",
+    "https://italian-estate.com/projects/val-dorcia-agriturismo-farmhouse",
     "https://italian-estate.com/projects/valle-d-itria-trulli-restoration",
     "https://italian-estate.com/terms",
     "https://italian-estate.com/tier-entry",
@@ -1577,6 +1583,36 @@
       "url": "https://italian-estate.com/projects/langhe-barolo-vineyard-property",
       "channel": "google",
       "at": "2026-06-17T23:51:43.437Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/tuscany-inland-property-guide",
+      "channel": "google",
+      "at": "2026-06-17T23:56:14.033Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/arezzo",
+      "channel": "google",
+      "at": "2026-06-17T23:56:14.033Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/val-dorcia",
+      "channel": "google",
+      "at": "2026-06-17T23:56:14.033Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/arezzo-vs-siena-property",
+      "channel": "google",
+      "at": "2026-06-17T23:56:14.033Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/arezzo-centro-apartments",
+      "channel": "google",
+      "at": "2026-06-17T23:56:14.033Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/val-dorcia-agriturismo-farmhouse",
+      "channel": "google",
+      "at": "2026-06-17T23:56:14.033Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
