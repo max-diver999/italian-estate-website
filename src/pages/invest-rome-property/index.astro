@@ -1,0 +1,114 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
+
+const faqItems = [
+  {
+    question: 'Can foreigners buy property in Rome?',
+    answer: 'Yes. EU citizens purchase on equal terms with Italian residents. Americans, British, and most other non-EU nationals buy after reciprocity confirmation at the notary. Residency is not required for ownership but affects registration tax and IMU.',
+  },
+  {
+    question: 'What budget do I need for Rome property in 2026?',
+    answer: 'Peripheral well-connected apartments often start near €250k–400k. Prime Trastevere or Prati two-bedrooms frequently exceed €600k–900k. Centro storico trophy stock can surpass €1M. Budget 10–12% closing costs on a second home.',
+  },
+  {
+    question: 'How is Jubilee 2026 affecting Rome property demand?',
+    answer: 'Gate-away data cited in our Rome guide shows foreign enquiries up 44.7% year-over-year, led by US and UK buyers. Jubilee lifts tourism and STR demand in walkable districts but does not override heritage permits or condominium STR bans.',
+  },
+  {
+    question: 'What rental yields are realistic in Rome?',
+    answer: 'Prime districts often deliver 2.5–3.5% gross on long-term leases and 3.5–5% on compliant short-term rentals before IMU, management, and tax. Centro storico yields compress further; peripheral Ostiense and EUR can reach 4–5% gross residential.',
+  },
+  {
+    question: 'Is Rome better for yield or capital preservation?',
+    answer: 'Rome skews capital preservation, diplomatic rental, and Jubilee-linked STR more than pure yield. Buyers needing 6%+ gross usually compare Puglia or Sicily after we map Rome numbers in consultation.',
+  },
+  {
+    question: 'What due diligence matters most in Rome centro storico?',
+    answer: 'Abusi edilizi (unauthorized works), Soprintendenza heritage approvals, condominium regolamento on affitti brevi, and CIN registration path. Never skip conformità urbanistica review before compromesso on Municipio I stock.',
+  },
+];
+---
+<BaseLayout
+  title="Invest in Rome Property: Free Shortlist 2026"
+  description="Independent Rome property shortlist for foreign buyers. Trastevere, Prati, centro storico — Jubilee 2026 demand, heritage and CIN notes. Review within one day."
+>
+  <section class="site-container py-12 md:py-16 max-w-3xl">
+    <header class="mb-8">
+      <span class="badge-pill mb-4">Rome · Commercial</span>
+      <h1 class="mb-4">Invest in Rome property</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        Trastevere, Prati, Ostiense, and centro storico — vetted shortlist with heritage, STR, and Jubilee 2026 demand notes for foreign buyers.
+      </p>
+    </header>
+
+    <div class="prose mb-10 text-[var(--color-muted)]">
+      <p><strong>Quick answer:</strong> Rome prime districts trade at €3,500–6,500/m² with gross yields of 2.5–5% depending on strategy. Jubilee 2026 is lifting foreign enquiry volumes 44.7% according to Gate-away data. Success requires modelling Soprintendenza rules in centro storico, mandatory CIN short-term rental licensing, IMU on second homes, and abusi edilizi due diligence before compromesso.</p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Who this is for</h2>
+      <ul>
+        <li>US and UK buyers targeting Jubilee-linked tourism or euro-zone capital allocation</li>
+        <li>Diplomats and EU professionals seeking Prati or EUR long-term rental demand</li>
+        <li>STR operators willing to verify CIN, CIR, and condominium regolamento before purchase</li>
+        <li>Investors comparing Rome vs Milan on liquidity, yield, and compliance friction</li>
+      </ul>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Market snapshot 2026</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>District</th><th>€/m² (indicative)</th><th>Gross yield</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Centro storico (Municipio I)</td><td>€5,500–9,000</td><td>1.5–4%</td></tr>
+          <tr><td>Trastevere / Monti</td><td>€4,800–7,000</td><td>2.5–4%</td></tr>
+          <tr><td>Prati / Vatican corridor</td><td>€4,500–6,500</td><td>2.5–3.5%</td></tr>
+          <tr><td>Ostiense / EUR</td><td>€2,800–4,200</td><td>3.5–5%</td></tr>
+        </tbody>
+      </table>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Buyer scenarios we shortlist most often</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Profile</th><th>Budget</th><th>Typical match</th><th>Hold</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>US lifestyle + Jubilee STR</td><td>€600k–1.2M</td><td>Trastevere 2-bed (CIN-ready)</td><td>8–12 years</td></tr>
+          <tr><td>EU diplomat / LT rent</td><td>€450k–750k</td><td>Prati furnished apartment</td><td>5–10 years</td></tr>
+          <tr><td>Value gentrification</td><td>€300k–500k</td><td>Ostiense resale + light reno</td><td>7–10 years</td></tr>
+        </tbody>
+      </table>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Jubilee 2026 and rental planning</h2>
+      <p>
+        The Holy Year cycle is concentrating visitor flows through Rome's walkable core. Licensed short-term units near Vatican corridors, Campo de' Fiori, and Monti can capture premium nightly rates in 2026–2027, but only where condominiums permit tourist stays and CIN registration is transferable or obtainable pre-marketing.
+      </p>
+      <p>
+        Professional operators with three or more listings face additional SCIA and business registration obligations from 2026. Underwrite Jubilee uplift as a temporary demand spike, not a permanent yield floor, and keep long-term tenant fallback in peripheral districts with metro access.
+      </p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Rome-specific risks</h2>
+      <ul>
+        <li>Abusi edilizi on terraces and internal subdivisions in older palazzi</li>
+        <li>Soprintendenza delays adding 4–9 months and 25–45% to renovation budgets</li>
+        <li>Condominium bans on affitti brevi in dense Municipio I buildings</li>
+        <li>Missing CIN fines up to €8,000 and platform delisting risk</li>
+        <li>Compressed yields in centro storico relative to headline tourism branding</li>
+      </ul>
+
+      <p>Guides: <a href="/guides/rome-property-investment-guide/">Rome investment guide</a> · <a href="/areas/rome-centro-storico/">Centro storico area</a> · <a href="/guides/heritage-restricted-property-italy/">Heritage restrictions</a> · <a href="/guides/italy-holiday-let-licensing/">Holiday let licensing</a> · <a href="/compare/milan-vs-rome-property-investment/">Milan vs Rome</a> · <a href="/compare/florence-vs-rome-property-investment/">Florence vs Rome</a> · <a href="/compare/naples-vs-rome-property-investment/">Naples vs Rome</a></p>
+    </div>
+
+    <LeadForm
+      title="Get your Rome property shortlist"
+      subtitle="Trastevere · Prati · Ostiense · centro storico"
+      context="Invest Rome property landing"
+    />
+
+    <CommercialSharedSections />
+
+    <FaqBlock items={faqItems} />
+    <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
+  </section>
+</BaseLayout>
