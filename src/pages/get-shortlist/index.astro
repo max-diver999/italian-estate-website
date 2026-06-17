@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 import CommercialBudgetLadder from '../../components/CommercialBudgetLadder.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
 
 const faqItems = [
   {
@@ -11,11 +12,19 @@ const faqItems = [
   },
   {
     question: 'Which Italian regions can you shortlist?',
-    answer: 'Tuscany, Puglia, Milan/Lombardy, Lake Como, Sicily, Sardinia, Liguria, and Rome/Lazio. Tell us your goal (yield, holiday home, off-plan, relocation) and we filter accordingly.',
+    answer: 'Tuscany, Puglia, Milan/Lombardy, Lake Como, Liguria, Sardinia, Sicily, and Rome/Lazio. Tell us your goal (yield, holiday home, off-plan, relocation) and we filter accordingly.',
   },
   {
     question: 'Do you sell property directly?',
     answer: 'No. Italian Estate publishes independent research. When you request a shortlist we may introduce a licensed Italian agency or developer partner after you opt in. Always verify cadastral records, IMU, and STR rules before any deposit.',
+  },
+  {
+    question: 'How is this different from Idealista or Gate-away?',
+    answer: 'Portals optimise for volume. We publish due diligence guides, project reviews, and area benchmarks, then match a small set of options to your budget rather than sending every listing in a province.',
+  },
+  {
+    question: 'Can I request off-plan Milan or Puglia villa projects?',
+    answer: 'Yes. Reference projects like Inspire UpTown Milan, Prandina Navigli, or Ostuni pool villas are on our site. We connect you to partners only after you review published risk notes and milestone structures.',
   },
 ];
 ---
@@ -35,8 +44,25 @@ const faqItems = [
 
     <div class="prose mb-10 text-[var(--color-muted)]">
       <p><strong>Quick answer:</strong> Foreign buyers can own freehold residential property across Italy subject to reciprocity checks at the notary. Entry from roughly €150k in Puglia or Sicily countryside; Milan and Lake Como start higher. Budget 10–12% on top of price for taxes, notary, and registration on a second home.</p>
-      <p>Regional landings: <a href="/invest-tuscany-property/">Invest Tuscany</a> · <a href="/invest-puglia-property/">Invest Puglia</a> · <a href="/invest-lake-como-property/">Invest Lake Como</a> · <a href="/invest-sicily-property/">Invest Sicily</a> · <a href="/italy-property-consultation/">Cross-region consultation</a></p>
-      <p>Research: <a href="/guides/buy-property-italy-foreigner/">Buy property in Italy as a foreigner</a> · <a href="/guides/cost-of-buying-property-italy/">Closing costs</a> · <a href="/guides/due-diligence-italy-property/">Due diligence</a></p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Regional commercial landings</h2>
+      <ul>
+        <li><a href="/invest-tuscany-property/">Invest Tuscany</a> — Chianti, Florence, Lucca</li>
+        <li><a href="/invest-puglia-property/">Invest Puglia</a> — Ostuni, Valle d'Itria, Salento</li>
+        <li><a href="/invest-milan-property/">Invest Milan</a> — off-plan and corporate rental</li>
+        <li><a href="/invest-lake-como-property/">Invest Lake Como</a> — lakefront and hillside</li>
+        <li><a href="/invest-sicily-property/">Invest Sicily</a> — Taormina, Syracuse, Palermo</li>
+        <li><a href="/invest-sardinia-property/">Invest Sardinia</a> — Costa Smeralda and coast</li>
+        <li><a href="/invest-liguria-property/">Invest Liguria</a> — Riviera vs Como value</li>
+        <li><a href="/italy-property-consultation/">Cross-region consultation</a></li>
+      </ul>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Budget tiers</h2>
+      <p>
+        Browse by ticket size: <a href="/tier-entry/">Under €200k</a> · <a href="/tier-mid/">€200k–€500k</a> · <a href="/tier-luxury/">Luxury €500k+</a>
+      </p>
+
+      <p>Research: <a href="/guides/buy-property-italy-foreigner/">Buy property in Italy as a foreigner</a> · <a href="/guides/cost-of-buying-property-italy/">Closing costs</a> · <a href="/guides/due-diligence-italy-property/">Due diligence</a> · <a href="/guides/best-regions-invest-italy-property-2026/">Best regions 2026</a></p>
     </div>
 
     <LeadForm
@@ -44,6 +70,8 @@ const faqItems = [
       subtitle="Tuscany · Puglia · Milan · Lake Como · Sicily"
       context="Get shortlist page"
     />
+
+    <CommercialSharedSections />
 
     <FaqBlock items={faqItems} />
 

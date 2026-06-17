@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
 
 const faqItems = [
   {
@@ -24,6 +25,10 @@ const faqItems = [
     question: 'Is Tuscany better for lifestyle or yield?',
     answer: 'Tuscany skews lifestyle and capital preservation with selective yield in secondary towns. Compare net returns using our gross vs net yield guide and factor 10–12% purchase costs on a second home.',
   },
+  {
+    question: 'Should I buy in Florence or Chianti for rental income?',
+    answer: 'Florence UNESCO core restricts new STR licences and compresses yields to 2–3.5% long-term. Chianti and Lucca province villas often deliver 4–6% gross on registered holiday lets with higher operational work and pool maintenance.',
+  },
 ];
 ---
 <BaseLayout
@@ -40,14 +45,17 @@ const faqItems = [
     </header>
 
     <div class="prose mb-10 text-[var(--color-muted)]">
-      <p><strong>Quick answer:</strong> Tuscany asking prices average €1,500–4,000/m² in countryside communes and €4,000–6,000/m² in Florence prime. Foreign buyers focus on Chianti, Val d'Orcia, Lucca province, and Florence Oltrarno. Budget 9% registration tax on second homes plus notary fees.</p>
+      <p><strong>Quick answer:</strong> Tuscany asking prices average €1,500–4,000/m² in countryside communes and €4,000–6,000/m² in Florence prime. Foreign buyers focus on Chianti, Val d'Orcia, Lucca province, and Florence Oltrarno. Budget 9% registration tax on second homes plus notary fees unless prima casa conditions apply.</p>
+
       <h2 class="text-xl text-[var(--color-ink)]">Who this is for</h2>
       <ul>
-        <li>First-time Italy buyers comparing Tuscany vs Puglia or Lake Como</li>
-        <li>Holiday-home owners planning regulated short-term lets</li>
-        <li>Investors seeking farmhouse restoration with heritage checks</li>
+        <li>First-time Italy buyers comparing Tuscany vs Puglia or Lake Como on total cost and yield</li>
+        <li>Holiday-home owners planning regulated short-term lets with CIN and IMU modeled correctly</li>
+        <li>Investors seeking farmhouse restoration with Soprintendenza and landscape checks completed first</li>
+        <li>US and UK buyers targeting walkable walled cities or pool villas within 45 minutes of Pisa airport</li>
       </ul>
-      <h2 class="text-xl text-[var(--color-ink)]">Market snapshot</h2>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Market snapshot 2026</h2>
       <table class="w-full text-sm mb-6">
         <thead>
           <tr><th>Area</th><th>€/m² (indicative)</th><th>Gross yield</th></tr>
@@ -59,7 +67,37 @@ const faqItems = [
           <tr><td>Siena province</td><td>€2,000–3,800</td><td>4–5%</td></tr>
         </tbody>
       </table>
-      <p>Deep dives: <a href="/guides/tuscany-property-investment-guide/">Tuscany investment guide</a> · <a href="/areas/chianti/">Chianti area</a> · <a href="/areas/lucca/">Lucca</a> · <a href="/guides/heritage-restricted-property-italy/">Heritage restrictions</a> · <a href="/compare/puglia-vs-tuscany-property/">Puglia vs Tuscany</a></p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Buyer scenarios we shortlist most often</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Profile</th><th>Budget</th><th>Typical match</th><th>Hold period</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>UK lifestyle family</td><td>€400k–700k</td><td>Lucca hills villa with pool</td><td>10+ years</td></tr>
+          <tr><td>EU yield investor</td><td>€250k–450k</td><td>Siena province casale + STR</td><td>7–10 years</td></tr>
+          <tr><td>US second home</td><td>€500k–1.2M</td><td>Chianti farmhouse restoration</td><td>12+ years</td></tr>
+        </tbody>
+      </table>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Why Tuscany still attracts foreign capital</h2>
+      <p>
+        Tuscany remains the default global brand for Italian countryside living. Gate-away and agency data consistently show British, German, and American buyers ranking Florence, Chianti, and Lucca among top enquiry regions even as Puglia leads pure yield headlines. Scarcity of legal building plots inside historic centres supports long-term capital preservation on well-chosen stock.
+      </p>
+      <p>
+        The trade-off is operational friction: heritage rules, STR licence caps in UNESCO cores, and renovation timelines on stone farmhouses. Buyers who underwrite Tuscany like a bond fund (low yield, high brand) succeed. Buyers who need 8% net cash flow usually pivot to Puglia or Sicily after we map numbers in a consultation.
+      </p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Risks and red flags in Tuscany</h2>
+      <ul>
+        <li>Condominium bans on tourist stays in Florence centro without documented CIN transfer</li>
+        <li>Agricultural land ties on casali limiting pool or extension works</li>
+        <li>Soprintendenza delays on visible exterior changes in walled towns</li>
+        <li>Undocumented pool or terrace abusi on rural listings marketed as turnkey</li>
+        <li>Overpriced "Chianti view" stock with no paved access or unreliable broadband</li>
+      </ul>
+
+      <p>Deep dives: <a href="/guides/tuscany-property-investment-guide/">Tuscany investment guide</a> · <a href="/areas/chianti/">Chianti area</a> · <a href="/areas/lucca/">Lucca</a> · <a href="/areas/versilia/">Versilia coast</a> · <a href="/guides/heritage-restricted-property-italy/">Heritage restrictions</a> · <a href="/compare/puglia-vs-tuscany-property/">Puglia vs Tuscany</a> · <a href="/compare/tuscany-vs-lake-como-property/">Tuscany vs Lake Como</a></p>
     </div>
 
     <LeadForm
@@ -67,6 +105,9 @@ const faqItems = [
       subtitle="Budget · Chianti / Florence / Lucca · resale or renovation"
       context="Invest Tuscany property landing"
     />
+
+    <CommercialSharedSections />
+
     <FaqBlock items={faqItems} />
     <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
   </section>

@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
 
 const faqItems = [
   {
@@ -24,6 +25,10 @@ const faqItems = [
     question: 'How do you vet Puglia developers?',
     answer: 'We prioritise agencies with documented building permits, escrow-style payment schedules, and site visits. See our Apulia Deluxe and Ostuni project reviews for examples of due diligence questions.',
   },
+  {
+    question: 'Is Puglia better than Sicily for first-time Italy buyers?',
+    answer: 'Puglia leads enquiry volume and has stronger British/US brand recognition. Sicily offers lower entry and higher headline yields with more renovation and seismic risk. We map both in cross-region consultations.',
+  },
 ];
 ---
 <BaseLayout
@@ -41,12 +46,15 @@ const faqItems = [
 
     <div class="prose mb-10 text-[var(--color-muted)]">
       <p><strong>Quick answer:</strong> Puglia remains Italy's highest-intent region for US and UK buyers seeking lifestyle yield. Entry from roughly €150k for inland apartments and €350k for countryside villas with pools. Registration tax is 9% on second homes unless prima casa conditions apply.</p>
+
       <h2 class="text-xl text-[var(--color-ink)]">Who this is for</h2>
       <ul>
-        <li>Buyers comparing Puglia vs Sicily or Tuscany on net yield</li>
-        <li>Remote purchasers needing pool-villa or trulli project diligence</li>
-        <li>STR investors who will register CIN and model IMU correctly</li>
+        <li>Buyers comparing Puglia vs Sicily or Tuscany on net yield after IMU and management</li>
+        <li>Remote purchasers needing pool-villa or trulli project diligence before flying to Brindisi</li>
+        <li>STR investors who will register CIN and model cedolare secca on gross rent, not net portal claims</li>
+        <li>American buyers attracted to wine country aesthetics before Tuscany-level pricing</li>
       </ul>
+
       <h2 class="text-xl text-[var(--color-ink)]">Market snapshot</h2>
       <table class="w-full text-sm mb-6">
         <thead>
@@ -59,7 +67,35 @@ const faqItems = [
           <tr><td>Lecce city</td><td>€1,500–2,800</td><td>4–5%</td></tr>
         </tbody>
       </table>
-      <p>Research: <a href="/guides/puglia-property-investment-guide/">Puglia investment guide</a> · <a href="/areas/ostuni/">Ostuni</a> · <a href="/projects/ostuni-new-villa-pool-470k/">Ostuni villa project</a> · <a href="/developers/apulia-deluxe/">Apulia Deluxe</a> · <a href="/guides/short-term-rental-rules-italy/">STR rules Italy</a></p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Featured projects on italian-estate.com</h2>
+      <ul>
+        <li><a href="/projects/ostuni-new-villa-pool-470k/">Ostuni Domus villa with pool</a> — €470k near completion</li>
+        <li><a href="/projects/ostuni-trulli-modern-villa/">Modern villa + trulli complex</a> — Apulia Deluxe scheme</li>
+        <li><a href="/projects/ostuni-rascina-villa-construction/">Rascina large-plot villa</a> — under construction</li>
+      </ul>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Buyer scenarios</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Profile</th><th>Budget</th><th>Match</th><th>Strategy</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>US lifestyle + STR</td><td>€400k–600k</td><td>Ostuni pool villa</td><td>Peak season STR + personal use</td></tr>
+          <tr><td>UK lock-and-leave</td><td>€280k–450k</td><td>Valle d'Itria trulli</td><td>Registered holiday lets</td></tr>
+          <tr><td>EU yield focus</td><td>€350k–500k</td><td>New-build turnkey</td><td>Manager-led STR</td></tr>
+        </tbody>
+      </table>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Risks specific to Puglia</h2>
+      <ul>
+        <li>Abusivismo on rural pools and terrace extensions without geometric clearance</li>
+        <li>Water well rights vs municipal connection on large plots</li>
+        <li>Seasonal income concentration April–October; winter voids need honest underwriting</li>
+        <li>Trulli restoration permits and cone ownership complexity on heritage stock</li>
+      </ul>
+
+      <p>Research: <a href="/guides/puglia-property-investment-guide/">Puglia investment guide</a> · <a href="/areas/ostuni/">Ostuni</a> · <a href="/areas/valle-d-itria/">Valle d'Itria</a> · <a href="/developers/apulia-deluxe/">Apulia Deluxe</a> · <a href="/guides/short-term-rental-rules-italy/">STR rules Italy</a> · <a href="/compare/sicily-vs-puglia-property/">Sicily vs Puglia</a></p>
     </div>
 
     <LeadForm
@@ -67,6 +103,9 @@ const faqItems = [
       subtitle="Ostuni · Itria Valley · Salento · trulli or villa"
       context="Invest Puglia property landing"
     />
+
+    <CommercialSharedSections />
+
     <FaqBlock items={faqItems} />
     <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
   </section>

@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
+
+const faqItems = [
+  {
+    question: 'Can foreigners buy property in Liguria?',
+    answer: 'Yes under national reciprocity rules. Liguria coastal communes from Sanremo to Portofino attract Swiss, German, and British buyers. Landscape and coastal planning rules are strict near the water.',
+  },
+  {
+    question: 'What is the minimum budget for Liguria coast property?',
+    answer: 'Secondary Riviera towns sometimes offer apartments from €350k–500k. Portofino and prime Cinque Terre adjacency often exceeds €1M. Budget IMU, condominium, and 10–12% closing costs.',
+  },
+  {
+    question: 'Is Liguria better value than Lake Como?',
+    answer: 'Liguria often offers more coastal apartment stock under €1M with direct sea access. Como commands higher lakefront scarcity premiums. See our Lake Como vs Liguria comparison for buyer profiles.',
+  },
+  {
+    question: 'What rental yields are realistic on the Italian Riviera?',
+    answer: 'Seasonal STR in Sanremo or Rapallo can reach 4–6% gross in summer with winter voids. Long-term yields in Genoa urban stock are often 3–4% net. Portofino trophy assets skew to 2–3% gross.',
+  },
+  {
+    question: 'What should I verify before buying in Liguria?',
+    answer: 'Coastal planning overlays, landslide risk on hillside plots, parking deeds in historic centres, and condominium STR rules. Verify CIN path before underwriting holiday-let income.',
+  },
+  {
+    question: 'How does Liguria compare to Tuscany coast (Versilia)?',
+    answer: 'Versilia offers broader sandy beaches and Pisa airport access. Liguria trades on cliff villages and marina culture with tighter building constraints. Many buyers shortlist both in one consultation.',
+  },
+];
+---
+<BaseLayout
+  title="Invest in Liguria Property: Free Shortlist 2026"
+  description="Independent Liguria property shortlist for foreign buyers. Portofino, Sanremo, Rapallo — Riviera apartments and villas. Partner review within one day."
+>
+  <section class="site-container py-12 md:py-16 max-w-3xl">
+    <header class="mb-8">
+      <span class="badge-pill mb-4">Liguria · Commercial</span>
+      <h1 class="mb-4">Invest in Liguria property</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        Italian Riviera apartments, Portofino adjacency, and Genoa urban stock — curated with coastal planning and STR compliance notes.
+      </p>
+    </header>
+
+    <div class="prose mb-10 text-[var(--color-muted)]">
+      <p><strong>Quick answer:</strong> Liguria offers Mediterranean coast exposure often below Lake Como lakefront tickets. Sanremo, Rapallo, and Santa Margherita provide apartment inventory from roughly €3,500–8,000/m² while Portofino and Cinque Terre fringe command trophy premiums with thin liquidity.</p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Who this is for</h2>
+      <ul>
+        <li>Buyers wanting sea views without €2M+ Como lakefront entry</li>
+        <li>Swiss and German families familiar with the French-Italian Riviera corridor</li>
+        <li>STR operators targeting summer cruise and festival demand in Sanremo</li>
+        <li>Investors comparing Liguria vs <a href="/areas/versilia/">Versilia</a> Tuscany coast on access and yield</li>
+      </ul>
+
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Area</th><th>€/m² (indicative)</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Portofino / prime</td><td>€8,000–15,000+</td><td>Trophy liquidity</td></tr>
+          <tr><td>Sanremo / west Riviera</td><td>€3,500–6,000</td><td>STR + events</td></tr>
+          <tr><td>Rapallo / Santa Margherita</td><td>€4,000–7,000</td><td>Marina access</td></tr>
+          <tr><td>Genoa centro</td><td>€2,000–3,500</td><td>Urban long-term</td></tr>
+        </tbody>
+      </table>
+
+      <p>Guides: <a href="/guides/liguria-property-investment-guide/">Liguria investment guide</a> · <a href="/areas/portofino/">Portofino area</a> · <a href="/compare/lake-como-vs-liguria-property/">Como vs Liguria</a> · <a href="/invest-lake-como-property/">Invest Lake Como</a> · <a href="/areas/versilia/">Versilia (Tuscany coast)</a></p>
+    </div>
+
+    <LeadForm
+      title="Get your Liguria property shortlist"
+      subtitle="Riviera · Portofino · Genoa urban"
+      context="Invest Liguria property landing"
+    />
+
+    <CommercialSharedSections />
+
+    <FaqBlock items={faqItems} />
+    <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
+  </section>
+</BaseLayout>

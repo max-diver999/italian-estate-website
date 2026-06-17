@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
+
+const faqItems = [
+  {
+    question: 'Can foreigners buy property in Sardinia?',
+    answer: 'Yes under standard Italian reciprocity rules. Sardinia has no regional foreign-buyer ban. Coastal and Costa Smeralda assets may face landscape vincoli and condominium premium charges.',
+  },
+  {
+    question: 'What budget do I need for Costa Smeralda?',
+    answer: 'Prime Costa Smeralda villas often start above €2M with summer-season income concentration. Secondary Sardinian coast towns offer apartments from €300k–600k with different liquidity profiles.',
+  },
+  {
+    question: 'What yields are realistic in Sardinia?',
+    answer: 'Luxury coastal STR can reach 4–6% gross in peak months but with high management costs and winter voids. Long-term yields in Cagliari or Olbia fringe are often 3–4% net.',
+  },
+  {
+    question: 'How does Sardinia compare to Puglia for investors?',
+    answer: 'Puglia leads enquiry volume and offers higher headline yields at lower tickets. Sardinia trades on scarcity, yacht-season branding, and HNW resale pools. See our regional guides side by side in consultation.',
+  },
+  {
+    question: 'What due diligence matters on Sardinian coast stock?',
+    answer: 'Verify landscape constraints, water access on rural plots, short-term rental licensing with the comune, and condominium rules in resort buildings. Coastal erosion and planning overlays affect some beaches.',
+  },
+  {
+    question: 'Is Sardinia good for year-round living?',
+    answer: 'Cagliari and northern coast towns support year-round services. Pure Costa Smeralda seasonality is summer-heavy; buyers should model personal use versus rental income honestly.',
+  },
+];
+---
+<BaseLayout
+  title="Invest in Sardinia Property: Free Shortlist 2026"
+  description="Independent Sardinia property shortlist for foreign buyers. Costa Smeralda, Cagliari, Olbia coast — luxury and value options. Partner review within one day."
+>
+  <section class="site-container py-12 md:py-16 max-w-3xl">
+    <header class="mb-8">
+      <span class="badge-pill mb-4">Sardinia · Commercial</span>
+      <h1 class="mb-4">Invest in Sardinia property</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        Costa Smeralda luxury, Cagliari urban stock, and northern coast value — with seasonality and compliance notes for foreign buyers.
+      </p>
+    </header>
+
+    <div class="prose mb-10 text-[var(--color-muted)]">
+      <p><strong>Quick answer:</strong> Sardinia splits into trophy Costa Smeralda (€2M+ villas, yacht-season demand) and broader coastal value markets (€300k–800k apartments). Foreign buyers are often German, Swiss, and Italian HNW families seeking privacy and marina access rather than maximum yield.</p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Who this is for</h2>
+      <ul>
+        <li>HNW buyers comparing Sardinia vs Lake Como or Liguria for coastal luxury</li>
+        <li>Owners planning selective summer STR with marina and golf adjacency</li>
+        <li>Investors accepting 3–5% gross on premium coast with capital preservation focus</li>
+      </ul>
+
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Area</th><th>Entry (indicative)</th><th>Gross yield</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Costa Smeralda</td><td>€2M+ villas</td><td>3–5%</td></tr>
+          <tr><td>Alghero / north coast</td><td>€300k–700k</td><td>4–6%</td></tr>
+          <tr><td>Cagliari centro</td><td>€2,000–3,500/m²</td><td>3–4%</td></tr>
+          <tr><td>Olbia fringe</td><td>€350k–900k</td><td>4–5%</td></tr>
+        </tbody>
+      </table>
+
+      <p>Guides: <a href="/guides/sardinia-property-investment-guide/">Sardinia investment guide</a> · <a href="/areas/costa-smeralda/">Costa Smeralda area</a> · <a href="/invest-liguria-property/">Invest Liguria</a> · <a href="/compare/lake-como-vs-liguria-property/">Como vs Liguria</a> · <a href="/tier-luxury/">Luxury tier</a></p>
+    </div>
+
+    <LeadForm
+      title="Get your Sardinia property shortlist"
+      subtitle="Costa Smeralda · Cagliari · north coast"
+      context="Invest Sardinia property landing"
+    />
+
+    <CommercialSharedSections />
+
+    <FaqBlock items={faqItems} />
+    <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
+  </section>
+</BaseLayout>

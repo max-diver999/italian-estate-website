@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
 
 const faqItems = [
   {
@@ -20,6 +21,14 @@ const faqItems = [
     question: 'How is this different from Gate-away or Idealista?',
     answer: 'Portals list inventory; we publish independent due diligence and filter options to your budget band and goal. You receive curated matches plus links to tax, legal, and yield research on italian-estate.com.',
   },
+  {
+    question: 'Can you advise on Italian elective residence or tax residency?',
+    answer: 'We outline high-level pathways and link to our elective residence guide, but specific tax residency decisions require a qualified cross-border accountant. We flag when your purchase goal triggers IMU, IVAFE, or cedolare choices.',
+  },
+  {
+    question: 'How long before I should visit Italy?',
+    answer: 'Many buyers request a consultation first, receive a shortlist within one business day, then plan a 3–5 day viewing trip focused on two regions maximum. Visiting six regions in one week usually produces worse decisions than structured remote filtering.',
+  },
 ];
 ---
 <BaseLayout
@@ -37,8 +46,34 @@ const faqItems = [
 
     <div class="prose mb-10 text-[var(--color-muted)]">
       <p><strong>Quick answer:</strong> Italy is not one market. Lombardy skews corporate rental and off-plan; Puglia and Sicily skew holiday yield; Lake Como and Costa Smeralda skew luxury lifestyle. A single consultation request helps you compare regions before committing to flights or a compromesso deposit.</p>
-      <p>Regional landings: <a href="/invest-tuscany-property/">Tuscany</a> · <a href="/invest-puglia-property/">Puglia</a> · <a href="/invest-lake-como-property/">Lake Como</a> · <a href="/invest-sicily-property/">Sicily</a></p>
-      <p>Core guides: <a href="/guides/italy-property-investment-guide/">Italy property investment</a> · <a href="/guides/best-regions-invest-italy-property-2026/">Best regions 2026</a> · <a href="/guides/italy-elective-residence-visa-property/">Elective residence</a> · <a href="/compare/italy-vs-spain-property-investment/">Italy vs Spain</a></p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">What we compare in a consultation</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Region</th><th>Typical buyer goal</th><th>Yield band</th><th>Entry ticket</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><a href="/invest-puglia-property/">Puglia</a></td><td>Holiday STR + pool villa</td><td>5–8% gross</td><td>€250k–600k</td></tr>
+          <tr><td><a href="/invest-tuscany-property/">Tuscany</a></td><td>Lifestyle + selective STR</td><td>3–6% gross</td><td>€200k–1M+</td></tr>
+          <tr><td><a href="/invest-milan-property/">Milan</a></td><td>Off-plan + corporate rent</td><td>3–4% net</td><td>€350k+</td></tr>
+          <tr><td><a href="/invest-lake-como-property/">Lake Como</a></td><td>Luxury + commuter</td><td>2–4% gross</td><td>€400k–2M+</td></tr>
+          <tr><td><a href="/invest-sicily-property/">Sicily</a></td><td>Value yield + renovation</td><td>5–10% gross*</td><td>€120k–500k</td></tr>
+          <tr><td><a href="/invest-sardinia-property/">Sardinia</a></td><td>Coastal luxury</td><td>3–5% gross</td><td>€400k–2M+</td></tr>
+          <tr><td><a href="/invest-liguria-property/">Liguria</a></td><td>Coast vs Como value</td><td>3–5% gross</td><td>€350k–1.5M</td></tr>
+        </tbody>
+      </table>
+      <p>*Sicily interior and renovation paths carry higher capex and vacancy risk.</p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">When a consultation saves money</h2>
+      <ul>
+        <li>You are debating Puglia vs Sicily solely from Instagram aesthetics without yield math</li>
+        <li>You assume Milan yields match portal gross claims without IMU and void rates</li>
+        <li>You need elective residence or tax residency aligned with purchase timing</li>
+        <li>You want off-plan milestone risk explained before reserving Navigli or Cascina Merlata units</li>
+        <li>You are comparing Italy vs Spain or Portugal using our cross-country compare guides</li>
+      </ul>
+
+      <p>Core guides: <a href="/guides/italy-property-investment-guide/">Italy property investment</a> · <a href="/guides/best-regions-invest-italy-property-2026/">Best regions 2026</a> · <a href="/guides/italy-elective-residence-visa-property/">Elective residence</a> · <a href="/compare/italy-vs-spain-property-investment/">Italy vs Spain</a> · <a href="/get-shortlist/">Get shortlist hub</a></p>
     </div>
 
     <LeadForm
@@ -46,6 +81,9 @@ const faqItems = [
       subtitle="Budget · regions · yield or lifestyle goal"
       context="Italy property consultation landing"
     />
+
+    <CommercialSharedSections />
+
     <FaqBlock items={faqItems} />
     <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
   </section>

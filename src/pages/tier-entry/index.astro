@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 import CommercialBudgetLadder from '../../components/CommercialBudgetLadder.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
 
 const faqItems = [
   {
@@ -25,6 +26,10 @@ const faqItems = [
     question: 'How fast will you send entry-tier options?',
     answer: 'Within one business day we return 3–5 matches in your band with links to area guides and cost breakdowns. Viewings require partner scheduling in Italy.',
   },
+  {
+    question: 'Is Milan realistic under €200k?',
+    answer: 'Central Milan rarely works at this tier. Micro-studios on the urban fringe or heavy renovation stock occasionally appear, but most Milan enquiries at this budget pivot to Puglia or Sicily for better space and yield.',
+  },
 ];
 ---
 <BaseLayout
@@ -43,6 +48,7 @@ const faqItems = [
 
     <div class="prose mb-10 text-[var(--color-muted)]">
       <p><strong>Quick answer:</strong> Sub-€200k buys exist mainly in southern regions, inland towns, and apartments needing cosmetic work. Expect 9% registration tax on second homes, IMU from year one, and slower resale liquidity than prime north Italy.</p>
+
       <table class="w-full text-sm mb-6">
         <thead>
           <tr><th>Typical fit</th><th>Price band</th><th>Notes</th></tr>
@@ -54,7 +60,15 @@ const faqItems = [
           <tr><td>Milan fringe</td><td>Rare under €200k</td><td>Micro-studios only</td></tr>
         </tbody>
       </table>
-      <p>Related: <a href="/guides/italy-1-euro-homes-program/">1-euro homes program</a> · <a href="/invest-sicily-property/">Invest Sicily</a> · <a href="/guides/hidden-costs-buying-property-italy/">Hidden costs</a> · <a href="/tier-mid/">€200k–€500k tier</a></p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Entry-tier buyer scenarios</h2>
+      <ul>
+        <li>First-time Italy buyers testing the market with renovation tolerance</li>
+        <li>Remote workers targeting low-cost bases in Sicily or inland Puglia</li>
+        <li>Investors accepting liquidity risk for higher gross yields on completed renovations</li>
+      </ul>
+
+      <p>Related: <a href="/guides/italy-1-euro-homes-program/">1-euro homes program</a> · <a href="/invest-sicily-property/">Invest Sicily</a> · <a href="/guides/hidden-costs-buying-property-italy/">Hidden costs</a> · <a href="/tier-mid/">€200k–€500k tier</a> · <a href="/invest-puglia-property/">Invest Puglia</a></p>
     </div>
 
     <LeadForm
@@ -62,6 +76,9 @@ const faqItems = [
       subtitle="Renovation tolerance · region · rental goal"
       context="Tier entry Italy property landing"
     />
+
+    <CommercialSharedSections />
+
     <FaqBlock items={faqItems} />
     <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
   </section>

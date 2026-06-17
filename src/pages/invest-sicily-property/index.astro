@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
 
 const faqItems = [
   {
@@ -24,6 +25,10 @@ const faqItems = [
     question: 'What should I verify before buying in Sicily?',
     answer: 'Cadastral consistency, seismic classification, absentee landlord issues, and STR registration with the comune. Earthquake retrofit costs can materially change renovation budgets.',
   },
+  {
+    question: 'Which Sicily markets fit a €300k budget?',
+    answer: 'Palermo centro apartments, Syracuse historic stock, and interior towns with renovation scope often sit under €300k. Taormina and premium coast typically exceed that band unless you accept smaller units needing works.',
+  },
 ];
 ---
 <BaseLayout
@@ -41,6 +46,14 @@ const faqItems = [
 
     <div class="prose mb-10 text-[var(--color-muted)]">
       <p><strong>Quick answer:</strong> Sicily offers some of Italy's lowest entry prices and highest headline holiday-let yields. Budget from roughly €120k for interior apartments needing work and €350k+ for turnkey coastal units. Foreign share of enquiries is rising in premium coastal comuni.</p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Who this is for</h2>
+      <ul>
+        <li>Yield-focused buyers priced out of Tuscany or Como who accept renovation and seismic diligence</li>
+        <li>Operators planning Taormina or Ortigia STR with realistic 45–60% annual occupancy</li>
+        <li>Value investors targeting interior towns with €50k–150k renovation capex budgets</li>
+      </ul>
+
       <h2 class="text-xl text-[var(--color-ink)]">Market snapshot</h2>
       <table class="w-full text-sm mb-6">
         <thead>
@@ -54,7 +67,28 @@ const faqItems = [
         </tbody>
       </table>
       <p>*Interior yields assume renovation completed and active letting; vacancy and capex risk is higher.</p>
-      <p>Guides: <a href="/guides/sicily-property-investment-guide/">Sicily investment guide</a> · <a href="/areas/taormina/">Taormina</a> · <a href="/areas/syracuse/">Syracuse</a> · <a href="/compare/sicily-vs-puglia-property/">Sicily vs Puglia</a> · <a href="/guides/how-to-calculate-rental-yield-italy/">Calculate rental yield</a></p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Buyer scenarios</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Profile</th><th>Budget</th><th>Target</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>STR operator</td><td>€350k–600k</td><td>Taormina or Cefalù coastal</td></tr>
+          <tr><td>Renovation value</td><td>€80k + €100k works</td><td>Interior baroque town</td></tr>
+          <tr><td>City long-term</td><td>€150k–280k</td><td>Palermo furnished rental</td></tr>
+        </tbody>
+      </table>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Sicily-specific risks</h2>
+      <ul>
+        <li>Seismic retrofit and structural surveys on pre-1980 concrete stock</li>
+        <li>Absentee landlord legacy issues on inherited multi-family buildings</li>
+        <li>Coastal landscape vincoli limiting terrace and pool additions</li>
+        <li>Operational intensity of peak-season STR in tourist-heavy centres</li>
+      </ul>
+
+      <p>Guides: <a href="/guides/sicily-property-investment-guide/">Sicily investment guide</a> · <a href="/areas/taormina/">Taormina</a> · <a href="/areas/syracuse/">Syracuse</a> · <a href="/areas/palermo/">Palermo</a> · <a href="/compare/sicily-vs-puglia-property/">Sicily vs Puglia</a> · <a href="/guides/how-to-calculate-rental-yield-italy/">Calculate rental yield</a></p>
     </div>
 
     <LeadForm
@@ -62,6 +96,9 @@ const faqItems = [
       subtitle="Coastal · historic centre · renovation value"
       context="Invest Sicily property landing"
     />
+
+    <CommercialSharedSections />
+
     <FaqBlock items={faqItems} />
     <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
   </section>

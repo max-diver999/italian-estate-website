@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
+
+const faqItems = [
+  {
+    question: 'Can foreigners buy property in Milan?',
+    answer: 'Yes. EU citizens purchase on equal terms with residents. Non-EU nationals from reciprocity countries need codice fiscale and notary-led purchase. Milan has no extra foreign-buyer restrictions beyond national law.',
+  },
+  {
+    question: 'What is the minimum budget for Milan property in 2026?',
+    answer: 'Off-plan northwest Milan projects like Inspire UpTown start near €348,500. Central Milan resale two-bedrooms often exceed €600k. Budget 10–12% closing costs on a second home.',
+  },
+  {
+    question: 'What rental yields are realistic in Milan?',
+    answer: 'Long-term furnished leases in well-connected districts often net 3.2–3.8% after IMU and condominium fees. Short-term rental requires CIN and building compliance; gross yields rarely exceed 4% without operational intensity.',
+  },
+  {
+    question: 'Is Milan off-plan safe for foreign buyers?',
+    answer: 'Use milestone payments tied to construction progress, notary-reviewed compromesso, and escrow or bank guarantees on deposits. Review our Navigli and Cascina Merlata project guides for developer-specific notes.',
+  },
+  {
+    question: 'Milan city centre vs Cascina Merlata for investment?',
+    answer: 'Centro offers prestige and thinner yields. Cascina Merlata and Navigli regeneration corridors offer new-build Class A stock with MIND employment and metro access at lower €/m² than Duomo-adjacent resale.',
+  },
+  {
+    question: 'How fast do you send a Milan shortlist?',
+    answer: 'Within one business day after form submission. We include off-plan and delivering options where published on italian-estate.com plus partner inventory matching your band.',
+  },
+];
+---
+<BaseLayout
+  title="Invest in Milan Property: Free Shortlist 2026"
+  description="Independent Milan property shortlist for foreign buyers. Navigli off-plan, Cascina Merlata, corporate rental — from €348k. Partner review within one business day."
+>
+  <section class="site-container py-12 md:py-16 max-w-3xl">
+    <header class="mb-8">
+      <span class="badge-pill mb-4">Milan · Commercial</span>
+      <h1 class="mb-4">Invest in Milan property</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        Off-plan Navigli, delivering Cascina Merlata, and corporate rental districts — vetted for foreign buyers who need milestone and yield clarity.
+      </p>
+    </header>
+
+    <div class="prose mb-10 text-[var(--color-muted)]">
+      <p><strong>Quick answer:</strong> Milan remains Italy's liquidity anchor for international property capital. Asking prices in prime districts exceed €6,000/m² while northwest off-plan corridors trade €4,200–5,500/m² with 2026–2028 handover timelines. Foreign buyers focus on rental depth, euro diversification, and corporate tenant pipelines rather than holiday-let seasonality.</p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Who this is for</h2>
+      <ul>
+        <li>EU and US professionals relocating to Lombardy with optional rental fallback</li>
+        <li>Yield investors comparing Milan net 3–4% against Puglia gross 6–8%</li>
+        <li>Off-plan buyers evaluating Okam Navigli vs Near UpTown milestone structures</li>
+        <li>Remote purchasers needing English-language compromesso review before deposit</li>
+      </ul>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Market snapshot</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Corridor</th><th>€/m² (indicative)</th><th>Profile</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Navigli / Porta Genova</td><td>€5,500–7,500</td><td>Regeneration + lifestyle</td></tr>
+          <tr><td>Cascina Merlata / MIND</td><td>€4,200–5,500</td><td>Off-plan + corporate</td></tr>
+          <tr><td>Porta Nuova / centro</td><td>€7,000–10,000+</td><td>Prime resale</td></tr>
+          <tr><td>Isola / Gioia</td><td>€5,800–7,200</td><td>Young professional rent</td></tr>
+        </tbody>
+      </table>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Featured Milan projects</h2>
+      <ul>
+        <li><a href="/projects/inspire-uptown-milan/">Inspire UpTown</a> — off-plan from €348,500, Q2 2028</li>
+        <li><a href="/projects/feel-uptown-milan/">Feel UpTown</a> — delivering from €517,000</li>
+        <li><a href="/projects/prandina-navigli-milan/">Prandina 34 Navigli</a> — Okam Italy, Q2 2028</li>
+        <li><a href="/projects/meli-navigli-milan/">Meli 26 Navigli</a> — Class A4, Q1 2028</li>
+      </ul>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Buyer scenarios</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Profile</th><th>Budget</th><th>Typical match</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Corporate assignee</td><td>€500k–800k</td><td>Navigli 2-bed new build</td></tr>
+          <tr><td>Off-plan investor</td><td>€350k–550k</td><td>Cascina Merlata 1–2 bed</td></tr>
+          <tr><td>US diversification</td><td>€400k–700k</td><td>Furnished long-term rental</td></tr>
+        </tbody>
+      </table>
+
+      <p>Guides: <a href="/guides/milan-property-investment-guide/">Milan investment guide</a> · <a href="/areas/milan-navigli/">Navigli area</a> · <a href="/developers/near-milan/">Near developer</a> · <a href="/developers/okam-italy/">Okam Italy</a> · <a href="/compare/milan-vs-rome-property-investment/">Milan vs Rome</a></p>
+    </div>
+
+    <LeadForm
+      title="Get your Milan property shortlist"
+      subtitle="Off-plan · Navigli · Cascina Merlata · resale"
+      context="Invest Milan property landing"
+    />
+
+    <CommercialSharedSections />
+
+    <FaqBlock items={faqItems} />
+    <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
+  </section>
+</BaseLayout>

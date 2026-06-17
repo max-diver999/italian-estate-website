@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 import CommercialBudgetLadder from '../../components/CommercialBudgetLadder.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
 
 const faqItems = [
   {
@@ -25,6 +26,10 @@ const faqItems = [
     question: 'Which region offers the best mid-tier yield?',
     answer: 'Puglia and Sicily often beat Milan on gross holiday-let yields at €300k. Tuscany and Rome skew lifestyle with tighter STR rules in historic centres.',
   },
+  {
+    question: 'What off-plan options exist at €300k–€500k?',
+    answer: 'Inspire UpTown Milan starts at €348,500. Ostuni new-build villas list near €470,000. Navigli off-plan from Okam Italy is often on-request above €500k but worth comparing in consultation.',
+  },
 ];
 ---
 <BaseLayout
@@ -43,12 +48,15 @@ const faqItems = [
 
     <div class="prose mb-10 text-[var(--color-muted)]">
       <p><strong>Quick answer:</strong> €300k is the median enquiry band on Gate-away's 2025 data (avg enquiry €428k). At this level you balance liquidity and lifestyle: Puglia villas with pools, Milan fringe off-plan, or Chianti apartments with moderate renovation scope.</p>
+
       <h2 class="text-xl text-[var(--color-ink)]">Featured project examples</h2>
       <ul>
         <li><a href="/projects/ostuni-new-villa-pool-470k/">Ostuni new villa with pool</a> — €470k near completion</li>
         <li><a href="/projects/inspire-uptown-milan/">Inspire UpTown Milan</a> — from €348,500 off-plan</li>
         <li><a href="/projects/prandina-navigli-milan/">Prandina Navigli</a> — Milan Navigli regeneration</li>
+        <li><a href="/projects/feel-uptown-milan/">Feel UpTown Milan</a> — delivering from €517k</li>
       </ul>
+
       <table class="w-full text-sm mb-6">
         <thead>
           <tr><th>Region</th><th>Typical €300k buy</th><th>Gross yield</th></tr>
@@ -60,7 +68,8 @@ const faqItems = [
           <tr><td>Sicily coast</td><td>2–3 bed turnkey</td><td>5–7%</td></tr>
         </tbody>
       </table>
-      <p>Guides: <a href="/guides/cost-of-buying-property-italy/">Cost of buying</a> · <a href="/guides/non-resident-mortgage-italy/">Non-resident mortgage</a> · <a href="/invest-puglia-property/">Invest Puglia</a> · <a href="/tier-luxury/">Luxury tier €500k+</a></p>
+
+      <p>Guides: <a href="/guides/cost-of-buying-property-italy/">Cost of buying</a> · <a href="/guides/non-resident-mortgage-italy/">Non-resident mortgage</a> · <a href="/invest-puglia-property/">Invest Puglia</a> · <a href="/invest-milan-property/">Invest Milan</a> · <a href="/tier-luxury/">Luxury tier €500k+</a></p>
     </div>
 
     <LeadForm
@@ -68,6 +77,9 @@ const faqItems = [
       subtitle="Puglia villa · Milan off-plan · Tuscany apt"
       context="Tier mid Italy property landing"
     />
+
+    <CommercialSharedSections />
+
     <FaqBlock items={faqItems} />
     <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
   </section>

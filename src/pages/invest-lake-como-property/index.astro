@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
+import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
 
 const faqItems = [
   {
@@ -24,6 +25,10 @@ const faqItems = [
     question: 'What due diligence matters on Como lakefront?',
     answer: 'Verify shore rights, boat dock concessions, landslide or flooding constraints, and condominium rules on short lets. Landscape vincoli apply widely — check Soprintendenza files before renovation.',
   },
+  {
+    question: 'Should I buy in Como city or Bellagio?',
+    answer: 'Como city offers Milan commuter rail, deeper apartment inventory, and easier due diligence. Bellagio commands trophy pricing with thinner liquidity. Many investors start in Como and trade up lake once they understand CIN and IMU rules.',
+  },
 ];
 ---
 <BaseLayout
@@ -41,12 +46,15 @@ const faqItems = [
 
     <div class="prose mb-10 text-[var(--color-muted)]">
       <p><strong>Quick answer:</strong> Lake Como lakefront trades roughly €8,000–25,000/m² at the top; hillside and secondary towns start lower. Foreign buyers are typically HNW lifestyle purchasers or dual-use owners accepting lower yields than Puglia or Sicily.</p>
+
       <h2 class="text-xl text-[var(--color-ink)]">Who this is for</h2>
       <ul>
-        <li>Luxury buyers comparing Como vs Liguria or Tuscany lakes</li>
-        <li>Owners planning part-time residence with selective short lets</li>
-        <li>Investors accepting 2–3% net yields for prime location scarcity</li>
+        <li>Luxury buyers comparing Como vs Liguria, Tuscany lakes, or Swiss lake markets</li>
+        <li>Owners planning part-time residence with selective licensed short lets</li>
+        <li>Milan commuters seeking FNM rail access and weekend lake lifestyle</li>
+        <li>Investors accepting 2–3% net yields for prime location scarcity and Swiss-German resale depth</li>
       </ul>
+
       <table class="w-full text-sm mb-6">
         <thead>
           <tr><th>Area</th><th>€/m² (indicative)</th><th>Profile</th></tr>
@@ -58,7 +66,24 @@ const faqItems = [
           <tr><td>Lecco arm</td><td>€3,500–5,500</td><td>Value vs west lake</td></tr>
         </tbody>
       </table>
-      <p>Guides: <a href="/guides/lake-como-property-investment-guide/">Lake Como investment guide</a> · <a href="/areas/bellagio/">Bellagio</a> · <a href="/areas/como/">Como town</a> · <a href="/compare/lake-como-vs-liguria-property/">Como vs Liguria</a> · <a href="/compare/tuscany-vs-lake-como-property/">Tuscany vs Como</a></p>
+
+      <h2 class="text-xl text-[var(--color-ink)]">Buyer scenarios</h2>
+      <table class="w-full text-sm mb-6">
+        <thead>
+          <tr><th>Profile</th><th>Budget</th><th>Typical asset</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Swiss commuter</td><td>€600k–1M</td><td>Como 2-bed near San Giovanni</td></tr>
+          <tr><td>US legacy buyer</td><td>€1.5M–3M</td><td>Bellagio or Cernobbio villa</td></tr>
+          <tr><td>EU hybrid use</td><td>€800k–1.2M</td><td>Lakefront apt, LT winter / STR summer</td></tr>
+        </tbody>
+      </table>
+
+      <p>
+        Lake Como new-build lakefront listings from €800k+ are reviewed in our <a href="/projects/como-lakefront-residence/">Como lakefront residence</a> project guide. Gateway underwriting starts in the <a href="/areas/como/">Como city area guide</a>.
+      </p>
+
+      <p>Guides: <a href="/guides/lake-como-property-investment-guide/">Lake Como investment guide</a> · <a href="/areas/bellagio/">Bellagio</a> · <a href="/compare/lake-como-vs-liguria-property/">Como vs Liguria</a> · <a href="/compare/tuscany-vs-lake-como-property/">Tuscany vs Como</a> · <a href="/invest-liguria-property/">Invest Liguria</a></p>
     </div>
 
     <LeadForm
@@ -66,6 +91,9 @@ const faqItems = [
       subtitle="Lakefront · hillside · renovation scope"
       context="Invest Lake Como property landing"
     />
+
+    <CommercialSharedSections />
+
     <FaqBlock items={faqItems} />
     <p class="text-xs text-[var(--color-muted)] mt-6">Not financial or legal advice. <a href="/privacy-policy/">Privacy Policy</a></p>
   </section>
