@@ -1,12 +1,13 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-17T23:08:04.199Z",
+  "updatedAt": "2026-06-17T23:19:40.870Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
     "https://italian-estate.com/areas",
     "https://italian-estate.com/areas/bari",
     "https://italian-estate.com/areas/bellagio",
+    "https://italian-estate.com/areas/bologna",
     "https://italian-estate.com/areas/carovigno",
     "https://italian-estate.com/areas/chianti",
     "https://italian-estate.com/areas/cisternino",
@@ -1451,6 +1452,11 @@
       "url": "https://italian-estate.com/developers/redo-sgr-italy",
       "channel": "google",
       "at": "2026-06-17T23:08:04.199Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/bologna",
+      "channel": "google",
+      "at": "2026-06-17T23:19:40.870Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
