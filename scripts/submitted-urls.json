@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-17T23:19:40.870Z",
+  "updatedAt": "2026-06-17T23:39:08.301Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -17,11 +17,13 @@
     "https://italian-estate.com/areas/lecce",
     "https://italian-estate.com/areas/lucca",
     "https://italian-estate.com/areas/milan-navigli",
+    "https://italian-estate.com/areas/modena",
     "https://italian-estate.com/areas/monte-argentario",
     "https://italian-estate.com/areas/naples",
     "https://italian-estate.com/areas/noto",
     "https://italian-estate.com/areas/ostuni",
     "https://italian-estate.com/areas/palermo",
+    "https://italian-estate.com/areas/parma",
     "https://italian-estate.com/areas/polignano-a-mare",
     "https://italian-estate.com/areas/portofino",
     "https://italian-estate.com/areas/rome-centro-storico",
@@ -34,6 +36,7 @@
     "https://italian-estate.com/areas/valle-d-itria",
     "https://italian-estate.com/areas/versilia",
     "https://italian-estate.com/compare",
+    "https://italian-estate.com/compare/bologna-vs-florence-property",
     "https://italian-estate.com/compare/florence-vs-rome-property-investment",
     "https://italian-estate.com/compare/florence-vs-siena-property",
     "https://italian-estate.com/compare/italy-vs-france-property-investment",
@@ -78,6 +81,7 @@
     "https://italian-estate.com/guides/cost-of-buying-property-italy",
     "https://italian-estate.com/guides/digital-nomad-italy-property-guide",
     "https://italian-estate.com/guides/due-diligence-italy-property",
+    "https://italian-estate.com/guides/emilia-romagna-property-investment-guide",
     "https://italian-estate.com/guides/gross-vs-net-yield-italy",
     "https://italian-estate.com/guides/heritage-restricted-property-italy",
     "https://italian-estate.com/guides/hidden-costs-buying-property-italy",
@@ -167,6 +171,7 @@
     "https://italian-estate.com/projects/lucca-villa-historic-renovation",
     "https://italian-estate.com/projects/maciachini-urban-retreat",
     "https://italian-estate.com/projects/meli-navigli-milan",
+    "https://italian-estate.com/projects/milano-sesto-urban-regeneration",
     "https://italian-estate.com/projects/monte-argentario-sea-view",
     "https://italian-estate.com/projects/noto-baroque-masseria",
     "https://italian-estate.com/projects/nunziare-vii-lusciano",
@@ -191,6 +196,7 @@
     "https://italian-estate.com/projects/tranio-puglia-masseria-new",
     "https://italian-estate.com/projects/tranio-rome-eur-apartment",
     "https://italian-estate.com/projects/tranio-sicily-noto-stone-house",
+    "https://italian-estate.com/projects/unapavia-pavia-residential",
     "https://italian-estate.com/projects/valle-d-itria-trulli-restoration",
     "https://italian-estate.com/terms",
     "https://italian-estate.com/tier-entry",
@@ -1457,6 +1463,36 @@
       "url": "https://italian-estate.com/areas/bologna",
       "channel": "google",
       "at": "2026-06-17T23:19:40.870Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/emilia-romagna-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-17T23:39:08.301Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/bologna-vs-florence-property",
+      "channel": "google",
+      "at": "2026-06-17T23:39:08.301Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/unapavia-pavia-residential",
+      "channel": "google",
+      "at": "2026-06-17T23:39:08.301Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/milano-sesto-urban-regeneration",
+      "channel": "google",
+      "at": "2026-06-17T23:39:08.301Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/modena",
+      "channel": "google",
+      "at": "2026-06-17T23:39:08.301Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/parma",
+      "channel": "google",
+      "at": "2026-06-17T23:39:08.301Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
