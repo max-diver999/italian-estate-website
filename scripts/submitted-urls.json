@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-17T22:48:04.412Z",
+  "updatedAt": "2026-06-17T22:57:57.144Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -48,13 +48,17 @@
     "https://italian-estate.com/compare/venice-vs-milan-property-investment",
     "https://italian-estate.com/contact",
     "https://italian-estate.com/developers",
+    "https://italian-estate.com/developers/albero-architecture",
     "https://italian-estate.com/developers/apulia-deluxe",
+    "https://italian-estate.com/developers/asti-architetti",
     "https://italian-estate.com/developers/coima",
     "https://italian-estate.com/developers/damico-gruppo",
     "https://italian-estate.com/developers/engel-volkers-italy",
     "https://italian-estate.com/developers/frimm",
+    "https://italian-estate.com/developers/gate-away-partner-network",
     "https://italian-estate.com/developers/lendlease",
     "https://italian-estate.com/developers/near-milan",
+    "https://italian-estate.com/developers/nunziare-luxury-projects",
     "https://italian-estate.com/developers/okam-italy",
     "https://italian-estate.com/developers/ostuni-domus",
     "https://italian-estate.com/developers/pregio-immobiliare",
@@ -139,6 +143,7 @@
     "https://italian-estate.com/news/milan-living-sector-investment-2025",
     "https://italian-estate.com/privacy-policy",
     "https://italian-estate.com/projects",
+    "https://italian-estate.com/projects/amalfi-ravello-villa",
     "https://italian-estate.com/projects/bellagio-villa-lake-view",
     "https://italian-estate.com/projects/bliss-uptown-milan",
     "https://italian-estate.com/projects/carovigno-villa-new-build",
@@ -158,6 +163,7 @@
     "https://italian-estate.com/projects/meli-navigli-milan",
     "https://italian-estate.com/projects/monte-argentario-sea-view",
     "https://italian-estate.com/projects/noto-baroque-masseria",
+    "https://italian-estate.com/projects/nunziare-vii-lusciano",
     "https://italian-estate.com/projects/ostuni-lamia-chiavi-in-mano",
     "https://italian-estate.com/projects/ostuni-masseria-pool-apuliadeluxe",
     "https://italian-estate.com/projects/ostuni-new-villa-pool-470k",
@@ -1379,6 +1385,36 @@
       "url": "https://italian-estate.com/developers/engel-volkers-italy",
       "channel": "google",
       "at": "2026-06-17T22:48:04.412Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/amalfi-ravello-villa",
+      "channel": "google",
+      "at": "2026-06-17T22:57:57.144Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/nunziare-vii-lusciano",
+      "channel": "google",
+      "at": "2026-06-17T22:57:57.144Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/gate-away-partner-network",
+      "channel": "google",
+      "at": "2026-06-17T22:57:57.144Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/nunziare-luxury-projects",
+      "channel": "google",
+      "at": "2026-06-17T22:57:57.144Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/asti-architetti",
+      "channel": "google",
+      "at": "2026-06-17T22:57:57.144Z"
+    },
+    {
+      "url": "https://italian-estate.com/developers/albero-architecture",
+      "channel": "google",
+      "at": "2026-06-17T22:57:57.144Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
