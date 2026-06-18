@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-18T01:20:26.954Z",
+  "updatedAt": "2026-06-18T01:33:24.116081Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -153,7 +153,6 @@
     "https://italian-estate.com/guides/non-resident-mortgage-italy",
     "https://italian-estate.com/guides/notaio-italy-property-role",
     "https://italian-estate.com/guides/piedmont-property-investment-guide",
-    "https://italian-estate.com/guides/piedmont-property-investment-guide/[@",
     "https://italian-estate.com/guides/power-of-attorney-property-italy",
     "https://italian-estate.com/guides/puglia-property-investment-guide",
     "https://italian-estate.com/guides/rome-property-investment-guide",
@@ -1580,7 +1579,7 @@
       "at": "2026-06-17T23:46:35.651Z"
     },
     {
-      "url": "https://italian-estate.com/guides/piedmont-property-investment-guide/[@",
+      "url": "https://italian-estate.com/guides/piedmont-property-investment-guide",
       "channel": "google",
       "at": "2026-06-17T23:51:37.303Z"
     },
@@ -1818,7 +1817,32 @@
       "url": "https://italian-estate.com/guides/tuscany-inland-property-guide",
       "channel": "google",
       "at": "2026-06-18T01:20:26.954Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T01:30:49.567Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/puglia-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T01:30:49.567Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/lake-como-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T01:30:49.567Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/sicily-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T01:30:49.567Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/tuscany-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T01:30:49.567Z"
     }
   ],
-  "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
+  "note": "Reset 2026-06-15 \u2014 previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
 }
