@@ -71,9 +71,34 @@ const HUB_SNAPSHOTS = {
 **Insider tip:** Smeralda sellers price in euros but negotiate in CHF-equivalent mental anchors for Swiss buyers — FX timing moves effective discounts 3-5%.`,
   },
   'amalfi-coast-property-investment-guide': {
-    body: `MORE Group Amalfi Coast screening (Q2 2026): Positano and Ravello trophy bands €5,000-15,000/m²; Sorrento urban €3,200-4,800/m²; Salerno value reference €1,800-2,400/m². STR licensing is strictly enforced with CIN and municipal density caps on cliff villages. Gross yields on licensed Sorrento tickets often 3-4.5% seasonal; trophy Positano stock prioritizes capital preservation over yield. Foreign buyer share exceeds 50% on coastal closings — US, UK, and German lead. Geotechnical and parking constraints dominate due diligence on vertical villages.
+    body: `MORE Group Amalfi Coast screening (Q2 2026): Positano and Ravello trophy bands €5,000-15,000/m²; Sorrento urban €3,200-4,800/m²; Salerno value reference €1,800-2,400/m². STR licensing is strictly enforced with CIN and municipal density caps on cliff villages. Gross yields on licensed Sorrento tickets often 3-4.5% seasonal; trophy Positino stock prioritizes capital preservation over yield. Foreign buyer share exceeds 50% on coastal closings — US, UK, and German lead. Geotechnical and parking constraints dominate due diligence on vertical villages.
 
 **Insider tip:** Ravello and Positano winter void (Nov-Feb) can cut STR occupancy below 35% — underwrite shoulder seasons explicitly, not peak-August pro formas.`,
+  },
+  'italy-property-investment-guide': {
+    body: `MORE Group national desk (Q2 2026): 719,578 transactions in 2024, estimated ~766,756 in 2025 (+6.4%); foreign investment €5.5B (+10%) across 8,700 families at ~€632k average ticket. National ask ~€2,188/m²; Milan €5,653/m²; Florence €4,737/m²; Puglia ~€1,422/m²; Sicily ~€1,168/m². Gross yield bands span 2-5% in Milan, 4-7% in Tuscany, 5-8% in Puglia, and 6-10% in Sicily before Italian taxes. Typical non-resident closing stack 10-12% on second homes.
+
+**Insider tip:** Ostuni's white-city premium pushes value buyers to Cisternino and Locorotondo trulli at 20-30% lower entry while capturing similar STR demand from Ostuni overflow.`,
+  },
+  'lake-como-property-investment-guide': {
+    body: `MORE Group Lake Como desk (Q2 2026): lakefront €8,000-25,000/m²; hillside lake-view €4,000-8,000/m²; Como city trades below Bellagio and Cernobbio trophy bands. Gross yields 2-3% on lifestyle tickets — scarcity and capital preservation market, not yield maximization. Milan Centrale 40-50 minutes by train; foreign buyer mix skews Swiss/German/US HNW weekenders (55%) and Milan corporate second homes (30%). Geotechnical surveys and Soprintendenza filings mandatory on Belle Époque villa stock. Non-resident closing stack typically 10-15%.
+
+**Insider tip:** Bellagio and Cernobbio winter void (Nov-Feb) can cut STR occupancy below 35% — underwrite shoulder seasons and Milan commuter long-term fallback, not July-only portal screenshots.`,
+  },
+  'puglia-property-investment-guide': {
+    body: `MORE Group Puglia screening (Q2 2026): 2,300 foreign purchases of 8,600 regional transactions (FIAIP); regional average ~€1,422/m²; Ostuni #1 national search ranking, Carovigno #2. Ostuni centro €2,200-3,800/m²; coastal €1,800-3,200/m²; rural trulli €800-2,500/m². Gross yields 5-8% on well-bought stock; average foreign ticket ~€425k versus €632k national. PNRR €4.2B infrastructure supports Bari enquiry growth (+35.7% YoY on Gate-away desk). Typical closing costs 10-12%.
+
+**Insider tip:** Shoulder season (April-May, September-October) increasingly profitable as Puglia extends tourism beyond July-August peaks — model net on shoulder months, not peak-week extrapolation alone.`,
+  },
+  'sicily-property-investment-guide': {
+    body: `MORE Group Sicily frontier screening (Q2 2026): regional average ~€1,168/m² (47% below national); Palermo €1,400-2,200/m²; Catania €1,200-1,900/m²; Taormina €2,200-4,000/m². Gross yields 6-10% — highest band in Italy — with net after 21%/26% cedolare still above Tuscany and Puglia on modeled tickets. Foreign enquiry ~8-10% of Italy volume; yield-focused buyers ~55% of Sicilian foreign pipeline. Abusivismo clearance mandatory on pre-1980 stock. PNRR €2.8B+ regional allocation; Palermo metro extension through 2030. Purchase timeline often 180+ days versus 120 on mainland.
+
+**Insider tip:** Never skip abusivismo clearance letter before deposit — Sicily prevalence 8-12% versus 2-3% mainland makes independent geometra title audit non-optional on portal "renovated" stock.`,
+  },
+  'tuscany-property-investment-guide': {
+    body: `MORE Group Tuscany desk (Q2 2026): leads national foreign enquiry at 14.77% (Gate-away); Florence €4,737/m² (+5.43% YoY); countryside €1,500-4,000/m²; Chianti €1,800-3,500/m²; Maremma value €1,200-2,000/m². Gross yields 4-7% — Florence centro STR capped in UNESCO zone; Maremma and inland corridors deliver stronger income math. Foreign volume skews US/UK/German lifestyle buyers on Chianti and Val d'Orcia stock. Typical closing 10-15%; UNESCO exterior work requires Soprintendenza path on centro renovations.
+
+**Insider tip:** Florence banned new STR licenses in UNESCO centro — verify existing CIN registry entry matches exact address before buying marketed "licensed Airbnb" inventory.`,
   },
 };
 
