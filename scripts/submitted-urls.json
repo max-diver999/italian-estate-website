@@ -1,11 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-17T23:59:53.240Z",
+  "updatedAt": "2026-06-18T00:06:43.513Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
     "https://italian-estate.com/areas",
     "https://italian-estate.com/areas/alba",
+    "https://italian-estate.com/areas/ancona",
     "https://italian-estate.com/areas/arezzo",
     "https://italian-estate.com/areas/assisi",
     "https://italian-estate.com/areas/bari",
@@ -42,10 +43,12 @@
     "https://italian-estate.com/areas/syracuse",
     "https://italian-estate.com/areas/taormina",
     "https://italian-estate.com/areas/turin",
+    "https://italian-estate.com/areas/urbino",
     "https://italian-estate.com/areas/val-dorcia",
     "https://italian-estate.com/areas/valle-d-itria",
     "https://italian-estate.com/areas/versilia",
     "https://italian-estate.com/compare",
+    "https://italian-estate.com/compare/ancona-vs-urbino-property",
     "https://italian-estate.com/compare/arezzo-vs-siena-property",
     "https://italian-estate.com/compare/bologna-vs-florence-property",
     "https://italian-estate.com/compare/florence-vs-rome-property-investment",
@@ -132,6 +135,7 @@
     "https://italian-estate.com/guides/italy-retirement-property-guide",
     "https://italian-estate.com/guides/lake-como-property-investment-guide",
     "https://italian-estate.com/guides/liguria-property-investment-guide",
+    "https://italian-estate.com/guides/marche-property-investment-guide",
     "https://italian-estate.com/guides/milan-property-investment-guide",
     "https://italian-estate.com/guides/mistakes-foreign-buyers-italy",
     "https://italian-estate.com/guides/non-resident-mortgage-italy",
@@ -168,6 +172,7 @@
     "https://italian-estate.com/privacy-policy",
     "https://italian-estate.com/projects",
     "https://italian-estate.com/projects/amalfi-ravello-villa",
+    "https://italian-estate.com/projects/ancona-centro-apartments",
     "https://italian-estate.com/projects/arezzo-centro-apartments",
     "https://italian-estate.com/projects/aria-ex-macello-milan",
     "https://italian-estate.com/projects/assisi-historic-apartments",
@@ -222,6 +227,7 @@
     "https://italian-estate.com/projects/tranio-sicily-noto-stone-house",
     "https://italian-estate.com/projects/turin-crocetta-apartments",
     "https://italian-estate.com/projects/unapavia-pavia-residential",
+    "https://italian-estate.com/projects/urbino-university-apartments",
     "https://italian-estate.com/projects/val-dorcia-agriturismo-farmhouse",
     "https://italian-estate.com/projects/valle-d-itria-trulli-restoration",
     "https://italian-estate.com/terms",
@@ -1649,6 +1655,36 @@
       "url": "https://italian-estate.com/projects/assisi-historic-apartments",
       "channel": "google",
       "at": "2026-06-17T23:59:53.240Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/marche-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T00:06:43.513Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/ancona",
+      "channel": "google",
+      "at": "2026-06-18T00:06:43.513Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/urbino",
+      "channel": "google",
+      "at": "2026-06-18T00:06:43.513Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/ancona-vs-urbino-property",
+      "channel": "google",
+      "at": "2026-06-18T00:06:43.513Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/ancona-centro-apartments",
+      "channel": "google",
+      "at": "2026-06-18T00:06:43.513Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/urbino-university-apartments",
+      "channel": "google",
+      "at": "2026-06-18T00:06:43.513Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
