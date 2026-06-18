@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-18T00:35:17.525Z",
+  "updatedAt": "2026-06-18T01:20:26.954Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -1793,6 +1793,31 @@
       "url": "https://italian-estate.com/projects/potenza-centro-apartments",
       "channel": "google",
       "at": "2026-06-18T00:35:17.525Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/milan-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T01:20:26.954Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/rome-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T01:20:26.954Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/emilia-romagna-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T01:20:26.954Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/piedmont-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T01:20:26.954Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/tuscany-inland-property-guide",
+      "channel": "google",
+      "at": "2026-06-18T01:20:26.954Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
