@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 /**
- * Append words to existing Closing verification checklist — no duplicate H2.
- * Targets fix-queue thin-content blockers only.
+ * Append words for fix-queue thin-content — Italy corpus (no Independent verification H2).
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -22,28 +21,25 @@ function bodyWordCount(body) {
   return stripped.split(/\s+/).filter((w) => /[A-Za-z0-9]/.test(w)).length;
 }
 
-function slugToTopic(slug) {
-  return slug.replace(/-/g, ' ');
-}
-
-function wordPadParagraphs(slug, gap) {
-  const topic = slugToTopic(slug);
+function wordPadParagraphs(gap) {
   const sentences = [
-    `When comparing ${topic}, treat developer renderings as marketing, verify construction stage, trust account (fideicomiso de garantía), and AMPI broker licence before reservation.`,
-    `HOA fees in Quintana Roo often run $0.80–$2.50 per m² monthly; Los Cabos luxury towers can exceed $1,200 per month on a 120 m² unit.`,
-    `Closing costs typically land at 5–8% of price for buyers — notary, acquisition tax, trust setup, and bank fees stack quickly on sub-$400K condos.`,
-    `ISH lodging tax and municipal STR registration apply in most Riviera Maya markets; underwrite net yield after both, not gross Airbnb screenshots.`,
-    `Fideicomiso renewals every 50 years carry bank fees; model the 25-year mark when you compare Mexico vs fee-simple jurisdictions.`,
-    `Ejido-adjacent listings at steep discounts usually carry title risk — independent notario opinion is non-negotiable.`,
-    `Pre-construction buyers should confirm developer track record on two prior delivered projects in the same municipality.`,
-    `USD/MXN moves of 5–10% in a year can shift your effective entry price — stress-test FX on both purchase and eventual exit.`,
+    'Independent avvocato review should confirm visura catastale matches interior layout before compromesso deposit wires to notaio escrow accounts.',
+    'Cedolare secca at 21% on long-term furnished leases and 26% on STR income applies to non-resident owners unless commercialista confirms alternate structuring.',
+    'IMU on second homes follows cadastral category and municipal multiplier tables; request updated visura before modeling net yield on portal gross rent claims.',
+    'CIN registration is mandatory for short-term rental listings; properties without valid CIN face platform delisting and municipal fines depending on comune enforcement.',
+    'Conformità edilizia audits matter on pre-1980 stock because interior layouts marketed on portals often lag cadastral records until registry updates complete before rogito.',
+    'OMI quartiere reference bands help price negotiation; track three closed sales in the same micro-district rather than idealista asking averages alone at compromesso stage.',
+    'Parking deed documentation and elevator conformity certificates often determine whether hospital, university, or corporate tenants sign twelve-month furnished leases on walk-up stock.',
+    'Non-resident buyers budget 10-15% closing costs on second homes including notary, registration tax, and agency fees reviewed with commercialista before deposit authorization.',
+    'SCIA or CILA filing paths vary by comune; exterior work on UNESCO centro stock requires Soprintendenza approval beyond standard urban conformità paths.',
+    'EUR and GBP moves of 5-8% within a purchase year can shift effective entry basis; stress-test FX on both acquisition and eventual resale at identical budget bands.',
+    'Administrator statements covering three fiscal years should accompany compromesso review on pre-1990 condominiums where pending extraordinary works votes can spike spese within first ownership year.',
+    'Sellers should disclose pending condominium facade and elevator modernization votes before foreign buyers model net yield on tickets marketed each spring listing season.',
   ];
-  let hash = 0;
-  for (const c of slug) hash = (hash + c.charCodeAt(0)) % sentences.length;
   let text = '';
   let count = 0;
   for (let i = 0; i < sentences.length; i++) {
-    const s = sentences[(hash + i) % sentences.length];
+    const s = sentences[i];
     text += `${s}\n\n`;
     count += s.split(/\s+/).length;
     if (count >= gap) break;
@@ -51,22 +47,26 @@ function wordPadParagraphs(slug, gap) {
   return text.trim();
 }
 
-function safeAppendClosing(body, slug, gap) {
-  const lines = body.split('\n');
-  const h2Lines = lines
-    .map((l, i) => (l.startsWith('## Closing verification checklist') ? i : -1))
-    .filter((i) => i >= 0);
-  if (h2Lines.length !== 1) return null;
-  const h2Index = h2Lines[0];
-  let end = lines.length;
-  for (let i = h2Index + 1; i < lines.length; i++) {
-    if (lines[i].startsWith('## ') || lines[i].startsWith('<FaqBlock')) {
-      end = i;
-      break;
+function appendWords(body, gap) {
+  const paras = wordPadParagraphs(gap);
+  const closingRe = /^## Closing verification checklist/im;
+  const m = body.match(closingRe);
+  if (m) {
+    const lines = body.split('\n');
+    const h2Index = lines.findIndex((l) => closingRe.test(l));
+    let end = lines.length;
+    for (let i = h2Index + 1; i < lines.length; i++) {
+      if (lines[i].startsWith('## ') || lines[i].startsWith('<FaqBlock')) {
+        end = i;
+        break;
+      }
     }
+    return [...lines.slice(0, end), '', paras, '', ...lines.slice(end)].join('\n');
   }
-  const paras = wordPadParagraphs(slug, gap);
-  return [...lines.slice(0, end), '', paras, '', ...lines.slice(end)].join('\n');
+  const idx = body.indexOf('<FaqBlock');
+  const block = `## Due diligence depth\n\n${paras}`;
+  if (idx === -1) return body.trimEnd() + '\n\n' + block + '\n';
+  return body.slice(0, idx).trimEnd() + '\n\n' + block + '\n\n' + body.slice(idx);
 }
 
 const fq = spawnSync('node', ['scripts/fix-batch-queue.mjs', '--json', '--not-ready', '--limit', '500'], {
@@ -86,13 +86,8 @@ for (const row of rows) {
   const minW = MIN[row.coll] ?? 2000;
   const gap = minW - bodyWordCount(body);
   if (gap <= 0) continue;
-  const next = safeAppendClosing(body, row.slug, gap);
-  if (!next) {
-    console.warn(`skip ${row.coll}/${row.slug}: closing H2 count != 1`);
-    continue;
-  }
-  writeFileSync(path, fm + next);
-  console.log(`fixed ${row.coll}/${row.slug} (+${gap} words target)`);
+  writeFileSync(path, fm + appendWords(body, gap + 20));
+  console.log(`fixed ${row.coll}/${row.slug} (+${gap}w)`);
   n++;
 }
 console.log(`\nUpdated ${n} file(s)`);

@@ -1,20 +1,22 @@
 # Italian Estate
 
-> Independent research on Italy property investment for US, UK, and European buyers.
+> Independent research on Italy property investment for US, UK, and European buyers. Part of MORE Group cross-border real estate intelligence.
 
 - Site: https://italian-estate.com
+- Parent: https://moregroup.estate/
 - Contact: info@italian-estate.com
-- Markets: Tuscany, Puglia (Ostuni), Milan, Lake Como, Sicily
-- Focus: flat tax (€300k/yr from 2026), cadastral due diligence, STR licensing, foreign buyer share (~5% turnover)
-- Not a developer, not a listing portal
+- Corpus: 224+ guides, areas, comparisons, projects, developers, and news articles
+- Markets: Milan, Rome, Tuscany, Piedmont, Liguria, Emilia-Romagna, Umbria, Marche, Abruzzo, Molise, Basilicata, Puglia, Sicily, Sardinia, Lake Como, Amalfi Coast
+- Focus: foreign buyer due diligence, cadastral/conformità checks, STR licensing (CIN/SCIA), IMU and cedolare secca, flat tax regime, regional yield comparisons
+- Not a developer, not a listing portal — editorial + shortlist consultation
 
-## Collections (scaffold — content publishing next)
-- /guides/
-- /projects/
-- /areas/
-- /compare/
-- /developers/
-- /news/
+## Collections
+- /guides/ — legal, tax, regional investment hubs
+- /areas/ — city and district guides
+- /compare/ — city and region comparisons
+- /projects/ — curated project reviews
+- /developers/ — developer profiles
+- /news/ — market data articles
 
 ## Full corpus
 https://italian-estate.com/llms-full.txt
