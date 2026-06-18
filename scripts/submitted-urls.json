@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-18T00:22:10.499Z",
+  "updatedAt": "2026-06-18T00:28:39.394Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -12,6 +12,7 @@
     "https://italian-estate.com/areas/bari",
     "https://italian-estate.com/areas/bellagio",
     "https://italian-estate.com/areas/bologna",
+    "https://italian-estate.com/areas/campobasso",
     "https://italian-estate.com/areas/carovigno",
     "https://italian-estate.com/areas/chianti",
     "https://italian-estate.com/areas/chieti",
@@ -44,6 +45,7 @@
     "https://italian-estate.com/areas/sorrento",
     "https://italian-estate.com/areas/syracuse",
     "https://italian-estate.com/areas/taormina",
+    "https://italian-estate.com/areas/termoli",
     "https://italian-estate.com/areas/turin",
     "https://italian-estate.com/areas/urbino",
     "https://italian-estate.com/areas/val-dorcia",
@@ -53,6 +55,7 @@
     "https://italian-estate.com/compare/ancona-vs-urbino-property",
     "https://italian-estate.com/compare/arezzo-vs-siena-property",
     "https://italian-estate.com/compare/bologna-vs-florence-property",
+    "https://italian-estate.com/compare/campobasso-vs-termoli-property",
     "https://italian-estate.com/compare/florence-vs-rome-property-investment",
     "https://italian-estate.com/compare/florence-vs-siena-property",
     "https://italian-estate.com/compare/genoa-vs-florence-property",
@@ -142,6 +145,7 @@
     "https://italian-estate.com/guides/marche-property-investment-guide",
     "https://italian-estate.com/guides/milan-property-investment-guide",
     "https://italian-estate.com/guides/mistakes-foreign-buyers-italy",
+    "https://italian-estate.com/guides/molise-property-investment-guide",
     "https://italian-estate.com/guides/non-resident-mortgage-italy",
     "https://italian-estate.com/guides/notaio-italy-property-role",
     "https://italian-estate.com/guides/piedmont-property-investment-guide",
@@ -183,6 +187,7 @@
     "https://italian-estate.com/projects/bellagio-villa-lake-view",
     "https://italian-estate.com/projects/bliss-uptown-milan",
     "https://italian-estate.com/projects/bologna-bloom-living",
+    "https://italian-estate.com/projects/campobasso-centro-apartments",
     "https://italian-estate.com/projects/carovigno-villa-new-build",
     "https://italian-estate.com/projects/chianti-farmhouse-restoration",
     "https://italian-estate.com/projects/chieti-university-apartments",
@@ -226,6 +231,7 @@
     "https://italian-estate.com/projects/siena-country-villa-pool",
     "https://italian-estate.com/projects/sorrento-coastal-apartment",
     "https://italian-estate.com/projects/taormina-sea-view-residence",
+    "https://italian-estate.com/projects/termoli-coast-apartments",
     "https://italian-estate.com/projects/tranio-como-carate-urio-2br",
     "https://italian-estate.com/projects/tranio-florence-historic-center",
     "https://italian-estate.com/projects/tranio-puglia-masseria-new",
@@ -1721,6 +1727,36 @@
       "url": "https://italian-estate.com/projects/chieti-university-apartments",
       "channel": "google",
       "at": "2026-06-18T00:22:10.499Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/molise-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T00:28:39.394Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/campobasso",
+      "channel": "google",
+      "at": "2026-06-18T00:28:39.394Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/termoli",
+      "channel": "google",
+      "at": "2026-06-18T00:28:39.394Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/campobasso-vs-termoli-property",
+      "channel": "google",
+      "at": "2026-06-18T00:28:39.394Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/campobasso-centro-apartments",
+      "channel": "google",
+      "at": "2026-06-18T00:28:39.394Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/termoli-coast-apartments",
+      "channel": "google",
+      "at": "2026-06-18T00:28:39.394Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
