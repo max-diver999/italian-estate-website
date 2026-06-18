@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-18T00:28:39.394Z",
+  "updatedAt": "2026-06-18T00:35:17.525Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -24,6 +24,7 @@
     "https://italian-estate.com/areas/langhe",
     "https://italian-estate.com/areas/lecce",
     "https://italian-estate.com/areas/lucca",
+    "https://italian-estate.com/areas/matera",
     "https://italian-estate.com/areas/milan-navigli",
     "https://italian-estate.com/areas/modena",
     "https://italian-estate.com/areas/monte-argentario",
@@ -36,6 +37,7 @@
     "https://italian-estate.com/areas/pescara",
     "https://italian-estate.com/areas/polignano-a-mare",
     "https://italian-estate.com/areas/portofino",
+    "https://italian-estate.com/areas/potenza",
     "https://italian-estate.com/areas/rome-centro-storico",
     "https://italian-estate.com/areas/sanremo",
     "https://italian-estate.com/areas/santa-margherita-ligure",
@@ -64,6 +66,7 @@
     "https://italian-estate.com/compare/italy-vs-portugal-property-investment",
     "https://italian-estate.com/compare/italy-vs-spain-property-investment",
     "https://italian-estate.com/compare/lake-como-vs-liguria-property",
+    "https://italian-estate.com/compare/matera-vs-potenza-property",
     "https://italian-estate.com/compare/milan-vs-rome-property-investment",
     "https://italian-estate.com/compare/naples-vs-rome-property-investment",
     "https://italian-estate.com/compare/perugia-vs-assisi-property",
@@ -96,6 +99,7 @@
     "https://italian-estate.com/guides/agriturismo-investment-italy-guide",
     "https://italian-estate.com/guides/airbnb-investment-italy-guide",
     "https://italian-estate.com/guides/amalfi-coast-property-investment-guide",
+    "https://italian-estate.com/guides/basilicata-property-investment-guide",
     "https://italian-estate.com/guides/best-regions-invest-italy-property-2026",
     "https://italian-estate.com/guides/buy-property-italy-foreigner",
     "https://italian-estate.com/guides/cadastral-value-vs-market-price-italy",
@@ -207,6 +211,7 @@
     "https://italian-estate.com/projects/lendlease-mind-milan",
     "https://italian-estate.com/projects/lucca-villa-historic-renovation",
     "https://italian-estate.com/projects/maciachini-urban-retreat",
+    "https://italian-estate.com/projects/matera-sassi-apartments",
     "https://italian-estate.com/projects/meli-navigli-milan",
     "https://italian-estate.com/projects/milano-sesto-urban-regeneration",
     "https://italian-estate.com/projects/monte-argentario-sea-view",
@@ -222,6 +227,7 @@
     "https://italian-estate.com/projects/pescara-centro-apartments",
     "https://italian-estate.com/projects/porto-cervo-villa-development",
     "https://italian-estate.com/projects/portofino-apartment-renovation",
+    "https://italian-estate.com/projects/potenza-centro-apartments",
     "https://italian-estate.com/projects/prandina-navigli-milan",
     "https://italian-estate.com/projects/rapallo-sea-view-apartments",
     "https://italian-estate.com/projects/rome-jubilee-centro-storico",
@@ -1757,6 +1763,36 @@
       "url": "https://italian-estate.com/projects/termoli-coast-apartments",
       "channel": "google",
       "at": "2026-06-18T00:28:39.394Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/basilicata-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T00:35:17.525Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/matera",
+      "channel": "google",
+      "at": "2026-06-18T00:35:17.525Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/potenza",
+      "channel": "google",
+      "at": "2026-06-18T00:35:17.525Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/matera-vs-potenza-property",
+      "channel": "google",
+      "at": "2026-06-18T00:35:17.525Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/matera-sassi-apartments",
+      "channel": "google",
+      "at": "2026-06-18T00:35:17.525Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/potenza-centro-apartments",
+      "channel": "google",
+      "at": "2026-06-18T00:35:17.525Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
