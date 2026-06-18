@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-18T00:06:43.513Z",
+  "updatedAt": "2026-06-18T00:22:10.499Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -14,6 +14,7 @@
     "https://italian-estate.com/areas/bologna",
     "https://italian-estate.com/areas/carovigno",
     "https://italian-estate.com/areas/chianti",
+    "https://italian-estate.com/areas/chieti",
     "https://italian-estate.com/areas/cisternino",
     "https://italian-estate.com/areas/como",
     "https://italian-estate.com/areas/costa-smeralda",
@@ -31,6 +32,7 @@
     "https://italian-estate.com/areas/palermo",
     "https://italian-estate.com/areas/parma",
     "https://italian-estate.com/areas/perugia",
+    "https://italian-estate.com/areas/pescara",
     "https://italian-estate.com/areas/polignano-a-mare",
     "https://italian-estate.com/areas/portofino",
     "https://italian-estate.com/areas/rome-centro-storico",
@@ -62,6 +64,7 @@
     "https://italian-estate.com/compare/milan-vs-rome-property-investment",
     "https://italian-estate.com/compare/naples-vs-rome-property-investment",
     "https://italian-estate.com/compare/perugia-vs-assisi-property",
+    "https://italian-estate.com/compare/pescara-vs-chieti-property",
     "https://italian-estate.com/compare/puglia-vs-tuscany-property",
     "https://italian-estate.com/compare/sicily-vs-puglia-property",
     "https://italian-estate.com/compare/turin-vs-milan-property",
@@ -86,6 +89,7 @@
     "https://italian-estate.com/developers/redo-sgr-italy",
     "https://italian-estate.com/get-shortlist",
     "https://italian-estate.com/guides",
+    "https://italian-estate.com/guides/abruzzo-property-investment-guide",
     "https://italian-estate.com/guides/agriturismo-investment-italy-guide",
     "https://italian-estate.com/guides/airbnb-investment-italy-guide",
     "https://italian-estate.com/guides/amalfi-coast-property-investment-guide",
@@ -181,6 +185,7 @@
     "https://italian-estate.com/projects/bologna-bloom-living",
     "https://italian-estate.com/projects/carovigno-villa-new-build",
     "https://italian-estate.com/projects/chianti-farmhouse-restoration",
+    "https://italian-estate.com/projects/chieti-university-apartments",
     "https://italian-estate.com/projects/coima-guido-reni-rome",
     "https://italian-estate.com/projects/coima-olympic-village-milan",
     "https://italian-estate.com/projects/coima-via-carcani-trastevere",
@@ -209,6 +214,7 @@
     "https://italian-estate.com/projects/ostuni-trulli-modern-villa",
     "https://italian-estate.com/projects/palermo-centro-renovation",
     "https://italian-estate.com/projects/perugia-centro-apartments",
+    "https://italian-estate.com/projects/pescara-centro-apartments",
     "https://italian-estate.com/projects/porto-cervo-villa-development",
     "https://italian-estate.com/projects/portofino-apartment-renovation",
     "https://italian-estate.com/projects/prandina-navigli-milan",
@@ -1685,6 +1691,36 @@
       "url": "https://italian-estate.com/projects/urbino-university-apartments",
       "channel": "google",
       "at": "2026-06-18T00:06:43.513Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/abruzzo-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-18T00:22:10.499Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/pescara",
+      "channel": "google",
+      "at": "2026-06-18T00:22:10.499Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/chieti",
+      "channel": "google",
+      "at": "2026-06-18T00:22:10.499Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/pescara-vs-chieti-property",
+      "channel": "google",
+      "at": "2026-06-18T00:22:10.499Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/pescara-centro-apartments",
+      "channel": "google",
+      "at": "2026-06-18T00:22:10.499Z"
+    },
+    {
+      "url": "https://italian-estate.com/projects/chieti-university-apartments",
+      "channel": "google",
+      "at": "2026-06-18T00:22:10.499Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended."
