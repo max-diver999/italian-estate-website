@@ -20,7 +20,7 @@ export const THIN_H2_OPEN = 35;
 const DEFINITION_RE =
   /\b(is|are|refers to|means|typically|costs|starts at|ranges from|allows|requires)\b/i;
 const STAT_RE =
-  /\b\d+(\.\d+)?\s*(?:%|percent|million|bn|billion|thousand|k|years?|months?|weeks?|days?|sqm|sq\.?\s*m|USD|EUR|GBP|THB|AED|MXN|ZAR)|\$\d[\d,]*|€[\d,]+|£[\d,]+|\d[\d,]*\s*(?:฿|₽)/i;
+  /\b\d+(\.\d+)?\s*(?:%|percent|million|bn|billion|thousand|k|years?|months?|weeks?|days?|minutes?|hours?|hrs?|sqm|sq\.?\s*m|USD|EUR|GBP|THB|AED|MXN|ZAR)|\$\d[\d,]*|€[\d,]+|£[\d,]+|\d[\d,]*\s*(?:฿|₽)/i;
 const VAGUE_RE = /\b(many|several|some|often|usually|a lot|significant|various)\b/i;
 const PRONOUN_START_RE = /^(it|this|they|these|those|however|but|and|also)\b/i;
 const QUESTION_H2_RE = /^(what|how|why|when|where|who|which|can|do|does|is|are|should|will)\b/i;
@@ -56,7 +56,7 @@ export function splitParagraphs(text) {
 }
 
 const SKIP_H2 =
-  /Closing|Faq|Independent verification|MORE Group underwriting|who we are \(citable|Get Personal Help/i;
+  /Closing|Faq|Independent verification|MORE Group underwriting|MORE Group citable field data|Informational disclaimer|who we are \(citable|Get Personal Help/i;
 
 export function extractH2Blocks(body) {
   const blocks = [];
