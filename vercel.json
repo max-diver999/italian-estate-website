@@ -2,6 +2,11 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/guides/italy-residency-by-investment-guide/",
+      "destination": "/guides/italy-investor-visa-property/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.italian-estate.com" }],
       "destination": "https://italian-estate.com/:path*",

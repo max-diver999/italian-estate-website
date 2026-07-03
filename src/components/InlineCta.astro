@@ -1,0 +1,15 @@
+---
+interface Props {
+  text?: string;
+  linkText?: string;
+}
+
+const {
+  text = 'Need help finding Italy property matched to your goals?',
+  linkText = 'Get a free shortlist',
+} = Astro.props;
+---
+<aside class="surface-card p-6 my-8 border-l-4 border-[var(--color-primary)]">
+  <p class="text-[var(--color-ink)] mb-3">{text}</p>
+  <a href="/get-shortlist/" class="btn-secondary inline-block px-5 py-2.5 text-sm">{linkText} →</a>
+</aside>
