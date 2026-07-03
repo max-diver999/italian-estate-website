@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T12:22:32.610Z",
+  "updatedAt": "2026-07-03T12:40:41.113Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -5374,6 +5374,136 @@
       "url": "https://italian-estate.com/compare/italy-vs-france-property-investment",
       "channel": "google",
       "at": "2026-07-03T12:22:32.610Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-investor-visa-property",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/heritage-restricted-property-italy",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-capital-gains-tax-property",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/compromesso-italy-property-contract",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/bellagio",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/campobasso",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/chianti",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/chieti",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/como",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/costa-smeralda",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/florence",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/lucca",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/matera",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/milan-navigli",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/naples",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/palermo",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/pescara",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/portofino",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/potenza",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/rome-centro-storico",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/sanremo",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/siena",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/sorrento",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/syracuse",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/taormina",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/areas/termoli",
+      "channel": "google",
+      "at": "2026-07-03T12:40:41.113Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended.",
