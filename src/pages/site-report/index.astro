@@ -1,10 +1,10 @@
 ---
 export const prerender = true;
 
-const reportDate = '25 June 2026';
-const reportVersion = 'v2.0';
+const reportDate = '10 July 2026';
+const reportVersion = 'v3.0';
 const launchDate = 'May 2026';
-const dataThrough = '24 June 2026';
+const dataThrough = '7 July 2026';
 
 const monthlyGsc = [
   {
@@ -13,72 +13,69 @@ const monthlyGsc = [
     "clicks": 0,
     "impressions": 0,
     "position": 0,
-    "note": "Pre-crawl · 249 URLs submitted to Google API"
+    "note": "Pre-crawl · sitemap submitted · indexing API live"
   },
   {
     "month": "Jun 2026",
     "label": "Jun",
-    "clicks": 0,
-    "impressions": 470,
-    "position": 26.6,
-    "note": "Through 24 Jun · first impressions 17 Jun"
+    "clicks": 6,
+    "impressions": 1514,
+    "position": 18.4,
+    "note": "First impressions 17 Jun · first clicks 26 Jun"
+  },
+  {
+    "month": "Jul 2026",
+    "label": "Jul",
+    "clicks": 6,
+    "impressions": 1747,
+    "position": 6.1,
+    "note": "Partial · 7 days · avg pos broke into top 10"
   }
 ];
 
 const monthlyGa4 = [
-  {
-    "month": "Jun",
-    "sessions": 41
-  }
+  { "month": "Jun", "sessions": 61 },
+  { "month": "Jul", "sessions": 49 }
 ];
 
 const contentBreakdown = [
-  {
-    "type": "Guides",
-    "count": 70,
-    "words": 219380,
-    "color": "#2d7a5e"
-  },
-  {
-    "type": "Projects",
-    "count": 65,
-    "words": 98764,
-    "color": "#4e9e7e"
-  },
-  {
-    "type": "Areas",
-    "count": 48,
-    "words": 114079,
-    "color": "#8b5cf6"
-  },
-  {
-    "type": "Comparisons",
-    "count": 22,
-    "words": 51698,
-    "color": "#d97706"
-  },
-  {
-    "type": "Developers",
-    "count": 15,
-    "words": 24821,
-    "color": "#4e9e7e"
-  },
-  {
-    "type": "News",
-    "count": 4,
-    "words": 2722,
-    "color": "#60a5fa"
-  }
+  { "type": "Guides", "count": 90, "words": 389137, "color": "#2d7a5e" },
+  { "type": "Projects", "count": 65, "words": 146111, "color": "#4e9e7e" },
+  { "type": "Areas", "count": 48, "words": 159855, "color": "#8b5cf6" },
+  { "type": "Comparisons", "count": 30, "words": 106703, "color": "#d97706" },
+  { "type": "Developers", "count": 15, "words": 35703, "color": "#4e9e7e" },
+  { "type": "News", "count": 4, "words": 4739, "color": "#60a5fa" }
 ];
 
 const totalClicks = monthlyGsc.reduce((s, m) => s + m.clicks, 0);
 const totalImp = monthlyGsc.reduce((s, m) => s + m.impressions, 0);
 const totalWords = contentBreakdown.reduce((s, c) => s + c.words, 0);
 const totalFiles = contentBreakdown.reduce((s, c) => s + c.count, 0);
-const clicksDelta = monthlyGsc.length > 1 && monthlyGsc[monthlyGsc.length - 2].clicks > 0
-  ? Math.round(((monthlyGsc[monthlyGsc.length - 1].clicks - monthlyGsc[monthlyGsc.length - 2].clicks) / monthlyGsc[monthlyGsc.length - 2].clicks) * 100)
+const ga4Sessions = monthlyGa4.reduce((s, m) => s + m.sessions, 0);
+const gsc28d = { clicks: 12, impressions: 3261, ctr: 0.37, position: 11.8 };
+const impMomPct = monthlyGsc[1]?.impressions
+  ? Math.round(((monthlyGsc[2].impressions - monthlyGsc[1].impressions) / monthlyGsc[1].impressions) * 100)
   : 0;
-const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
+const posImprove = monthlyGsc[1]?.position
+  ? (monthlyGsc[1].position - monthlyGsc[2].position).toFixed(1)
+  : '0';
+
+const dailyRaw = [
+  { d: '06-17', c: 0, i: 17 }, { d: '06-18', c: 0, i: 44 }, { d: '06-19', c: 0, i: 49 },
+  { d: '06-20', c: 0, i: 88 }, { d: '06-21', c: 0, i: 89 }, { d: '06-22', c: 0, i: 77 },
+  { d: '06-23', c: 0, i: 106 }, { d: '06-24', c: 0, i: 91 }, { d: '06-25', c: 0, i: 77 },
+  { d: '06-26', c: 1, i: 104 }, { d: '06-27', c: 0, i: 177 }, { d: '06-28', c: 1, i: 223 },
+  { d: '06-29', c: 3, i: 191 }, { d: '06-30', c: 1, i: 181 }, { d: '07-01', c: 0, i: 192 },
+  { d: '07-02', c: 2, i: 234 }, { d: '07-03', c: 0, i: 192 }, { d: '07-04', c: 0, i: 316 },
+  { d: '07-05', c: 2, i: 345 }, { d: '07-06', c: 2, i: 252 }, { d: '07-07', c: 0, i: 216 }
+];
+
+const chartPayload = JSON.stringify({
+  monthlyGsc: monthlyGsc.map(m => ({ label: m.label, clicks: m.clicks, impressions: m.impressions })),
+  monthlyGa4,
+  contentBreakdown: contentBreakdown.map(c => ({ type: c.type, count: c.count, color: c.color })),
+  dailyRaw
+});
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -507,9 +504,9 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
   <div class="section-title">At a glance</div>
   <div class="stats-grid">
     <div class="stat-card">
-      <div class="num teal">249</div>
+      <div class="num teal">277</div>
       <div class="label">URLs in sitemap</div>
-      <div class="sublabel">48 areas · 22 compare · 15 developers · 70 guides · 65 projects · 4 news</div>
+      <div class="sublabel">48 areas · 30 compare · 15 developers · 90 guides · 65 projects · 4 news</div>
     </div>
     <div class="stat-card">
       <div class="num amber">—</div>
@@ -517,14 +514,14 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
       <div class="sublabel">New domain · baseline pending · target 8–12 Q3</div>
     </div>
     <div class="stat-card">
-      <div class="num">511K</div>
+      <div class="num">842K</div>
       <div class="label">SEO words</div>
-      <div class="sublabel">224 MDX · ~2 283 avg · 95 git commits</div>
+      <div class="sublabel">252 MDX · ~3 342 avg · 114 git commits</div>
     </div>
     <div class="stat-card">
-      <div class="num teal">0</div>
-      <div class="label">GSC click URLs</div>
-      <div class="sublabel">First impressions 17 Jun · clicks expected next 2–4 weeks</div>
+      <div class="num teal">100+</div>
+      <div class="label">GSC impression URLs</div>
+      <div class="sublabel">100 pages with impressions in 28d window · 11 with clicks</div>
     </div>
     <div class="stat-card">
       <div class="num">6</div>
@@ -532,14 +529,14 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
       <div class="sublabel">guides · projects · areas · compare · developers · news</div>
     </div>
     <div class="stat-card">
-      <div class="num amber">0</div>
-      <div class="label">GSC clicks (Jun)</div>
-      <div class="sublabel">470 imp · CTR 0% · avg pos 26.6 · golden visa cluster surfacing</div>
+      <div class="num teal">12</div>
+      <div class="label">GSC clicks (28d)</div>
+      <div class="sublabel">3 261 imp · CTR 0.37% · avg pos 11.8 · Jul avg pos 6.1</div>
     </div>
     <div class="stat-card">
-      <div class="num teal">41</div>
-      <div class="label">GA4 sessions</div>
-      <div class="sublabel">Jun only · 40 direct · 200 pageviews · lead API 200</div>
+      <div class="num amber">0</div>
+      <div class="label">Kommo leads (site)</div>
+      <div class="sublabel">{ga4Sessions} GA4 sessions · 23 organic · 0 generate_lead events yet</div>
     </div>
   </div>
 
@@ -547,28 +544,28 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
 
   <div class="kpi-strip">
     <div class="kpi-card">
-      <div class="kpi-label">GSC Clicks</div>
-      <div class="kpi-value">{totalClicks}</div>
-      <span class="kpi-delta up">↑ {clicksDelta}% Jun vs May</span>
-      <div class="kpi-sub">Since launch · Google Search Console</div>
+      <div class="kpi-label">GSC Clicks (28d)</div>
+      <div class="kpi-value">{gsc28d.clicks}</div>
+      <span class="kpi-delta up">↑ First clicks 26 Jun</span>
+      <div class="kpi-sub">10 Jun – 7 Jul · {gsc28d.impressions.toLocaleString('en-US')} impressions</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Impressions</div>
-      <div class="kpi-value">{(totalImp / 1000).toFixed(1)}k</div>
-      <span class="kpi-delta up">↑ Index growing</span>
-      <div class="kpi-sub">{totalImp.toLocaleString('en-US')} total · May peak 23.6k</div>
+      <div class="kpi-value">{(gsc28d.impressions / 1000).toFixed(1)}k</div>
+      <span class="kpi-delta up">↑ {impMomPct}% Jul vs Jun</span>
+      <div class="kpi-sub">Avg position {gsc28d.position} · Jul partial avg 6.1</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">GA4 Sessions</div>
-      <div class="kpi-value">4.9k</div>
-      <span class="kpi-delta up">↑ May spike</span>
-      <div class="kpi-sub">Mar–Jun cumulative</div>
+      <div class="kpi-value">{ga4Sessions}</div>
+      <span class="kpi-delta neutral">23 organic · 79 direct</span>
+      <div class="kpi-sub">Jun–Jul partial · 0 generate_lead events</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-label">Content corpus</div>
-      <div class="kpi-value">{(totalWords / 1_000_000).toFixed(1)}M</div>
-      <span class="kpi-delta neutral">{totalFiles} pages</span>
-      <div class="kpi-sub">Words in MDX</div>
+      <div class="kpi-label">Lead goal gap</div>
+      <div class="kpi-value">0 / 5</div>
+      <span class="kpi-delta down">Per week target</span>
+      <div class="kpi-sub">Kommo: 0 tagged leads · API 200 OK</div>
     </div>
   </div>
 
@@ -576,7 +573,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
     <div class="section-head">
       <div>
         <h2>Monthly growth since launch</h2>
-        <p>Google Search Console web search · {launchDate} → {dataThrough}. June is partial (20 days).</p>
+        <p>Google Search Console web search · {launchDate} → {dataThrough}. July row is partial (7 days).</p>
       </div>
       <span class="badge-src">GSC API · Updated {reportDate}</span>
     </div>
@@ -589,7 +586,8 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
         <div class="card-title">GA4 sessions by month</div>
         <div class="chart-wrap"><canvas id="chartGa4"></canvas></div>
         <div class="insight" style="margin-top:16px;">
-          <strong>Early index phase:</strong> First GSC impressions appeared 17 Jun (17 imp) and ramped to 106/day by 23 Jun. Investor visa / golden visa queries already surfacing at pos 54–72. GA4: 41 sessions (mostly direct pre-organic).</div>
+          <strong>Visibility without conversion yet:</strong> Impressions ramped from 17/day (17 Jun) to 345/day (5 Jul). Avg position improved from 18.4 (Jun) to 6.1 (Jul partial). Clicks still only 12/28d because CTR on top pages at pos 4–5 is near zero. GA4: {ga4Sessions} sessions, 23 organic, no lead events fired.
+        </div>
         </div>
       </div>
 
@@ -608,20 +606,90 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
             </tr>
           </thead>
           <tbody>
-        <tr><td><strong>Guides</strong></td><td class="num">70</td><td>219,380</td><td>3,134</td></tr>
-        <tr><td><strong>Projects</strong></td><td class="num">65</td><td>98,764</td><td>1,519</td></tr>
-        <tr><td><strong>Areas</strong></td><td class="num">48</td><td>114,079</td><td>2,377</td></tr>
-        <tr><td><strong>Comparisons</strong></td><td class="num">22</td><td>51,698</td><td>2,350</td></tr>
-        <tr><td><strong>Developers</strong></td><td class="num">15</td><td>24,821</td><td>1,655</td></tr>
-        <tr><td><strong>News</strong></td><td class="num">4</td><td>2,722</td><td>681</td></tr>
-        <tr style="background:#faf8f4;">
-          <td><strong>TOTAL</strong></td>
-          <td class="num">224</td>
-          <td><strong>511,464</strong></td>
-          <td>2,283</td>
-        </tr>
-      </tbody>
+            <tr><td><strong>May 2026</strong></td><td class="num">0</td><td>0</td><td>—</td><td>—</td><td>Pre-crawl · indexing API live</td></tr>
+            <tr><td><strong>Jun 2026</strong></td><td class="num">6</td><td>1,514</td><td>18.4</td><td>new</td><td>First impressions 17 Jun · first clicks 26 Jun</td></tr>
+            <tr style="background:#faf8f4;"><td><strong>Jul 2026 (partial)</strong></td><td class="num">6</td><td><strong>1,747</strong></td><td><strong>6.1</strong></td><td>0%</td><td>7 days · pos improved {posImprove} pts vs Jun</td></tr>
+          </tbody>
       </table>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:20px;">
+      <div class="card">
+        <div class="card-title">Content by collection</div>
+        <div class="chart-wrap-sm"><canvas id="chartContent"></canvas></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Daily GSC trend (28d)</div>
+        <div class="chart-wrap-sm"><canvas id="chartDaily"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-title" style="margin-top:40px;">SEO Pulse — Google Search Console</div>
+  <div style="background:white;border-radius:16px;border:1px solid #e8e4dc;padding:24px 28px;">
+
+    <div class="pulse-header">
+      <div>
+        <h2>Organic search performance</h2>
+        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">italian-estate.com · 10 Jun – 7 Jul 2026 · MCP search-console-italian-estate</p>
+      </div>
+      <div class="pulse-updated"><span class="pulse-updated-dot"></span>Updated {reportDate} via GSC API</div>
+    </div>
+
+    <div class="pulse-kpi-row">
+      <div class="pulse-kpi kpi-green">
+        <div class="kpi-trend trend-up">28d window</div>
+        <div class="kpi-label">Clicks</div>
+        <div class="kpi-val">{gsc28d.clicks}</div>
+        <div class="kpi-sub">CTR {gsc28d.ctr}% · 11 pages with clicks</div>
+      </div>
+      <div class="pulse-kpi kpi-blue">
+        <div class="kpi-trend trend-up">↑ {impMomPct}% Jul</div>
+        <div class="kpi-label">Impressions</div>
+        <div class="kpi-val">{(gsc28d.impressions / 1000).toFixed(1)}k</div>
+        <div class="kpi-sub">100+ URLs with impressions · peak 345/day</div>
+      </div>
+      <div class="pulse-kpi kpi-amber">
+        <div class="kpi-trend trend-up">↑ pos {posImprove}</div>
+        <div class="kpi-label">Avg position</div>
+        <div class="kpi-val">{gsc28d.position}</div>
+        <div class="kpi-sub">Jul partial 6.1 · was 18.4 in full Jun</div>
+      </div>
+      <div class="pulse-kpi kpi-orange">
+        <div class="kpi-label">CTR leak</div>
+        <div class="kpi-val">630</div>
+        <div class="kpi-sub">Mortgage guide imp at pos 4.2 · 0 clicks</div>
+      </div>
+    </div>
+
+    <div class="pulse-grid">
+      <div class="pulse-card">
+        <div class="pulse-card-title"><span class="span-green"></span> Top queries (visa cluster · 0 clicks)</div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#1</div><div class="pulse-query-text">italy investor visa</div><div class="pulse-query-pos">69</div><div class="pulse-query-imp">41 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#2</div><div class="pulse-query-text">investor visa italy</div><div class="pulse-query-pos">65</div><div class="pulse-query-imp">34 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#3</div><div class="pulse-query-text">golden visa italy property</div><div class="pulse-query-pos">68</div><div class="pulse-query-imp">23 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#4</div><div class="pulse-query-text">italy investment visa</div><div class="pulse-query-pos">66</div><div class="pulse-query-imp">21 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#5</div><div class="pulse-query-text">investor visa for italy</div><div class="pulse-query-pos">74</div><div class="pulse-query-imp">20 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#6</div><div class="pulse-query-text">italy residency by investment</div><div class="pulse-query-pos">73</div><div class="pulse-query-imp">15 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#7</div><div class="pulse-query-text">italian investor visa</div><div class="pulse-query-pos">62</div><div class="pulse-query-imp">14 imp</div></div>
+      </div>
+      <div class="pulse-card">
+        <div class="pulse-card-title"><span class="span-blue"></span> Top pages (impressions · CTR leak)</div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/non-resident-mortgage-italy/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">630 imp</span><span class="pulse-badge badge-pos">pos 4.2</span><span class="pulse-badge badge-pos">0 clk</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-reciprocity-property-foreigners/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">448 imp</span><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-pos">pos 4.2</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-investor-visa-property/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">417 imp</span><span class="pulse-badge badge-pos">pos 51.7</span><span class="pulse-badge badge-pos">0 clk</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-capital-gains-tax-property/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">219 imp</span><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-pos">pos 4.5</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/heritage-restricted-property-italy/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">209 imp</span><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-pos">pos 4.9</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-holiday-let-licensing/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">106 imp</span><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-pos">pos 6.1</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-property-management-costs/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">35 imp</span><span class="pulse-badge badge-clicks">2 clk</span><span class="pulse-badge badge-pos">pos 6.7</span></div></div>
+      </div>
+    </div>
+
+    <div class="pulse-insight">
+      <div class="pulse-insight-icon">🎯</div>
+      <div class="pulse-insight-text">
+        <strong>Path to 5 leads/week:</strong> You already have ~3.3k impressions/28d but only 12 clicks (0.37% CTR). Fixing titles on mortgage (630 imp), reciprocity (448 imp) and capital-gains (219 imp) at avg pos 4–5 could add 30–50 clicks/week without new rankings. Visa pillar (417 imp, pos 52) needs position work first. Then convert traffic: InlineCta on 11 guides is live, but GA4 shows 0 <code>generate_lead</code> events (fires only on /thanks/ redirect).
       </div>
     </div>
 
@@ -629,115 +697,99 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
     <div class="pulse-card" style="margin-top:16px;">
       <div class="pulse-card-title">
         <span style="width:8px;height:8px;border-radius:50%;display:inline-block;background:#a78bfa;"></span>
-        Indexation Status — Google Search Console + Sitemap
+        Indexation + health
       </div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
         <div style="text-align:center;padding:16px;background:#f0faf5;border-radius:10px;border:1px solid #c6e8da;">
-          <div style="font-size:28px;font-weight:900;color:#2d7a5e;">249</div>
+          <div style="font-size:28px;font-weight:900;color:#2d7a5e;">277</div>
           <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">URLs in sitemap</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">Live 200 OK · lastmod 19 Jun · noindex filter active</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">Live 200 OK · 10 Jul smoke pass</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dcfce7;border-radius:10px;border:1px solid #86efac;">
-          <div style="font-size:28px;font-weight:900;color:#16a34a;">0</div>
-          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">URLs with clicks</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">GSC click URLs · 22 May–16 Jun window</div>
+          <div style="font-size:28px;font-weight:900;color:#16a34a;">100+</div>
+          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">GSC impression URLs</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">11 URLs with clicks in 28d</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dbeafe;border-radius:10px;border:1px solid #93c5fd;">
           <div style="font-size:28px;font-weight:900;color:#2563eb;">200</div>
-          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Health status</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">sitemap + lead API 200 OK · 19 Jun</div>
+          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Lead API</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">POST /api/lead/ · sitemap 200 OK</div>
         </div>
         <div style="text-align:center;padding:16px;background:#ffedd5;border-radius:10px;border:1px solid #fdba74;">
-          <div style="font-size:28px;font-weight:900;color:#c2410c;">224</div>
+          <div style="font-size:28px;font-weight:900;color:#c2410c;">252</div>
           <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">MDX in repo</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">737 guides · 303 projects · 206 news</div>
-        </div>
-      </div>
-      <div class="pulse-insight" style="margin-top:12px;">
-        <div class="pulse-insight-icon">📊</div>
-        <div class="pulse-insight-text">
-          <strong>Coverage note:</strong> sitemap trimmed to 1 139 indexable URLs (was 1 261 — noindex consolidation). 60 GSC click URLs. 4 external links in Collaborator moderation. EN site never in Yandex — Bing IndexNow direct only (<code>bing.com/indexnow</code>).
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">842K words · 114 commits</div>
         </div>
       </div>
     </div>
 
-    <!-- ═══════════════════════════════════════════════════════════
-         GA4 BLOCK — Google Analytics 4 (28-day window)
-         ═══════════════════════════════════════════════════════════ -->
+    <!-- GA4 -->
     <div class="pulse-card" style="margin-top:16px;">
       <div class="pulse-card-title">
         <span style="width:8px;height:8px;border-radius:50%;display:inline-block;background:#fbbf24;"></span>
-        Google Analytics 4 — 22 May – 16 Jun 2026
+        Google Analytics 4 — Jun–Jul 2026
       </div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
         <div style="text-align:center;padding:16px;background:#fef3c7;border-radius:10px;border:1px solid #fde68a;">
-          <div style="font-size:28px;font-weight:900;color:#b45309;">41</div>
+          <div style="font-size:28px;font-weight:900;color:#b45309;">{ga4Sessions}</div>
           <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Sessions</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">vs 3 208 in v17 window · Direct 1 352</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">Jun 61 · Jul 49 partial</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dbeafe;border-radius:10px;border:1px solid #93c5fd;">
-          <div style="font-size:28px;font-weight:900;color:#2563eb;">0</div>
-          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Organic Search sessions</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">184 pageviews · + AI Assistant 8 sessions</div>
+          <div style="font-size:28px;font-weight:900;color:#2563eb;">23</div>
+          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Organic Search</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">~6 organic sessions/week</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dcfce7;border-radius:10px;border:1px solid #86efac;">
-          <div style="font-size:28px;font-weight:900;color:#16a34a;">200</div>
-          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Pageviews</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">Organic Social 49 · Referral 9</div>
+          <div style="font-size:28px;font-weight:900;color:#16a34a;">0</div>
+          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">generate_lead events</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">Only fires on /thanks/ page load</div>
         </div>
         <div style="text-align:center;padding:16px;background:#ede9fe;border-radius:10px;border:1px solid #c4b5fd;">
-          <div style="font-size:28px;font-weight:900;color:#7c3aed;">40</div>
-          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Organic Social</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">Reddit warmup + Pinterest · track referral quality</div>
+          <div style="font-size:28px;font-weight:900;color:#7c3aed;">1</div>
+          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">AI Assistant</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">Early GEO signal · track weekly</div>
         </div>
       </div>
       <div class="pulse-insight" style="margin-top:12px;">
-        <div class="pulse-insight-icon">👥</div>
+        <div class="pulse-insight-icon">📄</div>
         <div class="pulse-insight-text">
-          <strong>Organic stable, social growing:</strong> 128 organic sessions in 26-day window (vs 151 in v17’s 40-day window). Direct still high (bots + returning). New signal: 8 AI Assistant sessions — GEO visibility starting. Organic Social 49 sessions aligns with Reddit warmup activity.
+          <strong>Top landing pages:</strong> / (63 sessions all-time window), /guides/uk-tax-italy-holiday-home/ (9), /guides/italy-inheritance-law-property-foreigners/ (5). Direct traffic dominates (79 sessions): bots + team + untagged referrals. Cannot optimize leads until GA4 tracks form submit, not just thank-you redirect.
         </div>
       </div>
     </div>
 
-    <!-- Full SEO audit -->
+    <!-- Audit snapshot -->
     <div class="pulse-card" style="margin-top:16px;">
       <div class="pulse-card-title">
         <span style="width:8px;height:8px;border-radius:50%;display:inline-block;background:#2d7a5e;"></span>
-        Full SEO Audit — 19 Jun 2026
+        Site health snapshot — 10 Jul 2026
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
         <div class="pulse-insight" style="margin-top:0;background:#f0fdf4;border-color:#bbf7d0;">
-          <div class="pulse-insight-icon">1</div>
-          <div class="pulse-insight-text"><strong>Technical SEO: 9/10.</strong> sitemap 200, lead API 200, robots OK. 1 139 live URLs. Bing + GSC MCP live. No crawl errors.</div>
+          <div class="pulse-insight-icon">✓</div>
+          <div class="pulse-insight-text"><strong>Technical: PASS.</strong> Sitemap 200, lead API 200, 277 URLs. Dedicated GCP italian-estate-indexing. EN site: Google + Bing only, never Yandex.</div>
         </div>
         <div class="pulse-insight" style="margin-top:0;background:#f0fdf4;border-color:#bbf7d0;">
-          <div class="pulse-insight-icon">2</div>
-          <div class="pulse-insight-text"><strong>Indexation: 8/10.</strong> 60 GSC click URLs. June click velocity +157% vs late May. Sitemap noindex cleanup reduced URL count intentionally.</div>
+          <div class="pulse-insight-icon">✓</div>
+          <div class="pulse-insight-text"><strong>Content: 252 MDX.</strong> GEO grade A on 18 target guides. Visa pillar consolidated (301 from residency guide). InlineCta on 11 high-impression guides.</div>
         </div>
         <div class="pulse-insight" style="margin-top:0;background:#fff7ed;border-color:#fed7aa;">
-          <div class="pulse-insight-icon">3</div>
-          <div class="pulse-insight-text"><strong>On-page / CTR: 6.5/10.</strong> CTR 0.36% (up from 0.27%). Rental-yield guide 1 564 imp / 0.13% CTR = biggest leak. Project pages convert well.</div>
-        </div>
-        <div class="pulse-insight" style="margin-top:0;background:#f0faf5;border-color:#c6e8da;">
-          <div class="pulse-insight-icon">4</div>
-          <div class="pulse-insight-text"><strong>Content + links: 7.5/10.</strong> 1 305 MDX, ~2.05M words. 4 paid links in moderation. DR tracker added. Yield guide CTA upgrade live.</div>
-        </div>
-        <div class="pulse-insight" style="margin-top:0;background:#eef2ff;border-color:#c7d2fe;">
-          <div class="pulse-insight-icon">5</div>
-          <div class="pulse-insight-text"><strong>Multi-engine: 7/10.</strong> Bing ~26 clicks in Jun window. Conrad AU lead validated Yahoo path. Google still primary volume.</div>
+          <div class="pulse-insight-icon">!</div>
+          <div class="pulse-insight-text"><strong>CTR: FAIL.</strong> 1.5k+ impressions on pages at pos 4–5 with under 1% CTR. Title/meta sprint needed on mortgage, reciprocity, codice-fiscale, uk-tax, closing-costs.</div>
         </div>
         <div class="pulse-insight" style="margin-top:0;background:#fef2f2;border-color:#fecaca;">
           <div class="pulse-insight-icon">!</div>
-          <div class="pulse-insight-text"><strong>Conversion + DR:</strong> InlineCta on yield guide. Monitor Collaborator publish dates. Ahrefs DR recheck ~3 Jul. Reddit warmup for brand mentions.</div>
+          <div class="pulse-insight-text"><strong>Leads: FAIL.</strong> 0 Kommo leads tagged italian-estate.com. 0 GA4 conversion events. Funnel broken at measurement + volume, not form API.</div>
         </div>
       </div>
     </div>
 
-    <!-- Promotion roadmap -->
+    <!-- Roadmap -->
     <div class="pulse-card" style="margin-top:16px;">
       <div class="pulse-card-title">
         <span style="width:8px;height:8px;border-radius:50%;display:inline-block;background:#60a5fa;"></span>
-        Promotion Recommendations — 19 Jun 2026
+        Promotion roadmap — path to 5 leads/week
       </div>
       <div class="pulse-table-scroll">
       <table style="width:100%;border-collapse:collapse;font-size:12px;">
@@ -749,33 +801,19 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
           </tr>
         </thead>
         <tbody>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">19 Jun: 4 Collaborator placements submitted (constrofacilitator, thehansindia, wakelet, pikitemplates) + yield guide InlineCta.</td><td style="padding:8px 12px;">DR growth baseline · referral traffic to Indian/yield URLs · homepage link from pikitemplates.</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">19 Jun: Site-report v18 — DR widget, compact 7-card layout, full GSC/GA4 refresh.</td><td style="padding:8px 12px;">Weekly DR monitoring · single dashboard for all analytics.</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">CTR sprint: italy-golden-visa-property-2026 (1 564 imp, 0.13% CTR) before Wakelet publishes.</td><td style="padding:8px 12px;">Convert visibility into clicks/leads when referral traffic arrives.</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Monitor 4 Collaborator placements → index in GSC → Ahrefs DR check in 2–3 weeks.</td><td style="padding:8px 12px;">Target DR 10–15 by Q3 · validate link velocity didn’t trigger penalty.</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Reddit warmup 2–3 threads/week (Italy property, no markdown) + track Organic Social in GA4.</td><td style="padding:8px 12px;">Brand mentions for GEO · referral diversity beyond search.</td></tr>
-          <tr><td style="padding:8px 12px;font-weight:800;color:#2563eb;">P2</td><td style="padding:8px 12px;">the-title-balcony (1 115 imp, 0 clk) · proof-of-funds CTR · EN LeadForm mandatory phone.</td><td style="padding:8px 12px;">Recover avg position from 15.2 · improve lead qualification.</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">CTR sprint: mortgage (630 imp), reciprocity (448), capital-gains (219), holiday-let (106), uk-tax, codice-fiscale titles + meta</td><td style="padding:8px 12px;">+30–50 organic clicks/week from existing visibility</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Fix GA4: fire generate_lead on form submit + verify Telegram → Kommo source tag</td><td style="padding:8px 12px;">Measure funnel · capture existing demand</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Visa pillar: internal links, content depth, monitor pos 52 → top 20 after 301</td><td style="padding:8px 12px;">Unlock 400+ imp visa cluster when ranking improves</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Sticky mobile CTA + optimize /get-shortlist/ landing copy</td><td style="padding:8px 12px;">Raise shortlist conversion on existing sessions</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">InlineCta on 11 top guides · visa pillar 301 · Cloudinary 22/48 areas · GEO grade A batch</td><td style="padding:8px 12px;">Conversion hooks in place · images stabilizing</td></tr>
+          <tr><td style="padding:8px 12px;font-weight:800;color:#2563eb;">P2</td><td style="padding:8px 12px;">Finish Wikimedia → Cloudinary (29 broken sources) · DR backlinks · 3 news/week cadence</td><td style="padding:8px 12px;">Long-term ranking + trust signals</td></tr>
         </tbody>
       </table>
       </div>
     </div>
 
-    <!-- Source notes -->
-    <div class="pulse-card" style="margin-top:16px;">
-      <div class="pulse-card-title">
-        <span style="width:8px;height:8px;border-radius:50%;display:inline-block;background:#ef4444;"></span>
-        Source notes
-      </div>
-      <div class="pulse-insight" style="margin-top:0;background:#f9fafb;border-color:#e5e7eb;">
-        <div class="pulse-insight-icon">i</div>
-        <div class="pulse-insight-text" style="color:#374151;">
-          <strong>Data sources:</strong> GSC MCP, GA4 MCP, Bing Webmaster MCP, live sitemap/lead health checks, repo content counts. EN site never in Yandex. Bing IndexNow via <code>bing.com/indexnow</code> only.
-        </div>
-      </div>
-    </div>
-
     <p class="pulse-footer-note">
-      Google: <a href="https://search.google.com/search-console" target="_blank">Search Console</a> · <a href="https://analytics.google.com" target="_blank">GA4</a> · Bing: <a href="https://www.bing.com/webmasters" target="_blank">Webmaster Tools</a> · Updated 25 June 2026 via MCP APIs
+      Google: <a href="https://search.google.com/search-console" target="_blank">Search Console</a> · <a href="https://analytics.google.com" target="_blank">GA4</a> · Bing: <a href="https://www.bing.com/webmasters" target="_blank">Webmaster Tools</a> · Updated {reportDate} via MCP APIs
     </p>
 
   </div>
@@ -788,107 +826,52 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
     <div class="pulse-header">
       <div>
         <h2>Bing / Yahoo Search Performance</h2>
-        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">italian-estate.com · Jun 2026 · MCP bing-webmaster-italian-estate · Updated 19 Jun</p>
+        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">italian-estate.com · 10 Jun – 7 Jul 2026 · MCP bing-webmaster-italian-estate</p>
       </div>
-      <div class="pulse-updated">
-        <span class="pulse-updated-dot"></span>
-        Live via MCP
-      </div>
+      <div class="pulse-updated"><span class="pulse-updated-dot"></span>Updated {reportDate}</div>
     </div>
 
     <div class="pulse-kpi-row">
       <div class="pulse-kpi kpi-orange">
-        <div class="kpi-trend trend-up">May only</div>
         <div class="kpi-label">Bing Clicks</div>
-        <div class="kpi-val">18</div>
-        <div class="kpi-sub">best day 25 May (4 clicks) · vs ~0 in early May</div>
+        <div class="kpi-val">0</div>
+        <div class="kpi-sub">28d window · negligible vs Google</div>
       </div>
       <div class="pulse-kpi kpi-blue">
-        <div class="kpi-trend trend-up">↑ 13× growth</div>
         <div class="kpi-label">Bing Impressions</div>
-        <div class="kpi-val">370</div>
-        <div class="kpi-sub">May total · 3/day → 40/day peak · Yahoo AU included</div>
+        <div class="kpi-val">3</div>
+        <div class="kpi-sub">Capital gains tax queries surfacing</div>
       </div>
       <div class="pulse-kpi kpi-green">
         <div class="kpi-label">Sitemap</div>
-        <div class="kpi-val">1 139</div>
-        <div class="kpi-sub">Status Success · 0 crawl issues · IndexNow active · 19 Jun</div>
+        <div class="kpi-val">277</div>
+        <div class="kpi-sub">IndexNow via bing.com/indexnow only</div>
       </div>
-      <div class="pulse-kpi kpi-purple">
-        <div class="kpi-label">First lead</div>
-        <div class="kpi-val">1</div>
-        <div class="kpi-sub">Conrad · AU · au.search.yahoo.com · $200–500K</div>
+      <div class="pulse-kpi kpi-amber">
+        <div class="kpi-label">Priority</div>
+        <div class="kpi-val">Low</div>
+        <div class="kpi-sub">Focus Google CTR first · Bing follows</div>
       </div>
     </div>
 
     <div class="pulse-grid">
       <div class="pulse-card">
-        <div class="pulse-card-title"><span class="span-blue"></span> Daily Bing Impressions — May 2026</div>
-        <div class="pulse-chart">
-          <div class="chart-bars">
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:8%;background:#fdba74;"></div><div class="chart-label">01</div></div>
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:10%;background:#fdba74;"></div><div class="chart-label">02</div></div>
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:8%;background:#fdba74;"></div><div class="chart-label">03</div></div>
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:10%;background:#fdba74;"></div><div class="chart-label">05</div></div>
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:20%;background:#fdba74;"></div><div class="chart-label">07</div></div>
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:18%;background:#fdba74;"></div><div class="chart-label">12</div></div>
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:25%;background:#fdba74;"></div><div class="chart-label">16</div></div>
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:35%;background:#fdba74;"></div><div class="chart-label">19</div></div>
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:70%;background:#fdba74;"></div><div class="chart-label">24</div></div>
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:90%;background:#fb923c;"></div><div class="chart-label">25</div></div>
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:100%;background:#ea580c;"></div><div class="chart-label" style="color:#c2410c;font-weight:700;">26</div></div>
-            <div class="chart-bar-wrap"><div class="chart-bar bar-impr" style="height:90%;background:#fb923c;"></div><div class="chart-label">28</div></div>
-          </div>
-          <p style="font-size:10px;color:#aaa;margin-top:8px;">Bing API daily trend · peak 40 impressions (26 May) · clicks follow with 2–4 day lag</p>
-        </div>
-        <div class="pulse-insight" style="margin-top:12px;">
-          <div class="pulse-insight-icon">🔶</div>
-          <div class="pulse-insight-text"><strong>Bing compounding faster than Google on clicks-per-impression:</strong> investment/comparison intent (phuket vs pattaya, phuket vs bali, off-plan) converts at high CTR. Legal pages get impressions but zero clicks — same CTR problem as early Google.</div>
-        </div>
+        <div class="pulse-card-title"><span class="span-green"></span> Top Bing queries</div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#1</div><div class="pulse-query-text">how are capital gains on sale of main residence tax in italy</div><div class="pulse-query-pos">pos 6</div><div class="pulse-query-imp">1 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#2</div><div class="pulse-query-text">capital gains on gifted property italy</div><div class="pulse-query-pos">pos 4</div><div class="pulse-query-imp">1 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#3</div><div class="pulse-query-text">how to calculate exit tax when selling property upon departure</div><div class="pulse-query-pos">pos 1</div><div class="pulse-query-imp">1 imp</div></div>
       </div>
-
       <div class="pulse-card">
-        <div class="pulse-card-title"><span class="span-green"></span> Top Bing Queries (clicks)</div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#1</div><div class="pulse-query-text">phuket or pattaya invest</div><div class="pulse-query-pos">2 clk</div><div class="pulse-query-imp">1 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#2</div><div class="pulse-query-text">phuket vs bali buy property</div><div class="pulse-query-pos">1 clk</div><div class="pulse-query-imp">2 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#3</div><div class="pulse-query-text">phuket property off plan</div><div class="pulse-query-pos">1 clk</div><div class="pulse-query-imp">1 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#4</div><div class="pulse-query-text">tax selling property phuket</div><div class="pulse-query-pos">1 clk</div><div class="pulse-query-imp">1 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#5</div><div class="pulse-query-text">australian buy property thailand</div><div class="pulse-query-pos">0 clk</div><div class="pulse-query-imp">1 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#6</div><div class="pulse-query-text">airbnb property management rental income</div><div class="pulse-query-pos">0 clk</div><div class="pulse-query-imp">36 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#7</div><div class="pulse-query-text">chanote thailand</div><div class="pulse-query-pos">0 clk</div><div class="pulse-query-imp">5 imp</div></div>
-      </div>
-    </div>
-
-    <div class="pulse-card" style="margin-top:16px;">
-      <div class="pulse-card-title"><span class="span-blue"></span> Top Bing Pages</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
-        <div>
-          <div class="pulse-page-row"><div class="pulse-page-url">/comparisons/pattaya-vs-phuket-rental-demand/</div><div class="pulse-page-meta"><span class="pulse-badge badge-clicks">2 clk</span><span class="pulse-badge badge-impr">4 imp</span></div></div>
-          <div class="pulse-page-row"><div class="pulse-page-url">/guides/phuket-property-taxes-fees-complete-guide/</div><div class="pulse-page-meta"><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-impr">12 imp</span></div></div>
-          <div class="pulse-page-row"><div class="pulse-page-url">/guides/freehold-vs-leasehold-thailand/</div><div class="pulse-page-meta"><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-impr">12 imp</span></div></div>
-          <div class="pulse-page-row"><div class="pulse-page-url">/comparisons/phuket-vs-bali-property-investment/</div><div class="pulse-page-meta"><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-impr">1 imp</span></div></div>
-        </div>
-        <div>
-          <div class="pulse-page-row"><div class="pulse-page-url">/guides/legal-guide-buying-property-thailand/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">16 imp</span><span class="pulse-badge badge-pos">0 clk</span></div></div>
-          <div class="pulse-page-row"><div class="pulse-page-url">/guides/chanote-title-deed-explained/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">15 imp</span><span class="pulse-badge badge-pos">0 clk</span></div></div>
-          <div class="pulse-page-row"><div class="pulse-page-url">/guides/condominium-act-thailand-foreigners/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">13 imp</span><span class="pulse-badge badge-pos">0 clk</span></div></div>
-          <div class="pulse-page-row"><div class="pulse-page-url">/guides/off-plan-property-phuket-guide/</div><div class="pulse-page-meta"><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-impr">4 imp</span></div></div>
+        <div class="pulse-card-title"><span class="span-blue"></span> Top Bing page</div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-capital-gains-tax-property/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">3 imp</span><span class="pulse-badge badge-pos">0 clk</span></div></div>
+        <div class="pulse-insight" style="margin-top:12px;">
+          <div class="pulse-insight-icon">ℹ️</div>
+          <div class="pulse-insight-text">Bing volume is still near zero for this young domain. Same tax/legal guides that rank on Google will eventually mirror here. No separate Bing strategy until Google CTR and leads are fixed.</div>
         </div>
       </div>
     </div>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;">
-      <div class="pulse-insight" style="background:#fff7ed;border-color:#fed7aa;margin-top:0;">
-        <div class="pulse-insight-icon">⚡</div>
-        <div class="pulse-insight-text"><strong>Google vs Bing (May):</strong> Google 57 clicks / 19 631 imp (0.29% CTR). Bing 18 clicks / 370 imp (~4.9% CTR on aggregated data). Bing volume small but converts better — nationality + comparison content is the wedge.</div>
-      </div>
-      <div class="pulse-insight" style="background:#f0fdf4;border-color:#bbf7d0;margin-top:0;">
-        <div class="pulse-insight-icon">📡</div>
-        <div class="pulse-insight-text"><strong>AI Performance:</strong> Copilot citations not in API yet (Microsoft backlog Feb 2026). Monitor manually in Bing UI until API ships.</div>
-      </div>
-    </div>
-
-    <p class="pulse-footer-note">Bing data via <code>bing-webmaster</code> MCP · weekly buckets in raw API · agent monitors without screenshots</p>
+    <p class="pulse-footer-note">Bing data via bing-webmaster-italian-estate MCP · EN site never Yandex</p>
   </div>
 
   <div class="section-title">Technical setup</div>
@@ -905,13 +888,13 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
     </div>
     <div class="info-card">
       <h3>Integrations</h3>
-      <div class="info-row"><span class="key">Analytics</span><span class="val">Google Analytics 4 (GA4), Yandex Metrika, Pinterest Tag + Lead event</span></div>
+      <div class="info-row"><span class="key">Analytics</span><span class="val">Google Analytics 4 (GA4)</span></div>
       <div class="info-row"><span class="key">Search</span><span class="val">Google Search Console + Bing Webmaster (MCP)</span></div>
       <div class="info-row"><span class="key">Sitemap</span><span class="val">Auto-generated (sitemap-index.xml)</span></div>
       <div class="info-row"><span class="key">Lead notifications</span><span class="val">Telegram Bot API</span></div>
       <div class="info-row"><span class="key">SEO</span><span class="val">Canonical, OG (unique per article), Article + BreadcrumbList + ImageObject / NewsArticle / ItemList / FAQPage Schema.org</span></div>
       <div class="info-row"><span class="key">Lead capture</span><span class="val">5-point system per article</span></div>
-      <div class="info-row"><span class="key">Currency toggle</span><span class="val">USD / THB / EUR / GBP</span></div>
+      <div class="info-row"><span class="key">Currency toggle</span><span class="val">USD / EUR / GBP</span></div>
     </div>
   </div>
 
@@ -920,196 +903,21 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
     <table class="content-table">
       <thead>
         <tr>
-          <th>Category</th>
-          <th>Articles</th>
-          <th>Avg. length</th>
-          <th>SEO target</th>
+          <th>Collection</th>
+          <th>Pages</th>
+          <th>Words</th>
+          <th>Avg length</th>
           <th>Status</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><strong>Guides total</strong><br><span style="font-size:11px;color:#9ca3af">734 EN guides across investment, legal, tax, nationality, developer, area, AEO/GEO and commercial-intent clusters</span></td>
-          <td><span class="count">734</span></td>
-          <td><span class="words">~1,725 words</span></td>
-          <td><span class="tag blue">Head keywords</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Area guides — все 16 районов Пхукета</strong><br><span style="font-size:11px;color:#9ca3af">Bang Tao, Rawai, Kamala, Karon, Patong, Surin, Layan, Cherng Talay, Nai Yang, Mai Khao, Thalang, Italy Town, Chalong, Tri Trang, Si Sunthon, Boat Avenue</span></td>
-          <td><span class="count">23</span></td>
-          <td><span class="words">~1,500 words</span></td>
-          <td><span class="tag blue">Location intent</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Comparison articles</strong><br><span style="font-size:11px;color:#9ca3af">10 area comparisons (Bang Tao vs Surin, Kata vs Karon, Rawai vs Chalong…) + 15 global (Italy vs Bali, Dubai, Spain, Portugal, Greece…)</span></td>
-          <td><span class="count">25</span></td>
-          <td><span class="words">~1,600 words</span></td>
-          <td><span class="tag amber">Comparison intent</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Budget & intent guides</strong><br><span style="font-size:11px;color:#9ca3af">under $80K, $150K, $200K, $300K, $500K, $1M+, monthly payment 1500/2500/5000, THB price bands, studio/1BR/2BR/villa unit guides, rent vs buy, ROI by budget, cheapest areas</span></td>
-          <td><span class="count">28</span></td>
-          <td><span class="words">~1,800 words</span></td>
-          <td><span class="tag amber">Budget intent</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Nationality guides (25 стран)</strong><br><span style="font-size:11px;color:#9ca3af">UK, US, AU, DE, FR, NL, CA, CH, UAE, Scandinavian + Swiss, Belgian, Irish, Polish, Swedish, Norwegian, Finnish, Danish, Austrian, Czech, Russian, Israeli, Singaporean, HK + expat pillar</span></td>
-          <td><span class="count">35</span></td>
-          <td><span class="words">~1,500 words</span></td>
-          <td><span class="tag blue">Country-specific</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Tax + currency transfer guides</strong><br><span style="font-size:11px;color:#9ca3af">Tax for UK/US/EU/DE/FR/AU buyers; GBP→THB, USD→THB, EUR→THB; exchange rate risk; FET certificate</span></td>
-          <td><span class="count">10</span></td>
-          <td><span class="words">~1,400 words</span></td>
-          <td><span class="tag amber">Tax + finance intent</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Resale + exit strategy guides</strong><br><span style="font-size:11px;color:#9ca3af">how to sell, resale liquidity by area, furnishing effect, sea view premium, pool units, best unit types for exit</span></td>
-          <td><span class="count">12</span></td>
-          <td><span class="words">~1,500 words</span></td>
-          <td><span class="tag amber">Seller intent</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Due diligence + purchase process</strong><br><span style="font-size:11px;color:#9ca3af">developer reputation checklist, red flags off-plan, documents to check, reservation agreement, SPA, handover risks, proof of funds, cross-border payments</span></td>
-          <td><span class="count">15</span></td>
-          <td><span class="words">~1,500 words</span></td>
-          <td><span class="tag blue">Process intent</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Lifestyle + goal + rental demand guides</strong><br><span style="font-size:11px;color:#9ca3af">holiday home, retirement, second home Europeans, expat guide, digital nomads, relocation, buy-to-rent, capital growth, family rental demand, vacancy risk, best layouts, studio vs villa, part-time living, retirement+rental, lifestyle investors</span></td>
-          <td><span class="count">32</span></td>
-          <td><span class="words">~1,750 words</span></td>
-          <td><span class="tag amber">Intent-based</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Italy market overview guides</strong><br><span style="font-size:11px;color:#9ca3af">Hua Hin, Chiang Mai, Pattaya for yield, Koh Samui premium, best city Italy (pillar), hotspots 2026, liquidity, Bangkok capital preservation, Italy vs European markets, airport expansion impact, Italy vs Bali ownership structures</span></td>
-          <td><span class="count">20</span></td>
-          <td><span class="words">~2,000 words</span></td>
-          <td><span class="tag blue">Market comparison</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Developer reviews — Sansiri + Origin + The Title</strong><br><span style="font-size:11px;color:#9ca3af">CANVAS, SO Origin Kata/Bangtao, Origin Place, The Title series (Artrio, Serenity, Modeva, Vivana, Cielo, Legendary, Katabello…)</span></td>
-          <td><span class="count">35</span></td>
-          <td><span class="words">~2,000 words</span></td>
-          <td><span class="tag blue">Developer intent</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Developer reviews — VIP Property + Botanica + Banyan + Laguna</strong><br><span style="font-size:11px;color:#9ca3af">VIP Tropika (6% yield), Galaxy Villas, Venus Karon, Botanica Hythe, Grand Avenue, MontAzure, Banyan Group, Laguna Lakelands, Skypark Elara, Garrya, Aster…</span></td>
-          <td><span class="count">40</span></td>
-          <td><span class="words">~1,900 words</span></td>
-          <td><span class="tag blue">Developer intent</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Combination + long-tail pages</strong><br><span style="font-size:11px;color:#9ca3af">British buyers + Bang Tao, Nomads, HNW, First-time, Rawai under $200K…</span></td>
-          <td><span class="count">15</span></td>
-          <td><span class="words">~1,300 words</span></td>
-          <td><span class="tag gray">Long-tail</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Legal, tax, investment, lifestyle &amp; comparison clusters (28 Mar 2026)</strong><br><span style="font-size:11px;color:#9ca3af">85 new SEO guides — ownership structures, land office &amp; transfer, fees &amp; tax, occupancy &amp; resale, Italy vs Bali/Samui/Dubai, expat lifestyle, rental pool &amp; first-year ownership</span></td>
-          <td><span class="count">85</span></td>
-          <td><span class="words">~1,600 words</span></td>
-          <td><span class="tag blue">Cluster intent</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>News articles</strong><br><span style="font-size:11px;color:#9ca3af">206 market/news pages · daily news cadence maintained through Jun 2026</span></td>
-          <td><span class="count">206</span></td>
-          <td><span class="words">~1,217 words</span></td>
-          <td><span class="tag gray">NewsArticle Schema</span></td>
-          <td><span class="tag green">Live</span></td>
-        </tr>
-        <tr>
-          <td><strong>Best areas overview + area index</strong><br><span style="font-size:11px;color:#9ca3af">New /areas/best-areas-phuket-buy-property/ — comprehensive comparison of all 11 Italy areas, was 404, linked from 189 articles</span></td>
-          <td><span class="count">1</span></td>
-          <td><span class="words">~2,200 words</span></td>
-          <td><span class="tag blue">Local SEO hub</span></td>
-          <td><span class="tag green">Live 29 Mar</span></td>
-        </tr>
-        <tr>
-          <td><strong>New developer reviews + AEO micro-queries + area guides + buyer guides (30 Mar 2026)</strong><br><span style="font-size:11px;color:#9ca3af">60 articles: Skypark Aurora, Wyndham La Vita 5, Utopia Dream, Andaman Boutique, Ozone Condo, Utopia Central, MORE Group agency; area guides Bang Tao/Rawai/Kata/Kamala; buyer nationality guides AU/IN/ME; market outlook, taxes, resale, negotiation, management, villa income, second home guide; AEO: digital nomads, Russians, UK buyers</span></td>
-          <td><span class="count">60</span></td>
-          <td><span class="words">~1,700 words</span></td>
-          <td><span class="tag blue">Multi-cluster</span></td>
-          <td><span class="tag green">Live 30 Mar</span></td>
-        </tr>
-        <tr>
-          <td><strong>1M words milestone batch — 107 new articles (30 Mar 2026)</strong><br><span style="font-size:11px;color:#9ca3af">Pillar guides (complete guide, Italy guide, off-plan, ownership structures, financing, developers, expat living, pool villas, ROI calculator, passive income, investment strategy); Area guides (Patong, Layan, Chalong, Italy Town, Mai Khao/Nai Yang, Laguna, Thalang, Koh Kaew, Cherng Talay, Tri Trang); Developer reviews (The Marin, Botanica Sky, Palm Oasis, Origin Place Bang Tao, CANVAS Sansiri, VIP Galaxy, MontAzure, Banyan Tree, VIP Tropika, SO Origin Kata, The Title Artrio, Aster, Venus Karon, Laguna Lakelands Phase 2); 35 AEO micro-queries; 15 nationality guides (Canadians, Americans, Chinese, Israelis, Scandinavians, Singaporeans, French, Dutch, Swiss, Polish, HK, Japanese, Koreans, South Africans, Irish); 15 comparisons; 8 legal/process guides; 5 lifestyle/niche guides</span></td>
-          <td><span class="count">107</span></td>
-          <td><span class="words">~1,700 words</span></td>
-          <td><span class="tag blue">1M Milestone</span></td>
-          <td><span class="tag green">Live 30 Mar</span></td>
-        </tr>
-        <tr>
-          <td><strong>31 March 2026 batch — 88 guides + 3 news</strong><br><span style="font-size:11px;color:#9ca3af">Developer reviews (20): Kaze Beach Club, Ayana Residence, Dominion Rawai, Skypark Elara, Mono Oxygen, Botanica Grand Avenue, Botanica Hythe, Garrya Tongsai Bay, Andaman Riviera, Rainpalm Villas, The Title Serenity, The Title Modeva, KA Village Rawai, Twinpalms Surin, Blue Orange, Origin Prime Surin, The Deck Patong, Baan Phu Prana, The Lakelands, Grand Avenue Residence; AEO micro-queries (18); nationality guides (15: Austrians, Belgians, Czechs, NZ, Ukrainians, Kazakhs, Brazilians, Indonesians, Vietnamese, Taiwanese, Thai diaspora, Singapore expats, Dubai expats, Mexicans, Turks); pillar depth (10); budget-intent (15); lifestyle/niche (10). News (3): market update, LTR visa, Q1 launches</span></td>
-          <td><span class="count">91</span></td>
-          <td><span class="words">~1,600 words</span></td>
-          <td><span class="tag blue">Multi-cluster</span></td>
-          <td><span class="tag green">Live 31 Mar</span></td>
-        </tr>
-        <tr>
-          <td><strong>2 April 2026 batch — 57 developer reviews + 8 investment guides + 10 comparisons</strong><br><span style="font-size:11px;color:#9ca3af">Developer reviews (57): Bang Tao/Laguna cluster (Canvas Cherngtalay, The Modeva, The Title Heritage, The Title Legendary, Mono Oxygen Phase 2, Annara Residences, Sunrise Lake, Erawana Grand, Regent Villas Pasak Ph2, Origin Residences Bang Tao, Laguna Lakelands Waterfront, Gardens of Eden); Layan cluster (Botanica Hythe, Bellevue Beachfront, Botanica Forestique, Laya Resort, Serene Condo, Laguna Reef, Kiara Reserve, Terra Grove, Layan Verde); Nai Yang (Botanica Wisdom); Kamala (Botanica Montazure, MGallery Residences, InterContinental Residences, Capella Villas, Cohiba Villas, Island Collection, The Balance Patong, Erawana Creek); South/Rawai (Rhea by Sansiri, The Title Halo 1, The Title Cielo, Nakara Grand, Veranda Villas, Wallaya Residence, Sinara Pool Villas, The Proud Rawai); North/Mai Khao (Maviston, Arthur Foresta, Mouana Breeze, Phuvista Naiyang, The Zero Bang Tao); Mixed (So Origin Lagoon, Mida Grande Resort, The Standard Residences, Botanica Majestia, Mouana Serenity, Botanica Sky Valley, Redwood Lakeside, The Teak, Stella Estate, Tri Vananda, The Greens, Mouana Grande Chalong, Botanica Green Boulevard, The Title Villa Kirara, VIP Great Hill). Investment guides (8): rental yield by area, sea view condos, management fees, resale value factors, is it worth it, maintenance costs, handover guide, financing alternatives. Comparisons (10): Bang Tao vs Kamala, Rawai vs Nai Harn, Laguna vs Cherngtalay, studio vs 1BR, Botanica vs Origin, The Title vs VIP, off-plan vs ready, freehold vs leasehold, Italy vs Samui, condo vs villa ROI</span></td>
-          <td><span class="count">75</span></td>
-          <td><span class="words">~1,700 words</span></td>
-          <td><span class="tag blue">Multi-cluster</span></td>
-          <td><span class="tag green">Live 2 Apr</span></td>
-        </tr>
-        <tr>
-          <td><strong>1 April 2026 batch — 80 guides + 3 news</strong><br><span style="font-size:11px;color:#9ca3af">Project reviews (20): Laguna Golf Hibiscus, Laguna Bayside, Bamboo Forest, Next Point Rawai, Ashiyana Heights Kata, Laya Resort Layan, The Modeva, Aura Condominium, Title Adora Rawai, Title Coralina Kamala, Enigma Residence, Peylaa Bang Tao, Title Balcony Nai Yang, Essence Residence, The Zero Nai Yang, Katabello Kata, Title Sierra Bangtao, InterContinental Residences Kamala, Laguna Lakelands Waterside, Vibe Residence Karon; Nationality guides (15): Belgians, Austrians, Czechs, Ukrainians, Brazilians, Argentinians, Mexicans, Italians, Spanish, Greek, Turkish, Indonesians, Vietnamese, Taiwanese, Filipinos; AEO micro-queries (20): is-phuket-better-koh-samui, buying-condo-good-idea, market-growing-2026, freehold-vs-leasehold, does-property-appreciate, prices-rise-2026, condos-safe-investment, purchase-timeline, choose-two-projects, rent-legally, calculate-roi, exit-investment, buying-process, off-plan-risks, currency-guide, management-fee, elite-visa-connection, crypto-purchase, gift-for-family, capital-gains-tax; Comparisons (15): Italy vs Greece/Turkey/Vietnam/Cambodia/Malaysia/Georgia, Nai Yang vs Nai Harn, Chalong vs Rawai, Patong vs Kamala, luxury-vs-budget-roi, under-100k, 300k-plus, passive-income, portfolio-strategy, second-property-upgrade; Lifestyle (10): families-kids, solo-female, crypto-investors, business-owners, golf-lovers, yacht-owners, expat-couples, post-pandemic, smart-home, airbnb-guide. News (3): market April 2026, new launches April, Italy Q2 2026</span></td>
-          <td><span class="count">83</span></td>
-          <td><span class="words">~1,600 words</span></td>
-          <td><span class="tag blue">Multi-cluster</span></td>
-          <td><span class="tag green">Live 1 Apr</span></td>
-        </tr>
-        <tr>
-          <td><strong>8 April 2026 — 70 new project reviews + dedup audit</strong><br><span style="font-size:11px;color:#9ca3af">70 new project reviews: Bang Tao villas (Nature's Rest, Serrana Lakefront, Sri Panwa Lagoon Place/Residence, Mouana Ko Kaeo, QAV Residence, Manor, Punyisa Bang Jo, Sudara Phase 1, Prime Pano, Riverhouse, Poetry Villas, Sunti, Mount Mono, Vinzita, Menara, Shann, Sana Vista, Sierra Vista, Setthasiri); Kata/Layan (Oliver Villa, Sea Central, ToSummer, Star Silas, Le Villa Lake, Walai Layan Ph2, Residence Prime, Pavara Vhana, Sun Hills, The Victory, Layan Lucky, Wintery, Rungtiva, Season Rosewood, Pirak Villa, Pirak Cherngtalay); Nai Harn/Mai Khao (Narana, Vimannaya, Sunny Moon, Foresta, Sunny Moon Village); Nai Yang (Villa Cerulean, Luna Vista, Mandala AG Club, Narinsaya, Tiara Saku, Terra Azalea, Royal Lee); Naithon (Vista Del Mar, Sea Heaven Ph3, Phuvista Naithon); Patong (Tropical Heights, Pano Baan Suan, Paragon, The City); Rawai (Orbita, Larimar, Unique Eco Viva, WamDom, Starlight Sunrise, Larimar Vista); Surin (Surin Sands, Petit Tycoon); Kamala (Element, Platinum Bay); Kata (Wekata 3, Mutti). Dedup audit: removed 12 duplicate articles (11 exact same-project duplicates + 1 SO Origin), fixed 3 heroImage conflicts. All 305 projects: 0 duplicate heroImages, 0 duplicate titles.</span></td>
-          <td><span class="count">70</span></td>
-          <td><span class="words">~900 words</span></td>
-          <td><span class="tag blue">Project reviews</span></td>
-          <td><span class="tag green">Live 8 Apr</span></td>
-        </tr>
-        <tr>
-          <td><strong>17–21 Apr 2026 batch — sprint v8 (legal-fact-check + 6 fresh news)</strong><br><span style="font-size:11px;color:#9ca3af">SEO Sprint v6/v6.1 (17 Apr): FET Certificate pillar upgrade (1.9K→3.1K words), 4 CTR-rewrites, off-plan upgrade (2.0K→3.9K), 3 fresh news. 19 Apr: 3 news + Indian/HNI cluster + commercial enrichment. 21 Apr: 3 fresh news (australian-buyers Q1 surge, short-term-rental licensing crackdown, wellness branded residences) + 19 EN guides legal-fact-check Q2 2026 (Apostille pending, LTR $80K removed, DTV balance not income, visa-exempt 60d, IPD 440K)</span></td>
-          <td><span class="count">31</span></td>
-          <td><span class="words">~1,400 words</span></td>
-          <td><span class="tag amber">Sprint + Legal Fix</span></td>
-          <td><span class="tag green">Live 21 Apr</span></td>
-        </tr>
-        <tr>
-          <td><strong>29 Apr – 10 May 2026 batch — v15 SEO, entity, resales and analytics updates</strong><br><span style="font-size:11px;color:#9ca3af">Fresh audit: 1 223 live sitemap URLs, 1 191 core SEO MDX pages, 13 231 GSC impressions, 346 GSC-visible URLs and 1 213 GA4 sessions. Recent repository activity added resale inventory URLs and India landing expansions while the core audit confirms sitemap/robots/report/lead API health.</span></td>
-          <td><span class="count">44+</span></td>
-          <td><span class="words">news + entity + resale SEO</span></td>
-          <td><span class="tag amber">SEO + Audit</span></td>
-          <td><span class="tag green">Live 10 May</span></td>
-        </tr>
-        <tr>
-          <td><strong>22–25 Apr 2026 batch — v9 updates</strong><br><span style="font-size:11px;color:#9ca3af">12 fresh news, Pinterest Tag + Lead event, Pinterest verification, SEO indexation + lead tracking, internal-link authority sweep, duplicate consolidation/noindex, VIP Venus restore, unique hero images, location photo library + Pinterest pin batch, developer hub coverage and card imagery</span></td>
-          <td><span class="count">12+</span></td>
-          <td><span class="words">news + SEO/product updates</span></td>
-          <td><span class="tag amber">Analytics + Distribution</span></td>
-          <td><span class="tag green">Live 25 Apr</span></td>
-        </tr>
-        <tr style="background:#faf8f4;">
-          <td><strong>TOTAL</strong></td>
-          <td><span class="count" style="font-size:24px;">1 305</span></td>
-          <td><span class="words">~1,570 avg</span></td>
-          <td></td>
-          <td><span class="tag green">All live</span></td>
-        </tr>
+        <tr><td><strong>Guides</strong><br><span style="font-size:11px;color:#9ca3af">Legal, tax, mortgage, visa, nationality, market data, buyer process</span></td><td><span class="count">90</span></td><td><span class="words">389,137</span></td><td>~4,324</td><td><span class="tag green">Live</span></td></tr>
+        <tr><td><strong>Projects</strong><br><span style="font-size:11px;color:#9ca3af">65 off-plan and resale developments across Italy</span></td><td><span class="count">65</span></td><td><span class="words">146,111</span></td><td>~2,248</td><td><span class="tag green">Live</span></td></tr>
+        <tr><td><strong>Areas</strong><br><span style="font-size:11px;color:#9ca3af">48 regional guides: Tuscany, Puglia, Lake Como, Sardinia, Sicily…</span></td><td><span class="count">48</span></td><td><span class="words">159,855</span></td><td>~3,330</td><td><span class="tag green">Live</span></td></tr>
+        <tr><td><strong>Comparisons</strong><br><span style="font-size:11px;color:#9ca3af">30 market and city comparisons (Italy vs France, Milan vs Rome…)</span></td><td><span class="count">30</span></td><td><span class="words">106,703</span></td><td>~3,557</td><td><span class="tag green">Live</span></td></tr>
+        <tr><td><strong>Developers</strong><br><span style="font-size:11px;color:#9ca3af">15 developer profiles (Engel &amp; Völkers, COIMA, local builders…)</span></td><td><span class="count">15</span></td><td><span class="words">35,703</span></td><td>~2,380</td><td><span class="tag green">Live</span></td></tr>
+        <tr><td><strong>News</strong><br><span style="font-size:11px;color:#9ca3af">4 market news articles · cadence to ramp to 3/week</span></td><td><span class="count">4</span></td><td><span class="words">4,739</span></td><td>~1,185</td><td><span class="tag amber">Low volume</span></td></tr>
+        <tr style="background:#faf8f4;"><td><strong>TOTAL</strong></td><td><span class="count" style="font-size:24px;">252</span></td><td><strong>842,248</strong></td><td>~3,342</td><td><span class="tag green">All live</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -1117,11 +925,27 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
   <div class="section-title">Change history</div>
   <div class="changelog">
       <div class="changelog-item">
+        <div class="changelog-date">10 Jul 2026</div>
+        <div class="changelog-content">
+          <div class="changelog-title">Site report v3.0 — full analytics refresh + 5 leads/week roadmap</div>
+          <div class="changelog-desc">GSC 12 clicks / 3,261 imp (28d), avg pos 11.8, Jul 6.1. GA4 110 sessions, 0 leads. Removed Phuket template data. SEO Pulse: mortgage 630 imp CTR leak, visa cluster pos 52. Roadmap: CTR sprint, GA4 lead tracking, Kommo tagging.</div>
+          <div class="changelog-tags"><span class="tag green">Report</span><span class="tag blue">GSC</span><span class="tag amber">Leads</span></div>
+        </div>
+      </div>
+      <div class="changelog-item">
+        <div class="changelog-date">3–9 Jul 2026</div>
+        <div class="changelog-content">
+          <div class="changelog-title">Conversion layer: InlineCta on 11 guides + visa pillar 301 + Cloudinary areas</div>
+          <div class="changelog-desc">Visa pillar consolidated (301 from residency guide). InlineCta → /get-shortlist/ on mortgage, reciprocity, capital-gains, uk-tax, codice-fiscale + 6 more. 22/48 area images migrated Wikimedia → Cloudinary (dlrrtf6bq).</div>
+          <div class="changelog-tags"><span class="tag green">CRO</span><span class="tag blue">SEO</span></div>
+        </div>
+      </div>
+      <div class="changelog-item">
         <div class="changelog-date">25 Jun 2026</div>
         <div class="changelog-content">
-          <div class="changelog-title">Site report v2.0 — full moregroup.estate format + live GSC/GA4</div>
-          <div class="changelog-desc">470 GSC impressions (17–24 Jun), 0 clicks, avg pos 26.6. GA4 41 sessions / 200 pageviews. 224 MDX · 511K words · 249/249 indexing gap 0. Growth charts + SEO Pulse refreshed via MCP.</div>
-          <div class="changelog-tags"><span class="tag green">Report</span><span class="tag blue">GSC</span></div>
+          <div class="changelog-title">Site report v2.0 — live GSC/GA4 baseline</div>
+          <div class="changelog-desc">470 GSC impressions, 0 clicks. GA4 41 sessions. 224 MDX · 511K words.</div>
+          <div class="changelog-tags"><span class="tag green">Report</span></div>
         </div>
       </div>
       <div class="changelog-item">
@@ -1150,34 +974,41 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
       </div>
   </div>
 
-  <div class="section-title">Next steps — 25 June 2026</div>
+  <div class="section-title">Next steps — 5 leads/week · 10 July 2026</div>
   <div class="next-steps">
     <div class="next-item" style="background:#fef2f2;border-color:#fecaca;">
       <div class="priority high">P0</div>
       <div>
-        <div class="text" style="font-weight:700;">CTR + title sprint on golden visa / investor visa cluster when pos &lt; 40</div>
-        <div class="subtext">/guides/italy-golden-visa-property-2026/ · /guides/can-foreigners-buy-property-italy/ · FAQ schema refresh</div>
+        <div class="text" style="font-weight:700;">CTR sprint on pages already at pos 4–5 with 0 clicks</div>
+        <div class="subtext">non-resident-mortgage-italy (630 imp) · reciprocity (448) · capital-gains (219) · holiday-let (106) · uk-tax · codice-fiscale · closing-costs</div>
+      </div>
+    </div>
+    <div class="next-item" style="background:#fef2f2;border-color:#fecaca;">
+      <div class="priority high">P0</div>
+      <div>
+        <div class="text" style="font-weight:700;">Fix lead funnel measurement + Kommo source tag</div>
+        <div class="subtext">GA4 generate_lead on form submit (not only /thanks/) · verify Telegram → Kommo · tag source=italian-estate.com</div>
       </div>
     </div>
     <div class="next-item" style="background:#fff7ed;border-color:#fed7aa;">
       <div class="priority medium">P1</div>
       <div>
-        <div class="text" style="font-weight:700;">Monitor GSC daily — refresh SEO Pulse weekly</div>
-        <div class="subtext">search-console-italian-estate MCP · first clicks expected within 2–4 weeks of impression ramp</div>
+        <div class="text" style="font-weight:700;">Visa pillar: pos 52 → top 20 (internal links + monitor 301)</div>
+        <div class="subtext">/guides/italy-investor-visa-property/ · 417 imp · golden visa cluster ~200 imp combined</div>
       </div>
     </div>
     <div class="next-item">
       <div class="priority medium">P1</div>
       <div>
-        <div class="text" style="font-weight:700;">Re-notify Google after content batch (answer-first ~200 URLs)</div>
-        <div class="subtext">submit-google-explicit.mjs · italian-estate-indexing · only changed URLs</div>
+        <div class="text" style="font-weight:700;">Sticky mobile CTA + /get-shortlist/ landing optimization</div>
+        <div class="subtext">InlineCta live on 11 guides · need mobile sticky + stronger shortlist value prop</div>
       </div>
     </div>
     <div class="next-item" style="background:#f0fdf4;border-color:#bbf7d0;">
       <div class="priority low">DONE</div>
       <div>
-        <div class="text" style="font-weight:700;">249/249 indexing · gap 0 · validate:content 224/224 · qa:full PASS</div>
-        <div class="subtext">Dashboard cache synced · smoke UA patch deployed</div>
+        <div class="text" style="font-weight:700;">GEO grade A · InlineCta 11 guides · visa 301 · Cloudinary 22 areas</div>
+        <div class="subtext">Lead API 200 · sitemap 277 URLs · qa:full passed on content batch</div>
       </div>
     </div>
   </div>
@@ -1217,11 +1048,11 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions), 1);
 </div>
 
   <div class="footer">
-  <strong>Italian Estate</strong> · italian-estate.com · Report updated 25 June 2026 v2.0 · 249 sitemap URLs · 511K words · GSC 0 clicks / 470 imp (Jun) · GA4 41 sessions · 95 git commits<br>
+  <strong>Italian Estate</strong> · italian-estate.com · Report updated {reportDate} {reportVersion} · 277 sitemap URLs · 842K words · GSC 12 clicks / 3,261 imp · GA4 {ga4Sessions} sessions · 0 leads<br>
   EN site — Google + Bing only · never Yandex · IndexNow via bing.com/indexnow only
 </div>
 
-<script type="application/json" id="chart-data">{"monthlyGsc":[{"label":"May","clicks":0,"impressions":0},{"label":"Jun","clicks":0,"impressions":470}],"monthlyGa4":[{"month":"Jun","sessions":41}],"contentBreakdown":[{"type":"Guides","count":70,"color":"#2d7a5e"},{"type":"Projects","count":65,"color":"#4e9e7e"},{"type":"Areas","count":48,"color":"#8b5cf6"},{"type":"Comparisons","count":22,"color":"#d97706"},{"type":"Developers","count":15,"color":"#4e9e7e"},{"type":"News","count":4,"color":"#60a5fa"}],"dailyRaw":[{"d":"06-17","c":0,"i":17},{"d":"06-18","c":0,"i":44},{"d":"06-19","c":0,"i":49},{"d":"06-20","c":0,"i":88},{"d":"06-21","c":0,"i":89},{"d":"06-22","c":0,"i":77},{"d":"06-23","c":0,"i":106}]}</script>
+<script type="application/json" id="chart-data" set:html={chartPayload}></script>
 <script is:inline>
 (function initReportCharts() {
   function run() {
