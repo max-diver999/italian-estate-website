@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
+import { STICKY_CONSULT } from '../../data/sticky-cta';
 
 const faqItems = [
   {
@@ -34,6 +35,7 @@ const faqItems = [
 <BaseLayout
   title="Italy Property Consultation for Foreign Buyers 2026"
   description="Cross-region Italy property consultation for foreign buyers. Compare Tuscany, Puglia, Milan, and Lake Como in one request. Independent research, licensed partner referral."
+  stickyCta={STICKY_CONSULT}
 >
   <section class="site-container py-12 md:py-16 max-w-3xl">
     <header class="mb-8">

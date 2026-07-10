@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import LeadForm from '../components/LeadForm.astro';
+import { STICKY_HOME } from '../data/sticky-cta';
 import ContentCard from '../components/ContentCard.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import { getCollection } from 'astro:content';
@@ -40,6 +41,7 @@ const heroProjectImage = heroProject ? getCardImageUrl(heroProject.data.heroImag
 <BaseLayout
   title="Italy Property Investment — Tuscany, Milan, Puglia 2026"
   description={SITE.description}
+  stickyCta={STICKY_HOME}
 >
   <section class="border-b border-[var(--color-border-soft)] bg-[var(--color-surface)]">
     <div class="site-container py-14 md:py-20 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">

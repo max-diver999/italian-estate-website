@@ -4,6 +4,7 @@ import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 import CommercialBudgetLadder from '../../components/CommercialBudgetLadder.astro';
 import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
+import { STICKY_SHORTLIST } from '../../data/sticky-cta';
 
 const faqItems = [
   {
@@ -31,6 +32,7 @@ const faqItems = [
 <BaseLayout
   title="Italy Property Shortlist for Foreign Buyers"
   description="Free independent shortlist for Italy property buyers. Tuscany, Puglia, Milan, Lake Como — budget-matched options within one business day. Not a portal."
+  stickyCta={STICKY_SHORTLIST}
 >
   <section class="site-container py-12 md:py-16 max-w-3xl">
     <CommercialBudgetLadder />

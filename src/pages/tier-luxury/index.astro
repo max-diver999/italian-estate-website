@@ -4,6 +4,7 @@ import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 import CommercialBudgetLadder from '../../components/CommercialBudgetLadder.astro';
 import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
+import { STICKY_TIER_LUXURY } from '../../data/sticky-cta';
 
 const faqItems = [
   {
@@ -35,6 +36,7 @@ const faqItems = [
 <BaseLayout
   title="Luxury Property Italy Investment: Shortlist 2026"
   description="Luxury Italy property for foreign HNW buyers. Lake Como, Costa Smeralda, Milan Porta Nuova, Rome centro — independent shortlist and due diligence routing."
+  stickyCta={STICKY_TIER_LUXURY}
 >
   <section class="site-container py-12 md:py-16 max-w-3xl">
     <CommercialBudgetLadder current="luxury" />

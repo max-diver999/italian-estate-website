@@ -4,6 +4,7 @@ import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 import CommercialBudgetLadder from '../../components/CommercialBudgetLadder.astro';
 import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
+import { STICKY_TIER_MID } from '../../data/sticky-cta';
 
 const faqItems = [
   {
@@ -35,6 +36,7 @@ const faqItems = [
 <BaseLayout
   title="Buy Property in Italy for €300,000: Shortlist 2026"
   description="Italy property around €300,000 for foreign buyers. Ostuni villas, Milan off-plan, Tuscany apartments — independent shortlist with yield and tax notes."
+  stickyCta={STICKY_TIER_MID}
 >
   <section class="site-container py-12 md:py-16 max-w-3xl">
     <CommercialBudgetLadder current="mid" />

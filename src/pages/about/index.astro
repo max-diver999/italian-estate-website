@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { SITE } from '../../data/site';
+import { STICKY_ABOUT } from '../../data/sticky-cta';
 ---
 <BaseLayout
   title="About Italian Estate"
   description="Italian Estate is an independent editorial resource on UAE and Spain property investment — not a developer or listing portal."
+  stickyCta={STICKY_ABOUT}
 >
   <section class="site-container py-12 md:py-16 max-w-3xl">
     <h1 class="mb-6">About {SITE.name}</h1>

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T12:40:41.113Z",
+  "updatedAt": "2026-07-10T10:41:21.076Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -5504,6 +5504,111 @@
       "url": "https://italian-estate.com/areas/termoli",
       "channel": "google",
       "at": "2026-07-03T12:40:41.113Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/non-resident-mortgage-italy",
+      "channel": "google",
+      "at": "2026-07-03T12:46:44.216Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/uk-tax-italy-holiday-home",
+      "channel": "google",
+      "at": "2026-07-03T12:46:44.216Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/codice-fiscale-italy-property",
+      "channel": "google",
+      "at": "2026-07-03T12:46:44.216Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-holiday-let-licensing",
+      "channel": "google",
+      "at": "2026-07-03T12:46:44.216Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-real-estate-market-data-2025",
+      "channel": "google",
+      "at": "2026-07-03T12:46:44.216Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
+      "channel": "google",
+      "at": "2026-07-03T12:46:44.216Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/italy-vs-france-property-investment",
+      "channel": "google",
+      "at": "2026-07-03T12:46:44.216Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/non-resident-mortgage-italy",
+      "channel": "google",
+      "at": "2026-07-10T10:40:44.238Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
+      "channel": "google",
+      "at": "2026-07-10T10:40:44.238Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-capital-gains-tax-property",
+      "channel": "google",
+      "at": "2026-07-10T10:40:44.238Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/uk-tax-italy-holiday-home",
+      "channel": "google",
+      "at": "2026-07-10T10:40:44.238Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/codice-fiscale-italy-property",
+      "channel": "google",
+      "at": "2026-07-10T10:40:44.238Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-holiday-let-licensing",
+      "channel": "google",
+      "at": "2026-07-10T10:40:44.238Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/cost-of-buying-property-italy",
+      "channel": "google",
+      "at": "2026-07-10T10:40:44.238Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/non-resident-mortgage-italy",
+      "channel": "bing",
+      "at": "2026-07-10T10:41:21.076Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
+      "channel": "bing",
+      "at": "2026-07-10T10:41:21.076Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-capital-gains-tax-property",
+      "channel": "bing",
+      "at": "2026-07-10T10:41:21.076Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/uk-tax-italy-holiday-home",
+      "channel": "bing",
+      "at": "2026-07-10T10:41:21.076Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/codice-fiscale-italy-property",
+      "channel": "bing",
+      "at": "2026-07-10T10:41:21.076Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-holiday-let-licensing",
+      "channel": "bing",
+      "at": "2026-07-10T10:41:21.076Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/cost-of-buying-property-italy",
+      "channel": "bing",
+      "at": "2026-07-10T10:41:21.076Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended.",

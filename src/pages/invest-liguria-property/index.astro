@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 import CommercialSharedSections from '../../components/CommercialSharedSections.astro';
+import { STICKY_LIGURIA } from '../../data/sticky-cta';
 
 const faqItems = [
   {
@@ -34,6 +35,7 @@ const faqItems = [
 <BaseLayout
   title="Invest in Liguria Property: Free Shortlist 2026"
   description="Independent Liguria property shortlist for foreign buyers. Portofino, Sanremo, Rapallo — Riviera apartments and villas. Partner review within one day."
+  stickyCta={STICKY_LIGURIA}
 >
   <section class="site-container py-12 md:py-16 max-w-3xl">
     <header class="mb-8">
