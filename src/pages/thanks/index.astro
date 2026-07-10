@@ -21,11 +21,16 @@ const isLead = Astro.url.searchParams.get('lead') === '1';
   </section>
   {isLead && (
     <script is:inline>
-      if (typeof window.investGulfTrack === 'function') {
-        window.investGulfTrack('generate_lead', { lead_type: 'shortlist_form', value: 1, currency: 'USD' });
-      } else if (typeof window.gtag === 'function') {
-        window.gtag('event', 'generate_lead', { lead_type: 'shortlist_form', value: 1, currency: 'USD' });
-      }
+      (function () {
+        if (sessionStorage.getItem('ie_lead_tracked') === '1') return;
+        try { sessionStorage.setItem('ie_lead_tracked', '1'); } catch (_) {}
+        var params = { lead_type: 'shortlist_form', value: 1, currency: 'EUR' };
+        if (typeof window.investGulfTrack === 'function') {
+          window.investGulfTrack('generate_lead', params);
+        } else if (typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', params);
+        }
+      })();
     </script>
   )}
 </BaseLayout>
