@@ -5,5 +5,8 @@ export const SITE = {
   description:
     'Independent Italy property research — 4.3% yields, codice fiscale, investor visa, Milan vs Rome compared. 224 guides for US/UK buyers. Free shortlist →',
   email: 'info@italian-estate.com',
+  phone: '+66 65 119 5327',
+  whatsapp: 'https://wa.me/66651195327',
+  whatsappDisplay: '+66 65 119 5327',
   editorial: 'Italian Estate Editorial',
 };
