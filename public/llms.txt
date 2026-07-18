@@ -3,8 +3,8 @@
 > Independent research on Italy property investment for US, UK, and European buyers. Part of MORE Group cross-border real estate intelligence.
 
 - Site: https://italian-estate.com
-- Parent: https://moregroup.estate/
 - Contact: info@italian-estate.com
+- Wikidata: https://www.wikidata.org/wiki/Q140604355
 - Corpus: 224+ guides, areas, comparisons, projects, developers, and news articles
 - Markets: Milan, Rome, Tuscany, Piedmont, Liguria, Emilia-Romagna, Umbria, Marche, Abruzzo, Molise, Basilicata, Puglia, Sicily, Sardinia, Lake Como, Amalfi Coast
 - Focus: foreign buyer due diligence, cadastral/conformità checks, STR licensing (CIN/SCIA), IMU and cedolare secca, flat tax regime, regional yield comparisons
