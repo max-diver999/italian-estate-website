@@ -2,7 +2,7 @@
 export const prerender = true;
 
 const reportDate = '27 July 2026';
-const reportVersion = 'v3.1';
+const reportVersion = 'v3.2';
 const launchDate = 'May 2026';
 const dataThrough = '24 July 2026';
 
@@ -697,7 +697,7 @@ const chartPayload = JSON.stringify({
     <div class="pulse-insight">
       <div class="pulse-insight-icon">🎯</div>
       <div class="pulse-insight-text">
-        <strong>Path to 5 leads/week:</strong> ~4.1k impressions/28d and {gsc28d.clicks} clicks ({gsc28d.ctr}% CTR). Title sprint (10 Jul) did not move mortgage CTR yet: still 1,066 imp, 0 clicks at pos 4.5. Next: SERP snippet test (title again + FAQ rich result), fix www vs non-www holiday-let URL in GSC, canonical consolidation. Clicks are diversifying (projects, nationality guides, heritage). Visa cluster still page 7+ with 0 clicks. Conversion stack: InlineCta, sticky mobile CTA, GA4 <code>generate_lead</code> on submit live, but 0 events = no measured form submits yet.
+        <strong>Path to 5 leads/week:</strong> ~4.1k impressions/28d and {gsc28d.clicks} clicks ({gsc28d.ctr}% CTR). Title sprint (10 Jul) did not move mortgage CTR: still 1,066 imp, 0 clicks at pos 4.5, second SERP pass shipped 27 Jul. Funnel is now live end to end: every submit hits Telegram and the owner inbox, verified in production on 27 Jul. www now 301s to apex, so holiday-let and 10 other www URLs stop splitting impressions. Clicks are diversifying (projects, nationality guides, heritage). Visa cluster still page 7+ with 0 clicks.
       </div>
     </div>
 
@@ -762,7 +762,7 @@ const chartPayload = JSON.stringify({
       <div class="pulse-insight" style="margin-top:12px;">
         <div class="pulse-insight-icon">📄</div>
         <div class="pulse-insight-text">
-          <strong>Traffic mix:</strong> Direct still ~67% (158 sessions). Organic {ga4Organic} (+ AI {ga4AiAssistant}). Project page Feel UpTown drives branded search clicks in GSC. Leads: Telegram (+ owner inbox email when wired); no CRM on this site.
+          <strong>Traffic mix:</strong> Direct still ~67% (158 sessions). Organic {ga4Organic} (+ AI {ga4AiAssistant}). Project page Feel UpTown drives branded search clicks in GSC. Leads: Telegram plus owner inbox email on every submit (live 27 Jul); no CRM on this site.
         </div>
       </div>
     </div>
@@ -810,10 +810,10 @@ const chartPayload = JSON.stringify({
         </thead>
         <tbody>
           <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Mortgage SERP: second CTR pass + FAQ schema + Search Console snippet preview</td><td style="padding:8px 12px;">Unlock 1k+ imp page stuck at 0% CTR</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Lead notify: Telegram + owner email on every /api/lead/ submit (Resend)</td><td style="padding:8px 12px;">Maksim sees every lead in TG and inbox</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Weekly lead count from Telegram and inbox, cross-checked against GA4 generate_lead</td><td style="padding:8px 12px;">Confirms the 5 leads/week KPI without a CRM</td></tr>
           <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Visa pillar: internal links + monitor ranking (still page 7+)</td><td style="padding:8px 12px;">Visa query cluster ~30 imp/28d, 0 clicks</td></tr>
           <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">GEO citability: lift projects/areas from grade D → B on top 30 URLs</td><td style="padding:8px 12px;">AEO readiness for AI crawlers</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">CTR title batch (10 Jul) · GA4 generate_lead on submit · sticky mobile CTA · InlineCta 11 guides</td><td style="padding:8px 12px;">Measurement + mobile conversion layer</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">Lead notify TG + owner email (27 Jul) · www 301 to apex · canonical pinned to apex · shortlist form above the fold · CTR title batch (10 Jul) · GA4 generate_lead · sticky mobile CTA · InlineCta 13 guides</td><td style="padding:8px 12px;">Live funnel, one indexed host, mobile conversion layer</td></tr>
           <tr><td style="padding:8px 12px;font-weight:800;color:#2563eb;">P2</td><td style="padding:8px 12px;">Finish Wikimedia → Cloudinary (29 broken sources) · DR backlinks · 3 news/week cadence</td><td style="padding:8px 12px;">Long-term ranking + trust signals</td></tr>
         </tbody>
       </table>
@@ -932,6 +932,14 @@ const chartPayload = JSON.stringify({
 
   <div class="section-title">Change history</div>
   <div class="changelog">
+      <div class="changelog-item">
+        <div class="changelog-date">27 Jul 2026</div>
+        <div class="changelog-content">
+          <div class="changelog-title">Site report v3.2: lead funnel live, www consolidated</div>
+          <div class="changelog-desc">Owner email now duplicates every Telegram lead alert (Resend key was empty in Vercel, so no email had ever been sent). Healthcheck returns notify status and smoke fails on a silent email error. www to apex 301 fixed: the old rule never matched trailing slashes, so 11 www URLs were competing in GSC. Canonical and og:url pinned to the apex host. Shortlist form moved above the fold on mobile, one business day promise in form, success and thanks copy. Mid-article CTAs added to closing costs and renovation guides.</div>
+          <div class="changelog-tags"><span class="tag green">Leads</span><span class="tag blue">SEO</span><span class="tag amber">CRO</span></div>
+        </div>
+      </div>
       <div class="changelog-item">
         <div class="changelog-date">27 Jul 2026</div>
         <div class="changelog-content">
