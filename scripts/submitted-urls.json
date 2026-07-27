@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-27T07:21:03.622Z",
+  "updatedAt": "2026-07-27T12:03:15.117Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -5639,6 +5639,36 @@
       "url": "https://italian-estate.com/guides/italy-holiday-let-licensing",
       "channel": "google",
       "at": "2026-07-27T07:21:03.622Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-closing-costs-breakdown",
+      "channel": "google",
+      "at": "2026-07-27T12:03:03.016Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-renovation-costs-guide",
+      "channel": "google",
+      "at": "2026-07-27T12:03:03.016Z"
+    },
+    {
+      "url": "https://italian-estate.com/get-shortlist",
+      "channel": "google",
+      "at": "2026-07-27T12:03:03.016Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-closing-costs-breakdown",
+      "channel": "bing",
+      "at": "2026-07-27T12:03:15.117Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-property-renovation-costs-guide",
+      "channel": "bing",
+      "at": "2026-07-27T12:03:15.117Z"
+    },
+    {
+      "url": "https://italian-estate.com/get-shortlist",
+      "channel": "bing",
+      "at": "2026-07-27T12:03:15.117Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended.",
