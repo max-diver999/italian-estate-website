@@ -2,6 +2,10 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { SITE } from '../../data/site';
 
+// Rendered per request: as a prerendered page the ?lead=1 branch never existed,
+// so neither the confirmation copy nor the generate_lead event ever shipped.
+export const prerender = false;
+
 const isLead = Astro.url.searchParams.get('lead') === '1';
 ---
 <BaseLayout
