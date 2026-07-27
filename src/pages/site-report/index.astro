@@ -1,10 +1,10 @@
 ---
 export const prerender = true;
 
-const reportDate = '10 July 2026';
-const reportVersion = 'v3.0';
+const reportDate = '27 July 2026';
+const reportVersion = 'v3.1';
 const launchDate = 'May 2026';
-const dataThrough = '7 July 2026';
+const dataThrough = '24 July 2026';
 
 const monthlyGsc = [
   {
@@ -26,16 +26,16 @@ const monthlyGsc = [
   {
     "month": "Jul 2026",
     "label": "Jul",
-    "clicks": 6,
-    "impressions": 1747,
-    "position": 6.1,
-    "note": "Partial · 7 days · avg pos broke into top 10"
+    "clicks": 19,
+    "impressions": 3517,
+    "position": 7.3,
+    "note": "Through 24 Jul · avg pos top 10 · CTR still low on mortgage"
   }
 ];
 
 const monthlyGa4 = [
   { "month": "Jun", "sessions": 61 },
-  { "month": "Jul", "sessions": 49 }
+  { "month": "Jul", "sessions": 174 }
 ];
 
 const contentBreakdown = [
@@ -52,7 +52,9 @@ const totalImp = monthlyGsc.reduce((s, m) => s + m.impressions, 0);
 const totalWords = contentBreakdown.reduce((s, c) => s + c.words, 0);
 const totalFiles = contentBreakdown.reduce((s, c) => s + c.count, 0);
 const ga4Sessions = monthlyGa4.reduce((s, m) => s + m.sessions, 0);
-const gsc28d = { clicks: 12, impressions: 3261, ctr: 0.37, position: 11.8 };
+const ga4Organic = 63;
+const ga4AiAssistant = 6;
+const gsc28d = { clicks: 24, impressions: 4112, ctr: 0.58, position: 8.1 };
 const impMomPct = monthlyGsc[1]?.impressions
   ? Math.round(((monthlyGsc[2].impressions - monthlyGsc[1].impressions) / monthlyGsc[1].impressions) * 100)
   : 0;
@@ -67,7 +69,13 @@ const dailyRaw = [
   { d: '06-26', c: 1, i: 104 }, { d: '06-27', c: 0, i: 177 }, { d: '06-28', c: 1, i: 223 },
   { d: '06-29', c: 3, i: 191 }, { d: '06-30', c: 1, i: 181 }, { d: '07-01', c: 0, i: 192 },
   { d: '07-02', c: 2, i: 234 }, { d: '07-03', c: 0, i: 192 }, { d: '07-04', c: 0, i: 316 },
-  { d: '07-05', c: 2, i: 345 }, { d: '07-06', c: 2, i: 252 }, { d: '07-07', c: 0, i: 216 }
+  { d: '07-05', c: 2, i: 345 }, { d: '07-06', c: 2, i: 252 }, { d: '07-07', c: 0, i: 216 },
+  { d: '07-08', c: 0, i: 235 }, { d: '07-09', c: 0, i: 249 }, { d: '07-10', c: 4, i: 164 },
+  { d: '07-11', c: 0, i: 123 }, { d: '07-12', c: 0, i: 177 }, { d: '07-13', c: 0, i: 84 },
+  { d: '07-14', c: 0, i: 78 }, { d: '07-15', c: 1, i: 57 }, { d: '07-16', c: 1, i: 94 },
+  { d: '07-17', c: 0, i: 83 }, { d: '07-18', c: 3, i: 66 }, { d: '07-19', c: 1, i: 79 },
+  { d: '07-20', c: 0, i: 63 }, { d: '07-21', c: 1, i: 59 }, { d: '07-22', c: 0, i: 56 },
+  { d: '07-23', c: 1, i: 60 }, { d: '07-24', c: 1, i: 43 }
 ];
 
 const chartPayload = JSON.stringify({
@@ -516,12 +524,12 @@ const chartPayload = JSON.stringify({
     <div class="stat-card">
       <div class="num">842K</div>
       <div class="label">SEO words</div>
-      <div class="sublabel">252 MDX · ~3 342 avg · 114 git commits</div>
+      <div class="sublabel">252 MDX · ~3 342 avg · 120 git commits</div>
     </div>
     <div class="stat-card">
       <div class="num teal">100+</div>
       <div class="label">GSC impression URLs</div>
-      <div class="sublabel">100 pages with impressions in 28d window · 11 with clicks</div>
+      <div class="sublabel">50+ pages in 28d window · 19 URLs with clicks</div>
     </div>
     <div class="stat-card">
       <div class="num">6</div>
@@ -529,14 +537,14 @@ const chartPayload = JSON.stringify({
       <div class="sublabel">guides · projects · areas · compare · developers · news</div>
     </div>
     <div class="stat-card">
-      <div class="num teal">12</div>
+      <div class="num teal">{gsc28d.clicks}</div>
       <div class="label">GSC clicks (28d)</div>
-      <div class="sublabel">3 261 imp · CTR 0.37% · avg pos 11.8 · Jul avg pos 6.1</div>
+      <div class="sublabel">{gsc28d.impressions.toLocaleString('en-US')} imp · CTR {gsc28d.ctr}% · avg pos {gsc28d.position}</div>
     </div>
     <div class="stat-card">
       <div class="num amber">0</div>
       <div class="label">Kommo leads (site)</div>
-      <div class="sublabel">{ga4Sessions} GA4 sessions · 23 organic · 0 generate_lead events yet</div>
+      <div class="sublabel">{ga4Sessions} GA4 sessions · {ga4Organic} organic · 0 generate_lead · {ga4AiAssistant} AI Assistant</div>
     </div>
   </div>
 
@@ -547,19 +555,19 @@ const chartPayload = JSON.stringify({
       <div class="kpi-label">GSC Clicks (28d)</div>
       <div class="kpi-value">{gsc28d.clicks}</div>
       <span class="kpi-delta up">↑ First clicks 26 Jun</span>
-      <div class="kpi-sub">10 Jun – 7 Jul · {gsc28d.impressions.toLocaleString('en-US')} impressions</div>
+      <div class="kpi-sub">28 Jun – 24 Jul · {gsc28d.impressions.toLocaleString('en-US')} impressions</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Impressions</div>
       <div class="kpi-value">{(gsc28d.impressions / 1000).toFixed(1)}k</div>
       <span class="kpi-delta up">↑ {impMomPct}% Jul vs Jun</span>
-      <div class="kpi-sub">Avg position {gsc28d.position} · Jul partial avg 6.1</div>
+      <div class="kpi-sub">Avg position {gsc28d.position} · Jul full month avg 7.3</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">GA4 Sessions</div>
       <div class="kpi-value">{ga4Sessions}</div>
-      <span class="kpi-delta neutral">23 organic · 79 direct</span>
-      <div class="kpi-sub">Jun–Jul partial · 0 generate_lead events</div>
+      <span class="kpi-delta neutral">{ga4Organic} organic · {ga4AiAssistant} AI Assistant</span>
+      <div class="kpi-sub">Jun 61 · Jul 174 through 26 Jul · 0 generate_lead</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Lead goal gap</div>
@@ -573,7 +581,7 @@ const chartPayload = JSON.stringify({
     <div class="section-head">
       <div>
         <h2>Monthly growth since launch</h2>
-        <p>Google Search Console web search · {launchDate} → {dataThrough}. July row is partial (7 days).</p>
+        <p>Google Search Console web search · {launchDate} → {dataThrough}. July row through 24 Jul (GSC lag ~3 days).</p>
       </div>
       <span class="badge-src">GSC API · Updated {reportDate}</span>
     </div>
@@ -586,7 +594,7 @@ const chartPayload = JSON.stringify({
         <div class="card-title">GA4 sessions by month</div>
         <div class="chart-wrap"><canvas id="chartGa4"></canvas></div>
         <div class="insight" style="margin-top:16px;">
-          <strong>Visibility without conversion yet:</strong> Impressions ramped from 17/day (17 Jun) to 345/day (5 Jul). Avg position improved from 18.4 (Jun) to 6.1 (Jul partial). Clicks still only 12/28d because CTR on top pages at pos 4–5 is near zero. GA4: {ga4Sessions} sessions, 23 organic, no lead events fired.
+          <strong>Visibility up, clicks lagging CTR:</strong> Impressions doubled Jun → Jul (+{impMomPct}%). Avg position improved to {gsc28d.position} (28d) and 7.3 (Jul). Clicks doubled to {gsc28d.clicks}/28d but CTR still {gsc28d.ctr}% because mortgage guide alone has 1,066 imp at pos 4.5 with 0 clicks. GA4: {ga4Sessions} sessions ({ga4Organic} organic, {ga4AiAssistant} from AI assistants). Still 0 <code>generate_lead</code> events (tracking live since 10 Jul, no confirmed submits yet).
         </div>
         </div>
       </div>
@@ -608,7 +616,7 @@ const chartPayload = JSON.stringify({
           <tbody>
             <tr><td><strong>May 2026</strong></td><td class="num">0</td><td>0</td><td>—</td><td>—</td><td>Pre-crawl · indexing API live</td></tr>
             <tr><td><strong>Jun 2026</strong></td><td class="num">6</td><td>1,514</td><td>18.4</td><td>new</td><td>First impressions 17 Jun · first clicks 26 Jun</td></tr>
-            <tr style="background:#faf8f4;"><td><strong>Jul 2026 (partial)</strong></td><td class="num">6</td><td><strong>1,747</strong></td><td><strong>6.1</strong></td><td>0%</td><td>7 days · pos improved {posImprove} pts vs Jun</td></tr>
+            <tr style="background:#faf8f4;"><td><strong>Jul 2026</strong></td><td class="num">19</td><td><strong>3,517</strong></td><td><strong>7.3</strong></td><td>+217%</td><td>Through 24 Jul · pos improved {posImprove} pts vs Jun</td></tr>
           </tbody>
       </table>
       </div>
@@ -632,7 +640,7 @@ const chartPayload = JSON.stringify({
     <div class="pulse-header">
       <div>
         <h2>Organic search performance</h2>
-        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">italian-estate.com · 10 Jun – 7 Jul 2026 · MCP search-console-italian-estate</p>
+        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">italian-estate.com · 28 Jun – 24 Jul 2026 · MCP search-console-italian-estate</p>
       </div>
       <div class="pulse-updated"><span class="pulse-updated-dot"></span>Updated {reportDate} via GSC API</div>
     </div>
@@ -642,7 +650,7 @@ const chartPayload = JSON.stringify({
         <div class="kpi-trend trend-up">28d window</div>
         <div class="kpi-label">Clicks</div>
         <div class="kpi-val">{gsc28d.clicks}</div>
-        <div class="kpi-sub">CTR {gsc28d.ctr}% · 11 pages with clicks</div>
+        <div class="kpi-sub">CTR {gsc28d.ctr}% · 19 pages with clicks</div>
       </div>
       <div class="pulse-kpi kpi-blue">
         <div class="kpi-trend trend-up">↑ {impMomPct}% Jul</div>
@@ -654,42 +662,42 @@ const chartPayload = JSON.stringify({
         <div class="kpi-trend trend-up">↑ pos {posImprove}</div>
         <div class="kpi-label">Avg position</div>
         <div class="kpi-val">{gsc28d.position}</div>
-        <div class="kpi-sub">Jul partial 6.1 · was 18.4 in full Jun</div>
+        <div class="kpi-sub">Jul avg 7.3 · peak 345 imp/day (5 Jul)</div>
       </div>
       <div class="pulse-kpi kpi-orange">
         <div class="kpi-label">CTR leak</div>
-        <div class="kpi-val">630</div>
-        <div class="kpi-sub">Mortgage guide imp at pos 4.2 · 0 clicks</div>
+        <div class="kpi-val">1066</div>
+        <div class="kpi-sub">Mortgage guide imp at pos 4.5 · 0 clicks (28d)</div>
       </div>
     </div>
 
     <div class="pulse-grid">
       <div class="pulse-card">
         <div class="pulse-card-title"><span class="span-green"></span> Top queries (visa cluster · 0 clicks)</div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#1</div><div class="pulse-query-text">italy investor visa</div><div class="pulse-query-pos">69</div><div class="pulse-query-imp">41 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#2</div><div class="pulse-query-text">investor visa italy</div><div class="pulse-query-pos">65</div><div class="pulse-query-imp">34 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#3</div><div class="pulse-query-text">golden visa italy property</div><div class="pulse-query-pos">68</div><div class="pulse-query-imp">23 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#4</div><div class="pulse-query-text">italy investment visa</div><div class="pulse-query-pos">66</div><div class="pulse-query-imp">21 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#5</div><div class="pulse-query-text">investor visa for italy</div><div class="pulse-query-pos">74</div><div class="pulse-query-imp">20 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#6</div><div class="pulse-query-text">italy residency by investment</div><div class="pulse-query-pos">73</div><div class="pulse-query-imp">15 imp</div></div>
-        <div class="pulse-query-row"><div class="pulse-query-rank">#7</div><div class="pulse-query-text">italian investor visa</div><div class="pulse-query-pos">62</div><div class="pulse-query-imp">14 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#1</div><div class="pulse-query-text">italy mortgage non resident (long-tail cluster)</div><div class="pulse-query-pos">4.2</div><div class="pulse-query-imp">page 1k+ imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#2</div><div class="pulse-query-text">italy investor visa / investor visa italy</div><div class="pulse-query-pos">69–77</div><div class="pulse-query-imp">~30 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#3</div><div class="pulse-query-text">golden visa italy property</div><div class="pulse-query-pos">70</div><div class="pulse-query-imp">9 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#4</div><div class="pulse-query-text">feel uptown milano (brand)</div><div class="pulse-query-pos">6</div><div class="pulse-query-imp">8 imp · 3 clk</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#5</div><div class="pulse-query-text">holiday lets in italy</div><div class="pulse-query-pos">9.6</div><div class="pulse-query-imp">9 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#6</div><div class="pulse-query-text">italy vs malta golden visa</div><div class="pulse-query-pos">42</div><div class="pulse-query-imp">4 imp</div></div>
+        <div class="pulse-query-row"><div class="pulse-query-rank">#7</div><div class="pulse-query-text">langheproperty.com (navigational leak)</div><div class="pulse-query-pos">37</div><div class="pulse-query-imp">17 imp</div></div>
       </div>
       <div class="pulse-card">
         <div class="pulse-card-title"><span class="span-blue"></span> Top pages (impressions · CTR leak)</div>
-        <div class="pulse-page-row"><div class="pulse-page-url">/guides/non-resident-mortgage-italy/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">630 imp</span><span class="pulse-badge badge-pos">pos 4.2</span><span class="pulse-badge badge-pos">0 clk</span></div></div>
-        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-reciprocity-property-foreigners/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">448 imp</span><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-pos">pos 4.2</span></div></div>
-        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-investor-visa-property/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">417 imp</span><span class="pulse-badge badge-pos">pos 51.7</span><span class="pulse-badge badge-pos">0 clk</span></div></div>
-        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-capital-gains-tax-property/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">219 imp</span><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-pos">pos 4.5</span></div></div>
-        <div class="pulse-page-row"><div class="pulse-page-url">/guides/heritage-restricted-property-italy/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">209 imp</span><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-pos">pos 4.9</span></div></div>
-        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-holiday-let-licensing/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">106 imp</span><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-pos">pos 6.1</span></div></div>
-        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-property-management-costs/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">35 imp</span><span class="pulse-badge badge-clicks">2 clk</span><span class="pulse-badge badge-pos">pos 6.7</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/non-resident-mortgage-italy/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">1,066 imp</span><span class="pulse-badge badge-pos">pos 4.5</span><span class="pulse-badge badge-pos">0 clk</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-reciprocity-property-foreigners/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">396 imp</span><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-pos">pos 4.3</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/heritage-restricted-property-italy/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">209 imp</span><span class="pulse-badge badge-clicks">2 clk</span><span class="pulse-badge badge-pos">pos 5.0</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-holiday-let-licensing/ (www)</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">166 imp</span><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-pos">pos 6.3</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/projects/feel-uptown-milan/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">48 imp</span><span class="pulse-badge badge-clicks">3 clk</span><span class="pulse-badge badge-pos">pos 8.1</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-property-for-germans/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">48 imp</span><span class="pulse-badge badge-clicks">1 clk</span><span class="pulse-badge badge-pos">pos 5.8</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-property-management-costs/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">64 imp</span><span class="pulse-badge badge-clicks">2 clk</span><span class="pulse-badge badge-pos">pos 5.6</span></div></div>
       </div>
     </div>
 
     <div class="pulse-insight">
       <div class="pulse-insight-icon">🎯</div>
       <div class="pulse-insight-text">
-        <strong>Path to 5 leads/week:</strong> You already have ~3.3k impressions/28d but only 12 clicks (0.37% CTR). Fixing titles on mortgage (630 imp), reciprocity (448 imp) and capital-gains (219 imp) at avg pos 4–5 could add 30–50 clicks/week without new rankings. Visa pillar (417 imp, pos 52) needs position work first. Then convert traffic: InlineCta on 11 guides is live, but GA4 shows 0 <code>generate_lead</code> events (fires only on /thanks/ redirect).
+        <strong>Path to 5 leads/week:</strong> ~4.1k impressions/28d and {gsc28d.clicks} clicks ({gsc28d.ctr}% CTR). Title sprint (10 Jul) did not move mortgage CTR yet: still 1,066 imp, 0 clicks at pos 4.5. Next: SERP snippet test (title again + FAQ rich result), fix www vs non-www holiday-let URL in GSC, canonical consolidation. Clicks are diversifying (projects, nationality guides, heritage). Visa cluster still page 7+ with 0 clicks. Conversion stack: InlineCta, sticky mobile CTA, GA4 <code>generate_lead</code> on submit live, but 0 events = no measured form submits yet.
       </div>
     </div>
 
@@ -708,7 +716,7 @@ const chartPayload = JSON.stringify({
         <div style="text-align:center;padding:16px;background:#dcfce7;border-radius:10px;border:1px solid #86efac;">
           <div style="font-size:28px;font-weight:900;color:#16a34a;">100+</div>
           <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">GSC impression URLs</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">11 URLs with clicks in 28d</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">19 URLs with clicks in 28d</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dbeafe;border-radius:10px;border:1px solid #93c5fd;">
           <div style="font-size:28px;font-weight:900;color:#2563eb;">200</div>
@@ -733,28 +741,28 @@ const chartPayload = JSON.stringify({
         <div style="text-align:center;padding:16px;background:#fef3c7;border-radius:10px;border:1px solid #fde68a;">
           <div style="font-size:28px;font-weight:900;color:#b45309;">{ga4Sessions}</div>
           <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Sessions</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">Jun 61 · Jul 49 partial</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">Jun 61 · Jul 174 through 26 Jul</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dbeafe;border-radius:10px;border:1px solid #93c5fd;">
-          <div style="font-size:28px;font-weight:900;color:#2563eb;">23</div>
+          <div style="font-size:28px;font-weight:900;color:#2563eb;">{ga4Organic}</div>
           <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Organic Search</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">~6 organic sessions/week</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">~8 organic sessions/week (Jul)</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dcfce7;border-radius:10px;border:1px solid #86efac;">
           <div style="font-size:28px;font-weight:900;color:#16a34a;">0</div>
           <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">generate_lead events</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">Only fires on /thanks/ page load</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">Tracking on form submit since 10 Jul</div>
         </div>
         <div style="text-align:center;padding:16px;background:#ede9fe;border-radius:10px;border:1px solid #c4b5fd;">
-          <div style="font-size:28px;font-weight:900;color:#7c3aed;">1</div>
+          <div style="font-size:28px;font-weight:900;color:#7c3aed;">{ga4AiAssistant}</div>
           <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">AI Assistant</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">Early GEO signal · track weekly</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">AEO signal · 4 in week 14–20 Jul</div>
         </div>
       </div>
       <div class="pulse-insight" style="margin-top:12px;">
         <div class="pulse-insight-icon">📄</div>
         <div class="pulse-insight-text">
-          <strong>Top landing pages:</strong> / (63 sessions all-time window), /guides/uk-tax-italy-holiday-home/ (9), /guides/italy-inheritance-law-property-foreigners/ (5). Direct traffic dominates (79 sessions): bots + team + untagged referrals. Cannot optimize leads until GA4 tracks form submit, not just thank-you redirect.
+          <strong>Traffic mix:</strong> Direct still ~67% (158 sessions). Organic {ga4Organic} (+ AI {ga4AiAssistant}). Spike 22 Jul (17 sessions, mostly direct). Project page Feel UpTown drives branded search clicks in GSC. Still no Kommo leads tagged italian-estate.com.
         </div>
       </div>
     </div>
@@ -763,7 +771,7 @@ const chartPayload = JSON.stringify({
     <div class="pulse-card" style="margin-top:16px;">
       <div class="pulse-card-title">
         <span style="width:8px;height:8px;border-radius:50%;display:inline-block;background:#2d7a5e;"></span>
-        Site health snapshot — 10 Jul 2026
+        Site health snapshot — 27 Jul 2026
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
         <div class="pulse-insight" style="margin-top:0;background:#f0fdf4;border-color:#bbf7d0;">
@@ -772,11 +780,11 @@ const chartPayload = JSON.stringify({
         </div>
         <div class="pulse-insight" style="margin-top:0;background:#f0fdf4;border-color:#bbf7d0;">
           <div class="pulse-insight-icon">✓</div>
-          <div class="pulse-insight-text"><strong>Content: 252 MDX.</strong> GEO grade A on 18 target guides. Visa pillar consolidated (301 from residency guide). InlineCta on 11 high-impression guides.</div>
+          <div class="pulse-insight-text"><strong>Content: 252 MDX.</strong> geo:audit avg 67/100 (grade C) on 27 Jul. Pillar guides polished earlier; 169 commercial files still below citability min. InlineCta + sticky mobile CTA live.</div>
         </div>
         <div class="pulse-insight" style="margin-top:0;background:#fff7ed;border-color:#fed7aa;">
           <div class="pulse-insight-icon">!</div>
-          <div class="pulse-insight-text"><strong>CTR: FAIL.</strong> 1.5k+ impressions on pages at pos 4–5 with under 1% CTR. Title/meta sprint needed on mortgage, reciprocity, codice-fiscale, uk-tax, closing-costs.</div>
+          <div class="pulse-insight-text"><strong>CTR: FAIL.</strong> Mortgage 1,066 imp / 0 clk at pos 4.5. Reciprocity 396 imp / 1 clk. Need snippet + www canonical fix on holiday-let.</div>
         </div>
         <div class="pulse-insight" style="margin-top:0;background:#fef2f2;border-color:#fecaca;">
           <div class="pulse-insight-icon">!</div>
@@ -801,11 +809,11 @@ const chartPayload = JSON.stringify({
           </tr>
         </thead>
         <tbody>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">CTR sprint: mortgage (630 imp), reciprocity (448), capital-gains (219), holiday-let (106), uk-tax, codice-fiscale titles + meta</td><td style="padding:8px 12px;">+30–50 organic clicks/week from existing visibility</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Fix GA4: fire generate_lead on form submit + verify Telegram → Kommo source tag</td><td style="padding:8px 12px;">Measure funnel · capture existing demand</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Visa pillar: internal links, content depth, monitor pos 52 → top 20 after 301</td><td style="padding:8px 12px;">Unlock 400+ imp visa cluster when ranking improves</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Sticky mobile CTA + optimize /get-shortlist/ landing copy</td><td style="padding:8px 12px;">Raise shortlist conversion on existing sessions</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">InlineCta on 11 top guides · visa pillar 301 · Cloudinary 22/48 areas · GEO grade A batch</td><td style="padding:8px 12px;">Conversion hooks in place · images stabilizing</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Mortgage SERP: second CTR pass + FAQ schema + Search Console snippet preview</td><td style="padding:8px 12px;">Unlock 1k+ imp page stuck at 0% CTR</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Kommo source tag + test lead end-to-end (Telegram → CRM)</td><td style="padding:8px 12px;">Attribute first leads to italian-estate.com</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Visa pillar: internal links + monitor ranking (still page 7+)</td><td style="padding:8px 12px;">Visa query cluster ~30 imp/28d, 0 clicks</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">GEO citability: lift projects/areas from grade D → B on top 30 URLs</td><td style="padding:8px 12px;">AEO readiness for AI crawlers</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">CTR title batch (10 Jul) · GA4 generate_lead on submit · sticky mobile CTA · InlineCta 11 guides</td><td style="padding:8px 12px;">Measurement + mobile conversion layer</td></tr>
           <tr><td style="padding:8px 12px;font-weight:800;color:#2563eb;">P2</td><td style="padding:8px 12px;">Finish Wikimedia → Cloudinary (29 broken sources) · DR backlinks · 3 news/week cadence</td><td style="padding:8px 12px;">Long-term ranking + trust signals</td></tr>
         </tbody>
       </table>
@@ -826,7 +834,7 @@ const chartPayload = JSON.stringify({
     <div class="pulse-header">
       <div>
         <h2>Bing / Yahoo Search Performance</h2>
-        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">italian-estate.com · 10 Jun – 7 Jul 2026 · MCP bing-webmaster-italian-estate</p>
+        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">italian-estate.com · 1 Jun – 24 Jul 2026 · MCP bing-webmaster-italian-estate</p>
       </div>
       <div class="pulse-updated"><span class="pulse-updated-dot"></span>Updated {reportDate}</div>
     </div>
@@ -834,13 +842,13 @@ const chartPayload = JSON.stringify({
     <div class="pulse-kpi-row">
       <div class="pulse-kpi kpi-orange">
         <div class="kpi-label">Bing Clicks</div>
-        <div class="kpi-val">0</div>
-        <div class="kpi-sub">28d window · negligible vs Google</div>
+        <div class="kpi-val">8</div>
+        <div class="kpi-sub">Jun–24 Jul · still &lt;1% of Google volume</div>
       </div>
       <div class="pulse-kpi kpi-blue">
         <div class="kpi-label">Bing Impressions</div>
-        <div class="kpi-val">3</div>
-        <div class="kpi-sub">Capital gains tax queries surfacing</div>
+        <div class="kpi-val">672</div>
+        <div class="kpi-sub">Ramp in mid-Jul (86 imp on 15 Jul)</div>
       </div>
       <div class="pulse-kpi kpi-green">
         <div class="kpi-label">Sitemap</div>
@@ -866,7 +874,7 @@ const chartPayload = JSON.stringify({
         <div class="pulse-page-row"><div class="pulse-page-url">/guides/italy-capital-gains-tax-property/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">3 imp</span><span class="pulse-badge badge-pos">0 clk</span></div></div>
         <div class="pulse-insight" style="margin-top:12px;">
           <div class="pulse-insight-icon">ℹ️</div>
-          <div class="pulse-insight-text">Bing volume is still near zero for this young domain. Same tax/legal guides that rank on Google will eventually mirror here. No separate Bing strategy until Google CTR and leads are fixed.</div>
+          <div class="pulse-insight-text">Bing now shows real crawl (672 imp Jun–24 Jul, 8 clicks). Still ~6% of Google impressions. IndexNow + same content as Google; no separate Bing SEO until mortgage CTR fixed on Google.</div>
         </div>
       </div>
     </div>
@@ -925,6 +933,14 @@ const chartPayload = JSON.stringify({
   <div class="section-title">Change history</div>
   <div class="changelog">
       <div class="changelog-item">
+        <div class="changelog-date">27 Jul 2026</div>
+        <div class="changelog-content">
+          <div class="changelog-title">Site report v3.1 — analytics through 24 Jul</div>
+          <div class="changelog-desc">GSC 24 clicks / 4,112 imp (28d), CTR 0.58%, avg pos 8.1. Jul 19 clk / 3,517 imp. GA4 235 sessions (63 organic, 6 AI Assistant). Bing 8 clk / 672 imp. Mortgage CTR still 0 on 1,066 imp. geo:audit avg 67 grade C.</div>
+          <div class="changelog-tags"><span class="tag green">Report</span><span class="tag blue">GSC</span><span class="tag amber">GEO</span></div>
+        </div>
+      </div>
+      <div class="changelog-item">
         <div class="changelog-date">10 Jul 2026</div>
         <div class="changelog-content">
           <div class="changelog-title">Site report v3.0 — full analytics refresh + 5 leads/week roadmap</div>
@@ -974,41 +990,41 @@ const chartPayload = JSON.stringify({
       </div>
   </div>
 
-  <div class="section-title">Next steps — 5 leads/week · 10 July 2026</div>
+  <div class="section-title">Next steps — 5 leads/week · 27 July 2026</div>
   <div class="next-steps">
     <div class="next-item" style="background:#fef2f2;border-color:#fecaca;">
       <div class="priority high">P0</div>
       <div>
-        <div class="text" style="font-weight:700;">CTR sprint on pages already at pos 4–5 with 0 clicks</div>
-        <div class="subtext">non-resident-mortgage-italy (630 imp) · reciprocity (448) · capital-gains (219) · holiday-let (106) · uk-tax · codice-fiscale · closing-costs</div>
+        <div class="text" style="font-weight:700;">Mortgage page: 1,066 impressions, 0 clicks at pos 4.5</div>
+        <div class="subtext">Second SERP pass · FAQ rich results · fix www/non-www duplicates in GSC</div>
       </div>
     </div>
     <div class="next-item" style="background:#fef2f2;border-color:#fecaca;">
       <div class="priority high">P0</div>
       <div>
-        <div class="text" style="font-weight:700;">Fix lead funnel measurement + Kommo source tag</div>
-        <div class="subtext">GA4 generate_lead on form submit (not only /thanks/) · verify Telegram → Kommo · tag source=italian-estate.com</div>
+        <div class="text" style="font-weight:700;">Kommo source tag + test lead end-to-end</div>
+        <div class="subtext">GA4 generate_lead on submit is live · 0 events = no submits yet · verify Telegram → Kommo</div>
       </div>
     </div>
     <div class="next-item" style="background:#fff7ed;border-color:#fed7aa;">
       <div class="priority medium">P1</div>
       <div>
-        <div class="text" style="font-weight:700;">Visa pillar: pos 52 → top 20 (internal links + monitor 301)</div>
-        <div class="subtext">/guides/italy-investor-visa-property/ · 417 imp · golden visa cluster ~200 imp combined</div>
+        <div class="text" style="font-weight:700;">Visa cluster still page 7+ (0 clicks on ~30 imp/28d)</div>
+        <div class="subtext">Internal links · content depth · monitor after 301 consolidation</div>
       </div>
     </div>
     <div class="next-item">
       <div class="priority medium">P1</div>
       <div>
-        <div class="text" style="font-weight:700;">Sticky mobile CTA + /get-shortlist/ landing optimization</div>
-        <div class="subtext">InlineCta live on 11 guides · need mobile sticky + stronger shortlist value prop</div>
+        <div class="text" style="font-weight:700;">GEO citability batch on top-traffic guides + projects</div>
+        <div class="subtext">Site avg 67/100 grade C · 169 files below min · target B+ on money pages</div>
       </div>
     </div>
     <div class="next-item" style="background:#f0fdf4;border-color:#bbf7d0;">
       <div class="priority low">DONE</div>
       <div>
-        <div class="text" style="font-weight:700;">GEO grade A · InlineCta 11 guides · visa 301 · Cloudinary 22 areas</div>
-        <div class="subtext">Lead API 200 · sitemap 277 URLs · qa:full passed on content batch</div>
+        <div class="text" style="font-weight:700;">Sticky mobile CTA · CTR title batch · GA4 on submit · InlineCta 11 guides</div>
+        <div class="subtext">Lead API 200 · sitemap 277 URLs · Bing IndexNow active</div>
       </div>
     </div>
   </div>
