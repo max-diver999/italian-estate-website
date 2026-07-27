@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { SITE } from '../../data/site';
+import { sendLeadNotifyEmail } from '../../lib/lead-notify-email';
 
 export const prerender = false;
 
@@ -36,12 +37,12 @@ async function sendAutoReply(to: string, name: string, context: string) {
       from: LEAD_FROM_EMAIL,
       reply_to: SITE.email,
       to: [to],
-      subject: 'We received your request — Italian Estate',
+      subject: 'We received your request | Italian Estate',
       html: `<p>${greeting}</p>
 <p>Thank you for contacting Italian Estate. We received your request regarding <strong>${topic}</strong>.</p>
-<p>A licensed partner will review your enquiry and reply by email or WhatsApp, usually within one business day.</p>
-<p>— <strong>Italian Estate Editorial</strong><br><a href="${SITE.url}">${SITE.url.replace('https://', '')}</a></p>
-<p style="font-size:12px;color:#666;">Independent research — not financial or legal advice.</p>`,
+<p>A licensed partner will review your enquiry and reply by WhatsApp or email within one business day.</p>
+<p><strong>Italian Estate Editorial</strong><br><a href="${SITE.url}">${SITE.url.replace('https://', '')}</a></p>
+<p style="font-size:12px;color:#666;">Independent research, not financial or legal advice.</p>`,
     }),
   });
 }
@@ -64,7 +65,7 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const lines = [
-      isHealthcheck ? '🧪 <b>TEST italian-estate.com</b>' : '🇮🇹 <b>New lead — Italian Estate</b>',
+      isHealthcheck ? '🧪 <b>TEST italian-estate.com</b>' : '🇮🇹 <b>New lead: Italian Estate</b>',
       '',
       name ? `👤 <b>Name:</b> ${name}` : null,
       phoneText ? `📱 <b>Phone:</b> ${phoneText}` : null,
@@ -78,8 +79,33 @@ export const POST: APIRoute = async ({ request }) => {
       page ? `🌐 <b>Page:</b> ${page}` : null,
     ].filter(Boolean).join('\n');
 
+    // Telegram is the blocking channel: failure here returns 500 to the visitor.
     await sendTelegram(lines);
-    // Owner inbox email disabled — Telegram only (no Kommo email ingest).
+
+    // Owner inbox duplicate. Never blocks the form, but a failure is reported back to Telegram.
+    let notifyFailure = '';
+    try {
+      const subjectName = String(name || '').trim() || 'no name';
+      const notify = await sendLeadNotifyEmail({
+        subject: isHealthcheck
+          ? 'TEST lead: italian-estate.com'
+          : `New lead: ${subjectName} (${phoneText || 'no phone'})`,
+        htmlBody: lines,
+        replyTo: emailText.includes('@') ? emailText : undefined,
+      });
+      if (!notify.ok) notifyFailure = notify.reason;
+    } catch (err) {
+      notifyFailure = err instanceof Error ? err.message : 'unknown error';
+      console.error('Owner notify email failed:', err);
+    }
+
+    if (notifyFailure) {
+      try {
+        await sendTelegram(`⚠️ email notify failed: ${escapeHtml(notifyFailure)}`);
+      } catch (err) {
+        console.error('Telegram notify-failure ping failed:', err);
+      }
+    }
 
     if (!isHealthcheck && emailText) {
       try {

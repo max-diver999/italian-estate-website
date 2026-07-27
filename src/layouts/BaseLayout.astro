@@ -29,13 +29,16 @@ interface Props {
 const {
   title,
   description = SITE.description,
-  canonical = Astro.url.href,
+  canonical,
   ogImage = `${SITE.url}/favicon.svg`,
   type = 'website',
   noindex = false,
   schemas = [],
   stickyCta = null,
 } = Astro.props;
+
+// Canonical always resolves to the apex host, never www or a preview domain.
+const canonicalHref = canonical || `${SITE.url}${Astro.url.pathname}`;
 
 const fullTitle = title.includes('Italian Estate') ? title : `${title} | Italian Estate`;
 
@@ -72,11 +75,11 @@ const allSchemas = [orgSchema, ...schemas];
   {noindex
     ? <meta name="robots" content="noindex,nofollow" />
     : <meta name="robots" content="index,follow,max-image-preview:large" />}
-  {!noindex && <link rel="canonical" href={canonical} />}
+  {!noindex && <link rel="canonical" href={canonicalHref} />}
   <meta property="og:type" content={type} />
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
-  <meta property="og:url" content={canonical} />
+  <meta property="og:url" content={canonicalHref} />
   <meta property="og:image" content={ogImage} />
   <meta property="og:site_name" content={SITE.name} />
   <meta name="twitter:card" content="summary_large_image" />

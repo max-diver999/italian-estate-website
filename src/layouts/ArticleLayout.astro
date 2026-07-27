@@ -48,7 +48,7 @@ const dateStr = (updatedDate || pubDate).toLocaleDateString('en-US', {
   month: 'long',
   day: 'numeric',
 });
-const pageUrl = canonical || Astro.url.href;
+const pageUrl = canonical || `${SITE.url}${Astro.url.pathname}`;
 
 const articleSchema = {
   '@context': 'https://schema.org',

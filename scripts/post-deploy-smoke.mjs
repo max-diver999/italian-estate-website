@@ -72,9 +72,13 @@ async function runHttpChecks(site) {
       source: 'healthcheck',
     }),
   });
-  log(lead.ok || lead.status === 500, 'POST /api/lead/', String(lead.status));
+  // Lead funnel is the primary KPI: only HTTP 200 counts as healthy.
+  log(lead.status === 200, 'POST /api/lead/', String(lead.status));
   if (lead.status === 405) {
-    log(false, 'lead API prerender', '405 — add export const prerender = false');
+    log(false, 'lead API prerender', '405, add export const prerender = false');
+    failed++;
+  } else if (lead.status !== 200) {
+    log(false, 'lead notify chain', `expected 200, got ${lead.status} (check TG_TOKEN / TG_CHAT_ID)`);
     failed++;
   }
 

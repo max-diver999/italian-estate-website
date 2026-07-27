@@ -9,7 +9,7 @@ import { STICKY_SHORTLIST } from '../../data/sticky-cta';
 const faqItems = [
   {
     question: 'What do I receive after submitting the shortlist form?',
-    answer: 'Within one business day you get 3–5 vetted options matched to your budget band and region, with price range, yield notes where relevant, and links to our due diligence guides. No developer pressure and no buyer-side commission from Italian Estate.',
+    answer: 'Within one business day you get 3 to 5 vetted options matched to your budget band and region, with price range, yield notes where relevant, and links to our due diligence guides. No developer pressure and no buyer-side commission from Italian Estate.',
   },
   {
     question: 'Which Italian regions can you shortlist?',
@@ -31,48 +31,56 @@ const faqItems = [
 ---
 <BaseLayout
   title="Italy Property Shortlist for Foreign Buyers"
-  description="Free independent shortlist for Italy property buyers. Tuscany, Puglia, Milan, Lake Como — budget-matched options within one business day. Not a portal."
+  description="Free independent shortlist for Italy property buyers. Tuscany, Puglia, Milan, Lake Como. Budget-matched options within one business day. Not a portal."
   stickyCta={STICKY_SHORTLIST}
 >
-  <section class="site-container py-12 md:py-16 max-w-3xl">
-    <CommercialBudgetLadder />
-    <header class="mb-8">
-      <span class="badge-pill mb-4">Free · Independent</span>
+  <section class="site-container py-8 md:py-14 max-w-3xl">
+    <header class="mb-6">
+      <span class="badge-pill mb-3">Free · Independent · No buyer-side commission</span>
       <h1 class="mb-3">Get your Italy property shortlist</h1>
-      <p class="text-lg text-[var(--color-muted)]">
-        Share budget, region, and goal. We match you with vetted resale, off-plan, and new-build options — no spam, no listing portal noise.
+      <p class="text-base md:text-lg text-[var(--color-muted)] mb-4">
+        Tuscany, Puglia, Milan, Lake Como, Sicily, Sardinia, Liguria, Rome. Tell us budget, region, and goal. You get 3 to 5 matched options and a written reply within one business day.
       </p>
+      <ul class="grid gap-1.5 text-sm text-[var(--color-muted)] list-none pl-0 mb-0">
+        <li>✓ Answer within <strong>1 business day</strong>, on WhatsApp or email</li>
+        <li>✓ Independent research desk, not a listing portal and not a developer sales floor</li>
+        <li>✓ Price range, closing-cost band, and yield notes with every option</li>
+      </ul>
     </header>
 
+    <LeadForm
+      title="Request your shortlist"
+      subtitle="Budget, region, and goal. That is all we need to start."
+      context="Get shortlist page"
+    />
+
+    <div class="mt-12 mb-10">
+      <CommercialBudgetLadder />
+    </div>
+
     <div class="prose mb-10 text-[var(--color-muted)]">
-      <p><strong>Quick answer:</strong> Foreign buyers can own freehold residential property across Italy subject to reciprocity checks at the notary. Entry from roughly €150k in Puglia or Sicily countryside; Milan and Lake Como start higher. Budget 10–12% on top of price for taxes, notary, and registration on a second home.</p>
+      <p><strong>Quick answer:</strong> Foreign buyers can own freehold residential property across Italy subject to reciprocity checks at the notary. Entry from roughly €150k in Puglia or Sicily countryside; Milan and Lake Como start higher. Budget 10-12% on top of price for taxes, notary, and registration on a second home.</p>
 
       <h2 class="text-xl text-[var(--color-ink)]">Regional commercial landings</h2>
       <ul>
-        <li><a href="/invest-tuscany-property/">Invest Tuscany</a> — Chianti, Florence, Lucca</li>
-        <li><a href="/invest-puglia-property/">Invest Puglia</a> — Ostuni, Valle d'Itria, Salento</li>
-        <li><a href="/invest-milan-property/">Invest Milan</a> — off-plan and corporate rental</li>
-        <li><a href="/invest-rome-property/">Invest Rome</a> — Jubilee 2026, centro storico, Prati</li>
-        <li><a href="/invest-lake-como-property/">Invest Lake Como</a> — lakefront and hillside</li>
-        <li><a href="/invest-sicily-property/">Invest Sicily</a> — Taormina, Syracuse, Palermo</li>
-        <li><a href="/invest-sardinia-property/">Invest Sardinia</a> — Costa Smeralda and coast</li>
-        <li><a href="/invest-liguria-property/">Invest Liguria</a> — Riviera vs Como value</li>
+        <li><a href="/invest-tuscany-property/">Invest Tuscany</a>: Chianti, Florence, Lucca</li>
+        <li><a href="/invest-puglia-property/">Invest Puglia</a>: Ostuni, Valle d'Itria, Salento</li>
+        <li><a href="/invest-milan-property/">Invest Milan</a>: off-plan and corporate rental</li>
+        <li><a href="/invest-rome-property/">Invest Rome</a>: Jubilee 2026, centro storico, Prati</li>
+        <li><a href="/invest-lake-como-property/">Invest Lake Como</a>: lakefront and hillside</li>
+        <li><a href="/invest-sicily-property/">Invest Sicily</a>: Taormina, Syracuse, Palermo</li>
+        <li><a href="/invest-sardinia-property/">Invest Sardinia</a>: Costa Smeralda and coast</li>
+        <li><a href="/invest-liguria-property/">Invest Liguria</a>: Riviera vs Como value</li>
         <li><a href="/italy-property-consultation/">Cross-region consultation</a></li>
       </ul>
 
       <h2 class="text-xl text-[var(--color-ink)]">Budget tiers</h2>
       <p>
-        Browse by ticket size: <a href="/tier-entry/">Under €200k</a> · <a href="/tier-mid/">€200k–€500k</a> · <a href="/tier-luxury/">Luxury €500k+</a>
+        Browse by ticket size: <a href="/tier-entry/">Under €200k</a> · <a href="/tier-mid/">€200k to €500k</a> · <a href="/tier-luxury/">Luxury €500k+</a>
       </p>
 
       <p>Research: <a href="/guides/buy-property-italy-foreigner/">Buy property in Italy as a foreigner</a> · <a href="/guides/cost-of-buying-property-italy/">Closing costs</a> · <a href="/guides/due-diligence-italy-property/">Due diligence</a> · <a href="/guides/best-regions-invest-italy-property-2026/">Best regions 2026</a></p>
     </div>
-
-    <LeadForm
-      title="Request your shortlist"
-      subtitle="Tuscany · Puglia · Milan · Lake Como · Sicily"
-      context="Get shortlist page"
-    />
 
     <CommercialSharedSections />
 

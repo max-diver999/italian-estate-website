@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title = 'Get your Italy property shortlist',
-  subtitle = 'Share your budget and target region — we respond within one business day.',
+  subtitle = 'Share your budget and target region. We reply on WhatsApp or email within one business day.',
   context = '',
 } = Astro.props;
 
@@ -42,7 +42,7 @@ const waHref = `${SITE.whatsapp}?text=${waText}`;
       <div>
         <label class="block text-xs font-medium mb-1" for="lf-market">Target market</label>
         <select id="lf-market" name="market">
-          <option value="">— Select —</option>
+          <option value="">Select</option>
           <option value="tuscany">Tuscany</option>
           <option value="puglia">Puglia</option>
           <option value="milan-lombardy">Milan / Lombardy</option>
@@ -57,11 +57,11 @@ const waHref = `${SITE.whatsapp}?text=${waText}`;
       <div>
         <label class="block text-xs font-medium mb-1" for="lf-budget">Budget (EUR)</label>
         <select id="lf-budget" name="budget">
-          <option value="">— Select —</option>
+          <option value="">Select</option>
           <option value="under-200k">Under €200k</option>
-          <option value="200-300k">€200k – €300k</option>
-          <option value="300-500k">€300k – €500k</option>
-          <option value="500k-1m">€500k – €1M</option>
+          <option value="200-300k">€200k to €300k</option>
+          <option value="300-500k">€300k to €500k</option>
+          <option value="500k-1m">€500k to €1M</option>
           <option value="1m+">€1M+</option>
         </select>
       </div>
@@ -69,7 +69,7 @@ const waHref = `${SITE.whatsapp}?text=${waText}`;
     <div>
       <label class="block text-xs font-medium mb-1" for="lf-goal">Your goal</label>
       <select id="lf-goal" name="goal">
-        <option value="">— Select —</option>
+        <option value="">Select</option>
         <option value="investment">Rental yield / investment</option>
         <option value="holiday-home">Holiday home / personal use</option>
         <option value="relocation">Relocation / residency planning</option>
@@ -87,6 +87,9 @@ const waHref = `${SITE.whatsapp}?text=${waText}`;
       <label class="lead-form-consent__label" for="lf-consent">I agree to be contacted about my enquiry. See our <a href="/privacy-policy/">Privacy Policy</a>.</label>
     </div>
     <button type="submit" class="btn-primary w-full py-3">Request shortlist →</button>
+    <p class="text-center text-xs text-[var(--color-muted)] -mt-2">
+      We reply on WhatsApp or email within one business day. No buyer-side commission, no listing spam.
+    </p>
 
     <p class="text-center text-sm text-[var(--color-muted)]">
       Prefer WhatsApp?
@@ -102,7 +105,7 @@ const waHref = `${SITE.whatsapp}?text=${waText}`;
       </a>
       ({SITE.whatsappDisplay})
     </p>
-    <p id="lf-success" class="hidden text-green-700 text-sm font-medium text-center">Thank you — redirecting…</p>
+    <p id="lf-success" class="hidden text-green-700 text-sm font-medium text-center">Request received. We will reply on WhatsApp or email within one business day.</p>
     <p id="lf-error" class="hidden text-red-600 text-sm text-center">Something went wrong. Email {SITE.email} or{' '}
       <a
         href={SITE.whatsapp}

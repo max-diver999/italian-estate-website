@@ -7,10 +7,10 @@
       "permanent": true
     },
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.italian-estate.com" }],
-      "destination": "https://italian-estate.com/:path*",
-      "permanent": true
+      "destination": "https://italian-estate.com/$1",
+      "statusCode": 301
     }
   ],
   "headers": [

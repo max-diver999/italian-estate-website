@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T10:41:21.076Z",
+  "updatedAt": "2026-07-27T07:21:03.622Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -5609,6 +5609,36 @@
       "url": "https://italian-estate.com/guides/cost-of-buying-property-italy",
       "channel": "bing",
       "at": "2026-07-10T10:41:21.076Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/non-resident-mortgage-italy",
+      "channel": "bing",
+      "at": "2026-07-27T07:21:02.934Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
+      "channel": "bing",
+      "at": "2026-07-27T07:21:02.934Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-holiday-let-licensing",
+      "channel": "bing",
+      "at": "2026-07-27T07:21:02.934Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/non-resident-mortgage-italy",
+      "channel": "google",
+      "at": "2026-07-27T07:21:03.622Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-reciprocity-property-foreigners",
+      "channel": "google",
+      "at": "2026-07-27T07:21:03.622Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-holiday-let-licensing",
+      "channel": "google",
+      "at": "2026-07-27T07:21:03.622Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended.",
