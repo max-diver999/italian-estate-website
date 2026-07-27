@@ -543,8 +543,8 @@ const chartPayload = JSON.stringify({
     </div>
     <div class="stat-card">
       <div class="num amber">0</div>
-      <div class="label">Kommo leads (site)</div>
-      <div class="sublabel">{ga4Sessions} GA4 sessions · {ga4Organic} organic · 0 generate_lead · {ga4AiAssistant} AI Assistant</div>
+      <div class="label">Leads (TG + email)</div>
+      <div class="sublabel">{ga4Sessions} GA4 sessions · {ga4Organic} organic · 0 generate_lead · track in Telegram</div>
     </div>
   </div>
 
@@ -573,7 +573,7 @@ const chartPayload = JSON.stringify({
       <div class="kpi-label">Lead goal gap</div>
       <div class="kpi-value">0 / 5</div>
       <span class="kpi-delta down">Per week target</span>
-      <div class="kpi-sub">Kommo: 0 tagged leads · API 200 OK</div>
+      <div class="kpi-sub">Count confirmed shortlist requests in Telegram (+ owner email when enabled)</div>
     </div>
   </div>
 
@@ -762,7 +762,7 @@ const chartPayload = JSON.stringify({
       <div class="pulse-insight" style="margin-top:12px;">
         <div class="pulse-insight-icon">📄</div>
         <div class="pulse-insight-text">
-          <strong>Traffic mix:</strong> Direct still ~67% (158 sessions). Organic {ga4Organic} (+ AI {ga4AiAssistant}). Spike 22 Jul (17 sessions, mostly direct). Project page Feel UpTown drives branded search clicks in GSC. Still no Kommo leads tagged italian-estate.com.
+          <strong>Traffic mix:</strong> Direct still ~67% (158 sessions). Organic {ga4Organic} (+ AI {ga4AiAssistant}). Project page Feel UpTown drives branded search clicks in GSC. Leads: Telegram (+ owner inbox email when wired); no CRM on this site.
         </div>
       </div>
     </div>
@@ -788,7 +788,7 @@ const chartPayload = JSON.stringify({
         </div>
         <div class="pulse-insight" style="margin-top:0;background:#fef2f2;border-color:#fecaca;">
           <div class="pulse-insight-icon">!</div>
-          <div class="pulse-insight-text"><strong>Leads: FAIL.</strong> 0 Kommo leads tagged italian-estate.com. 0 GA4 conversion events. Funnel broken at measurement + volume, not form API.</div>
+          <div class="pulse-insight-text"><strong>Leads: FAIL (volume).</strong> 0 GA4 conversion events. Owner email notify disabled in API (Telegram only today). Fix: TG + email on every submit, then grow clicks.</div>
         </div>
       </div>
     </div>
@@ -810,7 +810,7 @@ const chartPayload = JSON.stringify({
         </thead>
         <tbody>
           <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Mortgage SERP: second CTR pass + FAQ schema + Search Console snippet preview</td><td style="padding:8px 12px;">Unlock 1k+ imp page stuck at 0% CTR</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Kommo source tag + test lead end-to-end (Telegram → CRM)</td><td style="padding:8px 12px;">Attribute first leads to italian-estate.com</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Lead notify: Telegram + owner email on every /api/lead/ submit (Resend)</td><td style="padding:8px 12px;">Maksim sees every lead in TG and inbox</td></tr>
           <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Visa pillar: internal links + monitor ranking (still page 7+)</td><td style="padding:8px 12px;">Visa query cluster ~30 imp/28d, 0 clicks</td></tr>
           <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">GEO citability: lift projects/areas from grade D → B on top 30 URLs</td><td style="padding:8px 12px;">AEO readiness for AI crawlers</td></tr>
           <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">CTR title batch (10 Jul) · GA4 generate_lead on submit · sticky mobile CTA · InlineCta 11 guides</td><td style="padding:8px 12px;">Measurement + mobile conversion layer</td></tr>
@@ -1002,8 +1002,8 @@ const chartPayload = JSON.stringify({
     <div class="next-item" style="background:#fef2f2;border-color:#fecaca;">
       <div class="priority high">P0</div>
       <div>
-        <div class="text" style="font-weight:700;">Kommo source tag + test lead end-to-end</div>
-        <div class="subtext">GA4 generate_lead on submit is live · 0 events = no submits yet · verify Telegram → Kommo</div>
+        <div class="text" style="font-weight:700;">Lead notify: Telegram + owner email on every form submit</div>
+        <div class="subtext">Today API sends Telegram only · wire LEAD_NOTIFY_EMAIL (Resend) · test from /get-shortlist/</div>
       </div>
     </div>
     <div class="next-item" style="background:#fff7ed;border-color:#fed7aa;">
