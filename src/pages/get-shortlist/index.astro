@@ -34,18 +34,16 @@ const faqItems = [
   description="Free independent shortlist for Italy property buyers. Tuscany, Puglia, Milan, Lake Como. Budget-matched options within one business day. Not a portal."
   stickyCta={STICKY_SHORTLIST}
 >
-  <section class="site-container py-8 md:py-14 max-w-3xl">
-    <header class="mb-6">
+  <section class="site-container py-6 md:py-14 max-w-3xl">
+    <header class="mb-5">
       <span class="badge-pill mb-3">Free · Independent · No buyer-side commission</span>
-      <h1 class="mb-3">Get your Italy property shortlist</h1>
-      <p class="text-base md:text-lg text-[var(--color-muted)] mb-4">
-        Tuscany, Puglia, Milan, Lake Como, Sicily, Sardinia, Liguria, Rome. Tell us budget, region, and goal. You get 3 to 5 matched options and a written reply within one business day.
+      <h1 class="mb-2 text-2xl md:text-4xl">Get your Italy property shortlist</h1>
+      <p class="text-base text-[var(--color-muted)] mb-3">
+        3 to 5 matched options and a written reply within <strong>one business day</strong>. Tuscany, Puglia, Milan, Lake Como, Sicily, Sardinia, Liguria, Rome.
       </p>
-      <ul class="grid gap-1.5 text-sm text-[var(--color-muted)] list-none pl-0 mb-0">
-        <li>✓ Answer within <strong>1 business day</strong>, on WhatsApp or email</li>
-        <li>✓ Independent research desk, not a listing portal and not a developer sales floor</li>
-        <li>✓ Price range, closing-cost band, and yield notes with every option</li>
-      </ul>
+      <p class="text-sm text-[var(--color-muted)] mb-0">
+        Independent research desk, not a listing portal and not a developer sales floor.
+      </p>
     </header>
 
     <LeadForm
@@ -53,6 +51,12 @@ const faqItems = [
       subtitle="Budget, region, and goal. That is all we need to start."
       context="Get shortlist page"
     />
+
+    <ul class="mt-6 grid gap-1.5 text-sm text-[var(--color-muted)] list-none pl-0">
+      <li>✓ Price range, closing-cost band, and yield notes with every option</li>
+      <li>✓ We introduce a licensed Italian partner only after you opt in</li>
+      <li>✓ No buyer-side commission from Italian Estate</li>
+    </ul>
 
     <div class="mt-12 mb-10">
       <CommercialBudgetLadder />
