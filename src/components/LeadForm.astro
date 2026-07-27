@@ -152,30 +152,20 @@ const waHref = `${SITE.whatsapp}?text=${waText}`;
           body: JSON.stringify(payload),
         });
         if (!res.ok) throw new Error('fail');
-        const leadParams = {
-          lead_type: 'shortlist_form',
-          value: 1,
-          currency: 'EUR',
-          form_page: window.location.pathname,
-        };
+        // generate_lead is fired on /thanks/, where the page has time to send it.
+        // Redirecting away from this page cancelled the hit before it left the browser.
         try {
-          sessionStorage.setItem('ie_lead_tracked', '1');
+          sessionStorage.setItem(
+            'ie_lead_pending',
+            JSON.stringify({ form_page: window.location.pathname, ts: Date.now() }),
+          );
         } catch {
-          /* private mode */
-        }
-        if (typeof (window as Window & { investGulfTrack?: (n: string, p?: object) => void }).investGulfTrack === 'function') {
-          (window as Window & { investGulfTrack: (n: string, p?: object) => void }).investGulfTrack('generate_lead', leadParams);
-        } else if (typeof window.gtag === 'function') {
-          window.gtag('event', 'generate_lead', {
-            ...leadParams,
-            page_path: window.location.pathname,
-            transport_type: 'beacon',
-          });
+          /* private mode: /thanks/ fires the event without the handoff */
         }
         document.getElementById('lf-success')?.classList.remove('hidden');
         setTimeout(() => {
           window.location.assign('/thanks/?lead=1');
-        }, 400);
+        }, 250);
       } catch {
         document.getElementById('lf-error')?.classList.remove('hidden');
       }

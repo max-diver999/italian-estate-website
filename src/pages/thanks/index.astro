@@ -22,9 +22,22 @@ const isLead = Astro.url.searchParams.get('lead') === '1';
   {isLead && (
     <script is:inline>
       (function () {
-        if (sessionStorage.getItem('ie_lead_tracked') === '1') return;
-        try { sessionStorage.setItem('ie_lead_tracked', '1'); } catch (_) {}
+        var pending = null;
+        var storageOk = true;
+        try {
+          var raw = sessionStorage.getItem('ie_lead_pending');
+          if (raw) {
+            pending = JSON.parse(raw);
+            sessionStorage.removeItem('ie_lead_pending');
+          }
+          sessionStorage.removeItem('ie_lead_tracked');
+        } catch (_) {
+          storageOk = false;
+        }
+        // A reload or a direct visit has no pending submit, so it must not be counted.
+        if (!pending && storageOk) return;
         var params = { lead_type: 'shortlist_form', value: 1, currency: 'EUR' };
+        if (pending && pending.form_page) params.form_page = pending.form_page;
         if (typeof window.investGulfTrack === 'function') {
           window.investGulfTrack('generate_lead', params);
         } else if (typeof window.gtag === 'function') {
