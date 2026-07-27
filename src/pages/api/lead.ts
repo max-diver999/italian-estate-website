@@ -115,7 +115,12 @@ export const POST: APIRoute = async ({ request }) => {
       }
     }
 
-    return new Response(JSON.stringify({ success: true }), {
+    // Healthcheck callers get the notify status so smoke tests can see a silent email failure.
+    const payload = isHealthcheck
+      ? { success: true, notify: { telegram: 'ok', email: notifyFailure || 'ok' } }
+      : { success: true };
+
+    return new Response(JSON.stringify(payload), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });

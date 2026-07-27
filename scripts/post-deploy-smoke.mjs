@@ -74,6 +74,14 @@ async function runHttpChecks(site) {
   });
   // Lead funnel is the primary KPI: only HTTP 200 counts as healthy.
   log(lead.status === 200, 'POST /api/lead/', String(lead.status));
+  if (lead.status === 200) {
+    const body = await lead.clone().json().catch(() => ({}));
+    const emailStatus = body?.notify?.email;
+    if (emailStatus) {
+      log(emailStatus === 'ok', 'owner email notify', String(emailStatus));
+      if (emailStatus !== 'ok') failed++;
+    }
+  }
   if (lead.status === 405) {
     log(false, 'lead API prerender', '405, add export const prerender = false');
     failed++;
