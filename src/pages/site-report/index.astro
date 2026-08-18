@@ -2,7 +2,7 @@
 export const prerender = true;
 
 const reportDate = '18 August 2026';
-const reportVersion = 'v3.3';
+const reportVersion = 'v3.3.1';
 const launchDate = 'May 2026';
 const dataThrough = '15 August 2026';
 
@@ -63,8 +63,7 @@ const totalFiles = contentBreakdown.reduce((s, c) => s + c.count, 0);
 const ga4Sessions = monthlyGa4.reduce((s, m) => s + m.sessions, 0);
 const ga4Organic = 160;
 const ga4AiAssistant = 13;
-const ga4GenerateLead = 3;
-const ga4FormStart = 4;
+const confirmedLeads = 0;
 const gsc28d = { clicks: 22, impressions: 1776, ctr: 1.24, position: 20.2 };
 const gscPagesWithClicks = 17;
 const bing28d = { clicks: 58, impressions: 4009 };
@@ -567,9 +566,9 @@ const chartPayload = JSON.stringify({
       <div class="sublabel">{gsc28d.impressions.toLocaleString('en-US')} imp · CTR {gsc28d.ctr}% · avg pos {gsc28d.position}</div>
     </div>
     <div class="stat-card">
-      <div class="num amber">{ga4GenerateLead}</div>
+      <div class="num amber">{confirmedLeads}</div>
       <div class="label">Leads (TG + email)</div>
-      <div class="sublabel">{ga4Sessions} GA4 sessions · {ga4Organic} organic (28d) · {ga4GenerateLead} generate_lead · confirm in Telegram</div>
+      <div class="sublabel">{ga4Sessions} GA4 sessions · {ga4Organic} organic (28d) · count only confirmed inbox + Telegram</div>
     </div>
   </div>
 
@@ -592,11 +591,11 @@ const chartPayload = JSON.stringify({
       <div class="kpi-label">GA4 Sessions</div>
       <div class="kpi-value">{ga4Sessions}</div>
       <span class="kpi-delta up">Aug {monthlyGa4[2].sessions} through 17 Aug</span>
-      <div class="kpi-sub">Jun {monthlyGa4[0].sessions} · Jul {monthlyGa4[1].sessions} · {ga4GenerateLead} generate_lead · {ga4FormStart} form_start</div>
+      <div class="kpi-sub">Jun {monthlyGa4[0].sessions} · Jul {monthlyGa4[1].sessions} · funnel live, 0 confirmed leads</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Lead goal gap</div>
-      <div class="kpi-value">{ga4GenerateLead} / 5</div>
+      <div class="kpi-value">{confirmedLeads} / 5</div>
       <span class="kpi-delta down">Per week target</span>
       <div class="kpi-sub">Count confirmed shortlist requests in Telegram (+ owner email when enabled)</div>
     </div>
@@ -619,7 +618,7 @@ const chartPayload = JSON.stringify({
         <div class="card-title">GA4 sessions by month</div>
         <div class="chart-wrap"><canvas id="chartGa4"></canvas></div>
         <div class="insight" style="margin-top:16px;">
-          <strong>CTR up, impressions down, clicks diversified:</strong> 28d CTR {gsc28d.ctr}% (was 0.58% in late Jul). Impressions {gsc28d.impressions.toLocaleString('en-US')}/28d as query mix shifted away from single mortgage spike. {gscPagesWithClicks} pages now earn clicks (budget guides, reciprocity, nationality hubs, projects). GA4: {ga4Sessions} sessions total (Aug {monthlyGa4[2].sessions} partial). {ga4GenerateLead} <code>generate_lead</code> events since launch. Bing ramping: {bing28d.clicks} clicks / {bing28d.impressions.toLocaleString('en-US')} imp in 28d.
+          <strong>CTR up, impressions down, clicks diversified:</strong> 28d CTR {gsc28d.ctr}% (was 0.58% in late Jul). Impressions {gsc28d.impressions.toLocaleString('en-US')}/28d as query mix shifted away from single mortgage spike. {gscPagesWithClicks} pages now earn clicks (budget guides, reciprocity, nationality hubs, projects). GA4: {ga4Sessions} sessions total (Aug {monthlyGa4[2].sessions} partial). Confirmed leads: {confirmedLeads} (TG + owner email). Bing ramping: {bing28d.clicks} clicks / {bing28d.impressions.toLocaleString('en-US')} imp in 28d.
         </div>
         </div>
       </div>
@@ -723,7 +722,7 @@ const chartPayload = JSON.stringify({
     <div class="pulse-insight">
       <div class="pulse-insight-icon">🎯</div>
       <div class="pulse-insight-text">
-        <strong>Path to 5 leads/week:</strong> Lifetime GSC {totalClicks} clicks / {totalImp.toLocaleString('en-US')} imp ({((totalClicks/totalImp)*100).toFixed(2)}% CTR). 28d CTR improved to {gsc28d.ctr}% with clicks spread across {gscPagesWithClicks} URLs (budget guides, reciprocity, nationality hubs, projects). GA4: {ga4Sessions} sessions, {ga4GenerateLead} confirmed <code>generate_lead</code> events, {ga4FormStart} form starts. Funnel live: Telegram + owner email on every submit. GEO wave lifted avg commercial score to {geoAvgScore}/100 (grade {geoGrade}). Bing now {bingLifetime.clicks} lifetime clicks vs Google {totalClicks}. Remaining gap: volume (need ~40+ GSC clicks/week) and heritage/renovation pages with high imp, low CTR.
+        <strong>Path to 5 leads/week:</strong> Lifetime GSC {totalClicks} clicks / {totalImp.toLocaleString('en-US')} imp ({((totalClicks/totalImp)*100).toFixed(2)}% CTR). 28d CTR improved to {gsc28d.ctr}% with clicks spread across {gscPagesWithClicks} URLs. GA4: {ga4Sessions} sessions. Confirmed leads (TG + email): <strong>{confirmedLeads}</strong>. Funnel live since 27 Jul. GEO avg {geoAvgScore}/100 (grade {geoGrade}). Bing {bingLifetime.clicks} lifetime clicks vs Google {totalClicks}. Gap: volume (~40+ GSC clicks/week) and heritage/renovation CTR.
       </div>
     </div>
 
@@ -775,9 +774,9 @@ const chartPayload = JSON.stringify({
           <div style="font-size:10px;color:#aaa;margin-top:2px;">~{Math.round(ga4Organic/4)} organic sessions/week</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dcfce7;border-radius:10px;border:1px solid #86efac;">
-          <div style="font-size:28px;font-weight:900;color:#16a34a;">{ga4GenerateLead}</div>
-          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">generate_lead events</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">{ga4FormStart} form_start · confirm in Telegram</div>
+          <div style="font-size:28px;font-weight:900;color:#16a34a;">{confirmedLeads}</div>
+          <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Confirmed leads</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">TG + owner email only · not GA4 events</div>
         </div>
         <div style="text-align:center;padding:16px;background:#ede9fe;border-radius:10px;border:1px solid #c4b5fd;">
           <div style="font-size:28px;font-weight:900;color:#7c3aed;">{ga4AiAssistant}</div>
@@ -788,7 +787,7 @@ const chartPayload = JSON.stringify({
       <div class="pulse-insight" style="margin-top:12px;">
         <div class="pulse-insight-icon">📄</div>
         <div class="pulse-insight-text">
-          <strong>Traffic mix (28d):</strong> Direct 277 · Organic {ga4Organic} · AI Assistant {ga4AiAssistant} · Unassigned 18. Aug traffic accelerating ({monthlyGa4[2].sessions} sessions in 17 days vs Jul {monthlyGa4[1].sessions} full month). Leads: {ga4GenerateLead} GA4 conversions since Jun; cross-check owner inbox + Telegram.
+          <strong>Traffic mix (28d):</strong> Direct 277 · Organic {ga4Organic} · AI Assistant {ga4AiAssistant} · Unassigned 18. Aug traffic accelerating ({monthlyGa4[2].sessions} sessions in 17 days vs Jul {monthlyGa4[1].sessions} full month). Confirmed leads since launch: {confirmedLeads}.
         </div>
       </div>
     </div>
@@ -814,7 +813,7 @@ const chartPayload = JSON.stringify({
         </div>
         <div class="pulse-insight" style="margin-top:0;background:#fef3c7;border-color:#fde68a;">
           <div class="pulse-insight-icon">↑</div>
-          <div class="pulse-insight-text"><strong>Leads: FIRST SIGNAL.</strong> {ga4GenerateLead} GA4 <code>generate_lead</code> events since Jun. Funnel TG + owner email live. Target still 5/week; need more organic volume.</div>
+          <div class="pulse-insight-text"><strong>Leads: 0 confirmed.</strong> No real shortlist requests in Telegram or owner inbox through 18 Aug. Funnel TG + email live since 27 Jul. GA4 conversion tags are not used as lead KPI.</div>
         </div>
       </div>
     </div>
@@ -836,10 +835,10 @@ const chartPayload = JSON.stringify({
         </thead>
         <tbody>
           <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Scale Google clicks to 40+/week: budget guides, heritage, renovation, tax cluster snippets</td><td style="padding:8px 12px;">Currently ~5.5 clk/week (28d avg) · need 7x volume</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Weekly lead count: Telegram + inbox vs GA4 generate_lead ({ga4GenerateLead} so far)</td><td style="padding:8px 12px;">Confirms 5 leads/week KPI without CRM</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Weekly lead count in Telegram + owner inbox (confirmed only, not GA4)</td><td style="padding:8px 12px;">Currently {confirmedLeads} · target 5/week</td></tr>
           <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Purge remaining www URL in GSC (holiday-let) · tax queries page 80+</td><td style="padding:8px 12px;">cadastral value + stamp duty = 80 imp/28d, 0 clicks</td></tr>
           <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">GEO finish: projects/areas from D to B ({geoBelowMin} files below min)</td><td style="padding:8px 12px;">AEO readiness on commercial corpus</td></tr>
-          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">GEO guides 90+ wave · lead TG + email · SERP refresh 27 Jul · www 301 · sticky CTA · InlineCta · GA4 generate_lead</td><td style="padding:8px 12px;">First {ga4GenerateLead} leads · grade {geoGrade} avg {geoAvgScore}</td></tr>
+          <tr style="border-bottom:1px solid #f4f1eb;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">GEO guides 90+ wave · lead TG + email · SERP refresh 27 Jul · www 301 · sticky CTA · InlineCta</td><td style="padding:8px 12px;">Funnel live · grade {geoGrade} avg {geoAvgScore}</td></tr>
           <tr><td style="padding:8px 12px;font-weight:800;color:#2563eb;">P2</td><td style="padding:8px 12px;">Bing now {bingLifetime.clicks} lifetime clicks · news 3/week · DR backlinks</td><td style="padding:8px 12px;">Bing 28d {bing28d.clicks} clk / {bing28d.impressions.toLocaleString('en-US')} imp</td></tr>
         </tbody>
       </table>
@@ -964,10 +963,18 @@ const chartPayload = JSON.stringify({
   <div class="section-title">Change history</div>
   <div class="changelog">
     <div class="changelog-item">
+      <div class="changelog-date">18 Aug 2026 (pm)</div>
+      <div class="changelog-content">
+        <div class="changelog-title">Site report v3.3.1: leads corrected to 0</div>
+        <div class="changelog-desc">Removed 3 GA4 generate_lead events from lead KPI. Owner confirmed zero messages in Telegram and zero owner inbox emails through 18 Aug. Lead count now = confirmed TG + email only.</div>
+        <div class="changelog-tags"><span class="tag green">Report</span><span class="tag amber">Leads fix</span></div>
+      </div>
+    </div>
+    <div class="changelog-item">
       <div class="changelog-date">18 Aug 2026</div>
       <div class="changelog-content">
         <div class="changelog-title">Site report v3.3: full MCP refresh through 15 Aug</div>
-        <div class="changelog-desc">GSC 28d: {gsc28d.clicks} clk / {gsc28d.impressions.toLocaleString('en-US')} imp, CTR {gsc28d.ctr}%, avg pos {gsc28d.position}. Lifetime {totalClicks} clk / {totalImp.toLocaleString('en-US')} imp. Jul full month 28 clk / 3,863 imp. GA4 {ga4Sessions} sessions (Aug {monthlyGa4[2].sessions} partial), {ga4GenerateLead} generate_lead. Bing 28d {bing28d.clicks} clk / {bing28d.impressions.toLocaleString('en-US')} imp. GEO avg {geoAvgScore}/100 grade {geoGrade}. Clicks diversified across {gscPagesWithClicks} URLs.</div>
+        <div class="changelog-desc">GSC 28d: {gsc28d.clicks} clk / {gsc28d.impressions.toLocaleString('en-US')} imp, CTR {gsc28d.ctr}%, avg pos {gsc28d.position}. Lifetime {totalClicks} clk / {totalImp.toLocaleString('en-US')} imp. Jul full month 28 clk / 3,863 imp. GA4 {ga4Sessions} sessions (Aug {monthlyGa4[2].sessions} partial). Confirmed leads: 0. Bing 28d {bing28d.clicks} clk / {bing28d.impressions.toLocaleString('en-US')} imp. GEO avg {geoAvgScore}/100 grade {geoGrade}.</div>
         <div class="changelog-tags"><span class="tag green">Report</span><span class="tag blue">GSC</span><span class="tag amber">GA4</span><span class="tag gray">Bing</span></div>
       </div>
     </div>
@@ -1065,8 +1072,8 @@ const chartPayload = JSON.stringify({
     <div class="next-item" style="background:#fef2f2;border-color:#fecaca;">
       <div class="priority high">P0</div>
       <div>
-        <div class="text" style="font-weight:700;">Lead tracking: {ga4GenerateLead} GA4 conversions · confirm TG + inbox weekly</div>
-        <div class="subtext">Target 5/week · no CRM · cross-check form_start ({ga4FormStart}) vs real replies</div>
+        <div class="text" style="font-weight:700;">Lead tracking: confirmed TG + inbox only ({confirmedLeads} so far)</div>
+        <div class="subtext">Target 5/week · no CRM · GA4 tags not counted as leads</div>
       </div>
     </div>
     <div class="next-item" style="background:#fff7ed;border-color:#fed7aa;">
@@ -1087,7 +1094,7 @@ const chartPayload = JSON.stringify({
       <div class="priority low">DONE</div>
       <div>
         <div class="text" style="font-weight:700;">GEO guides 90+ · lead TG + email · SERP refresh · sticky CTA · Bing ramp {bing28d.clicks} clk/28d</div>
-        <div class="subtext">First {ga4GenerateLead} leads · reciprocity 7.9% CTR · Aug GA4 {monthlyGa4[2].sessions} sessions</div>
+        <div class="subtext">Funnel live since 27 Jul · reciprocity 7.9% CTR · Aug GA4 {monthlyGa4[2].sessions} sessions</div>
       </div>
     </div>
   </div>
@@ -1127,7 +1134,7 @@ const chartPayload = JSON.stringify({
 </div>
 
   <div class="footer">
-  <strong>Italian Estate</strong> · italian-estate.com · Report updated {reportDate} {reportVersion} · 277 sitemap URLs · 647K words · GSC {gsc28d.clicks} clk / {gsc28d.impressions.toLocaleString('en-US')} imp (28d) · GA4 {ga4Sessions} sessions · {ga4GenerateLead} leads<br>
+  <strong>Italian Estate</strong> · italian-estate.com · Report updated {reportDate} {reportVersion} · 277 sitemap URLs · 647K words · GSC {gsc28d.clicks} clk / {gsc28d.impressions.toLocaleString('en-US')} imp (28d) · GA4 {ga4Sessions} sessions · {confirmedLeads} confirmed leads<br>
   EN site — Google + Bing only · never Yandex · IndexNow via bing.com/indexnow only
 </div>
 
