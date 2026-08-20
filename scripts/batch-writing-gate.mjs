@@ -140,6 +140,31 @@ for (const pair of index.nearPairs()) {
   }
 }
 
+/**
+ * Shingles seen on OTHER pages, so scoreUniqueness can tell "distinctive" from
+ * "repeated across the corpus". Without this the rubric only sees within-page
+ * novelty, which is how 18 area pages shared one identical paragraph while each
+ * scored 90+.
+ */
+function shingleSet(text, k = 6) {
+  const w = String(text).toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').split(/\s+/).filter(Boolean);
+  const out = new Set();
+  for (let i = 0; i + k <= w.length; i += 1) out.add(w.slice(i, i + k).join(' '));
+  return out;
+}
+const corpusBodies = new Map();
+for (const f of listAll()) {
+  corpusBodies.set(`${f.coll}/${f.slug}`, parseMdx(readFileSync(f.path, 'utf8')).body);
+}
+function corpusShinglesExcluding(id) {
+  const out = new Set();
+  for (const [key, body] of corpusBodies) {
+    if (key === id) continue;
+    for (const g of shingleSet(body)) out.add(g);
+  }
+  return out;
+}
+
 const baseline = loadBaseline();
 const updateBaseline = has('--update-baseline');
 /** Metrics to re-derive outright (use when a detector definition changed). */
@@ -176,7 +201,7 @@ for (const { coll, slug, path } of targets) {
   };
 
   const words = wordCount(body);
-  const geo = scorePage(body, { collection: coll });
+  const geo = scorePage(body, { collection: coll, corpusShingles: corpusShinglesExcluding(id) });
 
   const minWordsHere = base ? Math.min(MIN_WORDS, base.words ?? MIN_WORDS) : MIN_WORDS;
   const minGeoHere = base ? Math.min(MIN_GEO, base.geo ?? MIN_GEO) : MIN_GEO;
