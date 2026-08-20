@@ -470,3 +470,82 @@ detector gaps that let all of this ship. Content waves start at Wave 3.
 
 **Suggested first approval: Wave 0 + Wave 1 together** (detector fixes + the template-layer P0s). They
 touch no MDX, are fully verifiable in the build output, and stop the bleeding on every page at once.
+
+---
+
+## 7. Wave 0 + Wave 1 — delivered 2026-08-20
+
+Approved by Maxim (`lock.json` → `approved_wave: wave-0+1`). Decisions taken: build the
+`RelatedGuides` component; trim the title suffix rather than rewrite 187 titles; ship W0 and W1 as one PR.
+
+### What the gates report now
+
+| Gate | Before | After |
+|---|---|---|
+| `fix:markdown-glue -- --dry` | pass (1 known file) | pass |
+| `validate:content:changed` | **crash** (ERR_MODULE_NOT_FOUND) | **pass** |
+| `validate:batch -- --changed` | **crash** (MODULE_NOT_FOUND) | **pass** |
+| `qa:corpus` | fake pass (blind detector + silently crashing subprocess) | **pass**, reporting 78 + 21 + 138 known-debt items |
+| `check-links` | **did not exist** | **pass**, 0 broken links |
+| `audit:templates` | **did not exist** | **pass** |
+| `audit:images` | fail (2 false positives) | **pass** |
+| `audit:rendered --local --fail` | 506 P0 / 428 P1 | **0 / 0** |
+
+### Rendered-HTML deltas (verified against `dist/`, not source)
+
+| Defect | Before | After |
+|---|---:|---:|
+| Pages emitting 2+ `FAQPage` JSON-LD | **252** | **0** |
+| Pages rendering the FAQ **twice visibly** (`projects` route never passed `hasInlineFaqBlock`) | **65** | **0** |
+| `<title>` longer than 62 chars | **187** | **0** (longest 60) |
+| Stray ` , ` in rendered copy | all **278** | **0** |
+| Markdown tables rendering as literal pipe text | **2** | **0** |
+| Glued/fragile table sites in the corpus | **9** | **0** |
+| Hero `<img>` with no descriptive `alt` | **252** | **0** |
+| Pages with no inbound in-body link | **24** | **13** |
+| Broken internal links | **4** | **0** |
+
+### Found during the wave (not in the original audit)
+
+- **P0-3 was worse than reported.** The wrong-country copy was not confined to meta descriptions — four
+  collection hub `<title>` tags were wrong: `/projects` → *"Mexico Real Estate Projects"*, `/guides` →
+  *"Spain Property Investment Guides"*, `/compare` → *"Spain Property Market Comparisons"*, and `/areas` →
+  *"Italian Estatement Areas"* (a find-replace that turned "Investment" into "Estatement"). `/methodology`
+  cited DLD, AMPI and "Official UAE government portals"; `/privacy-policy` promised referral to
+  "licensed UAE property partners". All fixed.
+- **Two more path bugs in the same file.** `more-content-gate.mjs` also had `runCloudinaryDeliveryChecks`
+  nested inside an unrelated `if (STAMP_PREFIX_RE…)` block, so it would never have run even with the
+  module present; and its `glued-table` regex (`/^[^\n|]+ — \| /m`) only matched text and pipes on the
+  *same* line, never the failure mode that actually shipped.
+- **`qa:corpus`'s PASS was fake twice over.** Besides the blind duplicate check, its `fix-batch-queue`
+  subprocess imported the same missing module, exited non-zero, and the gate treated "no output" as
+  "no problems". With the import fixed it reports **138 files** carrying legacy blockers.
+- **4 titles contained a doubled word** — "Property Guide **Guide** (2026)" on `tuscany-inland-`,
+  `rome-property-investment-`, `italy-off-plan-property-` and `airbnb-investment-italy-guide`. Visible in
+  the SERP. Rewritten to proper 50–60 character titles.
+- **P1-7 (new): raw slug text injected into visible prose — 240 occurrences across 52 files.** A template
+  slotted the lowercase URL slug into body sentences:
+  > "Bolzano city apartments for **italy property for dutch buyers buyers** trade roughly €3,800-5,500/m²"
+  > "**Red flag:** On **emilia romagna property investment guide** tickets, pricing more than 15% below OMI…"
+  > "Use this **vineyard property investment italy guide** buyer checklist before compromesso signature."
+
+  Worst: `emilia-romagna-property-investment-guide` (14), `italy-property-for-germans` (12),
+  `italy-property-for-dutch-buyers` (11), `italy-property-for-irish-buyers` (11),
+  `italy-property-for-french-buyers` (10), `italy-property-for-scandinavian-buyers` (10).
+  Same family as P1-2; **assigned to Wave 5**.
+- **`/site-report` is indexable** and publishes internal GSC/GA4 numbers, lead counts and a roadmap.
+  Not changed — noindexing it is a call for Maxim, not a cleanup decision.
+
+### The quality ratchet — why this cannot silently regress again
+
+`.content-os/quality-baseline.json` records per-file debt (self-repeats, near-duplicates, cross-page
+duplicates, GEO, word count, legacy issue types). All four content gates read it and **fail a file only
+when it gets worse than its recorded baseline**; a file with no entry is held to the full standard, and
+`--update-baseline` refuses to raise any number — values may only improve. `--strict` ignores the ratchet
+and holds everything to zero.
+
+This is what was missing. Every previous cleanup could report success without anything measuring whether
+the corpus actually improved. Now the debt is a number in a file that can only go down: **125 self-repeats,
+816 within-page near-duplicates, 66 cross-page exact duplicates, 6,564 cross-page near-duplicate pairs,
+36 files below GEO 90, 96 below 2,500 words, 138 files with legacy blockers.** Waves 3–8 drive those to
+zero, and no PR can raise them.

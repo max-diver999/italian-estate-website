@@ -9,8 +9,9 @@ import {
   SCENARIO_SPAM_MIN,
   LIST_DASH_STEPS_MIN,
   analyzeHumanSignals,
+  findGluedTables,
 } from './human-signals.mjs';
-import { runCloudinaryDeliveryChecks } from '../../../scripts/lib/cloudinary-gate.mjs';
+import { runCloudinaryDeliveryChecks } from './cloudinary-gate.mjs';
 
 export const BANNED_PHRASES = [
   'Regional diversification',
@@ -123,14 +124,14 @@ export function runStructuralChecks(opts) {
   }
   if (/☐/.test(body)) errors.push(`${prefix} empty checklist box ☐ — use ✓ in Verified/DD tables`);
   if (/\{\/\* corpus:/.test(body)) errors.push(`${prefix} corpus uniquify stamp comment — remove`);
-  if (/^[^\n|]+ — \| /m.test(body)) {
-    errors.push(`${prefix} glued markdown table (text + pipes on one line) — breaks rendering`);
+  for (const detail of findGluedTables(body)) {
+    errors.push(`${prefix} glued markdown table — ${detail}`);
   }
   if (STAMP_PREFIX_RE.test(body)) {
     errors.push(`${prefix} wave17 area stamp prefix on paragraph — remove`);
+  }
 
   runCloudinaryDeliveryChecks({ prefix, text, errors, legacyExempt });
-  }
 
   const humanCollections = ['guides', 'comparisons', 'areas', 'projects', 'news'];
   if (!legacyExempt && humanCollections.includes(collection)) {

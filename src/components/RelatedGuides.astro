@@ -1,0 +1,83 @@
+---
+/**
+ * Related guides — renders the `relatedSlugs` frontmatter field.
+ *
+ * `relatedSlugs` is declared in src/content.config.ts and populated on all 252
+ * content files, but no component ever consumed it, so it produced exactly zero
+ * links. Internal linking therefore rested entirely on in-body prose links, and
+ * 24 pages — including three Tier A/C lead pages — ended up with no inbound
+ * contextual link at all.
+ *
+ * more-content-gate.mjs already referenced this component by name ("use
+ * RelatedGuides via relatedSlugs or real anchor text"); it just did not exist.
+ *
+ * Slugs are bare (e.g. "italy-rental-yield-guide"), so each one is resolved
+ * across every collection. Unresolvable slugs are dropped silently rather than
+ * rendered as dead links — check-links.mjs reports them instead.
+ */
+import { getCollection } from 'astro:content';
+
+interface Props {
+  slugs?: string[];
+  /** Slug of the current page, so a self-reference is never rendered. */
+  currentSlug?: string;
+  title?: string;
+  max?: number;
+}
+
+const { slugs = [], currentSlug = '', title = 'Related guides', max = 6 } = Astro.props;
+
+const COLLECTIONS = ['guides', 'compare', 'areas', 'projects', 'developers', 'news'] as const;
+
+const lookup = new Map<string, { url: string; title: string; description: string; collection: string }>();
+for (const collection of COLLECTIONS) {
+  let entries;
+  try {
+    entries = await getCollection(collection as any);
+  } catch {
+    continue;
+  }
+  for (const entry of entries) {
+    if (entry.data?.noindex) continue;
+    // First collection wins, so a slug present in two places resolves predictably.
+    if (!lookup.has(entry.id)) {
+      lookup.set(entry.id, {
+        url: `/${collection}/${entry.id}/`,
+        title: entry.data.title,
+        description: entry.data.description,
+        collection,
+      });
+    }
+  }
+}
+
+const items = [...new Set(slugs)]
+  .filter((slug) => slug && slug !== currentSlug)
+  .map((slug) => lookup.get(slug))
+  .filter((item): item is NonNullable<typeof item> => Boolean(item))
+  .slice(0, max);
+---
+
+{items.length > 0 && (
+  <nav class="max-w-3xl mx-auto mt-12" aria-label={title}>
+    <h2 class="text-2xl mb-5 text-[var(--color-ink)]">{title}</h2>
+    <ul class="grid gap-3 sm:grid-cols-2 list-none p-0 m-0">
+      {items.map((item) => (
+        <li class="m-0">
+          <a
+            href={item.url}
+            class="block h-full surface-card p-4 no-underline transition-colors hover:border-[var(--color-accent)]"
+          >
+            <span class="block text-xs uppercase tracking-wide text-[var(--color-muted)] mb-1">
+              {item.collection}
+            </span>
+            <span class="block font-medium text-[var(--color-ink)] mb-1">{item.title}</span>
+            <span class="block text-sm text-[var(--color-muted)]">
+              {item.description.length > 110 ? `${item.description.slice(0, 110)}…` : item.description}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}

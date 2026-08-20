@@ -35,6 +35,45 @@ export function emDashPer500(body) {
   return (dashes / w) * 500;
 }
 
+const TABLE_DELIM_RE = /^\s*\|[\s:|-]+\|\s*$/;
+
+/**
+ * Markdown tables that are not preceded by a blank line.
+ *
+ * The previous check was `/^[^\n|]+ — \| /m` — it only matched text and pipes on
+ * the SAME line. The failure mode actually shipping on the site is a table on its
+ * own lines placed directly under a bullet list or paragraph: CommonMark treats
+ * those rows as a lazy continuation of the preceding block, the table never
+ * parses, and the pipes render as literal text.
+ *
+ * Severity differs by what precedes the table:
+ *   - after a list item  -> 'breaks' (confirmed literal pipes in rendered HTML)
+ *   - after a paragraph  -> 'fragile' (still parses today, one edit from breaking)
+ *
+ * @returns {string[]} human-readable details, empty when clean
+ */
+export function findGluedTables(body) {
+  const out = [];
+  const lines = String(body).split('\n');
+  for (let i = 1; i < lines.length; i += 1) {
+    const line = lines[i];
+    if (!line.trim().startsWith('|')) continue;
+    if (!TABLE_DELIM_RE.test(lines[i + 1] || '')) continue;
+
+    const prev = lines[i - 1];
+    const prevTrimmed = prev.trim();
+    if (prevTrimmed === '' || prevTrimmed.startsWith('|')) continue;
+
+    const afterList = /^\s*([-*+]|\d+\.)\s/.test(prev);
+    const severity = afterList ? 'breaks rendering' : 'fragile';
+    out.push(
+      `line ${i + 1}: table has no blank line before it (${severity}; preceded by ` +
+        `${afterList ? 'list item' : 'paragraph'} "${prevTrimmed.slice(-52)}")`,
+    );
+  }
+  return out;
+}
+
 export function analyzeHumanSignals(body, { emLimit = 8 } = {}) {
   const issues = [];
   const words = wordCount(body);
@@ -43,8 +82,8 @@ export function analyzeHumanSignals(body, { emLimit = 8 } = {}) {
   const stars = (body.match(/\*\*/g) || []).length;
   if (stars % 2 !== 0) issues.push({ kind: 'unclosed-bold', detail: `odd ** count: ${stars}` });
 
-  if (/^[^\n|]+ — \| /m.test(body)) {
-    issues.push({ kind: 'glued-table', detail: 'text glued to markdown table' });
+  for (const detail of findGluedTables(body)) {
+    issues.push({ kind: 'glued-table', detail });
   }
   if (/\{\/\* corpus:/.test(body)) {
     issues.push({ kind: 'corpus-stamp', detail: 'wave17 corpus comment' });

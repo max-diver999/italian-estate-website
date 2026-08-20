@@ -1,13 +1,17 @@
 # Corpus cleanup roadmap — italian-estate.com
 
 **Date:** 2026-08-20 · **Source:** `.content-os/reports/AUDIT-REPORT-2026-08-20.md`
-**Status:** DRAFT — awaiting Maxim «ок». No wave is in `lock.json` yet.
+**Status:** Waves 0 and 1 **DONE** (approved 2026-08-20, `lock.json` → `wave-0+1`). Waves 2–8 awaiting «ок».
 **Rule:** ≤25 slugs per wave / per PR. Gates on every PR:
 `npm run fix:markdown-glue -- --dry` (0 files) → `npm run validate:content:changed` → `npm run validate:batch -- --changed`.
 
-> ⚠ **`validate:content` and `validate:batch` currently crash** on missing modules (`cloudinary-gate.mjs`,
-> canonical `batch-writing-gate.mjs` — see P0-0). Only the glue check runs today. **Wave 0.0 repairs them
-> before any content wave**, otherwise no wave below can actually be gated.
+> ✅ **Both gates are repaired (Wave 0).** The full suite now runs green:
+> `fix:markdown-glue --dry` · `validate:content:changed` · `validate:batch --changed` ·
+> `check-links` · `audit:templates` · `qa:corpus` · `audit:images` · `audit-rendered-live --local --fail`.
+>
+> All four content gates ratchet against **`.content-os/quality-baseline.json`**: a file fails only when it
+> gets *worse* than its recorded debt, and baseline numbers may only go down. Run any gate with `--strict`
+> to hold every file to zero, and `--update-baseline` after a wave lands to lower the floor.
 
 ## Why this order differs from the draft in `STATUS.md`
 
@@ -18,8 +22,8 @@ handful of file edits** and cost almost nothing to review. Content waves start a
 
 | Wave | Focus | Scope | Pages fixed | MDX touched? |
 |---:|---|---|---:|---|
-| 0 | Detector gaps | 4 scripts | — (prevents recurrence) | no |
-| 1 | Template-layer P0 | 34 files in `src/` | **278** | no |
+| ~~0~~ | ~~Detector gaps + broken gates~~ | **DONE** — 11 scripts, 3 new | — (prevents recurrence) | no |
+| ~~1~~ | ~~Template-layer P0~~ | **DONE** — 41 files | **278** | 16 files, whitespace/href/title only |
 | 2 | Hero images | 63 image URLs + frontmatter | **111** | frontmatter only |
 | 3 | Fact registry + IMU reconciliation | ≤25 slugs | 25 | yes |
 | 4 | Within-file duplicate paragraphs | ≤25 slugs ×3 batches | 88 | yes |
@@ -30,7 +34,7 @@ handful of file edits** and cost almost nothing to review. Content waves start a
 
 ---
 
-## Wave 0 — Close the detector gaps (no content changes)
+## ~~Wave 0~~ — Close the detector gaps ✅ DONE 2026-08-20
 
 **Why first:** every gate currently reports PASS on the defects in this report. Fixing content before
 fixing detectors guarantees this happens again on the next refresh — which is exactly the history here.
@@ -50,7 +54,7 @@ fixing detectors guarantees this happens again on the next refresh — which is 
 
 ---
 
-## Wave 1 — Template-layer P0 (fixes 278 pages, touches no MDX)
+## ~~Wave 1~~ — Template-layer P0 ✅ DONE 2026-08-20
 
 **Slugs: 0. Files: 34.** Highest value-per-line-changed in the whole roadmap.
 
@@ -154,6 +158,15 @@ Rewrite the **134** `{H2 heading} means …` openers as genuine 40–60-word ans
 `compare/cedolare-secca-vs-irpef-italy-rental`, `compare/flat-tax-vs-investor-visa-italy`,
 `areas/assisi`, `areas/bologna`, `areas/monte-argentario`.
 
+**5c — P1-7, raw slug text in visible prose: 240 occurrences / 52 files.** A template slotted the
+lowercase URL slug into body sentences — *"Bolzano city apartments for **italy property for dutch buyers
+buyers** trade roughly €3,800-5,500/m²"*, *"**Red flag:** On **emilia romagna property investment guide**
+tickets…"*, *"Use this **vineyard property investment italy guide** buyer checklist…"*. Worst:
+`emilia-romagna-property-investment-guide` (14), `italy-property-for-germans` (12),
+`italy-property-for-dutch-buyers` (11), `italy-property-for-irish-buyers` (11),
+`italy-property-for-french-buyers` (10), `italy-property-for-scandinavian-buyers` (10). Rewrite each
+sentence to use the natural noun phrase, never the slug.
+
 **5b — remaining 22 files**, plus the Quick-answer echo on
 `is-italy-property-good-investment-2026`, `best-regions-invest-italy-property-2026`,
 `airbnb-investment-italy-guide`, `mistakes-foreign-buyers-italy`, `italy-vs-spain-property-investment`,
@@ -164,10 +177,14 @@ Rewrite the **134** `{H2 heading} means …` openers as genuine 40–60-word ans
 ## Wave 6 — Links, orphans, cannibalization (≤25 slugs)
 
 1. **4 broken links** (P1-5): 3 wrong-collection href fixes + `/areas/positano/` which has no target.
-2. **Orphans** — add contextual in-body links from the right hubs to the 24 zero-inbound pages. Lead
-   pages first: `costa-smeralda-property-investment-guide`, `italy-property-management-costs`,
-   `italy-property-renovation-costs-guide` (all 0), `buy-property-italy-under-500000` (1).
-   *If Wave 1.6 built the `relatedSlugs` component, this shrinks to the Tier A/B pages only.*
+2. **Orphans — 24 → 13** after Wave 1 shipped `<RelatedGuides>`. Remaining zero-inbound pages:
+   `italy-property-management-costs` (Tier A), `italy-property-market-forecast-2026-2027`,
+   `italy-residency-by-investment-guide`, `italy-retirement-property-guide`, `mistakes-foreign-buyers-italy`,
+   `vineyard-property-investment-italy-guide`, `bologna-property-investment-guide`,
+   `compare/italy-vs-malta-property-investment`, `compare/venice-vs-milan-property-investment`,
+   `developers/engel-volkers-italy`, and all 3 `news/*`.
+   Fix by adding `relatedSlugs` entries on the pages that *should* point at them, plus in-body links from
+   the matching hub. Verify with `npm run check-links -- --orphans`.
 3. **Cannibalization** (P1-6) — **no noindex**:
    - `can-foreigners-buy-property-italy` → trim to eligibility scope; hand reciprocity to
      `italy-reciprocity-property-foreigners` (Tier A), tax to `italy-property-taxes-foreign-buyers-guide`,
@@ -226,7 +243,12 @@ save.
 - Mass regex edits — explicitly the cause of the P0-2 and P2-8 scars
 - Deploy / indexing (Cursor + «выложи» only)
 
-## Suggested first approval
+## Next approval
 
-**Wave 0 + Wave 1 together.** No MDX, 34 files, fully verifiable in the build output, and between them
-they fix a defect on all 278 rendered pages while closing the gaps that let all of this ship green.
+**Wave 2 — hero images off Wikimedia.** 111 pages, frontmatter only, no body edits. It is the largest
+remaining Core Web Vitals win and the only wave that fixes *visually broken* pages (Wikimedia is returning
+429 on hotlinked heroes today).
+
+After that, **Wave 3** (fact registry + IMU) is the highest-value content wave: five contradictory IMU
+bands is the single biggest AEO/GEO liability in the corpus, and `market-stats.json` still holds no
+numeric values at all.

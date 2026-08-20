@@ -1,0 +1,2694 @@
+{
+  "updated": "2026-08-20",
+  "note": "Quality ratchet. Recorded debt per file; the gate fails a file only when it gets WORSE. Values may only improve — regenerate with `node scripts/batch-writing-gate.mjs --all --update-baseline`.",
+  "files": {
+    "areas/alba": {
+      "words": 2998,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/ancona": {
+      "words": 2931,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 3,
+      "crossNear": 34,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/arezzo": {
+      "words": 2951,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 10,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/assisi": {
+      "words": 2572,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "areas/bari": {
+      "words": 3280,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "areas/bellagio": {
+      "words": 2914,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 3,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/bologna": {
+      "words": 3759,
+      "geo": 91,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 35
+    },
+    "areas/campobasso": {
+      "words": 3670,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 2,
+      "crossNear": 31,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/carovigno": {
+      "words": 2922,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 1,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/chianti": {
+      "words": 2346,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 18,
+      "legacyIssues": [
+        "thin-content"
+      ]
+    },
+    "areas/chieti": {
+      "words": 3019,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 7,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/cisternino": {
+      "words": 2874,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "areas/como": {
+      "words": 4390,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/costa-smeralda": {
+      "words": 3150,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "areas/florence": {
+      "words": 4096,
+      "geo": 90,
+      "selfRepeats": 5,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 47,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "areas/genoa": {
+      "words": 2714,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "areas/langhe": {
+      "words": 3021,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/lecce": {
+      "words": 3096,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/lucca": {
+      "words": 4894,
+      "geo": 90,
+      "selfRepeats": 3,
+      "nearWithin": 36,
+      "crossExact": 1,
+      "crossNear": 12
+    },
+    "areas/matera": {
+      "words": 2091,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "thin-content",
+        "missing-scenarios"
+      ]
+    },
+    "areas/milan-navigli": {
+      "words": 3944,
+      "geo": 90,
+      "selfRepeats": 3,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 9
+    },
+    "areas/modena": {
+      "words": 3303,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 5
+    },
+    "areas/monte-argentario": {
+      "words": 4152,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 8
+    },
+    "areas/naples": {
+      "words": 1932,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "thin-content"
+      ]
+    },
+    "areas/noto": {
+      "words": 3966,
+      "geo": 90,
+      "selfRepeats": 2,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 25
+    },
+    "areas/ostuni": {
+      "words": 4199,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 4,
+      "crossExact": 0,
+      "crossNear": 10
+    },
+    "areas/palermo": {
+      "words": 4441,
+      "geo": 90,
+      "selfRepeats": 2,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 30,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "areas/parma": {
+      "words": 3081,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 14,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/perugia": {
+      "words": 3042,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 23,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/pescara": {
+      "words": 1928,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "thin-content"
+      ]
+    },
+    "areas/polignano-a-mare": {
+      "words": 2937,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/portofino": {
+      "words": 3039,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 2,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/potenza": {
+      "words": 2276,
+      "geo": 88,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "thin-content"
+      ]
+    },
+    "areas/rome-centro-storico": {
+      "words": 3029,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/sanremo": {
+      "words": 3364,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 2,
+      "crossExact": 0,
+      "crossNear": 14
+    },
+    "areas/santa-margherita-ligure": {
+      "words": 2704,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "areas/savona": {
+      "words": 3094,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 6,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/scalea": {
+      "words": 2886,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 4,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/siena": {
+      "words": 4211,
+      "geo": 90,
+      "selfRepeats": 3,
+      "nearWithin": 3,
+      "crossExact": 0,
+      "crossNear": 43
+    },
+    "areas/sorrento": {
+      "words": 2995,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 4,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/syracuse": {
+      "words": 4248,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 2,
+      "crossExact": 0,
+      "crossNear": 28
+    },
+    "areas/taormina": {
+      "words": 2352,
+      "geo": 91,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 0,
+      "legacyIssues": [
+        "thin-content"
+      ]
+    },
+    "areas/termoli": {
+      "words": 2019,
+      "geo": 92,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 0,
+      "legacyIssues": [
+        "thin-content"
+      ]
+    },
+    "areas/turin": {
+      "words": 2024,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "thin-content"
+      ]
+    },
+    "areas/urbino": {
+      "words": 1857,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "thin-content",
+        "missing-scenarios"
+      ]
+    },
+    "areas/val-dorcia": {
+      "words": 2772,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "areas/valle-d-itria": {
+      "words": 3210,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "areas/versilia": {
+      "words": 4099,
+      "geo": 90,
+      "selfRepeats": 2,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 22
+    },
+    "compare/ancona-vs-urbino-property": {
+      "words": 2689,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 3,
+      "crossExact": 0,
+      "crossNear": 37
+    },
+    "compare/arezzo-vs-siena-property": {
+      "words": 4134,
+      "geo": 90,
+      "selfRepeats": 2,
+      "nearWithin": 8,
+      "crossExact": 0,
+      "crossNear": 47
+    },
+    "compare/bologna-vs-florence-property": {
+      "words": 2198,
+      "geo": 85,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 1,
+      "legacyIssues": [
+        "thin-content"
+      ]
+    },
+    "compare/campobasso-vs-termoli-property": {
+      "words": 1827,
+      "geo": 88,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 10,
+      "legacyIssues": [
+        "thin-content"
+      ]
+    },
+    "compare/cedolare-secca-vs-irpef-italy-rental": {
+      "words": 3883,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 4,
+      "crossExact": 0,
+      "crossNear": 4
+    },
+    "compare/elective-residence-vs-investor-visa-italy": {
+      "words": 4476,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 5,
+      "crossExact": 0,
+      "crossNear": 13,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "compare/flat-tax-vs-investor-visa-italy": {
+      "words": 4163,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 2,
+      "crossExact": 1,
+      "crossNear": 2,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "compare/florence-vs-rome-property-investment": {
+      "words": 2279,
+      "geo": 76,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 9,
+      "legacyIssues": [
+        "thin-content"
+      ]
+    },
+    "compare/florence-vs-siena-property": {
+      "words": 4316,
+      "geo": 90,
+      "selfRepeats": 3,
+      "nearWithin": 8,
+      "crossExact": 0,
+      "crossNear": 5,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "compare/genoa-vs-florence-property": {
+      "words": 2849,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "compare/italy-vs-croatia-property-investment": {
+      "words": 4321,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 2,
+      "crossExact": 0,
+      "crossNear": 4
+    },
+    "compare/italy-vs-france-property-investment": {
+      "words": 3215,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 1,
+      "crossNear": 7
+    },
+    "compare/italy-vs-greece-property-investment": {
+      "words": 2161,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 5,
+      "legacyIssues": [
+        "thin-content",
+        "missing-scenarios"
+      ]
+    },
+    "compare/italy-vs-malta-property-investment": {
+      "words": 4010,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 3,
+      "crossExact": 0,
+      "crossNear": 1
+    },
+    "compare/italy-vs-portugal-property-investment": {
+      "words": 4025,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 4
+    },
+    "compare/italy-vs-spain-property-investment": {
+      "words": 3735,
+      "geo": 82,
+      "selfRepeats": 2,
+      "nearWithin": 14,
+      "crossExact": 1,
+      "crossNear": 15
+    },
+    "compare/lake-como-vs-liguria-property": {
+      "words": 4934,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 8,
+      "crossExact": 0,
+      "crossNear": 8
+    },
+    "compare/lake-garda-vs-lake-como-property": {
+      "words": 5092,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 22,
+      "crossExact": 0,
+      "crossNear": 9
+    },
+    "compare/matera-vs-potenza-property": {
+      "words": 1919,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "thin-content"
+      ]
+    },
+    "compare/milan-vs-florence-property-investment": {
+      "words": 4331,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 34,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "compare/milan-vs-rome-property-investment": {
+      "words": 4588,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 2,
+      "crossExact": 0,
+      "crossNear": 6,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "compare/naples-vs-rome-property-investment": {
+      "words": 3849,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 44
+    },
+    "compare/off-plan-vs-resale-property-italy": {
+      "words": 5044,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 2,
+      "crossExact": 0,
+      "crossNear": 12,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "compare/perugia-vs-assisi-property": {
+      "words": 2655,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 16,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "compare/pescara-vs-chieti-property": {
+      "words": 2905,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 3,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "compare/puglia-vs-tuscany-property": {
+      "words": 2847,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "compare/sicily-vs-puglia-property": {
+      "words": 5095,
+      "geo": 91,
+      "selfRepeats": 2,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 10
+    },
+    "compare/turin-vs-milan-property": {
+      "words": 2755,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "compare/tuscany-vs-lake-como-property": {
+      "words": 4778,
+      "geo": 90,
+      "selfRepeats": 2,
+      "nearWithin": 5,
+      "crossExact": 0,
+      "crossNear": 5
+    },
+    "compare/venice-vs-milan-property-investment": {
+      "words": 3106,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "developers/albero-architecture": {
+      "words": 1862,
+      "geo": 55,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 108
+    },
+    "developers/apulia-deluxe": {
+      "words": 2105,
+      "geo": 56,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 45
+    },
+    "developers/asti-architetti": {
+      "words": 1829,
+      "geo": 56,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 72
+    },
+    "developers/coima": {
+      "words": 2266,
+      "geo": 56,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 113
+    },
+    "developers/damico-gruppo": {
+      "words": 1911,
+      "geo": 60,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 100
+    },
+    "developers/engel-volkers-italy": {
+      "words": 2114,
+      "geo": 56,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 78
+    },
+    "developers/frimm": {
+      "words": 1821,
+      "geo": 50,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 72
+    },
+    "developers/gate-away-partner-network": {
+      "words": 1918,
+      "geo": 63,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 64
+    },
+    "developers/lendlease": {
+      "words": 1910,
+      "geo": 57,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 72
+    },
+    "developers/near-milan": {
+      "words": 2224,
+      "geo": 62,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 26
+    },
+    "developers/nunziare-luxury-projects": {
+      "words": 1806,
+      "geo": 62,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 70
+    },
+    "developers/okam-italy": {
+      "words": 2175,
+      "geo": 61,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 80
+    },
+    "developers/ostuni-domus": {
+      "words": 1932,
+      "geo": 64,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 28
+    },
+    "developers/pregio-immobiliare": {
+      "words": 1982,
+      "geo": 65,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 78
+    },
+    "developers/redo-sgr-italy": {
+      "words": 2113,
+      "geo": 57,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 96
+    },
+    "guides/abruzzo-property-investment-guide": {
+      "words": 2315,
+      "geo": 89,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 3,
+      "crossNear": 26,
+      "legacyIssues": [
+        "bad-title-length",
+        "thin-content"
+      ]
+    },
+    "guides/agriturismo-investment-italy-guide": {
+      "words": 3499,
+      "geo": 88,
+      "selfRepeats": 2,
+      "nearWithin": 0,
+      "crossExact": 2,
+      "crossNear": 36
+    },
+    "guides/airbnb-investment-italy-guide": {
+      "words": 2619,
+      "geo": 88,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 1,
+      "legacyIssues": [
+        "thin-content"
+      ]
+    },
+    "guides/amalfi-coast-property-investment-guide": {
+      "words": 4666,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/basilicata-property-investment-guide": {
+      "words": 3502,
+      "geo": 91,
+      "selfRepeats": 2,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 130
+    },
+    "guides/best-cities-italy-rental-yield-2026": {
+      "words": 3379,
+      "geo": 91,
+      "selfRepeats": 2,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 10
+    },
+    "guides/best-regions-invest-italy-property-2026": {
+      "words": 4162,
+      "geo": 89,
+      "selfRepeats": 1,
+      "nearWithin": 1,
+      "crossExact": 1,
+      "crossNear": 1,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "guides/bologna-property-investment-guide": {
+      "words": 3663,
+      "geo": 92,
+      "selfRepeats": 2,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 10,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "guides/buy-property-italy-foreigner": {
+      "words": 3872,
+      "geo": 86,
+      "selfRepeats": 3,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 20
+    },
+    "guides/buy-property-italy-under-200000": {
+      "words": 4492,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/buy-property-italy-under-500000": {
+      "words": 5154,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/cadastral-value-vs-market-price-italy": {
+      "words": 4446,
+      "geo": 95,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/calabria-property-investment-guide": {
+      "words": 3758,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/can-foreigners-buy-property-italy": {
+      "words": 4577,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/cedolare-secca-italy-rental-property": {
+      "words": 4406,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/codice-fiscale-italy-property": {
+      "words": 2856,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/compromesso-italy-property-contract": {
+      "words": 1711,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "thin-content",
+        "missing-scenarios"
+      ],
+      "qaIssues": [
+        "titleLen",
+        "words"
+      ]
+    },
+    "guides/cost-of-buying-property-italy": {
+      "words": 4518,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/costa-smeralda-property-investment-guide": {
+      "words": 4632,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/digital-nomad-italy-property-guide": {
+      "words": 3090,
+      "geo": 93,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 36,
+      "legacyIssues": [
+        "missing-scenarios"
+      ]
+    },
+    "guides/due-diligence-italy-property": {
+      "words": 5704,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "over-bold"
+      ],
+      "qaIssues": [
+        "overBold",
+        "titleLen"
+      ]
+    },
+    "guides/emilia-romagna-property-investment-guide": {
+      "words": 3399,
+      "geo": 90,
+      "selfRepeats": 2,
+      "nearWithin": 2,
+      "crossExact": 1,
+      "crossNear": 33
+    },
+    "guides/florence-property-investment-guide": {
+      "words": 5822,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 55,
+      "crossExact": 0,
+      "crossNear": 290
+    },
+    "guides/gross-vs-net-yield-italy": {
+      "words": 4884,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/heritage-restricted-property-italy": {
+      "words": 4304,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/hidden-costs-buying-property-italy": {
+      "words": 3970,
+      "geo": 93,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/how-to-buy-italy-property-remotely": {
+      "words": 1914,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 0,
+      "legacyIssues": [
+        "thin-content"
+      ]
+    },
+    "guides/how-to-buy-italy-property-step-by-step": {
+      "words": 5266,
+      "geo": 94,
+      "selfRepeats": 1,
+      "nearWithin": 1,
+      "crossExact": 1,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "few-internal-links"
+      ],
+      "qaIssues": [
+        "intLinks",
+        "titleLen"
+      ]
+    },
+    "guides/how-to-calculate-rental-yield-italy": {
+      "words": 4042,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "over-bold"
+      ],
+      "qaIssues": [
+        "overBold",
+        "titleLen"
+      ]
+    },
+    "guides/imu-property-tax-italy": {
+      "words": 5406,
+      "geo": 93,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 10
+    },
+    "guides/is-italy-property-good-investment-2026": {
+      "words": 4602,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "few-internal-links",
+        "over-bold"
+      ],
+      "qaIssues": [
+        "intLinks",
+        "overBold",
+        "titleLen"
+      ]
+    },
+    "guides/italy-1-euro-homes-program": {
+      "words": 4278,
+      "geo": 93,
+      "selfRepeats": 3,
+      "nearWithin": 2,
+      "crossExact": 1,
+      "crossNear": 10
+    },
+    "guides/italy-capital-gains-tax-property": {
+      "words": 4885,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/italy-elective-residence-visa-property": {
+      "words": 4819,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/italy-flat-tax-regime-new-residents": {
+      "words": 4760,
+      "geo": 84,
+      "selfRepeats": 1,
+      "nearWithin": 21,
+      "crossExact": 1,
+      "crossNear": 332
+    },
+    "guides/italy-holiday-let-licensing": {
+      "words": 3534,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/italy-inheritance-law-property-foreigners": {
+      "words": 4738,
+      "geo": 93,
+      "selfRepeats": 2,
+      "nearWithin": 45,
+      "crossExact": 1,
+      "crossNear": 201
+    },
+    "guides/italy-investor-visa-property": {
+      "words": 6332,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/italy-investor-visa-requirements-2026": {
+      "words": 3821,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 55,
+      "crossExact": 0,
+      "crossNear": 286
+    },
+    "guides/italy-ivie-ivafe-foreign-property-owners": {
+      "words": 3993,
+      "geo": 91,
+      "selfRepeats": 2,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 19
+    },
+    "guides/italy-off-plan-property-guide": {
+      "words": 4141,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "guides/italy-prima-casa-vs-second-home-tax": {
+      "words": 5136,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/italy-property-by-nationality-guide": {
+      "words": 5174,
+      "geo": 91,
+      "selfRepeats": 4,
+      "nearWithin": 4,
+      "crossExact": 1,
+      "crossNear": 23
+    },
+    "guides/italy-property-closing-costs-breakdown": {
+      "words": 4099,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/italy-property-for-americans": {
+      "words": 5341,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 32
+    },
+    "guides/italy-property-for-australians": {
+      "words": 4176,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 38
+    },
+    "guides/italy-property-for-canadians": {
+      "words": 4537,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 36
+    },
+    "guides/italy-property-for-dutch-buyers": {
+      "words": 5004,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 77
+    },
+    "guides/italy-property-for-french-buyers": {
+      "words": 5575,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 66,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "guides/italy-property-for-germans": {
+      "words": 4836,
+      "geo": 92,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 66,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "guides/italy-property-for-irish-buyers": {
+      "words": 5743,
+      "geo": 91,
+      "selfRepeats": 2,
+      "nearWithin": 22,
+      "crossExact": 1,
+      "crossNear": 238,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "guides/italy-property-for-israeli-buyers": {
+      "words": 5365,
+      "geo": 93,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 18
+    },
+    "guides/italy-property-for-scandinavian-buyers": {
+      "words": 5153,
+      "geo": 92,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 70
+    },
+    "guides/italy-property-for-swiss-buyers": {
+      "words": 4992,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 22,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "guides/italy-property-for-uae-buyers": {
+      "words": 3870,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 12
+    },
+    "guides/italy-property-for-uk-buyers": {
+      "words": 5494,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 22
+    },
+    "guides/italy-property-investment-guide": {
+      "words": 4430,
+      "geo": 91,
+      "selfRepeats": 1,
+      "nearWithin": 210,
+      "crossExact": 1,
+      "crossNear": 677
+    },
+    "guides/italy-property-management-costs": {
+      "words": 3457,
+      "geo": 95,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 2,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/italy-property-market-forecast-2026-2027": {
+      "words": 3846,
+      "geo": 86,
+      "selfRepeats": 1,
+      "nearWithin": 46,
+      "crossExact": 1,
+      "crossNear": 459
+    },
+    "guides/italy-property-renovation-costs-guide": {
+      "words": 4592,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/italy-property-scams-avoid": {
+      "words": 2660,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/italy-property-taxes-foreign-buyers-guide": {
+      "words": 4866,
+      "geo": 92,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "missing-pros-cons"
+      ],
+      "qaIssues": [
+        "missing pros/cons",
+        "titleLen"
+      ]
+    },
+    "guides/italy-real-estate-market-data-2025": {
+      "words": 5270,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/italy-reciprocity-property-foreigners": {
+      "words": 2510,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "guides/italy-registration-tax-property": {
+      "words": 4507,
+      "geo": 91,
+      "selfRepeats": 6,
+      "nearWithin": 6,
+      "crossExact": 0,
+      "crossNear": 133
+    },
+    "guides/italy-rental-yield-guide": {
+      "words": 3967,
+      "geo": 89,
+      "selfRepeats": 2,
+      "nearWithin": 1,
+      "crossExact": 2,
+      "crossNear": 3
+    },
+    "guides/italy-residency-by-investment-guide": {
+      "words": 3301,
+      "geo": 93,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/italy-retirement-property-guide": {
+      "words": 4101,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 36,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "guides/lake-como-property-investment-guide": {
+      "words": 5978,
+      "geo": 92,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 0
+    },
+    "guides/liguria-property-investment-guide": {
+      "words": 6279,
+      "geo": 91,
+      "selfRepeats": 1,
+      "nearWithin": 105,
+      "crossExact": 1,
+      "crossNear": 593,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "guides/marche-property-investment-guide": {
+      "words": 2377,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "thin-content"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/milan-property-investment-guide": {
+      "words": 6115,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 2,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/mistakes-foreign-buyers-italy": {
+      "words": 3281,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 1
+    },
+    "guides/molise-property-investment-guide": {
+      "words": 2387,
+      "geo": 85,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 3,
+      "crossNear": 26,
+      "legacyIssues": [
+        "bad-title-length",
+        "thin-content"
+      ]
+    },
+    "guides/non-resident-mortgage-italy": {
+      "words": 4520,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/notaio-italy-property-role": {
+      "words": 3040,
+      "geo": 94,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "guides/piedmont-property-investment-guide": {
+      "words": 3505,
+      "geo": 88,
+      "selfRepeats": 3,
+      "nearWithin": 0,
+      "crossExact": 2,
+      "crossNear": 1
+    },
+    "guides/power-of-attorney-property-italy": {
+      "words": 2835,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/puglia-property-investment-guide": {
+      "words": 6916,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "over-bold"
+      ],
+      "qaIssues": [
+        "overBold",
+        "titleLen"
+      ]
+    },
+    "guides/rome-property-investment-guide": {
+      "words": 5123,
+      "geo": 93,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "guides/sardinia-property-investment-guide": {
+      "words": 5007,
+      "geo": 88,
+      "selfRepeats": 3,
+      "nearWithin": 0,
+      "crossExact": 2,
+      "crossNear": 5
+    },
+    "guides/short-term-rental-rules-italy": {
+      "words": 3745,
+      "geo": 86,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 2,
+      "crossNear": 0
+    },
+    "guides/sicily-property-investment-guide": {
+      "words": 5332,
+      "geo": 92,
+      "selfRepeats": 2,
+      "nearWithin": 0,
+      "crossExact": 2,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "guides/tuscany-inland-property-guide": {
+      "words": 3529,
+      "geo": 93,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "guides/tuscany-property-investment-guide": {
+      "words": 5890,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/uk-tax-italy-holiday-home": {
+      "words": 5068,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/umbria-property-investment-guide": {
+      "words": 2295,
+      "geo": 94,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "thin-content"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "guides/us-tax-italy-rental-property": {
+      "words": 3836,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length",
+        "over-bold"
+      ],
+      "qaIssues": [
+        "overBold",
+        "titleLen"
+      ]
+    },
+    "guides/venice-property-investment-guide": {
+      "words": 5073,
+      "geo": 95,
+      "selfRepeats": 0,
+      "nearWithin": 55,
+      "crossExact": 0,
+      "crossNear": 286,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "guides/vineyard-property-investment-italy-guide": {
+      "words": 4328,
+      "geo": 94,
+      "selfRepeats": 3,
+      "nearWithin": 34,
+      "crossExact": 1,
+      "crossNear": 219,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "news/foreign-buyers-italy-5-5-billion-2025": {
+      "words": 913,
+      "geo": 68,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "news/gate-away-international-buyers-report-2025": {
+      "words": 1029,
+      "geo": 75,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "news/italy-residential-transactions-767000-2025": {
+      "words": 919,
+      "geo": 54,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "news/milan-living-sector-investment-2025": {
+      "words": 972,
+      "geo": 69,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/amalfi-ravello-villa": {
+      "words": 1906,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 7,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "projects/ancona-centro-apartments": {
+      "words": 1974,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 4
+    },
+    "projects/arezzo-centro-apartments": {
+      "words": 2322,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 16
+    },
+    "projects/aria-ex-macello-milan": {
+      "words": 1760,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "projects/assisi-historic-apartments": {
+      "words": 2894,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/bellagio-villa-lake-view": {
+      "words": 1895,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/bliss-uptown-milan": {
+      "words": 2069,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/bologna-bloom-living": {
+      "words": 2011,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/campobasso-centro-apartments": {
+      "words": 2001,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 2,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/carovigno-villa-new-build": {
+      "words": 1760,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 1,
+      "crossNear": 6,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/chianti-farmhouse-restoration": {
+      "words": 1861,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 5
+    },
+    "projects/chieti-university-apartments": {
+      "words": 1859,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 5
+    },
+    "projects/coima-guido-reni-rome": {
+      "words": 2072,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "projects/coima-olympic-village-milan": {
+      "words": 2132,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/coima-via-carcani-trastevere": {
+      "words": 1852,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 2,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/como-lakefront-residence": {
+      "words": 2221,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/costa-smeralda-apartment": {
+      "words": 2049,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/feel-uptown-milan": {
+      "words": 2989,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/fivizzano-village-property": {
+      "words": 1827,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "missing TldrBlock",
+        "no-quick-answer"
+      ]
+    },
+    "projects/florence-oltrarno-apartment": {
+      "words": 1583,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 2,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/genoa-waterfront-apartments": {
+      "words": 2499,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 12
+    },
+    "projects/innesto-milan-social-housing": {
+      "words": 2445,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/inspire-uptown-milan": {
+      "words": 1721,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "qaIssues": [
+        "missing TldrBlock",
+        "no-quick-answer"
+      ]
+    },
+    "projects/langhe-barolo-vineyard-property": {
+      "words": 1783,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/lecce-urbs20-villas": {
+      "words": 2178,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 1,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/lendlease-mind-milan": {
+      "words": 1716,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/lucca-villa-historic-renovation": {
+      "words": 1746,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/maciachini-urban-retreat": {
+      "words": 2889,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/matera-sassi-apartments": {
+      "words": 2116,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/meli-navigli-milan": {
+      "words": 1711,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "projects/milano-sesto-urban-regeneration": {
+      "words": 1613,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "projects/monte-argentario-sea-view": {
+      "words": 2782,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 1,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/noto-baroque-masseria": {
+      "words": 2174,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 5
+    },
+    "projects/nunziare-vii-lusciano": {
+      "words": 1794,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/ostuni-lamia-chiavi-in-mano": {
+      "words": 1865,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/ostuni-masseria-pool-apuliadeluxe": {
+      "words": 1567,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/ostuni-new-villa-pool-470k": {
+      "words": 2915,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/ostuni-rascina-villa-construction": {
+      "words": 2054,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/ostuni-trulli-modern-villa": {
+      "words": 1652,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/palermo-centro-renovation": {
+      "words": 1867,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/perugia-centro-apartments": {
+      "words": 2599,
+      "geo": 90,
+      "selfRepeats": 1,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 4
+    },
+    "projects/pescara-centro-apartments": {
+      "words": 2179,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 9
+    },
+    "projects/porto-cervo-villa-development": {
+      "words": 1911,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/portofino-apartment-renovation": {
+      "words": 1844,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 4
+    },
+    "projects/potenza-centro-apartments": {
+      "words": 2099,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/prandina-navigli-milan": {
+      "words": 1852,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/rapallo-sea-view-apartments": {
+      "words": 1929,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "projects/rome-jubilee-centro-storico": {
+      "words": 1868,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 1,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "missing TldrBlock",
+        "no-quick-answer"
+      ]
+    },
+    "projects/sanremo-sea-view-apartments": {
+      "words": 1854,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "missing TldrBlock",
+        "no-quick-answer",
+        "titleLen"
+      ]
+    },
+    "projects/scalea-calabria-coastal": {
+      "words": 2647,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 1
+    },
+    "projects/semproniano-farmhouse-restoration": {
+      "words": 2004,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "projects/siena-country-villa-pool": {
+      "words": 1865,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/sorrento-coastal-apartment": {
+      "words": 1869,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 1,
+      "qaIssues": [
+        "missing TldrBlock",
+        "no-quick-answer"
+      ]
+    },
+    "projects/taormina-sea-view-residence": {
+      "words": 2097,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/termoli-coast-apartments": {
+      "words": 1988,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/tranio-como-carate-urio-2br": {
+      "words": 1926,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/tranio-florence-historic-center": {
+      "words": 1718,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 2,
+      "qaIssues": [
+        "missing TldrBlock",
+        "no-quick-answer"
+      ]
+    },
+    "projects/tranio-puglia-masseria-new": {
+      "words": 2078,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 2,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/tranio-rome-eur-apartment": {
+      "words": 1565,
+      "geo": 91,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "projects/tranio-sicily-noto-stone-house": {
+      "words": 1866,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    },
+    "projects/turin-crocetta-apartments": {
+      "words": 1905,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/unapavia-pavia-residential": {
+      "words": 1543,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "qaIssues": [
+        "intLinks"
+      ]
+    },
+    "projects/urbino-university-apartments": {
+      "words": 2049,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ],
+      "qaIssues": [
+        "titleLen"
+      ]
+    },
+    "projects/val-dorcia-agriturismo-farmhouse": {
+      "words": 2596,
+      "geo": 90,
+      "selfRepeats": 0,
+      "nearWithin": 1,
+      "crossExact": 0,
+      "crossNear": 0
+    },
+    "projects/valle-d-itria-trulli-restoration": {
+      "words": 1905,
+      "geo": 92,
+      "selfRepeats": 0,
+      "nearWithin": 0,
+      "crossExact": 0,
+      "crossNear": 0,
+      "legacyIssues": [
+        "bad-title-length"
+      ]
+    }
+  }
+}
