@@ -413,3 +413,30 @@ for (const rel of targetFiles) {
 }
 
 console.log(`\nUpdated ${n} files`);
+
+/** Force-fix compare files scoring below 90: node scripts/fix-answer-first-batch.mjs --compare-below-90 */
+if (process.argv.includes('--compare-below-90')) {
+  const { parseMdxBody: parseBody, scorePage: scorePg } = await import('./lib/geo-citability-scorer.mjs');
+  let cn = 0;
+  for (const f of readdirSync(join(ROOT, 'src/content/compare')).filter((x) => x.endsWith('.mdx'))) {
+    const rel = `src/content/compare/${f}`;
+    const path = join(ROOT, rel);
+    const raw = readFileSync(path, 'utf8');
+    const m = raw.match(/^---\n[\s\S]*?\n---\n?/);
+    if (!m) continue;
+    const body0 = m[0].length ? raw.slice(m[0].length) : raw;
+    const scored = scorePg(parseBody(body0), { collection: 'compare' });
+    if (scored.score >= 90) continue;
+    const slug = slugFromPath(rel);
+    let body = body0;
+    const before = body;
+    body = cleanDuplicateDiligence(body);
+    body = fixAnswerFirst(body, slug, parseDescription(raw));
+    body = addInsiderTip(body, slug, 'compare');
+    if (body === before) continue;
+    writeFileSync(path, m[0] + body);
+    console.log('compare-90', rel, 'was', scored.score);
+    cn++;
+  }
+  console.log(`Compare below-90 pass: ${cn} files updated`);
+}
