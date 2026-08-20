@@ -1,0 +1,45 @@
+---
+import { responsiveCloudinary, type CloudinaryRole } from '../lib/cloudinary';
+
+interface Props {
+  src: string;
+  alt: string;
+  role?: CloudinaryRole;
+  width: number;
+  height: number;
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  decoding?: 'async' | 'auto' | 'sync';
+  class?: string;
+  sizes?: string;
+}
+
+const {
+  src,
+  alt,
+  role = 'inline',
+  width,
+  height,
+  loading = 'lazy',
+  fetchpriority,
+  decoding = 'async',
+  class: className = '',
+  sizes: sizesOverride,
+} = Astro.props;
+
+const responsive = responsiveCloudinary(src, role);
+const sizes = sizesOverride ?? responsive.sizes;
+---
+
+<img
+  src={responsive.src}
+  srcset={responsive.srcset}
+  sizes={responsive.srcset ? sizes : undefined}
+  alt={alt}
+  width={width}
+  height={height}
+  loading={loading}
+  fetchpriority={fetchpriority}
+  decoding={decoding}
+  class={className}
+/>
