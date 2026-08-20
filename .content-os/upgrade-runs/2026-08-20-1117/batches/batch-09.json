@@ -1,0 +1,60 @@
+{
+  "batchNum": 9,
+  "files": [
+    {
+      "file": "src/content/projects/ancona-centro-apartments.mdx",
+      "url": "https://italian-estate.com/projects/ancona-centro-apartments/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/coima-guido-reni-rome.mdx",
+      "url": "https://italian-estate.com/projects/coima-guido-reni-rome/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/costa-smeralda-apartment.mdx",
+      "url": "https://italian-estate.com/projects/costa-smeralda-apartment/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/ostuni-rascina-villa-construction.mdx",
+      "url": "https://italian-estate.com/projects/ostuni-rascina-villa-construction/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/turin-crocetta-apartments.mdx",
+      "url": "https://italian-estate.com/projects/turin-crocetta-apartments/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

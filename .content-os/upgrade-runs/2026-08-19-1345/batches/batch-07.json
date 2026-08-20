@@ -1,0 +1,60 @@
+{
+  "batchNum": 7,
+  "files": [
+    {
+      "file": "src/content/projects/lucca-villa-historic-renovation.mdx",
+      "url": "https://italian-estate.com/projects/lucca-villa-historic-renovation/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 60,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/prandina-navigli-milan.mdx",
+      "url": "https://italian-estate.com/projects/prandina-navigli-milan/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 60,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/matera.mdx",
+      "url": "https://italian-estate.com/areas/matera/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 61,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/pescara.mdx",
+      "url": "https://italian-estate.com/areas/pescara/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 61,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/urbino.mdx",
+      "url": "https://italian-estate.com/areas/urbino/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 61,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

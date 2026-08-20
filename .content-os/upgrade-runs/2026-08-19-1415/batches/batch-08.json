@@ -1,0 +1,60 @@
+{
+  "batchNum": 8,
+  "files": [
+    {
+      "file": "src/content/areas/parma.mdx",
+      "url": "https://italian-estate.com/areas/parma/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/savona.mdx",
+      "url": "https://italian-estate.com/areas/savona/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/valle-d-itria.mdx",
+      "url": "https://italian-estate.com/areas/valle-d-itria/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/compare/genoa-vs-florence-property.mdx",
+      "url": "https://italian-estate.com/compare/genoa-vs-florence-property/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/compare/puglia-vs-tuscany-property.mdx",
+      "url": "https://italian-estate.com/compare/puglia-vs-tuscany-property/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "version": 2,
+  "rubric": {
+    "answer": 0.3,
+    "selfContain": 0.25,
+    "structure": 0.2,
+    "stats": 0.15,
+    "unique": 0.1
+  },
+  "minScore": 90,
+  "filesScanned": 252,
+  "commercialScanned": 233,
+  "avgCommercialScore": 75,
+  "categoryAvgs": {
+    "answer": 79,
+    "selfContain": 72,
+    "structure": 74,
+    "stats": 89,
+    "unique": 52
+  },
+  "filesBelowMin": 143,
+  "siteGaps": [],
+  "worstFiles": [
+    {
+      "file": "src/content/projects/coima-via-carcani-trastevere.mdx",
+      "score": 48,
+      "grade": "D",
+      "coverage": 11,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Investment Analysis (32w)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence for COIMA Buyers",
+          "score": 23
+        },
+        {
+          "heading": "Pros and Cons",
+          "score": 23
+        },
+        {
+          "heading": "Buyer Scenarios",
+          "score": 41
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/lendlease-mind-milan.mdx",
+      "score": 54,
+      "grade": "D",
+      "coverage": 25,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "Pros and Cons",
+          "score": 23
+        },
+        {
+          "heading": "About Lendlease MIND Development",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/ostuni-trulli-modern-villa.mdx",
+      "score": 54,
+      "grade": "D",
+      "coverage": 17,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Luxury Rental Market Analysis   (29w)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Investment Pros and Cons",
+          "score": 23
+        },
+        {
+          "heading": "Risk Assessment and Mitigation",
+          "score": 38
+        },
+        {
+          "heading": "Management and Operations Strategy",
+          "score": 44
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/meli-navigli-milan.mdx",
+      "score": 55,
+      "grade": "D",
+      "coverage": 17,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Market Position and Pricing Context (24w)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Investment Pros and Cons",
+          "score": 33
+        },
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 36
+        },
+        {
+          "heading": "About Okam Italy and Studio Asti",
+          "score": 48
+        }
+      ]
+    },
+    {
+      "file": "src/content/areas/turin.mdx",
+      "score": 56,
+      "grade": "D",
+      "coverage": 24,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Rental Market (32w)",
+        "citability-blocks:0/2 (need 130-170w + stat)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Risks",
+          "score": 23
+        },
+        {
+          "heading": "Advantages vs Milan",
+          "score": 36
+        },
+        {
+          "heading": "Food and Wine Piedmont Layer",
+          "score": 44
+        }
+      ]
+    },
+    {
+      "file": "src/content/compare/campobasso-vs-termoli-property.mdx",
+      "score": 56,
+      "grade": "D",
+      "coverage": 14,
+      "citabilityBlocks": 4,
+      "issues": [
+        "thin-h2-open:Transportation and Regional Positioning (28w)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Heritage, Earthquake Zone, and Compliance",
+          "score": 38
+        },
+        {
+          "heading": "Resale Liquidity and Exit Profiles",
+          "score": 38
+        },
+        {
+          "heading": "Transportation and Regional Positioning",
+          "score": 53
+        }
+      ]
+    },
+    {
+      "file": "src/content/compare/italy-vs-portugal-property-investment.mdx",
+      "score": 56,
+      "grade": "D",
+      "coverage": 40,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Foreign buyer market dynamics (22w)",
+        "citability-blocks:0/2 (need 130-170w + stat)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Risks and considerations by market",
+          "score": 23
+        },
+        {
+          "heading": "Investment strategy implications",
+          "score": 36
+        },
+        {
+          "heading": "Property management and ongoing operations",
+          "score": 44
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/carovigno-villa-new-build.mdx",
+      "score": 56,
+      "grade": "D",
+      "coverage": 22,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Off-Plan and Builder Due Diligence (7w)",
+        "thin-h2-open:Running Costs and Tax (32w)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Off-Plan and Builder Due Diligence",
+          "score": 32
+        },
+        {
+          "heading": "Buyer Fit and Risks",
+          "score": 35
+        },
+        {
+          "heading": "About the Carovigno New-Build Program",
+          "score": 48
+        }
+      ]
+    },
+    {
+      "file": "src/content/areas/naples.mdx",
+      "score": 57,
+      "grade": "D",
+      "coverage": 36,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Rental Market: Long-Term, STR, and Hybrid (14w)",
+        "citability-blocks:0/2 (need 130-170w + stat)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Investment Risks and Red Flags",
+          "score": 23
+        },
+        {
+          "heading": "Investment Advantages",
+          "score": 36
+        },
+        {
+          "heading": "Foreign Buyer Profile",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/aria-ex-macello-milan.mdx",
+      "score": 57,
+      "grade": "D",
+      "coverage": 25,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "Pros and Cons",
+          "score": 36
+        },
+        {
+          "heading": "Buyer Scenarios",
+          "score": 41
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/florence-oltrarno-apartment.mdx",
+      "score": 57,
+      "grade": "D",
+      "coverage": 22,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "About Oltrarno Apartment Stock",
+          "score": 44
+        },
+        {
+          "heading": "Buyer Scenarios",
+          "score": 49
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/milano-sesto-urban-regeneration.mdx",
+      "score": 57,
+      "grade": "D",
+      "coverage": 22,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "About MilanoSesto",
+          "score": 49
+        },
+        {
+          "heading": "Buyer Scenarios",
+          "score": 49
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/ostuni-masseria-pool-apuliadeluxe.mdx",
+      "score": 57,
+      "grade": "D",
+      "coverage": 13,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence for Masseria Buyers",
+          "score": 36
+        },
+        {
+          "heading": "Pros and Cons",
+          "score": 36
+        },
+        {
+          "heading": "Location and Accessibility",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "file": "src/content/areas/taormina.mdx",
+      "score": 58,
+      "grade": "D",
+      "coverage": 20,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Regulatory environment: STR licensing and taxati (26w)",
+        "thin-h2-open:Buyer profiles and investment approaches: three  (14w)",
+        "citability-blocks:0/2 (need 130-170w + stat)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Buyer profiles and investment approaches: three distinct segments",
+          "score": 45
+        },
+        {
+          "heading": "Taormina risks and mitigation strategies",
+          "score": 45
+        },
+        {
+          "heading": "How this guide connects to the rest of the site",
+          "score": 47
+        }
+      ]
+    },
+    {
+      "file": "src/content/compare/italy-vs-greece-property-investment.mdx",
+      "score": 58,
+      "grade": "D",
+      "coverage": 20,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Liquidity and Exit Strategies (9w)",
+        "citability-blocks:0/2 (need 130-170w + stat)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Risk Perception and Sovereign Context",
+          "score": 29
+        },
+        {
+          "heading": "Liquidity and Exit Strategies",
+          "score": 45
+        },
+        {
+          "heading": "Decision Framework",
+          "score": 48
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/bellagio-villa-lake-view.mdx",
+      "score": 58,
+      "grade": "D",
+      "coverage": 25,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "About Bellagio Lake View Stock",
+          "score": 44
+        },
+        {
+          "heading": "Location and Accessibility",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/ostuni-lamia-chiavi-in-mano.mdx",
+      "score": 58,
+      "grade": "D",
+      "coverage": 36,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "Purchase Process",
+          "score": 32
+        },
+        {
+          "heading": "Investment Pros and Cons",
+          "score": 36
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/palermo-centro-renovation.mdx",
+      "score": 58,
+      "grade": "D",
+      "coverage": 22,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "Buyer Scenarios",
+          "score": 49
+        },
+        {
+          "heading": "Location and Accessibility",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/siena-country-villa-pool.mdx",
+      "score": 58,
+      "grade": "D",
+      "coverage": 25,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "About Siena Countryside Villa Stock",
+          "score": 52
+        },
+        {
+          "heading": "Location and Accessibility",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/tranio-como-carate-urio-2br.mdx",
+      "score": 58,
+      "grade": "D",
+      "coverage": 25,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "About Carate Urio Apartment Stock",
+          "score": 48
+        },
+        {
+          "heading": "Location and Accessibility",
+          "score": 52
+        }
+      ]
+    }
+  ]
+}

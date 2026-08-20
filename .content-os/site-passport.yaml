@@ -1,0 +1,70 @@
+content_os_version: "2.5.0-pilot"
+site_id: italian-estate-website
+domain: italian-estate.com
+github: max-diver999/italian-estate-website
+
+pilot_goal: "Post-GEO refresh corpus audit — fix remaining thin/repeat/AI copy, links, protected upgrades on lead pages"
+pilot_mode: corpus_cleanup_audit
+pilot_started: "2026-08-20"
+
+reference_site: more-group-website
+reference_playbook: more-group-content-os/reference-sites/more-group-website/playbook.md
+reference_snapshot: more-group-content-os/reference-sites/more-group-website/top-pages.snapshot.json
+
+corpus_cleanup:
+  mode: audit_then_fix_waves
+  skill: more-group-content-os/policies/corpus-cleanup-mode.md
+  audit_report: docs/CONTENT_QUALITY_AUDIT.md
+  roadmap_output: .content-os/batches/corpus-cleanup-roadmap-{date}.md
+  audit_report_output: .content-os/reports/AUDIT-REPORT-{date}.md
+  batch_size_default: 25
+  legacy_runs: .content-os/upgrade-runs/
+  forbid:
+    - mass regex delete across corpus
+    - geo-fix-corpus-all.mjs without wave approval
+    - new slugs unless Maxim explicitly asks
+  inputs:
+    - docs/CONTENT_QUALITY_AUDIT.md
+    - docs/PRIORITY-CTR-LEADS.md
+    - more-group-content-os/analytics-snapshots/italian-estate-website/2026-08-20.json
+    - npm run geo:audit baseline (avg commercial 91, 21 below 90 after main 4360b18)
+
+analytics:
+  snapshot: more-group-content-os/analytics-snapshots/italian-estate-website/2026-08-20.json
+  gsc_property: "sc-domain:italian-estate.com"
+  gsc_mcp: user-search-console-italian-estate
+  refresh: manual_via_cursor
+
+content:
+  mdx_count_approx: 252
+  indexable_approx: 252
+  collections:
+    guides: src/content/guides
+    projects: src/content/projects
+    areas: src/content/areas
+    compare: src/content/compare
+    developers: src/content/developers
+    news: src/content/news
+  serp_briefs: more-group-content-os/content-engine/serp-briefs/italian-estate-website
+  fact_registries:
+    legal: more-group-content-os/content-engine/fact-registries/italian-estate-website/legal-core.json
+    market_stats: more-group-content-os/content-engine/fact-registries/italian-estate-website/market-stats.json
+
+cloudinary:
+  verify: python3 scripts/verify-cloudinary-env.py
+  hero_scripts: scripts/upload-mexico-cloudinary.py
+
+quality_gates:
+  machine_audit: node scripts/audit-p0-quality.mjs
+  fix_markdown_glue: npm run fix:markdown-glue -- --dry
+  validate_changed: npm run validate:content:changed
+  validate_batch: npm run validate:batch -- --changed
+  geo_audit: npm run geo:audit
+  qa_corpus: npm run qa:corpus
+
+branch_prefix: cc/italy-
+publishing_owner: cursor
+
+topic_discovery:
+  mode: after_audit_ok
+  note: "New guides only after Maxim ok on audit roadmap — same hybrid rule as Phuket EN"

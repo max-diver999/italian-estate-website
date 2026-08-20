@@ -1,0 +1,60 @@
+{
+  "batchNum": 8,
+  "files": [
+    {
+      "file": "src/content/compare/italy-vs-france-property-investment.mdx",
+      "url": "https://italian-estate.com/compare/italy-vs-france-property-investment/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 61,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/bologna-bloom-living.mdx",
+      "url": "https://italian-estate.com/projects/bologna-bloom-living/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 61,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/matera-sassi-apartments.mdx",
+      "url": "https://italian-estate.com/projects/matera-sassi-apartments/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 61,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/potenza-centro-apartments.mdx",
+      "url": "https://italian-estate.com/projects/potenza-centro-apartments/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 61,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/taormina-sea-view-residence.mdx",
+      "url": "https://italian-estate.com/projects/taormina-sea-view-residence/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 61,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "site": "https://italian-estate.com",
+  "checks": {
+    "sitemap-index.xml": 200,
+    "home": 200,
+    "guides_hub": 200,
+    "compare_hub": 200,
+    "get_shortlist": 200,
+    "contact": 200,
+    "sample_guide": 200,
+    "sample_compare": 200,
+    "post_api_lead": 200,
+    "owner_email_notify": "ok",
+    "post_api_wa_intent": 200
+  },
+  "robots_txt": "https://italian-estate.com/robots.txt — Sitemap declared",
+  "note": "Production smoke only; no code changes in block 8"
+}

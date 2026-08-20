@@ -1,0 +1,60 @@
+{
+  "batchNum": 5,
+  "files": [
+    {
+      "file": "src/content/areas/perugia.mdx",
+      "url": "https://italian-estate.com/areas/perugia/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/polignano-a-mare.mdx",
+      "url": "https://italian-estate.com/areas/polignano-a-mare/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/rome-centro-storico.mdx",
+      "url": "https://italian-estate.com/areas/rome-centro-storico/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/compare/turin-vs-milan-property.mdx",
+      "url": "https://italian-estate.com/compare/turin-vs-milan-property/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/compare/venice-vs-milan-property-investment.mdx",
+      "url": "https://italian-estate.com/compare/venice-vs-milan-property-investment/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

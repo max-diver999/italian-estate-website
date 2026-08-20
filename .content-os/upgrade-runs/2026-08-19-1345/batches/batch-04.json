@@ -1,0 +1,60 @@
+{
+  "batchNum": 4,
+  "files": [
+    {
+      "file": "src/content/projects/bellagio-villa-lake-view.mdx",
+      "url": "https://italian-estate.com/projects/bellagio-villa-lake-view/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 58,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/ostuni-lamia-chiavi-in-mano.mdx",
+      "url": "https://italian-estate.com/projects/ostuni-lamia-chiavi-in-mano/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 58,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/palermo-centro-renovation.mdx",
+      "url": "https://italian-estate.com/projects/palermo-centro-renovation/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 58,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/siena-country-villa-pool.mdx",
+      "url": "https://italian-estate.com/projects/siena-country-villa-pool/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 58,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/tranio-como-carate-urio-2br.mdx",
+      "url": "https://italian-estate.com/projects/tranio-como-carate-urio-2br/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 58,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

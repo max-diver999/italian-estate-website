@@ -1,0 +1,60 @@
+{
+  "batchNum": 6,
+  "files": [
+    {
+      "file": "src/content/projects/rome-jubilee-centro-storico.mdx",
+      "url": "https://italian-estate.com/projects/rome-jubilee-centro-storico/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 59,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/sanremo-sea-view-apartments.mdx",
+      "url": "https://italian-estate.com/projects/sanremo-sea-view-apartments/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 59,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/sorrento-coastal-apartment.mdx",
+      "url": "https://italian-estate.com/projects/sorrento-coastal-apartment/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 59,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/chianti.mdx",
+      "url": "https://italian-estate.com/areas/chianti/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 60,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/innesto-milan-social-housing.mdx",
+      "url": "https://italian-estate.com/projects/innesto-milan-social-housing/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 60,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

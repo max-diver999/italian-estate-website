@@ -1,0 +1,132 @@
+{
+  "runId": "2026-08-19-v14-test",
+  "blocks": {
+    "baseline": {
+      "status": "pass",
+      "steps": [
+        {
+          "script": "geo-citability-audit.mjs",
+          "ok": true,
+          "below90": 116,
+          "avgScore": 82
+        },
+        {
+          "hook": "runBuiltinTitleAudit",
+          "scanned": 237,
+          "needsFix": 231,
+          "byIssue": {
+            "serp_long": 231,
+            "too_long_fm": 3
+          }
+        },
+        {
+          "hook": "runBuiltinHeadingAudit",
+          "bodyH1": 49,
+          "headingSkip": 0
+        },
+        {
+          "hook": "runBuiltinCorpusAudit",
+          "scanned": 237,
+          "failed": 0,
+          "byKind": {}
+        },
+        {
+          "script": "qa-corpus-signals.mjs",
+          "ok": true,
+          "failures": 39,
+          "byKind": {
+            "fix-queue-blocker": 39
+          }
+        },
+        {
+          "label": "qa:full:quick",
+          "ok": false,
+          "cmd": "npm run qa:full:quick",
+          "ms": 100955,
+          "tail": "    [404] https://res.cloudinary.com/${cloud}/image/upload/${transform}/${publicId}\n      src/lib/cloudinary.ts\n\n  ✗ GEO citability (--changed MDX) (exit 1)\n      88/100 [A] src/content/areas/potenza.mdx | coverage 100% | cit blocks 2 | ok\n      88/100 [A] src/content/compare/campobasso-vs-termoli-property.mdx | coverage 100% | cit blocks 2 | ok\n      88/100 [A] src/content/projects/bologna-bloom-living.mdx | coverage 100% | cit blocks 0 | ok\n      88/100 [A] src/content/projects/innesto-milan-social-housing.mdx | coverage 100% | cit blocks 0 | ok\n      88/100 [A] src/content/projects/matera-sassi-apartments.mdx | coverage 100% | cit blocks 0 | ok\n      88/100 [A] src/content/projects/potenza-centro-apartments.mdx | coverage 100% | cit blocks 0 | ok\n      88/100 [A] src/content/projects/taormina-sea-view-residence.mdx | coverage 100% | cit blocks 0 | ok\n      89/100 [A] src/content/areas/taormina.mdx | coverage 100% | cit blocks 2 | ok\n      89/100 [A] src/content/areas/termoli.mdx | coverage 100% | cit blocks 2 | ok\n      89/100 [A] src/content/projects/campobasso-centro-apartments.mdx | coverage 100% | cit blocks 0 | ok\n───────────────────────────────────────────",
+          "stdout": "\n> italian-estate-website@0.1.0 qa:full:quick\n> node scripts/qa-full.mjs --quick\n\n\n═══════════════════════════════════════════\n  QA FULL — italian-estate-website\n  quick: true | local-rendered: false | live-http: false\n═══════════════════════════════════════════\n\n▶ Corpus signals (em-dash, padding dupes, fix-queue)… FAIL (0.8s)\n▶ Content validate (qa-audit, full corpus)… FAIL (0.5s)\n▶ Image URLs (HTTP 200 — all src/, not just heroImage)… FAIL (96.1s)\n▶ GEO citability (--changed MDX)… FAIL (0.4s)\n▶ HTTP smoke (live sitemap + lead API)… PASS (1.9s)\n▶ Rendered HTML (live)… PASS (0.5s)\n\n───────────────────────────────────────────\n  RESULT: 2/6 PASS\n\n  FAILURES:\n\n  ✗ Corpus signals (em-dash, padding dupes, fix-queue) (exit 1)\n      src/content/areas/termoli.mdx: thin-content\n      src/content/areas/turin.mdx: thin-content\n      src/content/compare/perugia-vs-assisi-property.mdx: thin-content\n      src/content/guides/buy-property-italy-foreigner.mdx: few-internal-links\n      src/content/guides/how-to-buy-italy-property-step-by-step.mdx: few-internal-links\n      src/content/guides/italy-flat-tax-regime-new-residents.mdx: few-internal-links\n      src/content/guides/italy-property-market-forecast-2026-2027.mdx: few-internal-links\n      src/content/guides/short-term-rental-rules-italy.mdx: few-internal-links\n      src/content/guides/digital-nomad-italy-property-guide.mdx: missing-scenarios\n      … +9 more\n\n  ✗ Content validate (qa-audit, full corpus) (exit 1)\n    [projects/sanremo-sea-view-apartments] (1772w) no-quick-answer, missing TldrBlock\n    [projects/sorrento-coastal-apartment] (1798w) no-quick-answer, missing TldrBlock\n    [projects/termoli-coast-apartments] (1519w) no-quick-answer, missing TldrBlock\n    [projects/tranio-florence-historic-center] (1690w) no-quick-answer, missing TldrBlock\n    [projects/tranio-puglia-masseria-new] (1605w) no-quick-answer, missing TldrBlock\n    \n    Articles with issues: 40/252\n    \n    \n    ❌ validate:content FAILED\n\n  ✗ Image URLs (HTTP 200 — all src/, not just heroImage) (exit 1)\n    === IMAGE URL AUDIT ===\n    URLs checked: 136\n    Broken: 1\n    \n    [404] https://res.cloudinary.com/${cloud}/image/upload/${transform}/${publicId}\n      src/lib/cloudinary.ts\n\n  ✗ GEO citability (--changed MDX) (exit 1)\n      88/100 [A] src/content/areas/potenza.mdx | coverage 100% | cit blocks 2 | ok\n      88/100 [A] src/content/compare/campobasso-vs-termoli-property.mdx | coverage 100% | cit blocks 2 | ok\n      88/100 [A] src/content/projects/bologna-bloom-living.mdx | coverage 100% | cit blocks 0 | ok\n      88/100 [A] src/content/projects/innesto-milan-social-housing.mdx | coverage 100% | cit blocks 0 | ok\n      88/100 [A] src/content/projects/matera-sassi-apartments.mdx | coverage 100% | cit blocks 0 | ok\n      88/100 [A] src/content/projects/potenza-centro-apartments.mdx | coverage 100% | cit blocks 0 | ok\n      88/100 [A] src/content/projects/taormina-sea-view-residence.mdx | coverage 100% | cit blocks 0 | ok\n      89/100 [A] src/content/areas/taormina.mdx | coverage 100% | cit blocks 2 | ok\n      89/100 [A] src/content/areas/termoli.mdx | coverage 100% | cit blocks 2 | ok\n      89/100 [A] src/content/projects/campobasso-centro-apartments.mdx | coverage 100% | cit blocks 0 | ok\n───────────────────────────────────────────\n\n",
+          "stderr": "",
+          "status": 1
+        }
+      ]
+    },
+    "corpus-mechanics": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "runBuiltinCorpusAudit",
+          "scanned": 237,
+          "failed": 0,
+          "byKind": {}
+        },
+        {
+          "script": "fix-typographic-dashes.mjs",
+          "skip": "not on site"
+        }
+      ]
+    },
+    "titles": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "runBuiltinTitleAudit",
+          "scanned": 237,
+          "needsFix": 231,
+          "byIssue": {
+            "serp_long": 231,
+            "too_long_fm": 3
+          }
+        },
+        {
+          "hook": "prepareTitleP0",
+          "ok": true,
+          "count": 0,
+          "path": "/Users/Maxim/Desktop/Cursor_ed/Бизнес/MORE_Group/italian-estate-website/scripts/title-p0-audit.json"
+        },
+        {
+          "script": "generate-title-p0.mjs",
+          "skip": "not on site"
+        },
+        {
+          "skip": "apply-title-p0.mjs",
+          "reason": "needs --apply"
+        },
+        {
+          "script": "generate-title-full.mjs",
+          "skip": "not on site"
+        },
+        {
+          "skip": "apply-title-full.mjs",
+          "reason": "needs --apply"
+        }
+      ]
+    },
+    "headings": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "runBuiltinHeadingAudit",
+          "bodyH1": 49,
+          "headingSkip": 0
+        },
+        {
+          "script": "fix-heading-duplicate-h1.mjs",
+          "skip": "not on site"
+        },
+        {
+          "script": "fix-heading-news-h1.mjs",
+          "skip": "not on site"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "before": null,
+    "after": null
+  },
+  "agentBatches": {
+    "total": 0,
+    "completed": 0,
+    "pending": []
+  }
+}

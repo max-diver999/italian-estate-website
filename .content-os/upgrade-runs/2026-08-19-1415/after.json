@@ -1,0 +1,48 @@
+{
+  "capturedAt": "2026-08-19T17:18:38.570Z",
+  "geo": {
+    "commercialFiles": 233,
+    "below90": 116,
+    "avgScore": 82
+  },
+  "titles": {
+    "scanned": 237,
+    "needsFix": 231,
+    "dangling": 0,
+    "byIssue": {
+      "serp_long": 231,
+      "too_long_fm": 3
+    }
+  },
+  "headings": {
+    "source": "upgrade-pack-builtin",
+    "bodyMarkdownH1": 49,
+    "duplicateTitleH1": 0,
+    "headingSkip": 0,
+    "ok": false,
+    "samples": {
+      "bodyMarkdownH1": [
+        "src/content/guides/airbnb-investment-italy-guide.mdx",
+        "src/content/guides/best-regions-invest-italy-property-2026.mdx",
+        "src/content/guides/buy-property-italy-foreigner.mdx",
+        "src/content/guides/buy-property-italy-under-200000.mdx",
+        "src/content/guides/cadastral-value-vs-market-price-italy.mdx"
+      ],
+      "headingSkip": []
+    }
+  },
+  "corpusBuiltin": {
+    "scanned": 237,
+    "failed": 0,
+    "filesWithIssues": 0,
+    "filesWithEmDash": 87,
+    "totalEmDash": 308,
+    "byKind": {}
+  },
+  "corpusSignals": {
+    "failures": 39,
+    "byKind": {
+      "fix-queue-blocker": 39
+    }
+  }
+}

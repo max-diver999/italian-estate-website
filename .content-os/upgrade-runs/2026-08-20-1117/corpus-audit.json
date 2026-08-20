@@ -1,0 +1,14 @@
+{
+  "failures": [],
+  "summary": {
+    "source": "upgrade-pack-builtin",
+    "scanned": 237,
+    "failed": 0,
+    "filesWithIssues": 0,
+    "filesWithEmDash": 0,
+    "totalEmDash": 0,
+    "byKind": {},
+    "ok": true,
+    "samples": []
+  }
+}

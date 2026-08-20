@@ -1,0 +1,17 @@
+{
+  "issues": {
+    "bodyMarkdownH1": [],
+    "headingSkip": []
+  },
+  "summary": {
+    "source": "upgrade-pack-builtin",
+    "bodyMarkdownH1": 0,
+    "duplicateTitleH1": 0,
+    "headingSkip": 0,
+    "ok": true,
+    "samples": {
+      "bodyMarkdownH1": [],
+      "headingSkip": []
+    }
+  }
+}

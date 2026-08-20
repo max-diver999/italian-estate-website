@@ -1,0 +1,16 @@
+{
+  "status": "waiting_for_maxim",
+  "runId": "2026-08-19-1345",
+  "createdAt": "2026-08-19T16:48:35.801Z",
+  "message": "Скриптовая часть завершена. Не переписывать MDX (GEO batch) без явного «ок» / «продолжай batch N» от Максима.",
+  "allowedNext": [
+    "batch-geo-manual",
+    "upgrade-pack:finalize"
+  ],
+  "forbiddenWithoutApproval": [
+    "geo-fix-corpus-all",
+    "geo-fix-90-target",
+    "geo-fix-deep-90",
+    "deploy"
+  ]
+}

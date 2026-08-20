@@ -1,0 +1,60 @@
+{
+  "batchNum": 2,
+  "files": [
+    {
+      "file": "src/content/areas/arezzo.mdx",
+      "url": "https://italian-estate.com/areas/arezzo/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/chieti.mdx",
+      "url": "https://italian-estate.com/areas/chieti/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/como.mdx",
+      "url": "https://italian-estate.com/areas/como/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/compare/pescara-vs-chieti-property.mdx",
+      "url": "https://italian-estate.com/compare/pescara-vs-chieti-property/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/amalfi-ravello-villa.mdx",
+      "url": "https://italian-estate.com/projects/amalfi-ravello-villa/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

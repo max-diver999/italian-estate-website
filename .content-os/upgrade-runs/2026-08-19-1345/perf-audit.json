@@ -1,0 +1,22 @@
+{
+  "ok": false,
+  "errors": [
+    "Missing required: src/lib/cloudinary.ts",
+    "Missing required: src/components/ResponsiveImage.astro",
+    "Cannot check Cloudinary webp quality transforms: src/lib/cloudinary.ts missing"
+  ],
+  "warnings": [
+    "Missing (legacy, не блокирует): scripts/batch-writing-gate.mjs",
+    "Missing recommended: src/components/PostHog.astro",
+    "Missing recommended: scripts/lib/cloudinary-gate.mjs",
+    "Missing recommended: scripts/lib/sitemap-exclusions.mjs",
+    "Missing recommended: scripts/validate-sitemap-exclusions.mjs",
+    "Check failed (self-hosted fonts (@fontsource in global.css)): src/styles/global.css",
+    "Check failed (GA deferred 3s after load): src/components/GoogleAnalytics.astro",
+    "package.json missing script: validate:batch",
+    "package.json: no @fontsource/* dependency (fonts may load from Google)"
+  ],
+  "exitCode": 1,
+  "siteRoot": "/Users/Maxim/Desktop/Cursor_ed/Бизнес/MORE_Group/italian-estate-website",
+  "upgradePack": true
+}

@@ -1,0 +1,16 @@
+{
+  "descriptions": {
+    "indexable": 252,
+    "shortUnder120": 0,
+    "longOver160": 0,
+    "inRange120to160": 252
+  },
+  "newsMetaFix": {
+    "filesUpdated": 4,
+    "titlesPaddedTo45plus": 4,
+    "descriptionsTrimmed": 0,
+    "deduped": 0
+  },
+  "shortMetaExtended": 0,
+  "allDescriptionsOk": true
+}

@@ -1,0 +1,50 @@
+{
+  "capturedAt": "2026-08-20T14:18:55.229Z",
+  "geo": {
+    "commercialFiles": 233,
+    "below90": 124,
+    "avgScore": 81
+  },
+  "titles": {
+    "scanned": 237,
+    "needsFix": 4,
+    "dangling": 0,
+    "byIssue": {
+      "serp_long": 4
+    }
+  },
+  "headings": {
+    "source": "upgrade-pack-builtin",
+    "bodyMarkdownH1": 0,
+    "duplicateTitleH1": 0,
+    "headingSkip": 0,
+    "ok": true,
+    "samples": {
+      "bodyMarkdownH1": [],
+      "headingSkip": []
+    }
+  },
+  "corpusBuiltin": {
+    "scanned": 237,
+    "failed": 0,
+    "filesWithIssues": 0,
+    "filesWithEmDash": 0,
+    "totalEmDash": 0,
+    "byKind": {}
+  },
+  "corpusSignals": {
+    "failures": 1,
+    "byKind": {
+      "fix-queue-parse": 1
+    }
+  },
+  "fixBatch": {
+    "scanned": 0,
+    "ready": 0,
+    "notReady": 0,
+    "byTier": {}
+  },
+  "markdownHygiene": {
+    "wouldChange": 11
+  }
+}

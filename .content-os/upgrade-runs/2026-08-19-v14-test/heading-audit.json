@@ -1,0 +1,73 @@
+{
+  "issues": {
+    "bodyMarkdownH1": [
+      "src/content/guides/airbnb-investment-italy-guide.mdx",
+      "src/content/guides/best-regions-invest-italy-property-2026.mdx",
+      "src/content/guides/buy-property-italy-foreigner.mdx",
+      "src/content/guides/buy-property-italy-under-200000.mdx",
+      "src/content/guides/cadastral-value-vs-market-price-italy.mdx",
+      "src/content/guides/cedolare-secca-italy-rental-property.mdx",
+      "src/content/guides/codice-fiscale-italy-property.mdx",
+      "src/content/guides/compromesso-italy-property-contract.mdx",
+      "src/content/guides/cost-of-buying-property-italy.mdx",
+      "src/content/guides/gross-vs-net-yield-italy.mdx",
+      "src/content/guides/how-to-buy-italy-property-remotely.mdx",
+      "src/content/guides/how-to-buy-italy-property-step-by-step.mdx",
+      "src/content/guides/how-to-calculate-rental-yield-italy.mdx",
+      "src/content/guides/imu-property-tax-italy.mdx",
+      "src/content/guides/is-italy-property-good-investment-2026.mdx",
+      "src/content/guides/italy-capital-gains-tax-property.mdx",
+      "src/content/guides/italy-elective-residence-visa-property.mdx",
+      "src/content/guides/italy-flat-tax-regime-new-residents.mdx",
+      "src/content/guides/italy-holiday-let-licensing.mdx",
+      "src/content/guides/italy-inheritance-law-property-foreigners.mdx",
+      "src/content/guides/italy-investor-visa-property.mdx",
+      "src/content/guides/italy-investor-visa-requirements-2026.mdx",
+      "src/content/guides/italy-ivie-ivafe-foreign-property-owners.mdx",
+      "src/content/guides/italy-off-plan-property-guide.mdx",
+      "src/content/guides/italy-prima-casa-vs-second-home-tax.mdx",
+      "src/content/guides/italy-property-by-nationality-guide.mdx",
+      "src/content/guides/italy-property-closing-costs-breakdown.mdx",
+      "src/content/guides/italy-property-for-americans.mdx",
+      "src/content/guides/italy-property-for-australians.mdx",
+      "src/content/guides/italy-property-for-canadians.mdx",
+      "src/content/guides/italy-property-for-swiss-buyers.mdx",
+      "src/content/guides/italy-property-for-uae-buyers.mdx",
+      "src/content/guides/italy-property-for-uk-buyers.mdx",
+      "src/content/guides/italy-property-market-forecast-2026-2027.mdx",
+      "src/content/guides/italy-property-scams-avoid.mdx",
+      "src/content/guides/italy-property-taxes-foreign-buyers-guide.mdx",
+      "src/content/guides/italy-real-estate-market-data-2025.mdx",
+      "src/content/guides/italy-reciprocity-property-foreigners.mdx",
+      "src/content/guides/italy-registration-tax-property.mdx",
+      "src/content/guides/italy-residency-by-investment-guide.mdx",
+      "src/content/guides/mistakes-foreign-buyers-italy.mdx",
+      "src/content/guides/non-resident-mortgage-italy.mdx",
+      "src/content/guides/notaio-italy-property-role.mdx",
+      "src/content/guides/power-of-attorney-property-italy.mdx",
+      "src/content/guides/short-term-rental-rules-italy.mdx",
+      "src/content/guides/uk-tax-italy-holiday-home.mdx",
+      "src/content/guides/us-tax-italy-rental-property.mdx",
+      "src/content/compare/italy-vs-portugal-property-investment.mdx",
+      "src/content/compare/italy-vs-spain-property-investment.mdx"
+    ],
+    "headingSkip": []
+  },
+  "summary": {
+    "source": "upgrade-pack-builtin",
+    "bodyMarkdownH1": 49,
+    "duplicateTitleH1": 0,
+    "headingSkip": 0,
+    "ok": false,
+    "samples": {
+      "bodyMarkdownH1": [
+        "src/content/guides/airbnb-investment-italy-guide.mdx",
+        "src/content/guides/best-regions-invest-italy-property-2026.mdx",
+        "src/content/guides/buy-property-italy-foreigner.mdx",
+        "src/content/guides/buy-property-italy-under-200000.mdx",
+        "src/content/guides/cadastral-value-vs-market-price-italy.mdx"
+      ],
+      "headingSkip": []
+    }
+  }
+}

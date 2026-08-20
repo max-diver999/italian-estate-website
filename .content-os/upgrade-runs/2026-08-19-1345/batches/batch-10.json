@@ -1,0 +1,60 @@
+{
+  "batchNum": 10,
+  "files": [
+    {
+      "file": "src/content/compare/florence-vs-rome-property-investment.mdx",
+      "url": "https://italian-estate.com/compare/florence-vs-rome-property-investment/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 62,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/compare/matera-vs-potenza-property.mdx",
+      "url": "https://italian-estate.com/compare/matera-vs-potenza-property/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 62,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/campobasso-centro-apartments.mdx",
+      "url": "https://italian-estate.com/projects/campobasso-centro-apartments/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 62,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/coima-olympic-village-milan.mdx",
+      "url": "https://italian-estate.com/projects/coima-olympic-village-milan/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 62,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/termoli-coast-apartments.mdx",
+      "url": "https://italian-estate.com/projects/termoli-coast-apartments/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 62,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

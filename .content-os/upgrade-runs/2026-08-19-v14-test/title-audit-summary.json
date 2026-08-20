@@ -1,0 +1,17 @@
+{
+  "source": "upgrade-pack-builtin",
+  "scanned": 237,
+  "needsFix": 231,
+  "serpSuffix": " | Italian Estate",
+  "byIssue": {
+    "serp_long": 231,
+    "too_long_fm": 3
+  },
+  "byCategory": {
+    "guides": 90,
+    "areas": 48,
+    "compare": 30,
+    "projects": 59,
+    "news": 4
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "batchNum": 9,
+  "files": [
+    {
+      "file": "src/content/projects/tranio-puglia-masseria-new.mdx",
+      "url": "https://italian-estate.com/projects/tranio-puglia-masseria-new/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 61,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/milan-navigli.mdx",
+      "url": "https://italian-estate.com/areas/milan-navigli/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 62,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/potenza.mdx",
+      "url": "https://italian-estate.com/areas/potenza/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 62,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/termoli.mdx",
+      "url": "https://italian-estate.com/areas/termoli/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 62,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/compare/bologna-vs-florence-property.mdx",
+      "url": "https://italian-estate.com/compare/bologna-vs-florence-property/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 62,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

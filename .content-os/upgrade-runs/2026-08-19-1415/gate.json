@@ -1,0 +1,21 @@
+{
+  "status": "in_progress",
+  "runId": "2026-08-19-1415",
+  "createdAt": "2026-08-19T17:18:38.609Z",
+  "message": "Фаза 1 завершена. Показать FULL-AUDIT-FOR-MAXIM.md в чат. Не править MDX, не GEO, не скорость, не subagents — до «продолжай апгрейд run-id».",
+  "phase": 1,
+  "allowedNext": [
+    "continue-after-audit"
+  ],
+  "forbiddenUntilContinue": [
+    "mdx-rewrite",
+    "geo-batch",
+    "perf-fixes",
+    "parallel-subagents",
+    "geo-fix-corpus-all",
+    "deploy"
+  ],
+  "pipelineDone": [
+    1
+  ]
+}

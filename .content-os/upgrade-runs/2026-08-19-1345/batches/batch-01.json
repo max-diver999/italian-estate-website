@@ -1,0 +1,60 @@
+{
+  "batchNum": 1,
+  "files": [
+    {
+      "file": "src/content/projects/coima-via-carcani-trastevere.mdx",
+      "url": "https://italian-estate.com/projects/coima-via-carcani-trastevere/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 48,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/lendlease-mind-milan.mdx",
+      "url": "https://italian-estate.com/projects/lendlease-mind-milan/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 54,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/ostuni-trulli-modern-villa.mdx",
+      "url": "https://italian-estate.com/projects/ostuni-trulli-modern-villa/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 54,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/meli-navigli-milan.mdx",
+      "url": "https://italian-estate.com/projects/meli-navigli-milan/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 55,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/turin.mdx",
+      "url": "https://italian-estate.com/areas/turin/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 56,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

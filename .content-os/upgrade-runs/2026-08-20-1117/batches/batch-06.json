@@ -1,0 +1,60 @@
+{
+  "batchNum": 6,
+  "files": [
+    {
+      "file": "src/content/projects/chianti-farmhouse-restoration.mdx",
+      "url": "https://italian-estate.com/projects/chianti-farmhouse-restoration/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/chieti-university-apartments.mdx",
+      "url": "https://italian-estate.com/projects/chieti-university-apartments/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/langhe-barolo-vineyard-property.mdx",
+      "url": "https://italian-estate.com/projects/langhe-barolo-vineyard-property/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/nunziare-vii-lusciano.mdx",
+      "url": "https://italian-estate.com/projects/nunziare-vii-lusciano/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/portofino-apartment-renovation.mdx",
+      "url": "https://italian-estate.com/projects/portofino-apartment-renovation/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

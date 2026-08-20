@@ -1,0 +1,60 @@
+{
+  "batchNum": 7,
+  "files": [
+    {
+      "file": "src/content/projects/rapallo-sea-view-apartments.mdx",
+      "url": "https://italian-estate.com/projects/rapallo-sea-view-apartments/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/urbino-university-apartments.mdx",
+      "url": "https://italian-estate.com/projects/urbino-university-apartments/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/alba.mdx",
+      "url": "https://italian-estate.com/areas/alba/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/langhe.mdx",
+      "url": "https://italian-estate.com/areas/langhe/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/lecce.mdx",
+      "url": "https://italian-estate.com/areas/lecce/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 65,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

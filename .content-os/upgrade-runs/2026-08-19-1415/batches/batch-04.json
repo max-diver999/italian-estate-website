@@ -1,0 +1,60 @@
+{
+  "batchNum": 4,
+  "files": [
+    {
+      "file": "src/content/projects/porto-cervo-villa-development.mdx",
+      "url": "https://italian-estate.com/projects/porto-cervo-villa-development/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/semproniano-farmhouse-restoration.mdx",
+      "url": "https://italian-estate.com/projects/semproniano-farmhouse-restoration/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/tranio-sicily-noto-stone-house.mdx",
+      "url": "https://italian-estate.com/projects/tranio-sicily-noto-stone-house/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/valle-d-itria-trulli-restoration.mdx",
+      "url": "https://italian-estate.com/projects/valle-d-itria-trulli-restoration/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/campobasso.mdx",
+      "url": "https://italian-estate.com/areas/campobasso/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 64,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

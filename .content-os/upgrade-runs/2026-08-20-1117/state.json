@@ -1,0 +1,332 @@
+{
+  "runId": "2026-08-20-1117",
+  "blocks": {
+    "baseline": {
+      "status": "pass",
+      "steps": [
+        {
+          "script": "geo-citability-audit.mjs",
+          "ok": true,
+          "below90": 124,
+          "avgScore": 81
+        },
+        {
+          "hook": "runBuiltinTitleAudit",
+          "scanned": 237,
+          "needsFix": 4,
+          "byIssue": {
+            "serp_long": 4
+          }
+        },
+        {
+          "hook": "runBuiltinHeadingAudit",
+          "bodyH1": 0,
+          "headingSkip": 0
+        },
+        {
+          "hook": "runBuiltinCorpusAudit",
+          "scanned": 237,
+          "failed": 0,
+          "byKind": {}
+        },
+        {
+          "hook": "runFixBatchAudit",
+          "scanned": 0,
+          "ready": 0,
+          "notReady": 0
+        },
+        {
+          "hook": "runMarkdownGlueAudit",
+          "wouldChange": 11
+        },
+        {
+          "script": "qa-corpus-signals.mjs",
+          "ok": true,
+          "failures": 1,
+          "byKind": {
+            "fix-queue-parse": 1
+          }
+        },
+        {
+          "label": "qa:full:quick",
+          "ok": false,
+          "cmd": "npm run qa:full:quick",
+          "ms": 108202,
+          "tail": "    [404] https://res.cloudinary.com/${cloud}/image/upload/${transform}/${publicId}\n      src/lib/cloudinary.ts\n\n  ✗ GEO citability (--changed MDX) (exit 1)\n      63/100 [C] src/content/projects/bliss-uptown-milan.mdx | coverage 36% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/como-lakefront-residence.mdx | coverage 38% | cit blocks 0 | thin-h2-open:Specifications Typical on New Build Lakefront (6w)\n      63/100 [C] src/content/projects/lecce-urbs20-villas.mdx | coverage 55% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/noto-baroque-masseria.mdx | coverage 44% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/pescara-centro-apartments.mdx | coverage 33% | cit blocks 1 | thin-h2-open:Comparison Table (21w)\n      63/100 [C] src/content/projects/porto-cervo-villa-development.mdx | coverage 63% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/semproniano-farmhouse-restoration.mdx | coverage 33% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/tranio-sicily-noto-stone-house.mdx | coverage 56% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/valle-d-itria-trulli-restoration.mdx | coverage 56% | cit blocks 0 | ok\n      64/100 [C] src/content/areas/campobasso.mdx | coverage 11% | cit blocks 8 | ok\n───────────────────────────────────────────",
+          "stdout": "\n> italian-estate-website@0.1.0 qa:full:quick\n> node scripts/qa-full.mjs --quick\n\n\n═══════════════════════════════════════════\n  QA FULL — italian-estate-website\n  quick: true | local-rendered: false | live-http: false\n═══════════════════════════════════════════\n\n▶ Corpus signals (em-dash, padding dupes, fix-queue)… FAIL (1.3s)\n▶ Content validate (qa-audit, full corpus)… FAIL (1.2s)\n▶ Image URLs (HTTP 200 — all src/, not just heroImage)… FAIL (97.1s)\n▶ GEO citability (--changed MDX)… FAIL (2.5s)\n▶ HTTP smoke (live sitemap + lead API)… PASS (3.2s)\n▶ Rendered HTML (live)… PASS (1.4s)\n\n───────────────────────────────────────────\n  RESULT: 2/6 PASS\n\n  FAILURES:\n\n  ✗ Corpus signals (em-dash, padding dupes, fix-queue) (exit 1)\n    === CORPUS SIGNALS GATE ===\n    MDX scanned: 252\n    ❌ FAIL — 1 issue(s)\n    \n      1× fix-queue-parse\n    \n      scripts/fix-batch-queue.mjs: invalid JSON\n\n  ✗ Content validate (qa-audit, full corpus) (exit 1)\n    [projects/termoli-coast-apartments] (1519w) no-quick-answer, missing TldrBlock\n    [projects/tranio-florence-historic-center] (1690w) no-quick-answer, missing TldrBlock\n    [projects/tranio-puglia-masseria-new] (1605w) no-quick-answer, missing TldrBlock\n    [projects/tranio-rome-eur-apartment] (1674w) titleLen:43\n    [projects/urbino-university-apartments] (2250w) titleLen:40\n    \n    Articles with issues: 192/252\n    \n    \n    ❌ validate:content FAILED\n\n  ✗ Image URLs (HTTP 200 — all src/, not just heroImage) (exit 1)\n    === IMAGE URL AUDIT ===\n    URLs checked: 137\n    Broken: 1\n    \n    [404] https://res.cloudinary.com/${cloud}/image/upload/${transform}/${publicId}\n      src/lib/cloudinary.ts\n\n  ✗ GEO citability (--changed MDX) (exit 1)\n      63/100 [C] src/content/projects/bliss-uptown-milan.mdx | coverage 36% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/como-lakefront-residence.mdx | coverage 38% | cit blocks 0 | thin-h2-open:Specifications Typical on New Build Lakefront (6w)\n      63/100 [C] src/content/projects/lecce-urbs20-villas.mdx | coverage 55% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/noto-baroque-masseria.mdx | coverage 44% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/pescara-centro-apartments.mdx | coverage 33% | cit blocks 1 | thin-h2-open:Comparison Table (21w)\n      63/100 [C] src/content/projects/porto-cervo-villa-development.mdx | coverage 63% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/semproniano-farmhouse-restoration.mdx | coverage 33% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/tranio-sicily-noto-stone-house.mdx | coverage 56% | cit blocks 0 | ok\n      63/100 [C] src/content/projects/valle-d-itria-trulli-restoration.mdx | coverage 56% | cit blocks 0 | ok\n      64/100 [C] src/content/areas/campobasso.mdx | coverage 11% | cit blocks 8 | ok\n───────────────────────────────────────────\n\n",
+          "stderr": "",
+          "status": 1
+        }
+      ]
+    },
+    "corpus-mechanics": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "runBuiltinCorpusAudit",
+          "scanned": 237,
+          "failed": 0,
+          "byKind": {}
+        },
+        {
+          "label": "scripts/fix-typographic-dashes.mjs",
+          "ok": true,
+          "cmd": "node scripts/fix-typographic-dashes.mjs",
+          "ms": 300,
+          "tail": "Normalized typographic dashes in 0 files",
+          "stdout": "Normalized typographic dashes in 0 files\n",
+          "stderr": "",
+          "status": 0
+        }
+      ]
+    },
+    "titles": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "runBuiltinTitleAudit",
+          "scanned": 237,
+          "needsFix": 4,
+          "byIssue": {
+            "serp_long": 4
+          }
+        },
+        {
+          "hook": "prepareTitleP0",
+          "ok": true,
+          "count": 0,
+          "path": "/Users/Maxim/Desktop/Cursor_ed/Бизнес/MORE_Group/italian-estate-website/scripts/title-p0-audit.json"
+        },
+        {
+          "label": "scripts/generate-title-p0.mjs",
+          "ok": true,
+          "cmd": "node scripts/generate-title-p0.mjs",
+          "ms": 156,
+          "tail": "rewrites 0\nfailures 0",
+          "stdout": "rewrites 0\nfailures 0\n",
+          "stderr": "",
+          "status": 0
+        },
+        {
+          "label": "scripts/apply-title-p0.mjs",
+          "ok": true,
+          "cmd": "node scripts/apply-title-p0.mjs",
+          "ms": 160,
+          "tail": "Applied 0 title rewrites.",
+          "stdout": "\nApplied 0 title rewrites.\n",
+          "stderr": "",
+          "status": 0
+        },
+        {
+          "label": "scripts/generate-title-full.mjs",
+          "ok": true,
+          "cmd": "node scripts/generate-title-full.mjs",
+          "ms": 160,
+          "tail": "    \"title\": \"Italy Residential Transactions Hit 767,000 | Italy News\",\n    \"next\": null,\n    \"issues\": [\n      \"serp_long\"\n    ]\n  },\n  {\n    \"slug\": \"news/milan-living-sector-investment-2025\",\n    \"title\": \"Milan Living Sector Investment Update 2026 | Italy News\",\n    \"next\": null,\n    \"issues\": [\n      \"serp_long\"\n    ]\n  }\n]",
+          "stdout": "audit rows 4\nrewrites 0\nunchanged (still bad) 0\nfailures 4\n[\n  {\n    \"slug\": \"news/foreign-buyers-italy-5-5-billion-2025\",\n    \"title\": \"Foreign Buyers Drive €5.5 Billion Italian | Italy News\",\n    \"next\": null,\n    \"issues\": [\n      \"serp_long\"\n    ]\n  },\n  {\n    \"slug\": \"news/gate-away-international-buyers-report-2025\",\n    \"title\": \"Gate-away Report: US Leads Italy Searches | Italy News\",\n    \"next\": null,\n    \"issues\": [\n      \"serp_long\"\n    ]\n  },\n  {\n    \"slug\": \"news/italy-residential-transactions-767000-2025\",\n    \"title\": \"Italy Residential Transactions Hit 767,000 | Italy News\",\n    \"next\": null,\n    \"issues\": [\n      \"serp_long\"\n    ]\n  },\n  {\n    \"slug\": \"news/milan-living-sector-investment-2025\",\n    \"title\": \"Milan Living Sector Investment Update 2026 | Italy News\",\n    \"next\": null,\n    \"issues\": [\n      \"serp_long\"\n    ]\n  }\n]\n",
+          "stderr": "",
+          "status": 0
+        },
+        {
+          "label": "scripts/apply-title-full.mjs",
+          "ok": true,
+          "cmd": "node scripts/apply-title-full.mjs",
+          "ms": 152,
+          "tail": "Applied 0 title rewrites.",
+          "stdout": "\nApplied 0 title rewrites.\n",
+          "stderr": "",
+          "status": 0
+        }
+      ]
+    },
+    "headings": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "runBuiltinHeadingAudit",
+          "bodyH1": 0,
+          "headingSkip": 0
+        },
+        {
+          "label": "scripts/fix-heading-duplicate-h1.mjs",
+          "ok": false,
+          "cmd": "node scripts/fix-heading-duplicate-h1.mjs",
+          "ms": 155,
+          "tail": "Pass --dry-run or --apply",
+          "stdout": "",
+          "stderr": "Pass --dry-run or --apply\n",
+          "status": 1
+        },
+        {
+          "label": "scripts/fix-heading-news-h1.mjs",
+          "ok": false,
+          "cmd": "node scripts/fix-heading-news-h1.mjs",
+          "ms": 146,
+          "tail": "Pass --dry-run or --apply",
+          "stdout": "",
+          "stderr": "Pass --dry-run or --apply\n",
+          "status": 1
+        }
+      ]
+    },
+    "meta": {
+      "status": "pass",
+      "steps": [
+        {
+          "label": "scripts/fix-short-meta-descriptions.mjs",
+          "ok": true,
+          "cmd": "node scripts/fix-short-meta-descriptions.mjs",
+          "ms": 203,
+          "tail": "extended descriptions in 0 files",
+          "stdout": "extended descriptions in 0 files\n",
+          "stderr": "",
+          "status": 0
+        },
+        {
+          "label": "scripts/fix-news-meta.mjs",
+          "ok": true,
+          "cmd": "node scripts/fix-news-meta.mjs",
+          "ms": 287,
+          "tail": "Updated 0/4 news files; deduped 0\n\n[validate:content --all] still failing — news title/desc errors: 0",
+          "stdout": "\nUpdated 0/4 news files; deduped 0\n\n[validate:content --all] still failing — news title/desc errors: 0\n",
+          "stderr": "",
+          "status": 0
+        }
+      ]
+    },
+    "geo-queue": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "buildGeoQueue",
+          "pending": 50,
+          "total": 50
+        }
+      ]
+    },
+    "perf": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "runTechPreflight",
+          "ok": true,
+          "errors": 0,
+          "warnings": 3
+        },
+        {
+          "label": "audit:images",
+          "ok": false,
+          "cmd": "npm run audit:images",
+          "ms": 96912,
+          "tail": "> italian-estate-website@0.1.0 audit:images\n> node scripts/audit-all-images.mjs --fail\n\n=== IMAGE URL AUDIT ===\nURLs checked: 137\nBroken: 1\n\n[404] https://res.cloudinary.com/${cloud}/image/upload/${transform}/${publicId}\n  src/lib/cloudinary.ts",
+          "stdout": "\n> italian-estate-website@0.1.0 audit:images\n> node scripts/audit-all-images.mjs --fail\n\n=== IMAGE URL AUDIT ===\nURLs checked: 137\nBroken: 1\n\n[404] https://res.cloudinary.com/${cloud}/image/upload/${transform}/${publicId}\n  src/lib/cloudinary.ts\n",
+          "stderr": "",
+          "status": 1
+        }
+      ]
+    },
+    "infra": {
+      "status": "pass",
+      "steps": [
+        {
+          "label": "healthcheck",
+          "ok": true,
+          "cmd": "npm run healthcheck",
+          "ms": 2698,
+          "tail": "\nSite: https://italian-estate.com\n\n[http] Production HTTP checks\n✓ sitemap-index.xml: 200\n✓ /: 200\n✓ /guides/: 200\n✓ /compare/: 200\n✓ /get-shortlist/: 200\n✓ /contact/: 200\n✓ /guides/abruzzo-property-investment-guide/: 200\n✓ /compare/ancona-vs-urbino-property/: 200\n✓ POST /api/lead/: 200\n✓ owner email notify: ok\n✓ POST /api/wa-intent/: 200",
+          "stdout": "\n> italian-estate-website@0.1.0 healthcheck\n> node scripts/post-deploy-smoke.mjs --http-only\n\nSite: https://italian-estate.com\n\n[http] Production HTTP checks\n✓ sitemap-index.xml: 200\n✓ /: 200\n✓ /guides/: 200\n✓ /compare/: 200\n✓ /get-shortlist/: 200\n✓ /contact/: 200\n✓ /guides/abruzzo-property-investment-guide/: 200\n✓ /compare/ancona-vs-urbino-property/: 200\n✓ POST /api/lead/: 200\n✓ owner email notify: ok\n✓ POST /api/wa-intent/: 200\n",
+          "stderr": "",
+          "status": 0
+        },
+        {
+          "script": "validate-sitemap-exclusions.mjs",
+          "skip": "not on site"
+        }
+      ]
+    },
+    "markdown-hygiene": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "runMarkdownGlueAudit",
+          "wouldChange": 11
+        },
+        {
+          "label": "scripts/fix-markdown-glue-and-slug-links.mjs",
+          "ok": true,
+          "cmd": "node scripts/fix-markdown-glue-and-slug-links.mjs",
+          "ms": 268,
+          "tail": "guides/agriturismo-investment-italy-guide.mdx\nguides/cadastral-value-vs-market-price-italy.mdx\nguides/gross-vs-net-yield-italy.mdx\nguides/how-to-calculate-rental-yield-italy.mdx\nguides/italy-1-euro-homes-program.mdx\nguides/italy-property-closing-costs-breakdown.mdx\nguides/italy-property-taxes-foreign-buyers-guide.mdx\nguides/italy-registration-tax-property.mdx\nguides/italy-rental-yield-guide.mdx\nguides/piedmont-property-investment-guide.mdx\nguides/sardinia-property-investment-guide.mdx\nUpdated 11 files (glue: 6, slug-link files: 3, legacy intros: 0)",
+          "stdout": "guides/agriturismo-investment-italy-guide.mdx\nguides/cadastral-value-vs-market-price-italy.mdx\nguides/gross-vs-net-yield-italy.mdx\nguides/how-to-calculate-rental-yield-italy.mdx\nguides/italy-1-euro-homes-program.mdx\nguides/italy-property-closing-costs-breakdown.mdx\nguides/italy-property-taxes-foreign-buyers-guide.mdx\nguides/italy-registration-tax-property.mdx\nguides/italy-rental-yield-guide.mdx\nguides/piedmont-property-investment-guide.mdx\nguides/sardinia-property-investment-guide.mdx\nUpdated 11 files (glue: 6, slug-link files: 3, legacy intros: 0)\n",
+          "stderr": "",
+          "status": 0
+        },
+        {
+          "hook": "verifyMarkdownHygieneGate",
+          "ok": true,
+          "wouldChange": 0,
+          "audit": {
+            "ok": true,
+            "dry": true,
+            "viaScript": true,
+            "wouldChange": 0,
+            "applied": 0,
+            "tail": "[DRY] Updated 0 files (glue: 0, slug-link files: 0, legacy intros: 0)"
+          }
+        }
+      ]
+    },
+    "fix-batch": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "runFixBatchAudit",
+          "scanned": 0,
+          "ready": 0,
+          "notReady": 0
+        },
+        {
+          "hook": "writeFixBatchBrief",
+          "path": "/Users/Maxim/Desktop/Cursor_ed/Бизнес/MORE_Group/italian-estate-website/.content-os/upgrade-runs/2026-08-20-1117/FIX-BATCH-BRIEF.md"
+        },
+        {
+          "hook": "verifyFixBatchGate",
+          "ok": true,
+          "notReady": 0,
+          "ready": 0,
+          "scanned": 0,
+          "missing": false
+        }
+      ]
+    },
+    "geo-agent": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "writeAgentBriefs",
+          "batches": 10
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "before": null,
+    "after": null
+  },
+  "agentBatches": {
+    "total": 10,
+    "completed": 0,
+    "pending": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "files": 252,
+  "failures": 1,
+  "byKind": {
+    "fix-queue-parse": 1
+  },
+  "items": [
+    {
+      "kind": "fix-queue-parse",
+      "file": "scripts/fix-batch-queue.mjs",
+      "detail": "invalid JSON"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "batchNum": 10,
+  "files": [
+    {
+      "file": "src/content/areas/bellagio.mdx",
+      "url": "https://italian-estate.com/areas/bellagio/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 66,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/carovigno.mdx",
+      "url": "https://italian-estate.com/areas/carovigno/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 66,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/portofino.mdx",
+      "url": "https://italian-estate.com/areas/portofino/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 66,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/scalea.mdx",
+      "url": "https://italian-estate.com/areas/scalea/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 66,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/sorrento.mdx",
+      "url": "https://italian-estate.com/areas/sorrento/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 66,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

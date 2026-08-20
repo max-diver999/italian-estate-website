@@ -1,0 +1,60 @@
+{
+  "batchNum": 2,
+  "files": [
+    {
+      "file": "src/content/compare/campobasso-vs-termoli-property.mdx",
+      "url": "https://italian-estate.com/compare/campobasso-vs-termoli-property/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 56,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/compare/italy-vs-portugal-property-investment.mdx",
+      "url": "https://italian-estate.com/compare/italy-vs-portugal-property-investment/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 56,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/carovigno-villa-new-build.mdx",
+      "url": "https://italian-estate.com/projects/carovigno-villa-new-build/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 56,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/naples.mdx",
+      "url": "https://italian-estate.com/areas/naples/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 57,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/aria-ex-macello-milan.mdx",
+      "url": "https://italian-estate.com/projects/aria-ex-macello-milan/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 57,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

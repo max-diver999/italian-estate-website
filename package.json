@@ -15,6 +15,7 @@
     "validate:content:changed": "node scripts/qa-audit.mjs --changed",
     "validate:batch": "node scripts/batch-writing-gate.mjs --changed",
     "geo:audit": "node scripts/geo-citability-audit.mjs",
+    "audit:content": "node scripts/audit-p0-quality.mjs",
     "geo:upgrade": "node scripts/fix-italy-geo-upgrade.mjs",
     "qa:corpus": "node scripts/qa-corpus-signals.mjs",
     "qa:full": "node scripts/qa-full.mjs",

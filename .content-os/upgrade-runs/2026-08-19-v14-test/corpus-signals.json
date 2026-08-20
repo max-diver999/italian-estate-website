@@ -1,0 +1,204 @@
+{
+  "files": 252,
+  "failures": 39,
+  "byKind": {
+    "fix-queue-blocker": 39
+  },
+  "items": [
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/molise-property-investment-guide.mdx",
+      "detail": "thin-content, few-internal-links, missing-pros-cons"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/abruzzo-property-investment-guide.mdx",
+      "detail": "thin-content, missing-pros-cons"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/airbnb-investment-italy-guide.mdx",
+      "detail": "thin-content, missing-pros-cons"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/compromesso-italy-property-contract.mdx",
+      "detail": "thin-content, missing-scenarios"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/areas/matera.mdx",
+      "detail": "thin-content, missing-scenarios"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/areas/potenza.mdx",
+      "detail": "thin-content, missing-pros-cons"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/areas/urbino.mdx",
+      "detail": "thin-content, missing-scenarios"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/compare/bologna-vs-florence-property.mdx",
+      "detail": "thin-content, missing-scenarios"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/compare/campobasso-vs-termoli-property.mdx",
+      "detail": "thin-content, missing-scenarios"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/compare/florence-vs-rome-property-investment.mdx",
+      "detail": "thin-content, missing-pros-cons"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/compare/italy-vs-greece-property-investment.mdx",
+      "detail": "thin-content, missing-scenarios"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/compare/matera-vs-potenza-property.mdx",
+      "detail": "thin-content, missing-scenarios"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/how-to-buy-italy-property-remotely.mdx",
+      "detail": "thin-content"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/is-italy-property-good-investment-2026.mdx",
+      "detail": "few-internal-links, over-bold"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/marche-property-investment-guide.mdx",
+      "detail": "thin-content"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/umbria-property-investment-guide.mdx",
+      "detail": "thin-content"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/areas/chianti.mdx",
+      "detail": "thin-content"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/areas/milan-navigli.mdx",
+      "detail": "thin-content"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/areas/naples.mdx",
+      "detail": "thin-content"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/areas/pescara.mdx",
+      "detail": "thin-content"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/areas/taormina.mdx",
+      "detail": "thin-content"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/areas/termoli.mdx",
+      "detail": "thin-content"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/areas/turin.mdx",
+      "detail": "thin-content"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/compare/perugia-vs-assisi-property.mdx",
+      "detail": "thin-content"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/buy-property-italy-foreigner.mdx",
+      "detail": "few-internal-links"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/how-to-buy-italy-property-step-by-step.mdx",
+      "detail": "few-internal-links"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/italy-flat-tax-regime-new-residents.mdx",
+      "detail": "few-internal-links"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/italy-property-market-forecast-2026-2027.mdx",
+      "detail": "few-internal-links"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/short-term-rental-rules-italy.mdx",
+      "detail": "few-internal-links"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/digital-nomad-italy-property-guide.mdx",
+      "detail": "missing-scenarios"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/italy-property-taxes-foreign-buyers-guide.mdx",
+      "detail": "missing-pros-cons"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/best-regions-invest-italy-property-2026.mdx",
+      "detail": "over-bold"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/due-diligence-italy-property.mdx",
+      "detail": "over-bold"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/how-to-calculate-rental-yield-italy.mdx",
+      "detail": "over-bold"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/italy-property-for-dutch-buyers.mdx",
+      "detail": "over-bold"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/italy-property-for-irish-buyers.mdx",
+      "detail": "over-bold"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/italy-property-for-israeli-buyers.mdx",
+      "detail": "over-bold"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/puglia-property-investment-guide.mdx",
+      "detail": "over-bold"
+    },
+    {
+      "kind": "fix-queue-blocker",
+      "file": "src/content/guides/us-tax-italy-rental-property.mdx",
+      "detail": "over-bold"
+    }
+  ]
+}

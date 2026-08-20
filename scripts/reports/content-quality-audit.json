@@ -1,0 +1,4711 @@
+{
+  "generatedAt": "2026-08-20T18:39:48.931Z",
+  "site": "moregroup.estate",
+  "filesScanned": 252,
+  "indexable": 252,
+  "noindex": 0,
+  "byAction": {
+    "REWRITE_OR_NOINDEX": 26,
+    "KEEP": 146,
+    "REVIEW": 64,
+    "NOINDEX": 1,
+    "UPGRADE": 13,
+    "NOINDEX_OR_REWRITE": 2
+  },
+  "byIssueType": {
+    "thin-content": 28,
+    "ai-language": 17,
+    "missing-scenarios": 46,
+    "over-bold": 5,
+    "cannibalization": 1,
+    "few-internal-links": 8,
+    "missing-risks": 5,
+    "repeated-paragraph": 11,
+    "broken-internal-link": 4,
+    "missing-answer-box": 6
+  },
+  "crossIssues": 3,
+  "priorityFix": [
+    {
+      "id": "guides/how-to-buy-italy-property-step-by-step",
+      "score": 81,
+      "action": "NOINDEX",
+      "words": 4850,
+      "issues": [
+        "cannibalization",
+        "ai-language",
+        "few-internal-links"
+      ],
+      "title": "How to Buy Property in Italy: 2026 Guide"
+    },
+    {
+      "id": "areas/taormina",
+      "score": 84,
+      "action": "NOINDEX_OR_REWRITE",
+      "words": 1777,
+      "issues": [
+        "thin-content",
+        "repeated-paragraph"
+      ],
+      "title": "Taormina Sicily Property Investment Guide in Italy"
+    },
+    {
+      "id": "areas/termoli",
+      "score": 84,
+      "action": "NOINDEX_OR_REWRITE",
+      "words": 1525,
+      "issues": [
+        "thin-content",
+        "repeated-paragraph"
+      ],
+      "title": "Termoli Property Investment Adriatic Coast in Italy"
+    },
+    {
+      "id": "guides/compromesso-italy-property-contract",
+      "score": 87,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1386,
+      "issues": [
+        "thin-content",
+        "missing-scenarios"
+      ],
+      "title": "Compromesso Italy Property Contract (2026)"
+    },
+    {
+      "id": "areas/matera",
+      "score": 87,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1531,
+      "issues": [
+        "thin-content",
+        "missing-scenarios"
+      ],
+      "title": "Matera Property Guide: UNESCO Sassi 2026 in Italy"
+    },
+    {
+      "id": "areas/urbino",
+      "score": 87,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1397,
+      "issues": [
+        "thin-content",
+        "missing-scenarios"
+      ],
+      "title": "Urbino Property Guide: Marche UNESCO 2026 in Italy"
+    },
+    {
+      "id": "compare/italy-vs-greece-property-investment",
+      "score": 87,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1617,
+      "issues": [
+        "thin-content",
+        "missing-scenarios"
+      ],
+      "title": "Italy Vs Greece Property Investment (2026) for Buyers"
+    },
+    {
+      "id": "projects/florence-oltrarno-apartment",
+      "score": 87,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1169,
+      "issues": [
+        "thin-content",
+        "missing-scenarios"
+      ],
+      "title": "Florence Oltrarno Apartment Investment Review"
+    },
+    {
+      "id": "projects/milano-sesto-urban-regeneration",
+      "score": 87,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1167,
+      "issues": [
+        "thin-content",
+        "missing-scenarios"
+      ],
+      "title": "MilanoSesto Urban Regeneration Review 2026"
+    },
+    {
+      "id": "projects/ostuni-masseria-pool-apuliadeluxe",
+      "score": 87,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1136,
+      "issues": [
+        "thin-content",
+        "missing-scenarios"
+      ],
+      "title": "Ostuni Masseria Pool Review 2026: Prices & Yield"
+    },
+    {
+      "id": "guides/is-italy-property-good-investment-2026",
+      "score": 88,
+      "action": "UPGRADE",
+      "words": 3890,
+      "issues": [
+        "ai-language",
+        "few-internal-links",
+        "over-bold"
+      ],
+      "title": "Is Italy Property a Good Investment? (2026)"
+    },
+    {
+      "id": "areas/naples",
+      "score": 88,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1434,
+      "issues": [
+        "thin-content",
+        "ai-language"
+      ],
+      "title": "Naples Property Guide: Prices and Yields in Italy"
+    },
+    {
+      "id": "developers/okam-italy",
+      "score": 88,
+      "action": "REVIEW",
+      "words": 1763,
+      "issues": [
+        "ai-language",
+        "repeated-paragraph"
+      ],
+      "title": "Okam Italy Developer Profile: Milan Navigli Projects 2026"
+    },
+    {
+      "id": "projects/fivizzano-village-property",
+      "score": 89,
+      "action": "UPGRADE",
+      "words": 1400,
+      "issues": [
+        "missing-answer-box",
+        "missing-scenarios"
+      ],
+      "title": "Fivizzano Lunigiana Village Property Investment"
+    },
+    {
+      "id": "projects/inspire-uptown-milan",
+      "score": 89,
+      "action": "UPGRADE",
+      "words": 1389,
+      "issues": [
+        "missing-answer-box",
+        "missing-scenarios"
+      ],
+      "title": "Inspire UpTown Milan Apartments from €348,500 2028"
+    },
+    {
+      "id": "projects/rome-jubilee-centro-storico",
+      "score": 89,
+      "action": "UPGRADE",
+      "words": 1450,
+      "issues": [
+        "missing-answer-box",
+        "missing-scenarios"
+      ],
+      "title": "Rome Jubilee Centro Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/sanremo-sea-view-apartments",
+      "score": 89,
+      "action": "UPGRADE",
+      "words": 1437,
+      "issues": [
+        "missing-answer-box",
+        "missing-scenarios"
+      ],
+      "title": "Sanremo Sea View Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/sorrento-coastal-apartment",
+      "score": 89,
+      "action": "UPGRADE",
+      "words": 1473,
+      "issues": [
+        "missing-answer-box",
+        "missing-scenarios"
+      ],
+      "title": "Sorrento Coastal Apartment Review 2026: Buyer Guide"
+    },
+    {
+      "id": "projects/tranio-florence-historic-center",
+      "score": 89,
+      "action": "UPGRADE",
+      "words": 1344,
+      "issues": [
+        "missing-answer-box",
+        "missing-scenarios"
+      ],
+      "title": "Tranio Florence Historic Review 2026: Prices & Area"
+    },
+    {
+      "id": "guides/short-term-rental-rules-italy",
+      "score": 90,
+      "action": "UPGRADE",
+      "words": 3177,
+      "issues": [
+        "ai-language",
+        "few-internal-links"
+      ],
+      "title": "Short Term Rental Rules Italy Guide (2026) for Buyers"
+    },
+    {
+      "id": "guides/puglia-property-investment-guide",
+      "score": 91,
+      "action": "REVIEW",
+      "words": 6073,
+      "issues": [
+        "broken-internal-link",
+        "over-bold"
+      ],
+      "title": "Puglia Property Guide: Yields & Areas 2026"
+    },
+    {
+      "id": "projects/ostuni-trulli-modern-villa",
+      "score": 91,
+      "action": "REVIEW",
+      "words": 1324,
+      "issues": [
+        "ai-language",
+        "missing-scenarios"
+      ],
+      "title": "Ostuni Trulli Modern Review 2026: Prices & Yield"
+    },
+    {
+      "id": "guides/abruzzo-property-investment-guide",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1949,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Abruzzo Property Investment Guide (2026) in Italy"
+    },
+    {
+      "id": "guides/how-to-buy-italy-property-remotely",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1544,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "How to Buy Italy Property Remotely (2026) for Buyers"
+    },
+    {
+      "id": "guides/italy-flat-tax-regime-new-residents",
+      "score": 92,
+      "action": "REVIEW",
+      "words": 4306,
+      "issues": [
+        "repeated-paragraph"
+      ],
+      "title": "Italy Flat Tax Regime New Residents (2026) for Buyers"
+    },
+    {
+      "id": "guides/italy-property-investment-guide",
+      "score": 92,
+      "action": "REVIEW",
+      "words": 3885,
+      "issues": [
+        "repeated-paragraph"
+      ],
+      "title": "Italy Property Guide: Yields, Markets 2026 for Buyers"
+    },
+    {
+      "id": "guides/italy-property-market-forecast-2026-2027",
+      "score": 92,
+      "action": "REVIEW",
+      "words": 3409,
+      "issues": [
+        "repeated-paragraph"
+      ],
+      "title": "Italy Property Market Forecast 2026-2027 for Buyers"
+    },
+    {
+      "id": "guides/liguria-property-investment-guide",
+      "score": 92,
+      "action": "REVIEW",
+      "words": 5193,
+      "issues": [
+        "repeated-paragraph"
+      ],
+      "title": "Liguria Property Investment Guide (2026) in Italy"
+    },
+    {
+      "id": "guides/marche-property-investment-guide",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1900,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Marche Property Guide for Foreign Buyers"
+    },
+    {
+      "id": "guides/umbria-property-investment-guide",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1851,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Umbria Property Guide for Foreign Buyers"
+    },
+    {
+      "id": "areas/lucca",
+      "score": 92,
+      "action": "REVIEW",
+      "words": 4264,
+      "issues": [
+        "repeated-paragraph"
+      ],
+      "title": "Lucca Property Investment Guide for Foreign in Italy"
+    },
+    {
+      "id": "areas/milan-navigli",
+      "score": 92,
+      "action": "REVIEW",
+      "words": 3314,
+      "issues": [
+        "repeated-paragraph"
+      ],
+      "title": "Milan Navigli Property Guide: Buyers 2026 in Italy"
+    },
+    {
+      "id": "areas/pescara",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1409,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Pescara Property Investment Adriatic Coast in Italy"
+    },
+    {
+      "id": "areas/turin",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1536,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Turin Property Investment: Piedmont Prices in Italy"
+    },
+    {
+      "id": "compare/bologna-vs-florence-property",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1723,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Bologna Vs Florence Property Guide (2026) in Italy"
+    },
+    {
+      "id": "compare/campobasso-vs-termoli-property",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1325,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Campobasso Vs Termoli Property Guide (2026) in Italy"
+    },
+    {
+      "id": "compare/florence-vs-rome-property-investment",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1622,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Florence Vs Rome Property Investment (2026) in Italy"
+    },
+    {
+      "id": "compare/matera-vs-potenza-property",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1467,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Matera vs Potenza Property Compared 2026 in Italy"
+    },
+    {
+      "id": "projects/tranio-rome-eur-apartment",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1162,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Tranio Rome EUR Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/unapavia-pavia-residential",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1148,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "UnaPavia Pavia Student Review 2026: Prices & Yield"
+    },
+    {
+      "id": "developers/albero-architecture",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1479,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Albero Architecture Milan OKAM Partner Profile 2026"
+    },
+    {
+      "id": "developers/apulia-deluxe",
+      "score": 92,
+      "action": "REVIEW",
+      "words": 1692,
+      "issues": [
+        "repeated-paragraph"
+      ],
+      "title": "Apulia Deluxe Developer Profile: Ostuni Villa Projects 2026"
+    },
+    {
+      "id": "developers/asti-architetti",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1436,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Studio Asti Architetti Milan Architecture Profile 2026"
+    },
+    {
+      "id": "developers/frimm",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1399,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "FRIMM Developer Profile Milan Navigli Projects Okam 2026"
+    },
+    {
+      "id": "developers/gate-away-partner-network",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1454,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Gate-away Italy Partner Network Agency Profile 2026"
+    },
+    {
+      "id": "developers/lendlease",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1462,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Lendlease Developer Profile Milan MIND Innovation 2026"
+    },
+    {
+      "id": "developers/near-milan",
+      "score": 92,
+      "action": "REVIEW",
+      "words": 1821,
+      "issues": [
+        "repeated-paragraph"
+      ],
+      "title": "Near Milan EuroMilano Developer: UpTown Cascina Merlata 2028"
+    },
+    {
+      "id": "developers/nunziare-luxury-projects",
+      "score": 92,
+      "action": "REWRITE_OR_NOINDEX",
+      "words": 1409,
+      "issues": [
+        "thin-content"
+      ],
+      "title": "Nunziare Luxury Projects Cecere Developer Profile 2026"
+    },
+    {
+      "id": "guides/italy-property-for-uk-buyers",
+      "score": 93,
+      "action": "REVIEW",
+      "words": 4783,
+      "issues": [
+        "broken-internal-link"
+      ],
+      "title": "Buying Property in Italy from the UK (2026) for Buyers"
+    },
+    {
+      "id": "areas/sorrento",
+      "score": 93,
+      "action": "REVIEW",
+      "words": 2403,
+      "issues": [
+        "broken-internal-link"
+      ],
+      "title": "Sorrento Property Guide Amalfi Gateway 2026"
+    },
+    {
+      "id": "areas/valle-d-itria",
+      "score": 93,
+      "action": "REVIEW",
+      "words": 2539,
+      "issues": [
+        "broken-internal-link"
+      ],
+      "title": "Valle d'Itria Trulli Property Guide 2026"
+    },
+    {
+      "id": "guides/how-to-calculate-rental-yield-italy",
+      "score": 94,
+      "action": "REVIEW",
+      "words": 3692,
+      "issues": [
+        "ai-language",
+        "over-bold"
+      ],
+      "title": "How To Calculate Rental Yield Italy (2026)"
+    },
+    {
+      "id": "guides/power-of-attorney-property-italy",
+      "score": 94,
+      "action": "UPGRADE",
+      "words": 2531,
+      "issues": [
+        "few-internal-links"
+      ],
+      "title": "Power of Attorney for Italy Property (2026)"
+    },
+    {
+      "id": "areas/polignano-a-mare",
+      "score": 94,
+      "action": "UPGRADE",
+      "words": 2367,
+      "issues": [
+        "few-internal-links"
+      ],
+      "title": "Polignano a Mare Coastal Guide: Yields 2026"
+    },
+    {
+      "id": "areas/syracuse",
+      "score": 94,
+      "action": "UPGRADE",
+      "words": 3385,
+      "issues": [
+        "few-internal-links"
+      ],
+      "title": "Syracuse Sicily Property Guide for Buyers in Italy"
+    },
+    {
+      "id": "compare/italy-vs-malta-property-investment",
+      "score": 94,
+      "action": "UPGRADE",
+      "words": 3462,
+      "issues": [
+        "few-internal-links"
+      ],
+      "title": "Italy Vs Malta Property Investment (2026) for Buyers"
+    },
+    {
+      "id": "compare/italy-vs-spain-property-investment",
+      "score": 94,
+      "action": "UPGRADE",
+      "words": 3045,
+      "issues": [
+        "few-internal-links"
+      ],
+      "title": "Italy vs Spain Property Investment Compared (2026)"
+    },
+    {
+      "id": "guides/digital-nomad-italy-property-guide",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 2563,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Digital Nomad Italy Property Guide (2026) for Buyers"
+    },
+    {
+      "id": "guides/imu-property-tax-italy",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 4985,
+      "issues": [
+        "missing-risks"
+      ],
+      "title": "IMU Property Tax in Italy: Complete 2026 for Buyers"
+    },
+    {
+      "id": "compare/lake-garda-vs-lake-como-property",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 4209,
+      "issues": [
+        "missing-risks"
+      ],
+      "title": "Lake Garda vs Lake Como Property Guide 2026 in Italy"
+    },
+    {
+      "id": "compare/perugia-vs-assisi-property",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 2204,
+      "issues": [
+        "missing-risks"
+      ],
+      "title": "Perugia vs Assisi Property Compared 2026 in Italy"
+    },
+    {
+      "id": "projects/amalfi-ravello-villa",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1474,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Ravello Villa on Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/ancona-centro-apartments",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1507,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Ancona Centro Apartments Review 2026: Prices & Area"
+    },
+    {
+      "id": "projects/aria-ex-macello-milan",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1321,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "ARIA Ex Macello Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/assisi-historic-apartments",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 2456,
+      "issues": [
+        "missing-risks"
+      ],
+      "title": "Assisi Historic Apartments Review 2026: Buyer Guide"
+    },
+    {
+      "id": "projects/campobasso-centro-apartments",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1515,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Campobasso Centro Apartments Review 2026 in Italy"
+    },
+    {
+      "id": "projects/carovigno-villa-new-build",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1315,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Carovigno New Villa Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/chianti-farmhouse-restoration",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1472,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Chianti Farmhouse Restoration Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/chieti-university-apartments",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1434,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Chieti University Apartments Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/coima-olympic-village-milan",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1702,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "COIMA Milan Olympic Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/coima-via-carcani-trastevere",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1455,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "COIMA Via Carcani Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/como-lakefront-residence",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1704,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Como Lakefront Residence Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/genoa-waterfront-apartments",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 2046,
+      "issues": [
+        "missing-risks"
+      ],
+      "title": "Genoa Waterfront Apartments Port Renovation Review"
+    },
+    {
+      "id": "projects/langhe-barolo-vineyard-property",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1426,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Langhe Barolo Vineyard Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/lecce-urbs20-villas",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1724,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Lecce Urbs20 Villas Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/lendlease-mind-milan",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1298,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Lendlease MIND Milan Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/meli-navigli-milan",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1292,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Meli 26 Navigli Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/noto-baroque-masseria",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1752,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Noto Baroque Masseria on Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/nunziare-vii-lusciano",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1361,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Nunziare VII Lusciano Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/ostuni-lamia-chiavi-in-mano",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1466,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Ostuni Lamia Chiavi Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/ostuni-rascina-villa-construction",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1610,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Ostuni Rascina Villa Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/palermo-centro-renovation",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1468,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Palermo Centro Renovation Review 2026: Buyer Guide"
+    },
+    {
+      "id": "projects/pescara-centro-apartments",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1647,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Pescara Centro Apartments Review 2026: Buyer Guide"
+    },
+    {
+      "id": "projects/porto-cervo-villa-development",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1528,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Porto Cervo Villa Development Sardinia Review 2026"
+    },
+    {
+      "id": "projects/portofino-apartment-renovation",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1442,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Portofino Apartment Renovation Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/rapallo-sea-view-apartments",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1512,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Rapallo Sea View Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/semproniano-farmhouse-restoration",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1569,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Semproniano Maremma Farmhouse Review 2026"
+    },
+    {
+      "id": "projects/siena-country-villa-pool",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1505,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Siena Country Villa Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/tranio-puglia-masseria-new",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1580,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Puglia Masseria New Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/tranio-sicily-noto-stone-house",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1486,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Sicily Noto Stone Review 2026: Prices & Yield"
+    },
+    {
+      "id": "projects/turin-crocetta-apartments",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1521,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Turin Crocetta Apartments Review 2026: Buyer Guide"
+    },
+    {
+      "id": "projects/urbino-university-apartments",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1564,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Urbino University Apartments Review 2026"
+    },
+    {
+      "id": "projects/valle-d-itria-trulli-restoration",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1490,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "Valle d'Itria Trulli Review 2026: Prices & Yield"
+    },
+    {
+      "id": "developers/coima",
+      "score": 95,
+      "action": "REVIEW",
+      "words": 1884,
+      "issues": [
+        "missing-scenarios"
+      ],
+      "title": "COIMA SGR Developer Profile Rome Milan Projects 2026"
+    },
+    {
+      "id": "guides/can-foreigners-buy-property-italy",
+      "score": 96,
+      "action": "REVIEW",
+      "words": 4212,
+      "issues": [
+        "ai-language"
+      ],
+      "title": "Can Foreigners Buy Property Italy (2026)"
+    },
+    {
+      "id": "guides/cost-of-buying-property-italy",
+      "score": 96,
+      "action": "REVIEW",
+      "words": 3798,
+      "issues": [
+        "ai-language"
+      ],
+      "title": "Cost Of Buying Property Italy Guide (2026)"
+    },
+    {
+      "id": "guides/gross-vs-net-yield-italy",
+      "score": 96,
+      "action": "REVIEW",
+      "words": 4426,
+      "issues": [
+        "ai-language"
+      ],
+      "title": "Gross vs Net Yield in Italy: Property Guide"
+    },
+    {
+      "id": "guides/italy-property-management-costs",
+      "score": 96,
+      "action": "REVIEW",
+      "words": 2990,
+      "issues": [
+        "ai-language"
+      ],
+      "title": "Italy Property Management Costs: 2026 Guide"
+    },
+    {
+      "id": "guides/italy-real-estate-market-data-2025",
+      "score": 96,
+      "action": "REVIEW",
+      "words": 4777,
+      "issues": [
+        "ai-language"
+      ],
+      "title": "Italy Real Estate Market Data 2025 (2026)"
+    },
+    {
+      "id": "guides/italy-registration-tax-property",
+      "score": 96,
+      "action": "REVIEW",
+      "words": 4117,
+      "issues": [
+        "ai-language"
+      ],
+      "title": "Italy Registration Tax on Property (2026) for Buyers"
+    }
+  ],
+  "allFiles": [
+    {
+      "id": "guides/abruzzo-property-investment-guide",
+      "coll": "guides",
+      "slug": "abruzzo-property-investment-guide",
+      "title": "Abruzzo Property Investment Guide (2026) in Italy",
+      "noindex": false,
+      "words": 1949,
+      "links": 5,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1949 words (min 2000)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "guides/agriturismo-investment-italy-guide",
+      "coll": "guides",
+      "slug": "agriturismo-investment-italy-guide",
+      "title": "Agriturismo Investment Italy Guide (2026) for Buyers",
+      "noindex": false,
+      "words": 2935,
+      "links": 15,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/airbnb-investment-italy-guide",
+      "coll": "guides",
+      "slug": "airbnb-investment-italy-guide",
+      "title": "Airbnb Investment Italy Guide Guide (2026) for Buyers",
+      "noindex": false,
+      "words": 2046,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/amalfi-coast-property-investment-guide",
+      "coll": "guides",
+      "slug": "amalfi-coast-property-investment-guide",
+      "title": "Amalfi Coast Property Guide for Buyers 2026",
+      "noindex": false,
+      "words": 3632,
+      "links": 12,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/basilicata-property-investment-guide",
+      "coll": "guides",
+      "slug": "basilicata-property-investment-guide",
+      "title": "Basilicata Property Investment Guide (2026) in Italy",
+      "noindex": false,
+      "words": 3044,
+      "links": 14,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/best-cities-italy-rental-yield-2026",
+      "coll": "guides",
+      "slug": "best-cities-italy-rental-yield-2026",
+      "title": "Best Cities Italy Rental Yield 2026 (2026) for Buyers",
+      "noindex": false,
+      "words": 2497,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/best-regions-invest-italy-property-2026",
+      "coll": "guides",
+      "slug": "best-regions-invest-italy-property-2026",
+      "title": "Best Regions to Invest in Italy Property (2026)",
+      "noindex": false,
+      "words": 3533,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/bologna-property-investment-guide",
+      "coll": "guides",
+      "slug": "bologna-property-investment-guide",
+      "title": "Bologna Property Investment Guide (2026) in Italy",
+      "noindex": false,
+      "words": 2759,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/buy-property-italy-foreigner",
+      "coll": "guides",
+      "slug": "buy-property-italy-foreigner",
+      "title": "Buy Property in Italy as a Foreigner (2026) for Buyers",
+      "noindex": false,
+      "words": 3288,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/buy-property-italy-under-200000",
+      "coll": "guides",
+      "slug": "buy-property-italy-under-200000",
+      "title": "Property Italy Under 200k: Foreign Buyer",
+      "noindex": false,
+      "words": 3718,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/buy-property-italy-under-500000",
+      "coll": "guides",
+      "slug": "buy-property-italy-under-500000",
+      "title": "Italy Property Under €500k for Buyers 2026",
+      "noindex": false,
+      "words": 4133,
+      "links": 12,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/cadastral-value-vs-market-price-italy",
+      "coll": "guides",
+      "slug": "cadastral-value-vs-market-price-italy",
+      "title": "Cadastral Value vs Market Price Italy: 2026",
+      "noindex": false,
+      "words": 3909,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/calabria-property-investment-guide",
+      "coll": "guides",
+      "slug": "calabria-property-investment-guide",
+      "title": "Calabria Property Investment Guide (2026)",
+      "noindex": false,
+      "words": 3171,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/can-foreigners-buy-property-italy",
+      "coll": "guides",
+      "slug": "can-foreigners-buy-property-italy",
+      "title": "Can Foreigners Buy Property Italy (2026)",
+      "noindex": false,
+      "words": 4212,
+      "links": 6,
+      "score": 96,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "family office"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/cedolare-secca-italy-rental-property",
+      "coll": "guides",
+      "slug": "cedolare-secca-italy-rental-property",
+      "title": "Cedolare Secca Italy Rental Property (2026)",
+      "noindex": false,
+      "words": 3605,
+      "links": 13,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/codice-fiscale-italy-property",
+      "coll": "guides",
+      "slug": "codice-fiscale-italy-property",
+      "title": "Codice Fiscale for Italy Property (2026)",
+      "noindex": false,
+      "words": 2419,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/compromesso-italy-property-contract",
+      "coll": "guides",
+      "slug": "compromesso-italy-property-contract",
+      "title": "Compromesso Italy Property Contract (2026)",
+      "noindex": false,
+      "words": 1386,
+      "links": 5,
+      "score": 87,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1386 words (min 2000)"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "guides/cost-of-buying-property-italy",
+      "coll": "guides",
+      "slug": "cost-of-buying-property-italy",
+      "title": "Cost Of Buying Property Italy Guide (2026)",
+      "noindex": false,
+      "words": 3798,
+      "links": 6,
+      "score": 96,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "crucial"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/costa-smeralda-property-investment-guide",
+      "coll": "guides",
+      "slug": "costa-smeralda-property-investment-guide",
+      "title": "Costa Smeralda Property Guide for Buyers",
+      "noindex": false,
+      "words": 3761,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/digital-nomad-italy-property-guide",
+      "coll": "guides",
+      "slug": "digital-nomad-italy-property-guide",
+      "title": "Digital Nomad Italy Property Guide (2026) for Buyers",
+      "noindex": false,
+      "words": 2563,
+      "links": 10,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/due-diligence-italy-property",
+      "coll": "guides",
+      "slug": "due-diligence-italy-property",
+      "title": "Due Diligence Italy Property Guide (2026)",
+      "noindex": false,
+      "words": 5058,
+      "links": 7,
+      "score": 98,
+      "issues": [
+        {
+          "type": "over-bold",
+          "detail": "44 bold spans"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/emilia-romagna-property-investment-guide",
+      "coll": "guides",
+      "slug": "emilia-romagna-property-investment-guide",
+      "title": "Emilia-Romagna Property Guide Buyers 2026 in Italy",
+      "noindex": false,
+      "words": 2681,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/florence-property-investment-guide",
+      "coll": "guides",
+      "slug": "florence-property-investment-guide",
+      "title": "Florence Property Investment Guide (2026) in Italy",
+      "noindex": false,
+      "words": 4796,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/gross-vs-net-yield-italy",
+      "coll": "guides",
+      "slug": "gross-vs-net-yield-italy",
+      "title": "Gross vs Net Yield in Italy: Property Guide",
+      "noindex": false,
+      "words": 4426,
+      "links": 5,
+      "score": 96,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "crucial"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/heritage-restricted-property-italy",
+      "coll": "guides",
+      "slug": "heritage-restricted-property-italy",
+      "title": "Heritage Restricted Property Italy (2026)",
+      "noindex": false,
+      "words": 3710,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/hidden-costs-buying-property-italy",
+      "coll": "guides",
+      "slug": "hidden-costs-buying-property-italy",
+      "title": "Hidden Costs Buying Property Italy (2026)",
+      "noindex": false,
+      "words": 3325,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/how-to-buy-italy-property-remotely",
+      "coll": "guides",
+      "slug": "how-to-buy-italy-property-remotely",
+      "title": "How to Buy Italy Property Remotely (2026) for Buyers",
+      "noindex": false,
+      "words": 1544,
+      "links": 6,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1544 words (min 2000)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "guides/how-to-buy-italy-property-step-by-step",
+      "coll": "guides",
+      "slug": "how-to-buy-italy-property-step-by-step",
+      "title": "How to Buy Property in Italy: 2026 Guide",
+      "noindex": false,
+      "words": 4850,
+      "links": 0,
+      "score": 81,
+      "issues": [
+        {
+          "type": "cannibalization",
+          "detail": "competes with KEEP: buy-property-italy-foreigner"
+        },
+        {
+          "type": "ai-language",
+          "detail": "crucial"
+        },
+        {
+          "type": "few-internal-links",
+          "detail": "0 links (min 5)"
+        }
+      ],
+      "action": "NOINDEX"
+    },
+    {
+      "id": "guides/how-to-calculate-rental-yield-italy",
+      "coll": "guides",
+      "slug": "how-to-calculate-rental-yield-italy",
+      "title": "How To Calculate Rental Yield Italy (2026)",
+      "noindex": false,
+      "words": 3692,
+      "links": 5,
+      "score": 94,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "crucial | pivotal"
+        },
+        {
+          "type": "over-bold",
+          "detail": "41 bold spans"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/imu-property-tax-italy",
+      "coll": "guides",
+      "slug": "imu-property-tax-italy",
+      "title": "IMU Property Tax in Italy: Complete 2026 for Buyers",
+      "noindex": false,
+      "words": 4985,
+      "links": 5,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-risks",
+          "detail": "no risks/checklist block"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/is-italy-property-good-investment-2026",
+      "coll": "guides",
+      "slug": "is-italy-property-good-investment-2026",
+      "title": "Is Italy Property a Good Investment? (2026)",
+      "noindex": false,
+      "words": 3890,
+      "links": 4,
+      "score": 88,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "regional diversification"
+        },
+        {
+          "type": "few-internal-links",
+          "detail": "4 links (min 5)"
+        },
+        {
+          "type": "over-bold",
+          "detail": "43 bold spans"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "guides/italy-1-euro-homes-program",
+      "coll": "guides",
+      "slug": "italy-1-euro-homes-program",
+      "title": "Italy 1 Euro Homes Program: 2026 Complete for Buyers",
+      "noindex": false,
+      "words": 3636,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-capital-gains-tax-property",
+      "coll": "guides",
+      "slug": "italy-capital-gains-tax-property",
+      "title": "Italy Capital Gains Tax on Property (2026)",
+      "noindex": false,
+      "words": 4247,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-elective-residence-visa-property",
+      "coll": "guides",
+      "slug": "italy-elective-residence-visa-property",
+      "title": "Italy Elective Residence Visa: 2026 Guide",
+      "noindex": false,
+      "words": 4381,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-flat-tax-regime-new-residents",
+      "coll": "guides",
+      "slug": "italy-flat-tax-regime-new-residents",
+      "title": "Italy Flat Tax Regime New Residents (2026) for Buyers",
+      "noindex": false,
+      "words": 4306,
+      "links": 5,
+      "score": 92,
+      "issues": [
+        {
+          "type": "repeated-paragraph",
+          "detail": "shared with 3 other indexable pages"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/italy-holiday-let-licensing",
+      "coll": "guides",
+      "slug": "italy-holiday-let-licensing",
+      "title": "Italy Holiday Let Licensing Guide (2026)",
+      "noindex": false,
+      "words": 3045,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-inheritance-law-property-foreigners",
+      "coll": "guides",
+      "slug": "italy-inheritance-law-property-foreigners",
+      "title": "Italy Inheritance Law for Property (2026) for Buyers",
+      "noindex": false,
+      "words": 4174,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-investor-visa-property",
+      "coll": "guides",
+      "slug": "italy-investor-visa-property",
+      "title": "Italy Golden Visa & Investor Visa (2026)",
+      "noindex": false,
+      "words": 5821,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-investor-visa-requirements-2026",
+      "coll": "guides",
+      "slug": "italy-investor-visa-requirements-2026",
+      "title": "Italy Investor Visa Requirements Guide 2026 for Buyers",
+      "noindex": false,
+      "words": 3297,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-ivie-ivafe-foreign-property-owners",
+      "coll": "guides",
+      "slug": "italy-ivie-ivafe-foreign-property-owners",
+      "title": "IVIE and IVAFE: Italy Wealth Tax on Foreign (2026)",
+      "noindex": false,
+      "words": 3425,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-off-plan-property-guide",
+      "coll": "guides",
+      "slug": "italy-off-plan-property-guide",
+      "title": "Italy Off Plan Property Guide Guide (2026)",
+      "noindex": false,
+      "words": 3339,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-prima-casa-vs-second-home-tax",
+      "coll": "guides",
+      "slug": "italy-prima-casa-vs-second-home-tax",
+      "title": "Italy Prima Casa vs Second Home Tax (2026)",
+      "noindex": false,
+      "words": 4704,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-by-nationality-guide",
+      "coll": "guides",
+      "slug": "italy-property-by-nationality-guide",
+      "title": "Italy Property By Nationality Guide (2026) for Buyers",
+      "noindex": false,
+      "words": 4244,
+      "links": 23,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-closing-costs-breakdown",
+      "coll": "guides",
+      "slug": "italy-property-closing-costs-breakdown",
+      "title": "Italy Property Closing Costs: Complete 2026",
+      "noindex": false,
+      "words": 3648,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-americans",
+      "coll": "guides",
+      "slug": "italy-property-for-americans",
+      "title": "Italy Property For Americans Guide (2026) for Buyers",
+      "noindex": false,
+      "words": 4627,
+      "links": 16,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-australians",
+      "coll": "guides",
+      "slug": "italy-property-for-australians",
+      "title": "Italy Property For Australians Guide (2026) for Buyers",
+      "noindex": false,
+      "words": 3448,
+      "links": 12,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-canadians",
+      "coll": "guides",
+      "slug": "italy-property-for-canadians",
+      "title": "Italy Property for Canadian Buyers (2026) for Buyers",
+      "noindex": false,
+      "words": 3790,
+      "links": 11,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-dutch-buyers",
+      "coll": "guides",
+      "slug": "italy-property-for-dutch-buyers",
+      "title": "Italy Property for Dutch Buyers: Full 2026 for Buyers",
+      "noindex": false,
+      "words": 4145,
+      "links": 12,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-french-buyers",
+      "coll": "guides",
+      "slug": "italy-property-for-french-buyers",
+      "title": "Italy Property for French Buyers: Complete (2026)",
+      "noindex": false,
+      "words": 4727,
+      "links": 14,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-germans",
+      "coll": "guides",
+      "slug": "italy-property-for-germans",
+      "title": "Italy Property for German Buyers: Complete (2026)",
+      "noindex": false,
+      "words": 4006,
+      "links": 15,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-irish-buyers",
+      "coll": "guides",
+      "slug": "italy-property-for-irish-buyers",
+      "title": "Italy Property for Irish Buyers: Complete (2026)",
+      "noindex": false,
+      "words": 4878,
+      "links": 14,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-israeli-buyers",
+      "coll": "guides",
+      "slug": "italy-property-for-israeli-buyers",
+      "title": "Italy Property For Israeli Buyers (2026) for Buyers",
+      "noindex": false,
+      "words": 4492,
+      "links": 15,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-scandinavian-buyers",
+      "coll": "guides",
+      "slug": "italy-property-for-scandinavian-buyers",
+      "title": "Italy Property for Scandinavian Buyers 2026 for Buyers",
+      "noindex": false,
+      "words": 4281,
+      "links": 12,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-swiss-buyers",
+      "coll": "guides",
+      "slug": "italy-property-for-swiss-buyers",
+      "title": "Buying Property in Italy from Switzerland (2026)",
+      "noindex": false,
+      "words": 4300,
+      "links": 14,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-uae-buyers",
+      "coll": "guides",
+      "slug": "italy-property-for-uae-buyers",
+      "title": "Italy Property For Uae Buyers Guide (2026) for Buyers",
+      "noindex": false,
+      "words": 3154,
+      "links": 15,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-for-uk-buyers",
+      "coll": "guides",
+      "slug": "italy-property-for-uk-buyers",
+      "title": "Buying Property in Italy from the UK (2026) for Buyers",
+      "noindex": false,
+      "words": 4783,
+      "links": 17,
+      "score": 93,
+      "issues": [
+        {
+          "type": "broken-internal-link",
+          "detail": "/guides/lake-como-vs-liguria-property/"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/italy-property-investment-guide",
+      "coll": "guides",
+      "slug": "italy-property-investment-guide",
+      "title": "Italy Property Guide: Yields, Markets 2026 for Buyers",
+      "noindex": false,
+      "words": 3885,
+      "links": 11,
+      "score": 92,
+      "issues": [
+        {
+          "type": "repeated-paragraph",
+          "detail": "shared with 3 other indexable pages"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/italy-property-management-costs",
+      "coll": "guides",
+      "slug": "italy-property-management-costs",
+      "title": "Italy Property Management Costs: 2026 Guide",
+      "noindex": false,
+      "words": 2990,
+      "links": 6,
+      "score": 96,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "crucial | seamless"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/italy-property-market-forecast-2026-2027",
+      "coll": "guides",
+      "slug": "italy-property-market-forecast-2026-2027",
+      "title": "Italy Property Market Forecast 2026-2027 for Buyers",
+      "noindex": false,
+      "words": 3409,
+      "links": 6,
+      "score": 92,
+      "issues": [
+        {
+          "type": "repeated-paragraph",
+          "detail": "shared with 3 other indexable pages"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/italy-property-renovation-costs-guide",
+      "coll": "guides",
+      "slug": "italy-property-renovation-costs-guide",
+      "title": "Italy Property Renovation Costs 2026: Guide",
+      "noindex": false,
+      "words": 3546,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-scams-avoid",
+      "coll": "guides",
+      "slug": "italy-property-scams-avoid",
+      "title": "How to Avoid Italy Property Scams (2026)",
+      "noindex": false,
+      "words": 2200,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-property-taxes-foreign-buyers-guide",
+      "coll": "guides",
+      "slug": "italy-property-taxes-foreign-buyers-guide",
+      "title": "Foreign Buyers Italy Property Taxes (2026)",
+      "noindex": false,
+      "words": 4032,
+      "links": 12,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-real-estate-market-data-2025",
+      "coll": "guides",
+      "slug": "italy-real-estate-market-data-2025",
+      "title": "Italy Real Estate Market Data 2025 (2026)",
+      "noindex": false,
+      "words": 4777,
+      "links": 5,
+      "score": 96,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "crucial"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/italy-reciprocity-property-foreigners",
+      "coll": "guides",
+      "slug": "italy-reciprocity-property-foreigners",
+      "title": "Italy Reciprocity Rule for Foreign Property (2026)",
+      "noindex": false,
+      "words": 2143,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-registration-tax-property",
+      "coll": "guides",
+      "slug": "italy-registration-tax-property",
+      "title": "Italy Registration Tax on Property (2026) for Buyers",
+      "noindex": false,
+      "words": 4117,
+      "links": 5,
+      "score": 96,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "revolutionary"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/italy-rental-yield-guide",
+      "coll": "guides",
+      "slug": "italy-rental-yield-guide",
+      "title": "Italy Rental Yield Guide for Foreign Buyers (2026)",
+      "noindex": false,
+      "words": 3264,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/italy-residency-by-investment-guide",
+      "coll": "guides",
+      "slug": "italy-residency-by-investment-guide",
+      "title": "Italy Residency By Investment Guide (2026)",
+      "noindex": false,
+      "words": 2819,
+      "links": 10,
+      "score": 96,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "family office"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/italy-retirement-property-guide",
+      "coll": "guides",
+      "slug": "italy-retirement-property-guide",
+      "title": "Italy Retirement Property Guide for Buyers (2026)",
+      "noindex": false,
+      "words": 3510,
+      "links": 15,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/lake-como-property-investment-guide",
+      "coll": "guides",
+      "slug": "lake-como-property-investment-guide",
+      "title": "Lake Como Property Investment Guide (2026) in Italy",
+      "noindex": false,
+      "words": 5008,
+      "links": 11,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/liguria-property-investment-guide",
+      "coll": "guides",
+      "slug": "liguria-property-investment-guide",
+      "title": "Liguria Property Investment Guide (2026) in Italy",
+      "noindex": false,
+      "words": 5193,
+      "links": 8,
+      "score": 92,
+      "issues": [
+        {
+          "type": "repeated-paragraph",
+          "detail": "shared with 3 other indexable pages"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/marche-property-investment-guide",
+      "coll": "guides",
+      "slug": "marche-property-investment-guide",
+      "title": "Marche Property Guide for Foreign Buyers",
+      "noindex": false,
+      "words": 1900,
+      "links": 13,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1900 words (min 2000)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "guides/milan-property-investment-guide",
+      "coll": "guides",
+      "slug": "milan-property-investment-guide",
+      "title": "Milan Property Investment Guide for Foreign",
+      "noindex": false,
+      "words": 4991,
+      "links": 18,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/mistakes-foreign-buyers-italy",
+      "coll": "guides",
+      "slug": "mistakes-foreign-buyers-italy",
+      "title": "Mistakes Foreign Buyers Italy Guide (2026) for Buyers",
+      "noindex": false,
+      "words": 2695,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/molise-property-investment-guide",
+      "coll": "guides",
+      "slug": "molise-property-investment-guide",
+      "title": "Molise Property Guide for Foreign Buyers in Italy",
+      "noindex": false,
+      "words": 2013,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/non-resident-mortgage-italy",
+      "coll": "guides",
+      "slug": "non-resident-mortgage-italy",
+      "title": "Non Resident Mortgage Italy Guide (2026)",
+      "noindex": false,
+      "words": 3876,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/notaio-italy-property-role",
+      "coll": "guides",
+      "slug": "notaio-italy-property-role",
+      "title": "Notaio Role in Italian Property Buys 2026 in Italy",
+      "noindex": false,
+      "words": 2527,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/piedmont-property-investment-guide",
+      "coll": "guides",
+      "slug": "piedmont-property-investment-guide",
+      "title": "Piedmont Property Investment Guide (2026) in Italy",
+      "noindex": false,
+      "words": 2747,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/power-of-attorney-property-italy",
+      "coll": "guides",
+      "slug": "power-of-attorney-property-italy",
+      "title": "Power of Attorney for Italy Property (2026)",
+      "noindex": false,
+      "words": 2531,
+      "links": 4,
+      "score": 94,
+      "issues": [
+        {
+          "type": "few-internal-links",
+          "detail": "4 links (min 5)"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "guides/puglia-property-investment-guide",
+      "coll": "guides",
+      "slug": "puglia-property-investment-guide",
+      "title": "Puglia Property Guide: Yields & Areas 2026",
+      "noindex": false,
+      "words": 6073,
+      "links": 8,
+      "score": 91,
+      "issues": [
+        {
+          "type": "broken-internal-link",
+          "detail": "/guides/puglia-vs-tuscany-property/"
+        },
+        {
+          "type": "over-bold",
+          "detail": "38 bold spans"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/rome-property-investment-guide",
+      "coll": "guides",
+      "slug": "rome-property-investment-guide",
+      "title": "Rome Property Investment Guide Guide (2026)",
+      "noindex": false,
+      "words": 4190,
+      "links": 11,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/sardinia-property-investment-guide",
+      "coll": "guides",
+      "slug": "sardinia-property-investment-guide",
+      "title": "Sardinia Property Investment Guide (2026) in Italy",
+      "noindex": false,
+      "words": 4174,
+      "links": 11,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/short-term-rental-rules-italy",
+      "coll": "guides",
+      "slug": "short-term-rental-rules-italy",
+      "title": "Short Term Rental Rules Italy Guide (2026) for Buyers",
+      "noindex": false,
+      "words": 3177,
+      "links": 4,
+      "score": 90,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "comprehensive framework"
+        },
+        {
+          "type": "few-internal-links",
+          "detail": "4 links (min 5)"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "guides/sicily-property-investment-guide",
+      "coll": "guides",
+      "slug": "sicily-property-investment-guide",
+      "title": "Sicily Property Guide for Foreign Buyers in Italy",
+      "noindex": false,
+      "words": 4371,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/tuscany-inland-property-guide",
+      "coll": "guides",
+      "slug": "tuscany-inland-property-guide",
+      "title": "Tuscany Inland Property Guide Guide (2026)",
+      "noindex": false,
+      "words": 2972,
+      "links": 16,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/tuscany-property-investment-guide",
+      "coll": "guides",
+      "slug": "tuscany-property-investment-guide",
+      "title": "Tuscany Property Investment Guide (2026)",
+      "noindex": false,
+      "words": 5184,
+      "links": 15,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/uk-tax-italy-holiday-home",
+      "coll": "guides",
+      "slug": "uk-tax-italy-holiday-home",
+      "title": "UK Tax on Italy Holiday Home: 2026 Owner",
+      "noindex": false,
+      "words": 4384,
+      "links": 11,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/umbria-property-investment-guide",
+      "coll": "guides",
+      "slug": "umbria-property-investment-guide",
+      "title": "Umbria Property Guide for Foreign Buyers",
+      "noindex": false,
+      "words": 1851,
+      "links": 9,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1851 words (min 2000)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "guides/us-tax-italy-rental-property",
+      "coll": "guides",
+      "slug": "us-tax-italy-rental-property",
+      "title": "Us Tax Italy Rental Property Guide (2026)",
+      "noindex": false,
+      "words": 3185,
+      "links": 9,
+      "score": 98,
+      "issues": [
+        {
+          "type": "over-bold",
+          "detail": "37 bold spans"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "guides/venice-property-investment-guide",
+      "coll": "guides",
+      "slug": "venice-property-investment-guide",
+      "title": "Venice Property Guide for Foreign Buyers in Italy",
+      "noindex": false,
+      "words": 4124,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "guides/vineyard-property-investment-italy-guide",
+      "coll": "guides",
+      "slug": "vineyard-property-investment-italy-guide",
+      "title": "Vineyard Property Investment Italy Guide (2026)",
+      "noindex": false,
+      "words": 3836,
+      "links": 11,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/alba",
+      "coll": "areas",
+      "slug": "alba",
+      "title": "Alba Property Guide: Langhe Wine Hills 2026",
+      "noindex": false,
+      "words": 2400,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/ancona",
+      "coll": "areas",
+      "slug": "ancona",
+      "title": "Ancona Property Guide Marche Adriatic 2026",
+      "noindex": false,
+      "words": 2385,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/arezzo",
+      "coll": "areas",
+      "slug": "arezzo",
+      "title": "Arezzo Property Guide Tuscany Value 2026",
+      "noindex": false,
+      "words": 2388,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/assisi",
+      "coll": "areas",
+      "slug": "assisi",
+      "title": "Assisi Property Guide: Umbria UNESCO 2026 in Italy",
+      "noindex": false,
+      "words": 2074,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/bari",
+      "coll": "areas",
+      "slug": "bari",
+      "title": "Bari Property Guide: Apulia Capital Yields in Italy",
+      "noindex": false,
+      "words": 2647,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/bellagio",
+      "coll": "areas",
+      "slug": "bellagio",
+      "title": "Bellagio Property Guide Lake Como 2026",
+      "noindex": false,
+      "words": 2348,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/bologna",
+      "coll": "areas",
+      "slug": "bologna",
+      "title": "Bologna Property Guide Navile Prices 2026 in Italy",
+      "noindex": false,
+      "words": 3076,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/campobasso",
+      "coll": "areas",
+      "slug": "campobasso",
+      "title": "Campobasso Property: Prices & Yield (2026)",
+      "noindex": false,
+      "words": 3044,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/carovigno",
+      "coll": "areas",
+      "slug": "carovigno",
+      "title": "Carovigno Property Guide Puglia 2026",
+      "noindex": false,
+      "words": 2370,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/chianti",
+      "coll": "areas",
+      "slug": "chianti",
+      "title": "Chianti Real Estate Investment: Vineyards in Italy",
+      "noindex": false,
+      "words": 1846,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/chieti",
+      "coll": "areas",
+      "slug": "chieti",
+      "title": "Chieti Property Investment University Hill",
+      "noindex": false,
+      "words": 2487,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/cisternino",
+      "coll": "areas",
+      "slug": "cisternino",
+      "title": "Cisternino Property Investment Guide Valle in Italy",
+      "noindex": false,
+      "words": 2339,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/como",
+      "coll": "areas",
+      "slug": "como",
+      "title": "Como Property Guide: Prices & Yields 2026",
+      "noindex": false,
+      "words": 3685,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/costa-smeralda",
+      "coll": "areas",
+      "slug": "costa-smeralda",
+      "title": "Costa Smeralda Property Guide for Buyers in Italy",
+      "noindex": false,
+      "words": 2430,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/florence",
+      "coll": "areas",
+      "slug": "florence",
+      "title": "Florence Property: Prices & Yield (2026) in Italy",
+      "noindex": false,
+      "words": 3422,
+      "links": 12,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/genoa",
+      "coll": "areas",
+      "slug": "genoa",
+      "title": "Genoa Property Investment Liguria Port City in Italy",
+      "noindex": false,
+      "words": 2122,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/langhe",
+      "coll": "areas",
+      "slug": "langhe",
+      "title": "Langhe Property Guide: Piedmont Wine 2026",
+      "noindex": false,
+      "words": 2433,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/lecce",
+      "coll": "areas",
+      "slug": "lecce",
+      "title": "Lecce Property Guide: Baroque Salento 2026",
+      "noindex": false,
+      "words": 2481,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/lucca",
+      "coll": "areas",
+      "slug": "lucca",
+      "title": "Lucca Property Investment Guide for Foreign in Italy",
+      "noindex": false,
+      "words": 4264,
+      "links": 10,
+      "score": 92,
+      "issues": [
+        {
+          "type": "repeated-paragraph",
+          "detail": "shared with 3 other indexable pages"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "areas/matera",
+      "coll": "areas",
+      "slug": "matera",
+      "title": "Matera Property Guide: UNESCO Sassi 2026 in Italy",
+      "noindex": false,
+      "words": 1531,
+      "links": 6,
+      "score": 87,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1531 words (min 1800)"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "areas/milan-navigli",
+      "coll": "areas",
+      "slug": "milan-navigli",
+      "title": "Milan Navigli Property Guide: Buyers 2026 in Italy",
+      "noindex": false,
+      "words": 3314,
+      "links": 6,
+      "score": 92,
+      "issues": [
+        {
+          "type": "repeated-paragraph",
+          "detail": "shared with 3 other indexable pages"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "areas/modena",
+      "coll": "areas",
+      "slug": "modena",
+      "title": "Modena Property Investment Emilia-Romagna in Italy",
+      "noindex": false,
+      "words": 2698,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/monte-argentario",
+      "coll": "areas",
+      "slug": "monte-argentario",
+      "title": "Monte Argentario Tuscany Coast Guide 2026 in Italy",
+      "noindex": false,
+      "words": 3456,
+      "links": 14,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/naples",
+      "coll": "areas",
+      "slug": "naples",
+      "title": "Naples Property Guide: Prices and Yields in Italy",
+      "noindex": false,
+      "words": 1434,
+      "links": 8,
+      "score": 88,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1434 words (min 1800)"
+        },
+        {
+          "type": "ai-language",
+          "detail": "regional diversification"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "areas/noto",
+      "coll": "areas",
+      "slug": "noto",
+      "title": "Noto Sicily Property Guide for Buyers 2026 in Italy",
+      "noindex": false,
+      "words": 3369,
+      "links": 12,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/ostuni",
+      "coll": "areas",
+      "slug": "ostuni",
+      "title": "Ostuni Property Guide: Prices & Yields 2026 in Italy",
+      "noindex": false,
+      "words": 3388,
+      "links": 5,
+      "score": 96,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "crucial"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "areas/palermo",
+      "coll": "areas",
+      "slug": "palermo",
+      "title": "Palermo Sicily Property Investment Guide in Italy",
+      "noindex": false,
+      "words": 3578,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/parma",
+      "coll": "areas",
+      "slug": "parma",
+      "title": "Parma Property Investment Emilia-Romagna",
+      "noindex": false,
+      "words": 2492,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/perugia",
+      "coll": "areas",
+      "slug": "perugia",
+      "title": "Perugia Property Guide Umbria Value 2026",
+      "noindex": false,
+      "words": 2501,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/pescara",
+      "coll": "areas",
+      "slug": "pescara",
+      "title": "Pescara Property Investment Adriatic Coast in Italy",
+      "noindex": false,
+      "words": 1409,
+      "links": 8,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1409 words (min 1800)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "areas/polignano-a-mare",
+      "coll": "areas",
+      "slug": "polignano-a-mare",
+      "title": "Polignano a Mare Coastal Guide: Yields 2026",
+      "noindex": false,
+      "words": 2367,
+      "links": 4,
+      "score": 94,
+      "issues": [
+        {
+          "type": "few-internal-links",
+          "detail": "4 links (min 5)"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "areas/portofino",
+      "coll": "areas",
+      "slug": "portofino",
+      "title": "Portofino Property Guide Liguria 2026",
+      "noindex": false,
+      "words": 2430,
+      "links": 9,
+      "score": 96,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "family office"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "areas/potenza",
+      "coll": "areas",
+      "slug": "potenza",
+      "title": "Potenza Property Investment Capital Value in Italy",
+      "noindex": false,
+      "words": 1803,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/rome-centro-storico",
+      "coll": "areas",
+      "slug": "rome-centro-storico",
+      "title": "Rome Centro Storico Property Guide (2026)",
+      "noindex": false,
+      "words": 2433,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/sanremo",
+      "coll": "areas",
+      "slug": "sanremo",
+      "title": "Sanremo Property Investment Western Riviera in Italy",
+      "noindex": false,
+      "words": 2712,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/santa-margherita-ligure",
+      "coll": "areas",
+      "slug": "santa-margherita-ligure",
+      "title": "Santa Margherita Ligure Property Riviera in Italy",
+      "noindex": false,
+      "words": 2071,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/savona",
+      "coll": "areas",
+      "slug": "savona",
+      "title": "Savona Property Investment Liguria Ponente",
+      "noindex": false,
+      "words": 2486,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/scalea",
+      "coll": "areas",
+      "slug": "scalea",
+      "title": "Scalea Calabria Coastal Property Guide 2026",
+      "noindex": false,
+      "words": 2356,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/siena",
+      "coll": "areas",
+      "slug": "siena",
+      "title": "Siena Property Guide: Tuscany Prices 2026 in Italy",
+      "noindex": false,
+      "words": 3403,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/sorrento",
+      "coll": "areas",
+      "slug": "sorrento",
+      "title": "Sorrento Property Guide Amalfi Gateway 2026",
+      "noindex": false,
+      "words": 2403,
+      "links": 7,
+      "score": 93,
+      "issues": [
+        {
+          "type": "broken-internal-link",
+          "detail": "/areas/positano/"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "areas/syracuse",
+      "coll": "areas",
+      "slug": "syracuse",
+      "title": "Syracuse Sicily Property Guide for Buyers in Italy",
+      "noindex": false,
+      "words": 3385,
+      "links": 4,
+      "score": 94,
+      "issues": [
+        {
+          "type": "few-internal-links",
+          "detail": "4 links (min 5)"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "areas/taormina",
+      "coll": "areas",
+      "slug": "taormina",
+      "title": "Taormina Sicily Property Investment Guide in Italy",
+      "noindex": false,
+      "words": 1777,
+      "links": 7,
+      "score": 84,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1777 words (min 1800)"
+        },
+        {
+          "type": "repeated-paragraph",
+          "detail": "shared with 3 other indexable pages"
+        }
+      ],
+      "action": "NOINDEX_OR_REWRITE"
+    },
+    {
+      "id": "areas/termoli",
+      "coll": "areas",
+      "slug": "termoli",
+      "title": "Termoli Property Investment Adriatic Coast in Italy",
+      "noindex": false,
+      "words": 1525,
+      "links": 7,
+      "score": 84,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1525 words (min 1800)"
+        },
+        {
+          "type": "repeated-paragraph",
+          "detail": "shared with 3 other indexable pages"
+        }
+      ],
+      "action": "NOINDEX_OR_REWRITE"
+    },
+    {
+      "id": "areas/turin",
+      "coll": "areas",
+      "slug": "turin",
+      "title": "Turin Property Investment: Piedmont Prices in Italy",
+      "noindex": false,
+      "words": 1536,
+      "links": 10,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1536 words (min 1800)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "areas/urbino",
+      "coll": "areas",
+      "slug": "urbino",
+      "title": "Urbino Property Guide: Marche UNESCO 2026 in Italy",
+      "noindex": false,
+      "words": 1397,
+      "links": 8,
+      "score": 87,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1397 words (min 1800)"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "areas/val-dorcia",
+      "coll": "areas",
+      "slug": "val-dorcia",
+      "title": "Val Dorcia Property: Prices & Yield (2026) in Italy",
+      "noindex": false,
+      "words": 2246,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "areas/valle-d-itria",
+      "coll": "areas",
+      "slug": "valle-d-itria",
+      "title": "Valle d'Itria Trulli Property Guide 2026",
+      "noindex": false,
+      "words": 2539,
+      "links": 9,
+      "score": 93,
+      "issues": [
+        {
+          "type": "broken-internal-link",
+          "detail": "/guides/valle-d-itria-trulli-restoration/"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "areas/versilia",
+      "coll": "areas",
+      "slug": "versilia",
+      "title": "Versilia Property Guide: Coast Prices 2026 in Italy",
+      "noindex": false,
+      "words": 3355,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/ancona-vs-urbino-property",
+      "coll": "compare",
+      "slug": "ancona-vs-urbino-property",
+      "title": "Ancona vs Urbino Property Investment 2026 in Italy",
+      "noindex": false,
+      "words": 2245,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/arezzo-vs-siena-property",
+      "coll": "compare",
+      "slug": "arezzo-vs-siena-property",
+      "title": "Arezzo vs Siena Tuscany Property Guide 2026 in Italy",
+      "noindex": false,
+      "words": 3579,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/bologna-vs-florence-property",
+      "coll": "compare",
+      "slug": "bologna-vs-florence-property",
+      "title": "Bologna Vs Florence Property Guide (2026) in Italy",
+      "noindex": false,
+      "words": 1723,
+      "links": 6,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1723 words (min 1800)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "compare/campobasso-vs-termoli-property",
+      "coll": "compare",
+      "slug": "campobasso-vs-termoli-property",
+      "title": "Campobasso Vs Termoli Property Guide (2026) in Italy",
+      "noindex": false,
+      "words": 1325,
+      "links": 7,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1325 words (min 1800)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "compare/cedolare-secca-vs-irpef-italy-rental",
+      "coll": "compare",
+      "slug": "cedolare-secca-vs-irpef-italy-rental",
+      "title": "Cedolare Secca Vs Irpef Italy Rental (2026) for Buyers",
+      "noindex": false,
+      "words": 3284,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/elective-residence-vs-investor-visa-italy",
+      "coll": "compare",
+      "slug": "elective-residence-vs-investor-visa-italy",
+      "title": "Italy Elective Residence vs Investor Visa (2026)",
+      "noindex": false,
+      "words": 3785,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/flat-tax-vs-investor-visa-italy",
+      "coll": "compare",
+      "slug": "flat-tax-vs-investor-visa-italy",
+      "title": "Flat Tax vs Italy Investor Visa Compared (2026)",
+      "noindex": false,
+      "words": 3570,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/florence-vs-rome-property-investment",
+      "coll": "compare",
+      "slug": "florence-vs-rome-property-investment",
+      "title": "Florence Vs Rome Property Investment (2026) in Italy",
+      "noindex": false,
+      "words": 1622,
+      "links": 7,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1622 words (min 1800)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "compare/florence-vs-siena-property",
+      "coll": "compare",
+      "slug": "florence-vs-siena-property",
+      "title": "Florence vs Siena Property Compared 2026 in Italy",
+      "noindex": false,
+      "words": 3612,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/genoa-vs-florence-property",
+      "coll": "compare",
+      "slug": "genoa-vs-florence-property",
+      "title": "Genoa vs Florence Property Investment Guide in Italy",
+      "noindex": false,
+      "words": 2322,
+      "links": 11,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/italy-vs-croatia-property-investment",
+      "coll": "compare",
+      "slug": "italy-vs-croatia-property-investment",
+      "title": "Italy Vs Croatia Property Investment (2026) for Buyers",
+      "noindex": false,
+      "words": 3693,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/italy-vs-france-property-investment",
+      "coll": "compare",
+      "slug": "italy-vs-france-property-investment",
+      "title": "Italy Vs France Property Investment (2026) for Buyers",
+      "noindex": false,
+      "words": 2437,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/italy-vs-greece-property-investment",
+      "coll": "compare",
+      "slug": "italy-vs-greece-property-investment",
+      "title": "Italy Vs Greece Property Investment (2026) for Buyers",
+      "noindex": false,
+      "words": 1617,
+      "links": 6,
+      "score": 87,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1617 words (min 1800)"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "compare/italy-vs-malta-property-investment",
+      "coll": "compare",
+      "slug": "italy-vs-malta-property-investment",
+      "title": "Italy Vs Malta Property Investment (2026) for Buyers",
+      "noindex": false,
+      "words": 3462,
+      "links": 4,
+      "score": 94,
+      "issues": [
+        {
+          "type": "few-internal-links",
+          "detail": "4 links (min 5)"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "compare/italy-vs-portugal-property-investment",
+      "coll": "compare",
+      "slug": "italy-vs-portugal-property-investment",
+      "title": "Italy vs Portugal Property Compared 2026 for Buyers",
+      "noindex": false,
+      "words": 3216,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/italy-vs-spain-property-investment",
+      "coll": "compare",
+      "slug": "italy-vs-spain-property-investment",
+      "title": "Italy vs Spain Property Investment Compared (2026)",
+      "noindex": false,
+      "words": 3045,
+      "links": 4,
+      "score": 94,
+      "issues": [
+        {
+          "type": "few-internal-links",
+          "detail": "4 links (min 5)"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "compare/lake-como-vs-liguria-property",
+      "coll": "compare",
+      "slug": "lake-como-vs-liguria-property",
+      "title": "Lake Como Vs Liguria Property Guide (2026) in Italy",
+      "noindex": false,
+      "words": 4063,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/lake-garda-vs-lake-como-property",
+      "coll": "compare",
+      "slug": "lake-garda-vs-lake-como-property",
+      "title": "Lake Garda vs Lake Como Property Guide 2026 in Italy",
+      "noindex": false,
+      "words": 4209,
+      "links": 6,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-risks",
+          "detail": "no risks/checklist block"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "compare/matera-vs-potenza-property",
+      "coll": "compare",
+      "slug": "matera-vs-potenza-property",
+      "title": "Matera vs Potenza Property Compared 2026 in Italy",
+      "noindex": false,
+      "words": 1467,
+      "links": 6,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1467 words (min 1800)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "compare/milan-vs-florence-property-investment",
+      "coll": "compare",
+      "slug": "milan-vs-florence-property-investment",
+      "title": "Milan vs Florence Property Compared 2026 in Italy",
+      "noindex": false,
+      "words": 3655,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/milan-vs-rome-property-investment",
+      "coll": "compare",
+      "slug": "milan-vs-rome-property-investment",
+      "title": "Milan Vs Rome Property Investment (2026) in Italy",
+      "noindex": false,
+      "words": 3735,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/naples-vs-rome-property-investment",
+      "coll": "compare",
+      "slug": "naples-vs-rome-property-investment",
+      "title": "Naples vs Rome Property Guide Compared 2026 in Italy",
+      "noindex": false,
+      "words": 3182,
+      "links": 12,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/off-plan-vs-resale-property-italy",
+      "coll": "compare",
+      "slug": "off-plan-vs-resale-property-italy",
+      "title": "Off-Plan vs Resale Italy Property Compared (2026)",
+      "noindex": false,
+      "words": 4258,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/perugia-vs-assisi-property",
+      "coll": "compare",
+      "slug": "perugia-vs-assisi-property",
+      "title": "Perugia vs Assisi Property Compared 2026 in Italy",
+      "noindex": false,
+      "words": 2204,
+      "links": 6,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-risks",
+          "detail": "no risks/checklist block"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "compare/pescara-vs-chieti-property",
+      "coll": "compare",
+      "slug": "pescara-vs-chieti-property",
+      "title": "Pescara vs Chieti Property Compared 2026 in Italy",
+      "noindex": false,
+      "words": 2325,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/puglia-vs-tuscany-property",
+      "coll": "compare",
+      "slug": "puglia-vs-tuscany-property",
+      "title": "Puglia vs Tuscany Property Compared 2026 in Italy",
+      "noindex": false,
+      "words": 2312,
+      "links": 12,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/sicily-vs-puglia-property",
+      "coll": "compare",
+      "slug": "sicily-vs-puglia-property",
+      "title": "Sicily vs Puglia Property Investment 2026 in Italy",
+      "noindex": false,
+      "words": 4361,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/turin-vs-milan-property",
+      "coll": "compare",
+      "slug": "turin-vs-milan-property",
+      "title": "Turin vs Milan Property Guide Buyers 2026 in Italy",
+      "noindex": false,
+      "words": 2292,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/tuscany-vs-lake-como-property",
+      "coll": "compare",
+      "slug": "tuscany-vs-lake-como-property",
+      "title": "Tuscany Vs Lake Como Property Guide (2026) in Italy",
+      "noindex": false,
+      "words": 3902,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "compare/venice-vs-milan-property-investment",
+      "coll": "compare",
+      "slug": "venice-vs-milan-property-investment",
+      "title": "Venice Vs Milan Property Investment (2026) in Italy",
+      "noindex": false,
+      "words": 2541,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/amalfi-ravello-villa",
+      "coll": "projects",
+      "slug": "amalfi-ravello-villa",
+      "title": "Ravello Villa on Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1474,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/ancona-centro-apartments",
+      "coll": "projects",
+      "slug": "ancona-centro-apartments",
+      "title": "Ancona Centro Apartments Review 2026: Prices & Area",
+      "noindex": false,
+      "words": 1507,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/arezzo-centro-apartments",
+      "coll": "projects",
+      "slug": "arezzo-centro-apartments",
+      "title": "Arezzo Centro Apartments Tuscany Value Review 2026",
+      "noindex": false,
+      "words": 1926,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/aria-ex-macello-milan",
+      "coll": "projects",
+      "slug": "aria-ex-macello-milan",
+      "title": "ARIA Ex Macello Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1321,
+      "links": 6,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/assisi-historic-apartments",
+      "coll": "projects",
+      "slug": "assisi-historic-apartments",
+      "title": "Assisi Historic Apartments Review 2026: Buyer Guide",
+      "noindex": false,
+      "words": 2456,
+      "links": 6,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-risks",
+          "detail": "no risks/checklist block"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/bellagio-villa-lake-view",
+      "coll": "projects",
+      "slug": "bellagio-villa-lake-view",
+      "title": "Bellagio Villa Lake Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1497,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/bliss-uptown-milan",
+      "coll": "projects",
+      "slug": "bliss-uptown-milan",
+      "title": "Bliss UpTown Milan Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1612,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/bologna-bloom-living",
+      "coll": "projects",
+      "slug": "bologna-bloom-living",
+      "title": "Bologna Bloom Living Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1542,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/campobasso-centro-apartments",
+      "coll": "projects",
+      "slug": "campobasso-centro-apartments",
+      "title": "Campobasso Centro Apartments Review 2026 in Italy",
+      "noindex": false,
+      "words": 1515,
+      "links": 9,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/carovigno-villa-new-build",
+      "coll": "projects",
+      "slug": "carovigno-villa-new-build",
+      "title": "Carovigno New Villa Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1315,
+      "links": 6,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/chianti-farmhouse-restoration",
+      "coll": "projects",
+      "slug": "chianti-farmhouse-restoration",
+      "title": "Chianti Farmhouse Restoration Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1472,
+      "links": 10,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/chieti-university-apartments",
+      "coll": "projects",
+      "slug": "chieti-university-apartments",
+      "title": "Chieti University Apartments Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1434,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/coima-guido-reni-rome",
+      "coll": "projects",
+      "slug": "coima-guido-reni-rome",
+      "title": "COIMA Guido Reni Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1662,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/coima-olympic-village-milan",
+      "coll": "projects",
+      "slug": "coima-olympic-village-milan",
+      "title": "COIMA Milan Olympic Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1702,
+      "links": 7,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/coima-via-carcani-trastevere",
+      "coll": "projects",
+      "slug": "coima-via-carcani-trastevere",
+      "title": "COIMA Via Carcani Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1455,
+      "links": 6,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/como-lakefront-residence",
+      "coll": "projects",
+      "slug": "como-lakefront-residence",
+      "title": "Como Lakefront Residence Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1704,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/costa-smeralda-apartment",
+      "coll": "projects",
+      "slug": "costa-smeralda-apartment",
+      "title": "Costa Smeralda Apartment Review 2026: Prices & Area",
+      "noindex": false,
+      "words": 1652,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/feel-uptown-milan",
+      "coll": "projects",
+      "slug": "feel-uptown-milan",
+      "title": "Feel UpTown Milan Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 2450,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/fivizzano-village-property",
+      "coll": "projects",
+      "slug": "fivizzano-village-property",
+      "title": "Fivizzano Lunigiana Village Property Investment",
+      "noindex": false,
+      "words": 1400,
+      "links": 7,
+      "score": 89,
+      "issues": [
+        {
+          "type": "missing-answer-box",
+          "detail": "no Quick answer / TL;DR"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "projects/florence-oltrarno-apartment",
+      "coll": "projects",
+      "slug": "florence-oltrarno-apartment",
+      "title": "Florence Oltrarno Apartment Investment Review",
+      "noindex": false,
+      "words": 1169,
+      "links": 6,
+      "score": 87,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1169 words (min 1200)"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "projects/genoa-waterfront-apartments",
+      "coll": "projects",
+      "slug": "genoa-waterfront-apartments",
+      "title": "Genoa Waterfront Apartments Port Renovation Review",
+      "noindex": false,
+      "words": 2046,
+      "links": 7,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-risks",
+          "detail": "no risks/checklist block"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/innesto-milan-social-housing",
+      "coll": "projects",
+      "slug": "innesto-milan-social-housing",
+      "title": "L'Innesto Milan Social Housing Carbon Neutral 2026",
+      "noindex": false,
+      "words": 1955,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/inspire-uptown-milan",
+      "coll": "projects",
+      "slug": "inspire-uptown-milan",
+      "title": "Inspire UpTown Milan Apartments from €348,500 2028",
+      "noindex": false,
+      "words": 1389,
+      "links": 7,
+      "score": 89,
+      "issues": [
+        {
+          "type": "missing-answer-box",
+          "detail": "no Quick answer / TL;DR"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "projects/langhe-barolo-vineyard-property",
+      "coll": "projects",
+      "slug": "langhe-barolo-vineyard-property",
+      "title": "Langhe Barolo Vineyard Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1426,
+      "links": 10,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/lecce-urbs20-villas",
+      "coll": "projects",
+      "slug": "lecce-urbs20-villas",
+      "title": "Lecce Urbs20 Villas Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1724,
+      "links": 7,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/lendlease-mind-milan",
+      "coll": "projects",
+      "slug": "lendlease-mind-milan",
+      "title": "Lendlease MIND Milan Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1298,
+      "links": 7,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/lucca-villa-historic-renovation",
+      "coll": "projects",
+      "slug": "lucca-villa-historic-renovation",
+      "title": "Lucca Villa Historic Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1320,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/maciachini-urban-retreat",
+      "coll": "projects",
+      "slug": "maciachini-urban-retreat",
+      "title": "Maciachini Urban Retreat Review 2026: Prices & Area",
+      "noindex": false,
+      "words": 2367,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/matera-sassi-apartments",
+      "coll": "projects",
+      "slug": "matera-sassi-apartments",
+      "title": "Matera Sassi Apartments Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1665,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/meli-navigli-milan",
+      "coll": "projects",
+      "slug": "meli-navigli-milan",
+      "title": "Meli 26 Navigli Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1292,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/milano-sesto-urban-regeneration",
+      "coll": "projects",
+      "slug": "milano-sesto-urban-regeneration",
+      "title": "MilanoSesto Urban Regeneration Review 2026",
+      "noindex": false,
+      "words": 1167,
+      "links": 6,
+      "score": 87,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1167 words (min 1200)"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "projects/monte-argentario-sea-view",
+      "coll": "projects",
+      "slug": "monte-argentario-sea-view",
+      "title": "Monte Argentario Sea Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 2387,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/noto-baroque-masseria",
+      "coll": "projects",
+      "slug": "noto-baroque-masseria",
+      "title": "Noto Baroque Masseria on Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1752,
+      "links": 9,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/nunziare-vii-lusciano",
+      "coll": "projects",
+      "slug": "nunziare-vii-lusciano",
+      "title": "Nunziare VII Lusciano Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1361,
+      "links": 6,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/ostuni-lamia-chiavi-in-mano",
+      "coll": "projects",
+      "slug": "ostuni-lamia-chiavi-in-mano",
+      "title": "Ostuni Lamia Chiavi Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1466,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/ostuni-masseria-pool-apuliadeluxe",
+      "coll": "projects",
+      "slug": "ostuni-masseria-pool-apuliadeluxe",
+      "title": "Ostuni Masseria Pool Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1136,
+      "links": 7,
+      "score": 87,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1136 words (min 1200)"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "projects/ostuni-new-villa-pool-470k",
+      "coll": "projects",
+      "slug": "ostuni-new-villa-pool-470k",
+      "title": "Ostuni New Villa Review 2026: Prices & Yield in Italy",
+      "noindex": false,
+      "words": 2537,
+      "links": 6,
+      "score": 96,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "seamless | crucial"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/ostuni-rascina-villa-construction",
+      "coll": "projects",
+      "slug": "ostuni-rascina-villa-construction",
+      "title": "Ostuni Rascina Villa Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1610,
+      "links": 10,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/ostuni-trulli-modern-villa",
+      "coll": "projects",
+      "slug": "ostuni-trulli-modern-villa",
+      "title": "Ostuni Trulli Modern Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1324,
+      "links": 7,
+      "score": 91,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "seamless"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/palermo-centro-renovation",
+      "coll": "projects",
+      "slug": "palermo-centro-renovation",
+      "title": "Palermo Centro Renovation Review 2026: Buyer Guide",
+      "noindex": false,
+      "words": 1468,
+      "links": 7,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/perugia-centro-apartments",
+      "coll": "projects",
+      "slug": "perugia-centro-apartments",
+      "title": "Perugia Centro Apartments Umbria Value Review 2026",
+      "noindex": false,
+      "words": 2175,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/pescara-centro-apartments",
+      "coll": "projects",
+      "slug": "pescara-centro-apartments",
+      "title": "Pescara Centro Apartments Review 2026: Buyer Guide",
+      "noindex": false,
+      "words": 1647,
+      "links": 9,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/porto-cervo-villa-development",
+      "coll": "projects",
+      "slug": "porto-cervo-villa-development",
+      "title": "Porto Cervo Villa Development Sardinia Review 2026",
+      "noindex": false,
+      "words": 1528,
+      "links": 6,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/portofino-apartment-renovation",
+      "coll": "projects",
+      "slug": "portofino-apartment-renovation",
+      "title": "Portofino Apartment Renovation Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1442,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/potenza-centro-apartments",
+      "coll": "projects",
+      "slug": "potenza-centro-apartments",
+      "title": "Potenza Centro Apartments Review 2026: Buyer Guide",
+      "noindex": false,
+      "words": 1624,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/prandina-navigli-milan",
+      "coll": "projects",
+      "slug": "prandina-navigli-milan",
+      "title": "Prandina 34 Navigli Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1405,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/rapallo-sea-view-apartments",
+      "coll": "projects",
+      "slug": "rapallo-sea-view-apartments",
+      "title": "Rapallo Sea View Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1512,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/rome-jubilee-centro-storico",
+      "coll": "projects",
+      "slug": "rome-jubilee-centro-storico",
+      "title": "Rome Jubilee Centro Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1450,
+      "links": 7,
+      "score": 89,
+      "issues": [
+        {
+          "type": "missing-answer-box",
+          "detail": "no Quick answer / TL;DR"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "projects/sanremo-sea-view-apartments",
+      "coll": "projects",
+      "slug": "sanremo-sea-view-apartments",
+      "title": "Sanremo Sea View Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1437,
+      "links": 6,
+      "score": 89,
+      "issues": [
+        {
+          "type": "missing-answer-box",
+          "detail": "no Quick answer / TL;DR"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "projects/scalea-calabria-coastal",
+      "coll": "projects",
+      "slug": "scalea-calabria-coastal",
+      "title": "Scalea Calabria Coastal Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 2274,
+      "links": 11,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/semproniano-farmhouse-restoration",
+      "coll": "projects",
+      "slug": "semproniano-farmhouse-restoration",
+      "title": "Semproniano Maremma Farmhouse Review 2026",
+      "noindex": false,
+      "words": 1569,
+      "links": 7,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/siena-country-villa-pool",
+      "coll": "projects",
+      "slug": "siena-country-villa-pool",
+      "title": "Siena Country Villa Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1505,
+      "links": 7,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/sorrento-coastal-apartment",
+      "coll": "projects",
+      "slug": "sorrento-coastal-apartment",
+      "title": "Sorrento Coastal Apartment Review 2026: Buyer Guide",
+      "noindex": false,
+      "words": 1473,
+      "links": 6,
+      "score": 89,
+      "issues": [
+        {
+          "type": "missing-answer-box",
+          "detail": "no Quick answer / TL;DR"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "projects/taormina-sea-view-residence",
+      "coll": "projects",
+      "slug": "taormina-sea-view-residence",
+      "title": "Taormina Sea View Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1649,
+      "links": 6,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/termoli-coast-apartments",
+      "coll": "projects",
+      "slug": "termoli-coast-apartments",
+      "title": "Termoli Coast Apartments Review 2026: Prices & Area",
+      "noindex": false,
+      "words": 1508,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/tranio-como-carate-urio-2br",
+      "coll": "projects",
+      "slug": "tranio-como-carate-urio-2br",
+      "title": "Tranio Como Carate Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1505,
+      "links": 7,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/tranio-florence-historic-center",
+      "coll": "projects",
+      "slug": "tranio-florence-historic-center",
+      "title": "Tranio Florence Historic Review 2026: Prices & Area",
+      "noindex": false,
+      "words": 1344,
+      "links": 7,
+      "score": 89,
+      "issues": [
+        {
+          "type": "missing-answer-box",
+          "detail": "no Quick answer / TL;DR"
+        },
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "UPGRADE"
+    },
+    {
+      "id": "projects/tranio-puglia-masseria-new",
+      "coll": "projects",
+      "slug": "tranio-puglia-masseria-new",
+      "title": "Puglia Masseria New Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1580,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/tranio-rome-eur-apartment",
+      "coll": "projects",
+      "slug": "tranio-rome-eur-apartment",
+      "title": "Tranio Rome EUR Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1162,
+      "links": 5,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1162 words (min 1200)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "projects/tranio-sicily-noto-stone-house",
+      "coll": "projects",
+      "slug": "tranio-sicily-noto-stone-house",
+      "title": "Sicily Noto Stone Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1486,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/turin-crocetta-apartments",
+      "coll": "projects",
+      "slug": "turin-crocetta-apartments",
+      "title": "Turin Crocetta Apartments Review 2026: Buyer Guide",
+      "noindex": false,
+      "words": 1521,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/unapavia-pavia-residential",
+      "coll": "projects",
+      "slug": "unapavia-pavia-residential",
+      "title": "UnaPavia Pavia Student Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1148,
+      "links": 4,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1148 words (min 1200)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "projects/urbino-university-apartments",
+      "coll": "projects",
+      "slug": "urbino-university-apartments",
+      "title": "Urbino University Apartments Review 2026",
+      "noindex": false,
+      "words": 1564,
+      "links": 9,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "projects/val-dorcia-agriturismo-farmhouse",
+      "coll": "projects",
+      "slug": "val-dorcia-agriturismo-farmhouse",
+      "title": "Val d'Orcia Agriturismo Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 2196,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "projects/valle-d-itria-trulli-restoration",
+      "coll": "projects",
+      "slug": "valle-d-itria-trulli-restoration",
+      "title": "Valle d'Itria Trulli Review 2026: Prices & Yield",
+      "noindex": false,
+      "words": 1490,
+      "links": 8,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "developers/albero-architecture",
+      "coll": "developers",
+      "slug": "albero-architecture",
+      "title": "Albero Architecture Milan OKAM Partner Profile 2026",
+      "noindex": false,
+      "words": 1479,
+      "links": 7,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1479 words (min 1500)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "developers/apulia-deluxe",
+      "coll": "developers",
+      "slug": "apulia-deluxe",
+      "title": "Apulia Deluxe Developer Profile: Ostuni Villa Projects 2026",
+      "noindex": false,
+      "words": 1692,
+      "links": 6,
+      "score": 92,
+      "issues": [
+        {
+          "type": "repeated-paragraph",
+          "detail": "shared with 2 other indexable pages"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "developers/asti-architetti",
+      "coll": "developers",
+      "slug": "asti-architetti",
+      "title": "Studio Asti Architetti Milan Architecture Profile 2026",
+      "noindex": false,
+      "words": 1436,
+      "links": 7,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1436 words (min 1500)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "developers/coima",
+      "coll": "developers",
+      "slug": "coima",
+      "title": "COIMA SGR Developer Profile Rome Milan Projects 2026",
+      "noindex": false,
+      "words": 1884,
+      "links": 12,
+      "score": 95,
+      "issues": [
+        {
+          "type": "missing-scenarios",
+          "detail": "no buyer scenarios"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "developers/damico-gruppo",
+      "coll": "developers",
+      "slug": "damico-gruppo",
+      "title": "D'Amico Gruppo Developer Profile: Ostuni Puglia Villas 2026",
+      "noindex": false,
+      "words": 1522,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "developers/engel-volkers-italy",
+      "coll": "developers",
+      "slug": "engel-volkers-italy",
+      "title": "Engel & Völkers Italy: Lake Como Luxury from €600k · 2026",
+      "noindex": false,
+      "words": 1677,
+      "links": 12,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "developers/frimm",
+      "coll": "developers",
+      "slug": "frimm",
+      "title": "FRIMM Developer Profile Milan Navigli Projects Okam 2026",
+      "noindex": false,
+      "words": 1399,
+      "links": 8,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1399 words (min 1500)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "developers/gate-away-partner-network",
+      "coll": "developers",
+      "slug": "gate-away-partner-network",
+      "title": "Gate-away Italy Partner Network Agency Profile 2026",
+      "noindex": false,
+      "words": 1454,
+      "links": 7,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1454 words (min 1500)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "developers/lendlease",
+      "coll": "developers",
+      "slug": "lendlease",
+      "title": "Lendlease Developer Profile Milan MIND Innovation 2026",
+      "noindex": false,
+      "words": 1462,
+      "links": 6,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1462 words (min 1500)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "developers/near-milan",
+      "coll": "developers",
+      "slug": "near-milan",
+      "title": "Near Milan EuroMilano Developer: UpTown Cascina Merlata 2028",
+      "noindex": false,
+      "words": 1821,
+      "links": 10,
+      "score": 92,
+      "issues": [
+        {
+          "type": "repeated-paragraph",
+          "detail": "shared with 2 other indexable pages"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "developers/nunziare-luxury-projects",
+      "coll": "developers",
+      "slug": "nunziare-luxury-projects",
+      "title": "Nunziare Luxury Projects Cecere Developer Profile 2026",
+      "noindex": false,
+      "words": 1409,
+      "links": 4,
+      "score": 92,
+      "issues": [
+        {
+          "type": "thin-content",
+          "detail": "1409 words (min 1500)"
+        }
+      ],
+      "action": "REWRITE_OR_NOINDEX"
+    },
+    {
+      "id": "developers/okam-italy",
+      "coll": "developers",
+      "slug": "okam-italy",
+      "title": "Okam Italy Developer Profile: Milan Navigli Projects 2026",
+      "noindex": false,
+      "words": 1763,
+      "links": 10,
+      "score": 88,
+      "issues": [
+        {
+          "type": "ai-language",
+          "detail": "family office"
+        },
+        {
+          "type": "repeated-paragraph",
+          "detail": "shared with 2 other indexable pages"
+        }
+      ],
+      "action": "REVIEW"
+    },
+    {
+      "id": "developers/ostuni-domus",
+      "coll": "developers",
+      "slug": "ostuni-domus",
+      "title": "Ostuni Domus Developer Profile: Turnkey Puglia Villas 2026",
+      "noindex": false,
+      "words": 1512,
+      "links": 10,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "developers/pregio-immobiliare",
+      "coll": "developers",
+      "slug": "pregio-immobiliare",
+      "title": "Pregio Immobiliare: Ostuni Lamia Turnkey Villas 2026",
+      "noindex": false,
+      "words": 1556,
+      "links": 8,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "developers/redo-sgr-italy",
+      "coll": "developers",
+      "slug": "redo-sgr-italy",
+      "title": "Redo SGR Italy Institutional Regeneration Profile 2026",
+      "noindex": false,
+      "words": 1631,
+      "links": 9,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "news/foreign-buyers-italy-5-5-billion-2025",
+      "coll": "news",
+      "slug": "foreign-buyers-italy-5-5-billion-2025",
+      "title": "Foreign Buyers Drive €5.5 Billion Italian | Italy News",
+      "noindex": false,
+      "words": 652,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "news/gate-away-international-buyers-report-2025",
+      "coll": "news",
+      "slug": "gate-away-international-buyers-report-2025",
+      "title": "Gate-away Report: US Leads Italy Searches | Italy News",
+      "noindex": false,
+      "words": 752,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "news/italy-residential-transactions-767000-2025",
+      "coll": "news",
+      "slug": "italy-residential-transactions-767000-2025",
+      "title": "Italy Residential Transactions Hit 767,000 | Italy News",
+      "noindex": false,
+      "words": 646,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    },
+    {
+      "id": "news/milan-living-sector-investment-2025",
+      "coll": "news",
+      "slug": "milan-living-sector-investment-2025",
+      "title": "Milan Living Sector Investment Update 2026 | Italy News",
+      "noindex": false,
+      "words": 678,
+      "links": 5,
+      "score": 100,
+      "issues": [],
+      "action": "KEEP"
+    }
+  ]
+}

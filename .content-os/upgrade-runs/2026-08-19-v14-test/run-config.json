@@ -1,0 +1,12 @@
+{
+  "runId": "2026-08-19-v14-test",
+  "startedAt": "2026-08-19T17:07:48.871Z",
+  "siteKey": "italian-estate-website",
+  "domain": "https://italian-estate.com/",
+  "topGeo": 50,
+  "batchSize": 5,
+  "skipPerf": false,
+  "skipFonts": true,
+  "dryRun": false,
+  "applySemi": false
+}

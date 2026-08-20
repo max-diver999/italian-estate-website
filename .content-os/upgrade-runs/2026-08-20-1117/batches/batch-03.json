@@ -1,0 +1,60 @@
+{
+  "batchNum": 3,
+  "files": [
+    {
+      "file": "src/content/projects/bliss-uptown-milan.mdx",
+      "url": "https://italian-estate.com/projects/bliss-uptown-milan/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/como-lakefront-residence.mdx",
+      "url": "https://italian-estate.com/projects/como-lakefront-residence/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/lecce-urbs20-villas.mdx",
+      "url": "https://italian-estate.com/projects/lecce-urbs20-villas/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/noto-baroque-masseria.mdx",
+      "url": "https://italian-estate.com/projects/noto-baroque-masseria/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/pescara-centro-apartments.mdx",
+      "url": "https://italian-estate.com/projects/pescara-centro-apartments/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

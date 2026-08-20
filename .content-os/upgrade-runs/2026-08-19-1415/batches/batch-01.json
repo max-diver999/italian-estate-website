@@ -1,0 +1,60 @@
+{
+  "batchNum": 1,
+  "files": [
+    {
+      "file": "src/content/compare/italy-vs-portugal-property-investment.mdx",
+      "url": "https://italian-estate.com/compare/italy-vs-portugal-property-investment/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 56,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/compare/italy-vs-france-property-investment.mdx",
+      "url": "https://italian-estate.com/compare/italy-vs-france-property-investment/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 61,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/tranio-rome-eur-apartment.mdx",
+      "url": "https://italian-estate.com/projects/tranio-rome-eur-apartment/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 62,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/unapavia-pavia-residential.mdx",
+      "url": "https://italian-estate.com/projects/unapavia-pavia-residential/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 62,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/ancona.mdx",
+      "url": "https://italian-estate.com/areas/ancona/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 63,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

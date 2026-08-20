@@ -1,0 +1,193 @@
+{
+  "runId": "2026-08-19-1345",
+  "blocks": {
+    "baseline": {
+      "status": "pass",
+      "steps": [
+        {
+          "script": "geo-citability-audit.mjs",
+          "ok": true,
+          "below90": 143,
+          "avgScore": 75
+        },
+        {
+          "script": "audit-titles-full.mjs",
+          "skip": "not on site"
+        },
+        {
+          "script": "audit-headings.mjs",
+          "skip": "not on site"
+        },
+        {
+          "label": "scripts/qa-corpus-signals.mjs",
+          "ok": false,
+          "cmd": "node scripts/qa-corpus-signals.mjs",
+          "ms": 879,
+          "tail": "  src/content/guides/buy-property-italy-foreigner.mdx: few-internal-links\n  src/content/guides/how-to-buy-italy-property-step-by-step.mdx: few-internal-links\n  src/content/guides/italy-flat-tax-regime-new-residents.mdx: few-internal-links\n  src/content/guides/italy-property-market-forecast-2026-2027.mdx: few-internal-links\n  src/content/guides/short-term-rental-rules-italy.mdx: few-internal-links\n  src/content/guides/digital-nomad-italy-property-guide.mdx: missing-scenarios\n  src/content/guides/italy-property-taxes-foreign-buyers-guide.mdx: missing-pros-cons\n  src/content/guides/best-regions-invest-italy-property-2026.mdx: over-bold\n  src/content/guides/due-diligence-italy-property.mdx: over-bold\n  src/content/guides/how-to-calculate-rental-yield-italy.mdx: over-bold\n  src/content/guides/italy-property-for-dutch-buyers.mdx: over-bold\n  src/content/guides/italy-property-for-irish-buyers.mdx: over-bold\n  src/content/guides/italy-property-for-israeli-buyers.mdx: over-bold\n  src/content/guides/puglia-property-investment-guide.mdx: over-bold\n  src/content/guides/us-tax-italy-rental-property.mdx: over-bold",
+          "stdout": "\n=== CORPUS SIGNALS GATE ===\nMDX scanned: 252\n❌ FAIL — 23 issue(s)\n\n  23× fix-queue-blocker\n\n  src/content/guides/molise-property-investment-guide.mdx: thin-content, few-internal-links, missing-pros-cons\n  src/content/guides/abruzzo-property-investment-guide.mdx: thin-content, missing-pros-cons\n  src/content/guides/airbnb-investment-italy-guide.mdx: thin-content, missing-pros-cons\n  src/content/guides/compromesso-italy-property-contract.mdx: thin-content, missing-scenarios\n  src/content/guides/how-to-buy-italy-property-remotely.mdx: thin-content\n  src/content/guides/is-italy-property-good-investment-2026.mdx: few-internal-links, over-bold\n  src/content/guides/marche-property-investment-guide.mdx: thin-content\n  src/content/guides/umbria-property-investment-guide.mdx: thin-content\n  src/content/guides/buy-property-italy-foreigner.mdx: few-internal-links\n  src/content/guides/how-to-buy-italy-property-step-by-step.mdx: few-internal-links\n  src/content/guides/italy-flat-tax-regime-new-residents.mdx: few-internal-links\n  src/content/guides/italy-property-market-forecast-2026-2027.mdx: few-internal-links\n  src/content/guides/short-term-rental-rules-italy.mdx: few-internal-links\n  src/content/guides/digital-nomad-italy-property-guide.mdx: missing-scenarios\n  src/content/guides/italy-property-taxes-foreign-buyers-guide.mdx: missing-pros-cons\n  src/content/guides/best-regions-invest-italy-property-2026.mdx: over-bold\n  src/content/guides/due-diligence-italy-property.mdx: over-bold\n  src/content/guides/how-to-calculate-rental-yield-italy.mdx: over-bold\n  src/content/guides/italy-property-for-dutch-buyers.mdx: over-bold\n  src/content/guides/italy-property-for-irish-buyers.mdx: over-bold\n  src/content/guides/italy-property-for-israeli-buyers.mdx: over-bold\n  src/content/guides/puglia-property-investment-guide.mdx: over-bold\n  src/content/guides/us-tax-italy-rental-property.mdx: over-bold\n\n",
+          "stderr": "",
+          "status": 1
+        },
+        {
+          "label": "qa:full:quick",
+          "ok": false,
+          "cmd": "npm run qa:full:quick",
+          "ms": 104319,
+          "tail": "      src/content/guides/puglia-property-investment-guide.mdx: over-bold\n      src/content/guides/us-tax-italy-rental-property.mdx: over-bold\n\n  ✗ Content validate (qa-audit, full corpus) (exit 1)\n    [guides/italy-property-taxes-foreign-buyers-guide] (4884w) missing pros/cons\n    [guides/molise-property-investment-guide] (2277w) intLinks:4<5, missing pros/cons\n    [guides/puglia-property-investment-guide] (7348w) overBold:38\n    [guides/short-term-rental-rules-italy] (4055w) intLinks:1<5\n    [guides/us-tax-italy-rental-property] (3961w) overBold:37\n    \n    Articles with issues: 20/252\n    \n    \n    ❌ validate:content FAILED\n───────────────────────────────────────────",
+          "stdout": "\n> italian-estate-website@0.1.0 qa:full:quick\n> node scripts/qa-full.mjs --quick\n\n\n═══════════════════════════════════════════\n  QA FULL — italian-estate-website\n  quick: true | local-rendered: false | live-http: false\n═══════════════════════════════════════════\n\n▶ Corpus signals (em-dash, padding dupes, fix-queue)… FAIL (0.9s)\n▶ Content validate (qa-audit, full corpus)… FAIL (0.4s)\n▶ Image URLs (HTTP 200 — all src/, not just heroImage)… PASS (98.0s)\n▶ GEO citability (--changed MDX)… PASS (0.3s)\n▶ HTTP smoke (live sitemap + lead API)… PASS (3.7s)\n▶ Rendered HTML (live)… PASS (0.4s)\n\n───────────────────────────────────────────\n  RESULT: 4/6 PASS\n\n  FAILURES:\n\n  ✗ Corpus signals (em-dash, padding dupes, fix-queue) (exit 1)\n      src/content/guides/digital-nomad-italy-property-guide.mdx: missing-scenarios\n      src/content/guides/italy-property-taxes-foreign-buyers-guide.mdx: missing-pros-cons\n      src/content/guides/best-regions-invest-italy-property-2026.mdx: over-bold\n      src/content/guides/due-diligence-italy-property.mdx: over-bold\n      src/content/guides/how-to-calculate-rental-yield-italy.mdx: over-bold\n      src/content/guides/italy-property-for-dutch-buyers.mdx: over-bold\n      src/content/guides/italy-property-for-irish-buyers.mdx: over-bold\n      src/content/guides/italy-property-for-israeli-buyers.mdx: over-bold\n      src/content/guides/puglia-property-investment-guide.mdx: over-bold\n      src/content/guides/us-tax-italy-rental-property.mdx: over-bold\n\n  ✗ Content validate (qa-audit, full corpus) (exit 1)\n    [guides/italy-property-taxes-foreign-buyers-guide] (4884w) missing pros/cons\n    [guides/molise-property-investment-guide] (2277w) intLinks:4<5, missing pros/cons\n    [guides/puglia-property-investment-guide] (7348w) overBold:38\n    [guides/short-term-rental-rules-italy] (4055w) intLinks:1<5\n    [guides/us-tax-italy-rental-property] (3961w) overBold:37\n    \n    Articles with issues: 20/252\n    \n    \n    ❌ validate:content FAILED\n───────────────────────────────────────────\n\n",
+          "stderr": "",
+          "status": 1
+        }
+      ]
+    },
+    "corpus-mechanics": {
+      "status": "pass",
+      "steps": [
+        {
+          "script": "fix-typographic-dashes.mjs",
+          "skip": "not on site"
+        }
+      ]
+    },
+    "titles": {
+      "status": "fail",
+      "steps": [
+        {
+          "script": "audit-titles-full.mjs",
+          "skip": "missing"
+        },
+        {
+          "hook": "prepareTitleP0",
+          "ok": false,
+          "reason": "no title-full-audit.json — run audit-titles-full first"
+        },
+        {
+          "script": "generate-title-p0.mjs",
+          "skip": "not on site"
+        },
+        {
+          "script": "apply-title-p0.mjs",
+          "skip": "not on site"
+        },
+        {
+          "script": "generate-title-full.mjs",
+          "skip": "not on site"
+        },
+        {
+          "script": "apply-title-full.mjs",
+          "skip": "not on site"
+        }
+      ]
+    },
+    "headings": {
+      "status": "fail",
+      "steps": [
+        {
+          "script": "audit-headings.mjs",
+          "skip": "missing"
+        },
+        {
+          "script": "fix-heading-duplicate-h1.mjs",
+          "skip": "not on site"
+        },
+        {
+          "script": "fix-heading-news-h1.mjs",
+          "skip": "not on site"
+        }
+      ]
+    },
+    "meta": {
+      "status": "pass",
+      "steps": [
+        {
+          "script": "fix-short-meta-descriptions.mjs",
+          "skip": "not on site"
+        },
+        {
+          "script": "fix-news-meta.mjs",
+          "skip": "not on site"
+        }
+      ]
+    },
+    "geo-queue": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "buildGeoQueue",
+          "pending": 50,
+          "total": 50
+        }
+      ]
+    },
+    "perf": {
+      "status": "fail",
+      "steps": [
+        {
+          "hook": "runTechPreflight",
+          "ok": false,
+          "errors": 3,
+          "warnings": 9
+        },
+        {
+          "label": "audit:images",
+          "ok": true,
+          "cmd": "npm run audit:images",
+          "ms": 97428,
+          "tail": "> italian-estate-website@0.1.0 audit:images\n> node scripts/audit-all-images.mjs --fail\n\n=== IMAGE URL AUDIT ===\nURLs checked: 135\nBroken: 0\n✅ All image URLs return HTTP 200",
+          "stdout": "\n> italian-estate-website@0.1.0 audit:images\n> node scripts/audit-all-images.mjs --fail\n\n=== IMAGE URL AUDIT ===\nURLs checked: 135\nBroken: 0\n✅ All image URLs return HTTP 200\n",
+          "stderr": "",
+          "status": 0
+        }
+      ],
+      "error": "3 обязательных проблем скорости/техники"
+    },
+    "infra": {
+      "status": "pass",
+      "steps": [
+        {
+          "label": "healthcheck",
+          "ok": true,
+          "cmd": "npm run healthcheck",
+          "ms": 2134,
+          "tail": "\nSite: https://italian-estate.com\n\n[http] Production HTTP checks\n✓ sitemap-index.xml: 200\n✓ /: 200\n✓ /guides/: 200\n✓ /compare/: 200\n✓ /get-shortlist/: 200\n✓ /contact/: 200\n✓ /guides/abruzzo-property-investment-guide/: 200\n✓ /compare/ancona-vs-urbino-property/: 200\n✓ POST /api/lead/: 200\n✓ owner email notify: ok\n✓ POST /api/wa-intent/: 200",
+          "stdout": "\n> italian-estate-website@0.1.0 healthcheck\n> node scripts/post-deploy-smoke.mjs --http-only\n\nSite: https://italian-estate.com\n\n[http] Production HTTP checks\n✓ sitemap-index.xml: 200\n✓ /: 200\n✓ /guides/: 200\n✓ /compare/: 200\n✓ /get-shortlist/: 200\n✓ /contact/: 200\n✓ /guides/abruzzo-property-investment-guide/: 200\n✓ /compare/ancona-vs-urbino-property/: 200\n✓ POST /api/lead/: 200\n✓ owner email notify: ok\n✓ POST /api/wa-intent/: 200\n",
+          "stderr": "",
+          "status": 0
+        }
+      ]
+    },
+    "geo-agent": {
+      "status": "pass",
+      "steps": [
+        {
+          "hook": "writeAgentBriefs",
+          "batches": 10
+        }
+      ]
+    },
+    "report": {
+      "status": "pass",
+      "steps": []
+    }
+  },
+  "metrics": {
+    "before": null,
+    "after": null
+  },
+  "agentBatches": {
+    "total": 10,
+    "completed": 0,
+    "pending": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  }
+}

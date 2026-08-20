@@ -1,0 +1,60 @@
+{
+  "batchNum": 5,
+  "files": [
+    {
+      "file": "src/content/projects/tranio-florence-historic-center.mdx",
+      "url": "https://italian-estate.com/projects/tranio-florence-historic-center/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 58,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/areas/cisternino.mdx",
+      "url": "https://italian-estate.com/areas/cisternino/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 59,
+      "collection": "areas",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/compare/perugia-vs-assisi-property.mdx",
+      "url": "https://italian-estate.com/compare/perugia-vs-assisi-property/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 59,
+      "collection": "compare",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/fivizzano-village-property.mdx",
+      "url": "https://italian-estate.com/projects/fivizzano-village-property/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 59,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    },
+    {
+      "file": "src/content/projects/inspire-uptown-milan.mdx",
+      "url": "https://italian-estate.com/projects/inspire-uptown-milan/",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "geoScore": 59,
+      "collection": "projects",
+      "needsWork": true,
+      "source": "low-geo-fill"
+    }
+  ]
+}

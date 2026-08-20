@@ -1,0 +1,483 @@
+{
+  "version": 2,
+  "rubric": {
+    "answer": 0.3,
+    "selfContain": 0.25,
+    "structure": 0.2,
+    "stats": 0.15,
+    "unique": 0.1
+  },
+  "minScore": 90,
+  "filesScanned": 252,
+  "commercialScanned": 233,
+  "avgCommercialScore": 82,
+  "categoryAvgs": {
+    "answer": 86,
+    "selfContain": 77,
+    "structure": 80,
+    "stats": 94,
+    "unique": 61
+  },
+  "filesBelowMin": 116,
+  "siteGaps": [],
+  "worstFiles": [
+    {
+      "file": "src/content/compare/italy-vs-portugal-property-investment.mdx",
+      "score": 56,
+      "grade": "D",
+      "coverage": 40,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Foreign buyer market dynamics (22w)",
+        "citability-blocks:0/2 (need 130-170w + stat)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Risks and considerations by market",
+          "score": 23
+        },
+        {
+          "heading": "Investment strategy implications",
+          "score": 36
+        },
+        {
+          "heading": "Property management and ongoing operations",
+          "score": 44
+        }
+      ]
+    },
+    {
+      "file": "src/content/compare/italy-vs-france-property-investment.mdx",
+      "score": 61,
+      "grade": "C",
+      "coverage": 18,
+      "citabilityBlocks": 1,
+      "issues": [
+        "thin-h2-open:Tax Architecture: IFI France vs IMU Italy (12w)",
+        "thin-h2-open:Residency and Golden Visa Context (18w)",
+        "citability-blocks:1/2 (need 130-170w + stat)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Foreign Buyer Rules and Purchase Process",
+          "score": 45
+        },
+        {
+          "heading": "Tax Architecture: IFI France vs IMU Italy",
+          "score": 48
+        },
+        {
+          "heading": "Residency and Golden Visa Context",
+          "score": 51
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/tranio-rome-eur-apartment.mdx",
+      "score": 62,
+      "grade": "C",
+      "coverage": 44,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "Location and Accessibility",
+          "score": 52
+        },
+        {
+          "heading": "EUR Corporate Tenant Landscape",
+          "score": 63
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/unapavia-pavia-residential.mdx",
+      "score": 62,
+      "grade": "C",
+      "coverage": 44,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "Buyer Scenarios",
+          "score": 49
+        },
+        {
+          "heading": "Location and Connectivity",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "file": "src/content/areas/ancona.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 38,
+      "citabilityBlocks": 2,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Transportation and Regional Access",
+          "score": 38
+        },
+        {
+          "heading": "Overview",
+          "score": 53
+        },
+        {
+          "heading": "Foreign Buyer Practicalities",
+          "score": 62
+        }
+      ]
+    },
+    {
+      "file": "src/content/areas/arezzo.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 25,
+      "citabilityBlocks": 0,
+      "issues": [
+        "citability-blocks:0/2 (need 130-170w + stat)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Centro District Deep Dive",
+          "score": 49
+        },
+        {
+          "heading": "Transportation and Regional Access",
+          "score": 52
+        },
+        {
+          "heading": "Antiques Fair and Event Calendar",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "file": "src/content/areas/chieti.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 11,
+      "citabilityBlocks": 3,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Overview",
+          "score": 55
+        },
+        {
+          "heading": "Transportation and Regional Access",
+          "score": 59
+        },
+        {
+          "heading": "Hill Town Practicalities and Renovation",
+          "score": 60
+        }
+      ]
+    },
+    {
+      "file": "src/content/areas/como.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 31,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Rental Yields and Income Modeling (24w)",
+        "citability-blocks:0/2 (need 130-170w + stat)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Related Investment Guides",
+          "score": 32
+        },
+        {
+          "heading": "Market Outlook: Gateway Role Through 2028",
+          "score": 50
+        },
+        {
+          "heading": "Purchase Process and Due Diligence Checklist",
+          "score": 53
+        }
+      ]
+    },
+    {
+      "file": "src/content/compare/pescara-vs-chieti-property.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 29,
+      "citabilityBlocks": 3,
+      "issues": [
+        "thin-h2-open:Transportation and Regional Positioning (28w)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Resale Liquidity and Exit Profiles",
+          "score": 52
+        },
+        {
+          "heading": "Price Comparison and Entry Math",
+          "score": 59
+        },
+        {
+          "heading": "Coastal STR, CIN Licensing, and Compliance",
+          "score": 60
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/amalfi-ravello-villa.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 44,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "Location and Accessibility",
+          "score": 52
+        },
+        {
+          "heading": "Pros and Cons",
+          "score": 59
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/bliss-uptown-milan.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 36,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Purchase Process for On-Market UpTown Stock",
+          "score": 36
+        },
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 51
+        },
+        {
+          "heading": "Investment Pros and Cons",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/como-lakefront-residence.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 38,
+      "citabilityBlocks": 0,
+      "issues": [
+        "thin-h2-open:Specifications Typical on New Build Lakefront (6w)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Investment Pros and Cons",
+          "score": 36
+        },
+        {
+          "heading": "Specifications Typical on New Build Lakefront",
+          "score": 46
+        },
+        {
+          "heading": "Off-Plan vs Completed Purchase",
+          "score": 47
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/lecce-urbs20-villas.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 55,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Purchase Process",
+          "score": 23
+        },
+        {
+          "heading": "Buyer Scenarios",
+          "score": 49
+        },
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 51
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/noto-baroque-masseria.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 44,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "About Noto Masseria Stock",
+          "score": 44
+        },
+        {
+          "heading": "Buyer Fit and Risks",
+          "score": 48
+        },
+        {
+          "heading": "Location and Accessibility",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/pescara-centro-apartments.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 33,
+      "citabilityBlocks": 1,
+      "issues": [
+        "thin-h2-open:Comparison Table (21w)"
+      ],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Themes",
+          "score": 38
+        },
+        {
+          "heading": "Rental and Yield Mechanics",
+          "score": 59
+        },
+        {
+          "heading": "Comparison Table",
+          "score": 59
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/porto-cervo-villa-development.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 63,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 23
+        },
+        {
+          "heading": "Buyer Scenarios",
+          "score": 49
+        },
+        {
+          "heading": "Consorzio and Marina Compliance",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/semproniano-farmhouse-restoration.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 33,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 36
+        },
+        {
+          "heading": "Location and Accessibility",
+          "score": 52
+        },
+        {
+          "heading": "Pros and Cons",
+          "score": 59
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/tranio-sicily-noto-stone-house.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 56,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 36
+        },
+        {
+          "heading": "Buyer Scenarios",
+          "score": 49
+        },
+        {
+          "heading": "Location and Accessibility",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "file": "src/content/projects/valle-d-itria-trulli-restoration.mdx",
+      "score": 63,
+      "grade": "C",
+      "coverage": 56,
+      "citabilityBlocks": 0,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Due Diligence Checklist",
+          "score": 36
+        },
+        {
+          "heading": "Location Context Across Valle d'Itria",
+          "score": 47
+        },
+        {
+          "heading": "Heritage and Regulatory Framework",
+          "score": 48
+        }
+      ]
+    },
+    {
+      "file": "src/content/areas/campobasso.mdx",
+      "score": 64,
+      "grade": "C",
+      "coverage": 11,
+      "citabilityBlocks": 8,
+      "issues": [],
+      "worstBlocks": [
+        {
+          "heading": "Earthquake Zone and Building Compliance",
+          "score": 57
+        },
+        {
+          "heading": "Transportation and Regional Access",
+          "score": 59
+        },
+        {
+          "heading": "TL;DR Answer",
+          "score": 62
+        }
+      ]
+    }
+  ]
+}
