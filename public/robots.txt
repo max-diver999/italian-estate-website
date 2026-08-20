@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /thanks/
-Disallow: /site-report/
 
 User-agent: GPTBot
 Allow: /

@@ -19,6 +19,7 @@
     "audit:templates": "node scripts/audit-templates.mjs",
     "check-links": "node scripts/check-links.mjs",
     "check-links:changed": "node scripts/check-links.mjs --changed",
+    "test:auth": "node scripts/test-internal-auth.mjs",
     "geo:upgrade": "node scripts/fix-italy-geo-upgrade.mjs",
     "qa:corpus": "node scripts/qa-corpus-signals.mjs",
     "qa:full": "node scripts/qa-full.mjs",
