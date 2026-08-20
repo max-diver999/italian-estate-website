@@ -142,6 +142,13 @@ for (const pair of index.nearPairs()) {
 
 const baseline = loadBaseline();
 const updateBaseline = has('--update-baseline');
+/** Metrics to re-derive outright (use when a detector definition changed). */
+const forceMetrics = new Set(
+  valOf('--force-metrics', '')
+    .split(',')
+    .map((x) => x.trim())
+    .filter(Boolean),
+);
 const strict = has('--strict'); // ignore the ratchet, hold everything to the full standard
 
 const failures = [];
@@ -267,7 +274,11 @@ if (updateBaseline) {
       }
     }
     for (const k of ['words', 'geo']) {
-      if (m[k] > (prev[k] ?? 0)) merged[k] = m[k];
+      // Normally these may only rise. --force-metrics re-derives them outright,
+      // which is required when a DETECTOR definition changes rather than the
+      // content: wordCount stopped counting URL tokens, so every recorded value
+      // was measuring something the gate no longer measures.
+      if (forceMetrics.has(k) || m[k] > (prev[k] ?? 0)) merged[k] = m[k];
     }
     next[id] = merged;
   }

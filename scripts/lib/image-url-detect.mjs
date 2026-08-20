@@ -13,7 +13,9 @@ export function isImageUrl(url) {
   }
   return (
     url.includes('cloudinary.com') ||
-    url.includes('wikimedia') ||
+    // upload.wikimedia.org serves files; commons.wikimedia.org/wiki/File:… is a
+    // description PAGE and must not be probed as an image.
+    url.includes('upload.wikimedia.org') ||
     url.includes('unsplash') ||
     url.includes('images.unsplash') ||
     /\.(jpg|jpeg|png|webp|gif|svg|avif)(\?|$)/i.test(url)

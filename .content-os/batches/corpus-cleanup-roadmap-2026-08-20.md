@@ -1,7 +1,7 @@
 # Corpus cleanup roadmap — italian-estate.com
 
 **Date:** 2026-08-20 · **Source:** `.content-os/reports/AUDIT-REPORT-2026-08-20.md`
-**Status:** Waves 0 and 1 **DONE** (approved 2026-08-20, `lock.json` → `wave-0+1`). Waves 2–8 awaiting «ок».
+**Status:** Waves 0, 1 and 2 **DONE** (2026-08-20). Waves 3–8 awaiting «ок».
 **Rule:** ≤25 slugs per wave / per PR. Gates on every PR:
 `npm run fix:markdown-glue -- --dry` (0 files) → `npm run validate:content:changed` → `npm run validate:batch -- --changed`.
 
@@ -24,7 +24,7 @@ handful of file edits** and cost almost nothing to review. Content waves start a
 |---:|---|---|---:|---|
 | ~~0~~ | ~~Detector gaps + broken gates~~ | **DONE** — 11 scripts, 3 new | — (prevents recurrence) | no |
 | ~~1~~ | ~~Template-layer P0~~ | **DONE** — 41 files | **278** | 16 files, whitespace/href/title only |
-| 2 | Hero images | 63 image URLs + frontmatter | **111** | frontmatter only |
+| ~~2~~ | ~~Hero images~~ | **DONE** — 166 images (111 hero + 55 inline) | **111** | image URLs only |
 | 3 | Fact registry + IMU reconciliation | ≤25 slugs | 25 | yes |
 | 4 | Within-file duplicate paragraphs | ≤25 slugs ×3 batches | 88 | yes |
 | 5 | Template openers + Quick-answer echo | ≤25 slugs ×2 batches | 47 | yes |
@@ -71,7 +71,7 @@ fixing detectors guarantees this happens again on the next refresh — which is 
 
 ---
 
-## Wave 2 — Hero images off Wikimedia (fixes 111 pages)
+## ~~Wave 2~~ — Hero images off Wikimedia ✅ DONE 2026-08-20
 
 63 distinct Wikimedia URLs, 42 of them full-resolution originals, currently **429-ing**.
 
@@ -245,10 +245,8 @@ save.
 
 ## Next approval
 
-**Wave 2 — hero images off Wikimedia.** 111 pages, frontmatter only, no body edits. It is the largest
-remaining Core Web Vitals win and the only wave that fixes *visually broken* pages (Wikimedia is returning
-429 on hotlinked heroes today).
+**Wave 3 — fact registry + IMU reconciliation.** The highest-value content wave: five mutually
+contradictory IMU bands is the single biggest AEO/GEO liability in the corpus, and `market-stats.json`
+still holds **no numeric values at all**. Two PRs, content-os first.
 
-After that, **Wave 3** (fact registry + IMU) is the highest-value content wave: five contradictory IMU
-bands is the single biggest AEO/GEO liability in the corpus, and `market-stats.json` still holds no
-numeric values at all.
+Wave 4 (within-file duplicates, 88 files) is the biggest volume win and can follow immediately after.

@@ -1,18 +1,18 @@
 {
   "active": true,
-  "approved_wave": "wave-0+1",
+  "approved_wave": "wave-2",
   "approved_by": "Maxim",
   "approved_at": "2026-08-20",
   "approved_slugs": [],
-  "approved_scope": "Detectors + broken gates (W0) and template layer (W1). No MDX content edits. Files: scripts/**, src/layouts/**, src/components/**, src/pages/**, src/data/**.",
+  "approved_scope": "Wave 2 — hero and inline images off hotlinked upload.wikimedia.org onto Cloudinary. Frontmatter + image URLs only, no prose edits.",
   "decisions": {
     "relatedSlugs": "build RelatedGuides component (gate already references it in more-content-gate.mjs)",
     "title_length": "trim the ' | Italian Estate' suffix in BaseLayout rather than rewriting 187 frontmatter titles",
     "pr_split": "W0 and W1 in one PR"
   },
-  "last_completed_batch": null,
-  "last_completed_at": null,
-  "source": "Maxim approved W0+W1 after AUDIT-REPORT-2026-08-20",
+  "last_completed_batch": "wave-0+1",
+  "last_completed_at": "2026-08-20",
+  "source": "Maxim approved W2 after W0+W1 landed",
   "pilot_goal": "Corpus cleanup audit (italian-estate.com) — Phuket EN pattern",
   "pilot_mode": "corpus_cleanup_audit",
   "autonomy_policy": "more-group-content-os/policies/claude-autonomous-decisions.md",
@@ -20,5 +20,5 @@
   "writing_gates": "more-group-content-os/policies/geo-aeo-writing-gates.md (fix:markdown-glue --dry, validate:batch on changed)",
   "roadmap": ".content-os/batches/corpus-cleanup-roadmap-2026-08-20.md",
   "audit_report": ".content-os/reports/AUDIT-REPORT-2026-08-20.md",
-  "note": "W0 repairs validate:content + validate:batch, which crash on main. W1 touches no MDX."
+  "note": "W2 migrated 166 images (111 heroes + 55 inline) across 111 pages. Zero upload.wikimedia.org references remain in src/."
 }

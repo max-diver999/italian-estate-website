@@ -25,7 +25,15 @@ export function parseMdx(raw) {
 }
 
 export function wordCount(body) {
-  return (body.match(/\b[\w']+\b/g) || []).length;
+  // Strip URLs and image/link targets first. Counting them inflated every word
+  // count in the corpus and made the number depend on how long a CDN path is:
+  // swapping a Wikimedia URL for a shorter Cloudinary one "lost" words that were
+  // never prose.
+  const prose = String(body)
+    .replace(/!\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/https?:\/\/\S+/g, ' ');
+  return (prose.match(/\b[\w']+\b/g) || []).length;
 }
 
 export function emDashPer500(body) {
@@ -197,8 +205,17 @@ export function humanizeBodyLines(body, { includeTables = true } = {}) {
     }
 
     if ((s.match(/—/g) || []).length > 0 && !isTable) {
-      s = s.replace(/—/g, ', ');
+      // Consume the whitespace on BOTH sides. The previous form was
+      // `s.replace(/—/g, ', ')`, which left the space in front of the dash in
+      // place: "research —not advice" became "research , not advice". That is
+      // the defect that shipped to every page of the site via the footer, the
+      // article disclaimer and the site-wide meta description, and it survived
+      // three audits because nothing ever looked at src/ outside src/content.
+      s = s.replace(/\s*—\s*/g, ', ');
     }
+
+    // Never emit doubled or orphaned punctuation, whatever route produced it.
+    s = s.replace(/\s+,/g, ',').replace(/,\s*,+/g, ',').replace(/,(\S)/g, ', $1');
 
     if (s !== before) changed++;
     return s;
@@ -245,7 +262,9 @@ export function forceUnderEmLimit(body, emLimit) {
     if (emPer500 <= emLimit) break;
     const next = s.replace(/ — /, ', ');
     if (next === s) {
-      s = s.replace(/—/, ',');
+      // Same fix as humanizeBodyLines: swallow surrounding whitespace so this
+      // cannot leave " ," behind.
+      s = s.replace(/\s*—\s*/, ', ');
       if (s === next) break;
     } else {
       s = next;

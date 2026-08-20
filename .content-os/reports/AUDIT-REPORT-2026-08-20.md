@@ -549,3 +549,71 @@ the corpus actually improved. Now the debt is a number in a file that can only g
 816 within-page near-duplicates, 66 cross-page exact duplicates, 6,564 cross-page near-duplicate pairs,
 36 files below GEO 90, 96 below 2,500 words, 138 files with legacy blockers.** Waves 3–8 drive those to
 zero, and no PR can raise them.
+
+---
+
+## 8. Wave 2 — delivered 2026-08-20
+
+### P0-5 closed, and it was worse than measured
+
+The audit counted **111 hotlinked heroes**. Re-checking during the wave found **55 inline body images**
+on top of those — markdown `![alt](url)` rendering as a bare `<img>` with no `srcset` and no dimensions.
+**166 images across 111 pages**, all now on Cloudinary. `grep -r "upload.wikimedia" src/` returns **0**.
+
+### Measured delivery, ten sampled heroes
+
+| Page | Wikimedia (before) | Cloudinary (after) |
+|---|---|---|
+| `areas/genoa` | **4,685 KB** | 385 KB |
+| `areas/arezzo` | **2,571 KB** | 195 KB |
+| `areas/carovigno` | **2,252 KB** | 181 KB |
+| `areas/ancona` | 619 KB | 72 KB |
+| `areas/cisternino` | 598 KB | 223 KB |
+| `areas/alba`, `assisi`, `bari`, `bologna`, `langhe` | **HTTP 429 — refused** | 95–386 KB |
+
+**Five of ten sampled heroes returned 429**, i.e. roughly half of these pages were shipping a broken LCP
+element to real visitors. Of the ones that did load, the median was **2,252 KB** — as the largest
+contentful paint, uncapped, with no `srcset`.
+
+After: median **191 KB** WebP at 1200px, with 640/960 srcset steps (mobile now gets ~47 KB where it
+previously got a multi-megabyte JPEG or nothing at all). Hero `<img>` elements carrying a `srcset`:
+**141 → 252 of 252**.
+
+### Attribution — a licensing gap nobody had flagged
+
+68 distinct Commons files; **62 are CC BY or CC BY-SA**, which require crediting the author and naming
+the licence. The site credited nobody. The migration reads the Commons API for licence and author per
+file, records them in `scripts/reports/hero-migration-manifest.json`, and a new **`/image-credits`** page
+(linked from the footer) publishes the credit for all 68 files with links to source and licence.
+
+### Found during the wave: the code that manufactured the P0-2 scars
+
+`scripts/lib/human-signals.mjs` → `humanizeBodyLines()` ended with `s.replace(/—/g, ', ')`. That does not
+consume the space **before** the dash:
+
+```
+"Independent research —not advice."  ->  "Independent research , not advice."
+```
+
+which is verbatim the footer string shipping on all 278 pages. `forceUnderEmLimit()` had the same bug on
+its fallback branch. `scripts/fix-human-corpus-signals.mjs` calls both — so re-running the repo's own
+"humanise" tool would have re-created every scar Wave 1 removed.
+
+Both now swallow whitespace on either side and strip any doubled or orphaned punctuation afterwards.
+**This was the recurrence mechanism**: the cleanup tool and the defect were the same code.
+
+### Two more detector corrections
+
+- **`wordCount()` counted URL tokens as words.** Every body word count in the corpus was inflated by its
+  own link targets, and swapping a long Wikimedia URL for a shorter Cloudinary one "lost" words that were
+  never prose. Now strips URLs and link targets first; baselines re-derived with `--force-metrics`.
+- **`isImageUrl()` treated any `wikimedia` URL as an image**, so the credits page's
+  `commons.wikimedia.org/wiki/File:…` description links were probed and 404'd. Narrowed to
+  `upload.wikimedia.org`, the file host.
+
+### Gates
+
+All eight pass: `fix:markdown-glue --dry` · `validate:content:changed` · `validate:batch --changed` ·
+`audit:templates` · `check-links` · `qa:corpus` · `audit:images` (287 URLs, 0 broken) ·
+`audit-rendered-live --local --fail`.
+
