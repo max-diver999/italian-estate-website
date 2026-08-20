@@ -1,18 +1,18 @@
 {
   "active": true,
-  "approved_wave": "wave-2",
+  "approved_wave": "wave-3 (paused for sign-off)",
   "approved_by": "Maxim",
   "approved_at": "2026-08-20",
   "approved_slugs": [],
-  "approved_scope": "Wave 2 — hero and inline images off hotlinked upload.wikimedia.org onto Cloudinary. Frontmatter + image URLs only, no prose edits.",
+  "approved_scope": "Wave 3 step 1 done: market-stats.json populated. Step 2 (reconcile <=25 slugs) BLOCKED — tax rates need a tier A source or commercialista sign-off; see .content-os/reports/FACT-CONFLICTS-2026-08-20.md",
   "decisions": {
     "relatedSlugs": "build RelatedGuides component (gate already references it in more-content-gate.mjs)",
     "title_length": "trim the ' | Italian Estate' suffix in BaseLayout rather than rewriting 187 frontmatter titles",
     "pr_split": "W0 and W1 in one PR"
   },
-  "last_completed_batch": "wave-0+1",
+  "last_completed_batch": "wave-2 + site-report lockdown",
   "last_completed_at": "2026-08-20",
-  "source": "Maxim approved W2 after W0+W1 landed",
+  "source": "Maxim approved W3 after W2 landed",
   "pilot_goal": "Corpus cleanup audit (italian-estate.com) — Phuket EN pattern",
   "pilot_mode": "corpus_cleanup_audit",
   "autonomy_policy": "more-group-content-os/policies/claude-autonomous-decisions.md",
@@ -20,5 +20,5 @@
   "writing_gates": "more-group-content-os/policies/geo-aeo-writing-gates.md (fix:markdown-glue --dry, validate:batch on changed)",
   "roadmap": ".content-os/batches/corpus-cleanup-roadmap-2026-08-20.md",
   "audit_report": ".content-os/reports/AUDIT-REPORT-2026-08-20.md",
-  "note": "W2 migrated 166 images (111 heroes + 55 inline) across 111 pages. Zero upload.wikimedia.org references remain in src/."
+  "note": "Egress proxy blocks agenziaentrate.gov.it, so tax values are tier B only. legal-core.json forbids inventing bands. No MDX tax numbers were changed."
 }
