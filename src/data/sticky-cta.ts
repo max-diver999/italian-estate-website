@@ -114,7 +114,7 @@ export const STICKY_TIER_ENTRY = {
 
 export const STICKY_TIER_MID = {
   title: 'Mid-market Italy shortlist',
-  subtitle: '€300k–€800k matched',
+  subtitle: '€300k-€800k matched',
   buttonText: 'Mid options',
   buttonHref: '#lead-form',
   ctaId: 'sticky_tier_mid',

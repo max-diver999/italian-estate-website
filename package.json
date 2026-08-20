@@ -13,6 +13,7 @@
     "healthcheck": "node scripts/post-deploy-smoke.mjs --http-only",
     "validate:content": "node scripts/qa-audit.mjs",
     "validate:content:changed": "node scripts/qa-audit.mjs --changed",
+    "validate:batch": "node scripts/batch-writing-gate.mjs --changed",
     "geo:audit": "node scripts/geo-citability-audit.mjs",
     "geo:upgrade": "node scripts/fix-italy-geo-upgrade.mjs",
     "qa:corpus": "node scripts/qa-corpus-signals.mjs",
@@ -22,6 +23,7 @@
     "prepush:gate": "node scripts/pre-push-gate.mjs",
     "setup:hooks": "git config core.hooksPath .githooks && chmod +x .githooks/pre-push && echo 'Git hooks → .githooks (pre-push runs validate:content + build on MDX changes)'",
     "fix:queue": "node scripts/fix-batch-queue.mjs",
+    "fix:markdown-glue": "node scripts/fix-markdown-glue-and-slug-links.mjs",
     "fix:card": "node scripts/fix-content-card.mjs",
     "refresh:protected": "node scripts/refresh-protected-slugs.mjs",
     "audit:rendered": "node scripts/audit-rendered-live.mjs",
@@ -37,15 +39,21 @@
     "images:upload:dry": "python3 scripts/upload-mexico-cloudinary.py --collection all --dry-run",
     "images:rollout": "node scripts/rollout-mexico-cloudinary.mjs",
     "images:rollout:content": "node scripts/rollout-mexico-cloudinary-content.mjs",
-    "audit:images": "node scripts/audit-all-images.mjs --fail"
+    "audit:images": "node scripts/audit-all-images.mjs --fail",
+    "upgrade-pack": "node ../more-group-content-os/scripts/upgrade-pack/run.mjs --phase plan",
+    "upgrade-pack:continue": "node ../more-group-content-os/scripts/upgrade-pack/run.mjs --phase continue",
+    "upgrade-pack:audit": "node ../more-group-content-os/scripts/upgrade-pack/run.mjs --phase 0",
+    "upgrade-pack:prepare": "node ../more-group-content-os/scripts/upgrade-pack/run.mjs --phase prepare --apply",
+    "upgrade-pack:finalize": "node ../more-group-content-os/scripts/upgrade-pack/run.mjs --phase 9-10"
   },
   "dependencies": {
-    "google-auth-library": "^10.6.2",
     "@astrojs/mdx": "5.0.2",
     "@astrojs/sitemap": "3.7.1",
     "@astrojs/vercel": "10.0.2",
+    "@fontsource/dm-sans": "^5.3.0",
     "@tailwindcss/vite": "4.2.2",
     "astro": "6.0.8",
+    "google-auth-library": "^10.6.2",
     "tailwindcss": "4.2.2"
   }
 }

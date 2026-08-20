@@ -2,6 +2,8 @@
 import BaseLayout from './BaseLayout.astro';
 import LeadForm from '../components/LeadForm.astro';
 import FaqBlock from '../components/FaqBlock.astro';
+import ResponsiveImage from '../components/ResponsiveImage.astro';
+import { responsiveCloudinary } from '../lib/cloudinary';
 import { SITE } from '../data/site';
 import { resolveStickyCta } from '../../scripts/lib/italian-estate-cta-router.mjs';
 
@@ -102,6 +104,7 @@ const breadcrumbSchema = {
 };
 
 const schemas = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
+const heroPreload = heroImage ? responsiveCloudinary(heroImage, 'hero') : null;
 ---
 <BaseLayout
   title={title}
@@ -112,6 +115,9 @@ const schemas = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : 
   {noindex}
   {schemas}
   stickyCta={stickyCta}
+  preloadImage={heroPreload?.src}
+  preloadImageSrcset={heroPreload?.srcset}
+  preloadImageSizes={heroPreload?.sizes}
 >
   <article class="site-container py-10 md:py-14">
     <header class="max-w-3xl mb-8">
@@ -124,7 +130,18 @@ const schemas = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : 
     </header>
 
     {heroImage && (
-      <img src={heroImage} alt="" class="w-full max-h-[420px] object-cover rounded-2xl mb-10 border border-[var(--color-border)]" loading="eager" />
+      <figure class="mb-10 rounded-2xl overflow-hidden border border-[var(--color-border)] max-h-[420px]">
+        <ResponsiveImage
+          src={heroImage}
+          alt=""
+          role="hero"
+          class="w-full max-h-[420px] object-cover"
+          loading="eager"
+          fetchpriority="high"
+          width={1200}
+          height={420}
+        />
+      </figure>
     )}
 
     <div class="prose mx-auto">
@@ -147,7 +164,7 @@ const schemas = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : 
 
     <aside class="max-w-3xl mx-auto mt-10 surface-card p-5 text-sm text-[var(--color-muted)]">
       <strong>Disclaimer:</strong> Italian Estate is an independent editorial resource. We are not a developer or licensed broker.
-      Enquiries may be referred to licensed Italian partner agencies. Prices, yields, and visa rules change — verify before any transaction.
+      Enquiries may be referred to licensed Italian partner agencies. Prices, yields, and visa rules change , verify before any transaction.
     </aside>
   </article>
 </BaseLayout>
