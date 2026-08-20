@@ -617,3 +617,56 @@ All eight pass: `fix:markdown-glue --dry` · `validate:content:changed` · `vali
 `audit:templates` · `check-links` · `qa:corpus` · `audit:images` (287 URLs, 0 broken) ·
 `audit-rendered-live --local --fail`.
 
+---
+
+## 9. Wave 3a — delivered 2026-08-20, with two corrections to this report
+
+Maxim held no source data, so facts were verified here: several independently-phrased searches per fact,
+plus a deliberate **check-to-refute** query on anything that would change many pages. Two conclusions in
+§P0-6 did not survive that step.
+
+### Correction 1 — the 1.14 % IMU ceiling is real, not stale
+
+§P0-6 called `guides/imu-property-tax-italy`'s 0.46 %–1.14 % band stale and said 1.14 % appeared in no
+2026 source. **Wrong.** 1.14 % applies in comuni that previously levied the 0.08 % TASI surcharge. The
+owner slug was closer to correct than the pages quoting 0.4 %–0.76 %.
+
+Verified rule (L. 160/2019 art. 1 c. 754): base **0.86 %**, comuni **0 %–1.06 %**, **1.14 %** with the
+TASI surcharge, category D floor 0.76 %.
+
+**Applied:** 163 spots across 62 supporting pages → the short form 0.86 %–1.06 %; the owner slug states
+the full rule with the statutory reference. **14 bands → 1**, and the 9 self-contradicting pages are gone.
+
+### Correction 2 — the cedolare secca "30 % band" was false
+
+An earlier pass this session recorded a 30 % rate on the third and fourth short-let unit and flagged it as
+a corpus-wide error across 179 files. The check-to-refute query overturned it: that rate was in the
+**draft** Legge di Bilancio 2026 and was **dropped before enactment** (Il Sole 24 ORE; The Local,
+*"Budget 2026: Italy to scrap short-term rental tax hike"*). Commercialista blogs still carrying it are
+republishing the draft.
+
+The enacted 2026 position — 21 % first unit, 26 % second, business presumption and partita IVA from the
+third — is **what the corpus already said**. Only the threshold was stale: it moved from the fifth unit to
+the third on 1 January 2026, corrected in one page.
+
+**Had the reconciliation run on the first two confident-looking sources, it would have written a false tax
+rate into 179 files.** That is the argument for the check-to-refute step, and for the pause in §7.
+
+### Correction 3 — "10 competing Milan values" was largely my own measurement artefact
+
+Reading the sentences rather than the regex output: €3,700 is **Bologna's** average, €5,200 is the low end
+of a **Navigli district range**, €5,350 is explicitly labelled **2025**, and €5,750 is Milan per a
+different provider (Abitare Co), attributed on the page. Only €5,653 vs €5,750 are both "the Milan
+average", which is an attribution nit. **No change made.**
+
+### Also resolved
+
+**National average €/m²:** verified at **€2,188/m²** (Immobiliare.it, April 2026, +4.24 % y/y;
+corroborated by OMI at €2,179/m² for March 2026). The competing €1,891 matched no current series — 16
+occurrences across 9 pages replaced, and the owner slug now carries the figure with its source and date.
+
+### Still open
+
+**Closing-cost stack** (10–12 % on 68 pages vs 10–15 % on 64). Not a sourcing question: the bands differ
+because they include different things. Needs a decision on composition, not a search.
+

@@ -1,16 +1,16 @@
 {
   "active": true,
-  "approved_wave": "wave-3 (paused for sign-off)",
+  "approved_wave": "wave-3a (done)",
   "approved_by": "Maxim",
   "approved_at": "2026-08-20",
   "approved_slugs": [],
-  "approved_scope": "Wave 3 step 1 done: market-stats.json populated. Step 2 (reconcile <=25 slugs) BLOCKED — tax rates need a tier A source or commercialista sign-off; see .content-os/reports/FACT-CONFLICTS-2026-08-20.md",
+  "approved_scope": "Wave 3a done: IMU reconciled 14 bands -> 1 across 68 pages, national average corrected, stale STR threshold fixed. Wave 3b (closing-cost stack) blocked on a composition decision, not a source.",
   "decisions": {
     "relatedSlugs": "build RelatedGuides component (gate already references it in more-content-gate.mjs)",
     "title_length": "trim the ' | Italian Estate' suffix in BaseLayout rather than rewriting 187 frontmatter titles",
     "pr_split": "W0 and W1 in one PR"
   },
-  "last_completed_batch": "wave-2 + site-report lockdown",
+  "last_completed_batch": "wave-3a",
   "last_completed_at": "2026-08-20",
   "source": "Maxim approved W3 after W2 landed",
   "pilot_goal": "Corpus cleanup audit (italian-estate.com) — Phuket EN pattern",
@@ -20,5 +20,5 @@
   "writing_gates": "more-group-content-os/policies/geo-aeo-writing-gates.md (fix:markdown-glue --dry, validate:batch on changed)",
   "roadmap": ".content-os/batches/corpus-cleanup-roadmap-2026-08-20.md",
   "audit_report": ".content-os/reports/AUDIT-REPORT-2026-08-20.md",
-  "note": "Egress proxy blocks agenziaentrate.gov.it, so tax values are tier B only. legal-core.json forbids inventing bands. No MDX tax numbers were changed."
+  "note": "Facts verified by multi-source search plus a check-to-refute step, which overturned a 30% cedolare rate that would otherwise have been written into 179 files."
 }

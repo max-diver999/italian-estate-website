@@ -1,7 +1,7 @@
 # Corpus cleanup roadmap — italian-estate.com
 
 **Date:** 2026-08-20 · **Source:** `.content-os/reports/AUDIT-REPORT-2026-08-20.md`
-**Status:** Waves 0, 1 and 2 **DONE** (2026-08-20). Waves 3–8 awaiting «ок».
+**Status:** Waves 0, 1, 2 and **3a** DONE (2026-08-20). Wave 3b (closing-cost stack) needs one decision from Maxim; waves 4–8 awaiting «ок».
 **Rule:** ≤25 slugs per wave / per PR. Gates on every PR:
 `npm run fix:markdown-glue -- --dry` (0 files) → `npm run validate:content:changed` → `npm run validate:batch -- --changed`.
 
@@ -25,7 +25,8 @@ handful of file edits** and cost almost nothing to review. Content waves start a
 | ~~0~~ | ~~Detector gaps + broken gates~~ | **DONE** — 11 scripts, 3 new | — (prevents recurrence) | no |
 | ~~1~~ | ~~Template-layer P0~~ | **DONE** — 41 files | **278** | 16 files, whitespace/href/title only |
 | ~~2~~ | ~~Hero images~~ | **DONE** — 166 images (111 hero + 55 inline) | **111** | image URLs only |
-| 3 | Fact registry + IMU reconciliation | ≤25 slugs | 25 | yes |
+| ~~3a~~ | ~~Fact registry + IMU + national average~~ | **DONE** — 179 spots, 71 files | 71 | yes |
+| 3b | Closing-cost stack | needs composition decision | ~130 | yes |
 | 4 | Within-file duplicate paragraphs | ≤25 slugs ×3 batches | 88 | yes |
 | 5 | Template openers + Quick-answer echo | ≤25 slugs ×2 batches | 47 | yes |
 | 6 | Links, orphans, cannibalization | ≤25 slugs | 28 | yes |
