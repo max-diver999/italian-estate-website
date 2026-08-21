@@ -17,6 +17,7 @@
     "geo:audit": "node scripts/geo-citability-audit.mjs",
     "audit:content": "node scripts/audit-p0-quality.mjs",
     "audit:templates": "node scripts/audit-templates.mjs",
+    "check-heroes": "node scripts/qa-hero-uniqueness.mjs",
     "check-links": "node scripts/check-links.mjs",
     "check-links:changed": "node scripts/check-links.mjs --changed",
     "test:auth": "node scripts/test-internal-auth.mjs",
