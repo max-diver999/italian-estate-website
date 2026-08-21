@@ -31,7 +31,7 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID as string | undef
         anonymize_ip: true,
       });
 
-      function trackMoreGroupEvent(eventName, params = {}) {
+      function trackSiteEvent(eventName, params = {}) {
         const payload = {
           page_location: window.location.href,
           page_path: window.location.pathname,
@@ -44,7 +44,7 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID as string | undef
         window.dataLayer.push({ event: eventName, ...payload });
       }
 
-      window.moreGroupTrack = trackMoreGroupEvent;
+      window.italianEstateTrack = trackSiteEvent;
 
       document.addEventListener('click', (event) => {
         const target = event.target instanceof Element ? event.target : null;
@@ -61,17 +61,17 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID as string | undef
         };
 
         if (/wa\.me|whatsapp/i.test(href)) {
-          trackMoreGroupEvent('whatsapp_click', baseParams);
+          trackSiteEvent('whatsapp_click', baseParams);
           return;
         }
 
         if (href.startsWith('tel:') || href.startsWith('mailto:')) {
-          trackMoreGroupEvent('contact_click', baseParams);
+          trackSiteEvent('contact_click', baseParams);
           return;
         }
 
         if (href === '#lead-form' || href.endsWith('/contact/') || action.hasAttribute('data-cta')) {
-          trackMoreGroupEvent('cta_click', baseParams);
+          trackSiteEvent('cta_click', baseParams);
         }
       });
     }
