@@ -156,7 +156,12 @@ export function scoreSelfContainment(plainFirst, sectionPlain) {
   else if (words >= 35) score += 12;
   if (PRONOUN_START_RE.test(plainFirst)) score -= 20;
   if (hasStat(sectionPlain)) score += 15;
-  if (/\b(the project|this market|the area|the developer|foreign buyers)\b/i.test(plainFirst)) score += 10;
+  // A paragraph that carries its own figure can be quoted standalone. The
+  // previous +10 here was paid for the literal strings "the project", "this
+  // market", "the area", "the developer" and "foreign buyers" — the same class
+  // of keyword bounty that scoreUniqueness() paid for the brand name, and the
+  // reason 1,492 leads ended "… for foreign buyers".
+  if (hasStat(plainFirst)) score += 10;
   if (VAGUE_RE.test(plainFirst) && !hasStat(plainFirst)) score -= 10;
   return Math.max(0, Math.min(100, score));
 }
