@@ -25,7 +25,15 @@ export function parseMdx(raw) {
 }
 
 export function wordCount(body) {
-  return (body.match(/\b[\w']+\b/g) || []).length;
+  // Strip URLs and image/link targets first. Counting them inflated every word
+  // count in the corpus and made the number depend on how long a CDN path is:
+  // swapping a Wikimedia URL for a shorter Cloudinary one "lost" words that were
+  // never prose.
+  const prose = String(body)
+    .replace(/!\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/https?:\/\/\S+/g, ' ');
+  return (prose.match(/\b[\w']+\b/g) || []).length;
 }
 
 export function emDashPer500(body) {
@@ -33,6 +41,45 @@ export function emDashPer500(body) {
   if (!w) return 0;
   const dashes = (body.match(/—/g) || []).length;
   return (dashes / w) * 500;
+}
+
+const TABLE_DELIM_RE = /^\s*\|[\s:|-]+\|\s*$/;
+
+/**
+ * Markdown tables that are not preceded by a blank line.
+ *
+ * The previous check was `/^[^\n|]+ — \| /m` — it only matched text and pipes on
+ * the SAME line. The failure mode actually shipping on the site is a table on its
+ * own lines placed directly under a bullet list or paragraph: CommonMark treats
+ * those rows as a lazy continuation of the preceding block, the table never
+ * parses, and the pipes render as literal text.
+ *
+ * Severity differs by what precedes the table:
+ *   - after a list item  -> 'breaks' (confirmed literal pipes in rendered HTML)
+ *   - after a paragraph  -> 'fragile' (still parses today, one edit from breaking)
+ *
+ * @returns {string[]} human-readable details, empty when clean
+ */
+export function findGluedTables(body) {
+  const out = [];
+  const lines = String(body).split('\n');
+  for (let i = 1; i < lines.length; i += 1) {
+    const line = lines[i];
+    if (!line.trim().startsWith('|')) continue;
+    if (!TABLE_DELIM_RE.test(lines[i + 1] || '')) continue;
+
+    const prev = lines[i - 1];
+    const prevTrimmed = prev.trim();
+    if (prevTrimmed === '' || prevTrimmed.startsWith('|')) continue;
+
+    const afterList = /^\s*([-*+]|\d+\.)\s/.test(prev);
+    const severity = afterList ? 'breaks rendering' : 'fragile';
+    out.push(
+      `line ${i + 1}: table has no blank line before it (${severity}; preceded by ` +
+        `${afterList ? 'list item' : 'paragraph'} "${prevTrimmed.slice(-52)}")`,
+    );
+  }
+  return out;
 }
 
 export function analyzeHumanSignals(body, { emLimit = 8 } = {}) {
@@ -43,8 +90,8 @@ export function analyzeHumanSignals(body, { emLimit = 8 } = {}) {
   const stars = (body.match(/\*\*/g) || []).length;
   if (stars % 2 !== 0) issues.push({ kind: 'unclosed-bold', detail: `odd ** count: ${stars}` });
 
-  if (/^[^\n|]+ — \| /m.test(body)) {
-    issues.push({ kind: 'glued-table', detail: 'text glued to markdown table' });
+  for (const detail of findGluedTables(body)) {
+    issues.push({ kind: 'glued-table', detail });
   }
   if (/\{\/\* corpus:/.test(body)) {
     issues.push({ kind: 'corpus-stamp', detail: 'wave17 corpus comment' });
@@ -158,8 +205,17 @@ export function humanizeBodyLines(body, { includeTables = true } = {}) {
     }
 
     if ((s.match(/—/g) || []).length > 0 && !isTable) {
-      s = s.replace(/—/g, ', ');
+      // Consume the whitespace on BOTH sides. The previous form was
+      // `s.replace(/—/g, ', ')`, which left the space in front of the dash in
+      // place: "research —not advice" became "research , not advice". That is
+      // the defect that shipped to every page of the site via the footer, the
+      // article disclaimer and the site-wide meta description, and it survived
+      // three audits because nothing ever looked at src/ outside src/content.
+      s = s.replace(/\s*—\s*/g, ', ');
     }
+
+    // Never emit doubled or orphaned punctuation, whatever route produced it.
+    s = s.replace(/\s+,/g, ',').replace(/,\s*,+/g, ',').replace(/,(\S)/g, ', $1');
 
     if (s !== before) changed++;
     return s;
@@ -206,7 +262,9 @@ export function forceUnderEmLimit(body, emLimit) {
     if (emPer500 <= emLimit) break;
     const next = s.replace(/ — /, ', ');
     if (next === s) {
-      s = s.replace(/—/, ',');
+      // Same fix as humanizeBodyLines: swallow surrounding whitespace so this
+      // cannot leave " ," behind.
+      s = s.replace(/\s*—\s*/, ', ');
       if (s === next) break;
     } else {
       s = next;

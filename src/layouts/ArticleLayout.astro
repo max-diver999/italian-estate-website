@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import LeadForm from '../components/LeadForm.astro';
 import FaqBlock from '../components/FaqBlock.astro';
 import ResponsiveImage from '../components/ResponsiveImage.astro';
+import RelatedGuides from '../components/RelatedGuides.astro';
 import { responsiveCloudinary } from '../lib/cloudinary';
 import { SITE } from '../data/site';
 import { resolveStickyCta } from '../../scripts/lib/italian-estate-cta-router.mjs';
@@ -15,10 +16,16 @@ interface Props {
   author?: string;
   readingTime?: number;
   heroImage?: string;
+  /** Descriptive alt for the hero. Falls back to the article title — the hero
+   *  depicts the article's subject, so an empty alt (the previous hardcoded
+   *  value on all 252 article pages) drops it from a11y and image search. */
+  heroAlt?: string;
   faq?: { question: string; answer: string }[];
   canonical?: string;
   noindex?: boolean;
   hasInlineFaqBlock?: boolean;
+  /** Frontmatter `relatedSlugs` — rendered by <RelatedGuides>. */
+  relatedSlugs?: string[];
   contextLabel?: string;
   articleSlug?: string;
   articleCollection?: string;
@@ -32,10 +39,12 @@ const {
   author = SITE.editorial,
   readingTime = 8,
   heroImage,
+  heroAlt,
   faq = [],
   canonical,
   noindex = false,
   hasInlineFaqBlock = false,
+  relatedSlugs = [],
   contextLabel = title,
   articleSlug = '',
   articleCollection = 'guides',
@@ -69,7 +78,18 @@ const articleSchema = {
   ...(heroImage ? { image: heroImage } : {}),
 };
 
-const faqSchema = faq.length > 0 ? {
+// Exactly one FAQPage per URL.
+//
+// When the MDX body renders its own <FaqBlock>, that component emits FAQPage
+// JSON-LD built from the questions it actually displays. Emitting a second one
+// here from frontmatter `faq` gave every article page two FAQPage entities, and
+// on 42 pages the two lists disagreed — markup advertising questions that are
+// not visible on the page, which Google's structured-data policy forbids.
+//
+// The visible block wins: when it is present we stay silent, so the markup can
+// never drift from what the reader sees. Frontmatter `faq` still drives the
+// schema (and the rendered block below) on pages without an inline FaqBlock.
+const faqSchema = !hasInlineFaqBlock && faq.length > 0 ? {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: faq.map((item) => ({
@@ -133,7 +153,7 @@ const heroPreload = heroImage ? responsiveCloudinary(heroImage, 'hero') : null;
       <figure class="mb-10 rounded-2xl overflow-hidden border border-[var(--color-border)] max-h-[420px]">
         <ResponsiveImage
           src={heroImage}
-          alt=""
+          alt={heroAlt || title}
           role="hero"
           class="w-full max-h-[420px] object-cover"
           loading="eager"
@@ -154,6 +174,8 @@ const heroPreload = heroImage ? responsiveCloudinary(heroImage, 'hero') : null;
       </div>
     )}
 
+    <RelatedGuides slugs={relatedSlugs} currentSlug={articleSlug} />
+
     <div class="max-w-3xl mx-auto mt-12">
       <LeadForm
         title="Get an Italy property shortlist"
@@ -164,7 +186,7 @@ const heroPreload = heroImage ? responsiveCloudinary(heroImage, 'hero') : null;
 
     <aside class="max-w-3xl mx-auto mt-10 surface-card p-5 text-sm text-[var(--color-muted)]">
       <strong>Disclaimer:</strong> Italian Estate is an independent editorial resource. We are not a developer or licensed broker.
-      Enquiries may be referred to licensed Italian partner agencies. Prices, yields, and visa rules change , verify before any transaction.
+      Enquiries may be referred to licensed Italian partner agencies. Prices, yields, and visa rules change — verify before any transaction.
     </aside>
   </article>
 </BaseLayout>

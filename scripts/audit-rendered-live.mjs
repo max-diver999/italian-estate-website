@@ -47,6 +47,75 @@ function discoverCollections() {
 /** @type {{ id: string, test: (html: string) => string | null, severity: 'P0' | 'P1' }[]} */
 const CHECKS = [
   {
+    // Added Wave 0 2026-08-20. ArticleLayout builds FAQPage from frontmatter and
+    // FaqBlock emits its own from `items`; `noSchema` was used nowhere, so every
+    // article page shipped two FAQPage entities. Nothing detected it because no
+    // gate parsed rendered HTML for schema.
+    id: 'duplicate-faqpage-schema',
+    severity: 'P0',
+    test: (html) => {
+      const n = (html.match(/"@type"\s*:\s*"FAQPage"/g) || []).length;
+      return n > 1 ? `${n} FAQPage JSON-LD blocks on one page (expected 1)` : null;
+    },
+  },
+  {
+    id: 'h1-count',
+    severity: 'P0',
+    test: (html) => {
+      const n = (html.match(/<h1[\s>]/g) || []).length;
+      if (n === 0) return 'no <h1> on page';
+      return n > 1 ? `${n} <h1> elements (expected 1)` : null;
+    },
+  },
+  {
+    // The em-dash strip that replaced "—" with "," left a space before the comma.
+    id: 'punctuation-scar',
+    severity: 'P0',
+    test: (html) => {
+      // Inspect TEXT NODES only. Collapsing tags to a space turns a legitimate
+      // "</a>, then" into "a , then", so the scar must be found inside a single
+      // uninterrupted run of text, never across a tag boundary.
+      const stripped = html
+        .replace(/<script[\s\S]*?<\/script>/g, '<>')
+        .replace(/<style[\s\S]*?<\/style>/g, '<>');
+      for (const node of stripped.split(/<[^>]*>/)) {
+        const m = node.match(/\w \, \w[^\n]{0,60}/);
+        if (m) return `stray " , " in rendered copy: "${m[0].trim().slice(0, 80)}"`;
+      }
+      return null;
+    },
+  },
+  {
+    // A table glued to a list renders its pipes as literal text.
+    id: 'raw-markdown-table',
+    severity: 'P0',
+    test: (html) => {
+      const text = html.replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<[^>]+>/g, ' ');
+      return /\|\s*-{3,}/.test(text) ? 'markdown table rendering as literal pipe text' : null;
+    },
+  },
+  {
+    id: 'title-tag-length',
+    severity: 'P1',
+    test: (html) => {
+      const m = html.match(/<title>([\s\S]*?)<\/title>/);
+      if (!m) return 'no <title>';
+      // Decode entities before measuring: "D&#39;Amico" is 8 characters to
+      // Google, not 12.
+      const t = m[1].replace(/&#\d+;/g, 'x').replace(/&[a-z]+;/g, 'x').trim();
+      return t.length > 62 ? `<title> is ${t.length} chars — truncated in SERP` : null;
+    },
+  },
+  {
+    id: 'hero-missing-alt',
+    severity: 'P1',
+    test: (html) => {
+      const m = html.match(/<figure[^>]*>\s*<img[^>]*>/);
+      if (!m) return null;
+      return /\salt="[^"]+"/.test(m[0]) ? null : 'hero <img> has no descriptive alt';
+    },
+  },
+  {
     id: 'lead-form-top',
     severity: 'P0',
     test: (html) =>

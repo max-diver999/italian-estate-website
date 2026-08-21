@@ -1,0 +1,79 @@
+---
+/**
+ * Image credits.
+ *
+ * 166 images across 111 pages were hotlinked from Wikimedia Commons with no
+ * attribution anywhere on the site. 62 of the 68 distinct source files are
+ * CC BY or CC BY-SA, which require crediting the author and naming the licence.
+ * Wave 2 moved the files onto our own CDN; this page is the attribution that
+ * should have shipped with them.
+ *
+ * Data is generated from scripts/reports/hero-migration-manifest.json into
+ * src/data/image-credits.json by scripts/migrate-heroes-to-cloudinary.mjs.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import credits from '../../data/image-credits.json';
+
+const needsAttribution = credits.filter((c) => c.license.startsWith('CC BY'));
+---
+<BaseLayout
+  title="Image Credits"
+  description="Photo credits and licences for images used across Italian Estate, sourced from Wikimedia Commons."
+>
+  <section class="site-container py-12 md:py-16 max-w-4xl">
+    <h1 class="mb-6">Image credits</h1>
+    <div class="prose mb-8">
+      <p>
+        Photography on this site is sourced from Wikimedia Commons and delivered from our own CDN.
+        {needsAttribution.length} of the {credits.length} images below are published under a Creative Commons
+        licence that requires attribution; the author and licence for every file are listed here.
+      </p>
+      <p class="text-sm text-[var(--color-muted)]">
+        If you are the author of an image and would like the credit corrected or the image removed,
+        contact us and we will act on it.
+      </p>
+    </div>
+
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr>
+            <th class="text-left">Image</th>
+            <th class="text-left">Author</th>
+            <th class="text-left">Licence</th>
+            <th class="text-left">Used on</th>
+          </tr>
+        </thead>
+        <tbody>
+          {credits.map((c) => (
+            <tr>
+              <td>
+                {c.source ? (
+                  <a href={c.source} rel="noopener nofollow" target="_blank">{c.file}</a>
+                ) : (
+                  c.file
+                )}
+              </td>
+              <td>{c.artist}</td>
+              <td>
+                {c.licenseUrl ? (
+                  <a href={c.licenseUrl} rel="noopener nofollow license" target="_blank">{c.license}</a>
+                ) : (
+                  c.license
+                )}
+              </td>
+              <td>
+                {c.pages.map((p, i) => (
+                  <>
+                    {i > 0 && ', '}
+                    <a href={p}>{p}</a>
+                  </>
+                ))}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</BaseLayout>

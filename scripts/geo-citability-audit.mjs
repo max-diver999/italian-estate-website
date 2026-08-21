@@ -18,6 +18,29 @@ import {
   RUBRIC_WEIGHTS,
 } from './lib/geo-citability-scorer.mjs';
 
+
+/**
+ * Shingles from every OTHER page, so uniqueness reflects cross-page duplication.
+ * Without it the rubric only sees within-page novelty — the blind spot that let
+ * 18 area pages share one identical paragraph while each scored 90+.
+ */
+function shingleSet(text, k = 6) {
+  const w = String(text).toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').split(/\s+/).filter(Boolean);
+  const out = new Set();
+  for (let i = 0; i + k <= w.length; i += 1) out.add(w.slice(i, i + k).join(' '));
+  return out;
+}
+const __corpusBodies = new Map();
+function __registerCorpus(id, body) { __corpusBodies.set(id, body); }
+function __corpusShinglesExcluding(id) {
+  const out = new Set();
+  for (const [key, body] of __corpusBodies) {
+    if (key === id) continue;
+    for (const g of shingleSet(body)) out.add(g);
+  }
+  return out;
+}
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const CONTENT = join(ROOT, 'src/content');
@@ -96,6 +119,12 @@ function auditSiteLevel() {
   return siteGaps;
 }
 
+// Register every page first so uniqueness can be scored against the rest of the
+// corpus, not just the rest of the page.
+for (const path of listMdx()) {
+  __registerCorpus(path, parseMdxBody(readFileSync(path, 'utf8')));
+}
+
 const results = [];
 for (const path of listMdx()) {
   const rel = path.replace(ROOT + '/', '');
@@ -103,7 +132,7 @@ for (const path of listMdx()) {
   const slug = path.split('/').pop().replace('.mdx', '');
   const raw = readFileSync(path, 'utf8');
   const body = parseMdxBody(raw);
-  const scored = scorePage(body, { collection: coll });
+  const scored = scorePage(body, { collection: coll, corpusShingles: __corpusShinglesExcluding(path) });
   const failScore = COMMERCIAL.has(coll) && scored.score > 0 && scored.score < minScore;
   results.push({
     file: rel,

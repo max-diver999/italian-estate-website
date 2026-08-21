@@ -16,6 +16,3 @@ Status: Astro scaffold live; editorial and project MDX batches pending.
 - /contact/
 - /get-shortlist/
 
-## Parser pipeline (research)
-Cloudinary prefix: dphvjbqb4/more-group/italy/projects/{slug}/
-Tier A sources: okamitaly, uptown-milano, apuliadeluxe, ostunidomus, damicogruppo

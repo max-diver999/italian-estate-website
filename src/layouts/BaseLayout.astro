@@ -47,7 +47,20 @@ const {
 // Canonical always resolves to the apex host, never www or a preview domain.
 const canonicalHref = canonical || `${SITE.url}${Astro.url.pathname}`;
 
-const fullTitle = title.includes('Italian Estate') ? title : `${title} | Italian Estate`;
+// Google truncates title links at roughly 60-62 characters. Frontmatter titles
+// here run 36-60 chars, so unconditionally appending " | Italian Estate" (+17)
+// pushed 187 pages past the limit and cut the brand — and often the last real
+// keyword — out of the SERP snippet entirely.
+//
+// The brand is now additive, not mandatory: it is appended only when it fits.
+// A title that is already long keeps its own words, which are what the click is
+// won on. og:title and twitter:title follow the same string for consistency.
+const TITLE_MAX = 60;
+const BRAND_SUFFIX = ' | Italian Estate';
+const fullTitle =
+  title.includes('Italian Estate') || title.length + BRAND_SUFFIX.length > TITLE_MAX
+    ? title
+    : `${title}${BRAND_SUFFIX}`;
 
 const orgSchema = {
   '@context': 'https://schema.org',

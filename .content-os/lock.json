@@ -1,16 +1,24 @@
 {
-  "active": false,
-  "approved_wave": null,
-  "approved_by": null,
-  "approved_at": null,
+  "active": true,
+  "approved_wave": "wave-3a (done)",
+  "approved_by": "Maxim",
+  "approved_at": "2026-08-20",
   "approved_slugs": [],
-  "last_completed_batch": null,
-  "last_completed_at": null,
-  "source": "Awaiting Claude corpus audit — refine roadmap on main, then Maxim ok wave 1",
+  "approved_scope": "Wave 3a done: IMU reconciled 14 bands -> 1 across 68 pages, national average corrected, stale STR threshold fixed. Wave 3b (closing-cost stack) blocked on a composition decision, not a source.",
+  "decisions": {
+    "relatedSlugs": "build RelatedGuides component (gate already references it in more-content-gate.mjs)",
+    "title_length": "trim the ' | Italian Estate' suffix in BaseLayout rather than rewriting 187 frontmatter titles",
+    "pr_split": "W0 and W1 in one PR"
+  },
+  "last_completed_batch": "wave-3a",
+  "last_completed_at": "2026-08-20",
+  "source": "Maxim approved W3 after W2 landed",
   "pilot_goal": "Corpus cleanup audit (italian-estate.com) — Phuket EN pattern",
   "pilot_mode": "corpus_cleanup_audit",
   "autonomy_policy": "more-group-content-os/policies/claude-autonomous-decisions.md",
   "cleanup_policy": "more-group-content-os/policies/corpus-cleanup-mode.md",
   "writing_gates": "more-group-content-os/policies/geo-aeo-writing-gates.md (fix:markdown-glue --dry, validate:batch on changed)",
-  "note": "Pilot infra ready 2026-08-20. Post-GEO baseline on main bcaf8e7 + 4360b18. Claude must deliver AUDIT-REPORT + roadmap before any fix-batch. New slugs only after audit ok."
+  "roadmap": ".content-os/batches/corpus-cleanup-roadmap-2026-08-20.md",
+  "audit_report": ".content-os/reports/AUDIT-REPORT-2026-08-20.md",
+  "note": "Facts verified by multi-source search plus a check-to-refute step, which overturned a 30% cedolare rate that would otherwise have been written into 179 files."
 }

@@ -67,8 +67,13 @@ export function hasStat(text) {
 const VAGUE_RE = /\b(many|several|some|often|usually|a lot|significant|various)\b/i;
 const PRONOUN_START_RE = /^(it|this|they|these|those|however|but|and|also)\b/i;
 const QUESTION_H2_RE = /^(what|how|why|when|where|who|which|can|do|does|is|are|should|will)\b/i;
-const UNIQUE_RE =
-  /\b(MORE Group|our (analysis|data|clients|underwriting)|insider tip|underwriting snapshot|we (surveyed|analyzed|tracked))\b/i;
+/**
+ * Markers of genuine first-party evidence. These earn a SMALL bonus — they are a
+ * weak signal that a section carries original analysis, not a substitute for
+ * measuring whether the text is actually distinctive.
+ */
+const EVIDENCE_RE =
+  /\b(our (analysis|data|clients|underwriting)|we (surveyed|analyzed|tracked)|case study|methodology|checklist|red flag|buyer scenario)\b/i;
 
 export function wordCount(text) {
   return (text.match(/\b[\w']+\b/g) || []).length;
@@ -151,7 +156,12 @@ export function scoreSelfContainment(plainFirst, sectionPlain) {
   else if (words >= 35) score += 12;
   if (PRONOUN_START_RE.test(plainFirst)) score -= 20;
   if (hasStat(sectionPlain)) score += 15;
-  if (/\b(the project|this market|the area|the developer|foreign buyers)\b/i.test(plainFirst)) score += 10;
+  // A paragraph that carries its own figure can be quoted standalone. The
+  // previous +10 here was paid for the literal strings "the project", "this
+  // market", "the area", "the developer" and "foreign buyers" — the same class
+  // of keyword bounty that scoreUniqueness() paid for the brand name, and the
+  // reason 1,492 leads ended "… for foreign buyers".
+  if (hasStat(plainFirst)) score += 10;
   if (VAGUE_RE.test(plainFirst) && !hasStat(plainFirst)) score -= 10;
   return Math.max(0, Math.min(100, score));
 }
@@ -186,23 +196,68 @@ export function scoreStatisticalDensity(sectionPlain) {
   ]);
 }
 
-export function scoreUniqueness(sectionPlain, bodyPlain) {
-  let score = 25;
-  if (UNIQUE_RE.test(sectionPlain)) score += 45;
-  if (/\b(case study|methodology|checklist|red flag|buyer scenario)\b/i.test(sectionPlain)) score += 15;
-  if (UNIQUE_RE.test(bodyPlain)) score += 10;
-  if (/according to (the )?(world bank|oecd|statista|official)/i.test(sectionPlain)) score += 5;
+/** 6-gram shingles, the same window the duplicate detector uses. */
+function shingleSet(text, k = 6) {
+  const w = String(text).toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').split(/\s+/).filter(Boolean);
+  const out = new Set();
+  for (let i = 0; i + k <= w.length; i += 1) out.add(w.slice(i, i + k).join(' '));
+  return out;
+}
+
+/**
+ * How distinctive this section's wording actually is.
+ *
+ * The previous implementation did not measure uniqueness at all: it awarded +45
+ * for the section containing the literal string "MORE Group" (or "insider tip",
+ * "our analysis", …). That is the mechanism behind the duplication this audit
+ * had to clean up — the rubric told every writer that stamping the brand into
+ * each section scored 95/100 on "uniqueness", so they did, 463 redundant
+ * paragraph instances later, 48% of which carry that exact trigger phrase.
+ *
+ * Uniqueness is now shingle novelty: the share of the section's 6-gram windows
+ * that appear nowhere else. Measured against the rest of the page always, and
+ * against the rest of the corpus when the caller supplies an index — cross-page
+ * duplication was previously invisible here, which is how 18 area pages carried
+ * one identical paragraph while each scored 90+.
+ *
+ * @param {string} sectionPlain
+ * @param {string} bodyPlain            the rest of this page
+ * @param {Set<string>} [corpusShingles] shingles seen on OTHER pages
+ */
+export function scoreUniqueness(sectionPlain, bodyPlain, corpusShingles) {
+  const section = shingleSet(sectionPlain);
+  if (section.size === 0) return 50;
+
+  const rest = shingleSet(String(bodyPlain).split(sectionPlain).join(' '));
+  let novelInPage = 0;
+  let novelInCorpus = 0;
+  for (const g of section) {
+    if (!rest.has(g)) novelInPage += 1;
+    if (!corpusShingles || !corpusShingles.has(g)) novelInCorpus += 1;
+  }
+  const pageNovelty = novelInPage / section.size;
+  const corpusNovelty = novelInCorpus / section.size;
+
+  // Cross-page distinctiveness is the harder and more valuable property, so it
+  // carries the larger weight when the caller can supply corpus context.
+  const novelty = corpusShingles ? 0.35 * pageNovelty + 0.65 * corpusNovelty : pageNovelty;
+
+  let score = Math.round(novelty * 90);
+  if (EVIDENCE_RE.test(sectionPlain)) score += 8;
+  if (/according to (the )?(world bank|oecd|istat|omi|nomisma|agenzia delle entrate|official)/i.test(sectionPlain)) {
+    score += 5;
+  }
   return Math.max(0, Math.min(100, score));
 }
 
-export function scoreBlock(block, bodyPlain) {
+export function scoreBlock(block, bodyPlain, corpusShingles) {
   const sectionPlain = stripMdx(block.section);
   const sub = {
     answer: scoreAnswerQuality(block.plainFirst, block.heading),
     selfContain: scoreSelfContainment(block.plainFirst, sectionPlain),
     structure: scoreStructure(block.section, block.heading),
     stats: scoreStatisticalDensity(sectionPlain),
-    unique: scoreUniqueness(sectionPlain, bodyPlain),
+    unique: scoreUniqueness(sectionPlain, bodyPlain, corpusShingles),
   };
   const overall = Math.round(
     sub.answer * RUBRIC_WEIGHTS.answer +
@@ -228,10 +283,10 @@ export function findCitabilityBlocks(body) {
     );
 }
 
-export function scorePage(body, { collection } = {}) {
+export function scorePage(body, { collection, corpusShingles } = {}) {
   const bodyPlain = stripMdx(body);
   const blocks = extractH2Blocks(body);
-  const blockScores = blocks.map((b) => scoreBlock(b, bodyPlain));
+  const blockScores = blocks.map((b) => scoreBlock(b, bodyPlain, corpusShingles));
   const citabilityBlocks = findCitabilityBlocks(body);
 
   const avg =

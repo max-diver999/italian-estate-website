@@ -1,6 +1,6 @@
 # Content Quality Audit — italian-estate.com
 
-Generated: 2026-08-20T18:39:48.931Z
+Generated: 2026-08-20T20:39:30.847Z
 
 ## Summary
 
@@ -9,27 +9,32 @@ Generated: 2026-08-20T18:39:48.931Z
 | Files scanned | 252 |
 | Indexable | 252 |
 | Already noindex | 0 |
-| Cross-file issues | 3 |
+| Cross-file issues | 11 |
 
 ## Recommended actions (indexable only)
 
 | Action | Count |
 |--------|------:|
-| KEEP | 146 |
-| REVIEW | 64 |
-| REWRITE_OR_NOINDEX | 26 |
+| REVIEW | 178 |
+| KEEP | 32 |
+| REWRITE_OR_NOINDEX | 25 |
 | UPGRADE | 13 |
-| NOINDEX_OR_REWRITE | 2 |
+| NOINDEX_OR_REWRITE | 3 |
 | NOINDEX | 1 |
 
 ## Issue types (indexable)
 
 | Type | Count |
 |------|------:|
+| near-duplicate-paragraph | 151 |
+| near-duplicate-cross-page | 131 |
+| self-repeated-paragraph | 125 |
+| external-hero | 111 |
 | missing-scenarios | 46 |
 | thin-content | 28 |
+| repeated-paragraph | 20 |
 | ai-language | 17 |
-| repeated-paragraph | 11 |
+| glued-table | 9 |
 | few-internal-links | 8 |
 | missing-answer-box | 6 |
 | over-bold | 5 |
@@ -41,56 +46,56 @@ Generated: 2026-08-20T18:39:48.931Z
 
 | Score | Action | Slug | Words | Issues |
 |------:|--------|------|------:|--------|
-| 81 | NOINDEX | `how-to-buy-italy-property-step-by-step` | 4850 | cannibalization, ai-language, few-internal-links |
-| 84 | NOINDEX_OR_REWRITE | `taormina` | 1777 | thin-content, repeated-paragraph |
-| 84 | NOINDEX_OR_REWRITE | `termoli` | 1525 | thin-content, repeated-paragraph |
-| 87 | REWRITE_OR_NOINDEX | `compromesso-italy-property-contract` | 1386 | thin-content, missing-scenarios |
-| 87 | REWRITE_OR_NOINDEX | `matera` | 1531 | thin-content, missing-scenarios |
-| 87 | REWRITE_OR_NOINDEX | `urbino` | 1397 | thin-content, missing-scenarios |
-| 87 | REWRITE_OR_NOINDEX | `italy-vs-greece-property-investment` | 1617 | thin-content, missing-scenarios |
-| 87 | REWRITE_OR_NOINDEX | `florence-oltrarno-apartment` | 1169 | thin-content, missing-scenarios |
-| 87 | REWRITE_OR_NOINDEX | `milano-sesto-urban-regeneration` | 1167 | thin-content, missing-scenarios |
-| 87 | REWRITE_OR_NOINDEX | `ostuni-masseria-pool-apuliadeluxe` | 1136 | thin-content, missing-scenarios |
-| 88 | UPGRADE | `is-italy-property-good-investment-2026` | 3890 | ai-language, few-internal-links, over-bold |
-| 88 | REWRITE_OR_NOINDEX | `naples` | 1434 | thin-content, ai-language |
-| 88 | REVIEW | `okam-italy` | 1763 | ai-language, repeated-paragraph |
-| 89 | UPGRADE | `fivizzano-village-property` | 1400 | missing-answer-box, missing-scenarios |
-| 89 | UPGRADE | `inspire-uptown-milan` | 1389 | missing-answer-box, missing-scenarios |
-| 89 | UPGRADE | `rome-jubilee-centro-storico` | 1450 | missing-answer-box, missing-scenarios |
-| 89 | UPGRADE | `sanremo-sea-view-apartments` | 1437 | missing-answer-box, missing-scenarios |
-| 89 | UPGRADE | `sorrento-coastal-apartment` | 1473 | missing-answer-box, missing-scenarios |
-| 89 | UPGRADE | `tranio-florence-historic-center` | 1344 | missing-answer-box, missing-scenarios |
-| 90 | UPGRADE | `short-term-rental-rules-italy` | 3177 | ai-language, few-internal-links |
-| 91 | REVIEW | `puglia-property-investment-guide` | 6073 | broken-internal-link, over-bold |
-| 91 | REVIEW | `ostuni-trulli-modern-villa` | 1324 | ai-language, missing-scenarios |
-| 92 | REWRITE_OR_NOINDEX | `abruzzo-property-investment-guide` | 1949 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `how-to-buy-italy-property-remotely` | 1544 | thin-content |
-| 92 | REVIEW | `italy-flat-tax-regime-new-residents` | 4306 | repeated-paragraph |
-| 92 | REVIEW | `italy-property-investment-guide` | 3885 | repeated-paragraph |
-| 92 | REVIEW | `italy-property-market-forecast-2026-2027` | 3409 | repeated-paragraph |
-| 92 | REVIEW | `liguria-property-investment-guide` | 5193 | repeated-paragraph |
-| 92 | REWRITE_OR_NOINDEX | `marche-property-investment-guide` | 1900 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `umbria-property-investment-guide` | 1851 | thin-content |
-| 92 | REVIEW | `lucca` | 4264 | repeated-paragraph |
-| 92 | REVIEW | `milan-navigli` | 3314 | repeated-paragraph |
-| 92 | REWRITE_OR_NOINDEX | `pescara` | 1409 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `turin` | 1536 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `bologna-vs-florence-property` | 1723 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `campobasso-vs-termoli-property` | 1325 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `florence-vs-rome-property-investment` | 1622 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `matera-vs-potenza-property` | 1467 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `tranio-rome-eur-apartment` | 1162 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `unapavia-pavia-residential` | 1148 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `albero-architecture` | 1479 | thin-content |
-| 92 | REVIEW | `apulia-deluxe` | 1692 | repeated-paragraph |
-| 92 | REWRITE_OR_NOINDEX | `asti-architetti` | 1436 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `frimm` | 1399 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `gate-away-partner-network` | 1454 | thin-content |
-| 92 | REWRITE_OR_NOINDEX | `lendlease` | 1462 | thin-content |
-| 92 | REVIEW | `near-milan` | 1821 | repeated-paragraph |
-| 92 | REWRITE_OR_NOINDEX | `nunziare-luxury-projects` | 1409 | thin-content |
-| 93 | REVIEW | `italy-property-for-uk-buyers` | 4783 | broken-internal-link |
-| 93 | REVIEW | `sorrento` | 2403 | broken-internal-link |
+| 1 | REVIEW | `italy-registration-tax-property` | 4117 | ai-language, self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 24 | REVIEW | `lucca` | 4264 | self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page, repeated-paragraph |
+| 26 | REVIEW | `florence-vs-siena-property` | 3612 | external-hero, self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 30 | REVIEW | `italy-property-by-nationality-guide` | 4244 | self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 32 | REVIEW | `vineyard-property-investment-italy-guide` | 3836 | self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 35 | REVIEW | `arezzo-vs-siena-property` | 3579 | external-hero, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 35 | UPGRADE | `italy-vs-spain-property-investment` | 3045 | few-internal-links, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 35 | REVIEW | `tuscany-vs-lake-como-property` | 3902 | external-hero, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 36 | REVIEW | `liguria-property-investment-guide` | 5193 | external-hero, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page, repeated-paragraph |
+| 38 | REVIEW | `lake-garda-vs-lake-como-property` | 4209 | external-hero, missing-risks, glued-table, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 41 | REVIEW | `italy-inheritance-law-property-foreigners` | 4174 | self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 41 | REVIEW | `italy-property-for-irish-buyers` | 4878 | self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 42 | REVIEW | `italy-flat-tax-regime-new-residents` | 4306 | self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page, repeated-paragraph |
+| 42 | REVIEW | `italy-property-investment-guide` | 3885 | self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page, repeated-paragraph |
+| 42 | REVIEW | `italy-property-market-forecast-2026-2027` | 3409 | self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page, repeated-paragraph |
+| 42 | REVIEW | `florence` | 3422 | self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 43 | REVIEW | `italy-1-euro-homes-program` | 3636 | glued-table, self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 44 | REVIEW | `elective-residence-vs-investor-visa-italy` | 3785 | external-hero, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 44 | REVIEW | `lake-como-vs-liguria-property` | 4063 | external-hero, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 46 | REVIEW | `siena` | 3403 | self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 53 | REVIEW | `florence-property-investment-guide` | 4796 | external-hero, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 53 | REVIEW | `venice-property-investment-guide` | 4124 | external-hero, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 53 | REVIEW | `ostuni` | 3388 | ai-language, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 56 | REVIEW | `emilia-romagna-property-investment-guide` | 2681 | external-hero, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 56 | REVIEW | `best-cities-italy-rental-yield-2026` | 2497 | glued-table, glued-table, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-cross-page |
+| 57 | REVIEW | `cedolare-secca-vs-irpef-italy-rental` | 3284 | self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 57 | UPGRADE | `italy-vs-malta-property-investment` | 3462 | few-internal-links, glued-table, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 59 | REVIEW | `italy-investor-visa-requirements-2026` | 3297 | near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 59 | REVIEW | `milan-navigli` | 3314 | self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-cross-page, repeated-paragraph |
+| 61 | REVIEW | `piedmont-property-investment-guide` | 2747 | external-hero, self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-cross-page |
+| 61 | REVIEW | `sardinia-property-investment-guide` | 4174 | external-hero, self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-cross-page |
+| 63 | NOINDEX_OR_REWRITE | `abruzzo-property-investment-guide` | 1949 | external-hero, thin-content, self-repeated-paragraph, near-duplicate-cross-page, repeated-paragraph |
+| 63 | REVIEW | `noto` | 3369 | external-hero, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 65 | NOINDEX | `how-to-buy-italy-property-step-by-step` | 4850 | cannibalization, ai-language, few-internal-links, self-repeated-paragraph, near-duplicate-paragraph |
+| 65 | UPGRADE | `syracuse` | 3385 | few-internal-links, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 65 | REVIEW | `milan-vs-rome-property-investment` | 3735 | external-hero, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 67 | REVIEW | `ancona-vs-urbino-property` | 2245 | external-hero, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 67 | REVIEW | `buy-property-italy-foreigner` | 3288 | self-repeated-paragraph, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-cross-page |
+| 69 | REVIEW | `italy-rental-yield-guide` | 3264 | self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 69 | REVIEW | `sicily-vs-puglia-property` | 4361 | self-repeated-paragraph, self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 70 | REVIEW | `basilicata-property-investment-guide` | 3044 | external-hero, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-cross-page |
+| 70 | REVIEW | `bologna-property-investment-guide` | 2759 | external-hero, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-cross-page |
+| 70 | REVIEW | `imu-property-tax-italy` | 4985 | missing-risks, glued-table, self-repeated-paragraph, near-duplicate-cross-page |
+| 70 | REVIEW | `versilia` | 3355 | external-hero, self-repeated-paragraph, self-repeated-paragraph, near-duplicate-cross-page |
+| 70 | REVIEW | `off-plan-vs-resale-property-italy` | 4258 | glued-table, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 71 | REVIEW | `molise-property-investment-guide` | 2013 | external-hero, self-repeated-paragraph, near-duplicate-cross-page, repeated-paragraph |
+| 71 | REVIEW | `sanremo` | 2712 | self-repeated-paragraph, near-duplicate-paragraph, near-duplicate-paragraph, near-duplicate-cross-page |
+| 71 | REVIEW | `milan-vs-florence-property-investment` | 3655 | external-hero, glued-table, near-duplicate-paragraph, near-duplicate-cross-page |
+| 71 | REWRITE_OR_NOINDEX | `nunziare-luxury-projects` | 1409 | external-hero, thin-content, self-repeated-paragraph, near-duplicate-cross-page |
+| 73 | REVIEW | `okam-italy` | 1763 | ai-language, self-repeated-paragraph, near-duplicate-cross-page, repeated-paragraph |
 
 ## KEEP slugs (do not noindex)
 

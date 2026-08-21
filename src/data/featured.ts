@@ -8,7 +8,7 @@ export const FEATURED_PROJECT_SLUGS = [
   'maciachini-urban-retreat',
 ] as const;
 
-/** Hero spotlight , links to full project review from homepage banner. */
+/** Hero spotlight — links to full project review from homepage banner. */
 export const HOMEPAGE_HERO_PROJECT_SLUG = 'ostuni-trulli-modern-villa-apuliadeluxe' as const;
 
 export const FEATURED_GUIDE_SLUGS = [] as const;

@@ -6,6 +6,13 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {
+  CorpusDuplicateIndex,
+  findRepeatsWithinFile,
+  findNearDuplicatesWithinFile,
+} from './lib/duplicate-detect.mjs';
+import { classifyImageHost } from './lib/cloudinary-gate.mjs';
+import { findGluedTables } from './lib/human-signals.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(SCRIPT_DIR, '..');
@@ -68,6 +75,11 @@ const SEVERITY = {
   'cannibalization': 9,
   'thin-content': 8,
   'repeated-paragraph': 8,
+  'self-repeated-paragraph': 9,
+  'near-duplicate-paragraph': 7,
+  'near-duplicate-cross-page': 6,
+  'glued-table': 10,
+  'external-hero': 6,
   'duplicate-title': 7,
   'duplicate-description': 7,
   'missing-answer-box': 6,
@@ -287,8 +299,16 @@ for (const file of allFiles) {
 
   if (!file.fm.heroImage && !isLight) {
     issues.push({ type: 'missing-hero', detail: 'no heroImage' });
-  } else if (file.fm.heroImage && /unsplash/i.test(file.fm.heroImage)) {
-    issues.push({ type: 'unsplash-hero', detail: file.fm.heroImage });
+  } else if (file.fm.heroImage) {
+    const host = classifyImageHost(file.fm.heroImage);
+    if (host === 'banned') {
+      issues.push({ type: 'unsplash-hero', detail: file.fm.heroImage });
+    } else if (host === 'soft-external' || host === 'external') {
+      issues.push({
+        type: 'external-hero',
+        detail: `hero not delivered via Cloudinary (${file.fm.heroImage.slice(0, 80)})`,
+      });
+    }
   }
 
   if (!isLight) {
@@ -370,6 +390,27 @@ for (const file of allFiles) {
       issues.push({ type: 'boilerplate-risk', detail: 'generic Related resources block' });
     }
 
+    for (const detail of findGluedTables(file.body)) {
+      issues.push({ type: 'glued-table', detail });
+    }
+
+    // Repeats INSIDE this file. The cross-file map below only fires at >=3
+    // different files and never compared a file against itself, which is why
+    // this audit reported 11 repeated-paragraph on a corpus with 88 affected
+    // files (up to x16 in one file).
+    for (const rep of findRepeatsWithinFile(file.body)) {
+      issues.push({
+        type: 'self-repeated-paragraph',
+        detail: `repeated x${rep.count} in this file: ${rep.text.slice(0, 120)}`,
+      });
+    }
+    for (const nd of findNearDuplicatesWithinFile(file.body).slice(0, 5)) {
+      issues.push({
+        type: 'near-duplicate-paragraph',
+        detail: `similarity ${nd.similarity}: "${nd.a.slice(0, 70)}" / "${nd.b.slice(0, 70)}"`,
+      });
+    }
+
     for (const rawPara of file.body.split(/\n{2,}/)) {
       if (rawPara.startsWith('import ') || rawPara.startsWith('|')) continue;
       if (rawPara.includes('<') && rawPara.includes('>')) continue;
@@ -395,6 +436,35 @@ for (const file of allFiles) {
 }
 
 const crossIssues = [];
+
+// Near-duplicate paragraphs across pages — the dominant pattern in this corpus is
+// one paragraph reused with a city/nationality/developer name swapped, which no
+// exact-hash check can see.
+const nearIndex = new CorpusDuplicateIndex();
+for (const file of allFiles) nearIndex.add(`${file.coll}/${file.slug}`, file.body);
+const nearPairs = nearIndex.nearPairs();
+const nearByFile = new Map();
+for (const pair of nearPairs) {
+  for (const id of [pair.a, pair.b]) {
+    nearByFile.set(id, [...(nearByFile.get(id) || []), pair]);
+  }
+}
+for (const [id, pairs] of nearByFile.entries()) {
+  const report = fileReports.find((f) => f.id === id);
+  if (!report || report.noindex) continue;
+  const other = pairs[0].a === id ? pairs[0].b : pairs[0].a;
+  report.issues.push({
+    type: 'near-duplicate-cross-page',
+    detail: `${pairs.length} near-duplicate paragraph(s) shared with other pages (e.g. ${other} at ${pairs[0].similarity})`,
+  });
+  report.score = qualityScore(report.issues);
+  report.action = suggestAction(report.issues, { noindex: report.noindex }, report.slug);
+}
+crossIssues.push({
+  type: 'near-duplicate-summary',
+  ids: [...nearByFile.keys()].sort(),
+  detail: `${nearPairs.length} near-duplicate paragraph pairs across ${nearByFile.size} files`,
+});
 for (const [title, ids] of titles.entries()) {
   if (ids.length > 1) crossIssues.push({ type: 'duplicate-title', ids, detail: title });
 }
@@ -406,7 +476,9 @@ for (const [para, ids] of paragraphs.entries()) {
     const r = fileReports.find((f) => f.id === id);
     return r && !r.noindex;
   });
-  if (uniqueIds.length >= 3) {
+  // Threshold was >=3 files. Two pages sharing a paragraph verbatim is already a
+  // duplicate-content problem, so it is reported from 2.
+  if (uniqueIds.length >= 2) {
     crossIssues.push({
       type: 'repeated-paragraph',
       ids: uniqueIds,
