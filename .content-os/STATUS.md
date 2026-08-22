@@ -48,6 +48,19 @@ Claude **не** запускает повторный bulk GEO по всему �
 
 Дальше: ревью PR в Cursor → «выложи» → деплой и переиндексация. Новые статьи — только после «ок» на roadmap.
 
+## Волна 1 новых статей (2026-08-22, «Деньги и сделка») — готова к ревью
+
+Maxim дал «ок» на roadmap 50 статей (`.content-os/batches/new-articles-roadmap-2026-08-22.md`). Волна 1 написана и прошла гейты:
+
+- **10 новых гайдов** (SRL, аукционы, nuda proprietà, rent-to-buy, перевод денег, продажа, 90/180, proposta, гарантии новостроек, viewing trip) — все вручную, **GEO 92–94**, 3 цитируемых блока и вопросные H2 на каждом, 2 длинных тире прозы на все 10 файлов.
+- **Факты волны верифицированы онлайн** (interesse legale 1,6% / пол 2,5% для узуфрукта, superbonus-платеж 26% в 10-летнем окне, EES с 10.04.2026, ETIAS → 2027, IRES 24%).
+- **Hero**: 10 уникальных тематических фото (Commons → Cloudinary, атрибуция в манифесте), `check-heroes` PASS на 262 страницах.
+- **SERP-брифы**: ветка `claude/italy-wave1-briefs` в more-group-content-os (10 новых + 7 ретро-стабов для legacy). **Мержить content-os PR первым**, потом site PR.
+- Гейты: validate:content 262/262, batch-writing-gate --all PASS, corpus-signals PASS, preflight 0 errors, fact-check 0 errors, build 0 P0/P1, links clean.
+
+Попутно закрыт хвост прошлой волны: «two%»-регрессия (8 файлов), устаревший flat tax на prima-casa, ссылки и описания на 7 legacy-страницах.
+
+
 
 ## Где мы сейчас (2026-08-20, вечер)
 
