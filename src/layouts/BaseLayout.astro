@@ -6,6 +6,8 @@ import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import PostHog from '../components/PostHog.astro';
 import WhatsAppIntentTracker from '../components/WhatsAppIntentTracker.astro';
 import StickyMobileLeadBar from '../components/StickyMobileLeadBar.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+import CurrencyEngine from '../components/CurrencyEngine.astro';
 import { SITE } from '../data/site';
 
 interface StickyCtaProps {
@@ -133,6 +135,8 @@ const allSchemas = [orgSchema, ...schemas];
   </main>
   <Footer />
   {stickyCta && <StickyMobileLeadBar {...stickyCta} />}
+  <WhatsAppFloat />
+  <CurrencyEngine />
   <WhatsAppIntentTracker />
   <GoogleAnalytics />
   <PostHog />
