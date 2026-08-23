@@ -39,7 +39,7 @@ const heroImage = getCardImageUrl(HOMEPAGE_HERO_IMAGE, 'hero');
 const heroProjectImage = heroProject ? getCardImageUrl(heroProject.data.heroImage, 'card') : heroImage;
 ---
 <BaseLayout
-  title="Italy Property Investment — Tuscany, Milan, Puglia 2026"
+  title="Italy Property Investment: Tuscany, Milan, Puglia 2026"
   description={SITE.description}
   stickyCta={STICKY_HOME}
 >
@@ -48,10 +48,10 @@ const heroProjectImage = heroProject ? getCardImageUrl(heroProject.data.heroImag
       <div>
         <span class="badge-pill mb-5">Independent research</span>
         <h1 class="text-3xl md:text-[2.35rem] mb-5 leading-tight">
-          Italy property investment research — before you buy
+          Italy property investment research, before you buy
         </h1>
         <p class="text-base md:text-lg text-[var(--color-muted)] mb-8 max-w-xl">
-          Tuscany, Milan, Puglia, Lake Como — 4.3% average yields, codice fiscale guides, investor visa rules, Milan vs Rome comparisons, and due diligence for US and UK buyers.
+          Tuscany, Milan, Puglia and Lake Como: 4.3% average yields, codice fiscale guides, investor visa rules, Milan vs Rome comparisons, and due diligence for US and UK buyers.
         </p>
         <div class="flex flex-wrap gap-3 mb-10">
           <a href="/guides/" class="btn-primary px-6 py-3">Browse guides</a>
@@ -74,7 +74,7 @@ const heroProjectImage = heroProject ? getCardImageUrl(heroProject.data.heroImag
         </div>
       </div>
       <div class="hero-visual min-h-[280px] md:min-h-[380px] relative">
-        <img src={heroProjectImage} alt={heroProject ? `${heroProject.data.title} — featured Italy project` : 'Ostuni trulli villa, Puglia'} loading="eager" width="1400" height="560" />
+        <img src={heroProjectImage} alt={heroProject ? `${heroProject.data.title}, featured Italy project` : 'Ostuni trulli villa, Puglia'} loading="eager" width="1400" height="560" />
         <div class="hero-visual__overlay" />
         <p class="hero-visual__caption">Puglia · Ostuni countryside</p>
         {heroProject && (
@@ -117,7 +117,7 @@ const heroProjectImage = heroProject ? getCardImageUrl(heroProject.data.heroImag
       <div class="flex items-end justify-between gap-4 mb-8">
         <div>
           <h2 class="text-2xl mb-2">Featured project reviews</h2>
-          <p class="text-[var(--color-muted)]">Click through for pricing, photos, yield math, and due diligence — not developer brochures.</p>
+          <p class="text-[var(--color-muted)]">Click through for pricing, photos, yield math and due diligence, not developer brochures.</p>
         </div>
         <a href="/projects/" class="link-arrow shrink-0 hidden sm:inline">All {publishedProjects.length} projects →</a>
       </div>
@@ -135,7 +135,7 @@ const heroProjectImage = heroProject ? getCardImageUrl(heroProject.data.heroImag
             priceFromUsd={project.data.priceFromUsd}
           />
         )) : (
-          <p class="text-[var(--color-muted)] col-span-full py-8">Project reviews publishing soon — parser batch 1 ready on Cloudinary.</p>
+          <p class="text-[var(--color-muted)] col-span-full py-8">Project reviews publishing soon: parser batch 1 ready on Cloudinary.</p>
         )}
       </div>
       <div class="mt-8 text-center sm:hidden">
@@ -164,7 +164,7 @@ const heroProjectImage = heroProject ? getCardImageUrl(heroProject.data.heroImag
             meta={`${guide.data.readingTime ?? 8} min read`}
           />
         )) : (
-          <p class="text-[var(--color-muted)] col-span-full py-4">Buyer guides batch publishing next — see content map in research dossier.</p>
+          <p class="text-[var(--color-muted)] col-span-full py-4">Buyer guides batch publishing next: see content map in research dossier.</p>
         )}
       </div>
     </div>
@@ -175,7 +175,7 @@ const heroProjectImage = heroProject ? getCardImageUrl(heroProject.data.heroImag
       <div class="flex items-end justify-between gap-4 mb-8">
         <div>
           <h2 class="text-2xl mb-2">Investment areas</h2>
-          <p class="text-[var(--color-muted)]">Micro-market guides — yields, buyer fit, and red flags.</p>
+          <p class="text-[var(--color-muted)]">Micro-market guides: yields, buyer fit, and red flags.</p>
         </div>
         <a href="/areas/" class="link-arrow shrink-0 hidden sm:inline">All areas →</a>
       </div>
@@ -197,7 +197,7 @@ const heroProjectImage = heroProject ? getCardImageUrl(heroProject.data.heroImag
   <section class="section bg-[var(--color-surface)] border-t border-[var(--color-border-soft)]">
     <div class="site-container max-w-xl">
       <h2 class="text-2xl mb-3">Get a shortlist</h2>
-      <p class="text-[var(--color-muted)] mb-8">Tell us budget and market — we match you with vetted local partners. No obligation.</p>
+      <p class="text-[var(--color-muted)] mb-8">Tell us budget and market, and we match you with vetted local partners. No obligation.</p>
       <LeadForm context="Homepage shortlist" />
     </div>
   </section>
