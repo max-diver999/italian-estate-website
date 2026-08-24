@@ -82,6 +82,7 @@ for (const file of walk(SRC)) {
   const text = readFileSync(file, 'utf8');
   for (const m of text.matchAll(URL_RE)) {
     const url = m[0].replace(/[.,;]+$/, '');
+    if (url.includes('${')) continue;
     if (!isImageUrl(url)) continue;
     if (!map.has(url)) map.set(url, new Set());
     map.get(url).add(file.replace(ROOT + '/', ''));
