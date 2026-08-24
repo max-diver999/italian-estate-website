@@ -50,7 +50,12 @@
     "upgrade-pack:continue": "node ../more-group-content-os/scripts/upgrade-pack/run.mjs --phase continue",
     "upgrade-pack:audit": "node ../more-group-content-os/scripts/upgrade-pack/run.mjs --phase 0",
     "upgrade-pack:prepare": "node ../more-group-content-os/scripts/upgrade-pack/run.mjs --phase prepare --apply",
-    "upgrade-pack:finalize": "node ../more-group-content-os/scripts/upgrade-pack/run.mjs --phase 9-10"
+    "upgrade-pack:finalize": "node ../more-group-content-os/scripts/upgrade-pack/run.mjs --phase 9-10",
+    "aeo:verify": "node scripts/reference-infra/verify-reference-infra.mjs --config reference-infra.config.json --robots public/robots.txt",
+    "aeo:dates": "node scripts/reference-infra/restore-real-updated-dates.mjs --config reference-infra.config.json",
+    "aeo:markdown": "node scripts/reference-infra/fix-markdown-structure.mjs --config reference-infra.config.json",
+    "aeo:robots": "node scripts/reference-infra/generate-robots.mjs --config reference-infra.config.json",
+    "aeo:llms": "node scripts/reference-infra/generate-agent-markdown.mjs --config reference-infra.config.json"
   },
   "dependencies": {
     "@astrojs/mdx": "5.0.2",
