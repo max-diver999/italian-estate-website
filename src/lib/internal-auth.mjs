@@ -5,24 +5,13 @@
  * scripts/test-internal-auth.mjs imports the same module directly, so the tested
  * code is the shipped code rather than a transformed copy.
  *
- * Context: /site-report published internal analytics — GSC clicks, impressions,
- * CTR and average position, GA4 sessions, the confirmed-lead count, Kommo and
- * Telegram plumbing notes, the growth roadmap — with no authentication and no
- * `noindex`, reachable by anyone holding the URL.
- *
- * robots.txt made that worse rather than better. `Disallow: /site-report/`
- *   - does NOT prevent indexing: Google still indexes a disallowed URL it finds
- *     linked or shared, listing it as "No information is available",
- *   - actively PREVENTS de-indexing, because a crawler that may not fetch the
- *     page can never see a `noindex` on it,
- *   - and, robots.txt being public, advertises the path to anyone who reads it.
- *
- * So the Disallow was removed and the route locked instead. Google drops URLs
- * that consistently answer 401.
+ * Context: /site-report is a noindex portfolio dashboard. It stays public
+ * (like other MORE Group site reports). Middleware remains available for
+ * future internal routes if needed.
  */
 import { timingSafeEqual } from 'node:crypto';
 
-export const PROTECTED_PREFIXES = ['/site-report'];
+export const PROTECTED_PREFIXES = [];
 const REALM = 'Italian Estate internal';
 
 export function isProtectedPath(pathname) {

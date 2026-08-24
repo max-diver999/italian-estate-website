@@ -2,14 +2,9 @@ import type { MiddlewareHandler } from 'astro';
 import { challenge, credentialsFromEnv, isAuthorised, isProtectedPath } from './lib/internal-auth.mjs';
 
 /**
- * Gates internal-only routes behind HTTP Basic auth.
+ * Optional HTTP Basic auth for internal-only routes (none configured today).
  *
- * The logic lives in src/lib/internal-auth.mjs so that
- * scripts/test-internal-auth.mjs can import and test exactly the code that
- * ships. See that module for why robots.txt was the wrong tool here.
- *
- * Middleware only runs for on-demand routes, so any page listed in
- * PROTECTED_PREFIXES must set `export const prerender = false`.
+ * /site-report is prerendered and public like other portfolio site reports.
  */
 export const onRequest: MiddlewareHandler = async (context, next) => {
   if (!isProtectedPath(context.url.pathname)) return next();

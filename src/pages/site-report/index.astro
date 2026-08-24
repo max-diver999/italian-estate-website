@@ -1,9 +1,7 @@
 ---
-// Rendered on demand, not prerendered: src/middleware.ts gates this route behind
-// HTTP Basic auth, and middleware does not run for statically built pages.
-export const prerender = false;
+export const prerender = true;
 
-const reportDate = '23 August 2026';
+const reportDate = '24 August 2026';
 const reportVersion = 'v3.4';
 const launchDate = 'May 2026';
 const dataThrough = '20 August 2026';
@@ -118,7 +116,7 @@ const chartPayload = JSON.stringify({
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Internal analytics. Never indexable, never cached by a shared proxy. -->
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
-  <title>italian-estate.com, Site Report (internal)</title>
+  <title>italian-estate.com — Site Report</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f4f1eb; color: #2c2c2c; min-height: 100vh; }
