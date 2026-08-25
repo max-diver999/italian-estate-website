@@ -3,9 +3,9 @@ const TRANSFORM_TOKEN_RE = /^(w_|h_|c_|f_|q_|g_|e_|b_|dpr_|fl_|a_)/;
 export type CloudinaryRole = 'hero' | 'inline' | 'thumb';
 
 const ROLE_WIDTHS: Record<CloudinaryRole, string[]> = {
-  hero: ['w_640,q_85,f_webp', 'w_960,q_85,f_webp', 'w_1200,q_85,f_webp'],
-  inline: ['w_640,q_85,f_webp', 'w_960,q_85,f_webp'],
-  thumb: ['w_320,q_80,f_webp', 'w_400,q_80,f_webp', 'w_640,h_360,c_fill,q_80,f_webp'],
+  hero: ['w_640,q_85,f_auto', 'w_960,q_85,f_auto', 'w_1200,q_85,f_auto'],
+  inline: ['w_640,q_85,f_auto', 'w_960,q_85,f_auto'],
+  thumb: ['w_320,q_80,f_auto', 'w_400,q_80,f_auto', 'w_640,h_360,c_fill,q_80,f_auto'],
 };
 
 const ROLE_SIZES: Record<CloudinaryRole, string> = {
