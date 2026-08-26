@@ -48,6 +48,16 @@ Claude **не** запускает повторный bulk GEO по всему �
 
 Дальше: ревью PR в Cursor → «выложи» → деплой и переиндексация. Новые статьи — только после «ок» на roadmap.
 
+## Волна 2 новых статей (2026-08-23, «Правовая глубина / Salva Casa») — готова к ревью
+
+Волна 2 (ids 11–20) написана и прошла гейты. Отчёт: `.content-os/reports/WAVE2-NEW-ARTICLES-2026-08-23.md`.
+
+- **10 новых гайдов** (Salva Casa, abusi edilizi, condominio, APE/энергокласс, superbonus-последствия, сейсмозоны, geometra, preliminare trascritto, страхование, agibilità) — все вручную, **GEO 91–95**, ≥3 цитируемых блока и вопросные H2 на каждой, ноль длинных тире.
+- **Факты волны верифицированы онлайн**: Salva Casa DL 69/2024 → L. 105/2024 с градуированными допусками 2–6%, art. 36-bis; EPBD IV −16%/2030 без поквартирных мандатов; cat-nat обязательна только фирмам, жильё застраховано 7,3%; сейсмозоны Z1–Z4 по комунам; SCA agibilità 15 дней; art. 2645-bis сроки 1/3 года; superbonus resale 26%/10 лет.
+- **Hero**: 10 уникальных тематических фото (Commons → Cloudinary), `check-heroes` PASS на 272 страницах.
+- **SERP-брифы**: +10 в ветке `claude/italy-wave1-briefs` more-group-content-os (коммит `1df2946`). **Мержить content-os PR первым.**
+- Гейты: validate:batch PASS, build 0 P0/P1 (272 страницы), check-links clean, fact-check 0, preflight 0.
+
 ## Волна 1 новых статей (2026-08-22, «Деньги и сделка») — готова к ревью
 
 Maxim дал «ок» на roadmap 50 статей (`.content-os/batches/new-articles-roadmap-2026-08-22.md`). Волна 1 написана и прошла гейты:
