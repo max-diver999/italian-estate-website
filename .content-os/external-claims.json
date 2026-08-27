@@ -1,0 +1,95 @@
+{
+  "_readme": "Claims about jurisdictions outside Italy. These sit in a separate file from facts.json for two reasons. First, facts.json is keyed by the bare figure and feeds GEO scoring, and several of these claims turn on numbers that mean something else elsewhere in this corpus: 10% is a Croatian transfer tax here and Italian new-build VAT on twenty other pages, 3% is a Portuguese IMT band here and an agency commission almost everywhere else. Registering them there would hand unrelated Italian pages a provenance they have not earned. Second, and the actual point: nobody on this project monitors the Portuguese State Budget, the Greek golden-visa thresholds, the Spanish autonomous communities or Maltese residence programmes the way Italian sources get checked. These figures will go out of date without anyone noticing. Each carries a reviewBy date; `npm run facts:review` fails once one is overdue, which is the whole mechanism. Reviewing means re-reading the primary source and either moving asOf and reviewBy forward or correcting every file listed.",
+  "_history": "This site has already been bitten once by exactly this: the corpus carried a Greek golden-visa threshold of EUR 250,000 across several comparison pages long after Greece had moved to a two-tier EUR 400,000 / EUR 800,000 regime, and it was caught by hand in the August 2026 audit rather than by any check. That figure had no watcher. This file is the watcher.",
+  "reviewIntervalMonths": 6,
+  "claims": [
+    {
+      "id": "gr-golden-visa-tiers",
+      "jurisdiction": "GR",
+      "claim": "Greece runs a tiered residence-by-investment property threshold of EUR 400,000 in most of the country and EUR 800,000 in the highest-demand zones, replacing the former flat EUR 250,000",
+      "source": "Greek Law 5100/2024 amending the residence permit investment thresholds",
+      "asOf": "2026-08-20",
+      "reviewBy": "2027-02-20",
+      "files": [
+        "compare/italy-vs-greece-property-investment.mdx"
+      ]
+    },
+    {
+      "id": "pt-no-golden-visa-property",
+      "jurisdiction": "PT",
+      "claim": "Portugal no longer grants residence by investment through residential property purchase; the property routes were removed from the programme",
+      "source": "Portugal Mais Habitacao, Law 56/2023",
+      "asOf": "2026-08-20",
+      "reviewBy": "2027-02-20",
+      "files": [
+        "compare/italy-vs-portugal-property-investment.mdx"
+      ]
+    },
+    {
+      "id": "es-golden-visa-ended",
+      "jurisdiction": "ES",
+      "claim": "Spain has ended its residence-by-property-investment route, so the former EUR 500,000 threshold no longer buys residence",
+      "source": "Spanish Organic Law 1/2025 repealing the investor residence provisions of Law 14/2013",
+      "asOf": "2026-08-20",
+      "reviewBy": "2027-02-20",
+      "files": [
+        "compare/italy-vs-spain-property-investment.mdx"
+      ]
+    },
+    {
+      "id": "hr-transfer-tax",
+      "jurisdiction": "HR",
+      "claim": "Croatia charges a 3% real estate transfer tax on resale purchases, with new builds from a VAT-registered seller falling under VAT instead",
+      "source": "Croatian Real Estate Transfer Tax Act",
+      "asOf": "2026-08-20",
+      "reviewBy": "2027-02-20",
+      "files": [
+        "compare/italy-vs-croatia-property-investment.mdx"
+      ]
+    },
+    {
+      "id": "mt-residence-programmes",
+      "jurisdiction": "MT",
+      "claim": "Malta's residence routes run on programme-specific property value and contribution floors rather than on a single purchase threshold, and the citizenship route was struck down by the Court of Justice of the European Union in 2025",
+      "source": "Malta Permanent Residence Programme regulations; CJEU judgment in Commission v Malta (C-181/23)",
+      "asOf": "2026-08-20",
+      "reviewBy": "2027-02-20",
+      "files": [
+        "compare/italy-vs-malta-property-investment.mdx"
+      ]
+    },
+    {
+      "id": "fr-notaire-costs",
+      "jurisdiction": "FR",
+      "claim": "French frais de notaire on an existing property run to roughly 7-8% of price, the great majority of which is transfer duty rather than the notaire's own fee",
+      "source": "Conseil superieur du notariat published fee scales",
+      "asOf": "2026-08-20",
+      "reviewBy": "2027-02-20",
+      "files": [
+        "compare/italy-vs-france-property-investment.mdx"
+      ]
+    },
+    {
+      "id": "eu-ees-etias",
+      "jurisdiction": "EU",
+      "claim": "The EU Entry/Exit System reaches full operation across external borders on 10 April 2026, with ETIAS following in 2027, which is what governs how long a non-EU owner may stay at an Italian property",
+      "source": "Regulation (EU) 2017/2226 and the Commission progressive rollout timetable",
+      "asOf": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "files": [
+        "guides/90-180-day-rule-italy-property-owners.mdx"
+      ]
+    },
+    {
+      "id": "eu-epbd-stock-targets",
+      "jurisdiction": "EU",
+      "claim": "EPBD IV sets stock-average residential energy reductions of 16% by 2030 and 20-22% by 2035 and does NOT impose a minimum energy class on an individual home; member states had until 29 May 2026 to transpose it",
+      "source": "Directive (EU) 2024/1275 arts. 9 and 35",
+      "asOf": "2026-08-23",
+      "reviewBy": "2027-02-23",
+      "files": [
+        "guides/energy-class-ape-italy-property.mdx"
+      ]
+    }
+  ]
+}

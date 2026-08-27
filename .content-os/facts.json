@@ -1,0 +1,109 @@
+{
+  "_readme": "Load-bearing figures for italian-estate.com. A figure phrase used in two or more articles is a corpus-wide claim and must be registered here with its source; a figure used once is a local worked example and needs no entry. Adding an entry is a claim about the world, so each needs a source and an asOf date, and the scorer reports every entry a change introduces so a reviewer sees them. Entries are grouped per figure, because one number can carry more than one meaning: 2% is the prima casa registration rate and also the Salva Casa tolerance for post-2024 works.",
+  "_scope": "Italian figures only. A claim about Portuguese, Spanish, Greek, Maltese or Croatian tax belongs in external-claims.json, keyed by the claim rather than by the number, because nobody here monitors those jurisdictions and because their numbers collide with Italian ones.",
+  "_seeding": "This registry starts from the figures verified against primary sources during the two new-article waves of August 2026, not from a sweep of what the corpus happens to repeat. Registering a figure the corpus repeats without checking it is how an unsourced number acquires the appearance of provenance, which is the failure this file exists to prevent. It is deliberately incomplete: the corpus carries 381 load-bearing figures and the rewrite waves populate the rest as each page is actually checked.",
+  "facts": [
+    {
+      "figure": "21%",
+      "statement": "Cedolare secca rate on short-let income from the first residential unit a landlord lets in a tax year",
+      "source": "Legge di Bilancio 2024 (L. 213/2023) art. 1 co. 63; Agenzia delle Entrate guidance on locazioni brevi",
+      "asOf": "2026-08-22"
+    },
+    {
+      "figure": "26%",
+      "statement": "Cedolare secca rate on short-let income from the second and each further unit let in the same tax year",
+      "source": "Legge di Bilancio 2024 (L. 213/2023) art. 1 co. 63",
+      "asOf": "2026-08-22"
+    },
+    {
+      "figure": "26%",
+      "statement": "Plusvalenza rate on the sale of a property that took superbonus works, where the sale falls within ten years of completion",
+      "source": "Legge di Bilancio 2024 (L. 213/2023) art. 1 co. 64-67",
+      "asOf": "2026-08-22"
+    },
+    {
+      "figure": "9%",
+      "statement": "Registration tax on a second-home resale purchase from a private seller, charged on cadastral value under prezzo-valore",
+      "source": "DPR 131/1986 Tariffa Parte I art. 1; prezzo-valore per L. 266/2005 art. 1 co. 497",
+      "asOf": "2026-08-22"
+    },
+    {
+      "figure": "2%",
+      "statement": "Registration tax on a prima casa resale purchase from a private seller, charged on cadastral value",
+      "source": "DPR 131/1986 Tariffa Parte I art. 1, nota II-bis",
+      "asOf": "2026-08-22"
+    },
+    {
+      "figure": "10%",
+      "statement": "VAT on a new-build second home bought from the constructing company",
+      "source": "DPR 633/1972 Tabella A Parte III n. 127-undecies",
+      "asOf": "2026-08-22"
+    },
+    {
+      "figure": "4%",
+      "statement": "VAT on a new-build prima casa bought from the constructing company",
+      "source": "DPR 633/1972 Tabella A Parte II n. 21",
+      "asOf": "2026-08-22"
+    },
+    {
+      "figure": "22%",
+      "statement": "VAT on a new-build purchase in the luxury cadastral categories A/1, A/8 and A/9",
+      "source": "DPR 633/1972; cadastral categories per DM 2 agosto 1969",
+      "asOf": "2026-08-22"
+    },
+    {
+      "figure": "1.06%",
+      "statement": "IVIE, the Italian tax an Italian resident pays on property held abroad, from 2024",
+      "source": "Legge di Bilancio 2024 (L. 213/2023) art. 1 co. 91",
+      "asOf": "2026-08-20"
+    },
+    {
+      "figure": "0.2%",
+      "statement": "IVAFE, the Italian tax an Italian resident pays on financial assets held abroad",
+      "source": "DL 201/2011 art. 19; Legge di Bilancio 2024 for the 0.4% rate on blacklisted jurisdictions",
+      "asOf": "2026-08-20"
+    },
+    {
+      "figure": "1.6%",
+      "statement": "Interesse legale for 2026, used for late-payment interest and for ravvedimento operoso arithmetic",
+      "source": "DM Economia e Finanze 10 dicembre 2025",
+      "asOf": "2026-08-22"
+    },
+    {
+      "figure": "2.5%",
+      "statement": "Floor rate applied to usufruct and bare-ownership valuation tables, which is why the 2026 tables did not move when the legal rate fell",
+      "source": "DPR 131/1986 art. 46 and the annual usufruct coefficient decree",
+      "asOf": "2026-08-22"
+    },
+    {
+      "figure": "24%",
+      "statement": "IRES, the Italian corporate income tax rate applying to a company holding Italian property",
+      "source": "TUIR art. 77",
+      "asOf": "2026-08-22"
+    },
+    {
+      "figure": "20 sqm",
+      "statement": "Minimum floor area for a habitable single-occupant dwelling after the Salva Casa reform, reduced from 28 sqm",
+      "source": "DL 69/2024 conv. L. 105/2024 art. 1; DM Sanità 5 luglio 1975 as amended",
+      "asOf": "2026-08-23"
+    },
+    {
+      "figure": "28 sqm",
+      "statement": "Minimum floor area for a habitable dwelling for two occupants after the Salva Casa reform",
+      "source": "DL 69/2024 conv. L. 105/2024 art. 1; DM Sanità 5 luglio 1975 as amended",
+      "asOf": "2026-08-23"
+    },
+    {
+      "figure": "7.3%",
+      "statement": "Share of Italian homes carrying catastrophe cover, against a mandatory regime that applies to firms only",
+      "source": "ANIA, Italian insurance association, cat-nat exposure data 2025",
+      "asOf": "2026-08-23"
+    },
+    {
+      "figure": "708",
+      "statement": "Comuni classified in seismic zone 1, the highest hazard band, where sismabonus and the strictest NTC rules apply",
+      "source": "Dipartimento della Protezione Civile, classificazione sismica dei comuni italiani",
+      "asOf": "2026-08-23"
+    }
+  ]
+}

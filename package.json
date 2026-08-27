@@ -57,7 +57,12 @@
     "aeo:dates": "node scripts/reference-infra/restore-real-updated-dates.mjs --config reference-infra.config.json",
     "aeo:markdown": "node scripts/reference-infra/fix-markdown-structure.mjs --config reference-infra.config.json",
     "aeo:robots": "node scripts/reference-infra/generate-robots.mjs --config reference-infra.config.json",
-    "aeo:llms": "node scripts/reference-infra/generate-agent-markdown.mjs --config reference-infra.config.json"
+    "aeo:llms": "node scripts/reference-infra/generate-agent-markdown.mjs --config reference-infra.config.json",
+    "geo:score": "node scripts/geo-score.mjs",
+    "geo:calibrate": "node scripts/geo-calibrate.mjs",
+    "geo:cannibals": "node scripts/geo-cannibals.mjs",
+    "geo:signals": "node scripts/geo-signal-lab.mjs",
+    "facts:review": "node scripts/facts-review.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "5.0.2",
