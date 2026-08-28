@@ -277,6 +277,44 @@ this corpus. The rule fires on **0 of 272 files** today, which is the correct
 reading of a corpus whose defect is duplication rather than malformed arithmetic.
 It stands as a tripwire, not as a finding.
 
+### The third one, found during R3
+
+Provenance counts what share of a document's load-bearing figures are registered
+in `.content-os/facts.json`. Foreign-jurisdiction figures cannot go in that file
+by design: it is keyed on the bare figure and feeds provenance corpus-wide, so
+registering a Spanish threshold there would hand provenance to every Italian page
+using the same number. `external-claims.json` exists for those claims and is
+keyed by claim, with an explicit list of the files that rely on it.
+
+The result was a rule punishing correct writing. `compare/italy-vs-spain` cited
+Spain's €700,000 wealth-tax exemption, sourced it in the only file where it may
+be sourced, and lost the full ten provenance points because the figure was not in
+`facts.json` and could not be.
+
+`scoreProvenance` and `unregisteredSharedFigures` now consult `external-claims`
+as well, and the lookup is deliberately narrower than the `facts.json` one:
+credit attaches only to the specific files a claim names, so nothing spills onto
+pages that did not do the work. Measured: the Spain page moves 51 to 61,
+calibration is unchanged at 70.8 separation, and the corpus mean moves 26.18 to
+27.01 because the comparison pages that already carried registered foreign claims
+were being penalised for them too.
+
+### What registering a figure actually buys, measured
+
+The registry is the one file a scored agent can write to, so the spillover was
+measured rather than assumed. Adding three figures verified during R2 (the
+Chianti Classico 80% Sangiovese minimum and 70% conversion cap, and the 1%
+national planting ceiling) moved the corpus mean from **19.86 to 19.97**: 0.11 of
+a point across 272 files. Registration is not a route to inflating the corpus,
+because most unregistered files are gated at zero for other reasons and
+provenance is ten points of seventy-five.
+
+The rule followed during R2 and R3 was: **register a figure only if it was
+verified against a source during the wave; reword a figure that was the writer's
+own illustration.** Round durations and percentages added to satisfy the fact
+density check (`20%`, `15%`, `8 weeks`, `12 months`, `5 months`, `20 years`) were
+reworded out rather than registered, because nothing had been checked about them.
+
 ## Calibration
 
 `npm run geo:calibrate`. The implementation must hold:
