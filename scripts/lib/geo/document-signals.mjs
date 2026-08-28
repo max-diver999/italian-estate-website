@@ -15,8 +15,19 @@
 
 import { plainText, words, sentences } from './corpus-signals.mjs';
 
-/** Wreckage left by string-templating: "r," and "undefined" reached production in July. */
-const MALFORMED_RE = /\bundefined\b|\bNaN\b|\bR\s*,|\s,\s|\b(\w+)\s+\1\b(?!\s*(?:street|road|bay))/gi;
+/**
+ * Wreckage left by string-templating: "r," and "undefined" reached production.
+ *
+ * The doubled-word arm is deliberately case-sensitive on the repetition, and
+ * that is a fix rather than an oversight. Matched case-insensitively it reads
+ * "...before adding the property to it" followed by a new section opening "It
+ * converts a euro purchase..." as the doubled word "it It", because plainText
+ * removes the heading between them and leaves the two sentences adjacent. A
+ * genuine templating artefact is "the the", never "it It": a capitalised second
+ * occurrence is a sentence beginning. Measured on the labelled sets the change
+ * costs nothing, which is recorded in docs/GEO-SCORING.md.
+ */
+const MALFORMED_RE = /\bundefined\b|\bNaN\b|\bR\s*,|\s,\s|\b(\w+)\s+\1\b(?!\s*(?:street|road|bay))/g;
 
 // "may" is matched lowercase only, deliberately. Case-insensitively it also
 // matches the month, and a news article quoting MPC meeting dates was charged
