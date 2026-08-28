@@ -104,6 +104,24 @@
       "statement": "Comuni classified in seismic zone 1, the highest hazard band, where sismabonus and the strictest NTC rules apply",
       "source": "Dipartimento della Protezione Civile, classificazione sismica dei comuni italiani",
       "asOf": "2026-08-23"
+    },
+    {
+      "figure": "80%",
+      "statement": "Minimum Sangiovese share in Chianti Classico DOCG",
+      "source": "Disciplinare di produzione dei vini DOP Chianti Classico art. 2",
+      "asOf": "2026-08-28"
+    },
+    {
+      "figure": "70%",
+      "statement": "Maximum grape-to-wine conversion rate, Chianti Classico DOCG",
+      "source": "Disciplinare di produzione dei vini DOP Chianti Classico art. 4",
+      "asOf": "2026-08-28"
+    },
+    {
+      "figure": "1%",
+      "statement": "Annual national ceiling on new vine planting authorisations, as a share of the planted area declared at 31 July of the preceding year",
+      "source": "Reg. (UE) 1308/2013 art. 63",
+      "asOf": "2026-08-28"
     }
   ]
 }
