@@ -146,6 +146,18 @@
       "statement": "Maximum duration of a concession on the Lombardy lake and waterway domain",
       "source": "Regolamento regionale Lombardia 9/2015, disciplina della gestione del demanio lacuale e idroviario",
       "asOf": "2026-08-28"
+    },
+    {
+      "figure": "15 years",
+      "statement": "Maximum duration of the substitute-tax regime for new Italian residents under art. 24-bis TUIR",
+      "source": "Art. 24-bis TUIR; increase to EUR 200,000 for residence transferred after 10 August 2024",
+      "asOf": "2026-08-28"
+    },
+    {
+      "figure": "10 years",
+      "statement": "Duration of the 7% substitute-tax regime for foreign pensioners under art. 24-ter TUIR",
+      "source": "Art. 24-ter TUIR; population ceiling raised from 20,000 to 30,000 from 7 April 2026",
+      "asOf": "2026-08-28"
     }
   ]
 }

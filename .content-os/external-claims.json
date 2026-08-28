@@ -94,7 +94,7 @@
     {
       "id": "es-wealth-tax-700k",
       "jurisdiction": "ES",
-      "claim": "Spain's wealth tax carries a state exemption of €700,000 of net wealth per person, applying to non-residents on Spanish assets, with a further allowance of up to €300,000 against a main residence available to residents only; the state scale runs progressively from 0.2% to 3.5% and autonomous communities modify the outcome",
+      "claim": "Spain's wealth tax carries a state exemption of €700,000 of net wealth per person, applying to non-residents on Spanish assets, with a further allowance of up to €300,000 against a main residence available to residents only; the state scale runs progressively from 0.2% to 3.5% and autonomous communities modify the outcome; on a sale by a non-resident the buyer withholds 3% of the price on account of the seller's capital gains tax",
       "source": "Ley 19/1991 del Impuesto sobre el Patrimonio, state scale and minimo exento; autonomous community variations",
       "asOf": "2026-08-28",
       "reviewBy": "2027-02-28",
@@ -111,6 +111,17 @@
       "reviewBy": "2027-02-28",
       "files": [
         "compare/italy-vs-croatia-property-investment.mdx"
+      ]
+    },
+    {
+      "id": "eu-vacancy-rates-fr-de",
+      "jurisdiction": "EU",
+      "claim": "Unoccupied dwellings run at roughly 7.8% in France and 4.4% in Germany, far below Italy's share of about 27.2%",
+      "source": "National statistical comparisons of unoccupied dwellings, reported alongside ISTAT figures for Italy",
+      "asOf": "2026-08-28",
+      "reviewBy": "2027-02-28",
+      "files": [
+        "compare/turin-vs-milan-property.mdx"
       ]
     }
   ]
