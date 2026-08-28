@@ -90,6 +90,28 @@
       "files": [
         "guides/energy-class-ape-italy-property.mdx"
       ]
+    },
+    {
+      "id": "es-wealth-tax-700k",
+      "jurisdiction": "ES",
+      "claim": "Spain's wealth tax carries a state exemption of €700,000 of net wealth per person, applying to non-residents on Spanish assets, with a further allowance of up to €300,000 against a main residence available to residents only; the state scale runs progressively from 0.2% to 3.5% and autonomous communities modify the outcome",
+      "source": "Ley 19/1991 del Impuesto sobre el Patrimonio, state scale and minimo exento; autonomous community variations",
+      "asOf": "2026-08-28",
+      "reviewBy": "2027-02-28",
+      "files": [
+        "compare/italy-vs-spain-property-investment.mdx"
+      ]
+    },
+    {
+      "id": "hr-transfer-tax-3pc",
+      "jurisdiction": "HR",
+      "claim": "Croatia charges real estate transfer tax at 3% of market value rather than of the stated contract price; a new build sold by a VAT-registered developer carries 25% VAT instead and no transfer tax; from contracts or occupancy from 1 January 2025 first-time buyers may obtain a full refund of transfer tax and up to half of the VAT, within size and price limits",
+      "source": "Croatian Real Estate Transfer Tax Act as administered by Porezna uprava; 2025 first-time buyer relief",
+      "asOf": "2026-08-28",
+      "reviewBy": "2027-02-28",
+      "files": [
+        "compare/italy-vs-croatia-property-investment.mdx"
+      ]
     }
   ]
 }

@@ -89,6 +89,49 @@ function loadRegistry() {
   }
 }
 
+/**
+ * Foreign-jurisdiction figures cannot live in facts.json by design: that file is
+ * keyed on the bare figure and feeds provenance corpus-wide, so registering a
+ * Spanish threshold there would hand provenance to every Italian page that
+ * happens to use the same number. external-claims.json exists for those claims
+ * and is keyed by claim, with an explicit list of the files that rely on it.
+ *
+ * Without this lookup the rubric penalised a page for citing a foreign figure
+ * correctly and sourcing it in the only file where it may be sourced, which is
+ * a rule punishing correct writing rather than templating. The lookup is
+ * deliberately narrower than facts.json: credit attaches only to the specific
+ * files an entry names, so nothing spills onto pages that did not do the work.
+ */
+let externalCache = null;
+
+function loadExternalClaims() {
+  const p = path.join(REPO, '.content-os/external-claims.json');
+  const raw = fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : { claims: [] };
+  const claims = Array.isArray(raw.claims) ? raw.claims : [];
+  externalCache = new Map(); // docId (basename) -> Set of normalised figures
+  for (const c of claims) {
+    if (!c || typeof c.claim !== 'string' || typeof c.source !== 'string' || c.source.trim().length < 12) continue;
+    if (typeof c.asOf !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(c.asOf)) continue;
+    if (!Array.isArray(c.files)) continue;
+    const figures = (c.claim.match(figureRegex()) || []).map(normaliseFigure);
+    if (!figures.length) continue;
+    for (const f of c.files) {
+      const id = String(f).split('/').pop();
+      if (!externalCache.has(id)) externalCache.set(id, new Set());
+      for (const fig of figures) externalCache.get(id).add(fig);
+    }
+  }
+}
+
+export function externalClaimFigures(docId) {
+  if (!externalCache) loadExternalClaims();
+  const base = String(docId).replace(/\.mdx?$/, '');
+  for (const [id, set] of externalCache) {
+    if (id.replace(/\.mdx?$/, '') === base) return set;
+  }
+  return new Set();
+}
+
 export function factRegistry() {
   if (!registryCache) loadRegistry();
   return registryCache;
@@ -215,7 +258,8 @@ function scoreProvenance(docId, index) {
   const mine = new Set((doc.text.match(figureRegex()) || []).map(normaliseFigure));
   const loadBearing = [...mine].filter((f) => (index.figureCounts.get(f) || 0) >= LOAD_BEARING_MIN_FILES);
   if (!loadBearing.length) return 10;
-  const known = loadBearing.filter((f) => registry.has(f)).length;
+  const external = externalClaimFigures(docId);
+  const known = loadBearing.filter((f) => registry.has(f) || external.has(f)).length;
   return (known / loadBearing.length) * 10;
 }
 
@@ -229,12 +273,13 @@ function scoreProvenance(docId, index) {
  */
 export function unregisteredSharedFigures(docId, index) {
   const registry = factRegistry();
+  const external = externalClaimFigures(docId);
   const doc = index.prepared.find((d) => d.id === docId);
   const mine = new Set((doc.text.match(figureRegex()) || []).map(normaliseFigure));
   const out = [];
   for (const f of mine) {
     const sharedWith = index.figureCounts.get(f) || 0;
-    if (sharedWith >= 2 && !registry.has(f)) out.push({ figure: f, files: sharedWith });
+    if (sharedWith >= 2 && !registry.has(f) && !external.has(f)) out.push({ figure: f, files: sharedWith });
   }
   return out.sort((a, b) => b.files - a.files);
 }
