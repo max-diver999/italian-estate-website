@@ -1,0 +1,23 @@
+# Text that is deliberately identical across articles.
+#
+# The duplication detector treats every repeated passage as evidence of
+# mechanical writing, which is what catches templated filler. Legal disclaimers
+# and standing method notes are legitimately repeated, so they are declared
+# here instead of being silently exempted. One line per sentence, matched after
+# normalisation. Keep this file short: every line you add is a passage the
+# duplication detector stops looking at, and a reviewer should be able to read
+# the whole list in under a minute.
+#
+# This site declares NOTHING, on purpose.
+#
+# The standing disclaimer and the modelled-yield note live in the page layout
+# (src/layouts, src/components), not in the MDX, so they are never part of the
+# scored text and need no exemption. A sweep of the corpus for sentences of 12+
+# words appearing in three or more files returned 98 hits and not one of them
+# was a disclaimer: they were templated insider tips, repeated closing-cost
+# sentences and cloned regional summaries. Declaring any of those would exempt
+# exactly the mutation this detector exists to find.
+#
+# So: before adding a line here, check that the passage is a citation, a
+# disclaimer or a method note. If it is a sentence about Italian property, it
+# belongs in the rewrite queue instead.
