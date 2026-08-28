@@ -22,7 +22,7 @@ import { execSync } from 'node:child_process';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { scorePage, scoreToGrade } from './lib/geo-citability-scorer.mjs';
+import { loadCorpus, scoreDocument, DETERMINISTIC_MAX } from './lib/geo/score.mjs';
 import { analyzeHumanSignals, EM_DASH_LIMIT, findGluedTables, parseMdx, wordCount } from './lib/human-signals.mjs';
 import { findRepeatsWithinFile, findNearDuplicatesWithinFile, CorpusDuplicateIndex } from './lib/duplicate-detect.mjs';
 import { writeFileSync } from 'node:fs';
@@ -63,7 +63,59 @@ const valOf = (f, d) => {
 
 /** Batch policy is 2500; the legacy corpus baseline is 2000. */
 const MIN_WORDS = Number(valOf('--min-words', '2500'));
-const MIN_GEO = Number(valOf('--min-geo', '90'));
+
+/**
+ * The GEO floor, and why it moved from 90 to 34.
+ *
+ * This gate used to score pages with scripts/lib/geo-citability-scorer.mjs and
+ * demand 90 out of 100. That rubric is the one an agent was told to satisfy in
+ * July and August 2026, and it complied by injecting templated blocks across the
+ * whole corpus. Measured on labelled sets drawn from this repository's own
+ * history, it scores provably templated text 92.0 and hand-written articles
+ * 93.1: a separation of one point, with 41 of 46 templated files above the worst
+ * hand-written one. Full working in docs/GEO-SCORING.md.
+ *
+ * Leaving it in place here would mean the rewrite waves fail their own gate for
+ * removing the template, which is not a threshold question but a broken
+ * instrument. So the gate now uses the calibrated scorer in scripts/lib/geo/,
+ * which separates the same two classes by 70.8 points.
+ *
+ * The floor is 34 because that is the LOWEST score the twenty hand-written
+ * articles on this site actually achieve when scored in production against the
+ * live corpus (they run 34 to 60, median 45). It is deliberately not set at the
+ * calibration figure of 65: in production every page also carries the
+ * stamped-figure drag from a corpus of unsourced numbers, roughly 24 points, and
+ * a gate that ignores that would fail honest work for the corpus's debt. As the
+ * fact registry fills and the waves land, this floor should rise. It is a
+ * ratchet on writing, not a target to write against.
+ *
+ * The old scale's per-file baselines in quality-baseline.json are NOT consulted
+ * for GEO any more: they record 0-100 numbers from the discredited rubric, and
+ * comparing them against a 0-75 score from a different instrument would fail
+ * every page that improved. Word-count baselines still apply.
+ */
+const MIN_GEO = Number(valOf('--min-geo', '34'));
+
+let geoIndexCache = null;
+function geoScoreFor(id) {
+  if (!geoIndexCache) {
+    const files = [];
+    const walk = (dir) => {
+      if (!existsSync(dir)) return;
+      for (const entry of readdirSync(dir, { withFileTypes: true })) {
+        const full = join(dir, entry.name);
+        if (entry.isDirectory()) walk(full);
+        else if (entry.name.endsWith('.mdx') || entry.name.endsWith('.md')) files.push(full);
+      }
+    };
+    walk(CONTENT);
+    geoIndexCache = loadCorpus(files);
+  }
+  // Callers pass "collection/slug"; the scorer keys documents by basename.
+  const base = id.split('/').pop().replace(/\.mdx?$/, '');
+  const r = scoreDocument(`${base}.mdx`, geoIndexCache);
+  return { ...r, max: DETERMINISTIC_MAX };
+}
 /** Legacy corpus pages predate the batch gates — scored, but not failed, on size. */
 const LEGACY_EXEMPT_COLLECTIONS = new Set(['news']);
 
@@ -201,20 +253,18 @@ for (const { coll, slug, path } of targets) {
   };
 
   const words = wordCount(body);
-  const geo = scorePage(body, { collection: coll, corpusShingles: corpusShinglesExcluding(id) });
+  const geo = geoScoreFor(id);
 
   const minWordsHere = base ? Math.min(MIN_WORDS, base.words ?? MIN_WORDS) : MIN_WORDS;
-  const minGeoHere = base ? Math.min(MIN_GEO, base.geo ?? MIN_GEO) : MIN_GEO;
   if (!legacyExempt && words < minWordsHere) {
     fail(`word count ${words} < ${minWordsHere}`);
   }
-  if (!legacyExempt && geo.score < minGeoHere) {
-    fail(`GEO ${geo.score}/100 < ${minGeoHere} (coverage ${geo.coverage}%, citability blocks ${geo.citabilityBlockCount})`);
-  }
-  if (!base) {
-    for (const issue of geo.issues) {
-      if (issue.startsWith('citability-blocks') || issue === 'generic-verification-padding') fail(`geo ${issue}`);
-    }
+  if (!legacyExempt && geo.deterministic < MIN_GEO) {
+    fail(
+      `GEO ${geo.deterministic}/${geo.max} < ${MIN_GEO}` +
+      (geo.gates.length ? ` — gates: ${geo.gates.map((g) => g.code).join(', ')}` : '') +
+      (geo.penalties.length ? ` — worst: ${geo.penalties[0].code} -${geo.penalties[0].points}` : ''),
+    );
   }
 
   // --- markdown hygiene: the defect class that shipped to production ---
@@ -247,7 +297,7 @@ for (const { coll, slug, path } of targets) {
 
   measured[id] = {
     words,
-    geo: geo.score,
+    geo: geo.deterministic,
     selfRepeats: repeats.length,
     nearWithin: near.length,
     crossExact: cx.length,
@@ -257,8 +307,8 @@ for (const { coll, slug, path } of targets) {
   rows.push({
     id,
     words,
-    geo: geo.score,
-    grade: scoreToGrade(geo.score),
+    geo: geo.deterministic,
+    grade: geo.gates.length ? 'GATE' : (geo.deterministic >= 50 ? 'A' : geo.deterministic >= MIN_GEO ? 'B' : 'F'),
     repeats: repeats.length,
     nearIn: near.length,
     crossEx: cx.length,
@@ -274,7 +324,7 @@ console.log(
 );
 for (const r of rows) {
   console.log(
-    `  ${String(r.geo).padStart(3)}/100 [${r.grade}] ${String(r.words).padStart(5)}w  ` +
+    `  ${String(r.geo).padStart(3)}/${DETERMINISTIC_MAX} [${r.grade}] ${String(r.words).padStart(5)}w  ` +
       `dup-in:${r.repeats} near-in:${r.nearIn} dup-x:${r.crossEx} near-x:${r.crossNear}  ${r.id}`,
   );
 }
