@@ -122,6 +122,30 @@
       "statement": "Annual national ceiling on new vine planting authorisations, as a share of the planted area declared at 31 July of the preceding year",
       "source": "Reg. (UE) 1308/2013 art. 63",
       "asOf": "2026-08-28"
+    },
+    {
+      "figure": "80%",
+      "statement": "Swiss withholding rate applied to new Italy-Switzerland cross-border workers, expressed as a share of ordinary cantonal rates, under the agreement of 23 December 2020",
+      "source": "Accordo Italia-Svizzera 23.12.2020, ratified by L. 83/2023, in force 17 July 2023",
+      "asOf": "2026-08-28"
+    },
+    {
+      "figure": "€10,000",
+      "statement": "Italian exempt band on cross-border employment income for frontalieri",
+      "source": "L. 83/2023 and implementing Italian provisions on frontalieri taxation",
+      "asOf": "2026-08-28"
+    },
+    {
+      "figure": "4 years",
+      "statement": "Minimum duration of a concession on the Lombardy lake and waterway domain",
+      "source": "Regolamento regionale Lombardia 9/2015, disciplina della gestione del demanio lacuale e idroviario",
+      "asOf": "2026-08-28"
+    },
+    {
+      "figure": "40 years",
+      "statement": "Maximum duration of a concession on the Lombardy lake and waterway domain",
+      "source": "Regolamento regionale Lombardia 9/2015, disciplina della gestione del demanio lacuale e idroviario",
+      "asOf": "2026-08-28"
     }
   ]
 }
