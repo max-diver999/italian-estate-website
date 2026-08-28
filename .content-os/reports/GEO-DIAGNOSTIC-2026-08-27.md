@@ -10,13 +10,18 @@ this repository's own history. Method and every rejected rule:
 The rubric this site was using could not tell its own machine output from its own
 writing.
 
-| | machine (61 files) | written (12) | separation |
+| | machine (46 files) | written (12) | separation |
 |---|---|---|---|
-| old rubric, still in the repo | **92.2** | 93.1 | **0.9 points** |
-| new rubric | **0.2** | **65.1** | **64.8 points** |
+| old rubric, still in the repo | **92.0** | 93.1 | **1.0 point** |
+| new rubric | **0.0** | **70.8** | **70.8 points** |
 
-Under the old rubric **55 of 61** provably templated files scored at or above the
-worst hand-written article. Under the new one, **0 of 61** do.
+Under the old rubric **41 of 46** provably templated files scored at or above the
+worst hand-written article. Under the new one, **0 of 46** do, and every one of
+the 46 scores exactly zero.
+
+The new rubric's weakest point is named rather than buried: a six-verb paraphrase
+across the corpus lifts one of the 46 back to 46, because one adopted rule is
+lexical. `docs/GEO-SCORING.md` has the measurement and the ablation.
 
 The old number was not merely uninformative. It was the target the campaign was
 optimising, which is why the corpus looks the way it does.
@@ -29,8 +34,15 @@ optimising, which is why the corpus looks the way it does.
 | mean | **15.6** / 75 |
 | median | 12 |
 | min | 0 |
-| max | 60 (`guides/italy-property-tax-calculator-guide`) |
+| max | 60 (`guides/90-180-day-rule-italy-property-owners`) |
 | **pages scoring zero** | **109 of 272 (40%)** |
+
+The best pages on the site are the twenty written one at a time in the two
+new-article waves: `90-180-day-rule-italy-property-owners` at 60, then
+`selling-property-italy-foreigner` 54 and `agibilita-certificate-italy` 53. They
+are held down from their calibration scores of 65-75 by one thing only, and it is
+not their writing: each loses 24 points to figures the campaign stamped across the
+corpus and never sourced.
 
 Fact registry covers **10 of 381** load-bearing figures (3%). The registry gate
 arms at 80%, so it is not yet loaded; unregistered figures still cost points on
@@ -148,8 +160,8 @@ national facts, restated on a town page, with the town's name substituted.
 ## The middle set has a page that did not get cleaned
 
 `guides/italy-property-taxes-foreign-buyers-guide` was picked as an example of
-prose the cleanup waves had rebuilt. It scores 11 where the other six in that set
-run 59 to 72. It carried 26 stamped lines at the garbage snapshot and still trips
+prose the cleanup waves had rebuilt. It scores 0 where the rest of that set runs
+up to 67. It carried 26 stamped lines at the garbage snapshot and still trips
 the heading-echo gate today, so the cleanup that reached its neighbours stopped
 short of it. It belongs in the queue, and it is a warning about how the previous
 waves were verified: a page can pass a gate suite and still be the thing the

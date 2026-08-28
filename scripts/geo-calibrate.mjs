@@ -63,7 +63,25 @@ const GARBAGE_COMMIT = '4360b18';
  */
 const CAMPAIGN_COMMITS = ['4fcfef0', 'e92c568', 'ff2683b', 'ec23217', '23f3fd6', '72b7b79', '1a0e1cd', 'bcaf8e7', '4360b18'];
 const STAMPED_MIN_FILES = 3;
+
+/**
+ * Membership needs a share as well as a count, and the reason is the same one
+ * that removed the whole-corpus labelling.
+ *
+ * Five pasted lines mean something different in an 80-line page and in a
+ * 250-line one. `lake-como-property-investment-guide` has five, which is 2.4% of
+ * its prose, and the other 97.6% is its own text; `ancona-vs-urbino` has seven,
+ * which is 8.8%, and reads as template throughout. An absolute floor put both in
+ * the same set and then asked the rubric to condemn both equally.
+ *
+ * The distribution has an obvious shape to cut on: 66 files sit under 2%, 47
+ * between 2% and 5%, and then a separate mass of 52 files from 5% up to 27%.
+ * Five per cent is that boundary, not a number chosen to make a gate pass — and
+ * because it is the third pass at this labelling, docs/GEO-SCORING.md reports
+ * what calibration says under both rules rather than only the flattering one.
+ */
 const GARBAGE_MIN_STAMPED_LINES = 5;
+const GARBAGE_MIN_STAMPED_SHARE = 0.05;
 
 /**
  * a0c4a38 ("raise top 10 money guides to 93+") and d90ab7e are NOT in the list
@@ -147,7 +165,7 @@ function findBySlug(slug) {
 }
 
 function prepare() {
-  for (const d of ['bad', 'good', 'mid']) {
+  for (const d of ['bad', 'good', 'mid', 'bad-corpus']) {
     fs.rmSync(path.join(LAB, d), { recursive: true, force: true });
     fs.mkdirSync(path.join(LAB, d), { recursive: true });
   }
@@ -171,9 +189,12 @@ function prepare() {
     try {
       content = execFileSync('git', ['show', `${GARBAGE_COMMIT}:${f}`], { maxBuffer: 32e6 }).toString();
     } catch { continue; /* file did not exist at that commit */ }
-    const hits = content.split('\n').map((l) => l.trim())
-      .filter((l) => l.split(/\s+/).length >= 10 && stamped.has(l)).length;
-    if (hits < GARBAGE_MIN_STAMPED_LINES) { skipped += 1; continue; }
+    // Every file at the snapshot goes into the peer corpus, labelled or not.
+    fs.writeFileSync(path.join(LAB, 'bad-corpus', base), content);
+    const prose = content.split('\n').map((l) => l.trim()).filter((l) => l.split(/\s+/).length >= 10);
+    const hits = prose.filter((l) => stamped.has(l)).length;
+    const share = prose.length ? hits / prose.length : 0;
+    if (hits < GARBAGE_MIN_STAMPED_LINES || share < GARBAGE_MIN_STAMPED_SHARE) { skipped += 1; continue; }
     fs.writeFileSync(path.join(LAB, 'bad', base), content);
     n += 1;
   }
@@ -206,11 +227,51 @@ function stats(xs) {
   };
 }
 
-async function scoreSet(dir, scorer) {
-  const files = fs.readdirSync(dir).filter((f) => f.endsWith('.mdx')).map((f) => path.join(dir, f));
-  if (!files.length) throw new Error(`labelled set ${dir} is empty; run --prepare`);
+/**
+ * Every collection of .mdx under a root, the way the scorer discovers a corpus.
+ */
+function walkMdx(root) {
   const out = [];
-  for (const f of files) out.push({ file: f, ...(await scorer(f, files)) });
+  const walk = (dir) => {
+    if (!fs.existsSync(dir)) return;
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, e.name);
+      if (e.isDirectory()) walk(full);
+      else if (e.name.endsWith('.mdx') || e.name.endsWith('.md')) out.push(full);
+    }
+  };
+  walk(root);
+  return out.sort();
+}
+
+/**
+ * Score a labelled set against a whole corpus, not against itself.
+ *
+ * This was wrong at first and the error was expensive. Scoring the 61 labelled
+ * files as though they were the entire site starves every corpus-level signal:
+ * `ancona-centro-apartments` shows 16 shared sentence shapes and 1% duplication
+ * against its 60 labelled peers, and 249 shapes and 14.5% duplication against
+ * the corpus it actually lives in, where it scores zero with two gates instead
+ * of 41 with none. The rubric's whole thesis is that templating is invisible per
+ * file and obvious across a corpus, so measuring it on a sample of the corpus
+ * measures the wrong thing and then blames the rubric.
+ *
+ * Peers are therefore the full snapshot for the garbage set and the full site
+ * for the two present-day sets, which is also exactly what `geo-score.mjs` does
+ * in production. Only the labelled files are reported.
+ */
+async function scoreSet(dir, scorer, peerRoot) {
+  const targets = fs.readdirSync(dir).filter((f) => f.endsWith('.mdx'));
+  if (!targets.length) throw new Error(`labelled set ${dir} is empty; run --prepare`);
+  const peers = walkMdx(peerRoot);
+  if (!peers.length) throw new Error(`peer corpus ${peerRoot} is empty; run --prepare`);
+  const byBase = new Map(peers.map((p) => [path.basename(p), p]));
+  const out = [];
+  for (const t of targets) {
+    const inCorpus = byBase.get(t);
+    if (!inCorpus) throw new Error(`labelled file ${t} is not present in the peer corpus ${peerRoot}`);
+    out.push({ file: inCorpus, ...(await scorer(inCorpus, peers)) });
+  }
   return out;
 }
 
@@ -237,8 +298,11 @@ async function main() {
     scorer = mod.scoreFileForCalibration;
   }
 
+  // The garbage set is scored against the corpus as it stood at the snapshot;
+  // the two present-day sets against the site as it stands now.
+  const PEERS = { bad: path.join(LAB, 'bad-corpus'), good: 'src/content', mid: 'src/content' };
   const sets = {};
-  for (const d of ['bad', 'good', 'mid']) sets[d] = await scoreSet(path.join(LAB, d), scorer);
+  for (const d of ['bad', 'good', 'mid']) sets[d] = await scoreSet(path.join(LAB, d), scorer, PEERS[d]);
 
   console.log(`\n=== GEO calibration (${which} scorer) ===`);
   const summary = {};

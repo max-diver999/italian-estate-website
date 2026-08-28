@@ -324,9 +324,25 @@ export function scoreDocument(docId, index, { requireRegistry = true } = {}) {
   // A figure repeated across the corpus is only suspicious when nothing stands
   // behind it. The section 35A rate belongs in sixty articles; "14 business days"
   // in four hundred and forty-two, sourced nowhere, is the July signature.
+  // `requireRegistry: false` has to switch this off as well as the provenance
+  // reward, or calibration stops measuring text.
+  //
+  // It does not, by default, and the consequence is not subtle: scored against
+  // the live corpus, every one of the twelve hand-written articles lost exactly
+  // 24 points here, six penalties of four, for using "5%", "20%" and "€400,000"
+  // — ordinary figures that the machine campaign had sprayed across 86 to 169
+  // pages and never sourced. The article is charged for its neighbours' arithmetic.
+  //
+  // In production that is the rule working: it says go and source the numbers
+  // the site leans on, and the fix is a registry entry rather than a rewrite.
+  // In calibration it means the same text scores differently depending on how
+  // much sourcing has been done that week, so the gate would drift with work
+  // that has nothing to do with the rubric's question.
   const registry = factRegistry();
-  for (const f of corpus.saturatedFigures.filter((x) => !registry.has(x.figure)).slice(0, 6)) {
-    add(4, 'stamped-figure', `"${f.figure}" appears in ${f.files} articles and is in no source registry: stamped, not researched`);
+  if (requireRegistry) {
+    for (const f of corpus.saturatedFigures.filter((x) => !registry.has(x.figure)).slice(0, 6)) {
+      add(4, 'stamped-figure', `"${f.figure}" appears in ${f.files} articles and is in no source registry: stamped, not researched`);
+    }
   }
   // One echoing section is free, because the hand-written set contains articles
   // with exactly one and they are not defects: a heading like "What is a
