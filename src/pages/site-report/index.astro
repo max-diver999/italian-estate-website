@@ -1,10 +1,10 @@
 ---
 export const prerender = true;
 
-const reportDate = '24 August 2026';
-const reportVersion = 'v3.4';
+const reportDate = '1 September 2026';
+const reportVersion = 'v3.5';
 const launchDate = 'May 2026';
-const dataThrough = '20 August 2026';
+const dataThrough = '31 August 2026';
 
 const monthlyGsc = [
   {
@@ -34,17 +34,17 @@ const monthlyGsc = [
   {
     "month": "Aug 2026",
     "label": "Aug",
-    "clicks": 11,
-    "impressions": 1271,
-    "position": 23.5,
-    "note": "Through 15 Aug · GSC lag ~3 days · avg pos slipped vs Jul"
+    "clicks": 30,
+    "impressions": 3437,
+    "position": 21.8,
+    "note": "Full month · MCP GSC 4 Aug–31 Aug · GA4 Aug 537 sessions"
   }
 ];
 
 const monthlyGa4 = [
   { "month": "Jun", "sessions": 61 },
   { "month": "Jul", "sessions": 252 },
-  { "month": "Aug", "sessions": 351 }
+  { "month": "Aug", "sessions": 537 }
 ];
 
 const contentBreakdown = [
@@ -56,15 +56,15 @@ const contentBreakdown = [
   { "type": "News", "count": 4, "words": 2722, "color": "#60a5fa" }
 ];
 
-const totalClicks = 45;
-const totalImp = 6648;
+const totalClicks = 64;
+const totalImp = 8814;
 const totalWords = contentBreakdown.reduce((s, c) => s + c.words, 0);
 const totalFiles = contentBreakdown.reduce((s, c) => s + c.count, 0);
 const ga4Sessions = monthlyGa4.reduce((s, m) => s + m.sessions, 0);
 const ga4Organic = 160;
 const ga4AiAssistant = 13;
 const confirmedLeads = 0;
-const gsc28d = { clicks: 22, impressions: 1776, ctr: 1.24, position: 20.2 };
+const gsc28d = { clicks: 30, impressions: 3437, ctr: 0.87, position: 21.8 };
 const gscPagesWithClicks = 17;
 const bing28d = { clicks: 58, impressions: 4009 };
 const bingLifetime = { clicks: 63, impressions: 4447 };
@@ -550,7 +550,7 @@ const chartPayload = JSON.stringify({
     <div class="stat-card">
       <div class="num">647K</div>
       <div class="label">SEO words</div>
-      <div class="sublabel">{totalFiles} MDX · ~2 568 avg · {gitCommits} git commits</div>
+      <div class="sublabel">272 MDX · ~2 568 avg · {gitCommits} git commits</div>
     </div>
     <div class="stat-card">
       <div class="num teal">100+</div>
@@ -581,7 +581,7 @@ const chartPayload = JSON.stringify({
       <div class="kpi-label">GSC Clicks (28d)</div>
       <div class="kpi-value">{gsc28d.clicks}</div>
       <span class="kpi-delta up">↑ First clicks 26 Jun</span>
-      <div class="kpi-sub">22 Jul - 15 Aug · {gsc28d.impressions.toLocaleString('en-US')} impressions</div>
+      <div class="kpi-sub">4 Aug–31 Aug · {gsc28d.impressions.toLocaleString('en-US')} impressions</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Impressions</div>
@@ -592,7 +592,7 @@ const chartPayload = JSON.stringify({
     <div class="kpi-card">
       <div class="kpi-label">GA4 Sessions</div>
       <div class="kpi-value">{ga4Sessions}</div>
-      <span class="kpi-delta up">Aug {monthlyGa4[2].sessions} through 17 Aug</span>
+      <span class="kpi-delta up">Aug {monthlyGa4[2].sessions} full month</span>
       <div class="kpi-sub">Jun {monthlyGa4[0].sessions} · Jul {monthlyGa4[1].sessions} · funnel live, 0 confirmed leads</div>
     </div>
     <div class="kpi-card">
@@ -965,6 +965,15 @@ const chartPayload = JSON.stringify({
   <div class="section-title">Change history</div>
   <div class="changelog">
         <div class="changelog-item">
+      <div class="changelog-date">1 Sep 2026 (v3.5)</div>
+      <div class="changelog-content">
+        <div class="changelog-title">Site-report v3.5 · MCP analytics refresh through 31 Aug</div>
+        <div class="changelog-desc">GSC Aug full month (4 Aug–31 Aug): 30 clk / 3,437 imp, CTR {gsc28d.ctr}%. GA4 Aug: 537 sessions. Corpus: 272 MDX. Lifetime GSC: {totalClicks} clk / {totalImp.toLocaleString('en-US')} imp. Updated via GSC + GA4 MCP.</div>
+        <div class="changelog-tags"><span class="tag green">Report v3.5</span><span class="tag blue">GSC</span><span class="tag amber">GA4</span></div>
+      </div>
+    </div>
+
+        <div class="changelog-item">
       <div class="changelog-date">23 Aug 2026 (v3.4)</div>
       <div class="changelog-content">
         <div class="changelog-title">Site-report v3.4 · Wave 1 + em-dash purge + mobile nav</div>
@@ -1145,7 +1154,7 @@ const chartPayload = JSON.stringify({
 </div>
 
   <div class="footer">
-  <strong>Italian Estate</strong> · italian-estate.com · Report updated {reportDate} {reportVersion} · 277 sitemap URLs · 647K words · GSC {gsc28d.clicks} clk / {gsc28d.impressions.toLocaleString('en-US')} imp (28d) · GA4 {ga4Sessions} sessions · {confirmedLeads} confirmed leads<br>
+  <strong>Italian Estate</strong> · italian-estate.com · Report updated {reportDate} {reportVersion} · 277 sitemap URLs · 647K words · 272 MDX · GSC {gsc28d.clicks} clk / {gsc28d.impressions.toLocaleString('en-US')} imp (28d) · GA4 {ga4Sessions} sessions · {confirmedLeads} confirmed leads<br>
   EN site, Google + Bing only · never Yandex · IndexNow via bing.com/indexnow only
 </div>
 
