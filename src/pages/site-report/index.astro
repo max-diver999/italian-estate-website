@@ -2,9 +2,12 @@
 export const prerender = true;
 
 const reportDate = '1 September 2026';
-const reportVersion = 'v3.5';
+const reportVersion = 'v3.6';
 const launchDate = 'May 2026';
 const dataThrough = '31 August 2026';
+
+/** Ahrefs DR — null until first verified crawl (target 8–12 Q3) */
+const ahrefsDr: number | null = null;
 
 const monthlyGsc = [
   {
@@ -543,9 +546,9 @@ const chartPayload = JSON.stringify({
       <div class="sublabel">48 areas · 30 compare · 15 developers · 90 guides · 65 projects · 4 news</div>
     </div>
     <div class="stat-card">
-      <div class="num amber">,</div>
+      <div class="num amber">{ahrefsDr ?? '—'}</div>
       <div class="label">Ahrefs DR</div>
-      <div class="sublabel">New domain · baseline pending · target 8-12 Q3</div>
+      <div class="sublabel">New domain · baseline pending · target 8–12 Q3</div>
     </div>
     <div class="stat-card">
       <div class="num">647K</div>
