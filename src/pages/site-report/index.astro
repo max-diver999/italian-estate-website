@@ -2,7 +2,7 @@
 export const prerender = true;
 
 const reportDate = '1 September 2026';
-const reportVersion = 'v3.6';
+const reportVersion = 'v3.7';
 const launchDate = 'May 2026';
 const dataThrough = '31 August 2026';
 
@@ -104,6 +104,22 @@ const dailyRaw = [
   { d: '08-10', c: 1, i: 94 }, { d: '08-11', c: 0, i: 123 }, { d: '08-12', c: 2, i: 110 },
   { d: '08-13', c: 3, i: 115 }, { d: '08-14', c: 0, i: 88 }, { d: '08-15', c: 0, i: 121 }
 ];
+
+
+const maxMonthlyImp = Math.max(...monthlyGsc.map((m) => m.impressions), 1);
+function momPill(i) {
+  if (i === 0) return { cls: 'pill-blue', text: 'Launch' };
+  const curr = monthlyGsc[i].clicks;
+  const prev = monthlyGsc[i - 1].clicks;
+  if (prev === 0) return { cls: 'pill-blue', text: 'new' };
+  const pct = Math.round(((curr - prev) / prev) * 100);
+  if (pct > 0) return { cls: 'pill-green', text: `+${pct}%` };
+  if (pct < 0) return { cls: 'pill-amber', text: `${pct}%` };
+  return { cls: 'pill-gray', text: '0%' };
+}
+function barPx(impressions) {
+  return Math.max(20, Math.round((impressions / maxMonthlyImp) * 120));
+}
 
 const chartPayload = JSON.stringify({
   monthlyGsc: monthlyGsc.map(m => ({ label: m.label, clicks: m.clicks, impressions: m.impressions })),
@@ -610,7 +626,7 @@ const chartPayload = JSON.stringify({
     <div class="section-head">
       <div>
         <h2>Monthly growth since launch</h2>
-        <p>Google Search Console web search · {launchDate} → {dataThrough}. August row through 15 Aug (GSC lag ~3 days).</p>
+        <p>Google Search Console web search · {launchDate} → {dataThrough}. August full month in monthlyGsc (GSC lag ~3 days).</p>
       </div>
       <span class="badge-src">GSC API · Updated {reportDate}</span>
     </div>
@@ -623,7 +639,7 @@ const chartPayload = JSON.stringify({
         <div class="card-title">GA4 sessions by month</div>
         <div class="chart-wrap"><canvas id="chartGa4"></canvas></div>
         <div class="insight" style="margin-top:16px;">
-          <strong>CTR up, impressions down, clicks diversified:</strong> 28d CTR {gsc28d.ctr}% (was 0.58% in late Jul). Impressions {gsc28d.impressions.toLocaleString('en-US')}/28d as query mix shifted away from single mortgage spike. {gscPagesWithClicks} pages now earn clicks (budget guides, reciprocity, nationality hubs, projects). GA4: {ga4Sessions} sessions total (Aug {monthlyGa4[2].sessions} partial). Confirmed leads: {confirmedLeads} (TG + owner email). Bing ramping: {bing28d.clicks} clicks / {bing28d.impressions.toLocaleString('en-US')} imp in 28d.
+          <strong>CTR up, impressions down, clicks diversified:</strong> 28d CTR {gsc28d.ctr}% (was 0.58% in late Jul). Impressions {gsc28d.impressions.toLocaleString('en-US')}/28d as query mix shifted away from single mortgage spike. {gscPagesWithClicks} pages now earn clicks (budget guides, reciprocity, nationality hubs, projects). GA4: {ga4Sessions} sessions total (Aug {monthlyGa4[2].sessions} full month). Confirmed leads: {confirmedLeads} (TG + owner email). Bing ramping: {bing28d.clicks} clicks / {bing28d.impressions.toLocaleString('en-US')} imp in 28d.
         </div>
         </div>
       </div>
@@ -643,10 +659,20 @@ const chartPayload = JSON.stringify({
             </tr>
           </thead>
           <tbody>
-            <tr><td><strong>May 2026</strong></td><td class="num">0</td><td>0</td><td>,</td><td>,</td><td>Pre-crawl · indexing API live</td></tr>
-            <tr><td><strong>Jun 2026</strong></td><td class="num">6</td><td>1,514</td><td>18.4</td><td>new</td><td>First impressions 17 Jun · first clicks 26 Jun</td></tr>
-            <tr><td><strong>Jul 2026</strong></td><td class="num">28</td><td><strong>3,863</strong></td><td><strong>7.8</strong></td><td>+367%</td><td>Full month · pos improved {posImprove} pts vs Jun</td></tr>
-            <tr style="background:#faf8f4;"><td><strong>Aug 2026</strong></td><td class="num">11</td><td><strong>1,271</strong></td><td>23.5</td><td>partial</td><td>Through 15 Aug · avg pos slipped · CTR holding</td></tr>
+            {monthlyGsc.map((m, i) => {
+              const pill = momPill(i);
+              const rowStyle = i === monthlyGsc.length - 1 ? 'background:#faf8f4;' : '';
+              return (
+                <tr style={rowStyle}>
+                  <td><strong>{m.month}</strong></td>
+                  <td class="num">{m.clicks}</td>
+                  <td><strong>{m.impressions.toLocaleString('en-US')}</strong></td>
+                  <td>{m.position > 0 ? m.position.toFixed(1) : '—'}</td>
+                  <td><span class={`pill ${pill.cls}`}>{pill.text}</span></td>
+                  <td style="color:#7a7a6e;font-size:12px;">{m.note}</td>
+                </tr>
+              );
+            })}
           </tbody>
       </table>
       </div>
@@ -670,7 +696,7 @@ const chartPayload = JSON.stringify({
     <div class="pulse-header">
       <div>
         <h2>Organic search performance</h2>
-        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">italian-estate.com · 22 Jul - 15 Aug 2026 · MCP search-console-italian-estate</p>
+        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">italian-estate.com · 4 Aug - 31 Aug 2026 · MCP search-console-italian-estate</p>
       </div>
       <div class="pulse-updated"><span class="pulse-updated-dot"></span>Updated {reportDate} via GSC API</div>
     </div>
@@ -692,7 +718,7 @@ const chartPayload = JSON.stringify({
         <div class="kpi-trend trend-up">Jul avg 7.8</div>
         <div class="kpi-label">Avg position</div>
         <div class="kpi-val">{gsc28d.position}</div>
-        <div class="kpi-sub">28d avg slipped vs Jul · Aug partial 23.5</div>
+        <div class="kpi-sub">28d avg slipped vs Jul · Aug full month {gsc28d.position}</div>
       </div>
       <div class="pulse-kpi kpi-orange">
         <div class="kpi-label">Top CTR page</div>
@@ -864,7 +890,7 @@ const chartPayload = JSON.stringify({
     <div class="pulse-header">
       <div>
         <h2>Bing / Yahoo Search Performance</h2>
-        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">italian-estate.com · 22 Jul - 15 Aug 2026 · MCP bing-webmaster-italian-estate</p>
+        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">italian-estate.com · 4 Aug - 31 Aug 2026 · MCP bing-webmaster-italian-estate</p>
       </div>
       <div class="pulse-updated"><span class="pulse-updated-dot"></span>Updated {reportDate}</div>
     </div>
@@ -909,7 +935,7 @@ const chartPayload = JSON.stringify({
         <div class="pulse-page-row"><div class="pulse-page-url">/guides/imu-property-tax-italy/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">165 imp</span><span class="pulse-badge badge-clicks">3 clk</span></div></div>
         <div class="pulse-insight" style="margin-top:12px;">
           <div class="pulse-insight-icon">ℹ️</div>
-          <div class="pulse-insight-text">Bing ramp: {bing28d.clicks} clicks / {bing28d.impressions.toLocaleString('en-US')} imp in 28d (was 8 clk / 672 imp through 24 Jul). Tax + inheritance + STR guides drive Bing traffic. IndexNow active; no separate Bing SEO sprint needed yet.</div>
+          <div class="pulse-insight-text">Bing ramp: {bing28d.clicks} clicks / {bing28d.impressions.toLocaleString('en-US')} imp in 28d (was 8 clk / 672 imp in late Jul window). Tax + inheritance + STR guides drive Bing traffic. IndexNow active; no separate Bing SEO sprint needed yet.</div>
         </div>
       </div>
     </div>
@@ -967,6 +993,23 @@ const chartPayload = JSON.stringify({
 
   <div class="section-title">Change history</div>
   <div class="changelog">
+        <div class="changelog-item">
+              <div class="changelog-item">
+      <div class="changelog-date">1 Sep 2026 (v3.7)</div>
+      <div class="changelog-content">
+        <div class="changelog-title">Site-report v3.7 · dynamic MoM table sync</div>
+        <div class="changelog-desc">Hardcoded MoM rows replaced with momPill(i) from monthlyGsc (Aug 30 clk / 3,437 imp). Stale partial-Aug SEO Pulse copy updated to full month.</div>
+        <div class="changelog-tags"><span class="tag green">Report v3.7</span><span class="tag blue">MoM table</span><span class="tag amber">Charts</span></div>
+      </div>
+    </div>
+
+        <div class="changelog-date">1 Sep 2026 (v3.6)</div>
+      <div class="changelog-content">
+        <div class="changelog-title">Site-report v3.6 · Ahrefs DR cell fix</div>
+        <div class="changelog-desc">Replaced stray comma in DR widget with em dash (—) until first verified Ahrefs crawl. Target DR 8–12 Q3 unchanged.</div>
+        <div class="changelog-tags"><span class="tag green">Report v3.6</span><span class="tag amber">DR widget</span></div>
+      </div>
+    </div>
         <div class="changelog-item">
       <div class="changelog-date">1 Sep 2026 (v3.5)</div>
       <div class="changelog-content">
