@@ -4,7 +4,7 @@ import LeadForm from '../components/LeadForm.astro';
 import FaqBlock from '../components/FaqBlock.astro';
 import ResponsiveImage from '../components/ResponsiveImage.astro';
 import RelatedGuides from '../components/RelatedGuides.astro';
-import { responsiveCloudinary } from '../lib/cloudinary';
+import { lcpPreloadFromCloudinary } from '../lib/cloudinary';
 import { SITE } from '../data/site';
 import { resolveStickyCta } from '../../scripts/lib/italian-estate-cta-router.mjs';
 
@@ -124,7 +124,7 @@ const breadcrumbSchema = {
 };
 
 const schemas = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
-const heroPreload = heroImage ? responsiveCloudinary(heroImage, 'hero') : null;
+const heroPreload = heroImage ? lcpPreloadFromCloudinary(heroImage, 'hero') : null;
 ---
 <BaseLayout
   title={title}

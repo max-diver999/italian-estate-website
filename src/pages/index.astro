@@ -13,7 +13,9 @@ import {
   HOMEPAGE_HERO_IMAGE,
   HOMEPAGE_HERO_PROJECT_SLUG,
 } from '../data/featured';
-import { getCardImageUrl, formatAreaLabel } from '../lib/cardImage';
+import ResponsiveImage from '../components/ResponsiveImage.astro';
+import { formatAreaLabel } from '../lib/cardImage';
+import { lcpPreloadFromCloudinary } from '../lib/cloudinary';
 import { pickHomepageProjects, projectHeroLine, projectStatusLabel } from '../lib/homeProjects';
 
 const [guides, projects, areas] = await Promise.all([
@@ -35,13 +37,16 @@ const homepageProjects = pickHomepageProjects(publishedProjects, FEATURED_PROJEC
 const heroProject = projectBySlug.get(HOMEPAGE_HERO_PROJECT_SLUG) ?? homepageProjects[0];
 const featuredAreas = FEATURED_AREA_SLUGS.map((slug) => areaBySlug.get(slug)).filter(Boolean);
 
-const heroImage = getCardImageUrl(HOMEPAGE_HERO_IMAGE, 'hero');
-const heroProjectImage = heroProject ? getCardImageUrl(heroProject.data.heroImage, 'card') : heroImage;
+const heroImageSrc = heroProject?.data.heroImage ?? HOMEPAGE_HERO_IMAGE;
+const heroPreload = lcpPreloadFromCloudinary(heroImageSrc, 'hero');
 ---
 <BaseLayout
   title="Italy Property Investment: Tuscany, Milan, Puglia 2026"
   description={SITE.description}
   stickyCta={STICKY_HOME}
+  preloadImage={heroPreload.src}
+  preloadImageSrcset={heroPreload.srcset}
+  preloadImageSizes={heroPreload.sizes ?? '100vw'}
 >
   <section class="border-b border-[var(--color-border-soft)] bg-[var(--color-surface)]">
     <div class="site-container py-14 md:py-20 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
@@ -74,7 +79,16 @@ const heroProjectImage = heroProject ? getCardImageUrl(heroProject.data.heroImag
         </div>
       </div>
       <div class="hero-visual min-h-[280px] md:min-h-[380px] relative">
-        <img src={heroProjectImage} alt={heroProject ? `${heroProject.data.title}, featured Italy project` : 'Ostuni trulli villa, Puglia'} loading="eager" width="1400" height="560" />
+        <ResponsiveImage
+          src={heroImageSrc}
+          alt={heroProject ? `${heroProject.data.title}, featured Italy project` : 'Ostuni trulli villa, Puglia'}
+          role="hero"
+          loading="eager"
+          fetchpriority="high"
+          width={1200}
+          height={560}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+        />
         <div class="hero-visual__overlay" />
         <p class="hero-visual__caption">Puglia · Ostuni countryside</p>
         {heroProject && (

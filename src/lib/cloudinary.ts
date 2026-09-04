@@ -2,10 +2,12 @@ const TRANSFORM_TOKEN_RE = /^(w_|h_|c_|f_|q_|g_|e_|b_|dpr_|fl_|a_)/;
 
 export type CloudinaryRole = 'hero' | 'inline' | 'thumb';
 
+const ECO = 'q_auto:eco,g_auto,f_auto';
+
 const ROLE_WIDTHS: Record<CloudinaryRole, string[]> = {
-  hero: ['w_640,q_85,f_auto', 'w_960,q_85,f_auto', 'w_1200,q_85,f_auto'],
-  inline: ['w_640,q_85,f_auto', 'w_960,q_85,f_auto'],
-  thumb: ['w_320,q_80,f_auto', 'w_400,q_80,f_auto', 'w_640,h_360,c_fill,q_80,f_auto'],
+  hero: [`w_360,${ECO}`, `w_640,${ECO}`, `w_960,${ECO}`, `w_1200,${ECO}`],
+  inline: [`w_640,${ECO}`, `w_960,${ECO}`],
+  thumb: [`w_320,${ECO}`, `w_400,${ECO}`, `w_640,h_360,c_fill,${ECO}`],
 };
 
 const ROLE_SIZES: Record<CloudinaryRole, string> = {
@@ -65,5 +67,20 @@ export function responsiveCloudinary(
     src: cloudinaryDeliveryUrl(url, transforms[transforms.length - 1]),
     srcset: entries.join(', '),
     sizes: ROLE_SIZES[role],
+  };
+}
+
+/** Smallest variant for LCP preload (mobile-first). */
+export function lcpPreloadFromCloudinary(url: string, role: CloudinaryRole = 'hero') {
+  const img = responsiveCloudinary(url, role);
+  let href = img.src;
+  if (img.srcset) {
+    const firstEntry = img.srcset.split(/,\s+/)[0]?.trim() ?? '';
+    href = firstEntry.replace(/\s+\d+w$/, '') || href;
+  }
+  return {
+    src: href,
+    srcset: img.srcset,
+    sizes: img.sizes,
   };
 }

@@ -7,7 +7,7 @@ export function getCardImageUrl(src: string | undefined, size: 'card' | 'hero' =
   const trimmed = src.trim();
 
   if (trimmed.includes('res.cloudinary.com') && trimmed.includes('/upload/')) {
-    const dims = size === 'hero' ? 'w_1400,h_560,c_fill,q_auto,f_auto' : 'w_640,h_360,c_fill,q_auto,f_auto';
+    const dims = size === 'hero' ? 'w_640,h_560,c_fill,q_auto:eco,g_auto,f_auto' : 'w_640,h_360,c_fill,q_auto:eco,g_auto,f_auto';
     return trimmed.replace(/\/upload\/(?:v\d+\/)?/, `/upload/${dims}/`);
   }
 
