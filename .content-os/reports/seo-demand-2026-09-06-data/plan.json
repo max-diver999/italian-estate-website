@@ -1,0 +1,386 @@
+[
+ {
+  "action": "создать",
+  "url": "/property-for-sale/",
+  "note": "Хаб страны. Витрина всех объектов, счётчик в title",
+  "demand": 41370
+ },
+ {
+  "action": "склеить в /property-for-sale/tuscany/",
+  "url": "/invest-tuscany-property/ + /guides/tuscany-property-investment-guide/ + /guides/tuscany-inland-property-guide/ + /areas/chianti/ + /areas/val-dorcia/ + /areas/versilia/",
+  "note": "регион, 6 стр. в одну",
+  "demand": 10410
+ },
+ {
+  "action": "склеить в /property-for-sale/sicily/",
+  "url": "/invest-sicily-property/ + /guides/sicily-property-investment-guide/ + /areas/syracuse/ + /areas/noto/",
+  "note": "регион, 4 стр. в одну",
+  "demand": 4720
+ },
+ {
+  "action": "склеить в /property-for-sale/sardinia/",
+  "url": "/invest-sardinia-property/ + /guides/sardinia-property-investment-guide/ + /areas/costa-smeralda/",
+  "note": "регион, 3 стр. в одну",
+  "demand": 4550
+ },
+ {
+  "action": "склеить в /property-for-sale/abruzzo/",
+  "url": "/guides/abruzzo-property-investment-guide/ + /areas/pescara/ + /areas/chieti/",
+  "note": "регион, 3 стр. в одну",
+  "demand": 3310
+ },
+ {
+  "action": "склеить в /property-for-sale/puglia/",
+  "url": "/invest-puglia-property/ + /guides/puglia-property-investment-guide/ + /areas/valle-d-itria/ + /areas/ostuni/ + /areas/carovigno/ + /areas/polignano-a-mare/ + /areas/cisternino/ + /areas/bari/",
+  "note": "регион, 8 стр. в одну",
+  "demand": 3090
+ },
+ {
+  "action": "склеить в /property-for-sale/umbria/",
+  "url": "/guides/umbria-property-investment-guide/ + /areas/assisi/ + /areas/perugia/ + /areas/urbino/",
+  "note": "регион, 4 стр. в одну",
+  "demand": 2010
+ },
+ {
+  "action": "склеить в /property-for-sale/calabria/",
+  "url": "/guides/calabria-property-investment-guide/ + /areas/scalea/",
+  "note": "регион, 2 стр. в одну",
+  "demand": 1340
+ },
+ {
+  "action": "склеить в /property-for-sale/liguria/",
+  "url": "/invest-liguria-property/ + /guides/liguria-property-investment-guide/ + /areas/portofino/ + /areas/sanremo/ + /areas/savona/ + /areas/santa-margherita-ligure/",
+  "note": "регион, 6 стр. в одну",
+  "demand": 940
+ },
+ {
+  "action": "склеить в /property-for-sale/piedmont/",
+  "url": "/guides/piedmont-property-investment-guide/ + /areas/alba/ + /areas/langhe/",
+  "note": "регион, 3 стр. в одну",
+  "demand": 500
+ },
+ {
+  "action": "склеить в /property-for-sale/le-marche/",
+  "url": "/guides/marche-property-investment-guide/ + /areas/ancona/ + /areas/urbino/",
+  "note": "регион, 3 стр. в одну",
+  "demand": 400
+ },
+ {
+  "action": "склеить в /property-for-sale/molise/",
+  "url": "/guides/molise-property-investment-guide/ + /areas/campobasso/ + /areas/termoli/",
+  "note": "регион, 3 стр. в одну",
+  "demand": 350
+ },
+ {
+  "action": "склеить в /property-for-sale/rome/",
+  "url": "/invest-rome-property/ + /guides/rome-property-investment-guide/ + /areas/rome-centro-storico/",
+  "note": "город/микро, 3 стр. в одну",
+  "demand": 3410
+ },
+ {
+  "action": "склеить в /property-for-sale/florence/",
+  "url": "/guides/florence-property-investment-guide/ + /areas/florence/",
+  "note": "город/микро, 2 стр. в одну",
+  "demand": 3110
+ },
+ {
+  "action": "склеить в /property-for-sale/venice/",
+  "url": "/guides/venice-property-investment-guide/",
+  "note": "город/микро, 1 стр. в одну",
+  "demand": 2180
+ },
+ {
+  "action": "склеить в /property-for-sale/lake-como/",
+  "url": "/invest-lake-como-property/ + /guides/lake-como-property-investment-guide/ + /areas/como/ + /areas/bellagio/",
+  "note": "город/микро, 4 стр. в одну",
+  "demand": 2040
+ },
+ {
+  "action": "склеить в /property-for-sale/milan/",
+  "url": "/invest-milan-property/ + /guides/milan-property-investment-guide/ + /areas/milan-navigli/",
+  "note": "город/микро, 3 стр. в одну",
+  "demand": 1470
+ },
+ {
+  "action": "склеить в /property-for-sale/naples/",
+  "url": "/areas/naples/",
+  "note": "город/микро, 1 стр. в одну",
+  "demand": 980
+ },
+ {
+  "action": "склеить в /property-for-sale/lucca/",
+  "url": "/areas/lucca/",
+  "note": "город/микро, 1 стр. в одну",
+  "demand": 980
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/sorrento/",
+  "note": "город/микро, страницы нет",
+  "demand": 970
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/positano/",
+  "note": "город/микро, страницы нет",
+  "demand": 790
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/amalfi-coast/",
+  "note": "город/микро, страницы нет",
+  "demand": 770
+ },
+ {
+  "action": "склеить в /property-for-sale/bologna/",
+  "url": "/guides/bologna-property-investment-guide/ + /areas/bologna/",
+  "note": "город/микро, 2 стр. в одну",
+  "demand": 680
+ },
+ {
+  "action": "склеить в /property-for-sale/palermo/",
+  "url": "/areas/palermo/",
+  "note": "город/микро, 1 стр. в одну",
+  "demand": 540
+ },
+ {
+  "action": "склеить в /property-for-sale/turin/",
+  "url": "/areas/turin/",
+  "note": "город/микро, 1 стр. в одну",
+  "demand": 490
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/capri/",
+  "note": "город/микро, страницы нет",
+  "demand": 460
+ },
+ {
+  "action": "склеить в /property-for-sale/lake-garda/",
+  "url": "/compare/lake-garda-vs-lake-como-property/",
+  "note": "город/микро, 1 стр. в одну",
+  "demand": 370
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/verona/",
+  "note": "город/микро, страницы нет",
+  "demand": 360
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/ravello/",
+  "note": "город/микро, страницы нет",
+  "demand": 230
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/orvieto/",
+  "note": "город/микро, страницы нет",
+  "demand": 200
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/cheap-property-italy/",
+  "note": "Дешёвая недвижимость",
+  "demand": 1730
+ },
+ {
+  "action": "переделать",
+  "url": "/property-for-sale/one-euro-houses-italy/",
+  "note": "Дома за 1 евро. Из /guides/italy-1-euro-homes-program/, сменить URL и title на \"for sale\"",
+  "demand": 1610
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/land-for-sale-italy/",
+  "note": "Земля",
+  "demand": 910
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/vineyards-for-sale-italy/",
+  "note": "Виноградники",
+  "demand": 600
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/castles-for-sale-italy/",
+  "note": "Замки",
+  "demand": 370
+ },
+ {
+  "action": "создать",
+  "url": "/property-for-sale/farmhouses-trulli-masserie-italy/",
+  "note": "Фермы, трулли, массерии",
+  "demand": 90
+ },
+ {
+  "action": "создать",
+  "url": "/living/cost-of-living-italy/",
+  "note": "Стоимость жизни",
+  "demand": 2070
+ },
+ {
+  "action": "создать",
+  "url": "/living/moving-to-italy-from-usa/",
+  "note": "Переезд из США",
+  "demand": 1320
+ },
+ {
+  "action": "создать",
+  "url": "/living/best-places-to-live-italy/",
+  "note": "Где жить",
+  "demand": 1320
+ },
+ {
+  "action": "создать",
+  "url": "/living/permesso-di-soggiorno/",
+  "note": "Вид на жительство, документ",
+  "demand": 1600
+ },
+ {
+  "action": "создать",
+  "url": "/living/italy-citizenship-by-descent/",
+  "note": "Гражданство по крови",
+  "demand": 1040
+ },
+ {
+  "action": "создать",
+  "url": "/living/moving-to-italy-from-uk/",
+  "note": "Переезд из Британии",
+  "demand": 620
+ },
+ {
+  "action": "создать",
+  "url": "/living/cost-of-living-rome-milan-florence/",
+  "note": "Стоимость жизни по городам",
+  "demand": 580
+ },
+ {
+  "action": "создать",
+  "url": "/living/international-schools-italy/",
+  "note": "Международные школы",
+  "demand": 210
+ },
+ {
+  "action": "создать",
+  "url": "/living/healthcare-italy-foreigners/",
+  "note": "Медицина",
+  "demand": 150
+ },
+ {
+  "action": "переделать",
+  "url": "/living/retire-in-italy/",
+  "note": "Из /guides/italy-retirement-property-guide/, сменить фокус с недвижимости на переезд",
+  "demand": 780
+ },
+ {
+  "action": "оставить",
+  "url": "/guides/italy-investor-visa-property/",
+  "note": "Держит весь визовый кластер, 283 показа. Нужен title и внутренние ссылки, не переписывание",
+  "demand": 1780
+ },
+ {
+  "action": "склеить в /guides/italy-investor-visa-property/",
+  "url": "/guides/italy-residency-by-investment-guide/ + /guides/italy-investor-visa-requirements-2026/",
+  "note": "Три страницы на один интент, каннибализация в GSC",
+  "demand": 0
+ },
+ {
+  "action": "переделать",
+  "url": "/guides/italy-digital-nomad-visa/",
+  "note": "Из /guides/digital-nomad-italy-property-guide/, убрать property из фокуса",
+  "demand": 1320
+ },
+ {
+  "action": "переделать",
+  "url": "/guides/italy-elective-residence-visa/",
+  "note": "Из /guides/italy-elective-residence-visa-property/, убрать property",
+  "demand": 460
+ },
+ {
+  "action": "оставить",
+  "url": "/compare/elective-residence-vs-investor-visa-italy/",
+  "note": "Единственные три compare с живым интентом, он визовый не имущественный",
+  "demand": 0
+ },
+ {
+  "action": "оставить",
+  "url": "/compare/flat-tax-vs-investor-visa-italy/",
+  "note": "Единственные три compare с живым интентом, он визовый не имущественный",
+  "demand": 0
+ },
+ {
+  "action": "оставить",
+  "url": "/compare/italy-vs-malta-property-investment/",
+  "note": "Единственные три compare с живым интентом, он визовый не имущественный",
+  "demand": 0
+ },
+ {
+  "action": "переделать",
+  "url": "/guides/ (индекс)",
+  "note": "Листинг перехватывает 55 запросов налогового кластера на позиции 78. Убрать перечень заголовков из индексируемого текста, поставить canonical-хаб /taxes/",
+  "demand": 434
+ },
+ {
+  "action": "создать",
+  "url": "/taxes/",
+  "note": "Хаб налогов, забирает у /guides/ 364 показа и раздаёт по статьям",
+  "demand": 390
+ },
+ {
+  "action": "склеить в /guides/italy-capital-gains-tax-property/",
+  "url": "/guides/selling-property-italy-foreigner/",
+  "note": "Каннибализация на \"selling property in italy taxes\"",
+  "demand": 0
+ },
+ {
+  "action": "склеить в /guides/italy-property-management-costs/",
+  "url": "/guides/condominio-rules-foreign-owners/",
+  "note": "Каннибализация на condominium fees",
+  "demand": 0
+ },
+ {
+  "action": "закрыть",
+  "url": "/compare/ x26",
+  "note": "Нулевой спрос по всем \"X vs Y property\" в us и uk, 1 показ за 90 дней на всю коллекцию. 301 на соответствующие /property-for-sale/",
+  "demand": 0
+ },
+ {
+  "action": "закрыть",
+  "url": "/developers/ x13",
+  "note": "13 из 15 названий застройщиков дали ноль в Semrush. Оставить coima и lendlease, у них есть брендовый спрос",
+  "demand": 0
+ },
+ {
+  "action": "оставить",
+  "url": "/developers/coima/ + /developers/lendlease/",
+  "note": "coima 720+170, lendlease 2900+2400 брендового спроса",
+  "demand": 4190
+ },
+ {
+  "action": "склеить в родительский регион",
+  "url": "/areas/ x32",
+  "note": "Ноль коммерческого спроса на уровне города. Становятся секциями региональных витрин",
+  "demand": 0
+ },
+ {
+  "action": "переделать",
+  "url": "/projects/ x65",
+  "note": "Спрос на названия проектов ноль во всех базах. Оставить как инвентарь под витринами, сменить title с имени проекта на \"{тип} {гео} Italy\", снять с роли самостоятельной цели",
+  "demand": 263
+ },
+ {
+  "action": "оставить",
+  "url": "/news/ x4 + /methodology/ + /about/ + /contact/ + правовые",
+  "note": "Служебные, спрос не нужен",
+  "demand": 0
+ },
+ {
+  "action": "оставить",
+  "url": "/tier-entry/ /tier-mid/ /tier-luxury/",
+  "note": "Внутренние фильтры по бюджету, переиспользовать как фасеты витрины",
+  "demand": 0
+ }
+]

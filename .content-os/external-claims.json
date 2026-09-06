@@ -123,6 +123,46 @@
       "files": [
         "compare/turin-vs-milan-property.mdx"
       ]
+    },
+    {
+      "id": "it-citizenship-law-74-2025-generation-limit",
+      "jurisdiction": "IT",
+      "claim": "Law 74/2025, in force from 28 March 2025, limits automatic recognition of Italian citizenship by descent to applicants with an Italian-born parent or grandparent, ending the previously unlimited bloodline for great-grandparents and beyond from 27 March 2025",
+      "source": "Legge 74/2025 (conversion of DL 36/2025, the Tajani decree); cross-checked against boccadutri.com and myitalianfamily.com summaries, September 2026",
+      "asOf": "2026-09-06",
+      "files": [
+        "guides/italy-citizenship-by-descent.mdx"
+      ]
+    },
+    {
+      "id": "it-citizenship-constitutional-court-2026",
+      "jurisdiction": "IT",
+      "claim": "The Italian Constitutional Court heard the challenges to the Law 74/2025 descent restrictions on 11 March 2026 and announced on 12 March 2026 that it dismissed the questions of constitutional legitimacy, confirming the generational limit stands",
+      "source": "Corte Costituzionale ruling announced 12 March 2026; reported by boccadutri.com and cross-checked in independent search results, September 2026",
+      "asOf": "2026-09-06",
+      "files": [
+        "guides/italy-citizenship-by-descent.mdx"
+      ]
+    },
+    {
+      "id": "it-citizenship-naturalisation-2-years",
+      "jurisdiction": "IT",
+      "claim": "Naturalisation by residence is reduced to 2 years for applicants with an Italian-born parent or grandparent who do not meet the descent conditions, against the ordinary 10 years for other non-EU nationals",
+      "source": "Legge 74/2025 residency provisions; cross-checked against boccadutri.com summary of the 2026 rules, September 2026",
+      "asOf": "2026-09-06",
+      "files": [
+        "guides/italy-citizenship-by-descent.mdx"
+      ]
+    },
+    {
+      "id": "it-citizenship-minor-deadlines",
+      "jurisdiction": "IT",
+      "claim": "Declaration deadlines for minor children under Law 74/2025: children born before 25 May 2025 have until 31 May 2029, and children born after that date have 3 years from birth",
+      "source": "Legge 74/2025 transitional provisions for minors; cross-checked against boccadutri.com, September 2026",
+      "asOf": "2026-09-06",
+      "files": [
+        "guides/italy-citizenship-by-descent.mdx"
+      ]
     }
   ]
 }

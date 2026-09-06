@@ -1,0 +1,3920 @@
+[
+{
+"db": "us",
+"k": "property for sale in tuscany italy",
+"v": 880,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in tuscany italy",
+"v": 2900,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "tuscany italy real estate",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "villas for sale in tuscany italy",
+"v": 480,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "apartments for sale in tuscany italy",
+"v": 70,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "tuscany italy property for sale",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "cheap houses for sale in tuscany italy",
+"v": 140,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "real estate tuscany italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "tuscany property for sale",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale tuscany italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in puglia italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in puglia italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "puglia italy real estate",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate puglia italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "puglia property for sale",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale puglia italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in sicily italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in sicily italy",
+"v": 1000,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "sicily italy real estate",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "villas for sale in sicily italy",
+"v": 50,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "cheap houses for sale in sicily italy",
+"v": 70,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "real estate sicily italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "sicily property for sale",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale sicily italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in sardinia italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in sardinia italy",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "sardinia italy real estate",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "villas for sale in sardinia italy",
+"v": 50,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "cheap houses for sale in sardinia italy",
+"v": 70,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "real estate sardinia italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "sardinia property for sale",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale sardinia italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in liguria italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in liguria italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "liguria italy real estate",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "liguria property for sale",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in umbria italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in umbria italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "umbria italy real estate",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate umbria italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "umbria property for sale",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale umbria italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in piedmont italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "piedmont italy real estate",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale piedmont italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "le marche italy real estate",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in abruzzo italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in abruzzo italy",
+"v": 590,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "abruzzo italy real estate",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate abruzzo italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "abruzzo property for sale",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale abruzzo italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in calabria italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in calabria italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "calabria italy real estate",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate calabria italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "calabria property for sale",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale calabria italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in molise italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "molise italy real estate",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "molise italy property for sale",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale molise italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in lazio italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "lazio italy real estate",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "trentino italy real estate",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in rome italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in rome italy",
+"v": 880,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "rome italy real estate",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "apartments for sale in rome italy",
+"v": 590,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "rome italy property for sale",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "cheap houses for sale in rome italy",
+"v": 50,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "real estate rome italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "rome property for sale",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale rome italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in milan italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in milan italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "milan italy real estate",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "apartments for sale in milan italy",
+"v": 170,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "real estate milan italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "milan property for sale",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale milan italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in florence italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in florence italy",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "florence italy real estate",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "villas for sale in florence italy",
+"v": 140,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "apartments for sale in florence italy",
+"v": 590,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "florence italy property for sale",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "cheap houses for sale in florence italy",
+"v": 70,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "real estate florence italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "florence property for sale",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale florence italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in venice italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in venice italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "venice italy real estate",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "apartments for sale in venice italy",
+"v": 210,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "real estate venice italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "venice property for sale",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale venice italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in naples italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in naples italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "naples italy real estate",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "villas for sale in naples italy",
+"v": 70,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "real estate naples italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "naples property for sale",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale naples italy",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in turin italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "turin italy real estate",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "apartments for sale in turin italy",
+"v": 70,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "real estate turin italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in bologna italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "bologna italy real estate",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "apartments for sale in bologna italy",
+"v": 50,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "houses for sale bologna italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "genoa italy real estate",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "apartments for sale in genoa italy",
+"v": 40,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "houses for sale in palermo italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "palermo italy real estate",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in verona italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "verona italy real estate",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale verona italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in lecce italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "lecce italy real estate",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "ostuni italy real estate",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "siena italy real estate",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate siena italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in lucca italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in lucca italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "lucca italy real estate",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "apartments for sale in lucca italy",
+"v": 110,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "real estate lucca italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "perugia italy real estate",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "taormina italy real estate",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "catania italy real estate",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "cefalu italy real estate",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in orvieto italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "orvieto italy real estate",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in lake como italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in lake como italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "lake como italy real estate",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "apartments for sale in lake como italy",
+"v": 40,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "lake como italy property for sale",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate lake como italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "lake como property for sale",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale lake como italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "lake garda italy real estate",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "lake garda property for sale",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale lake garda italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in amalfi coast italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "amalfi coast italy real estate",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "apartments for sale in amalfi coast italy",
+"v": 70,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "real estate amalfi coast italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "amalfi coast property for sale",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale amalfi coast italy",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in dolomites italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate dolomites italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in ravello italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "ravello italy real estate",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate ravello italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale ravello italy",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in positano italy",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in positano italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "positano italy real estate",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "villas for sale in positano italy",
+"v": 40,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "positano property for sale",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale positano italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in sorrento italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in sorrento italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "sorrento italy real estate",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "apartments for sale in sorrento italy",
+"v": 70,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "real estate sorrento italy",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "sorrento property for sale",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale sorrento italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in capri italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "capri italy real estate",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate capri italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale capri italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "lake maggiore italy real estate",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate lake maggiore italy",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale in italy",
+"v": 1900,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in italy",
+"v": 4400,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy real estate",
+"v": 2400,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "villas for sale in italy",
+"v": 1000,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "apartments for sale in italy",
+"v": 590,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "italy property for sale",
+"v": 880,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "cheap houses for sale in italy",
+"v": 720,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "italian property for sale",
+"v": 880,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italian real estate",
+"v": 1600,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property in italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "homes for sale in italy",
+"v": 6600,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate italy",
+"v": 1300,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses in italy for sale",
+"v": 1900,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "castle for sale italy",
+"v": 260,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "land for sale italy",
+"v": 590,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "vineyard for sale italy",
+"v": 390,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "cheap property italy",
+"v": 110,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "cheap houses in italy",
+"v": 880,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "apartment for sale italy",
+"v": 90,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "buying property in italy",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "buy property in italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "how to buy property in italy",
+"v": 210,
+"cluster": "процесс и юристы"
+},
+{
+"db": "us",
+"k": "can foreigners buy property in italy",
+"v": 140,
+"cluster": "процесс и юристы"
+},
+{
+"db": "us",
+"k": "buying property in italy as an american",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "buying a house in italy as an american",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "codice fiscale italy",
+"v": 320,
+"cluster": "процесс и юристы"
+},
+{
+"db": "us",
+"k": "one euro houses italy",
+"v": 480,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "us",
+"k": "1 euro houses italy",
+"v": 480,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "us",
+"k": "1 euro homes italy",
+"v": 90,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "us",
+"k": "property tax in italy",
+"v": 320,
+"cluster": "налоги"
+},
+{
+"db": "us",
+"k": "italy investor visa",
+"v": 260,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy golden visa",
+"v": 1300,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy elective residence visa",
+"v": 390,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy residency by investment",
+"v": 110,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy digital nomad visa",
+"v": 1000,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy citizenship by descent",
+"v": 1000,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy self employment visa",
+"v": 70,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy retirement visa",
+"v": 390,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy investor visa requirements",
+"v": 110,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "permesso di soggiorno",
+"v": 720,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "cost of living in italy",
+"v": 1900,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "retire in italy",
+"v": 390,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "living in italy as an expat",
+"v": 90,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "moving to italy from usa",
+"v": 1300,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "moving to italy from uk",
+"v": 50,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "international schools italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "healthcare in italy for foreigners",
+"v": 110,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "best places to live in italy",
+"v": 1000,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "best places to retire in italy",
+"v": 320,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "cost of living in tuscany",
+"v": 110,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "cost of living in rome",
+"v": 260,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "cost of living in milan",
+"v": 210,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "buy to let italy",
+"v": 40,
+"cluster": "доходность"
+},
+{
+"db": "us",
+"k": "italy property investment",
+"v": 20,
+"cluster": "investment-фрейм"
+},
+{
+"db": "us",
+"k": "italy house prices",
+"v": 20,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy property market",
+"v": 20,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "idealista italy",
+"v": 14800,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "us",
+"k": "immobiliare.it",
+"v": 1900,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "us",
+"k": "tecnocasa",
+"v": 1300,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "us",
+"k": "gate away",
+"v": 320,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "us",
+"k": "gate-away italy",
+"v": 140,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "us",
+"k": "casa.it",
+"v": 390,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "us",
+"k": "italian estate",
+"v": 90,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "uk",
+"k": "property for sale in tuscany italy",
+"v": 1600,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in tuscany italy",
+"v": 1300,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "villas for sale in tuscany italy",
+"v": 210,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "cheap houses for sale in tuscany italy",
+"v": 90,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "tuscany property for sale",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale tuscany italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in puglia italy",
+"v": 880,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in puglia italy",
+"v": 590,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "puglia property for sale",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale puglia italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in sicily italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in sicily italy",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "villas for sale in sicily italy",
+"v": 140,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "cheap houses for sale in sicily italy",
+"v": 70,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "sicily property for sale",
+"v": 880,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale sicily italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in sardinia italy",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in sardinia italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "sardinia italy real estate",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "villas for sale in sardinia italy",
+"v": 90,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "sardinia property for sale",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale sardinia italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in liguria italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in liguria italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "liguria italy real estate",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "liguria property for sale",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in umbria italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in umbria italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "umbria property for sale",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale umbria italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in piedmont italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "piedmont property for sale",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale piedmont italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "lombardy property for sale",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in le marche italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in le marche italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "le marche italy property for sale",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "le marche property for sale",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "le marche italy real estate",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in abruzzo italy",
+"v": 590,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in abruzzo italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "abruzzo italy property for sale",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "abruzzo property for sale",
+"v": 590,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale abruzzo italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in calabria italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in calabria italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "calabria property for sale",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale calabria italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in rome italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in rome italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "apartments for sale in rome italy",
+"v": 140,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "rome property for sale",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in milan italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "apartments for sale in milan italy",
+"v": 170,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "milan property for sale",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale milan italy",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in florence italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in florence italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "apartments for sale in florence italy",
+"v": 90,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "florence property for sale",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in venice italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in venice italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "apartments for sale in venice italy",
+"v": 90,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "venice property for sale",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in naples italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "naples property for sale",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "turin property for sale",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in bologna italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "bologna property for sale",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "palermo property for sale",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "villas for sale in palermo italy",
+"v": 50,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "property for sale in italy",
+"v": 1900,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in italy",
+"v": 2400,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "italy real estate",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "villas for sale in italy",
+"v": 320,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "apartments for sale in italy",
+"v": 170,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "italy property for sale",
+"v": 1300,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "cheap houses for sale in italy",
+"v": 480,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "italian property for sale",
+"v": 1300,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "italian real estate",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property in italy",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "homes for sale in italy",
+"v": 1300,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "real estate italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses in italy for sale",
+"v": 1000,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "castle for sale italy",
+"v": 110,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "land for sale italy",
+"v": 320,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "vineyard for sale italy",
+"v": 210,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "cheap property italy",
+"v": 260,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "cheap houses in italy",
+"v": 480,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "codice fiscale italy",
+"v": 210,
+"cluster": "процесс и юристы"
+},
+{
+"db": "uk",
+"k": "one euro houses italy",
+"v": 140,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "uk",
+"k": "1 euro houses italy",
+"v": 390,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "uk",
+"k": "property tax in italy",
+"v": 70,
+"cluster": "налоги"
+},
+{
+"db": "uk",
+"k": "italy golden visa",
+"v": 480,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "uk",
+"k": "italy elective residence visa",
+"v": 70,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "uk",
+"k": "italy digital nomad visa",
+"v": 320,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "uk",
+"k": "italy retirement visa",
+"v": 70,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "uk",
+"k": "permesso di soggiorno",
+"v": 880,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "uk",
+"k": "cost of living in italy",
+"v": 170,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "uk",
+"k": "moving to italy from uk",
+"v": 590,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "uk",
+"k": "best places to live in italy",
+"v": 320,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "uk",
+"k": "international schools italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "buy to let italy",
+"v": 40,
+"cluster": "доходность"
+},
+{
+"db": "uk",
+"k": "idealista italy",
+"v": 3600,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "uk",
+"k": "immobiliare.it",
+"v": 1000,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "uk",
+"k": "tecnocasa",
+"v": 720,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "uk",
+"k": "casa.it",
+"v": 320,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "uk",
+"k": "gate away",
+"v": 140,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "uk",
+"k": "gate-away italy",
+"v": 90,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "uk",
+"k": "knight frank italy",
+"v": 70,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "uk",
+"k": "savills italy",
+"v": 90,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "uk",
+"k": "property for sale in lecce italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "lecce property for sale",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "ostuni property for sale",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in siena italy",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "siena property for sale",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in lucca italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "lucca property for sale",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in lucca italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in perugia italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "perugia property for sale",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in arezzo italy",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "taormina property for sale",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in bari italy",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "bari property for sale",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in ancona italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in ancona italy",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "sanremo property for sale",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in portofino italy",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "portofino property for sale",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in portofino italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "como property for sale",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "catania property for sale",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "cefalu property for sale",
+"v": 70,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in lake como italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "lake como property for sale",
+"v": 590,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in lake como italy",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in lake garda italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "lake garda property for sale",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in lake garda italy",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in amalfi coast italy",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "amalfi coast property for sale",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "cinque terre property for sale",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "dolomites property for sale",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "positano property for sale",
+"v": 30,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in sorrento italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "sorrento property for sale",
+"v": 90,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in sorrento italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "capri property for sale",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in capri italy",
+"v": 40,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "lake maggiore property for sale",
+"v": 50,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "house for sale in italian",
+"v": 3600,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses in italy",
+"v": 2400,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "house in italian",
+"v": 1600,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "1 euro houses in italy",
+"v": 1300,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "us",
+"k": "cheap houses in italy to buy",
+"v": 1300,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "house of in italian",
+"v": 1300,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "house in italy",
+"v": 1000,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses to buy in puglia italy",
+"v": 1000,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "buy a house in abruzzo italy",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "cheap houses for sale in italy by the sea",
+"v": 590,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "buy a house in italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "buy house in italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "house sale in italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in italy cheap",
+"v": 480,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "houses in rome italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "house in italy for sale",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in italy zillow",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "trulli houses in puglia italy",
+"v": 390,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "$1 houses in italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "1 euro house in italy",
+"v": 320,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "us",
+"k": "buy a house in venice italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "buying a house in italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses in tuscany italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses in venice italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "housing in italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "trulli houses in italy",
+"v": 320,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "house for sale in tuscany italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in portofino italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "purchase house in italy",
+"v": 260,
+"cluster": "процесс и юристы"
+},
+{
+"db": "us",
+"k": "1 euro houses for sale in italy",
+"v": 210,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "us",
+"k": "buy cheap house in italy",
+"v": 210,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "fashion houses in milan italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "free houses in italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "house for sale in como italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "house for sale in italy for 1 euro",
+"v": 210,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "us",
+"k": "house to buy in italy cheap",
+"v": 210,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "houses for sale in northern italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses for sale in southern italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses in florence italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "houses in italy for free",
+"v": 210,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "us",
+"k": "houses in italy for sale 1 euro",
+"v": 210,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "us",
+"k": "how to buy a house in italy",
+"v": 210,
+"cluster": "процесс и юристы"
+},
+{
+"db": "us",
+"k": "buying cheap house in italy",
+"v": 170,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "properties to buy in tuscany italy",
+"v": 880,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy property tax news",
+"v": 720,
+"cluster": "новости рынка"
+},
+{
+"db": "us",
+"k": "property to buy in italy",
+"v": 720,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "properties for sale in italy",
+"v": 590,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italian properties for sale",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "buying property italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "can americans buy property in italy",
+"v": 320,
+"cluster": "процесс и юристы"
+},
+{
+"db": "us",
+"k": "property in italy for sale",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property lake como italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "cheap property in italy",
+"v": 260,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "italian property",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "luxury property for sale in italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property in tuscany italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italian estates property management",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy property for sale cheap",
+"v": 210,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "legal assistance buying property italy",
+"v": 210,
+"cluster": "процесс и юристы"
+},
+{
+"db": "us",
+"k": "properties in italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "properties in italy for sale",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property abruzzo italy sale",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale lake como italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property lucca italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property taxes in italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "purchasing property in italy",
+"v": 210,
+"cluster": "процесс и юристы"
+},
+{
+"db": "us",
+"k": "for sale italy property",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy properties",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy properties for sale",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy property",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy property to buy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy vacation properties",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property buy italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "property for sale tuscany italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "living in italy",
+"v": 1000,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "cities in italy ranked by cost of living",
+"v": 480,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "cost of living in italy vs us",
+"v": 480,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "living in italy as an american",
+"v": 480,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "living expenses in italy",
+"v": 320,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "cost of living in rome italy",
+"v": 260,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "is living in italy expensive",
+"v": 260,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "cost of living in milan italy",
+"v": 210,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "pros and cons of living in italy",
+"v": 210,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "what is the cost of living in italy",
+"v": 210,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "average cost of living in italy",
+"v": 170,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "cost of living in florence italy",
+"v": 170,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "cost of living in sicily italy",
+"v": 170,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "living in rome italy",
+"v": 170,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "italy visa",
+"v": 1600,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy schengen visa",
+"v": 880,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy work visa",
+"v": 880,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "digital nomad visa italy",
+"v": 720,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "elective residence visa italy",
+"v": 720,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italian visa",
+"v": 720,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italian visa for american citizen",
+"v": 720,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy visa appointment",
+"v": 720,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy visa for us citizens",
+"v": 720,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "visa for italy",
+"v": 720,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy visa requirements",
+"v": 590,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "visa for italy from usa",
+"v": 590,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "elective residency visa italy",
+"v": 480,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "golden visa italy",
+"v": 480,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italian golden visa",
+"v": 480,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy employment visa",
+"v": 480,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy visa application",
+"v": 480,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy visa from usa",
+"v": 390,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy visa requirements for us citizens",
+"v": 390,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy visas",
+"v": 390,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy visit visa requirements",
+"v": 390,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "retirement visa italy",
+"v": 390,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "schengen visa italy",
+"v": 390,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "visa italy",
+"v": 390,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy digital nomad visa requirements",
+"v": 320,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy elective residency visa",
+"v": 320,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy job visa",
+"v": 320,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy student visa",
+"v": 320,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy work permit visa",
+"v": 320,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "travel visa to italy",
+"v": 320,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italian elective residence visa",
+"v": 260,
+"cluster": "визы и ВНЖ"
+},
+{
+"db": "us",
+"k": "italy real estate for sale",
+"v": 2400,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate in italy",
+"v": 1900,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italian real estate for sale",
+"v": 1300,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy real estate news today",
+"v": 880,
+"cluster": "новости рынка"
+},
+{
+"db": "us",
+"k": "italy real estate news",
+"v": 590,
+"cluster": "новости рынка"
+},
+{
+"db": "us",
+"k": "buying real estate in italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate agents rome italy",
+"v": 480,
+"cluster": "процесс и юристы"
+},
+{
+"db": "us",
+"k": "lionard real estate italy",
+"v": 320,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "us",
+"k": "real estate bellagio lake como italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate to buy in italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "lake como italy real estate for sale",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate for sale in italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate for sale in tuscany italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate in italy for sale",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "amalfi italy real estate",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "cheap italian real estate",
+"v": 210,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "cortona italy real estate",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italian real estate website",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy luxury real estate news",
+"v": 210,
+"cluster": "новости рынка"
+},
+{
+"db": "us",
+"k": "luxury real estate italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate italy for sale",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate lucca italy sale",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "umbria real estate italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italian real estate websites",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italy real estate cheap",
+"v": 170,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "us",
+"k": "real estate agents in italy",
+"v": 170,
+"cluster": "процесс и юристы"
+},
+{
+"db": "us",
+"k": "real estate for sale italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate in rome italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate in sicily italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "real estate in tuscany italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "tropea italy real estate",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "how to move to italy from usa",
+"v": 880,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "how to move to italy",
+"v": 720,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "move to italy from usa",
+"v": 590,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "how can i move to italy",
+"v": 390,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "how to move to italy as an american",
+"v": 390,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "move to italy",
+"v": 390,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "get paid to move to italy",
+"v": 320,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "how do i move to italy",
+"v": 320,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "how to move to italy from america",
+"v": 320,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "how to move to italy from the us",
+"v": 260,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "can americans move to italy",
+"v": 210,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "can an american move to italy",
+"v": 210,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "retiring in italy",
+"v": 320,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "retirement age in italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "retiring in italy pros and cons",
+"v": 170,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "how to retire in italy",
+"v": 140,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "americans retiring in italy",
+"v": 110,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "retire in italy from usa",
+"v": 110,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "retiring in italy from usa",
+"v": 110,
+"cluster": "жизнь и переезд"
+},
+{
+"db": "us",
+"k": "italian villas for sale",
+"v": 1600,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "tuscany italy villas",
+"v": 1600,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "villas in italy",
+"v": 1300,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "tuscany villas italy rentals",
+"v": 1300,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "tuscan italian villa",
+"v": 1000,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "in italy villa",
+"v": 880,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "italian villas",
+"v": 880,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "italian villa for sale",
+"v": 720,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "italian farmhouse",
+"v": 1900,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "farmhouse tuscany italy",
+"v": 1300,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "italian farmhouses",
+"v": 590,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "tuscany italy farmhouse",
+"v": 390,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "castles for sale in italy",
+"v": 1000,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "farmland italy",
+"v": 1000,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "italian castles for sale",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "land for sale in italy",
+"v": 390,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "land sale italy",
+"v": 390,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "italian apartment",
+"v": 480,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "apartments in italy",
+"v": 1000,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "apartments italia",
+"v": 390,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "winery for sale italy",
+"v": 320,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "tuscany real estate",
+"v": 1000,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "tuscan villa",
+"v": 3600,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "tuscan homes",
+"v": 5400,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "us",
+"k": "italian countryside",
+"v": 3600,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "farms for sale in italy",
+"v": 390,
+"cluster": "тип объекта"
+},
+{
+"db": "us",
+"k": "homes for sale in italian countryside",
+"v": 390,
+"cluster": "тип объекта"
+},
+{
+"db": "uk",
+"k": "properties to buy in tuscany italy",
+"v": 1600,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property in italy for sale",
+"v": 590,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "cheap property in italy",
+"v": 480,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "property to buy in italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "purchasing property in italy",
+"v": 390,
+"cluster": "процесс и юристы"
+},
+{
+"db": "uk",
+"k": "cheap property for sale in italy",
+"v": 320,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "properties for sale in abruzzo italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "properties in italy",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "properties in italy for sale",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property in south italy for sale",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "cheap property in italy to buy",
+"v": 260,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "property for sale in garda italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property in sicily italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "cheap properties in italy",
+"v": 210,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "properties for sale in lucca italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in amalfi italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "1 euro property in italy",
+"v": 170,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "uk",
+"k": "buy a property in italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "buying a property in italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in italy cheap",
+"v": 170,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "property for sale in lucca tuscany italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property in sorrento italy for sale",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property to buy in italy cheap",
+"v": 170,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "1 euro properties in italy",
+"v": 140,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "uk",
+"k": "buy cheap property in italy",
+"v": 140,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "cheap properties for sale in italy",
+"v": 140,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "properties for sale in puglia region italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property in italy tuscany",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property in puglia italy for sale",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in northern italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "property for sale in southern italy",
+"v": 110,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "italian house sales",
+"v": 3600,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "house for sale in italian",
+"v": 3600,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "1 euro houses in italy",
+"v": 1600,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "uk",
+"k": "houses in italy",
+"v": 880,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "cheap houses in italy to buy",
+"v": 720,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "house for sale in italy",
+"v": 590,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses in capri italy",
+"v": 480,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "buy a house in abruzzo italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "buy house in italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "house in italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in italy europe",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "housing for sale in italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "italian houses for sale in italy",
+"v": 390,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "cheap houses for sale in italy by the sea",
+"v": 320,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "houses for sale in italy lake como",
+"v": 320,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "purchase house in italy",
+"v": 320,
+"cluster": "процесс и юристы"
+},
+{
+"db": "uk",
+"k": "1 euro house in italy",
+"v": 260,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "uk",
+"k": "buy a house in italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "buying a house in italy",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "house in italy for sale",
+"v": 260,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses for sale in italy cheap",
+"v": 260,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "buying cheap house in italy",
+"v": 210,
+"cluster": "дешёвая недвижимость"
+},
+{
+"db": "uk",
+"k": "houses for sale in garda italy",
+"v": 210,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses in italy for 1 euro",
+"v": 210,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "uk",
+"k": "house prices in italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses in italy for sale 1 euro",
+"v": 170,
+"cluster": "дома за 1 евро"
+},
+{
+"db": "uk",
+"k": "houses to buy in italy",
+"v": 170,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "places to buy in tuscany",
+"v": 1300,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses to buy in tuscany italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "houses to buy in puglia italy",
+"v": 140,
+"cluster": "коммерческий листинг"
+},
+{
+"db": "uk",
+"k": "mussomeli",
+"v": 1900,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "uk",
+"k": "altamonte",
+"v": 1900,
+"cluster": "brand и города-доноры"
+},
+{
+"db": "uk",
+"k": "molise",
+"v": 1000,
+"cluster": "коммерческий листинг"
+}
+]

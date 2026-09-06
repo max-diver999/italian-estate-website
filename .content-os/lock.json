@@ -1,21 +1,16 @@
 {
   "active": true,
-  "approved_wave": "new-articles wave 2 (legal depth / Salva Casa, ids 11-20)",
+  "approved_wave": "Wave A batch 1c — one-euro houses, best places to live, citizenship by descent",
   "approved_by": "Maxim",
-  "approved_at": "2026-08-23",
+  "approved_at": "2026-09-06",
   "approved_slugs": [
-    "guides/salva-casa-decree-property-buyers",
-    "guides/abusi-edilizi-buying-property-italy",
-    "guides/condominio-rules-foreign-owners",
-    "guides/energy-class-ape-italy-property",
-    "guides/superbonus-aftermath-property-buyers",
-    "guides/seismic-zones-italy-property",
-    "guides/geometra-role-italy-property",
-    "guides/preliminare-trascritto-italy",
-    "guides/italy-property-insurance-guide",
-    "guides/agibilita-certificate-italy"
+    "guides/italy-1-euro-homes-program",
+    "guides/best-places-to-live-italy",
+    "guides/italy-citizenship-by-descent",
+    "guides/cost-of-living-italy",
+    "guides/moving-to-italy-from-usa"
   ],
-  "approved_scope": "Second new-articles wave: 10 hand-written legal-depth guides (Salva Casa cluster), GEO >=90, zero em-dashes. Shared context: batch-shared-context-2026-08-23.md",
+  "approved_scope": "Batch 1c: repaired guides/italy-1-euro-homes-program (0 -> 40 GEO, hard echo-openers gate cleared, fabricated statistics removed) and added two new guides. Citizenship facts verified against two independent web sources on 2026-09-06 and registered in .content-os/external-claims.json. Temporary borrowed heroes on the three new pages, approved by Maxim, replace next PR. Stacks on cc/italy-living-20260906 (PR #5).",
   "decisions": {
     "relatedSlugs": "build RelatedGuides component (gate already references it in more-content-gate.mjs)",
     "title_length": "trim the ' | Italian Estate' suffix in BaseLayout rather than rewriting 187 frontmatter titles",

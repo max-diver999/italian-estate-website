@@ -1,0 +1,1685 @@
+{
+ "kept": [
+  {
+   "k": "property for sale in tuscany italy",
+   "v": 880,
+   "kd": 30,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale in tuscany italy",
+   "v": 2900,
+   "kd": 22,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "tuscany italy real estate",
+   "v": 480,
+   "kd": 28,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "villas for sale in tuscany italy",
+   "v": 480,
+   "kd": 25,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "apartments for sale in tuscany italy",
+   "v": 70,
+   "kd": 1,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "tuscany italy property for sale",
+   "v": 30,
+   "kd": 0,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "cheap houses for sale in tuscany italy",
+   "v": 140,
+   "kd": 7,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "real estate tuscany italy",
+   "v": 480,
+   "kd": 27,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "tuscany property for sale",
+   "v": 320,
+   "kd": 22,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale tuscany italy",
+   "v": 320,
+   "kd": 18,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "property for sale in puglia italy",
+   "v": 210,
+   "kd": 12,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale in puglia italy",
+   "v": 390,
+   "kd": 12,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "puglia italy real estate",
+   "v": 210,
+   "kd": 23,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "real estate puglia italy",
+   "v": 110,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "puglia property for sale",
+   "v": 50,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale puglia italy",
+   "v": 90,
+   "kd": 11,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "property for sale in sicily italy",
+   "v": 260,
+   "kd": 24,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale in sicily italy",
+   "v": 1000,
+   "kd": 8,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "sicily italy real estate",
+   "v": 480,
+   "kd": 25,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "villas for sale in sicily italy",
+   "v": 50,
+   "kd": 12,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "cheap houses for sale in sicily italy",
+   "v": 70,
+   "kd": 24,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "real estate sicily italy",
+   "v": 140,
+   "kd": 19,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "sicily property for sale",
+   "v": 210,
+   "kd": 27,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale sicily italy",
+   "v": 140,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "property for sale in sardinia italy",
+   "v": 320,
+   "kd": 24,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale in sardinia italy",
+   "v": 720,
+   "kd": 24,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "sardinia italy real estate",
+   "v": 720,
+   "kd": 30,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "villas for sale in sardinia italy",
+   "v": 50,
+   "kd": 22,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "cheap houses for sale in sardinia italy",
+   "v": 70,
+   "kd": 10,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "real estate sardinia italy",
+   "v": 170,
+   "kd": 28,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "sardinia property for sale",
+   "v": 140,
+   "kd": 23,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale sardinia italy",
+   "v": 140,
+   "kd": 19,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "property for sale in liguria italy",
+   "v": 40,
+   "kd": 3,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale in liguria italy",
+   "v": 110,
+   "kd": 6,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "liguria italy real estate",
+   "v": 90,
+   "kd": 4,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "liguria property for sale",
+   "v": 40,
+   "kd": 5,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "property for sale in umbria italy",
+   "v": 140,
+   "kd": 9,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale in umbria italy",
+   "v": 390,
+   "kd": 9,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "umbria italy real estate",
+   "v": 210,
+   "kd": 13,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "real estate umbria italy",
+   "v": 110,
+   "kd": 12,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "umbria property for sale",
+   "v": 40,
+   "kd": 20,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale umbria italy",
+   "v": 70,
+   "kd": 6,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "property for sale in piedmont italy",
+   "v": 40,
+   "kd": 5,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "piedmont italy real estate",
+   "v": 110,
+   "kd": 5,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale piedmont italy",
+   "v": 110,
+   "kd": 4,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "le marche italy real estate",
+   "v": 110,
+   "kd": 0,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "property for sale in abruzzo italy",
+   "v": 210,
+   "kd": 19,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale in abruzzo italy",
+   "v": 590,
+   "kd": 16,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "abruzzo italy real estate",
+   "v": 390,
+   "kd": 21,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "real estate abruzzo italy",
+   "v": 140,
+   "kd": 17,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "abruzzo property for sale",
+   "v": 140,
+   "kd": 19,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale abruzzo italy",
+   "v": 110,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "property for sale in calabria italy",
+   "v": 90,
+   "kd": 13,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale in calabria italy",
+   "v": 260,
+   "kd": 11,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "calabria italy real estate",
+   "v": 260,
+   "kd": 16,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "real estate calabria italy",
+   "v": 70,
+   "kd": 7,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "calabria property for sale",
+   "v": 40,
+   "kd": 7,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale calabria italy",
+   "v": 70,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale in molise italy",
+   "v": 90,
+   "kd": 18,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "molise italy real estate",
+   "v": 140,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "molise italy property for sale",
+   "v": 50,
+   "kd": 12,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale molise italy",
+   "v": 70,
+   "kd": 9,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "houses for sale in lazio italy",
+   "v": 70,
+   "kd": 2,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "lazio italy real estate",
+   "v": 40,
+   "kd": 5,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "trentino italy real estate",
+   "v": 70,
+   "kd": 10,
+   "cluster": "commercial/listing",
+   "geo": "region"
+  },
+  {
+   "k": "property for sale in rome italy",
+   "v": 210,
+   "kd": 26,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in rome italy",
+   "v": 880,
+   "kd": 25,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "rome italy real estate",
+   "v": 390,
+   "kd": 23,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "apartments for sale in rome italy",
+   "v": 590,
+   "kd": 19,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "rome italy property for sale",
+   "v": 90,
+   "kd": 23,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "cheap houses for sale in rome italy",
+   "v": 50,
+   "kd": 4,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "real estate rome italy",
+   "v": 390,
+   "kd": 25,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "rome property for sale",
+   "v": 40,
+   "kd": 27,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale rome italy",
+   "v": 140,
+   "kd": 23,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "property for sale in milan italy",
+   "v": 140,
+   "kd": 26,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in milan italy",
+   "v": 140,
+   "kd": 5,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "milan italy real estate",
+   "v": 320,
+   "kd": 16,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "apartments for sale in milan italy",
+   "v": 170,
+   "kd": 10,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "real estate milan italy",
+   "v": 70,
+   "kd": 18,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "milan property for sale",
+   "v": 90,
+   "kd": 22,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale milan italy",
+   "v": 70,
+   "kd": 21,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "property for sale in florence italy",
+   "v": 210,
+   "kd": 16,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in florence italy",
+   "v": 720,
+   "kd": 19,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "florence italy real estate",
+   "v": 320,
+   "kd": 19,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "villas for sale in florence italy",
+   "v": 140,
+   "kd": 9,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "apartments for sale in florence italy",
+   "v": 590,
+   "kd": 12,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "florence italy property for sale",
+   "v": 70,
+   "kd": 16,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "cheap houses for sale in florence italy",
+   "v": 70,
+   "kd": 7,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "real estate florence italy",
+   "v": 110,
+   "kd": 17,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "florence property for sale",
+   "v": 110,
+   "kd": 26,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale florence italy",
+   "v": 140,
+   "kd": 17,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "property for sale in venice italy",
+   "v": 110,
+   "kd": 16,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in venice italy",
+   "v": 320,
+   "kd": 22,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "venice italy real estate",
+   "v": 390,
+   "kd": 24,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "apartments for sale in venice italy",
+   "v": 210,
+   "kd": 10,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "real estate venice italy",
+   "v": 140,
+   "kd": 23,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "venice property for sale",
+   "v": 110,
+   "kd": 36,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale venice italy",
+   "v": 90,
+   "kd": 23,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "property for sale in naples italy",
+   "v": 70,
+   "kd": 8,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in naples italy",
+   "v": 320,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "naples italy real estate",
+   "v": 210,
+   "kd": 23,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "villas for sale in naples italy",
+   "v": 70,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "real estate naples italy",
+   "v": 40,
+   "kd": 13,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "naples property for sale",
+   "v": 110,
+   "kd": 46,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale naples italy",
+   "v": 50,
+   "kd": 13,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in turin italy",
+   "v": 170,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "turin italy real estate",
+   "v": 110,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "apartments for sale in turin italy",
+   "v": 70,
+   "kd": 5,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "real estate turin italy",
+   "v": 90,
+   "kd": 13,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in bologna italy",
+   "v": 170,
+   "kd": 13,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "bologna italy real estate",
+   "v": 140,
+   "kd": 13,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "apartments for sale in bologna italy",
+   "v": 50,
+   "kd": 6,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale bologna italy",
+   "v": 210,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "genoa italy real estate",
+   "v": 110,
+   "kd": 23,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "apartments for sale in genoa italy",
+   "v": 40,
+   "kd": 9,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in palermo italy",
+   "v": 210,
+   "kd": 6,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "palermo italy real estate",
+   "v": 170,
+   "kd": 5,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in verona italy",
+   "v": 140,
+   "kd": 18,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "verona italy real estate",
+   "v": 110,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale verona italy",
+   "v": 110,
+   "kd": 16,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in lecce italy",
+   "v": 110,
+   "kd": 7,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "lecce italy real estate",
+   "v": 70,
+   "kd": 10,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "ostuni italy real estate",
+   "v": 40,
+   "kd": 7,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "siena italy real estate",
+   "v": 110,
+   "kd": 19,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "real estate siena italy",
+   "v": 70,
+   "kd": 13,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "property for sale in lucca italy",
+   "v": 90,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in lucca italy",
+   "v": 390,
+   "kd": 13,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "lucca italy real estate",
+   "v": 320,
+   "kd": 21,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "apartments for sale in lucca italy",
+   "v": 110,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "real estate lucca italy",
+   "v": 70,
+   "kd": 18,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "perugia italy real estate",
+   "v": 50,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "taormina italy real estate",
+   "v": 110,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "catania italy real estate",
+   "v": 70,
+   "kd": 12,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "cefalu italy real estate",
+   "v": 110,
+   "kd": 10,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "houses for sale in orvieto italy",
+   "v": 90,
+   "kd": 6,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "orvieto italy real estate",
+   "v": 110,
+   "kd": 7,
+   "cluster": "commercial/listing",
+   "geo": "city"
+  },
+  {
+   "k": "property for sale in lake como italy",
+   "v": 170,
+   "kd": 17,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale in lake como italy",
+   "v": 170,
+   "kd": 23,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "lake como italy real estate",
+   "v": 720,
+   "kd": 28,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "apartments for sale in lake como italy",
+   "v": 40,
+   "kd": 12,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "lake como italy property for sale",
+   "v": 50,
+   "kd": 22,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "real estate lake como italy",
+   "v": 90,
+   "kd": 25,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "lake como property for sale",
+   "v": 320,
+   "kd": 26,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale lake como italy",
+   "v": 480,
+   "kd": 24,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "lake garda italy real estate",
+   "v": 170,
+   "kd": 18,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "lake garda property for sale",
+   "v": 90,
+   "kd": 13,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale lake garda italy",
+   "v": 110,
+   "kd": 11,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "property for sale in amalfi coast italy",
+   "v": 70,
+   "kd": 19,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "amalfi coast italy real estate",
+   "v": 210,
+   "kd": 18,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "apartments for sale in amalfi coast italy",
+   "v": 70,
+   "kd": 9,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "real estate amalfi coast italy",
+   "v": 260,
+   "kd": 18,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "amalfi coast property for sale",
+   "v": 110,
+   "kd": 19,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale amalfi coast italy",
+   "v": 50,
+   "kd": 16,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "property for sale in dolomites italy",
+   "v": 40,
+   "kd": 9,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "real estate dolomites italy",
+   "v": 40,
+   "kd": 13,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale in ravello italy",
+   "v": 70,
+   "kd": 17,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "ravello italy real estate",
+   "v": 70,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "real estate ravello italy",
+   "v": 40,
+   "kd": 0,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale ravello italy",
+   "v": 50,
+   "kd": 8,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "property for sale in positano italy",
+   "v": 50,
+   "kd": 10,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale in positano italy",
+   "v": 260,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "positano italy real estate",
+   "v": 260,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "villas for sale in positano italy",
+   "v": 40,
+   "kd": 12,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "positano property for sale",
+   "v": 90,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale positano italy",
+   "v": 90,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "property for sale in sorrento italy",
+   "v": 90,
+   "kd": 22,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale in sorrento italy",
+   "v": 480,
+   "kd": 17,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "sorrento italy real estate",
+   "v": 140,
+   "kd": 16,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "apartments for sale in sorrento italy",
+   "v": 70,
+   "kd": 17,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "real estate sorrento italy",
+   "v": 50,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "sorrento property for sale",
+   "v": 50,
+   "kd": 25,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale sorrento italy",
+   "v": 90,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale in capri italy",
+   "v": 170,
+   "kd": 16,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "capri italy real estate",
+   "v": 210,
+   "kd": 17,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "real estate capri italy",
+   "v": 40,
+   "kd": 6,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "houses for sale capri italy",
+   "v": 40,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "lake maggiore italy real estate",
+   "v": 40,
+   "kd": 3,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "real estate lake maggiore italy",
+   "v": 50,
+   "kd": 3,
+   "cluster": "commercial/listing",
+   "geo": "micro"
+  },
+  {
+   "k": "property for sale in italy",
+   "v": 1900,
+   "kd": 40,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "houses for sale in italy",
+   "v": 4400,
+   "kd": 42,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "italy real estate",
+   "v": 2400,
+   "kd": 43,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "villas for sale in italy",
+   "v": 1000,
+   "kd": 32,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "apartments for sale in italy",
+   "v": 590,
+   "kd": 22,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "italy property for sale",
+   "v": 880,
+   "kd": 40,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "cheap houses for sale in italy",
+   "v": 720,
+   "kd": 33,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "italian property for sale",
+   "v": 880,
+   "kd": 40,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "italian real estate",
+   "v": 1600,
+   "kd": 50,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "property in italy",
+   "v": 480,
+   "kd": 50,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "homes for sale in italy",
+   "v": 6600,
+   "kd": 43,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "real estate italy",
+   "v": 1300,
+   "kd": 42,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "houses in italy for sale",
+   "v": 1900,
+   "kd": 50,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "castle for sale italy",
+   "v": 260,
+   "kd": 14,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "land for sale italy",
+   "v": 590,
+   "kd": 15,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "vineyard for sale italy",
+   "v": 390,
+   "kd": 9,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "cheap property italy",
+   "v": 110,
+   "kd": 17,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "cheap houses in italy",
+   "v": 880,
+   "kd": 24,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "apartment for sale italy",
+   "v": 90,
+   "kd": 16,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "buying property in italy",
+   "v": 720,
+   "kd": 33,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "buy property in italy",
+   "v": 390,
+   "kd": 44,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "how to buy property in italy",
+   "v": 210,
+   "kd": 23,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "can foreigners buy property in italy",
+   "v": 140,
+   "kd": 18,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "buying property in italy as an american",
+   "v": 110,
+   "kd": 4,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "buying a house in italy as an american",
+   "v": 110,
+   "kd": 2,
+   "cluster": "other",
+   "geo": "country"
+  },
+  {
+   "k": "codice fiscale italy",
+   "v": 320,
+   "kd": 33,
+   "cluster": "legal/process",
+   "geo": "country"
+  },
+  {
+   "k": "one euro houses italy",
+   "v": 480,
+   "kd": 46,
+   "cluster": "one-euro-homes",
+   "geo": "country"
+  },
+  {
+   "k": "1 euro houses italy",
+   "v": 480,
+   "kd": 31,
+   "cluster": "one-euro-homes",
+   "geo": "country"
+  },
+  {
+   "k": "1 euro homes italy",
+   "v": 90,
+   "kd": 27,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "property tax in italy",
+   "v": 320,
+   "kd": 25,
+   "cluster": "money/tax",
+   "geo": "country"
+  },
+  {
+   "k": "italy investor visa",
+   "v": 260,
+   "kd": 21,
+   "cluster": "visa",
+   "geo": "country"
+  },
+  {
+   "k": "italy golden visa",
+   "v": 1300,
+   "kd": 29,
+   "cluster": "visa",
+   "geo": "country"
+  },
+  {
+   "k": "italy elective residence visa",
+   "v": 390,
+   "kd": 22,
+   "cluster": "visa",
+   "geo": "country"
+  },
+  {
+   "k": "italy residency by investment",
+   "v": 110,
+   "kd": 39,
+   "cluster": "visa",
+   "geo": "country"
+  },
+  {
+   "k": "italy digital nomad visa",
+   "v": 1000,
+   "kd": 20,
+   "cluster": "visa",
+   "geo": "country"
+  },
+  {
+   "k": "italy citizenship by descent",
+   "v": 1000,
+   "kd": 37,
+   "cluster": "visa",
+   "geo": "country"
+  },
+  {
+   "k": "italy self employment visa",
+   "v": 70,
+   "kd": 14,
+   "cluster": "visa",
+   "geo": "country"
+  },
+  {
+   "k": "italy retirement visa",
+   "v": 390,
+   "kd": 13,
+   "cluster": "visa",
+   "geo": "country"
+  },
+  {
+   "k": "italy investor visa requirements",
+   "v": 110,
+   "kd": 30,
+   "cluster": "visa",
+   "geo": "country"
+  },
+  {
+   "k": "permesso di soggiorno",
+   "v": 720,
+   "kd": 29,
+   "cluster": "visa",
+   "geo": "country"
+  },
+  {
+   "k": "cost of living in italy",
+   "v": 1900,
+   "kd": 24,
+   "cluster": "life/relocation",
+   "geo": "country"
+  },
+  {
+   "k": "retire in italy",
+   "v": 390,
+   "kd": 19,
+   "cluster": "life/relocation",
+   "geo": "country"
+  },
+  {
+   "k": "living in italy as an expat",
+   "v": 90,
+   "kd": 28,
+   "cluster": "life/relocation",
+   "geo": "country"
+  },
+  {
+   "k": "moving to italy from usa",
+   "v": 1300,
+   "kd": 15,
+   "cluster": "life/relocation",
+   "geo": "country"
+  },
+  {
+   "k": "moving to italy from uk",
+   "v": 50,
+   "kd": 13,
+   "cluster": "life/relocation",
+   "geo": "country"
+  },
+  {
+   "k": "international schools italy",
+   "v": 140,
+   "kd": 39,
+   "cluster": "other",
+   "geo": "country"
+  },
+  {
+   "k": "healthcare in italy for foreigners",
+   "v": 110,
+   "kd": 31,
+   "cluster": "life/relocation",
+   "geo": "country"
+  },
+  {
+   "k": "best places to live in italy",
+   "v": 1000,
+   "kd": 26,
+   "cluster": "life/relocation",
+   "geo": "country"
+  },
+  {
+   "k": "best places to retire in italy",
+   "v": 320,
+   "kd": 32,
+   "cluster": "life/relocation",
+   "geo": "country"
+  },
+  {
+   "k": "cost of living in tuscany",
+   "v": 110,
+   "kd": 17,
+   "cluster": "life/relocation",
+   "geo": "region"
+  },
+  {
+   "k": "cost of living in rome",
+   "v": 260,
+   "kd": 23,
+   "cluster": "life/relocation",
+   "geo": "city"
+  },
+  {
+   "k": "cost of living in milan",
+   "v": 210,
+   "kd": 19,
+   "cluster": "life/relocation",
+   "geo": "city"
+  },
+  {
+   "k": "buy to let italy",
+   "v": 40,
+   "kd": 9,
+   "cluster": "investment/yield",
+   "geo": "country"
+  },
+  {
+   "k": "italy property investment",
+   "v": 20,
+   "kd": 0,
+   "cluster": "investment-framing (dead)",
+   "geo": "country"
+  },
+  {
+   "k": "italy house prices",
+   "v": 20,
+   "kd": 0,
+   "cluster": "commercial/listing",
+   "geo": "country"
+  },
+  {
+   "k": "italy property market",
+   "v": 20,
+   "kd": 0,
+   "cluster": "other",
+   "geo": "country"
+  },
+  {
+   "k": "idealista italy",
+   "v": 14800,
+   "kd": 78,
+   "cluster": "brand/navigational",
+   "geo": "country"
+  },
+  {
+   "k": "gate-away italy",
+   "v": 140,
+   "kd": 45,
+   "cluster": "brand/navigational",
+   "geo": "country"
+  },
+  {
+   "k": "italian estate",
+   "v": 90,
+   "kd": 40,
+   "cluster": "brand/navigational",
+   "geo": "country"
+  }
+ ],
+ "dropped": [
+  {
+   "k": "immobiliare.it",
+   "v": 1900,
+   "why": "no italy anchor"
+  },
+  {
+   "k": "tecnocasa",
+   "v": 1300,
+   "why": "no italy anchor"
+  },
+  {
+   "k": "gate away",
+   "v": 320,
+   "why": "no italy anchor"
+  },
+  {
+   "k": "casa.it",
+   "v": 390,
+   "why": "no italy anchor"
+  }
+ ]
+}
