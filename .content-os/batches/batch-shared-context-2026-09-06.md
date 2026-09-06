@@ -378,3 +378,35 @@ All four credits are in `src/data/image-credits.json` with artist, licence and l
 **New tool:** `scripts/upload-italy-cloudinary.py`, driven by `scripts/italy-hero-manifest.json`. It pulls licence metadata from Commons rather than trusting the manifest, refuses anything not under a free licence, writes the credit **before** patching `heroImage`, and hard-refuses any cloud that is not `bwppi9gc` so an upload cannot land on the read-only legacy account by accident. `--slug` limits a top-up run, because re-uploading costs plan credits.
 
 **Rejected candidates, and why.** Three images were downloaded and looked at before being discarded rather than published: a Bologna side street that was covered in graffiti, and two Trento panoramas that were grey and dominated by power lines and industrial sprawl. None of them said "a place to live". An Arezzo antiques-fair shot was good but Arezzo already owns an area page, so Verona was the cleaner choice.
+
+## Wave H: the generator's stamped sentences, and the trap in fixing them
+
+New tool: `scripts/geo-shapes.mjs`. `--corpus` ranks the sentence shapes carried by the most files; given a filename it ranks that file's sentences by how many shared shapes each one contributes. This turns "the file is templated" into "these four sentences are the file".
+
+**What it found.** The corpus spine is a small number of sentences the generator stamped everywhere:
+
+| Stamped sentence | Files |
+|---|---|
+| "Insider tip: Anchor the offer on three closed sales in the same quartiere, then ..." | 26 |
+| "Non-EU reciprocity-country buyers follow standard Italian rogito with codice fiscale ..." | 51 files, 94 occurrences |
+| "Portal asking averages often overshoot OMI reference bands by 8-12% in spring listing season ..." | 20 |
+| The marker "Insider tip" on its own | **215 of 275 files, 342 times** |
+
+Two clusters were rewritten this wave, each file getting its own sentence rather than a shared replacement, which would only have minted a new shared shape.
+
+**The trap, which is the useful finding.** A one-sentence fix pulls the file into `--changed`, and the gate then demands the whole file clear MIN_GEO 34. Sixteen files could not: they were already deep debt, scoring 0 to 31 before being touched. They were reverted rather than shipped half-fixed, so they keep their stamped sentence for now.
+
+| Reverted, needs a dedicated rewrite | Score |
+|---|---|
+| developers/frimm | 31 |
+| developers/albero-architecture, asti-architetti | 28, 27 |
+| projects/carovigno-villa-new-build, assisi-historic-apartments | 25, 25 |
+| developers/gate-away-partner-network, lendlease | 23, 19 |
+| projects/como-lakefront-residence, porto-cervo, chieti-university | 20, 9, 7 |
+| projects/turin-crocetta, portofino, noto-baroque, chianti-farmhouse, ancona-centro, amalfi-ravello | 0 |
+
+`projects/pescara-centro-apartments` was attempted in full and reverted deliberately. After rewriting its stamped eight-item checklist into Pescara-specific prose it still scored 1, because its largest remaining shape is the title-and-description pattern shared by every project page: "X Review 2026: Buyer Guide" plus "X from EUR Yk". Breaking that in one file would be gaming the metric; changing it across roughly forty project pages is an SEO decision for Maxim, not a writing task.
+
+**Result.** Corpus mean 40.7 to 41.1, below the floor 94 to 84, gated 61 to 60, 26 files improved, none regressed. Session totals: mean 32.9 to 41.1, below floor 135 to 84, gated 110 to 60.
+
+**Next batch, in priority order.** The reciprocity cluster: 51 files, 94 occurrences, most files carrying the sentence twice, so half the work is removing a within-file duplicate that is also costing `self-repetition`. Expect the same gate trap, so triage by current score first and take only files at or above roughly 28.
