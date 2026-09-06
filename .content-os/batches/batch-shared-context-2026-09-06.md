@@ -338,3 +338,24 @@ check-links              PASS
 validate:content:changed PASS
 validate:batch --changed 2 files below the absolute floor, both improved sharply, both documented above
 ```
+
+## Wave F: fact registry set, and three corrections
+
+**Registry.** Maxim approved the three market-stats entries. Two could not simply be approved: `italy_avg_price_sqm` and `milan_avg_price_sqm` both held `eur_per_sqm: null`, so they were sourced first, then set.
+
+- Italy national asking: EUR 2,188/sqm, April 2026, +4.24% (Immobiliare.it). Settles the corpus split; the rival EUR 1,891 no longer appears anywhere in the corpus.
+- Milan comune asking: EUR 5,653/sqm, April 2026. The figure 42 pages already carried was correct and merely undated. The other variants were not contradictions: EUR 5,750 is Abitare Co metropolitan with its source named, EUR 5,200-6,800 is a Martesana district range, EUR 5,800 was a grep artifact (Bologna column, Florence transaction counts, management costs).
+- `closing_cost_stack_non_resident` was already approved and only needed mirroring into facts.json.
+- Added `national_transactions_residential`, tier A: 766,757 sales in 2025, +6.4%, against 719,578 in 2024.
+
+**Three factual corrections, all found while paying debt.**
+
+1. `italy-real-estate-market-data-2025` rewritten from the OMI Rapporto Immobiliare 2026. The published page asserted about 695,000 transactions and a 3.4% contraction. The market grew 6.4% to 766,757. It also inverted the financing story: it claimed 54% cash against 46% mortgage, where the report records mortgage-backed purchases up about 18% and 45.9% of purchases by individuals. Derived figures (66,025 foreign deals, EUR 5.8bn inflow) were built on the wrong base and are gone. 22 -> 54.
+2. `italy-property-market-forecast-2026-2027` carried a volume table captioned "Source: Agenzia delle Entrate (OMI)" whose 2024 and 2025 rows were invented (694,200 and 705,000 against the real 719,578 and 766,757), plus a foreign-share column rising to 17.2% and a "~22% residential" table cell, against the verified 5.1%. Recorded rows now carry the OMI figures; projections are labelled as this desk's own. 13 -> 50.
+3. `how-to-calculate-rental-yield-italy` told investors the renovation deduction is "up to 50% spread over 10 years". For 2026 that rate applies only to a main residence; a let second home gets 36%, falling to 30% from 2027. Corrected, and both rates registered.
+
+**Registry additions to facts.json (9).** Statutory: bonus ristrutturazioni 50% / 36% (L. 199/2025), 5% rivalutazione della rendita catastale (L. 662/1996), 5% IRPEF forfait (TUIR art. 37). Market practice, tier B and labelled as such in the statement: non-resident LTV to 60%, resident deposit near 20%, cadastral-to-market gap from 30%, management fees to 25%, agency commission to 6%.
+
+**Corpus effect.** Mean 32.9 -> 40.7. Below the MIN_GEO floor of 34: 135 -> 94. Files held at a gate cap: 110 -> 61. 193 files improved, none regressed. Registration alone was worth about one point of mean; the rest came from rewriting two heavily templated files, which removed their sentence shapes from the shared index and lifted every file that had been colliding with them.
+
+**Method note.** `template-family` counts 8-token sentence shapes with numbers normalised to `#` and capitalised words to `X`, so tables of figures collide across files regardless of wording. On the forecast page, 15 sentences produced all 77 shared shapes and a single figure-run sentence produced 29 of them. Attributing shapes back to sentences is much faster than rewriting whole pages.
