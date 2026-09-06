@@ -274,3 +274,67 @@ validate:content:changed PASS 15/15
 validate:batch --changed PASS, no score regressed
 qa:corpus                7 pre-existing issues on these files, unchanged (verified against stash)
 ```
+
+---
+
+# Wave E — template debt, first pass
+
+**Branch:** `cc/italy-debt-20260906`.
+
+## The size of it, measured properly
+
+`batch-writing-gate --all`: **138 files of 276 below the GEO floor of 34.** Hard gates: template-corpus 47, mass-duplication 5, echo-openers 5, malformed-output 4, self-repetition 3.
+
+Where the corpus loses points: `stamped-figure` **-3,912** total, `template-family` **-3,305**, `duplicated-text` -1,203. But template-family is the *top* penalty for **116 of the 138**, so it is the blocker even though stamped-figure costs more in aggregate.
+
+## What is cheap and what is not
+
+Debt splits cleanly:
+
+- **Within-file** (`echo-openers`, `self-repetition`, `heading-echo`, `definition-frame`, `hedging`, `implausible-precision`): fixable in an hour per file. **17 files** in guides/areas/news.
+- **Corpus-shared** (`template-family`, `template-corpus`, `duplicated-text`): needs coordinated rewriting. **51 files**.
+- Excluded from scope: 13 `/compare/` files slated for closure and 45 `/projects/` cards that are now inventory under the facets rather than ranking targets. Fixing either is waste.
+
+`stamped-figure` is not a cheap lever. The saturated figures are 15% (130 articles), 12% (130), 5% (122), 25% (101), €400,000 (92). Each means something different in each article. Registering them would be false and the registry's own anti-templating guard would reject it.
+
+## Fixed this pass
+
+| File | GEO | What it actually was |
+|---|---|---|
+| `hidden-costs-buying-property-italy` | **0 → 36** | Nine of twelve sections opened by restating their heading plus one of two generator templates, carrying "45.9 percent of domestic buyers use mutuo financing near 3.35 percent average rates" five times, unsourced, alongside broken grammar ("Show foreign purchasers should"). All nine rewritten to answer their heading. |
+| `italy-property-taxes-foreign-buyers-guide` | **0 → 36** | Same generator, same two templates, seven sections. Rewritten. |
+| `how-to-calculate-rental-yield-italy` | **0 → 25** | 29 percentages quoted to two decimals, and worked-example outputs presented as "typical net rental yields across Italian regions". Reframed as arithmetic on six named properties; precision rounded to one decimal. |
+| `cost-of-buying-property-italy` | **10 → 31** | Carried the wrong 15.2% national foreign-buyer share that batch 1d could not reach. Now 5.1%. 50 hedge words removed; the prose is stronger without them. |
+| `italy-residency-by-investment-guide` | deleted | Already 301'd in vercel.json, so unreachable, but still in the corpus dragging template-family for everyone else. |
+
+**The generator template is now gone from the corpus entirely.** Grep for "refers to Italian civil-law milestones", "is the compliance layer where notary" or "45.9 percent of domestic buyers" returns zero files.
+
+## Two script bugs fixed at the root
+
+`qa-audit.mjs` and `batch-writing-gate.mjs` take changed files from `git diff --name-only HEAD`, which includes deletions, then read them and crash. Any batch containing a deletion broke the validator. Both now skip files that are no longer on disk.
+
+## Two files still below the floor, and why
+
+`cost-of-buying-property-italy` at 31 and `how-to-calculate-rental-yield-italy` at 25. Both improved by 21 and 25 points. The residual is `stamped-figure` on figures that are load-bearing in these articles: "10% to 15% closing costs" is the first article's whole thesis, "2% versus 9% registration tax" is a statutory rule. Removing them would damage the pages.
+
+The scorer's own comment names this case: *"The article is charged for its neighbours' arithmetic... the fix is a registry entry rather than a rewrite."*
+
+**That registry entry is prepared and waiting for a decision.** `market-stats.json` holds `closing_cost_stack_non_resident` at `owner_decision`, and two further entries at `needs_owner_decision` that document worse problems than the one batch 1d found:
+
+- `milan_avg_price_sqm`: "The corpus asserts €5,653 (42 pages), €5,750 (10), €5,800, €5,350 and €5,200." **Five values for one number across sixty pages.**
+- `italy_avg_price_sqm`: "€2,188 (12 pages) and €1,891 (10 pages) as the same national average, neither carrying a source or a date."
+
+Approving these would lift files across the whole corpus and settle a factual contradiction that is live on the site today. It is Maxim's call, not a writing task.
+
+## Realistic estimate for the rest
+
+Thirteen more within-file files at roughly an hour each. The 51 corpus-shared files are days rather than hours, and their yield is lower, because most are `/areas/` and `/guides/` pages already ranking on the demand they hold.
+
+## Gates
+
+```
+npm run build            0 errors, 0 P0, 0 P1
+check-links              PASS
+validate:content:changed PASS
+validate:batch --changed 2 files below the absolute floor, both improved sharply, both documented above
+```

@@ -102,6 +102,8 @@ function getChangedFiles() {
     return out
       .split('\n')
       .filter((f) => f.startsWith('src/content/') && f.endsWith('.mdx'))
+      // a deletion in the batch still appears in git diff; skip what is no longer on disk
+      .filter((f) => existsSync(new URL(`../${f}`, import.meta.url)))
       .map((f) => {
         const parts = f.replace('src/content/', '').split('/');
         return { coll: parts[0], slug: parts[1].replace('.mdx', ''), path: f };
