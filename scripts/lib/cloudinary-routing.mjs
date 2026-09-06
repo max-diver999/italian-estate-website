@@ -1,0 +1,51 @@
+import {
+  CLOUDINARY_PHUKET,
+  CLOUDINARY_NICHE,
+  CLOUDINARY_NICHE_LEGACY,
+  CLOUDINARY_NICHE_ACTIVE,
+  ALL_ALLOWED_CLOUDS,
+  PHUKET_SITE_DIRS,
+  NICHE_SITE_DIRS,
+  cloudNameForSiteDir,
+  cloudNameForUpload,
+  nicheActiveEnvPaths,
+  nicheLegacyEnvPaths,
+  nicheCloudinaryEnvPaths,
+  loadEnvFile,
+  loadCloudinaryEnvForSite,
+  resolveNicheCloudinaryCdn,
+  buildCloudinaryImageUrl,
+  TRANSFORMS,
+  UPLOAD_ROLES,
+  isAllowedCloudinaryCloud,
+  isLegacyCloudinaryUrl,
+  isActiveCloudinaryUrl,
+} from '../../../scripts/lib/cloudinary-routing.mjs';
+
+export {
+  CLOUDINARY_PHUKET,
+  CLOUDINARY_NICHE,
+  CLOUDINARY_NICHE_LEGACY,
+  CLOUDINARY_NICHE_ACTIVE,
+  ALL_ALLOWED_CLOUDS,
+  PHUKET_SITE_DIRS,
+  NICHE_SITE_DIRS,
+  cloudNameForSiteDir,
+  cloudNameForUpload,
+  nicheActiveEnvPaths,
+  nicheLegacyEnvPaths,
+  nicheCloudinaryEnvPaths,
+  loadEnvFile,
+  loadCloudinaryEnvForSite,
+  resolveNicheCloudinaryCdn,
+  buildCloudinaryImageUrl,
+  TRANSFORMS,
+  UPLOAD_ROLES,
+  isAllowedCloudinaryCloud,
+  isLegacyCloudinaryUrl,
+  isActiveCloudinaryUrl,
+};
+
+export function isAllowedCloudinaryUrl(url) {
+  return isAllowedCloudinaryCloud(url);
+}

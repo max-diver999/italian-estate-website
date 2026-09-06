@@ -1,0 +1,144 @@
+---
+export const prerender = true;
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { formatEur } from '../../lib/cardImage';
+import FaqBlock from '../../components/FaqBlock.astro';
+import { loadFacets, facetHeading, facetTitleStem, FACET_GUIDES, FACET_FAQ, type Facet } from '../../lib/propertyFacets';
+import { SITE } from '../../data/site';
+
+export async function getStaticPaths() {
+  const facets = await loadFacets();
+  return facets.map((facet) => ({
+    params: { slug: facet.slug },
+    props: { facet, siblings: facets.filter((f) => f.kind === facet.kind && f.slug !== facet.slug) },
+  }));
+}
+
+const { facet, siblings } = Astro.props as { facet: Facet; siblings: Facet[] };
+
+const heading = facetHeading(facet);
+const from = facet.fromEur ? formatEur(facet.fromEur) : '';
+const stem = facetTitleStem(facet);
+const unit = facet.kind === 'type' ? '' : ' Homes';
+const title = from
+  ? `${stem}: ${facet.count}${unit} from ${from}`
+  : `${stem}: ${facet.count} Properties`;
+
+const kindWord = facet.kind === 'type' ? 'property type' : facet.kind === 'city' ? 'town' : 'region';
+const description = `${facet.count} reviewed ${facet.kind === 'type' ? facet.label.toLowerCase() : 'properties'} in ${
+  facet.kind === 'type' ? 'Italy' : facet.label
+}${from ? ` from ${from}` : ''}, with running costs, heritage and planning checks before you offer.`;
+
+const guides = FACET_GUIDES[facet.slug] ?? [];
+const faqItems = FACET_FAQ[facet.slug] ?? [];
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: heading,
+    description,
+    url: `${SITE.url}/property-for-sale/${facet.slug}/`,
+    numberOfItems: facet.count,
+    isPartOf: { '@type': 'WebPage', url: `${SITE.url}/property-for-sale/` },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Property for sale in Italy', item: `${SITE.url}/property-for-sale/` },
+      { '@type': 'ListItem', position: 2, name: heading, item: `${SITE.url}/property-for-sale/${facet.slug}/` },
+    ],
+  },
+];
+
+if (faqItems.length > 0) {
+  schemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  });
+}
+---
+<BaseLayout title={title} description={description} schemas={schemas}>
+  <section class="site-container py-12 md:py-16">
+    <nav class="text-sm text-[var(--color-muted)] mb-6" aria-label="Breadcrumb">
+      <a href="/property-for-sale/" class="hover:underline">Property for sale in Italy</a>
+      <span aria-hidden="true"> / </span>
+      <span>{facet.label}</span>
+    </nav>
+
+    <header class="max-w-3xl mb-10">
+      <span class="badge-pill mb-4">{facet.label} · {facet.count} listed</span>
+      <h1 class="mb-4">{heading}</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        <strong>{facet.count} {facet.count === 1 ? 'property' : 'properties'}</strong>
+        {from ? <> from <strong>{from}</strong></> : null}, each independently reviewed.
+        {facet.note ? ` ${facet.note}` : ''}
+      </p>
+    </header>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
+      {facet.items.map((project) => (
+        <ProjectCard
+          href={`/projects/${project.id}/`}
+          title={project.data.title}
+          description={project.data.description}
+          image={project.data.heroImage}
+          area={project.data.area}
+          developer={project.data.developer}
+          propertyType={project.data.propertyType}
+          status={project.data.status}
+          priceFromEur={project.data.priceFromEUR}
+        />
+      ))}
+    </div>
+
+    {guides.length > 0 && (
+      <div class="prose max-w-3xl mb-10 text-[var(--color-muted)]">
+        <h2 class="text-xl text-[var(--color-ink)]">What to check in {facet.label}</h2>
+        <ul>
+          {guides.map((g) => (
+            <li><a href={g.href}>{g.label}</a></li>
+          ))}
+          <li><a href="/guides/due-diligence-italy-property/">Due diligence before the compromesso</a></li>
+          <li><a href="/guides/cost-of-buying-property-italy/">What the purchase costs to complete</a></li>
+        </ul>
+      </div>
+    )}
+
+    {siblings.length > 0 && (
+      <nav class="mb-12" aria-label={`Other options by ${kindWord}`}>
+        <h2 class="text-xl mb-4">Other {kindWord}s</h2>
+        <ul class="flex flex-wrap gap-2 list-none p-0">
+          {siblings.map((f) => (
+            <li>
+              <a class="badge-pill hover:underline" href={`/property-for-sale/${f.slug}/`}>
+                {f.label} <span class="opacity-70">{f.count}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )}
+
+    {faqItems.length > 0 && (
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-xl mb-4">Questions buyers ask about {facet.label}</h2>
+        <FaqBlock items={faqItems} />
+      </div>
+    )}
+
+    <LeadForm
+      title={`Looking for something specific in ${facet.label}?`}
+      subtitle="Tell us the budget and whether it is a home, a let or a restoration. We reply within one business day, including with off-market stock that is not listed here."
+      context={`property-for-sale-${facet.slug}`}
+    />
+  </section>
+</BaseLayout>

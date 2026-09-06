@@ -179,3 +179,54 @@ There is no enquiry dataset. Search Console shows 73 clicks in 90 days. A statem
 25 claims across 14 files, all below the GEO floor, so a correction-only edit cannot pass the gate: ostuni, polignano-a-mare, sorrento, taormina, valle-d-itria, sardinia, sicily, marche, italy-property-investment-guide, italy-real-estate-market-data-2025, best-regions-invest-italy-property-2026, italy-vs-malta, puglia-vs-tuscany, gate-away-international-buyers-report-2025, cost-of-buying-property-italy.
 
 **This is a gate design question for Maxim.** GEO is an absolute floor rather than a ratchet, so the gate blocks a PR that only removes a false statement from an already-failing file. Removing a falsehood cannot make a file worse. Either those corrections ride along with the debt wave, or the gate needs a documented exception for correction-only changes.
+
+---
+
+# Wave C — the /property-for-sale/ route tree
+
+**Branch:** `cc/italy-routes-20260906`. Code, not MDX.
+
+## Bug found first, and it blocked everything
+
+`ProjectCard`, `homeProjects.ts`, the homepage and `/projects/` all read `priceFromUsd`. That field exists in **zero** of 65 project cards; all 51 priced cards carry `priceFromEUR`. **No price was rendering anywhere on the site**, silently, including the homepage.
+
+The SERP formula every winning competitor uses is a count plus a from-price, so this had to be fixed before any listing page could exist. Added `formatEur` and repointed all five call sites. `/projects/` now reads "65 projects, from €130K" and 51 cards show a price.
+
+## What was built
+
+`/property-for-sale/` plus **16 facet pages**, generated from project frontmatter rather than hand-written:
+
+| Kind | Pages | Examples |
+|---|---|---|
+| region | 9 | tuscany 10, puglia 9, lombardy 12, sicily 4, lazio 4, liguria 4, campania 3, lake-como 3, sardinia 2 |
+| type | 4 | apartments 38, villas 13, farmhouses 8, new-developments 5 |
+| town | 3 | milan 12, ostuni 6, rome 4 |
+
+Addressable demand across the tree: roughly **95,000 impressions a month**, against 27,700 for everything in waves A and B combined.
+
+Titles carry the formula: "Property for Sale in Tuscany, Italy: 10 Homes from €130K", "Villas for Sale in Italy: 13 from €350K", "Farmhouses for Sale in Italy: 8 from €130K".
+
+## Honesty rules built into the generator
+
+- A facet is generated only at `MIN_ITEMS = 3` or above. No page promises inventory that does not exist.
+- One documented exception, `THIN_BUT_WANTED`: Sardinia, 4,550 impressions a month against 2 listings. Its title says "2 Homes from €600K" and its note says the stock is off-market. The count stays true.
+- Every facet note is hand-written, never generated.
+
+## The merge, done properly
+
+The eight `/invest-{geo}-property/` landings sat on the pattern the demand study measured at zero. They were not simply deleted: their **42 hand-written FAQ answers were carried across** into the seven facets that inherit them, plus six more for Sardinia, and now render with FAQPage schema. Then 301s in `vercel.json` and the pages removed. All internal links repointed across 7 files.
+
+## check-links was blind to the new routes
+
+`scripts/check-links.mjs` skips dynamic routes on the assumption they are all collection-backed. `/property-for-sale/[...slug]` is facet-backed, so its 16 routes were invisible and links to them reported as broken.
+
+Fixed at the root rather than with an allowlist: the facet maps moved to `src/data/property-facet-maps.mjs`, plain ESM with no Astro imports, and both `propertyFacets.ts` and `check-links.mjs` now read the same source. Routes known went from 300 to 313.
+
+## Gates
+
+```
+npm run build          276 pages, 0 errors, 0 P0, 0 P1
+check-links            PASS, 313 routes known, no broken links
+validate:content       PASS 276/276
+check-heroes           3 known temporary borrows from wave A, unchanged
+```

@@ -19,6 +19,7 @@
  */
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { fileURLToPath } from 'node:url';
 import { execSync } from 'node:child_process';
 
@@ -26,6 +27,7 @@ const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const CONTENT = join(ROOT, 'src/content');
 const PAGES = join(ROOT, 'src/pages');
 const PUBLIC = join(ROOT, 'public');
+const { facetSlugsFrom } = await import(pathToFileURL(join(ROOT, 'src/data/property-facet-maps.mjs')).href);
 
 const argv = process.argv.slice(2);
 const jsonOut = argv.includes('--json');
@@ -54,12 +56,24 @@ for (const coll of existsSync(CONTENT) ? readdirSync(CONTENT) : []) {
 }
 
 const routes = new Set(['/']);
+/* /property-for-sale/* is generated from project frontmatter, not from a collection
+   slug, so the dynamic-route skip below would otherwise hide it from the checker. */
+{
+  const projects = contentFiles
+    .filter((f) => f.coll === 'projects')
+    .map((f) => {
+      const raw = readFileSync(f.path, 'utf8');
+      const get = (k) => (raw.match(new RegExp(`^${k}:\\s*(.+)$`, 'm'))?.[1] ?? '').trim().replace(/^["']|["']$/g, '');
+      return { area: get('area'), propertyType: get('propertyType') };
+    });
+  for (const slug of facetSlugsFrom(projects)) routes.add(`/property-for-sale/${slug}/`);
+}
 for (const { coll, slug } of contentFiles) routes.add(`/${coll}/${slug}/`);
 for (const { coll } of contentFiles) routes.add(`/${coll}/`);
 for (const p of walk(PAGES)) {
   const rel = relative(PAGES, p);
   if (!/\.(astro|ts|js)$/.test(rel)) continue;
-  if (rel.includes('[')) continue; // dynamic — covered by the collection routes
+  if (rel.includes('[')) continue; // dynamic — collection routes above, facet routes below
   if (rel.startsWith('api/')) continue;
   const route = `/${rel.replace(/index\.(astro|ts|js)$/, '').replace(/\.(astro|ts|js)$/, '')}`;
   routes.add(route.endsWith('/') ? route : `${route}/`);

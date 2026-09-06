@@ -7,6 +7,46 @@
       "permanent": true
     },
     {
+      "source": "/invest-tuscany-property/",
+      "destination": "/property-for-sale/tuscany/",
+      "permanent": true
+    },
+    {
+      "source": "/invest-puglia-property/",
+      "destination": "/property-for-sale/puglia/",
+      "permanent": true
+    },
+    {
+      "source": "/invest-sicily-property/",
+      "destination": "/property-for-sale/sicily/",
+      "permanent": true
+    },
+    {
+      "source": "/invest-liguria-property/",
+      "destination": "/property-for-sale/liguria/",
+      "permanent": true
+    },
+    {
+      "source": "/invest-milan-property/",
+      "destination": "/property-for-sale/lombardy/",
+      "permanent": true
+    },
+    {
+      "source": "/invest-rome-property/",
+      "destination": "/property-for-sale/lazio/",
+      "permanent": true
+    },
+    {
+      "source": "/invest-lake-como-property/",
+      "destination": "/property-for-sale/lake-como/",
+      "permanent": true
+    },
+    {
+      "source": "/invest-sardinia-property/",
+      "destination": "/property-for-sale/sardinia/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
@@ -77,15 +117,30 @@
     },
     {
       "source": "/_astro/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     },
     {
       "source": "/images/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     },
     {
       "source": "/fonts/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ]
 }

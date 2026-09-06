@@ -27,7 +27,6 @@ ssl._create_default_https_context = ssl._create_unverified_context
 SCRIPTS = Path(__file__).resolve().parent
 ROOT = SCRIPTS.parent
 MORE_GROUP = SCRIPTS.parent.parent.parent
-CLOUD = "dlrrtf6bq"
 UPLOAD_WORKERS = 3
 RATE_SLEEP = 0.15
 MAX_UPLOAD_BYTES = 9_500_000
