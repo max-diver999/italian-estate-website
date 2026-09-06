@@ -1,15 +1,16 @@
 {
   "active": true,
-  "approved_wave": "Wave A batch 1b — living/relocation cluster (2 new pages)",
+  "approved_wave": "Wave A batch 1c — one-euro houses, best places to live, citizenship by descent",
   "approved_by": "Maxim",
   "approved_at": "2026-09-06",
   "approved_slugs": [
+    "guides/italy-1-euro-homes-program",
+    "guides/best-places-to-live-italy",
+    "guides/italy-citizenship-by-descent",
     "guides/cost-of-living-italy",
-    "guides/moving-to-italy-from-usa",
-    "guides/italy-investor-visa-property",
-    "guides/italy-elective-residence-visa-property"
+    "guides/moving-to-italy-from-usa"
   ],
-  "approved_scope": "Two new guides in the reference cluster (cost of living 4,590/mo, moving from USA 3,300/mo), both SERPs with no property portal in the top ten. Plus inbound links added from the two visa guides in 1a. Temporary hero images: both new pages borrow an existing area asset, approved by Maxim, to be replaced with purpose-made heroes in the next PR once the Cloudinary pipeline runs. check-heroes reports these two and nothing else. Stacks on branch cc/italy-visa-20260906 (PR #4).",
+  "approved_scope": "Batch 1c: repaired guides/italy-1-euro-homes-program (0 -> 40 GEO, hard echo-openers gate cleared, fabricated statistics removed) and added two new guides. Citizenship facts verified against two independent web sources on 2026-09-06 and registered in .content-os/external-claims.json. Temporary borrowed heroes on the three new pages, approved by Maxim, replace next PR. Stacks on cc/italy-living-20260906 (PR #5).",
   "decisions": {
     "relatedSlugs": "build RelatedGuides component (gate already references it in more-content-gate.mjs)",
     "title_length": "trim the ' | Italian Estate' suffix in BaseLayout rather than rewriting 187 frontmatter titles",

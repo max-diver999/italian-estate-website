@@ -91,3 +91,46 @@ npm run build             274 pages, 0 errors, 0 P0, 0 P1
 check-heroes              2 known temporary borrows, documented above
 em dashes                 0 in both new files
 ```
+
+---
+
+# Batch 1c — one-euro houses, best places to live, citizenship by descent
+
+**Branch:** `cc/italy-euro-20260906`, stacked on `cc/italy-living-20260906`.
+
+| Slug | Demand | GEO | Words | Action |
+|---|---:|---:|---:|---|
+| `guides/italy-1-euro-homes-program` | 6,590/mo | **0 → 40** | 4,327 | repaired and retitled |
+| `guides/best-places-to-live-italy` | 1,320/mo | **62/75 (A)** | 2,563 | new |
+| `guides/italy-citizenship-by-descent` | 1,290/mo | **57/75 (A)** | 2,543 | new |
+
+## The one-euro page was worse than a gate failure
+
+It sat on the hard `echo-openers` gate, but the reason mattered more than the score. Four section openers restated their own heading, one entire paragraph was duplicated verbatim between two sections, and the file carried fabricated statistics with fake precision:
+
+- "Track 68% of foreign files using geometra surveys before auction deposits"
+- "Reports 76% bond refund success when engineers signed milestone reports on schedule"
+- "Route 89% of non-EU buyers through avvocato review"
+- "Approves fewer than 12% of enquiry files"
+- "Median 47 days from award to rogito ... rejected at 22% rate in competitive Sicilian cohorts"
+- "Foreign buyers who used local project managers cleared first structural inspection 2.3 months faster than remote-only owners in the same comune cohorts"
+
+None of these has a source and none could have. They were sentence fragments beginning with a verb, which is what machine-generated filler looks like when it is asked for authority it does not have. All removed. The title was also broken English ("Italy 1 Euro Homes Program: 2026 Complete for Buyers") and is now "1 Euro Houses in Italy 2026: Towns, Bonds, Real Costs", which matches the query.
+
+**This is worth checking for elsewhere in the corpus.** The same fragment pattern (`^(Track|Reports|Route|Approves) \d+%`) may exist in other files that nobody has touched since they were generated.
+
+## Citizenship by descent: verified, not remembered
+
+This is a legal-status topic that changed inside 18 months, so it was checked against two independent sources on 6 September 2026 rather than written from memory. The check changed the article: the Constitutional Court **dismissed** the challenges on 12 March 2026 and upheld the restrictions, where a great deal of published guidance still assumes they might fall.
+
+Four claims registered in `.content-os/external-claims.json`: the Law 74/2025 generation limit, the Constitutional Court ruling and date, the two-year naturalisation track for excluded descendants, and the minor-child deadlines. The page carries an explicit instruction to confirm with the competent consulate.
+
+## Gates
+
+```
+validate:content:changed  PASS 5/5
+validate:batch --changed  PASS — 62, 59, 57, 56, 42, 40, 36 against a floor of 34
+check-links:changed       PASS, no broken internal links
+qa:corpus                 all five clean
+em dashes                 0
+```
