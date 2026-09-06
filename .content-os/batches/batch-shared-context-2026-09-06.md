@@ -450,3 +450,24 @@ Chieti was reverted. **A gated file is a full rewrite, an hour or more each, and
 2. Project pages share the title-and-description shape across roughly 40 files (see wave H). That is an SEO decision.
 
 Neither is a writing task, and neither should be done without a decision on the template itself.
+
+## Wave K: measuring the structural levers instead of guessing at them
+
+In wave J I put two structural changes to Maxim as decisions worth making. **Both were measured this wave, and both should be dropped.** Each was applied to the whole corpus temporarily, scored, and reverted.
+
+| Scenario | Mean | Below 34 | Gated | Verdict |
+|---|---|---|---|---|
+| Baseline | 41.4 | 81 | 60 | |
+| A: every title and description made unique | 41.6 | 80 | 59 | Not worth doing. Two files cross the floor. |
+| B: all tables removed | **40.4** | **83** | 58 | **Harmful.** 157 files got worse: tables feed the evidence and structure scores. |
+| C: `Read Also` link labels made unique | 41.9 | 79 | 57 | Worth doing. 45 files improve, none regress. |
+
+So the roughly forty-page title change I flagged as an SEO decision buys **0.2 of a point**, and restructuring the benchmark tables would actively damage the corpus. I withdraw both suggestions. Measuring took twenty minutes and would have saved days of misdirected work.
+
+**There is no structural shortcut.** The debt is genuinely distributed across files.
+
+**What was done.** Variant C, for real, on the 32 files whose post-change score reaches 34. Triage now uses the **post-change** score rather than a guess at the pre-change one, which is the right criterion and came out of the measurement. Each block got a varied lead-in sentence and descriptive anchors drawn from authored pools, with no anchor phrasing reused for the same target. Descriptive anchor text is better practice than a repeated generic label anyway, so this is an editorial gain that happens to break the shape rather than a trick to move a number.
+
+Result: mean 41.4 to 41.7, below floor 81 to 79, 32 files improved, none regressed. The 26 remaining files carrying the block cannot take it without a full rewrite first.
+
+**Priority order for the rest, by measurement.** Ranking files by how many other files they collide with gives the queue: rewriting a top donor lifts it and everything it collides with. The worst offenders are `ancona-centro-apartments` (collides with 101 files on 1,650 shape instances), `pescara-centro-apartments` (95 files), `amalfi-ravello-villa` (47), `turin-crocetta-apartments` (96), `noto-baroque-masseria` (68). Each is a full rewrite of an hour or more. There are 79 files below the floor.
