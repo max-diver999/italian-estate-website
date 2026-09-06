@@ -1,0 +1,29 @@
+{
+  "note": "Heroes sourced from Wikimedia Commons for guides that were carrying another slug's image. Uploads go to account #3 (bwppi9gc) per 99_Системное/CLOUDINARY_ROUTING.md.",
+  "heroes": [
+    {
+      "slug": "cost-of-living-italy",
+      "collection": "guides",
+      "commons": "Campo de' Fiori street market 2016 - 19.jpg",
+      "why": "A Roman daily market with visible per-kilo price cards is the subject of the page, not a monument."
+    },
+    {
+      "slug": "moving-to-italy-from-usa",
+      "collection": "guides",
+      "commons": "19-06-14 Via Vittorio Veneto Lucca.jpg",
+      "why": "An ordinary Lucca street with shops under lived-in flats. Lucca is a real destination for American relocators to Tuscany."
+    },
+    {
+      "slug": "italy-citizenship-by-descent",
+      "collection": "guides",
+      "commons": "Ferrara - Palazzo del Municipio 2.jpg",
+      "why": "The comune building is literally where the ufficio di stato civile holds the records a descent claim is built from."
+    },
+    {
+      "slug": "best-places-to-live-italy",
+      "collection": "guides",
+      "commons": "20110720 Piazza delle Erbe 2998.jpg",
+      "why": "Piazza delle Erbe in Verona with the market up and people crossing it. A liveable city rather than a landmark, and Verona is not claimed by any area page."
+    }
+  ]
+}

@@ -359,3 +359,22 @@ validate:batch --changed 2 files below the absolute floor, both improved sharply
 **Corpus effect.** Mean 32.9 -> 40.7. Below the MIN_GEO floor of 34: 135 -> 94. Files held at a gate cap: 110 -> 61. 193 files improved, none regressed. Registration alone was worth about one point of mean; the rest came from rewriting two heavily templated files, which removed their sentence shapes from the shared index and lifted every file that had been colliding with them.
 
 **Method note.** `template-family` counts 8-token sentence shapes with numbers normalised to `#` and capitalised words to `X`, so tables of figures collide across files regardless of wording. On the forecast page, 15 sentences produced all 77 shared shapes and a single figure-run sentence produced 29 of them. Attributing shapes back to sentences is much faster than rewriting whole pages.
+
+## Wave G: heroes, unblocked
+
+Maxim supplied the account #3 credentials, so the borrowed heroes are gone. The uniqueness gate now passes for the first time: **275 of 275 pages own their hero**.
+
+The gate found a **fourth** borrowed hero I had not counted. I had been reporting three; `best-places-to-live-italy` was also carrying `areas/monte-argentario`.
+
+| Guide | Hero now | Licence |
+|---|---|---|
+| cost-of-living-italy | Campo de' Fiori market, Rome | CC BY-SA 4.0, Jordiferrer |
+| moving-to-italy-from-usa | Via Vittorio Veneto, Lucca | CC BY-SA 4.0, Alexmar983 |
+| italy-citizenship-by-descent | Palazzo del Municipio, Ferrara | Public domain, Sien |
+| best-places-to-live-italy | Piazza delle Erbe, Verona | CC BY-SA 4.0, Jakub Hałun |
+
+All four credits are in `src/data/image-credits.json` with artist, licence and licence URL.
+
+**New tool:** `scripts/upload-italy-cloudinary.py`, driven by `scripts/italy-hero-manifest.json`. It pulls licence metadata from Commons rather than trusting the manifest, refuses anything not under a free licence, writes the credit **before** patching `heroImage`, and hard-refuses any cloud that is not `bwppi9gc` so an upload cannot land on the read-only legacy account by accident. `--slug` limits a top-up run, because re-uploading costs plan credits.
+
+**Rejected candidates, and why.** Three images were downloaded and looked at before being discarded rather than published: a Bologna side street that was covered in graffiti, and two Trento panoramas that were grey and dominated by power lines and industrial sprawl. None of them said "a place to live". An Arezzo antiques-fair shot was good but Arezzo already owns an area page, so Verona was the cleaner choice.
