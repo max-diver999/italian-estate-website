@@ -1,21 +1,13 @@
 {
   "active": true,
-  "approved_wave": "new-articles wave 2 (legal depth / Salva Casa, ids 11-20)",
+  "approved_wave": "Wave A batch 1a — visa cluster repositioning (2 rewrites)",
   "approved_by": "Maxim",
-  "approved_at": "2026-08-23",
+  "approved_at": "2026-09-06",
   "approved_slugs": [
-    "guides/salva-casa-decree-property-buyers",
-    "guides/abusi-edilizi-buying-property-italy",
-    "guides/condominio-rules-foreign-owners",
-    "guides/energy-class-ape-italy-property",
-    "guides/superbonus-aftermath-property-buyers",
-    "guides/seismic-zones-italy-property",
-    "guides/geometra-role-italy-property",
-    "guides/preliminare-trascritto-italy",
-    "guides/italy-property-insurance-guide",
-    "guides/agibilita-certificate-italy"
+    "guides/italy-investor-visa-property",
+    "guides/italy-elective-residence-visa-property"
   ],
-  "approved_scope": "Second new-articles wave: 10 hand-written legal-depth guides (Salva Casa cluster), GEO >=90, zero em-dashes. Shared context: batch-shared-context-2026-08-23.md",
+  "approved_scope": "Reposition two visa guides off the property framing onto the visa intent the SERP rewards. No new slugs, no URL changes, no deletions. One sourced entry added to .content-os/facts.json (IMU base rate 0.86%). digital-nomad and retirement guides pulled: both sit on the hard template-corpus gate and need their own batch. Deferred to 1b pending Cloudinary heroes: guides/cost-of-living-italy, guides/moving-to-italy-from-usa. Evidence: .content-os/reports/SEO-DEMAND-AUDIT-2026-09-06.md. Context: batch-shared-context-2026-09-06.md.",
   "decisions": {
     "relatedSlugs": "build RelatedGuides component (gate already references it in more-content-gate.mjs)",
     "title_length": "trim the ' | Italian Estate' suffix in BaseLayout rather than rewriting 187 frontmatter titles",
