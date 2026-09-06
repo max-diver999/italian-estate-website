@@ -57,6 +57,10 @@ export interface Facet {
   items: ProjectEntry[];
   count: number;
   fromEur: number | null;
+  medianEur: number | null;
+  maxEur: number | null;
+  /** Priced sub-areas inside this facet, largest group first. */
+  breakdown: Array<{ area: string; n: number; min: number; max: number }>;
 }
 
 const REGION_LABEL: Record<string, string> = {
@@ -134,9 +138,27 @@ function priceOf(p: ProjectEntry): number | null {
   return typeof v === 'number' && v > 0 ? v : null;
 }
 
+function median(sorted: number[]): number | null {
+  if (!sorted.length) return null;
+  const m = sorted.length / 2;
+  return sorted.length % 2 ? sorted[Math.floor(m)] : Math.round((sorted[m - 1] + sorted[m]) / 2);
+}
+
 function build(kind: FacetKind, slug: string, label: string, noun: string, note: string, items: ProjectEntry[]): Facet {
-  const prices = items.map(priceOf).filter((v): v is number => v !== null);
+  const prices = items.map(priceOf).filter((v): v is number => v !== null).sort((a, b) => a - b);
+  const byArea = new Map<string, number[]>();
+  for (const it of items) {
+    const v = priceOf(it);
+    const a = it.data.area;
+    if (v && a) byArea.set(a, [...(byArea.get(a) ?? []), v]);
+  }
+  const breakdown = [...byArea.entries()]
+    .map(([area, vs]) => ({ area, n: vs.length, min: Math.min(...vs), max: Math.max(...vs) }))
+    .sort((a, b) => b.n - a.n || a.min - b.min);
   return {
+    medianEur: median(prices),
+    maxEur: prices.length ? prices[prices.length - 1] : null,
+    breakdown,
     kind,
     slug,
     label,

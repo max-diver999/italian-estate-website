@@ -7,6 +7,7 @@ import { formatEur } from '../../lib/cardImage';
 import FaqBlock from '../../components/FaqBlock.astro';
 import { loadFacets, facetHeading, facetTitleStem, FACET_GUIDES, FACET_FAQ, type Facet } from '../../lib/propertyFacets';
 import { SITE } from '../../data/site';
+import { FACET_COPY } from '../../data/facet-copy';
 
 export async function getStaticPaths() {
   const facets = await loadFacets();
@@ -33,6 +34,8 @@ const description = `${facet.count} reviewed ${facet.kind === 'type' ? facet.lab
 
 const guides = FACET_GUIDES[facet.slug] ?? [];
 const faqItems = FACET_FAQ[facet.slug] ?? [];
+const copy = FACET_COPY[facet.slug];
+const priced = facet.items.filter((p) => (p.data.priceFromEUR ?? 0) > 0).length;
 
 const schemas = [
   {
@@ -99,6 +102,65 @@ if (faqItems.length > 0) {
         />
       ))}
     </div>
+
+    {(copy || facet.medianEur) && (
+      <div class="prose max-w-3xl mb-12 text-[var(--color-muted)]">
+        {facet.medianEur && (
+          <>
+            <h2 class="text-xl text-[var(--color-ink)]">What the listings here actually cost</h2>
+            <p>
+              Asking prices across the {priced} priced {priced === 1 ? 'listing' : 'listings'} on this page, in euro.
+              These are our catalogue rather than the whole market, so read them as a sample of what we have reviewed,
+              not as a regional index.
+            </p>
+            <div class="overflow-x-auto">
+              <table>
+                <thead><tr><th>Measure</th><th>Asking price</th></tr></thead>
+                <tbody>
+                  <tr><td>Lowest</td><td>{formatEur(facet.fromEur ?? 0)}</td></tr>
+                  <tr><td>Median</td><td>{formatEur(facet.medianEur)}</td></tr>
+                  <tr><td>Highest</td><td>{formatEur(facet.maxEur ?? 0)}</td></tr>
+                </tbody>
+              </table>
+            </div>
+            {facet.breakdown.length > 1 && (
+              <div class="overflow-x-auto">
+                <table>
+                  <thead><tr><th>Where</th><th>Listings</th><th>Asking range</th></tr></thead>
+                  <tbody>
+                    {facet.breakdown.map((b) => (
+                      <tr>
+                        <td>{b.area}</td>
+                        <td>{b.n}</td>
+                        <td>{b.min === b.max ? formatEur(b.min) : `${formatEur(b.min)} to ${formatEur(b.max)}`}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </>
+        )}
+
+        {copy && (
+          <>
+            <h2 class="text-xl text-[var(--color-ink)]">The market in one paragraph</h2>
+            <p>{copy.market}</p>
+            <h2 class="text-xl text-[var(--color-ink)]">Who it suits</h2>
+            <p>{copy.whoFor}</p>
+            <h2 class="text-xl text-[var(--color-ink)]">What to check here specifically</h2>
+            <ul>{copy.checks.map((c) => <li>{c}</li>)}</ul>
+          </>
+        )}
+
+        {copy?.areaLinks && copy.areaLinks.length > 0 && (
+          <>
+            <h2 class="text-xl text-[var(--color-ink)]">Area research</h2>
+            <ul>{copy.areaLinks.map((a) => <li><a href={a.href}>{a.label}</a></li>)}</ul>
+          </>
+        )}
+      </div>
+    )}
 
     {guides.length > 0 && (
       <div class="prose max-w-3xl mb-10 text-[var(--color-muted)]">

@@ -230,3 +230,47 @@ check-links            PASS, 313 routes known, no broken links
 validate:content       PASS 276/276
 check-heroes           3 known temporary borrows from wave A, unchanged
 ```
+
+---
+
+# Wave D — depth on the facets, and connecting the tree
+
+**Branch:** `cc/italy-routes-20260906`, continues wave C.
+
+## The boundary I could not cross
+
+Wave D was scoped as "fill the facets". Eight of sixteen hold three or four properties. **Filling them needs real listings, which is a sourcing function, not a writing one.** Inventing listings is exactly what batch 1d spent a PR removing, so the facets were deepened rather than padded.
+
+## What was added
+
+Each facet page now carries a price table generated from the catalogue, and a hand-written market section.
+
+| | Before | After |
+|---|---:|---:|
+| tuscany | 978 words | **1,262** |
+| villas | 857 | **1,111** |
+| apartments | ~900 | **2,041** |
+| sicily | 758 | **967** |
+| lake-como | 738 | **946** |
+
+The price table is derived, not written: lowest, median and highest asking price across the priced listings, plus a sub-area breakdown where more than one area is represented. It states plainly that this is our catalogue rather than a regional index, because it is a sample of fourteen to thirty-eight properties, not a market.
+
+`src/data/facet-copy.ts` carries the written part: what the market actually is, who it suits and who it does not, and three or four checks **specific to that market** rather than the generic four. Puglia gets pool permits and agricultural land ties; Sicily gets abusi edilizi and the demanio marittimo boundary; Lake Como gets mooring rights and whether first-line means anything in the deed. New developments correctly renders no price table, because none of those five listings carries a price.
+
+## Connecting the tree
+
+The `/areas/` collection holds 2,300 to 4,500 words per town and had no link to the commercial page for the same place. Fifteen area pages now link to their facet.
+
+**Fifteen different sentences, not one sentence fifteen times.** An identical link line across fifteen files is precisely the `template-family` debt this session has spent four PRs removing, and the gate would have caught it. Scores held: como 68, arezzo 67, genoa 67, and the two at the floor stayed at 34.
+
+Seven area pages are blocked by their own GEO debt and carry no link yet: taormina 31, monte-argentario 25, lucca 23, ostuni 21, valle-d-itria 21, siena 16, sorrento 0.
+
+## Gates
+
+```
+npm run build            276 pages, 0 errors, 0 P0, 0 P1
+check-links              PASS, no broken internal links
+validate:content:changed PASS 15/15
+validate:batch --changed PASS, no score regressed
+qa:corpus                7 pre-existing issues on these files, unchanged (verified against stash)
+```
