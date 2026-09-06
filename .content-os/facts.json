@@ -164,6 +164,12 @@
       "statement": "Statutory IMU base rate on residential property other than a primary residence, before any comune adjustment",
       "source": "L. 160/2019 art. 1 c. 754 (Legge di Bilancio 2020), Gazzetta Ufficiale 19G00165; comune ceiling registered separately at 1.06%",
       "asOf": "2026-09-06"
+    },
+    {
+      "figure": "5.1%",
+      "statement": "Share of Italian residential transactions bought by foreign citizens in 2025, about 39,000 homes out of 766,756 normalised transactions",
+      "source": "Gate-away international buyers data for 2025 cross-referenced with OMI (Osservatorio del Mercato Immobiliare, Agenzia delle Entrate) transaction totals; verified against independent search results 2026-09-06",
+      "asOf": "2026-09-06"
     }
   ]
 }

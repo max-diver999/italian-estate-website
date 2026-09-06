@@ -134,3 +134,48 @@ check-links:changed       PASS, no broken internal links
 qa:corpus                 all five clean
 em dashes                 0
 ```
+
+---
+
+# Batch 1d — factual corrections
+
+**Branch:** `cc/italy-facts-20260906`, stacked on `cc/italy-euro-20260906`.
+
+Not a content wave. A correction wave, triggered by what the 1 euro repair turned up.
+
+## The national foreign-buyer share was wrong on four pages
+
+Verified externally on 6 September 2026: foreign citizens bought about **39,000** Italian homes in 2025, **5.1%** of 766,756 normalised residential transactions (Gate-away data cross-referenced with OMI totals). The arithmetic is internally consistent.
+
+The site said **15.2%** on four pages, three times the real figure, including two core decision pages. One page said 5.1% and was right. Nobody had noticed the site contradicting itself.
+
+| File | Was | Now | Status |
+|---|---|---|---|
+| `guides/is-italy-property-good-investment-2026` | 15.2% in 7 places, plus "average tickets near €632,000" | 5.1%, ticket claim removed | fixed, GEO 34 |
+| `guides/costa-smeralda-property-investment-guide` | "15.2% Italy-wide on Nomisma 2026 aggregates" | 5.1% attributed to OMI and Gate-away | fixed, GEO 34 |
+| `compare/italy-vs-portugal-property-investment` | 5.1%, correct but unsourced | 5.1% with the source and the underlying counts | fixed, GEO 37 |
+| `guides/cost-of-buying-property-italy` | "roughly 15.2% of purchases at average tickets near €632,000" | **unfixed** | blocked, GEO 10 |
+| `guides/sardinia-property-investment-guide` | "15.2% Italy national average", three places | **unfixed** | blocked, GEO 22 |
+
+The €632,000 average ticket is also wrong on its face: our own news page puts foreign turnover at €5.5bn, which across 39,000 homes is nearer €141,000. Removed where it could be removed.
+
+`5.1%` is now registered in `.content-os/facts.json` with its source.
+
+## Invented enquiry shares removed
+
+- `buy-property-italy-under-500000`: "data shows mid-tier enquiries at 58% of foreign search volume" — no data exists
+- `puglia-property-investment-guide`: "USA buyers maintaining 25% share of foreign enquiries"
+- `italy-investor-visa-requirements-2026`: table row "€250,000 startup tier share: 41% of enquiries"
+- `costa-smeralda`: German 30-34%, Swiss 16-20%, Italian 22-28%, UK/Nordic 15-18%, Gallura 35-42%, German/Swiss 46-54%
+
+Qualitative claims kept where they are well attested (German and Swiss dominance of Costa Smeralda since the 1960s). Only the invented precision was removed.
+
+## What the site cannot support
+
+There is no enquiry dataset. Search Console shows 73 clicks in 90 days. A statement that "US buyers are 25% of enquiries in Ostuni" cannot come from anywhere.
+
+## Still carrying invented enquiry shares, blocked by GEO debt
+
+25 claims across 14 files, all below the GEO floor, so a correction-only edit cannot pass the gate: ostuni, polignano-a-mare, sorrento, taormina, valle-d-itria, sardinia, sicily, marche, italy-property-investment-guide, italy-real-estate-market-data-2025, best-regions-invest-italy-property-2026, italy-vs-malta, puglia-vs-tuscany, gate-away-international-buyers-report-2025, cost-of-buying-property-italy.
+
+**This is a gate design question for Maxim.** GEO is an absolute floor rather than a ratchet, so the gate blocks a PR that only removes a false statement from an already-failing file. Removing a falsehood cannot make a file worse. Either those corrections ride along with the debt wave, or the gate needs a documented exception for correction-only changes.
