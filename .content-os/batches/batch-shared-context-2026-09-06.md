@@ -48,3 +48,46 @@ validate:batch --changed  PASS, GEO 36 and 42, both above the floor of 34
 check-links:changed       PASS, no broken internal links
 check-heroes              PASS, 272 pages, every page has its own hero
 ```
+
+---
+
+# Batch 1b — living and relocation cluster
+
+**Branch:** `cc/italy-living-20260906`, stacked on `cc/italy-visa-20260906`.
+
+Two new guides, both in SERPs where no property portal holds a top-10 position:
+
+| Slug | Demand | GEO | Words | Who holds the SERP today |
+|---|---:|---:|---:|---|
+| `guides/cost-of-living-italy` | 4,590/mo | **56/75 (A)** | 3,262 | numbeo, internationalliving, westernunion, reddit, internations |
+| `guides/moving-to-italy-from-usa` | 3,300/mo | **59/75 (A)** | 2,939 | reddit, italiancitizenshipassistance, taxesforexpats, usembassy |
+
+Both score above every file touched in 1a, and above the corpus median. SERP briefs written to `more-group-content-os/content-engine/serp-briefs/italian-estate-website/`.
+
+## The angle neither SERP covers
+
+Cost of living: every competitor prices renting. None prices owning, and none connects the monthly budget to the €31,160 Elective Residence income floor, which is the number that decides whether a US or UK reader may legally stay at all.
+
+Moving from the USA: taxesforexpats owns the tax angle and the consulates own the procedure. Nobody sequences the housing decision against the visa, and the requirement for a documented Italian address *before* the consular interview is the step that catches people.
+
+## Temporary hero images
+
+Both pages borrow an existing area asset (`areas/turin/inline_1` and `areas/langhe/inline_1`), approved by Maxim as temporary. They are real, relevant, loading images rather than a canonical path that would 404 until upload.
+
+`check-heroes` reports exactly two problems as a result, both of them these, and nothing else. Replace with purpose-made heroes at `more-group/italy/guides/{slug}/hero` in the next PR once the Cloudinary pipeline runs, and the gate returns to green with no other change.
+
+## Inbound links
+
+Both new pages were orphans on creation. Links were added from `italy-elective-residence-visa-property` and `italy-investor-visa-property`, and both slugs added to their relatedSlugs.
+
+## Gates
+
+```
+validate:content:changed  PASS 4/4
+validate:batch --changed  PASS, GEO 56, 59, 42, 36, floor 34
+check-links:changed       PASS, no broken internal links
+qa:corpus                 new files clean (exit 1 is pre-existing legacy debt elsewhere)
+npm run build             274 pages, 0 errors, 0 P0, 0 P1
+check-heroes              2 known temporary borrows, documented above
+em dashes                 0 in both new files
+```

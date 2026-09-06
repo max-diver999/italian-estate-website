@@ -1,13 +1,15 @@
 {
   "active": true,
-  "approved_wave": "Wave A batch 1a — visa cluster repositioning (2 rewrites)",
+  "approved_wave": "Wave A batch 1b — living/relocation cluster (2 new pages)",
   "approved_by": "Maxim",
   "approved_at": "2026-09-06",
   "approved_slugs": [
+    "guides/cost-of-living-italy",
+    "guides/moving-to-italy-from-usa",
     "guides/italy-investor-visa-property",
     "guides/italy-elective-residence-visa-property"
   ],
-  "approved_scope": "Reposition two visa guides off the property framing onto the visa intent the SERP rewards. No new slugs, no URL changes, no deletions. One sourced entry added to .content-os/facts.json (IMU base rate 0.86%). digital-nomad and retirement guides pulled: both sit on the hard template-corpus gate and need their own batch. Deferred to 1b pending Cloudinary heroes: guides/cost-of-living-italy, guides/moving-to-italy-from-usa. Evidence: .content-os/reports/SEO-DEMAND-AUDIT-2026-09-06.md. Context: batch-shared-context-2026-09-06.md.",
+  "approved_scope": "Two new guides in the reference cluster (cost of living 4,590/mo, moving from USA 3,300/mo), both SERPs with no property portal in the top ten. Plus inbound links added from the two visa guides in 1a. Temporary hero images: both new pages borrow an existing area asset, approved by Maxim, to be replaced with purpose-made heroes in the next PR once the Cloudinary pipeline runs. check-heroes reports these two and nothing else. Stacks on branch cc/italy-visa-20260906 (PR #4).",
   "decisions": {
     "relatedSlugs": "build RelatedGuides component (gate already references it in more-content-gate.mjs)",
     "title_length": "trim the ' | Italian Estate' suffix in BaseLayout rather than rewriting 187 frontmatter titles",
