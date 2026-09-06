@@ -410,3 +410,15 @@ Two clusters were rewritten this wave, each file getting its own sentence rather
 **Result.** Corpus mean 40.7 to 41.1, below the floor 94 to 84, gated 61 to 60, 26 files improved, none regressed. Session totals: mean 32.9 to 41.1, below floor 135 to 84, gated 110 to 60.
 
 **Next batch, in priority order.** The reciprocity cluster: 51 files, 94 occurrences, most files carrying the sentence twice, so half the work is removing a within-file duplicate that is also costing `self-repetition`. Expect the same gate trap, so triage by current score first and take only files at or above roughly 28.
+
+## Wave I: the reciprocity cluster, triaged
+
+Triage first this time, per the lesson from wave H: of the 51 files carrying the stamped reciprocity sentence, only **19 scored 28 or above** and could realistically reach MIN_GEO 34. Those 19 were rewritten; the other 32 were left alone rather than dragged into the gate and reverted again.
+
+**Correction to what I wrote in wave H.** I called the 94 occurrences across 51 files a within-file duplication costing `self-repetition`, and said half the work would be deleting duplicates. That was wrong. The two occurrences per file are the **same FAQ answer** rendered twice by design: once in frontmatter for schema.org, once in the `FaqBlock` component. They must stay identical. So the work was 19 bespoke answers, each applied to both copies, not 33 separate rewrites and no deletions.
+
+Sentence **structure** was varied rather than vocabulary, because the shape check normalises words but preserves the frame. Swapping synonyms would have changed nothing.
+
+**Result.** Mean 41.1 to 41.4, below floor 84 to 81, 18 files improved, none regressed.
+
+Session so far: mean 32.9 to 41.4, below floor 135 to 81, gated 110 to 60.
