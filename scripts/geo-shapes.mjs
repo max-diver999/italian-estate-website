@@ -9,8 +9,10 @@
  * words to `X` (see sentenceShapes in lib/geo/corpus-signals.mjs). Two
  * consequences follow, and both are counterintuitive:
  *
- *   - Tables collide hardest. A row of figures becomes a long run of `#`, which
- *     matches any other table's run of `#` no matter how the columns are worded.
+ *   - Tables collide hardest, and they are counted: shapes are measured over
+ *     `stripBoilerplate(duplicationText(raw))`, which is prose plus table cell
+ *     text, not `plainText`, which drops tables. A row of figures becomes a long
+ *     run of `#` that matches any other table's run of `#` however it is worded.
  *   - Prose is usually innocent. On the pages measured so far, a small number of
  *     figure-dense sentences produce most of the shared shapes in the file.
  *
@@ -20,7 +22,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {
-  buildCorpusIndex, plainText, sentences, sentenceShapes, SHARED_SKELETON_MIN_FILES,
+  buildCorpusIndex, duplicationText, sentences, sentenceShapes, stripBoilerplate,
+  SHARED_SKELETON_MIN_FILES,
 } from './lib/geo/corpus-signals.mjs';
 
 const CONTENT = 'src/content';
@@ -45,7 +48,7 @@ function perFile(docs, index, target) {
 
   const seen = new Set();
   const rows = [];
-  for (const sentence of sentences(plainText(doc.raw))) {
+  for (const sentence of sentences(stripBoilerplate(duplicationText(doc.raw)))) {
     let shared = 0;
     let total = 0;
     let widest = 0;

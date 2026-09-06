@@ -422,3 +422,31 @@ Sentence **structure** was varied rather than vocabulary, because the shape chec
 **Result.** Mean 41.1 to 41.4, below floor 84 to 81, 18 files improved, none regressed.
 
 Session so far: mean 32.9 to 41.4, below floor 135 to 81, gated 110 to 60.
+
+## Wave J: correcting the tool, and what the remaining debt actually is
+
+**My debt tool was wrong, and so was the analysis I drew from it.** `geo-shapes.mjs` read sentences from `plainText(raw)`. The scorer reads them from `stripBoilerplate(duplicationText(raw))`. The difference is not cosmetic: `plainText` **drops table rows**, `duplicationText` keeps them. The tool was undercounting by about four times, and every conclusion about "which sentences carry the penalty" was drawn from prose only.
+
+Fixed by exporting `stripBoilerplate` from `corpus-signals.mjs` and pointing the tool at the same source. It now agrees with the scorer exactly (chieti: 118 shared shapes, both).
+
+**What the corrected view shows.** The widest shapes in the corpus are not sentences at all. They are runs of capitalised words and numbers:
+
+| Shape | Files | What it is |
+|---|---|---|
+| `x x x x x x x x` | 64 | link lists and table headers, sequences of proper nouns |
+| `x x x x # x x x` | 46 | table rows mixing labels and figures |
+| `x x x x x x x #` | 34 | same |
+| `x diligence x property x property x foreigner` | 22 | the "Read Also" link block |
+| `x rogito with codice fiscale and avvocato review` | 21 | the reciprocity variant still outstanding |
+
+So the remaining debt lives in **tables and link lists**, not prose. That explains why waves H and I each moved the corpus mean by only 0.3 to 0.4: they rewrote prose, which was never the main cost.
+
+**Measured cost of one gated file.** `areas/chieti` was taken as a test, at 0/75. Rewriting its three stamped prose blocks took it to 11. Rewriting the FAQ answer and converting its benchmark table to prose took it to 16. Still 18 short of the floor. The table conversion removed only 10 of 118 shapes, not the 46 the tool attributed to it, because table cells have no full stops: `sentences()` merges an entire table into one pseudo-sentence of 612 shapes, so replacement prose keeps colliding with other files' tables.
+
+Chieti was reverted. **A gated file is a full rewrite, an hour or more each, and there are 50 of them.** That is the honest number, and it is a scope decision rather than something to keep chipping at.
+
+**What would actually move it, for Maxim to decide:**
+1. The `Signal | X benchmark` table appears in 10 area files with identical row labels. The `Read Also` link block shares its shape across 22. Both are template structures, and both are cheaper to change once, corpus-wide, than 50 times by hand.
+2. Project pages share the title-and-description shape across roughly 40 files (see wave H). That is an SEO decision.
+
+Neither is a writing task, and neither should be done without a decision on the template itself.
