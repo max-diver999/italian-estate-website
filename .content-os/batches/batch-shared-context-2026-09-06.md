@@ -471,3 +471,23 @@ So the roughly forty-page title change I flagged as an SEO decision buys **0.2 o
 Result: mean 41.4 to 41.7, below floor 81 to 79, 32 files improved, none regressed. The 26 remaining files carrying the block cannot take it without a full rewrite first.
 
 **Priority order for the rest, by measurement.** Ranking files by how many other files they collide with gives the queue: rewriting a top donor lifts it and everything it collides with. The worst offenders are `ancona-centro-apartments` (collides with 101 files on 1,650 shape instances), `pescara-centro-apartments` (95 files), `amalfi-ravello-villa` (47), `turin-crocetta-apartments` (96), `noto-baroque-masseria` (68). Each is a full rewrite of an hour or more. There are 79 files below the floor.
+
+## Wave L: one donor rewritten, and two of my own claims disproved
+
+**`ancona-centro-apartments`: 0 to 43.** The top template donor, rewritten in full: six FAQ answers (both copies), the machine-written second paragraph in every section, the stamped eight-item checklist, the closing tip, and the table labels. All figures preserved.
+
+**Disproved claim 1: the donor ripple.** I said rewriting a top donor would lift it "and everything colliding with it", and ranked a queue on that basis. Measured: rewriting Ancona lifted **itself by 43 and five other files by one point each**. The 101 collision partners saw nothing. The reason is the threshold: a shape counts as shared at three or more owners, so removing one owner from a shape held by fifteen leaves fourteen and changes nothing for anyone else. Only shapes sitting at exactly three owners benefit. **The donor ranking is not a useful priority order.** Each file below the floor has to be fixed for its own sake.
+
+**Disproved claim 2: that no cheap corpus-wide lever exists.** Wave K concluded there was none, having measured title changes (+0.2) and table removal (harmful). Both were the wrong test. Rewriting Ancona's tables was worth more than everything else done to that file, so the levers were re-measured:
+
+| Change, applied corpus-wide and reverted | Mean | Below 34 | Gated | Improved / worsened |
+|---|---|---|---|---|
+| baseline | 41.7 | 79 | 60 | |
+| table **header rows** made unique | 41.8 | 78 | 59 | 34 / 1 |
+| **table first-column labels made unique** | **43.2** | **71** | **52** | **130 / 2** |
+
+Headers alone are worth almost nothing. **The row labels are the cost**, and relabelling them is the best lever measured in this session: three times the `Read Also` change, seven times the title change.
+
+The labels are heavily concentrated: `Factor` appears in **122 files**, `Destination` 61, `Red flag` 59, `Location` 56, `Compare` 47, `Status` 46, `Step` 43, `Price from` 40. These are generic to the point of saying nothing, so replacing them with labels that name what the column holds is an editorial gain in its own right, as it was on Ancona (`Factor | Detail` became `What you are buying | Ancona centro`).
+
+**Recommended next batch:** variant E for real, in slug-sized batches, triaged on post-change score. Ceiling is +1.5 mean and eight files across the floor.
