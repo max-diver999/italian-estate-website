@@ -1,13 +1,13 @@
 # Italian Estate — full page index
 
-282 research pages on buying property in Italy, written for foreign buyers.
+283 research pages on buying property in Italy, written for foreign buyers.
 Generated from the live corpus. Site: https://italian-estate.com
 
 Every figure carries a date and, where it is statutory, a citation. Italian tax rates,
 building rules and licensing requirements change; readers are told to verify with an Italian
 notaio, avvocato or commercialista before transacting. Portal prices are asking prices.
 
-## Guides (120)
+## Guides (121)
 
 ### 1 Euro Houses in Italy 2026: Towns, Bonds, Real Costs
 URL: https://italian-estate.com/guides/1-euro-houses-italy/
@@ -173,6 +173,11 @@ Emilia-Romagna property guide: Bologna €3,700/m², Modena Motor Valley, Parma 
 URL: https://italian-estate.com/guides/energy-class-ape-italy-property/
 Updated: 2026-08-26
 APE mechanics, classes A4 to G, the EPBD case green targets, class-G discounts and retrofit economics for Italian buyers. Screen stock at /get-shortlist/.
+
+### What English Guides Get Wrong About Italian Property
+URL: https://italian-estate.com/guides/english-guides-wrong-italian-property/
+Updated: 2026-09-07
+Seven claims that appear constantly in English-language guidance on buying in Italy, each checked against the statute that actually governs it.
 
 ### Florence Property Investment Guide (2026) in Italy
 URL: https://italian-estate.com/guides/florence-property-investment-guide/

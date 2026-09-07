@@ -72,6 +72,12 @@
       "collection": "guides",
       "commons": "L'agenzia immobiliare......^^^ - panoramio.jpg",
       "why": "An Italian estate agency window. The proposta irrevocabile and the first money change hands here, before any notaio is involved."
+    },
+    {
+      "slug": "english-guides-wrong-italian-property",
+      "collection": "guides",
+      "commons": "Via dell'oriuolo 28, archivio notarile 01.jpg",
+      "why": "The notarial archive in Florence. The page is about what the deed and the registers actually record, so the building that holds them is the subject."
     }
   ]
 }

@@ -83,13 +83,13 @@ are labelled as asking prices, which in most Italian markets run ahead of closed
 
 ## Sections
 
-- Guides (120): https://italian-estate.com/guides/
+- Guides (121): https://italian-estate.com/guides/
 - Area guides (48): https://italian-estate.com/areas/
 - Market comparisons (30): https://italian-estate.com/compare/
 - Project reviews (65): https://italian-estate.com/projects/
 - Developer profiles (15): https://italian-estate.com/developers/
 - News (4): https://italian-estate.com/news/
 
-## Full corpus (282 pages, with summaries)
+## Full corpus (283 pages, with summaries)
 
 https://italian-estate.com/llms-full.txt
