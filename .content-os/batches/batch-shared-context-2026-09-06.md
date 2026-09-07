@@ -604,3 +604,25 @@ Checking each against our own pages gave three different answers rather than one
 Only the third was actionable through writing, and it was worth doing: a section explaining that the imposta di registro is what a UK buyer means by stamp duty, then the four ways they diverge. Charged on cadastral value rather than price, banded by use rather than by price, replaced by VAT on new builds, and no additional dwelling surcharge. All four cross-checked against the registry. Page 47 to **49/75**.
 
 **Deferred: renaming `italy-elective-residence-visa-property`.** The rename is sound in principle, matching what was done for the golden visa, and the page has 15 inbound links and zero impressions. But two of those inbound files score **0 and 6**, and touching them forces the gate to demand full rewrites, which in turn pulls in `areas/turin` at 28. Three files of work for a slug change on a query where we already rank nowhere is the wrong trade. Deferred until those files are fixed on their own account.
+
+## Wave S: the catalogue question answered, and the debt rate measured
+
+**The catalogue expansion will not work, and I am withdrawing the recommendation I made for it.** I said adding stock in Sorrento, Positano, Amalfi, Capri and Verona would unlock about 4,500 searches a month. Before building anything I checked the SERPs for those specific queries:
+
+| Query | Portals in the top ten |
+|---|---|
+| property for sale in positano italy | **6 of 10** |
+| houses for sale in sorrento italy | **6 of 10** |
+| property for sale capri italy | **6 of 10** |
+
+Idealista, Gate-away, realestate.com.au, JamesEdition, Immobiliare, Sotheby's and Zillow hold positions one to five throughout. These are inventory SERPs. A facet page carrying three seed listings cannot compete with a portal carrying tens of thousands, and fifteen new project pages would not change that. Not built.
+
+**What the catalogue audit did turn up: two records filed under the wrong town.** `amalfi-ravello-villa` carried `area: "Sorrento"`, and Ravello is on the Amalfi Coast while Sorrento is on the Bay of Naples, about 25km apart over a mountain. `sanremo-sea-view-apartments` carried `area: "Portofino"`, 180km away on the other Riviera. Both put listings in the wrong town facet. Corrected, with Ravello and Sanremo added to `AREA_TO_REGION` so they keep their region membership. Nine other flagged records were checked and are legitimate: a project assigned to its nearest parent region is the convention here.
+
+**The Ravello correction then cost an hour**, because the gate will not ship a factual fix to a file scoring 0. Four passes: table labels, the stamped eight-item checklist rewritten as prose, the closing tip, three remaining shared sentences. 0 to 35.
+
+**Then the debt, and the rate is now measured rather than estimated.** Nine files taken from the 28-33 band, two to three passes each. Below the floor moved 68 to 59. At that rate the remaining files are weeks.
+
+**Then one registration did more than all of it.** `12%` appears in **124 articles** unregistered. Checking what it means rather than assuming: 236 of 357 uses are the closing cost band, consistent with the 10% to 15% owner decision already approved. Registering it as the upper end of the narrower band took the corpus mean **43.6 to 45.3** and below-floor **59 to 48**, clearing eleven files at once.
+
+That is the lesson worth keeping. Per-file rewriting moves one file. Sourcing a figure the corpus leans on moves everything that leans on it, and there are still 275 load-bearing figures unregistered against 47 registered.

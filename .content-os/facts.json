@@ -278,6 +278,12 @@
       "statement": "Philanthropic donation to a public interest project that qualifies for the Investor Visa. Non-recoverable, unlike the bond and equity routes.",
       "source": "Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories",
       "asOf": "2026-09-06"
+    },
+    {
+      "figure": "12%",
+      "statement": "Upper end of the narrower all-in closing cost band this site publishes for an ordinary second home, where agency commission is modest or split. The wider 10% to 15% band covers the same purchase with full agency and independent legal review.",
+      "source": "Owner decision recorded 2026-08-20 in market-stats.json (closing_cost_stack_non_resident); the 10% to 12% form is the same band stated for a lighter fee structure",
+      "asOf": "2026-08-20"
     }
   ]
 }
