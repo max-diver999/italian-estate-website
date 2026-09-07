@@ -61,6 +61,21 @@ def commons_file(title: str) -> dict:
     info = page["imageinfo"][0]
     meta = info.get("extmetadata", {})
     plain = lambda k: re.sub(r"<[^>]+>", "", meta.get(k, {}).get("value", "")).strip()
+
+    def artist() -> str:
+        """
+        Commons puts free text in the Artist field, and some authors fill it with a
+        request rather than a name ("I would appreciate being notified..."). Stripping
+        the tags then credits the request instead of the person, so prefer the
+        username the field links to and fall back to the plain text.
+        """
+        raw = meta.get("Artist", {}).get("value", "")
+        for pattern in (r"Special:EmailUser/([^\"\']+)", r"/wiki/User:([^\"\'#]+)"):
+            hit = re.search(pattern, raw)
+            if hit:
+                return urllib.parse.unquote(hit.group(1)).replace("_", " ").strip()
+        text = plain("Artist")
+        return text if len(text) <= 60 else text[:60].rstrip()
     licence = plain("LicenseShortName")
     if not licence or any(b in licence.lower() for b in ("non-free", "fair use")):
         raise SystemExit(f"{title!r} is not under a free licence ({licence!r}); refusing to upload")
@@ -68,7 +83,7 @@ def commons_file(title: str) -> dict:
         "bytes": fetch(info.get("thumburl") or info["url"]),
         "file": title.replace(" ", "_"),
         "source": info["descriptionurl"],
-        "artist": plain("Artist"),
+        "artist": artist(),
         "license": licence,
         "licenseUrl": meta.get("LicenseUrl", {}).get("value", ""),
     }

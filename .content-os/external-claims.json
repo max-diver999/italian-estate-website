@@ -319,6 +319,39 @@
       "files": [
         "guides/moving-to-italy-from-uk.mdx"
       ]
+    },
+    {
+      "id": "it-condo-buyer-arrears-liability",
+      "jurisdiction": "IT",
+      "claim": "A buyer of an Italian condominium unit is jointly liable with the seller for contributions relating to the current management year and the preceding one, with no distinction between ordinary and extraordinary charges. The year is the management year of 365 days set by the assembly or the regolamento, not the calendar year. The seller remains jointly bound until the transfer is notified to the administrator.",
+      "source": "Article 63, fourth paragraph, of the provisions implementing the Italian Civil Code (disposizioni di attuazione del codice civile)",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-09-06",
+      "files": [
+        "guides/condominium-fees-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-condo-arrears-enforcement",
+      "jurisdiction": "IT",
+      "claim": "An administrator may obtain an immediately enforceable payment order (decreto ingiuntivo immediatamente esecutivo) for unpaid contributions without assembly authorisation, and may suspend a defaulting owner from shared services capable of separate enjoyment once arrears exceed six months. Under article 1129 the administrator must begin recovery within six months of the close of the financial year in which the debt arose unless the assembly exempts them.",
+      "source": "Article 63 and article 1129 of the Italian Civil Code and its implementing provisions",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-09-06",
+      "files": [
+        "guides/condominium-fees-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-condo-stairs-lifts-split",
+      "jurisdiction": "IT",
+      "claim": "Stairs and lifts are maintained and replaced at 50% in proportion to the value of each unit and 50% in proportion to each floor's height above ground, so upper floors carry more of a lift replacement than lower floors of the same size.",
+      "source": "Article 1124 of the Italian Civil Code",
+      "asOf": "2026-09-06",
+      "reviewBy": "2028-09-06",
+      "files": [
+        "guides/condominium-fees-italy.mdx"
+      ]
     }
   ]
 }

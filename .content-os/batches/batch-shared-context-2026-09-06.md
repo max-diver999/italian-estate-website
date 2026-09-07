@@ -641,3 +641,35 @@ Corpus mean 45.3 to 45.5. Smaller than the 12% registration, which is the point:
 **The penalty composition confirms it.** Across those 48 files: **template-family 1,580 points, duplicated-text 782, stamped-figure 264.** Sourcing has bought what it can. What is left is 1,580 points of shared sentence shapes and 782 of duplicated passages, which only per-file rewriting removes, at the measured rate of about an hour a file.
 
 Session totals: mean **32.9 to 45.5**, below the floor **135 to 48**, gated **110 to 40**, no regressions.
+
+## Wave U: the niche we can actually win at Authority Score 2
+
+Maxim ruled out spending on links. That makes the question narrow: where does content alone rank when the domain carries no authority? The Search Console data answers it.
+
+**Where we already rank without trying:**
+
+| Query | Position | Impressions |
+|---|---|---|
+| what are condominium fees in italy | **8.5** | 10 |
+| salvacasa | **8.5** | 6 |
+| geometra in english / in italy / meaning | **10 to 11** | 5 |
+| italy mortgage non resident foreign buyer loan to value 2026 | **4.2** | 4 |
+| reciprocity rule russia italy | **5** | 1 |
+
+**Where we are buried and will stay buried:** every generic head term. `cadastral value italy` 101 impressions at position 83, `stamp duty italy` 93 at 80, `property tax in italy for foreigners` 88 at 82, the whole investor visa family at 62 to 97.
+
+The pattern is unambiguous. Italian legal and procedural terms explained in English are uncontested; generic property head terms are owned by domains with 12 to 28 times our referring domains. Semrush confirms the difficulty gap: `geometra` KD 12, `caparra confirmatoria` KD 6, `usucapione` KD 1, `adverse possession in italy` KD 0, and a dozen more terms at KD 0.
+
+We already own seven single-term pages (geometra, notaio, codice fiscale, IMU, cedolare secca, abusi edilizi, nuda proprieta), and the geometra one scores 58 and ranks 10 to 11. The format is proven; the gap is that the terms appear as vocabulary everywhere and belong to nothing. `rogito` is in 181 files with no owner, `codice fiscale` in 171, `geometra` in 127, `visura catastale` in 91.
+
+**First page built: `condominium-fees-italy`.** We rank 8.5 for the question form and 18.5 for the term with no dedicated page at all, so this is the cheapest available win. It carries three statutory facts most English guides omit entirely:
+
+- **Article 63** makes a buyer jointly liable for the seller's arrears across the current management year and the one before it, with no distinction between ordinary and extraordinary charges, and the year is the 365-day management year rather than the calendar one.
+- The administrator can obtain an **immediately enforceable payment order without assembly authorisation**, may suspend a defaulter from separable services after six months, and under article 1129 must begin recovery within six months of the year end.
+- **Article 1124** splits stairs and lifts 50% by unit value and 50% by floor height, so a top floor pays more of a lift replacement than a ground floor of the same size.
+
+45/75, all gates pass, three claims registered.
+
+**Also fixed: the uploader was crediting the wrong thing.** Commons authors sometimes fill the Artist field with a request rather than a name, and stripping the tags credited "I would appreciate being notified if you use my work outside Wikimedia" as the photographer. The uploader now resolves the username from the EmailUser or User link, and the affected credit was corrected to Aktron.
+
+**Next in this niche, by evidence:** `usucapione` and `adverse possession in italy`, 110/mo combined at KD 0 to 1, where we already collect 23 impressions at position 70 with **zero content on the subject**.
