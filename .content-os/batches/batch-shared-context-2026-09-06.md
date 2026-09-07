@@ -567,3 +567,22 @@ Our existing `italy-elective-residence-visa-property` scores 55/75 and covers th
 **54/75 with zero penalties.** Hero is Orvieto at dawn from the Fortezza. A Lake Garda frame was downloaded and rejected as hazy with power lines across it, and an Orvieto panorama was rejected for being nearly 3:1 and unusable as a hero.
 
 Four claims registered. Four new pages this session, all with zero or near-zero penalties.
+
+## Wave Q: the cheap cluster, and why I did not build what the plan asked for
+
+The plan's largest available item was `/property-for-sale/cheap-property-italy/` at 1,730. **I did not build it.** The cheap cluster is in fact 17,080/mo across all its phrasings, but it splits and the halves behave differently.
+
+On `cheap houses in italy` portals hold three to five of ten, and Gate-away ranks with a **max_price=50000** filter. Our cheapest listing is EUR 130,000 and only twelve sit under EUR 200,000. A facet page called "cheap property in Italy" with that floor, against a SERP measured in fifty thousands and one-euro houses, would be a claim we cannot support. The honest read is that our catalogue is not cheap by this query's standard.
+
+The other half is winnable. `1 euro houses italy` and its variants carry about **4,250/mo**, the SERP is eight to nine content sites with zero or one portal, and the ranking titles are *"No Hype, Just Facts"*, *"is it a scam?"*, *"Dark side of buying a $2 home"*, a Guardian piece on a marketing gimmick, and Reddit twice. Cautionary again.
+
+**We already had the page** at 58/75 with an honest title, 4,300 words, no noindex, and **zero impressions**. Following the rule in the notes, I checked links before blaming the writing: **three inbound links**, against eight to nine on pages that do get impressions and 51 on the main investment guide. The content was never the problem.
+
+**What was done**
+- Renamed `/guides/italy-1-euro-homes-program/` to **`/guides/1-euro-houses-italy/`** with a 301, matching the query rather than the scheme's formal name. I deviated from the plan here: it asked for `/property-for-sale/one-euro-houses-italy/`, but this is an editorial guide and we hold no 1 euro listings, so putting it in the property tree would promise stock we do not have.
+- Inbound links raised from three to six, placed where they read naturally rather than sprayed.
+- **Two more fabricated statistics removed**: "Bond refunds succeeded on 76% of files where engineers signed milestone reports on schedule" and an average completed spend of "EUR 112,000 on 85 m2 inland Sicilian stock". Nobody aggregates bond refund outcomes or completed project costs nationally, and both sat in front of a reader deciding whether to bid at auction. One paragraph was also a near-duplicate of another on the same page.
+
+Page 58 to **59/75**.
+
+**A duration error found and fixed.** `calabria-property-investment-guide` described the 7% pensioner regime as running "up to nine years". It runs for the year of transfer plus the nine following, ten tax periods in all. Corrected there and made exact on `retire-in-italy`, which now carries the precise citation: **Article 26 of Legge 11 marzo 2026 n. 34, amending Article 24-ter TUIR, in Gazzetta Ufficiale 23 March 2026, in force 7 April 2026.** That citation came off our own Calabria page and was verified before being adopted. Two other "nine" hits were checked and are correct in their own contexts: Matera's ninety-nine year Sassi concession under law 771/1986, and a description of returning expatriates.

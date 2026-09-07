@@ -244,11 +244,12 @@
     {
       "id": "it-7pct-pensioner-regime",
       "jurisdiction": "IT",
-      "claim": "Foreign pensioners transferring tax residence to a qualifying comune in Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sicily or Sardinia may elect a 7% flat rate on ALL foreign-source income for ten years, provided they were not Italian tax resident in any of the five preceding years. From 7 April 2026 the population ceiling rose from 20,000 to 30,000 residents, adding 74 municipalities.",
-      "source": "Italian pensioner flat-tax regime as amended April 2026; the ceiling change is widely reported and reflected in the qualifying comune lists",
+      "claim": "Foreign pensioners transferring tax residence to a qualifying comune in Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sicily or Sardinia may elect a 7% substitute tax on ALL foreign-source income, for the year of transfer and the nine following, ten tax periods in all. They must not have been Italian tax resident in any of the five preceding years. Article 26 of Law 11 March 2026 no. 34 amended Article 24-ter TUIR to raise the population ceiling from 20,000 to 30,000 residents, in force 7 April 2026, bringing roughly 74 further comuni into scope.",
+      "source": "Article 24-ter TUIR as amended by Article 26 of Legge 11 marzo 2026 n. 34 (Legge annuale PMI), published in Gazzetta Ufficiale 23 March 2026, in force 7 April 2026",
       "asOf": "2026-09-06",
       "reviewBy": "2027-03-06",
       "files": [
+        "guides/calabria-property-investment-guide.mdx",
         "guides/retire-in-italy.mdx"
       ]
     },

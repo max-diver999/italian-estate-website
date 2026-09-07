@@ -2,6 +2,11 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/guides/italy-1-euro-homes-program/",
+      "destination": "/guides/1-euro-houses-italy/",
+      "permanent": true
+    },
+    {
       "source": "/guides/italy-investor-visa-property/",
       "destination": "/guides/italy-golden-visa/",
       "permanent": true
