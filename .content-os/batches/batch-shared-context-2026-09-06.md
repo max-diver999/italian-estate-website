@@ -533,3 +533,22 @@ Page 50 to **56/75**.
 Hero sourced from Commons, Bologna porticoes in daylight, CC BY 2.0, credited. A black and white candidate was downloaded, looked at and rejected as too dark against a colour corpus.
 
 **Result: 52/75 with zero penalties**, the cleanest page in the corpus. Four claims registered in `external-claims.json`.
+
+## Wave O: retire in Italy, the biggest cluster in the audit
+
+**4,220/mo**, larger than the golden visa and digital nomad clusters put together, and it splits in two: about 2,240 on the visa by name, about 1,810 on the life decision (`retire in italy`, `italy retirement visa`, `best places to retire in italy`). Search Console showed **zero impressions on either**.
+
+Our existing `italy-elective-residence-visa-property` scores 55/75 and covers the visa properly, but mentions retirement eight times in 4,900 words. The second intent was unserved, and the SERP for it returns broader life-and-tax guides rather than visa mechanics, so it is a separate page rather than a rewrite.
+
+**What the SERP says about tone.** Content sites hold seven to eight of ten, no portal ranks, and the titles in the top five are *"Not as easy as it sounds!"*, *"all that glitters is not gold!"* and *"The Correct Amount You..."*. Cautionary beats promotional here, and a Reddit thread is number one in Australia.
+
+**Four things the page carries that competitors do not**, all verified 6 September 2026:
+
+1. The **7% pensioner regime ceiling rose from 20,000 to 30,000 residents on 7 April 2026**, adding **74 comuni**. Competitors still print 20,000, which excludes exactly the band of towns that has a hospital and a station.
+2. The **SSN contribution expires every 31 December** whatever month it was paid, so registering in November means paying twice in three months. EUR 2,000 to about EUR 2,789 a year.
+3. The **July 2025 Rome administrative court ruling** overturning a refusal where a consulate applied the income threshold per person rather than per household.
+4. A **worked comparison** of EUR 60,000 of household income in a qualifying Puglian comune against near Florence: about EUR 4,200 of Italian tax against about EUR 13,100, a gap near EUR 9,000 a year for ten years.
+
+**Correction to an existing page.** Verifying the income figures turned up three fabricated statistics on `italy-elective-residence-visa-property`: a 34% refusal rate for filings at the minimum, an average approved household income of EUR 68,400, and a 12% housing-check failure rate. No Italian consulate publishes any of these. They were presented as hard data on a page people use to decide whether to file a visa application. Removed and replaced with what can actually be said.
+
+**Result: 59/75 with zero penalties**, the best of the three new pages. Hero is Cefalu, a Sicilian town of about 14,000 that genuinely qualifies for the regime the page is built around.

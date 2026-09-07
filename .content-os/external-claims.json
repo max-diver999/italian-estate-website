@@ -240,6 +240,40 @@
       "files": [
         "guides/italy-digital-nomad-visa.mdx"
       ]
+    },
+    {
+      "id": "it-7pct-pensioner-regime",
+      "jurisdiction": "IT",
+      "claim": "Foreign pensioners transferring tax residence to a qualifying comune in Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sicily or Sardinia may elect a 7% flat rate on ALL foreign-source income for ten years, provided they were not Italian tax resident in any of the five preceding years. From 7 April 2026 the population ceiling rose from 20,000 to 30,000 residents, adding 74 municipalities.",
+      "source": "Italian pensioner flat-tax regime as amended April 2026; the ceiling change is widely reported and reflected in the qualifying comune lists",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/retire-in-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-ssn-voluntary-contribution",
+      "jurisdiction": "IT",
+      "claim": "Voluntary SSN registration for a non-EU retiree costs between EUR 2,000 and about EUR 2,788.87 a year, scaled to income, paid on form F24. The contribution is tied to the calendar year and expires on 31 December whatever month it was paid, so registering late in a year means paying again in January.",
+      "source": "Italian SSN voluntary registration rules for non-EU residents, contribution schedule current at September 2026",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/retire-in-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-erv-income-and-tar-ruling",
+      "jurisdiction": "IT",
+      "claim": "The elective residence visa income test is EUR 31,160 a year for the main applicant, plus 20% for a dependent spouse and 5% per dependent child, putting a couple near EUR 38,000. In July 2025 the administrative court in Rome overturned a refusal in which a consulate had applied the threshold per person rather than to the household.",
+      "source": "Italian consular guidance on the elective residence visa; July 2025 administrative court ruling reported on the per-person application of the threshold",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/retire-in-italy.mdx",
+        "guides/italy-elective-residence-visa-property.mdx"
+      ]
     }
   ]
 }
