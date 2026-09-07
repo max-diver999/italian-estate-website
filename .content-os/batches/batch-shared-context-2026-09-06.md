@@ -491,3 +491,28 @@ Headers alone are worth almost nothing. **The row labels are the cost**, and rel
 The labels are heavily concentrated: `Factor` appears in **122 files**, `Destination` 61, `Red flag` 59, `Location` 56, `Compare` 47, `Status` 46, `Step` 43, `Price from` 40. These are generic to the point of saying nothing, so replacing them with labels that name what the column holds is an editorial gain in its own right, as it was on Ancona (`Factor | Detail` became `What you are buying | Ancona centro`).
 
 **Recommended next batch:** variant E for real, in slug-sized batches, triaged on post-change score. Ceiling is +1.5 mean and eight files across the floor.
+
+## Wave M: new pages, starting with the one we already had
+
+Maxim asked for new pages aimed at beating the competition. The evidence sent the work somewhere different from a new page, and it is worth recording why.
+
+**What the SERP data ruled out.** `permesso di soggiorno` carries 1,600/mo (880 UK, 720 US) and is the largest single missing phrase in the plan. Its SERP is seven of ten government and reference: questure.poliziadistato.it, portaleimmigrazione.it, the consulates, Italian Wikipedia, and a Google Play app for checking permit status. That is navigational intent from people checking a document, not property intent. **Not written.**
+
+**Classifying every SERP snapshot by who holds the top ten** separated the winnable from the rest. Portals (Gate-away, Idealista) hold three to six slots on every "houses for sale" query. Content sites hold seven to nine on the living and visa cluster. Of the six winnable queries, four were already written this session. The two open ones were `italy golden visa` (1,300/mo) and `italy digital nomad visa` (1,000/mo).
+
+**Then Search Console changed the answer.** `/guides/italy-investor-visa-property/` already collected **266 impressions across 20 visa queries**, alone, with no cannibalisation, at average position **55 to 96**. The page existed, targeted the right queries and ranked on page six. A new page would have competed with it. **The job was to make the existing page win.**
+
+**What was done.**
+
+- Renamed to `/guides/italy-golden-visa/` with a 301, nine inbound files updated, hero copied to the owned path on account #3. The old slug said "property" on a page whose thesis is that property does not qualify.
+- Added the eligibility bar no English competitor carries: **suspended for Russian and Belarusian nationals since July 2023 under EU Recommendation C(2022)554, dual nationals included.** Verified on the Ministry portal.
+- Added the historical figure that explains why: **32 investor visas issued to Russian citizens from 36 applications before the suspension, against twelve to US and twelve to UK applicants.**
+- Added a consolidated "what this does not give you": not a passport, not EU-wide residence, not a tax outcome, not permanent, not a property route.
+- Added "where applicants actually get stuck", which answers the question the Reddit thread holding top five in six countries exists to answer.
+- Two new FAQ pairs in both copies. Three claims registered in `external-claims.json`, four official thresholds in `facts.json`.
+
+Page 50 to **56/75**.
+
+**Registering the four thresholds lifted 74 other files**, because EUR 250,000, EUR 500,000, EUR 1,000,000 and EUR 2,000,000 are used across the corpus and were unsourced. Corpus mean 41.8 to 42.9, below floor 78 to 68, gated 59 to 52, nothing regressed. Two supporting pages in the cluster were pulled into the gate and fixed rather than reverted: the Malta comparison 27 to 35, elective residence against investor visa 25 to 40.
+
+**Still open:** `italy digital nomad visa`, 1,000/mo, seven content sites and no portals. Our coverage is `digital-nomad-italy-property-guide`, framed as a property guide, which is probably the wrong frame for the query. Worth the same treatment next.

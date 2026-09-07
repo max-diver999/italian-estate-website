@@ -254,6 +254,30 @@
       "statement": "Upper end of Italian estate agency commission charged to the buyer side before IVA, against a floor near 2% where a seller splits the fee.",
       "source": "Italian agency mandate practice, tier B; FIAIP and regional usi e consuetudini put the common band at 2% to 6% plus IVA",
       "asOf": "2026-09-06"
+    },
+    {
+      "figure": "€2,000,000",
+      "statement": "Investment in Italian government bonds that qualifies for the Investor Visa, the highest of the four thresholds and the lowest risk of them.",
+      "source": "Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "€500,000",
+      "statement": "Investment in the share capital of an Italian limited company that qualifies for the Investor Visa. Halved to EUR 250,000 where the company is a registered innovative startup.",
+      "source": "Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "€250,000",
+      "statement": "Investment in a registered Italian innovative startup that qualifies for the Investor Visa. The cheapest entry to the programme and the one carrying the most equity risk.",
+      "source": "Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "€1,000,000",
+      "statement": "Philanthropic donation to a public interest project that qualifies for the Investor Visa. Non-recoverable, unlike the bond and equity routes.",
+      "source": "Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories",
+      "asOf": "2026-09-06"
     }
   ]
 }

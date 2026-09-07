@@ -163,6 +163,39 @@
       "files": [
         "guides/italy-citizenship-by-descent.mdx"
       ]
+    },
+    {
+      "id": "it-investor-visa-ru-by-suspension",
+      "jurisdiction": "IT",
+      "claim": "Italy suspended its Investor Visa for Russian and Belarusian nationals in July 2023, acting on European Commission Recommendation C(2022)554. The bar extends to dual nationals holding either passport, so a second citizenship does not reopen the route.",
+      "source": "Ministry of Enterprise investor visa portal (investorvisa.mise.gov.it) suspension notice; European Commission Recommendation C(2022)554 of 28 March 2022",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/italy-golden-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-investor-visa-ru-share-pre-suspension",
+      "jurisdiction": "IT",
+      "claim": "Before the suspension, Italy had issued investor visas to at least 32 Russian citizens from 36 applications, more than the 12 issued to United States applicants and the 12 issued to United Kingdom applicants combined.",
+      "source": "Italian Ministry of Enterprise application data as reported when the suspension was announced, August 2023",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-09-06",
+      "files": [
+        "guides/italy-golden-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-investor-visa-permit-duration",
+      "jurisdiction": "IT",
+      "claim": "The investor residence permit is issued for two years and renews in three-year increments, each renewal conditional on the qualifying investment still being in place. Nulla osta review runs about 25 to 35 days and the qualifying transfer must complete within three months of entry.",
+      "source": "Ministry of Enterprise investor visa policy guidance; consistent with the programme portal",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/italy-golden-visa.mdx"
+      ]
     }
   ]
 }
