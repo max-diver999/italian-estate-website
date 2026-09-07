@@ -673,3 +673,17 @@ We already own seven single-term pages (geometra, notaio, codice fiscale, IMU, c
 **Also fixed: the uploader was crediting the wrong thing.** Commons authors sometimes fill the Artist field with a request rather than a name, and stripping the tags credited "I would appreciate being notified if you use my work outside Wikimedia" as the photographer. The uploader now resolves the username from the EmailUser or User link, and the affected credit was corrected to Aktron.
 
 **Next in this niche, by evidence:** `usucapione` and `adverse possession in italy`, 110/mo combined at KD 0 to 1, where we already collect 23 impressions at position 70 with **zero content on the subject**.
+
+## Wave V: usucapione, the second page in the no-links niche
+
+`adverse possession in italy` 70/mo at **KD 0**, `usucapione` 40/mo at **KD 1**. Chosen for the absence of competition rather than the volume, which is the only thing that works at Authority Score 2.
+
+Search Console showed **23 impressions at position 70** with **zero content**: the word `usucapione` appeared in none of the 278 files.
+
+The page carries the four periods rather than the single one most English sources give (20 ordinary, 10 with good faith and title, 15 and 5 on rural property under article 1159-bis), the two rural conditions that get dropped (rural cadastre plus actual agricultural use), what does **not** interrupt the clock, the compulsory mediation route since 2013 with the agreement transcribable under article 2643 no. 12-bis, and the apparent-servitude rule that decides access claims.
+
+The angle no competitor takes: **the absent foreign owner is the exposed party**, because the clock runs on possession rather than on knowledge, and someone who visits twice a year sees the boundary twice a year.
+
+**59/75 with zero penalties.** Four claims registered. Hero is a made stone path beside a dry stone wall, which puts both legal ideas in one frame.
+
+Two pages now in this niche, both clean: condominium fees at 45 and usucapione at 59.

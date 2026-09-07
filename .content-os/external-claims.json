@@ -352,6 +352,50 @@
       "files": [
         "guides/condominium-fees-italy.mdx"
       ]
+    },
+    {
+      "id": "it-usucapione-periods",
+      "jurisdiction": "IT",
+      "claim": "Ownership of Italian immovable property passes by usucapione after 20 years of possession that is actual, open, exclusive, continuous and without the owner's permission (art. 1158). The period is 10 years where the possessor acquired in good faith from a non-owner under a duly registered title capable of transferring ownership (art. 1159). Possession is interrupted where the owner retakes the property for more than one year or serves a formal act asserting ownership.",
+      "source": "Italian Civil Code articles 1158 and 1159",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/usucapione-adverse-possession-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-usucapione-rural-1159bis",
+      "jurisdiction": "IT",
+      "claim": "Article 1159-bis shortens usucapione for small rural property: 15 years for rural land with annexed buildings in communes classified as mountain by law, and 5 years from registration where such property was acquired in good faith from a non-owner under a registered title. It also reaches rural land in non-mountain communes whose income falls below limits set by special law. The land must be entered in the rural cadastre and actually used for agriculture from the start of the possession relied on.",
+      "source": "Italian Civil Code article 1159-bis, with Cassazione case law on the requirement of actual agricultural use",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/usucapione-adverse-possession-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-usucapione-mediation",
+      "jurisdiction": "IT",
+      "claim": "Mediation is a compulsory precondition to litigating disputes over real rights, usucapione included, since Decree Law 69 of 21 June 2013 converted by Law 98 of 9 August 2013. A mediation agreement ascertaining usucapione is transcribable in the land registers under article 2643 number 12-bis, provided the record is signed and the signatures authenticated by an authorised public official. Possession alone produces no registrable title.",
+      "source": "D.L. 69/2013 converted by L. 98/2013; Italian Civil Code article 2643 no. 12-bis",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/usucapione-adverse-possession-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-servitu-apparent-requirement",
+      "jurisdiction": "IT",
+      "claim": "A right of way can be acquired by usucapione only where it is apparent, meaning evidenced by permanent visible works such as a made track, gate or bridge. A non-apparent right of way, such as walking across open land leaving no permanent trace, cannot be acquired by possession.",
+      "source": "Italian Civil Code provisions on servitù prediali and the apparent-servitude requirement",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/usucapione-adverse-possession-italy.mdx"
+      ]
     }
   ]
 }
