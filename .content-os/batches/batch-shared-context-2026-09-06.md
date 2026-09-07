@@ -516,3 +516,20 @@ Page 50 to **56/75**.
 **Registering the four thresholds lifted 74 other files**, because EUR 250,000, EUR 500,000, EUR 1,000,000 and EUR 2,000,000 are used across the corpus and were unsourced. Corpus mean 41.8 to 42.9, below floor 78 to 68, gated 59 to 52, nothing regressed. Two supporting pages in the cluster were pulled into the gate and fixed rather than reverted: the Malta comparison 27 to 35, elective residence against investor visa 25 to 40.
 
 **Still open:** `italy digital nomad visa`, 1,000/mo, seven content sites and no portals. Our coverage is `digital-nomad-italy-property-guide`, framed as a property guide, which is probably the wrong frame for the query. Worth the same treatment next.
+
+## Wave N: the digital nomad visa, a genuinely new page
+
+`italy digital nomad visa` carries 1,000/mo in the US and ranks the same competitor set in the UK and Australia. Content sites hold seven of ten and no property portal ranks, so it is winnable.
+
+**Why a new page and not a rewrite.** Search Console shows **zero impressions** for any nomad query. Our only coverage, `digital-nomad-italy-property-guide`, scores 0/75, is titled as a property guide and gives the visa one section out of thirteen. It answers where a nomad should buy, which is a different question from what the visa is and who qualifies. Neither cannibalises the other, because the existing page registers for nothing. It was left alone rather than renamed.
+
+**What the page carries that competitors do not**, all verified on 6 September 2026:
+
+1. **Two categories and a consular disagreement about them.** London publishes the route as self-employed only; New York publishes it as digital nomad and remote worker. Same decree, different counter, and jurisdiction follows residence, so this decides what an applicant can file at all.
+2. **The highly specialised worker test is the real gate**, not the income, and it is what removes casual remote workers.
+3. **The income requirement is a range**: statutory floor about EUR 24,790, consular practice EUR 25,500 to EUR 28,000, New York still referencing EUR 24,789. Competitors print one number.
+4. **The 2026 IRPEF change.** The middle band fell from 35% to 33% under Legge 30 dicembre 2025 n. 199, capped at EUR 200,000 of income, worth at most about EUR 440 a year. Guides still print 35%.
+
+Hero sourced from Commons, Bologna porticoes in daylight, CC BY 2.0, credited. A black and white candidate was downloaded, looked at and rejected as too dark against a colour corpus.
+
+**Result: 52/75 with zero penalties**, the cleanest page in the corpus. Four claims registered in `external-claims.json`.

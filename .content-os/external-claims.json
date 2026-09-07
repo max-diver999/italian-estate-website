@@ -196,6 +196,50 @@
       "files": [
         "guides/italy-golden-visa.mdx"
       ]
+    },
+    {
+      "id": "it-dnv-legal-basis",
+      "jurisdiction": "IT",
+      "claim": "Italy's digital nomad and remote worker route was created by an inter-ministerial decree of 29 February 2024, in force from 5 April 2024, with operational detail set by a later implementing decree signed by the Ministers of the Interior, Labour and Foreign Affairs, and was folded into the Immigration Code in 2026. It sits outside the decreto flussi quota and needs no employment clearance.",
+      "source": "Inter-ministerial decree 29 February 2024; Italian consular visa pages, checked 6 September 2026",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/italy-digital-nomad-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-dnv-income-floor",
+      "jurisdiction": "IT",
+      "claim": "The income floor is three times the annual healthcare exemption threshold, about EUR 24,790 a year or EUR 2,066 a month. Consular practice sits above it, commonly EUR 25,500 to EUR 28,000, while the New York consulate has continued to reference EUR 24,789.",
+      "source": "Italian consular visa pages, London and New York, checked 6 September 2026; the statutory basis is the healthcare exemption multiple",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/italy-digital-nomad-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-dnv-consular-divergence",
+      "jurisdiction": "IT",
+      "claim": "Consulates implement the same decree differently: the Italian Consulate General in London publishes the route as being for self-employed applicants only, while New York publishes it as a combined digital nomad and remote worker visa.",
+      "source": "Published visa pages of the Italian Consulates General in London and New York, checked 6 September 2026",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/italy-digital-nomad-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-irpef-bands-2026",
+      "jurisdiction": "IT",
+      "claim": "IRPEF bands for 2026 are 23% up to EUR 28,000, 33% from EUR 28,001 to EUR 50,000 and 43% above EUR 50,000. The middle band was cut from 35% to 33% by the 2026 budget law, the reduction applies only up to EUR 200,000 of income, and the maximum annual saving is about EUR 440.",
+      "source": "Legge di Bilancio 2026, Legge 30 dicembre 2025 n. 199",
+      "asOf": "2026-01-01",
+      "reviewBy": "2027-01-31",
+      "files": [
+        "guides/italy-digital-nomad-visa.mdx"
+      ]
     }
   ]
 }
