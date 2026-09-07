@@ -103,7 +103,8 @@ const {
     if (!bar) return;
 
     var btn = bar.querySelector('.ig-sticky-lead-bar__btn');
-    var form = document.getElementById('lead-form');
+    // Any lead capture counts as "a form is on screen": the mid-article band too.
+    var forms = [].slice.call(document.querySelectorAll('#lead-form, [data-inline-cta]'));
     var visible = false;
     var formVisible = false;
 
@@ -118,15 +119,22 @@ const {
       });
     }
 
-    if (form && 'IntersectionObserver' in window) {
+    if (forms.length && 'IntersectionObserver' in window) {
+      var seen = [];
       var observer = new IntersectionObserver(
         function (entries) {
-          formVisible = entries.some(function (entry) { return entry.isIntersecting && entry.intersectionRatio > 0.12; });
+          entries.forEach(function (entry) {
+            var i = seen.indexOf(entry.target);
+            var showing = entry.isIntersecting && entry.intersectionRatio > 0.12;
+            if (showing && i === -1) seen.push(entry.target);
+            if (!showing && i !== -1) seen.splice(i, 1);
+          });
+          formVisible = seen.length > 0;
           update();
         },
         { threshold: [0, 0.12, 0.35] },
       );
-      observer.observe(form);
+      forms.forEach(function (f) { observer.observe(f); });
     }
 
     function isMobile() {
