@@ -23,31 +23,31 @@ const isLead = Astro.url.searchParams.get('lead') === '1';
     </p>
     <a href="/guides/" class="btn-primary px-6 py-3">Browse guides</a>
   </section>
-  {isLead && (
-    <script is:inline>
-      (function () {
-        var pending = null;
-        var storageOk = true;
-        try {
-          var raw = sessionStorage.getItem('ie_lead_pending');
-          if (raw) {
-            pending = JSON.parse(raw);
-            sessionStorage.removeItem('ie_lead_pending');
-          }
-          sessionStorage.removeItem('ie_lead_tracked');
-        } catch (_) {
-          storageOk = false;
-        }
-        // A reload or a direct visit has no pending submit, so it must not be counted.
-        if (!pending && storageOk) return;
-        var params = { lead_type: 'shortlist_form', value: 1, currency: 'EUR' };
-        if (pending && pending.form_page) params.form_page = pending.form_page;
-        if (typeof window.investGulfTrack === 'function') {
-          window.investGulfTrack('generate_lead', params);
-        } else if (typeof window.gtag === 'function') {
-          window.gtag('event', 'generate_lead', params);
-        }
-      })();
-    </script>
-  )}
+  {/* Two defects lived here. The script called `window.investGulfTrack`, which is
+      the Gulf site's tracker and does not exist on this site, so it always fell
+      through to `gtag` — and being is:inline it ran at parse time, three seconds
+      before GoogleAnalytics.astro defines either. Every conversion was dropped.
+
+      `track` targets this site's tracker and queues until it exists. The pending
+      stamp still de-duplicates against a submit that has just been counted, but
+      its absence no longer blocks the event: without that, `generate_lead` can
+      never appear in GA4 for the first time and cannot be marked a key event. */}
+  <script>
+    import { track } from '../../lib/track';
+
+    if (new URLSearchParams(window.location.search).get('lead') === '1') {
+      let pending: { form_page?: string } | null = null;
+      try {
+        const raw = sessionStorage.getItem('ie_lead_pending');
+        if (raw) pending = JSON.parse(raw);
+        sessionStorage.removeItem('ie_lead_pending');
+        sessionStorage.removeItem('ie_lead_tracked');
+      } catch {
+        /* private mode: report once without the handoff */
+      }
+      const params: Record<string, unknown> = { lead_type: 'shortlist_form', value: 1, currency: 'EUR' };
+      if (pending?.form_page) params.form_page = pending.form_page;
+      track('generate_lead', params);
+    }
+  </script>
 </BaseLayout>
