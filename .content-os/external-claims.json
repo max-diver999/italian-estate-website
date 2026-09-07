@@ -274,6 +274,50 @@
         "guides/retire-in-italy.mdx",
         "guides/italy-elective-residence-visa-property.mdx"
       ]
+    },
+    {
+      "id": "uk-it-driving-licence-agreement",
+      "jurisdiction": "IT",
+      "claim": "A bilateral Italy-UK agreement on mutual recognition of driving licences has been in force since 30 March 2023 and is valid until 30 March 2028. A UK licence may be exchanged for an Italian one without theory or practical test where the holder has been resident in Italy for less than six years at the time of application; those resident by 31 December 2020 are exempt from the six-year limit.",
+      "source": "Italy-UK agreement on mutual recognition of driving licences, in force 30 March 2023 (UK treaty series CS UK Italy 1.2023)",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-09-06",
+      "files": [
+        "guides/moving-to-italy-from-uk.mdx"
+      ]
+    },
+    {
+      "id": "uk-s1-italy-healthcare",
+      "jurisdiction": "IT",
+      "claim": "A UK national at State Pension age can claim an S1 form before leaving the UK, which gives access to the Italian national health service with the cost met by the UK government. Those below State Pension age register with the SSN voluntarily and pay the contribution themselves, or hold private cover.",
+      "source": "UK-EU social security coordination under the Withdrawal Agreement and the Trade and Cooperation Agreement; Italian SSN registration rules",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/moving-to-italy-from-uk.mdx"
+      ]
+    },
+    {
+      "id": "uk-state-pension-uprating-italy",
+      "jurisdiction": "IT",
+      "claim": "The UK State Pension is not frozen in Italy and continues to uprate annually. Protection derives from the Withdrawal Agreement for those resident before 31 December 2020 and from the Trade and Cooperation Agreement for later arrivals.",
+      "source": "UK-EU Withdrawal Agreement and Trade and Cooperation Agreement, social security coordination provisions",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-09-06",
+      "files": [
+        "guides/moving-to-italy-from-uk.mdx"
+      ]
+    },
+    {
+      "id": "eu-transfer-of-residence-relief",
+      "jurisdiction": "EU",
+      "claim": "Personal property imported when transferring normal residence from a third country into the EU is admitted free of import duty and VAT, provided the person had normal residence outside the EU for at least twelve consecutive months, the goods were owned and used for at least six months before shipment, they arrive within twelve months of establishing the new residence, and they are not sold, lent, pledged or rented for twelve months after clearance without notifying customs.",
+      "source": "Council Regulation (EC) No 1186/2009, Title II, reliefs on transfer of normal residence",
+      "asOf": "2026-09-06",
+      "reviewBy": "2028-09-06",
+      "files": [
+        "guides/moving-to-italy-from-uk.mdx"
+      ]
     }
   ]
 }

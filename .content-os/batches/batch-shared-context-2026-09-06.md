@@ -552,3 +552,18 @@ Our existing `italy-elective-residence-visa-property` scores 55/75 and covers th
 **Correction to an existing page.** Verifying the income figures turned up three fabricated statistics on `italy-elective-residence-visa-property`: a 34% refusal rate for filings at the minimum, an average approved household income of EUR 68,400, and a 12% housing-check failure rate. No Italian consulate publishes any of these. They were presented as hard data on a page people use to decide whether to file a visa application. Removed and replaced with what can actually be said.
 
 **Result: 59/75 with zero penalties**, the best of the three new pages. Hero is Cefalu, a Sicilian town of about 14,000 that genuinely qualifies for the regime the page is built around.
+
+## Wave P: moving to Italy from the UK
+
+590/mo in the UK database, eight of ten held by content sites, no portal, **zero impressions** for us. We had two UK pages already but both cover buying and taxing a holiday home, not relocating, and neither mentions the S1, driving licences or pension uprating.
+
+**Why it is not the US page with the country changed.** Everything useful here is bilateral and post-Brexit:
+
+- **Driving licences.** The advice in circulation is that British holders must retake the Italian test. True in the gap after Brexit, wrong now: a bilateral agreement has been in force since **30 March 2023** allowing exchange without any test. It **expires 30 March 2028** unless renewed, and the holder must have been resident **less than six years**; those resident by 31 December 2020 are exempt from that limit.
+- **The S1 splits British movers in two.** At UK State Pension age it gives Italian health service access funded by the UK. Below that age the same person pays EUR 2,000 to about EUR 2,789 a year.
+- **The State Pension is not frozen in Italy**, which British movers reasonably assume given the Australia and Canada position.
+- **Household goods are now an import.** Relief under Council Regulation 1186/2009 needs twelve months of prior non-EU residence, six months of ownership per item, arrival within twelve months, and no disposal for twelve months after. Buying furniture before departure defeats it.
+
+**54/75 with zero penalties.** Hero is Orvieto at dawn from the Fortezza. A Lake Garda frame was downloaded and rejected as hazy with power lines across it, and an Orvieto panorama was rejected for being nearly 3:1 and unusable as a hero.
+
+Four claims registered. Four new pages this session, all with zero or near-zero penalties.
