@@ -284,6 +284,18 @@
       "statement": "Upper end of the narrower all-in closing cost band this site publishes for an ordinary second home, where agency commission is modest or split. The wider 10% to 15% band covers the same purchase with full agency and independent legal review.",
       "source": "Owner decision recorded 2026-08-20 in market-stats.json (closing_cost_stack_non_resident); the 10% to 12% form is the same band stated for a lighter fee structure",
       "asOf": "2026-08-20"
+    },
+    {
+      "figure": "18 months",
+      "statement": "Deadline to transfer residence to the comune where the property sits, to keep the prima casa reduced rate. The term runs from the rogito, and the undertaking must be declared in the deed itself or the benefit never arises.",
+      "source": "DPR 131/1986, Tariffa Parte I art. 1, Nota II-bis; Corte di Cassazione ordinanza 9433/2018 on the term running from the deed rather than completion of works",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "12 months",
+      "statement": "Deadline for filing the dichiarazione di successione, running from the opening of the succession, which is normally the date of death. Omission carries a penalty of 120% to 240% of the tax assessed.",
+      "source": "Agenzia delle Entrate, dichiarazione di successione filing rules and penalty schedule",
+      "asOf": "2026-09-06"
     }
   ]
 }

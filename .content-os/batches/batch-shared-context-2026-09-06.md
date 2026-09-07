@@ -626,3 +626,18 @@ Idealista, Gate-away, realestate.com.au, JamesEdition, Immobiliare, Sotheby's an
 **Then one registration did more than all of it.** `12%` appears in **124 articles** unregistered. Checking what it means rather than assuming: 236 of 357 uses are the closing cost band, consistent with the 10% to 15% owner decision already approved. Registering it as the upper end of the narrower band took the corpus mean **43.6 to 45.3** and below-floor **59 to 48**, clearing eleven files at once.
 
 That is the lesson worth keeping. Per-file rewriting moves one file. Sourcing a figure the corpus leans on moves everything that leans on it, and there are still 275 load-bearing figures unregistered against 47 registered.
+
+## Wave T: the registry lever, worked until it ran out
+
+Two more statutory deadlines registered after verifying what the figures actually mean rather than assuming:
+
+- **18 months**, in 66 files: the deadline to transfer residence to the comune where the property sits, to keep the prima casa rate. DPR 131/1986, Tariffa Parte I art. 1, Nota II-bis, with Cassazione ordinanza 9433/2018 confirming the term runs from the rogito rather than from completion of works, and the undertaking having to appear in the deed itself.
+- **12 months**, in 61 files: the deadline for filing the dichiarazione di successione from the opening of the succession. Omission carries 120% to 240% of the tax assessed.
+
+Corpus mean 45.3 to 45.5. Smaller than the 12% registration, which is the point: the gain depends on which files carry the figure, not on how many files do.
+
+**Then the lever ran out, and it is worth recording why.** Targeting the figures that penalise the 48 files still below the floor gives three answers and only three: **EUR 300,000 in 23 of them, EUR 200,000 in 22, EUR 400,000 in 21.** These are worked-example ticket prices, not claims about the world. There is no fact that an Italian house costs EUR 300,000, and registering one to clear a penalty would be exactly the dishonesty this session has spent the day removing.
+
+**The penalty composition confirms it.** Across those 48 files: **template-family 1,580 points, duplicated-text 782, stamped-figure 264.** Sourcing has bought what it can. What is left is 1,580 points of shared sentence shapes and 782 of duplicated passages, which only per-file rewriting removes, at the measured rate of about an hour a file.
+
+Session totals: mean **32.9 to 45.5**, below the floor **135 to 48**, gated **110 to 40**, no regressions.
