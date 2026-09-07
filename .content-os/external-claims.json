@@ -396,6 +396,39 @@
       "files": [
         "guides/usucapione-adverse-possession-italy.mdx"
       ]
+    },
+    {
+      "id": "it-rogito-registration-vs-transcription",
+      "jurisdiction": "IT",
+      "claim": "Signing the rogito transfers ownership between the parties, but the transfer becomes effective against third parties only on transcription in the registri immobiliari. Registration with the Agenzia delle Entrate, which the notaio must complete within 30 days, is a tax act giving the deed a certain date and does not confer opposability. Priority runs from the moment of transcription.",
+      "source": "Italian rules on registration of deeds (30-day term) and on transcription in the land registers as the act conferring effect against third parties",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/rogito-italian-deed-of-sale.mdx"
+      ]
+    },
+    {
+      "id": "it-notaio-price-deposit",
+      "jurisdiction": "IT",
+      "claim": "Either party may require the notaio to hold the balance of the purchase price in a dedicated segregated account until the transfer is transcribed. Introduced by Law 147/2013 and made optional on the request of a party by the 2017 competition law with effect from 29 August 2017. The sums sit outside the notaio's own estate, do not fall into any marital property regime, and cannot be attached by the creditors of the notaio or of the seller.",
+      "source": "Law 147/2013 as amended by Law 124/2017 (legge annuale per il mercato e la concorrenza), in force 29 August 2017; Consiglio Nazionale del Notariato guidance on the deposit of the price",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/rogito-italian-deed-of-sale.mdx"
+      ]
+    },
+    {
+      "id": "it-preliminare-trascritto",
+      "jurisdiction": "IT",
+      "claim": "A preliminary contract of sale may be transcribed under article 2645-bis where made as a public act or a private deed with authenticated signatures. Transcription gives a reservation effect that prevails over transcriptions and registrations made against the seller afterwards, including seizures, sequestrations and judicial mortgages. The effect ceases, and is treated as never having occurred, if the final deed is not transcribed within one year of the date agreed for it and in any case within three years of the preliminary being transcribed.",
+      "source": "Italian Civil Code article 2645-bis",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/rogito-italian-deed-of-sale.mdx"
+      ]
     }
   ]
 }

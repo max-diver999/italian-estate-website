@@ -687,3 +687,20 @@ The angle no competitor takes: **the absent foreign owner is the exposed party**
 **59/75 with zero penalties.** Four claims registered. Hero is a made stone path beside a dry stone wall, which puts both legal ideas in one frame.
 
 Two pages now in this niche, both clean: condominium fees at 45 and usucapione at 59.
+
+## Wave W: rogito, the third page in the no-links niche
+
+`rogito` at 70/mo and KD 18, but the real reason is that the word sits in **181 of our own files with no page owning it**. Same for `codice fiscale` at 171 files, `geometra` at 127, `visura catastale` at 91. The corpus uses the vocabulary constantly and answers none of it.
+
+**The angle: what signing does not achieve.** Registration with the Agenzia delle Entrate within 30 days is a tax act. Ownership becomes good against third parties only on **transcription**, and priority runs from that moment, so a creditor of the seller can still register a charge in the gap.
+
+Italian law solves this twice, and both solutions have to be asked for, which is why foreign buyers use neither:
+
+1. **Deposit of the price with the notaio**, Law 147/2013, optional on request since 29 August 2017. Held in a dedicated segregated account until transcription, beyond the reach of the notaio's creditors and of the seller's.
+2. **Transcribing the compromesso** under article 2645-bis, which prevails over anything registered against the seller afterwards including seizures and judicial mortgages, for 1 year from the agreed completion date and 3 years from transcription at the outside.
+
+Also covered: the procura for an absent buyer, and the interpreter and witnesses required where the buyer does not speak Italian. Both are ordinary causes of postponed completions and neither appears in the English guides.
+
+**50/75 with zero penalties.** Three claims registered. Hero is a 14th-century capital on the Doge's Palace showing a notary at work with NOTARIVS carved above him, which also makes the page's point about how old the function is.
+
+Three pages now in this niche: condominium fees 45, usucapione 59, rogito 50. Next by evidence: `visura catastale` at 210/mo, and `caparra confirmatoria` at KD 6.
