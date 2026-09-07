@@ -70,3 +70,43 @@ Four pages written this session against evidence gathered after the plan: `retir
 ## The honest summary
 
 The plan's biggest number, 47,870 against the merges, is the one to discount: those pages hold no traffic to consolidate. The second biggest, the town and theme facets, is blocked by stock rather than by writing. What is genuinely left and actionable is **one buildable facet (1,730), four writable pages (about 1,330), and four reworks (about 2,700)**.
+
+---
+
+# Final position, after working the plan to its end
+
+## What was done against the plan
+
+| Item | Result |
+|---|---|
+| `1 euro houses` rework | Renamed to `/guides/1-euro-houses-italy/`, inbound links 3 to 6, two fabricated statistics removed. 58 to 59/75 |
+| `retire-in-italy` rework | Written as a new page and the old `italy-retirement-property-guide` (6/75) merged into it with a 301 |
+| `italy-digital-nomad-visa` rework | Written as a new page. The old property-framed guide left in place, see deferrals |
+| `/guides/` index interception | Diagnosed. One of three causes was actionable and fixed |
+| Golden visa, digital nomad, retire, moving from UK | Four pages, about 4,700 searches a month |
+
+## What was rejected, on evidence
+
+**`/property-for-sale/cheap-property-italy/` (1,730).** Portals hold three to five of ten on the query and Gate-away ranks with a `max_price=50000` filter. Our cheapest listing is EUR 130,000. The page would have been a claim we cannot support.
+
+**`/living/permesso-di-soggiorno/` (1,600).** SERP is seven of ten government and reference. Navigational intent, not property.
+
+**Close 65 `/projects/` pages.** The plan said project-name demand is zero across all 65, which was true of the Semrush core and **false in Search Console**: twelve pages earn 268 impressions, 19% of the site total, and `feel-uptown-milan` sits at position 6 on its brand query. Semrush simply does not index queries this small. Rejected.
+
+**Close 26 `/compare/` and 13 `/developers/` pages.** Both earn little or nothing, but neither is thin and both hold internal links. Absence of demand is not harm, and noindexing has no upside here.
+
+**City cost-of-living pages (1,110).** Numbeo and Expatistan hold the top three on every city query, and a useful page needs real per-city price data. We have no source for it that is not a competitor's database, and inventing the numbers is the failure mode this session has been correcting all day. Not written. Instead, the national page now states the basis of its bands explicitly: editorial estimates, not a survey, with the citable rates named separately.
+
+**`/taxes/` hub (600) and healthcare (110).** Both would cannibalise pages that already exist and now score 54 and above.
+
+## What is deferred, and why
+
+**Renaming `italy-elective-residence-visa-property`.** Sound in principle. Two of its fifteen inbound files score 0 and 6, and touching them forces full rewrites plus `areas/turin` at 28. Three files of work for a slug change on a query where we rank nowhere.
+
+**Seven town facets and three theme facets, about 4,500 searches a month.** Blocked by catalogue depth, not by writing. Sorrento has two listings and needs three; Positano, Amalfi, Capri, Verona, Ravello and Orvieto have none. This is a sourcing decision for the business.
+
+**International schools (210).** Writable, but needs per-school verification for a small return.
+
+## The honest total
+
+Of the plan's headline 116,000 of combined demand, the genuinely actionable remainder after evidence is small. The large numbers were market volume attached to pages that hold no traffic, to merges with nothing to consolidate, or to facets the catalogue cannot fill. What moved this session was four new pages, four reworks, and the removal of five fabricated statistics from pages people use to make legal and financial decisions.
