@@ -586,3 +586,21 @@ The other half is winnable. `1 euro houses italy` and its variants carry about *
 Page 58 to **59/75**.
 
 **A duration error found and fixed.** `calabria-property-investment-guide` described the 7% pensioner regime as running "up to nine years". It runs for the year of transfer plus the nine following, ten tax periods in all. Corrected there and made exact on `retire-in-italy`, which now carries the precise citation: **Article 26 of Legge 11 marzo 2026 n. 34, amending Article 24-ter TUIR, in Gazzetta Ufficiale 23 March 2026, in force 7 April 2026.** That citation came off our own Calabria page and was verified before being adopted. Two other "nine" hits were checked and are correct in their own contexts: Matera's ninety-nine year Sassi concession under law 771/1986, and a description of returning expatriates.
+
+## Wave R: two reworks done, one deferred with a reason
+
+**Merged `italy-retirement-property-guide` into `retire-in-italy`.** The old page scored **6/75** with zero impressions and duplicated the new one across elective residence proof, healthcare and SSN, IMU and residency, regions, due diligence, running costs and red flags. Four inbound links repointed, 301 added, page removed. This was the plan's intent; I had written the new page alongside it rather than replacing it, which left the shell behind.
+
+**Diagnosed the `/guides/` index interception properly.** The index ranks for **55 queries and 434 impressions, at positions 56 to 99**. The three largest are `cadastral value italy` (101 impressions, position 83), `stamp duty italy` (93, position 81) and `property tax in italy for foreigners` (88, position 82).
+
+Checking each against our own pages gave three different answers rather than one problem:
+
+| Query | Owning page | Verdict |
+|---|---|---|
+| cadastral value italy | `cadastral-value-vs-market-price-italy` 56/75, uses the term 25 times | Terminology is fine. The index outranks it on authority, not language |
+| property tax in italy for foreigners | `italy-property-taxes-foreign-buyers-guide` 54/75 | Title and terms match. Same authority problem |
+| **stamp duty italy** | `italy-registration-tax-property` 47/75, **zero mentions of "stamp duty"** | **A real gap.** A British searcher never matches the page's language |
+
+Only the third was actionable through writing, and it was worth doing: a section explaining that the imposta di registro is what a UK buyer means by stamp duty, then the four ways they diverge. Charged on cadastral value rather than price, banded by use rather than by price, replaced by VAT on new builds, and no additional dwelling surcharge. All four cross-checked against the registry. Page 47 to **49/75**.
+
+**Deferred: renaming `italy-elective-residence-visa-property`.** The rename is sound in principle, matching what was done for the golden visa, and the page has 15 inbound links and zero impressions. But two of those inbound files score **0 and 6**, and touching them forces the gate to demand full rewrites, which in turn pulls in `areas/turin` at 28. Three files of work for a slug change on a query where we already rank nowhere is the wrong trade. Deferred until those files are fixed on their own account.
