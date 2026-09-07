@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "node scripts/generate-llms-txt.mjs",
     "build": "astro build",
     "postbuild": "node scripts/audit-rendered-live.mjs --local --fail",
     "preview": "astro preview",
@@ -62,7 +63,9 @@
     "geo:calibrate": "node scripts/geo-calibrate.mjs",
     "geo:cannibals": "node scripts/geo-cannibals.mjs",
     "geo:signals": "node scripts/geo-signal-lab.mjs",
-    "facts:review": "node scripts/facts-review.mjs"
+    "facts:review": "node scripts/facts-review.mjs",
+    "gen:llms": "node scripts/generate-llms-txt.mjs",
+    "check:llms": "node scripts/generate-llms-txt.mjs --check"
   },
   "dependencies": {
     "@astrojs/mdx": "5.0.2",
