@@ -75,6 +75,11 @@ def commons_file(title: str) -> dict:
             if hit:
                 return urllib.parse.unquote(hit.group(1)).replace("_", " ").strip()
         text = plain("Artist")
+        # Commons repeats the name inside a display:none span, so the stripped text
+        # arrives doubled ("Unknown authorUnknown author"). Collapse an exact repeat.
+        half = len(text) // 2
+        if text and len(text) % 2 == 0 and text[:half] == text[half:]:
+            text = text[:half]
         return text if len(text) <= 60 else text[:60].rstrip()
     licence = plain("LicenseShortName")
     if not licence or any(b in licence.lower() for b in ("non-free", "fair use")):

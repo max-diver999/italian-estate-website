@@ -124,6 +124,16 @@
     ]
   },
   {
+    "file": "Cadastral_map_of_Chirignago,_1841.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cadastral_map_of_Chirignago,_1841.jpg",
+    "artist": "Unknown author",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "pages": [
+      "/guides/visura-catastale-italy-explained/"
+    ]
+  },
+  {
     "file": "Campo_de'_Fiori_street_market_2016_-_19.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Campo_de%27_Fiori_street_market_2016_-_19.jpg",
     "artist": "Jordiferrer",
@@ -348,6 +358,16 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
       "/guides/italy-property-renovation-costs-guide/"
+    ]
+  },
+  {
+    "file": "L'agenzia_immobiliare......^^^_-_panoramio.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:L%27agenzia_immobiliare......%5E%5E%5E_-_panoramio.jpg",
+    "artist": "Qu",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "pages": [
+      "/guides/caparra-confirmatoria-italy-deposit/"
     ]
   },
   {
@@ -846,7 +866,7 @@
   {
     "file": "Viareggio_–_Panorama_preso_dal_Fanale_(xilografia).jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Viareggio_%E2%80%93_Panorama_preso_dal_Fanale_(xilografia).jpg",
-    "artist": "Unknown authorUnknown author",
+    "artist": "Unknown author",
     "license": "Public domain",
     "licenseUrl": "",
     "pages": [
