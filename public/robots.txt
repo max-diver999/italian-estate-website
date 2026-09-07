@@ -94,4 +94,8 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 
+# Corpus index for answer engines
+# https://italian-estate.com/llms.txt
+# https://italian-estate.com/llms-full.txt
+
 Sitemap: https://italian-estate.com/sitemap-index.xml

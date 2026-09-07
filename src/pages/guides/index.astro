@@ -55,10 +55,7 @@ const priority = FEATURED_GUIDE_SLUGS.map((slug) => guides.find((g) => g.id === 
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {guides.map((guide) => (
-        <div
-          class="guide-search-item"
-          data-search={`${guide.data.title} ${guide.data.description} ${(guide.data.tags ?? []).join(' ')}`.toLowerCase()}
-        >
+        <div class="guide-search-item">
           <ContentCard
             href={`/guides/${guide.id}/`}
             title={guide.data.title}
@@ -109,15 +106,22 @@ const priority = FEATURED_GUIDE_SLUGS.map((slug) => guides.find((g) => g.id === 
     var count = document.getElementById('guide-search-count');
     var empty = document.getElementById('guide-search-empty');
     var priority = document.getElementById('guide-priority');
-    var items = Array.prototype.slice.call(document.querySelectorAll('.guide-search-item'));
+    // Match against the card's own visible text. The haystack used to be duplicated
+    // into a data-search attribute, which put every guide's title and description in
+    // this page's HTML twice and made the listing outrank its own articles.
+    var items = Array.prototype.slice.call(document.querySelectorAll('.guide-search-item')).map(
+      function (el) {
+        return { el: el, text: (el.textContent || '').replace(/\s+/g, ' ').toLowerCase() };
+      }
+    );
     if (!input || !count || !empty) return;
 
     input.addEventListener('input', function () {
       var query = input.value.trim().toLowerCase();
       var visible = 0;
       items.forEach(function (item) {
-        var show = !query || (item.dataset.search || '').includes(query);
-        item.hidden = !show;
+        var show = !query || item.text.includes(query);
+        item.el.hidden = !show;
         if (show) visible += 1;
       });
       if (priority) priority.hidden = Boolean(query);

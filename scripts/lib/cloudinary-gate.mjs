@@ -1,115 +1,136 @@
 /**
- * Cloudinary delivery gate — image-URL checks shared by the content gates.
- *
- * Restored 2026-08-20 (Wave 0). This module was imported by more-content-gate.mjs
- * from '../../../scripts/lib/cloudinary-gate.mjs' — a path resolving two levels
- * ABOVE the repository root — and existed in neither repo, so `validate:content`
- * and every script importing it crashed with ERR_MODULE_NOT_FOUND.
- *
- * Contract (unchanged from the original call site):
- *   runCloudinaryDeliveryChecks({ prefix, text, errors, legacyExempt })
- *   - pushes human-readable strings onto `errors`
- *   - `legacyExempt` suppresses the stylistic/migration checks, never the
- *     hard-breakage ones
+ * Cloudinary delivery optimization — prevent bandwidth over-limit.
+ * Import from rollout scripts, more-content-gate, validate.
  */
+import {
+  CLOUDINARY_PHUKET,
+  CLOUDINARY_NICHE,
+  CLOUDINARY_NICHE_ACTIVE,
+  ALL_ALLOWED_CLOUDS,
+  buildCloudinaryImageUrl,
+} from './cloudinary-routing.mjs';
 
-/** Hosts we deliberately deliver images from. */
-const CLOUDINARY_HOST = 'res.cloudinary.com';
+export const ALLOWED_CLOUDS = ALL_ALLOWED_CLOUDS;
+
+/** Single transform chain per role — fewer derived variants in storage. */
+export const TRANSFORMS = {
+  hero: 'w_1200,q_85,f_webp',
+  inline: 'w_960,q_85,f_webp',
+  thumb: 'w_640,h_360,c_fill,q_80,f_webp',
+  og: 'w_1200,q_85,f_webp',
+};
+
+const CLOUDINARY_URL_RE =
+  /https:\/\/res\.cloudinary\.com\/([a-z0-9]+)\/image\/upload\/([^"'`\s\)]+)/g;
+
+const TRANSFORM_TOKEN_RE = /^(w_|h_|c_|f_|q_|g_|e_|b_|dpr_|fl_|a_)/;
 
 /**
- * External hosts currently present in the corpus that are NOT self-hosted.
- * Wikimedia is tracked separately: it is a migration backlog (Wave 2), not a
- * per-PR blocker, so it is reported as a soft finding unless it is a new file.
+ * URL has resize/format transform (not bare original delivery).
  */
-const BANNED_IMAGE_HOSTS = [
-  { host: 'images.unsplash.com', why: 'stock hero — use the Cloudinary pipeline' },
-  { host: 'unsplash.com', why: 'stock hero — use the Cloudinary pipeline' },
-  { host: 'source.unsplash.com', why: 'random stock hero — never ships' },
-  { host: 'via.placeholder.com', why: 'placeholder image left in content' },
-  { host: 'placehold.co', why: 'placeholder image left in content' },
-  { host: 'example.com', why: 'placeholder image left in content' },
-];
-
-const SOFT_IMAGE_HOSTS = [
-  { host: 'upload.wikimedia.org', why: 'hotlinked from Wikimedia (rate-limited, no srcset) — migrate to Cloudinary' },
-];
-
-const IMAGE_EXT_RE = /\.(jpg|jpeg|png|webp|gif|avif)(\?|#|$)/i;
-
-/** Every http(s) URL that looks like an image, from frontmatter and body alike. */
-export function extractImageUrls(text) {
-  const urls = new Set();
-  const re = /https?:\/\/[^\s"')>\]}]+/g;
-  let m;
-  while ((m = re.exec(text)) !== null) {
-    const url = m[0].replace(/[.,;:]+$/, '');
-    if (url.includes(CLOUDINARY_HOST) || IMAGE_EXT_RE.test(url) || SOFT_IMAGE_HOSTS.some((h) => url.includes(h.host))) {
-      urls.add(url);
-    }
+export function hasDeliveryTransform(url) {
+  if (!url || !url.includes('res.cloudinary.com/')) return false;
+  const after = url.split('/image/upload/')[1];
+  if (!after) return false;
+  const segments = after.split('/');
+  for (const seg of segments) {
+    if (/^v\d+$/.test(seg)) continue;
+    if (seg.includes(',') || TRANSFORM_TOKEN_RE.test(seg)) return true;
+    break;
   }
-  return [...urls];
+  return false;
 }
 
-/**
- * @param {object} opts
- * @param {string} opts.prefix        log prefix, e.g. "[guides/foo]"
- * @param {string} opts.text          full file text (frontmatter + body)
- * @param {string[]} opts.errors      mutated in place
- * @param {boolean} [opts.legacyExempt]
- * @param {string[]} [opts.warnings]  optional soft-finding channel
- */
-export function runCloudinaryDeliveryChecks({ prefix, text, errors, legacyExempt = false, warnings }) {
-  if (!text) return;
-  const soft = Array.isArray(warnings) ? warnings : errors;
-  const urls = extractImageUrls(text);
+export function isAllowedCloudinaryCloud(url) {
+  const m = url?.match(/res\.cloudinary\.com\/([a-z0-9]+)\//);
+  return m && ALLOWED_CLOUDS.has(m[1]);
+}
 
-  for (const url of urls) {
-    // Hard breakage — always an error, legacy or not.
-    if (url.startsWith('http://')) {
-      errors.push(`${prefix} insecure http:// image URL (mixed content): ${url.slice(0, 90)}`);
-    }
-
-    for (const { host, why } of BANNED_IMAGE_HOSTS) {
-      if (url.includes(host)) errors.push(`${prefix} banned image host ${host} — ${why}`);
-    }
-
-    if (url.includes(CLOUDINARY_HOST)) {
-      // res.cloudinary.com/<cloud>/image/upload/<transform?>/<publicId>
-      const m = url.match(/res\.cloudinary\.com\/([^/]+)\/image\/upload\/(.*)$/);
-      if (!m) {
-        errors.push(`${prefix} malformed Cloudinary delivery URL: ${url.slice(0, 90)}`);
-      } else {
-        const [, cloud, rest] = m;
-        if (!cloud || cloud.includes('${') || cloud === 'undefined') {
-          errors.push(`${prefix} Cloudinary URL with unresolved cloud name: ${url.slice(0, 90)}`);
-        }
-        if (!rest || rest.includes('${') || rest === 'undefined') {
-          errors.push(`${prefix} Cloudinary URL with unresolved public id: ${url.slice(0, 90)}`);
-        }
-      }
+export function extractPublicId(url) {
+  const m = url.match(/\/image\/upload\/(.+)$/);
+  if (!m) return null;
+  let rest = m[1].split('?')[0];
+  const parts = rest.split('/');
+  while (parts.length > 1) {
+    const head = parts[0];
+    if (/^v\d+$/.test(head)) {
+      parts.shift();
       continue;
     }
-
-    if (legacyExempt) continue;
-
-    for (const { host, why } of SOFT_IMAGE_HOSTS) {
-      if (url.includes(host)) soft.push(`${prefix} external image host ${host} — ${why}`);
+    if (head.includes(',') || TRANSFORM_TOKEN_RE.test(head)) {
+      parts.shift();
+      continue;
     }
+    break;
   }
+  return parts.join('/').replace(/\.(jpg|jpeg|png|webp|gif)$/i, '');
 }
 
 /**
- * Standalone host classification, reused by audit-p0-quality.mjs so the hero
- * check is not limited to /unsplash/i.
- * @returns {'cloudinary'|'banned'|'soft-external'|'relative'|'external'|'none'}
+ * Ensure delivery URL uses standard transform (bandwidth-safe).
+ * @param {string} urlOrPublicId
+ * @param {'hero'|'inline'|'thumb'|'og'} [role]
  */
-export function classifyImageHost(url) {
-  if (!url) return 'none';
-  if (!/^https?:\/\//.test(url)) return 'relative';
-  if (url.includes(CLOUDINARY_HOST)) return 'cloudinary';
-  if (BANNED_IMAGE_HOSTS.some((h) => url.includes(h.host))) return 'banned';
-  if (SOFT_IMAGE_HOSTS.some((h) => url.includes(h.host))) return 'soft-external';
-  return 'external';
+export function deliveryUrl(urlOrPublicId, role = 'hero') {
+  if (!urlOrPublicId) return urlOrPublicId;
+  const transform = TRANSFORMS[role] || TRANSFORMS.hero;
+
+  if (urlOrPublicId.startsWith('http')) {
+    if (hasDeliveryTransform(urlOrPublicId)) return urlOrPublicId;
+    const cloud = urlOrPublicId.match(/res\.cloudinary\.com\/([a-z0-9]+)\//)?.[1];
+    const pid = extractPublicId(urlOrPublicId);
+    if (!cloud || !pid) return urlOrPublicId;
+    return buildCloudinaryImageUrl(cloud, pid, transform);
+  }
+
+  const cloud = CLOUDINARY_NICHE;
+  return buildCloudinaryImageUrl(cloud, urlOrPublicId.replace(/^\//, ''), transform);
 }
 
-export { BANNED_IMAGE_HOSTS, SOFT_IMAGE_HOSTS, CLOUDINARY_HOST };
+/**
+ * Validate heroImage URL — account + optimized delivery.
+ */
+export function validateHeroImageUrl(url, { allowLocal = false } = {}) {
+  const errors = [];
+  if (!url) return errors;
+  if (allowLocal && url.startsWith('/images/')) return errors;
+  if (!url.includes('cloudinary.com')) {
+    errors.push('heroImage must use Cloudinary or allowed local /images/ path');
+    return errors;
+  }
+  if (!isAllowedCloudinaryCloud(url)) {
+    errors.push(
+      `heroImage must use dphvjbqb4 (Phuket), dlrrtf6bq (legacy niche), or bwppi9gc (active niche)`,
+    );
+  }
+  if (!hasDeliveryTransform(url)) {
+    errors.push(
+      `heroImage bare Cloudinary URL (delivers full original → bandwidth). Use transform: ${TRANSFORMS.hero}`,
+    );
+  }
+  return errors;
+}
+
+/**
+ * Scan MDX/markdown for bare Cloudinary URLs in body + frontmatter.
+ */
+export function findBareCloudinaryUrls(text) {
+  const bare = [];
+  let m;
+  CLOUDINARY_URL_RE.lastIndex = 0;
+  while ((m = CLOUDINARY_URL_RE.exec(text))) {
+    const url = m[0];
+    if (!hasDeliveryTransform(url)) bare.push(url);
+  }
+  return bare;
+}
+
+export function runCloudinaryDeliveryChecks({ prefix, text, errors, legacyExempt = false }) {
+  if (legacyExempt) return;
+  const bare = findBareCloudinaryUrls(text);
+  if (bare.length) {
+    errors.push(
+      `${prefix} ${bare.length} bare Cloudinary URL(s) — add ${TRANSFORMS.hero} (bandwidth). First: ${bare[0].slice(0, 90)}…`,
+    );
+  }
+}

@@ -1,5 +1,35 @@
 [
   {
+    "file": "19-06-14_Via_Vittorio_Veneto_Lucca.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:19-06-14_Via_Vittorio_Veneto_Lucca.jpg",
+    "artist": "Alexmar983",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pages": [
+      "/guides/moving-to-italy-from-usa/"
+    ]
+  },
+  {
+    "file": "20110720_Piazza_delle_Erbe_2998.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:20110720_Piazza_delle_Erbe_2998.jpg",
+    "artist": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pages": [
+      "/guides/best-places-to-live-italy/"
+    ]
+  },
+  {
+    "file": "4107_-_Venezia_-_Palazzo_ducale_-_Colonna_21_-_Notarius_-_Foto_Giovanni_Dall'Orto,_17-Aug-2006.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:4107_-_Venezia_-_Palazzo_ducale_-_Colonna_21_-_Notarius_-_Foto_Giovanni_Dall%27Orto,_17-Aug-2006.jpg",
+    "artist": "G.dallorto",
+    "license": "Attribution",
+    "licenseUrl": "",
+    "pages": [
+      "/guides/rogito-italian-deed-of-sale/"
+    ]
+  },
+  {
     "file": "Alba_italy.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Alba_italy.jpg",
     "artist": "Cloud7",
@@ -69,6 +99,16 @@
     ]
   },
   {
+    "file": "Bologna_-_Piazza_Santo_Stefano_(42730799645).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bologna_-_Piazza_Santo_Stefano_(42730799645).jpg",
+    "artist": "Fred Romero from Paris, France",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "pages": [
+      "/guides/italy-digital-nomad-visa/"
+    ]
+  },
+  {
     "file": "Bologna_SanPetronio_MeridianGiandomenicoCassini.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Bologna_SanPetronio_MeridianGiandomenicoCassini.jpg",
     "artist": "CEphoto, Uwe Aranas",
@@ -81,6 +121,26 @@
       "/guides/emilia-romagna-property-investment-guide/",
       "/projects/bologna-bloom-living/",
       "/projects/bologna-bloom-living/"
+    ]
+  },
+  {
+    "file": "Cadastral_map_of_Chirignago,_1841.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cadastral_map_of_Chirignago,_1841.jpg",
+    "artist": "Unknown author",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "pages": [
+      "/guides/visura-catastale-italy-explained/"
+    ]
+  },
+  {
+    "file": "Campo_de'_Fiori_street_market_2016_-_19.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Campo_de%27_Fiori_street_market_2016_-_19.jpg",
+    "artist": "Jordiferrer",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pages": [
+      "/guides/cost-of-living-italy/"
     ]
   },
   {
@@ -113,6 +173,16 @@
       "/developers/nunziare-luxury-projects/",
       "/projects/nunziare-vii-lusciano/",
       "/projects/nunziare-vii-lusciano/"
+    ]
+  },
+  {
+    "file": "Cefalu_von_West.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cefalu_von_West.jpg",
+    "artist": "Moleskine",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pages": [
+      "/guides/retire-in-italy/"
     ]
   },
   {
@@ -221,6 +291,26 @@
     ]
   },
   {
+    "file": "Dawn_from_the_Fortezza,_Orvieto.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Dawn_from_the_Fortezza,_Orvieto.jpg",
+    "artist": "Andrew Parlette",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "pages": [
+      "/guides/moving-to-italy-from-uk/"
+    ]
+  },
+  {
+    "file": "Ferrara_-_Palazzo_del_Municipio_2.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ferrara_-_Palazzo_del_Municipio_2.jpg",
+    "artist": "Sien",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "pages": [
+      "/guides/italy-citizenship-by-descent/"
+    ]
+  },
+  {
     "file": "Fivizzano-ostello1.JPG",
     "source": "https://commons.wikimedia.org/wiki/File:Fivizzano-ostello1.JPG",
     "artist": "Davide Papalini",
@@ -229,6 +319,17 @@
     "pages": [
       "/projects/fivizzano-village-property/",
       "/projects/fivizzano-village-property/"
+    ]
+  },
+  {
+    "file": "FlorenceSkyline.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:FlorenceSkyline.jpg",
+    "artist": "Infrogmation",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pages": [
+      "/projects/florence-oltrarno-apartment/",
+      "/projects/florence-oltrarno-apartment/"
     ]
   },
   {
@@ -250,17 +351,6 @@
     ]
   },
   {
-    "file": "FlorenceSkyline.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:FlorenceSkyline.jpg",
-    "artist": "Infrogmation",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "pages": [
-      "/projects/florence-oltrarno-apartment/",
-      "/projects/florence-oltrarno-apartment/"
-    ]
-  },
-  {
     "file": "In_Val_d'Orcia.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:In_Val_d%27Orcia.jpg",
     "artist": "JP Vets",
@@ -268,6 +358,26 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
       "/guides/italy-property-renovation-costs-guide/"
+    ]
+  },
+  {
+    "file": "L'agenzia_immobiliare......^^^_-_panoramio.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:L%27agenzia_immobiliare......%5E%5E%5E_-_panoramio.jpg",
+    "artist": "Qu",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "pages": [
+      "/guides/caparra-confirmatoria-italy-deposit/"
+    ]
+  },
+  {
+    "file": "La_Spezia,_Biassa,_sentiero_504_per_Sant'Antonio_1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:La_Spezia,_Biassa,_sentiero_504_per_Sant%27Antonio_1.jpg",
+    "artist": "Naioli",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "pages": [
+      "/guides/usucapione-adverse-possession-italy/"
     ]
   },
   {
@@ -335,6 +445,16 @@
     ]
   },
   {
+    "file": "Milán,_Porta_Genova,_rohový_dům.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Mil%C3%A1n,_Porta_Genova,_rohov%C3%BD_d%C5%AFm.jpg",
+    "artist": "Aktron",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "pages": [
+      "/guides/condominium-fees-italy/"
+    ]
+  },
+  {
     "file": "Mole_Antonelliana_di_sera.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Mole_Antonelliana_di_sera.jpg",
     "artist": "Abbrey82",
@@ -356,17 +476,6 @@
     ]
   },
   {
-    "file": "Palazzo_della_Civiltà_Italiana.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Palazzo_della_Civilt%C3%A0_Italiana.jpg",
-    "artist": "Nicholas Gemini",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "pages": [
-      "/projects/tranio-rome-eur-apartment/",
-      "/projects/tranio-rome-eur-apartment/"
-    ]
-  },
-  {
     "file": "Palazzo_Ducale_in_Urbino.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Palazzo_Ducale_in_Urbino.jpg",
     "artist": "Vid Pogacnik",
@@ -376,6 +485,17 @@
       "/areas/urbino/",
       "/projects/urbino-university-apartments/",
       "/projects/urbino-university-apartments/"
+    ]
+  },
+  {
+    "file": "Palazzo_della_Civiltà_Italiana.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Palazzo_della_Civilt%C3%A0_Italiana.jpg",
+    "artist": "Nicholas Gemini",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "pages": [
+      "/projects/tranio-rome-eur-apartment/",
+      "/projects/tranio-rome-eur-apartment/"
     ]
   },
   {
@@ -416,19 +536,6 @@
     ]
   },
   {
-    "file": "Piazza_del_Campo,_Siena.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Piazza_del_Campo,_Siena.jpg",
-    "artist": "J. Miers - User: (WT-shared) Jtesla16 at wts wikivoyage",
-    "license": "CC BY-SA 1.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
-    "pages": [
-      "/compare/arezzo-vs-siena-property/",
-      "/compare/florence-vs-siena-property/",
-      "/projects/siena-country-villa-pool/",
-      "/projects/siena-country-villa-pool/"
-    ]
-  },
-  {
     "file": "Piazza_Duomo_Parma_2009-08.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Piazza_Duomo_Parma_2009-08.jpg",
     "artist": "Filippo Aneli",
@@ -448,6 +555,19 @@
       "/areas/arezzo/",
       "/projects/arezzo-centro-apartments/",
       "/projects/arezzo-centro-apartments/"
+    ]
+  },
+  {
+    "file": "Piazza_del_Campo,_Siena.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Piazza_del_Campo,_Siena.jpg",
+    "artist": "J. Miers - User: (WT-shared) Jtesla16 at wts wikivoyage",
+    "license": "CC BY-SA 1.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
+    "pages": [
+      "/compare/arezzo-vs-siena-property/",
+      "/compare/florence-vs-siena-property/",
+      "/projects/siena-country-villa-pool/",
+      "/projects/siena-country-villa-pool/"
     ]
   },
   {
@@ -472,6 +592,16 @@
     ]
   },
   {
+    "file": "Ponte_Vecchio_Florence.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ponte_Vecchio_Florence.jpg",
+    "artist": "Tzen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "pages": [
+      "/areas/florence/"
+    ]
+  },
+  {
     "file": "Ponte_di_Carignano_Genova_04.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Ponte_di_Carignano_Genova_04.jpg",
     "artist": "Superchilum",
@@ -484,13 +614,14 @@
     ]
   },
   {
-    "file": "Ponte_Vecchio_Florence.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Ponte_Vecchio_Florence.jpg",
-    "artist": "Tzen",
+    "file": "Porto_Ercole_-_Vista_porto.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Porto_Ercole_-_Vista_porto.JPG",
+    "artist": "unknown",
     "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "pages": [
-      "/areas/florence/"
+      "/areas/monte-argentario/",
+      "/projects/monte-argentario-sea-view/"
     ]
   },
   {
@@ -499,17 +630,6 @@
     "artist": "Itto Ogami",
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "pages": [
-      "/areas/monte-argentario/",
-      "/projects/monte-argentario-sea-view/"
-    ]
-  },
-  {
-    "file": "Porto_Ercole_-_Vista_porto.JPG",
-    "source": "https://commons.wikimedia.org/wiki/File:Porto_Ercole_-_Vista_porto.JPG",
-    "artist": "unknown",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "pages": [
       "/areas/monte-argentario/",
       "/projects/monte-argentario-sea-view/"
@@ -746,7 +866,7 @@
   {
     "file": "Viareggio_–_Panorama_preso_dal_Fanale_(xilografia).jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Viareggio_%E2%80%93_Panorama_preso_dal_Fanale_(xilografia).jpg",
-    "artist": "Unknown authorUnknown author",
+    "artist": "Unknown author",
     "license": "Public domain",
     "licenseUrl": "",
     "pages": [

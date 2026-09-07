@@ -1,22 +1,95 @@
 # Italian Estate
 
-> Independent research on Italy property investment for US, UK, and European buyers.
+> Independent, English-language research on buying property in Italy, written for foreign
+> buyers. Not a developer, not a listing portal, not a law firm.
 
 - Site: https://italian-estate.com
 - Contact: info@italian-estate.com
 - Wikidata: https://www.wikidata.org/wiki/Q140604355
-- Corpus: 224+ guides, areas, comparisons, projects, developers, and news articles
-- Markets: Milan, Rome, Tuscany, Piedmont, Liguria, Emilia-Romagna, Umbria, Marche, Abruzzo, Molise, Basilicata, Puglia, Sicily, Sardinia, Lake Como, Amalfi Coast
-- Focus: foreign buyer due diligence, cadastral/conformità checks, STR licensing (CIN/SCIA), IMU and cedolare secca, flat tax regime, regional yield comparisons
-- Not a developer, not a listing portal — editorial + shortlist consultation
+- Markets: Milan, Rome, Florence, Tuscany, Piedmont, Liguria, Emilia-Romagna, Umbria, Marche,
+  Abruzzo, Molise, Basilicata, Puglia, Calabria, Sicily, Sardinia, Lake Como, the Amalfi Coast
+- Focus: foreign-buyer eligibility and reciprocity, the purchase sequence from proposta to
+  rogito, cadastral and building-compliance checks, short-let licensing, and the tax stack
+- Editorial stance: advisory only. Transactions run through an Italian notaio, and readers are
+  told to instruct their own avvocato and commercialista rather than the agent's recommendation
 
-## Collections
-- /guides/ — legal, tax, regional investment hubs
-- /areas/ — city and district guides
-- /compare/ — city and region comparisons
-- /projects/ — curated project reviews
-- /developers/ — developer profiles
-- /news/ — market data articles
+## How figures on this site are handled
 
-## Full corpus
+Every load-bearing figure used across more than one page is registered with a statutory or
+official source and a date, and the registry is reviewed rather than generated. Where a number
+could not be sourced it was removed rather than estimated. Prices quoted from property portals
+are labelled as asking prices, which in most Italian markets run ahead of closed sales.
+
+## Statutory figures we maintain
+
+- 21%: Cedolare secca rate on short-let income from the first residential unit a landlord lets in a tax year. Source: Legge di Bilancio 2024 (L. 213/2023) art. 1 co. 63; Agenzia delle Entrate guidance on locazioni brevi. As of 2026-08-22.
+- 26%: Cedolare secca rate on short-let income from the second and each further unit let in the same tax year. Source: Legge di Bilancio 2024 (L. 213/2023) art. 1 co. 63. As of 2026-08-22.
+- 26%: Plusvalenza rate on the sale of a property that took superbonus works, where the sale falls within ten years of completion. Source: Legge di Bilancio 2024 (L. 213/2023) art. 1 co. 64-67. As of 2026-08-22.
+- 9%: Registration tax on a second-home resale purchase from a private seller, charged on cadastral value under prezzo-valore. Source: DPR 131/1986 Tariffa Parte I art. 1; prezzo-valore per L. 266/2005 art. 1 co. 497. As of 2026-08-22.
+- 2%: Registration tax on a prima casa resale purchase from a private seller, charged on cadastral value. Source: DPR 131/1986 Tariffa Parte I art. 1, nota II-bis. As of 2026-08-22.
+- 10%: VAT on a new-build second home bought from the constructing company. Source: DPR 633/1972 Tabella A Parte III n. 127-undecies. As of 2026-08-22.
+- 4%: VAT on a new-build prima casa bought from the constructing company. Source: DPR 633/1972 Tabella A Parte II n. 21. As of 2026-08-22.
+- 22%: VAT on a new-build purchase in the luxury cadastral categories A/1, A/8 and A/9. Source: DPR 633/1972; cadastral categories per DM 2 agosto 1969. As of 2026-08-22.
+- 1.06%: IVIE, the Italian tax an Italian resident pays on property held abroad, from 2024. Source: Legge di Bilancio 2024 (L. 213/2023) art. 1 co. 91. As of 2026-08-20.
+- 0.2%: IVAFE, the Italian tax an Italian resident pays on financial assets held abroad. Source: DL 201/2011 art. 19; Legge di Bilancio 2024 for the 0.4% rate on blacklisted jurisdictions. As of 2026-08-20.
+- 1.6%: Interesse legale for 2026, used for late-payment interest and for ravvedimento operoso arithmetic. Source: DM Economia e Finanze 10 dicembre 2025. As of 2026-08-22.
+- 2.5%: Floor rate applied to usufruct and bare-ownership valuation tables, which is why the 2026 tables did not move when the legal rate fell. Source: DPR 131/1986 art. 46 and the annual usufruct coefficient decree. As of 2026-08-22.
+- 24%: IRES, the Italian corporate income tax rate applying to a company holding Italian property. Source: TUIR art. 77. As of 2026-08-22.
+- 20 sqm: Minimum floor area for a habitable single-occupant dwelling after the Salva Casa reform, reduced from 28 sqm. Source: DL 69/2024 conv. L. 105/2024 art. 1; DM Sanità 5 luglio 1975 as amended. As of 2026-08-23.
+- 28 sqm: Minimum floor area for a habitable dwelling for two occupants after the Salva Casa reform. Source: DL 69/2024 conv. L. 105/2024 art. 1; DM Sanità 5 luglio 1975 as amended. As of 2026-08-23.
+- 7.3%: Share of Italian homes carrying catastrophe cover, against a mandatory regime that applies to firms only. Source: ANIA, Italian insurance association, cat-nat exposure data 2025. As of 2026-08-23.
+- 708: Comuni classified in seismic zone 1, the highest hazard band, where sismabonus and the strictest NTC rules apply. Source: Dipartimento della Protezione Civile, classificazione sismica dei comuni italiani. As of 2026-08-23.
+- 80%: Minimum Sangiovese share in Chianti Classico DOCG. Source: Disciplinare di produzione dei vini DOP Chianti Classico art. 2. As of 2026-08-28.
+- 70%: Maximum grape-to-wine conversion rate, Chianti Classico DOCG. Source: Disciplinare di produzione dei vini DOP Chianti Classico art. 4. As of 2026-08-28.
+- 1%: Annual national ceiling on new vine planting authorisations, as a share of the planted area declared at 31 July of the preceding year. Source: Reg. (UE) 1308/2013 art. 63. As of 2026-08-28.
+- 80%: Swiss withholding rate applied to new Italy-Switzerland cross-border workers, expressed as a share of ordinary cantonal rates, under the agreement of 23 December 2020. Source: Accordo Italia-Svizzera 23.12.2020, ratified by L. 83/2023, in force 17 July 2023. As of 2026-08-28.
+- €10,000: Italian exempt band on cross-border employment income for frontalieri. Source: L. 83/2023 and implementing Italian provisions on frontalieri taxation. As of 2026-08-28.
+- 4 years: Minimum duration of a concession on the Lombardy lake and waterway domain. Source: Regolamento regionale Lombardia 9/2015, disciplina della gestione del demanio lacuale e idroviario. As of 2026-08-28.
+- 40 years: Maximum duration of a concession on the Lombardy lake and waterway domain. Source: Regolamento regionale Lombardia 9/2015, disciplina della gestione del demanio lacuale e idroviario. As of 2026-08-28.
+- 15 years: Maximum duration of the substitute-tax regime for new Italian residents under art. 24-bis TUIR. Source: Art. 24-bis TUIR; increase to EUR 200,000 for residence transferred after 10 August 2024. As of 2026-08-28.
+- 10 years: Duration of the 7% substitute-tax regime for foreign pensioners under art. 24-ter TUIR. Source: Art. 24-ter TUIR; population ceiling raised from 20,000 to 30,000 from 7 April 2026. As of 2026-08-28.
+- 0.86%: Statutory IMU base rate on residential property other than a primary residence, before any comune adjustment. Source: L. 160/2019 art. 1 c. 754 (Legge di Bilancio 2020), Gazzetta Ufficiale 19G00165; comune ceiling registered separately at 1.06%. As of 2026-09-06.
+- 5.1%: Share of Italian residential transactions bought by foreign citizens in 2025, about 39,000 homes out of 766,756 normalised transactions. Source: Gate-away international buyers data for 2025 cross-referenced with OMI (Osservatorio del Mercato Immobiliare, Agenzia delle Entrate) transaction totals; verified against independent search results 2026-09-06. As of 2026-09-06.
+- €2,188: National average asking price per square metre for an Italian home, April 2026 reading, up 4.24% year on year. Asking price, not the notarised value OMI records.. Source: Immobiliare.it national asking-price index, April 2026 reading; registered in market-stats.json as italy_avg_price_sqm. As of 2026-04-30.
+- €5,653: Average asking price per square metre in the comune of Milan, April 2026. Distinct from the province at €4,148 and from Abitare Co metropolitan-area readings; district comparables are a further cut again.. Source: Immobiliare.it comune di Milano asking-price index, April 2026; cross-checked against a second index reading €5,481/sqm the same month. As of 2026-04-30.
+- 6.4%: Growth in Italian residential transactions in 2025, to 766,757 normalised sales from 719,578 in 2024. The market expanded; earlier site copy asserted a contraction.. Source: Agenzia delle Entrate / OMI, Rapporto Immobiliare 2026 — Il settore residenziale, published 21 May 2026 with ABI. As of 2025-12-31.
+- 10%: Lower bound of the all-in closing cost band this site publishes for a non-resident second home. An editorial composition decision on how to present a spread, not a measured market average.. Source: Owner decision recorded 2026-08-20 in market-stats.json (closing_cost_stack_non_resident), reconciling 7 competing bands across 125 pages. As of 2026-08-20.
+- 15%: Upper bound of that same published closing cost band for a non-resident second home bought through an agency. Prima casa sits below it; a new-build with VAT can exceed it.. Source: Owner decision recorded 2026-08-20 in market-stats.json (closing_cost_stack_non_resident), reconciling 7 competing bands across 125 pages. As of 2026-08-20.
+- 50%: Bonus ristrutturazioni deduction rate for 2026 where the renovated unit is the owner's main residence, spread over ten annual instalments within a 96,000 EUR cap per unit.. Source: Legge di Bilancio 2026 (L. 199/2025), confirming the bonus casa rates for the 2026 tax year. As of 2026-01-01.
+- 36%: Bonus ristrutturazioni deduction rate for 2026 on second homes and other residential units, the rate that applies to a property bought to let.. Source: Legge di Bilancio 2026 (L. 199/2025); the rate falls to 30% on second homes from 2027. As of 2026-01-01.
+- 5%: Statutory revaluation applied to the rendita catastale before the cadastral multiplier is used to reach cadastral value.. Source: L. 662/1996 art. 3 comma 48, the rivalutazione della rendita catastale still in force. As of 2026-09-06.
+- 5%: Forfait deduction allowed against gross rental income under the progressive IRPEF regime, in place of itemised expenses.. Source: TUIR art. 37, the standard abbattimento forfettario on canone di locazione. As of 2026-09-06.
+- 60%: Upper end of the loan-to-value Italian banks typically lend to a non-resident buyer, against materially higher ratios for residents. Market practice, not a statutory cap.. Source: Italian retail bank non-resident lending practice, tier B, cross-checked across lender product sheets 2026. As of 2026-09-06.
+- 30%: Lower bound of the gap between cadastral value and market price on Italian residential stock, the reason IMU looks small against a purchase price. Rule of thumb, tier B.. Source: OMI cadastral versus market value comparisons; the gap commonly runs 30% to 50% and varies by comune. As of 2026-09-06.
+- 20%: Deposit an Italian resident borrower is typically asked for, against 30% to 50% for a non-resident. Market practice rather than regulation.. Source: Italian retail mortgage market practice 2026, tier B, cross-checked across lender criteria. As of 2026-09-06.
+- 25%: Upper band of professional property management fees as a share of rent, reached on short-let mandates where the manager handles turnover and compliance.. Source: Italian letting and STR management mandates, tier B, observed fee schedules across Milan, Rome, Florence and Puglia. As of 2026-09-06.
+- 6%: Upper end of Italian estate agency commission charged to the buyer side before IVA, against a floor near 2% where a seller splits the fee.. Source: Italian agency mandate practice, tier B; FIAIP and regional usi e consuetudini put the common band at 2% to 6% plus IVA. As of 2026-09-06.
+- €2,000,000: Investment in Italian government bonds that qualifies for the Investor Visa, the highest of the four thresholds and the lowest risk of them.. Source: Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories. As of 2026-09-06.
+- €500,000: Investment in the share capital of an Italian limited company that qualifies for the Investor Visa. Halved to EUR 250,000 where the company is a registered innovative startup.. Source: Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories. As of 2026-09-06.
+- €250,000: Investment in a registered Italian innovative startup that qualifies for the Investor Visa. The cheapest entry to the programme and the one carrying the most equity risk.. Source: Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories. As of 2026-09-06.
+- €1,000,000: Philanthropic donation to a public interest project that qualifies for the Investor Visa. Non-recoverable, unlike the bond and equity routes.. Source: Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories. As of 2026-09-06.
+- 12%: Upper end of the narrower all-in closing cost band this site publishes for an ordinary second home, where agency commission is modest or split. The wider 10% to 15% band covers the same purchase with full agency and independent legal review.. Source: Owner decision recorded 2026-08-20 in market-stats.json (closing_cost_stack_non_resident); the 10% to 12% form is the same band stated for a lighter fee structure. As of 2026-08-20.
+- 18 months: Deadline to transfer residence to the comune where the property sits, to keep the prima casa reduced rate. The term runs from the rogito, and the undertaking must be declared in the deed itself or the benefit never arises.. Source: DPR 131/1986, Tariffa Parte I art. 1, Nota II-bis; Corte di Cassazione ordinanza 9433/2018 on the term running from the deed rather than completion of works. As of 2026-09-06.
+- 12 months: Deadline for filing the dichiarazione di successione, running from the opening of the succession, which is normally the date of death. Omission carries a penalty of 120% to 240% of the tax assessed.. Source: Agenzia delle Entrate, dichiarazione di successione filing rules and penalty schedule. As of 2026-09-06.
+
+## Start here
+
+- https://italian-estate.com/guides/buy-property-italy-foreigner/ — eligibility, reciprocity and the full sequence
+- https://italian-estate.com/guides/due-diligence-italy-property/ — what to check, and in what order
+- https://italian-estate.com/guides/cost-of-buying-property-italy/ — the transaction stack for a non-resident
+- https://italian-estate.com/guides/rogito-italian-deed-of-sale/ — the deed, and the two protections buyers miss
+- https://italian-estate.com/guides/visura-catastale-italy-explained/ — why the cadastre does not prove ownership
+- https://italian-estate.com/guides/abusi-edilizi-buying-property-italy/ — unpermitted works, the commonest deal-breaker
+
+## Sections
+
+- Guides (120): https://italian-estate.com/guides/
+- Area guides (48): https://italian-estate.com/areas/
+- Market comparisons (30): https://italian-estate.com/compare/
+- Project reviews (65): https://italian-estate.com/projects/
+- Developer profiles (15): https://italian-estate.com/developers/
+- News (4): https://italian-estate.com/news/
+
+## Full corpus (282 pages, with summaries)
+
 https://italian-estate.com/llms-full.txt

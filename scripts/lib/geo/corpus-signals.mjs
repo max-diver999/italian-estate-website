@@ -53,7 +53,12 @@ export function boilerplateLines() {
   return boilerplateCache;
 }
 
-function stripBoilerplate(text) {
+/**
+ * Exported so debt tooling reads the same text the scorer does. Shapes are
+ * measured over prose plus table cells with boilerplate removed, not over
+ * plainText, and a tool that gets that wrong undercounts by several times.
+ */
+export function stripBoilerplate(text) {
   let out = text;
   for (const b of boilerplateLines()) {
     if (!b) continue;

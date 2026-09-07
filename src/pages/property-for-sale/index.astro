@@ -1,0 +1,144 @@
+---
+export const prerender = true;
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { formatEur } from '../../lib/cardImage';
+import { loadFacets, facetHeading } from '../../lib/propertyFacets';
+import { getCollection } from 'astro:content';
+import { SITE } from '../../data/site';
+
+const projects = (await getCollection('projects'))
+  .filter((p) => !p.data.noindex)
+  .sort((a, b) => (a.data.priceFromEUR ?? Number.MAX_SAFE_INTEGER) - (b.data.priceFromEUR ?? Number.MAX_SAFE_INTEGER));
+
+const priced = projects.map((p) => p.data.priceFromEUR).filter((v): v is number => !!v && v > 0);
+const fromEur = priced.length ? Math.min(...priced) : null;
+const count = projects.length;
+
+const facets = await loadFacets();
+const regions = facets.filter((f) => f.kind === 'region');
+const types = facets.filter((f) => f.kind === 'type');
+const cities = facets.filter((f) => f.kind === 'city');
+
+const title = `Property for Sale in Italy: ${count} Homes from ${formatEur(fromEur ?? 0) || '€130K'}`;
+const description = `${count} Italian properties reviewed independently, from ${formatEur(fromEur ?? 0) || '€130K'}. Filter by region, town or property type, with running costs and the checks that matter before you offer.`;
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Property for Sale in Italy',
+    description,
+    url: `${SITE.url}/property-for-sale/`,
+    numberOfItems: count,
+  },
+];
+---
+<BaseLayout title={title} description={description} schemas={schemas}>
+  <section class="site-container py-12 md:py-16">
+    <header class="max-w-3xl mb-10">
+      <span class="badge-pill mb-4">Italy · All regions</span>
+      <h1 class="mb-4">Property for sale in Italy</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        <strong>{count} properties</strong>{fromEur ? <> from <strong>{formatEur(fromEur)}</strong></> : null}, each with an
+        independent review rather than developer copy. Prices are asking prices in euro; the running costs and the
+        checks that decide whether a purchase works are on every page.
+      </p>
+      <p class="text-sm text-[var(--color-muted)] mt-4">
+        We are not a portal. This is a reviewed shortlist, which is why it is measured in dozens rather than
+        thousands. If nothing here fits, tell us the budget and region and we will source against it.
+      </p>
+    </header>
+
+    {regions.length > 0 && (
+      <nav class="mb-10" aria-label="Property by region">
+        <h2 class="text-xl mb-4">By region</h2>
+        <ul class="flex flex-wrap gap-2 list-none p-0">
+          {regions.map((f) => (
+            <li>
+              <a class="badge-pill hover:underline" href={`/property-for-sale/${f.slug}/`}>
+                {f.label} <span class="opacity-70">{f.count}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )}
+
+    {types.length > 0 && (
+      <nav class="mb-10" aria-label="Property by type">
+        <h2 class="text-xl mb-4">By property type</h2>
+        <ul class="flex flex-wrap gap-2 list-none p-0">
+          {types.map((f) => (
+            <li>
+              <a class="badge-pill hover:underline" href={`/property-for-sale/${f.slug}/`}>
+                {f.label} <span class="opacity-70">{f.count}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )}
+
+    {cities.length > 0 && (
+      <nav class="mb-12" aria-label="Property by town">
+        <h2 class="text-xl mb-4">By town</h2>
+        <ul class="flex flex-wrap gap-2 list-none p-0">
+          {cities.map((f) => (
+            <li>
+              <a class="badge-pill hover:underline" href={`/property-for-sale/${f.slug}/`}>
+                {f.label} <span class="opacity-70">{f.count}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )}
+
+    <h2 class="text-xl mb-4">All properties, cheapest first</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-14">
+      {projects.map((project) => (
+        <ProjectCard
+          href={`/projects/${project.id}/`}
+          title={project.data.title}
+          description={project.data.description}
+          image={project.data.heroImage}
+          area={project.data.area}
+          developer={project.data.developer}
+          propertyType={project.data.propertyType}
+          status={project.data.status}
+          priceFromEur={project.data.priceFromEUR}
+        />
+      ))}
+    </div>
+
+    <div class="prose max-w-3xl mb-12 text-[var(--color-muted)]">
+      <h2 class="text-xl text-[var(--color-ink)]">Before you offer on any of these</h2>
+      <p>
+        Four checks decide whether an Italian purchase works, and none of them appear in an asking price. Reciprocity,
+        which governs whether your passport may hold freehold at all; the cadastral and planning history, where
+        unpermitted works surface; the heritage constraint, which can govern a facade and a roofline; and the annual
+        running cost, which is the number that surprises people in year two rather than year one.
+      </p>
+      <ul>
+        <li><a href="/guides/italy-reciprocity-property-foreigners/">Reciprocity: can your passport buy freehold</a></li>
+        <li><a href="/guides/due-diligence-italy-property/">Due diligence before the compromesso</a></li>
+        <li><a href="/guides/abusi-edilizi-buying-property-italy/">Abusi edilizi and unpermitted works</a></li>
+        <li><a href="/guides/cost-of-buying-property-italy/">What the purchase actually costs to complete</a></li>
+        <li><a href="/guides/italy-property-management-costs/">Annual running costs and condominio fees</a></li>
+      </ul>
+      <p>
+        If the move behind the purchase is a relocation rather than a second home, start with
+        <a href="/guides/cost-of-living-italy/"> what a month in Italy costs</a> and
+        <a href="/guides/best-places-to-live-italy/"> which places work year round</a>.
+      </p>
+    </div>
+
+    <LeadForm
+      title="Nothing here fits?"
+      subtitle="Tell us the budget, region and whether it is a home or a let. We reply within one business day with what is actually available, including off-market."
+      context="property-for-sale-hub"
+    />
+  </section>
+</BaseLayout>

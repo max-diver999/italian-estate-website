@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-22T17:43:16.386Z",
+  "updatedAt": "2026-09-06T14:38:53.517Z",
   "urls": [
     "https://italian-estate.com",
     "https://italian-estate.com/about",
@@ -110,6 +110,7 @@
     "https://italian-estate.com/guides/amalfi-coast-property-investment-guide",
     "https://italian-estate.com/guides/basilicata-property-investment-guide",
     "https://italian-estate.com/guides/best-cities-italy-rental-yield-2026",
+    "https://italian-estate.com/guides/best-places-to-live-italy",
     "https://italian-estate.com/guides/best-regions-invest-italy-property-2026",
     "https://italian-estate.com/guides/bologna-property-investment-guide",
     "https://italian-estate.com/guides/buy-property-italy-foreigner",
@@ -124,6 +125,7 @@
     "https://italian-estate.com/guides/codice-fiscale-italy-property",
     "https://italian-estate.com/guides/compromesso-italy-property-contract",
     "https://italian-estate.com/guides/cost-of-buying-property-italy",
+    "https://italian-estate.com/guides/cost-of-living-italy",
     "https://italian-estate.com/guides/costa-smeralda-property-investment-guide",
     "https://italian-estate.com/guides/digital-nomad-italy-property-guide",
     "https://italian-estate.com/guides/due-diligence-italy-property",
@@ -139,6 +141,7 @@
     "https://italian-estate.com/guides/is-italy-property-good-investment-2026",
     "https://italian-estate.com/guides/italy-1-euro-homes-program",
     "https://italian-estate.com/guides/italy-capital-gains-tax-property",
+    "https://italian-estate.com/guides/italy-citizenship-by-descent",
     "https://italian-estate.com/guides/italy-elective-residence-visa-property",
     "https://italian-estate.com/guides/italy-flat-tax-regime-new-residents",
     "https://italian-estate.com/guides/italy-holiday-let-licensing",
@@ -185,6 +188,7 @@
     "https://italian-estate.com/guides/milan-property-investment-guide",
     "https://italian-estate.com/guides/mistakes-foreign-buyers-italy",
     "https://italian-estate.com/guides/molise-property-investment-guide",
+    "https://italian-estate.com/guides/moving-to-italy-from-usa",
     "https://italian-estate.com/guides/non-resident-mortgage-italy",
     "https://italian-estate.com/guides/notaio-italy-property-role",
     "https://italian-estate.com/guides/nuda-proprieta-bare-ownership-italy",
@@ -21259,6 +21263,71 @@
       "url": "https://italian-estate.com/news/milan-living-sector-investment-2025",
       "channel": "bing",
       "at": "2026-08-22T17:43:16.386Z"
+    },
+    {
+      "url": "https://italian-estate.com/compare/italy-vs-portugal-property-investment",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/best-places-to-live-italy",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/buy-property-italy-under-500000",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/cost-of-living-italy",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/costa-smeralda-property-investment-guide",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/is-italy-property-good-investment-2026",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-1-euro-homes-program",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-citizenship-by-descent",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-elective-residence-visa-property",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-investor-visa-property",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/italy-investor-visa-requirements-2026",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/moving-to-italy-from-usa",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
+    },
+    {
+      "url": "https://italian-estate.com/guides/puglia-property-investment-guide",
+      "channel": "google",
+      "at": "2026-09-06T14:38:53.517Z"
     }
   ],
   "note": "Reset 2026-06-15 — previous file contained 219 invest-spain URLs (scaffold copy bug). Waves 3-5 Google sends not logged; re-submit recommended.",

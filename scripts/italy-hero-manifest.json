@@ -1,0 +1,77 @@
+{
+  "note": "Heroes sourced from Wikimedia Commons for guides that were carrying another slug's image. Uploads go to account #3 (bwppi9gc) per 99_Системное/CLOUDINARY_ROUTING.md.",
+  "heroes": [
+    {
+      "slug": "cost-of-living-italy",
+      "collection": "guides",
+      "commons": "Campo de' Fiori street market 2016 - 19.jpg",
+      "why": "A Roman daily market with visible per-kilo price cards is the subject of the page, not a monument."
+    },
+    {
+      "slug": "moving-to-italy-from-usa",
+      "collection": "guides",
+      "commons": "19-06-14 Via Vittorio Veneto Lucca.jpg",
+      "why": "An ordinary Lucca street with shops under lived-in flats. Lucca is a real destination for American relocators to Tuscany."
+    },
+    {
+      "slug": "italy-citizenship-by-descent",
+      "collection": "guides",
+      "commons": "Ferrara - Palazzo del Municipio 2.jpg",
+      "why": "The comune building is literally where the ufficio di stato civile holds the records a descent claim is built from."
+    },
+    {
+      "slug": "best-places-to-live-italy",
+      "collection": "guides",
+      "commons": "20110720 Piazza delle Erbe 2998.jpg",
+      "why": "Piazza delle Erbe in Verona with the market up and people crossing it. A liveable city rather than a landmark, and Verona is not claimed by any area page."
+    },
+    {
+      "slug": "italy-digital-nomad-visa",
+      "collection": "guides",
+      "commons": "Bologna - Piazza Santo Stefano (42730799645).jpg",
+      "why": "Bologna porticoes in daylight with people walking and working. A city you could live in, not a monument shot, which is what the visa is actually about."
+    },
+    {
+      "slug": "retire-in-italy",
+      "collection": "guides",
+      "commons": "Cefalu von West.jpg",
+      "why": "Cefalu from the west. A Sicilian coastal town of about 14,000 people, which is to say one that actually qualifies for the 7% pensioner regime the page is built around."
+    },
+    {
+      "slug": "moving-to-italy-from-uk",
+      "collection": "guides",
+      "commons": "Dawn from the Fortezza, Orvieto.jpg",
+      "why": "Orvieto at dawn from the Fortezza, over the Umbrian valley. Umbria is a region British buyers actually settle in, and the frame shows the modern town below the historic one rather than only the postcard half."
+    },
+    {
+      "slug": "condominium-fees-italy",
+      "collection": "guides",
+      "commons": "Milán, Porta Genova, rohový dům.jpg",
+      "why": "A Milanese corner block at dusk: exactly the multi-unit building with balconies and ground-floor shops that the condominio rules on this page govern."
+    },
+    {
+      "slug": "usucapione-adverse-possession-italy",
+      "collection": "guides",
+      "commons": "La Spezia, Biassa, sentiero 504 per Sant'Antonio 1.jpg",
+      "why": "A made stone path running beside a dry stone boundary wall. Both legal ideas on the page in one frame: the built track that creates an apparent right of way, and the permanent wall that evidences exclusive possession."
+    },
+    {
+      "slug": "rogito-italian-deed-of-sale",
+      "collection": "guides",
+      "commons": "4107 - Venezia - Palazzo ducale - Colonna 21 - Notarius - Foto Giovanni Dall'Orto, 17-Aug-2006.jpg",
+      "why": "A 14th-century capital on the Doge's Palace showing a notary at work with NOTARIVS carved above him. Italian, literally the subject, and it makes the page's point that the notarial function here is centuries old."
+    },
+    {
+      "slug": "visura-catastale-italy-explained",
+      "collection": "guides",
+      "commons": "Cadastral map of Chirignago, 1841.jpg",
+      "why": "An actual Italian cadastral map sheet. The page is about what the catasto records and what it does not, so the register itself is the subject."
+    },
+    {
+      "slug": "caparra-confirmatoria-italy-deposit",
+      "collection": "guides",
+      "commons": "L'agenzia immobiliare......^^^ - panoramio.jpg",
+      "why": "An Italian estate agency window. The proposta irrevocabile and the first money change hands here, before any notaio is involved."
+    }
+  ]
+}

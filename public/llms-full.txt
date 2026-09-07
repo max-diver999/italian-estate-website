@@ -1,18 +1,1430 @@
-# Italian Estate — full site map (scaffold)
+# Italian Estate — full page index
 
-Site: https://italian-estate.com
-Status: Astro scaffold live; editorial and project MDX batches pending.
+282 research pages on buying property in Italy, written for foreign buyers.
+Generated from the live corpus. Site: https://italian-estate.com
 
-## Hubs
-- /
-- /guides/
-- /projects/
-- /areas/
-- /compare/
-- /developers/
-- /news/
-- /about/
-- /methodology/
-- /contact/
-- /get-shortlist/
+Every figure carries a date and, where it is statutory, a citation. Italian tax rates,
+building rules and licensing requirements change; readers are told to verify with an Italian
+notaio, avvocato or commercialista before transacting. Portal prices are asking prices.
 
+## Guides (120)
+
+### 1 Euro Houses in Italy 2026: Towns, Bonds, Real Costs
+URL: https://italian-estate.com/guides/1-euro-houses-italy/
+Updated: 2026-06-15
+Where the 1 euro house schemes actually run, what the renovation bond and deadline commit you to, and the total a completed project really costs.
+
+### The 90/180-Day Schengen Rule for Italian Home Owners
+URL: https://italian-estate.com/guides/90-180-day-rule-italy-property-owners/
+Updated: 2026-08-22
+How the rolling 90/180 window counts, EES enforcement since April 2026, overstay penalties, and the visa ladder for owners. Plan stays at /get-shortlist/.
+
+### Buying Property in Abruzzo: Prices and What to Check
+URL: https://italian-estate.com/guides/abruzzo-property-investment-guide/
+Updated: 2026-09-07
+Abruzzo asks about EUR 1,192 per sqm against a national EUR 2,188. Where the coast and the mountains diverge, and why the seismic map decides the survey.
+
+### Abusi Edilizi: Buying Italian Property with Irregularities
+URL: https://italian-estate.com/guides/abusi-edilizi-buying-property-italy/
+Updated: 2026-08-26
+Building irregularities in Italian resales: severity classes, discovery, remedy costs after Salva Casa, walk-away lines. Check stock at /get-shortlist/.
+
+### Agibilità: Italy's Habitability Certificate at Purchase Time
+URL: https://italian-estate.com/guides/agibilita-certificate-italy/
+Updated: 2026-08-26
+What the agibilità (SCA) certifies, buying stock without it, price and financing effects, and how sellers fix the gap. Check any listing at /get-shortlist/.
+
+### Agriturismo Investment Italy Guide (2026) for Buyers
+URL: https://italian-estate.com/guides/agriturismo-investment-italy-guide/
+Updated: 2026-06-16
+Agriturismo investment in Italy: farm stay licensing, rural due diligence, 6-10% gross yields, Tuscany, Umbria, Puglia, agricultural land rules for foreigners.
+
+### Airbnb Investment Italy Guide 2026: CIN Rules & Yields
+URL: https://italian-estate.com/guides/airbnb-investment-italy-guide/
+Updated: 2026-06-14
+Complete guide to Airbnb investment in Italy. Current laws, rental yields, best regions, CIN requirements, tax implications, and market trends for…
+
+### Amalfi Coast Property Guide for Buyers 2026
+URL: https://italian-estate.com/guides/amalfi-coast-property-investment-guide/
+Updated: 2026-06-15
+Amalfi Coast property investment 2026: Positano €6,500-10,000/m², Ravello 2.5-5% yields, UNESCO vincolo, landslide risk, STR rules, Sorrento gateway.
+
+### Basilicata Property Investment Guide (2026) in Italy
+URL: https://italian-estate.com/guides/basilicata-property-investment-guide/
+Updated: 2026-06-18
+Basilicata property guide: Matera Sassi €2,060/m², Potenza €1,355/m², region avg €1,293/m², UNESCO caves, yields 4-5.5%, southern Italy.
+
+### Best Cities Italy Rental Yield 2026 (2026) for Buyers
+URL: https://italian-estate.com/guides/best-cities-italy-rental-yield-2026/
+Updated: 2026-06-27
+Best cities Italy rental yield 2026 ranked: Ostuni, Palermo, Bari lead 6-9% gross. Milan, Rome 3-5%. Gross vs net, STR vs LTR, cedolare secca by city.
+
+### Best Places to Live in Italy 2026: Honest Comparison
+URL: https://italian-estate.com/guides/best-places-to-live-italy/
+Updated: 2026-09-06
+Ranked on the things that decide whether you stay: hospital access, an airport that flies home, winter population, and whether the town works in February.
+
+### Best Regions to Invest in Italy Property (2026)
+URL: https://italian-estate.com/guides/best-regions-invest-italy-property-2026/
+Updated: 2026-06-14
+Best regions to invest in Italy property 2026: Lombardy yields 4.2%, Tuscany 3.8%, Puglia 6.1%. Regional price comparison, foreign buyer data, tax implications.
+
+### Bologna Property Investment Guide (2026) in Italy
+URL: https://italian-estate.com/guides/bologna-property-investment-guide/
+Updated: 2026-06-27
+Bologna property investment: €3,700/m² avg, 25-35% below Milan, 3.5-5% yields, university and hospital rental corridors, AV rail hub, FICO spillover.
+
+### Buy Property in Italy as a Foreigner (2026) for Buyers
+URL: https://italian-estate.com/guides/buy-property-italy-foreigner/
+Updated: 2026-06-27
+Complete guide to buying property in Italy as a foreigner. EU vs non-EU reciprocity rules, codice fiscale, notaio process, closing costs 10-15%, and due…
+
+### Property Italy Under 200k: Foreign Buyer
+URL: https://italian-estate.com/guides/buy-property-italy-under-200000/
+Updated: 2026-06-27
+Property Italy under 200k for foreign buyers: Sicily, inland Puglia, Abruzzo tickets, closing costs, renovation capex, yields. Model net at /get-shortlist/.
+
+### Italy Property Under €500k for Buyers 2026
+URL: https://italian-estate.com/guides/buy-property-italy-under-500000/
+Updated: 2026-06-27
+Property Italy under 500k: Milan, Puglia, Tuscany, Sicily, Bologna. €300-500k buys, 10-12% costs, yields. Shortlist /get-shortlist/.
+
+### Buying Italian Property Through a Company (SRL): 2026 Guide
+URL: https://italian-estate.com/guides/buying-property-italy-through-company/
+Updated: 2026-08-22
+SRL vs personal ownership for Italian property: purchase tax gap, IRES 24% on rent, lost 5-year CGT exemption. Model your structure at /get-shortlist/.
+
+### Cadastral Value vs Market Price Italy: 2026
+URL: https://italian-estate.com/guides/cadastral-value-vs-market-price-italy/
+Updated: 2026-06-15
+How valore catastale and rendita catastale drive Italian property taxes. Prezzo-valore formula, visura catastale checks, IMU impact, and buyer due diligence.
+
+### Calabria Property Investment Guide (2026)
+URL: https://italian-estate.com/guides/calabria-property-investment-guide/
+Updated: 2026-06-27
+Calabria property investment guide: under-200k tickets, Tropea and Reggio Calabria sub-markets, 5-8% yields, infrastructure, risks, 7% pension comuni.
+
+### Can Foreigners Buy Property Italy (2026)
+URL: https://italian-estate.com/guides/can-foreigners-buy-property-italy/
+Updated: 2026-06-14
+Yes, foreigners can buy Italian property with full ownership rights. EU citizens buy freely; non-EU need reciprocity check. No quota, no investment visa.…
+
+### Caparra Confirmatoria: The Deposit That Pays Double
+URL: https://italian-estate.com/guides/caparra-confirmatoria-italy-deposit/
+Updated: 2026-09-07
+Three Italian deposits look alike and behave nothing alike. One pays double if the seller walks. The word in your compromesso decides which you hold.
+
+### Cedolare Secca Italy Rental Property (2026)
+URL: https://italian-estate.com/guides/cedolare-secca-italy-rental-property/
+Updated: 2026-06-26
+Complete 2026 guide to cedolare secca on Italian rental income: 21% flat tax, 10% concordato, 26% on second STR unit, vs IRPEF, CIN rules, foreign owners.
+
+### Codice Fiscale for Italy Property (2026)
+URL: https://italian-estate.com/guides/codice-fiscale-italy-property/
+Updated: 2026-07-10
+How to get the codice fiscale for an Italian property purchase: consulate vs Agenzia delle Entrate, AA4/8 form, timings and rogito requirements.
+
+### Compromesso Italy Property Contract (2026)
+URL: https://italian-estate.com/guides/compromesso-italy-property-contract/
+Updated: 2026-06-15
+How the compromesso works: 10-20% caparra confirmatoria, 30-day registration with Agenzia delle Entrate, transcription protection, and safe exit clauses.
+
+### Condominio Rules for Foreign Apartment Owners in Italy
+URL: https://italian-estate.com/guides/condominio-rules-foreign-owners/
+Updated: 2026-08-26
+Millesimi, assembly majorities, ordinary vs extraordinary fees, arrears liability and STR bans in the condominio. Vet buildings at /get-shortlist/.
+
+### Condominium Fees in Italy: What a Buyer Inherits
+URL: https://italian-estate.com/guides/condominium-fees-italy/
+Updated: 2026-09-06
+You inherit the seller's unpaid charges for the current and previous management year. What millesimi govern, and what to demand before the compromesso.
+
+### Cost Of Buying Property Italy Guide (2026)
+URL: https://italian-estate.com/guides/cost-of-buying-property-italy/
+Updated: 2026-07-10
+Budget 10-15% on top of price: 2% vs 9% registration tax, notary fees, agency commission and VAT rules for foreign buyers in 2026.
+
+### Cost of Living in Italy 2026: Real Monthly Budgets
+URL: https://italian-estate.com/guides/cost-of-living-italy/
+Updated: 2026-09-06
+What a month in Italy costs by city, how it compares with the US, what owning adds on top of renting, and the income floor a visa applicant has to clear.
+
+### Costa Smeralda Property Guide for Buyers
+URL: https://italian-estate.com/guides/costa-smeralda-property-investment-guide/
+Updated: 2026-06-27
+Costa Smeralda property investment: apartments €5,500-9,500/m², 2.5-4.5% yields, Porto Cervo liquidity, German/Swiss buyers, STR rules.
+
+### Digital Nomad Italy Property Guide (2026) for Buyers
+URL: https://italian-estate.com/guides/digital-nomad-italy-property-guide/
+Updated: 2026-06-16
+Italy property for digital nomads: 2024 remote work visa, Milan and Rome coworking, 90/180 Schengen rules, buy vs rent, 183-day tax residency, STR licensing.
+
+### Due Diligence Italy Property Guide (2026)
+URL: https://italian-estate.com/guides/due-diligence-italy-property/
+Updated: 2026-06-26
+Italy property due diligence checklist: visura, planning permits, APE, CIN rental rules & tax traps: model costs via /get-shortlist/.
+
+### Emilia-Romagna Property Guide Buyers 2026 in Italy
+URL: https://italian-estate.com/guides/emilia-romagna-property-investment-guide/
+Updated: 2026-06-18
+Emilia-Romagna property guide: Bologna €3,700/m², Modena Motor Valley, Parma food capital, Rimini coast, 3.5-5% yields, AV Milan hub.
+
+### Energy Classes and the APE Certificate When Buying in Italy
+URL: https://italian-estate.com/guides/energy-class-ape-italy-property/
+Updated: 2026-08-26
+APE mechanics, classes A4 to G, the EPBD case green targets, class-G discounts and retrofit economics for Italian buyers. Screen stock at /get-shortlist/.
+
+### Florence Property Investment Guide (2026) in Italy
+URL: https://italian-estate.com/guides/florence-property-investment-guide/
+Updated: 2026-06-27
+Florence property investment: €4,737/m² avg, centro storico €5.5-8k/m², UNESCO STR caps, Oltrarno 3-5% yields, 30%+ foreign buyers, student rentals.
+
+### The Geometra: Italy's Surveyor and When You Need One
+URL: https://italian-estate.com/guides/geometra-role-italy-property/
+Updated: 2026-08-26
+What a geometra does in an Italian purchase: conformity surveys €300-1,500, cadastral filings, permits, and hiring from abroad. Via /get-shortlist/.
+
+### Gross vs Net Yield in Italy: Property Guide
+URL: https://italian-estate.com/guides/gross-vs-net-yield-italy/
+Updated: 2026-06-15
+Complete guide to gross vs. Net rental yields in Italy. Learn about property management costs, tax deductions, and yield calculation formulas.
+
+### Heritage Restricted Property Italy (2026)
+URL: https://italian-estate.com/guides/heritage-restricted-property-italy/
+Updated: 2026-06-15
+Buying a heritage-listed building in Italy: Soprintendenza permits, facade controls, renovation fines, and the checks to run before you offer. 2026 guide.
+
+### Hidden Costs Buying Property Italy (2026)
+URL: https://italian-estate.com/guides/hidden-costs-buying-property-italy/
+Updated: 2026-06-15
+Hidden costs buying property Italy: spese condominiali arrears, notary extras, IMU back taxes, TARI, CILA permits, agency splits, and renovation surprises.
+
+### How to Buy Italy Property Remotely (2026) for Buyers
+URL: https://italian-estate.com/guides/how-to-buy-italy-property-remotely/
+Updated: 2026-06-15
+Step-by-step guide to buying Italian property remotely. Learn how to manage the purchase process, open bank accounts, and sign deeds from abroad.
+
+### Buying Property in Italy: The Order the Steps Happen In
+URL: https://italian-estate.com/guides/how-to-buy-italy-property-step-by-step/
+Updated: 2026-08-27
+The Italian purchase is a dependency chain, not a checklist. Which step blocks which, where foreign buyers lose weeks, and the three deadlines that bind.
+
+### How To Calculate Rental Yield Italy (2026)
+URL: https://italian-estate.com/guides/how-to-calculate-rental-yield-italy/
+Updated: 2026-06-15
+Step-by-step guide on how to calculate rental yields in Italy. Learn about gross and net yield formulas, tax deductions, and operating expenses.
+
+### IMU Property Tax in Italy: Complete 2026 for Buyers
+URL: https://italian-estate.com/guides/imu-property-tax-italy/
+Updated: 2026-06-15
+Complete guide to the Italian annual property tax (IMU). Learn who must pay, how it is calculated, payment deadlines, and exemptions.
+
+### Is Italy Property a Good Investment? (2026)
+URL: https://italian-estate.com/guides/is-italy-property-good-investment-2026/
+Updated: 2026-06-14
+Is Italy property a good investment 2026? 719,578 transactions, 4.3% average yields, 2.6% appreciation. Bull case: tourism recovery, bear case: bureaucracy…
+
+### Italy Capital Gains Tax on Property (2026)
+URL: https://italian-estate.com/guides/italy-capital-gains-tax-property/
+Updated: 2026-07-10
+Plusvalenza at 26% if you sell within 5 years. Primary home exemption, prezzo-valore cost basis and notary withholding at the rogito.
+
+### Italian Citizenship by Descent 2026: After Law 74/2025
+URL: https://italian-estate.com/guides/italy-citizenship-by-descent/
+Updated: 2026-09-06
+Who still qualifies after the 2025 reform, what the Constitutional Court decided in March 2026, and the two-year residency route for those now excluded.
+
+### Italy Digital Nomad Visa 2026: Who Actually Qualifies
+URL: https://italian-estate.com/guides/italy-digital-nomad-visa/
+Updated: 2026-09-06
+The legal income floor is EUR 24,790; consulates ask 25,500 to 28,000. Two categories, the gate that refuses most applicants, and the tax consequence.
+
+### Italy Elective Residence Visa: 2026 Guide
+URL: https://italian-estate.com/guides/italy-elective-residence-visa-property/
+Updated: 2026-06-15
+Complete guide to the Italian Elective Residence Visa (ERV). Learn about minimum passive income requirements, property purchase rules, and application steps.
+
+### Italy Flat Tax Regime New Residents (2026) for Buyers
+URL: https://italian-estate.com/guides/italy-flat-tax-regime-new-residents/
+Updated: 2026-06-15
+Complete guide to the Italian flat tax regime (€100k/€200k) for new residents. Learn about eligibility, tax benefits, and property purchase rules.
+
+### Italy Golden Visa 2026: Thresholds and Who Cannot Apply
+URL: https://italian-estate.com/guides/italy-golden-visa/
+Updated: 2026-06-25
+Italy investor visa = €250k startup / €500k company / €2M bonds, NOT property. Zero stay requirement. 3-month capital deadline. Requirements checklist.
+
+### Italy Holiday Let Licensing Guide (2026)
+URL: https://italian-estate.com/guides/italy-holiday-let-licensing/
+Updated: 2026-07-27
+Short-term and holiday lets in Italy need a national CIN and regional CIR. Missing CIN: fines €800-8,000. SCIA if you run 3+ listings. Safety kit rules.
+
+### Italy Inheritance Law for Property (2026) for Buyers
+URL: https://italian-estate.com/guides/italy-inheritance-law-property-foreigners/
+Updated: 2026-06-15
+Italy inheritance law for foreign property owners: forced heirship quotas, 2026 succession tax rates, EU law choice, international wills, and probate timelines.
+
+### Italy Investor Visa Requirements Guide 2026 for Buyers
+URL: https://italian-estate.com/guides/italy-investor-visa-requirements-2026/
+Updated: 2026-06-25
+Italy investor visa requirements 2026: Nulla Osta, consulate & Questura checklists, AML docs, 3-month timeline. Free property shortlist.
+
+### IVIE and IVAFE: Italy Wealth Tax on Foreign (2026)
+URL: https://italian-estate.com/guides/italy-ivie-ivafe-foreign-property-owners/
+Updated: 2026-06-26
+IVIE & IVAFE for Italy property owners: resident vs non-resident rules, IMU on Italian homes, flat tax. Model at /get-shortlist/.
+
+### Italy New-Build Warranties: Decennale, Defects, Guarantees
+URL: https://italian-estate.com/guides/italy-new-build-warranty-defects/
+Updated: 2026-08-22
+D.Lgs 122/2005 protections: fideiussione on advances, 10-year polizza decennale, 2-year defect windows and claim deadlines. Vet developers at /get-shortlist/.
+
+### Italy Off-Plan Property Guide 2026: Milan & Escrow Rules
+URL: https://italian-estate.com/guides/italy-off-plan-property-guide/
+Updated: 2026-06-27
+Italy off-plan property: caparra, building permits, developer DD, 10% VAT second homes, escrow, Milan vs Puglia nZEB, timeline to rogito. Free shortlist.
+
+### Italy Prima Casa vs Second Home Tax (2026)
+URL: https://italian-estate.com/guides/italy-prima-casa-vs-second-home-tax/
+Updated: 2026-06-15
+Comparison of Italy's Prima Casa and second home tax regimes. Learn about purchase tax reductions, annual IMU exemptions, and residency requirements.
+
+### Italian Property Auctions: Aste Giudiziarie for Foreigners
+URL: https://italian-estate.com/guides/italy-property-auctions-foreigners/
+Updated: 2026-08-22
+How aste giudiziarie work: portale vendite pubbliche, 10% deposit, 120-day balance, offers 25% below base. Get auction-grade checks at /get-shortlist/.
+
+### Nationality and Italian Property: What It Actually Changes
+URL: https://italian-estate.com/guides/italy-property-by-nationality-guide/
+Updated: 2026-08-27
+Italian law tests one thing about your nationality: reciprocity, read from your passport. Everything else that differs is your own country's tax code.
+
+### Italy Property Closing Costs: Complete 2026
+URL: https://italian-estate.com/guides/italy-property-closing-costs-breakdown/
+Updated: 2026-06-27
+Full closing-cost stack for Italian property: registration tax, notary, agency, mortgage fees and fixed duties, with worked examples per budget.
+
+### American Buyers in Italy: The Euro Mortgage Is Taxable
+URL: https://italian-estate.com/guides/italy-property-for-americans/
+Updated: 2026-08-27
+US law treats a euro mortgage as a separate currency transaction from the house it bought, and Italy's five-year exemption buys an American nothing.
+
+### Australians in Italy: Leaving Australia Is the Taxable Event
+URL: https://italian-estate.com/guides/italy-property-for-australians/
+Updated: 2026-08-27
+CGT event I1 deems a sale of your Italian house the day you stop being an Australian resident, and the deferral choice covers the whole portfolio or none.
+
+### Canadian Buyers in Italy: One Booking Changes Everything
+URL: https://italian-estate.com/guides/italy-property-for-canadians/
+Updated: 2026-08-27
+A personal-use Italian house is invisible to Canada. The first paid letting makes it reportable and can trigger a deemed sale at market value.
+
+### Dutch Buyers in Italy: Taxed on a Gain You Cannot Spend
+URL: https://italian-estate.com/guides/italy-property-for-dutch-buyers/
+Updated: 2026-08-27
+From 2026 the Dutch box 3 actual-return calculation counts unrealised value changes, so an Italian house is taxed on paper appreciation each year.
+
+### French Buyers in Italy: The House Italy Would Never Tax
+URL: https://italian-estate.com/guides/italy-property-for-french-buyers/
+Updated: 2026-08-27
+IFI reaches worldwide real estate, so an Italian house creates a French wealth tax that Italy itself never charges on it. Where the threshold bites.
+
+### German Buyers in Italy: Why Germany Taxes None of It
+URL: https://italian-estate.com/guides/italy-property-for-germans/
+Updated: 2026-08-27
+Germany exempts Italian rental income and, uniquely for EU property, does not use it to raise your German rate. What that changes about the decisions.
+
+### Irish Buyers in Italy: Italy's Tax Relief Costs You More
+URL: https://italian-estate.com/guides/italy-property-for-irish-buyers/
+Updated: 2026-08-27
+No Ireland-Italy succession treaty exists. Italy's million-euro family exemption gives an Irish family no credit at all, so CAT lands on the whole house.
+
+### Israeli Buyers in Italy: The 15% Election Costs You More
+URL: https://italian-estate.com/guides/italy-property-for-israeli-buyers/
+Updated: 2026-08-27
+Israel's flat 15% on foreign rent surrenders the credit for Italian tax already paid, so the cheaper-looking route can mean paying 36% on the same euro.
+
+### Scandinavians in Italy: Three Countries, Three Answers
+URL: https://italian-estate.com/guides/italy-property-for-scandinavian-buyers/
+Updated: 2026-08-27
+Denmark taxes your Italian house annually, Norway counts it in wealth tax, Sweden ignores it entirely. The same purchase, three different outcomes.
+
+### Swiss Buyers in Italy: Exempt, and Charged for It Twice
+URL: https://italian-estate.com/guides/italy-property-for-swiss-buyers/
+Updated: 2026-08-27
+Switzerland never taxes your Italian house and still charges for it: exemption with progression, plus a proportional split that shrinks your Swiss deduction.
+
+### Buying in Italy from the UAE: Your Passport Decides, Not Dubai
+URL: https://italian-estate.com/guides/italy-property-for-uae-buyers/
+Updated: 2026-08-27
+Italy tests reciprocity on citizenship, so a Dubai residence visa answers a question nobody asked. And with no UAE income tax, Italian tax is final.
+
+### British Buyers in Italy: A 1966 Treaty Still Decides It
+URL: https://italian-estate.com/guides/italy-property-for-uk-buyers/
+Updated: 2026-08-27
+A pre-1975 estate duty convention with detailed situs rules governs your Italian house for UK inheritance tax, and buying raises your next SDLT bill.
+
+### Insuring an Italian Home: Policies, Costs, Catastrophe Cover
+URL: https://italian-estate.com/guides/italy-property-insurance-guide/
+Updated: 2026-08-26
+Italian home insurance for foreign owners: fire policies banks require, multirischi covers, quake and flood extensions, premiums and claims. /get-shortlist/.
+
+### Italy Property Guide: Yields, Markets 2026 for Buyers
+URL: https://italian-estate.com/guides/italy-property-investment-guide/
+Updated: 2026-06-27
+Complete Italy property investment guide, 719,578 transactions in 2024, foreign buyer insights, yield bands from Puglia to Tuscany, market outlook 2026.
+
+### Italy Property Management Costs: 2026 Guide
+URL: https://italian-estate.com/guides/italy-property-management-costs/
+Updated: 2026-06-15
+Complete guide to property management costs in Italy. Learn about agency fees, maintenance expenses, utility bills, and tax deductions for rental property.
+
+### Italy Property Market Forecast 2026-2027 for Buyers
+URL: https://italian-estate.com/guides/italy-property-market-forecast-2026-2027/
+Updated: 2026-06-15
+Complete guide to the Italian property market forecast for 2026-2027. Learn about price trends, transaction volumes, interest rates, and regional forecasts.
+
+### Making an Offer on Italian Property: Proposta d'Acquisto
+URL: https://italian-estate.com/guides/italy-property-offer-negotiation/
+Updated: 2026-08-22
+Proposta d'acquisto mechanics, caparra at offer stage, discount data and negotiation levers that work in Italy. Test your target price at /get-shortlist/.
+
+### Italy Property Renovation Costs 2026: Guide
+URL: https://italian-estate.com/guides/italy-property-renovation-costs-guide/
+Updated: 2026-06-27
+Renovation costs Italy property 2026: €400-2,500/sqm bands, seismic retrofit, trulli, pools, Soprintendenza premiums, and 12-24 month timelines.
+
+### How to Avoid Italy Property Scams (2026)
+URL: https://italian-estate.com/guides/italy-property-scams-avoid/
+Updated: 2026-06-15
+Complete guide to avoiding property scams in Italy. Learn about fake listings, double selling, structural defects, and how to protect your investment.
+
+### Property Tax in Italy for Foreigners (2026)
+URL: https://italian-estate.com/guides/italy-property-taxes-foreign-buyers-guide/
+Updated: 2026-06-26
+Italy property taxes hub for foreign buyers: purchase levies, IMU, cedolare secca, CGT, IVIE. Model net costs at /get-shortlist/.
+
+### Planning an Italy Property Viewing Trip: Checklist and Costs
+URL: https://italian-estate.com/guides/italy-property-viewing-trip-checklist/
+Updated: 2026-08-22
+A 3-day viewing trip that decides: 6-10 viewings, in-person checks, geometra pre-checks, budgets, after-trip framework. Book via /get-shortlist/.
+
+### Italy Real Estate Market Data 2025: 766,757 Sales
+URL: https://italian-estate.com/guides/italy-real-estate-market-data-2025/
+Updated: 2026-09-06
+The OMI 2025 numbers for Italian housing: 766,757 sales, EUR 124bn turnover, mortgage and rental data, and where asking prices diverge from deeds.
+
+### Italy Reciprocity Rule for Foreign Property (2026)
+URL: https://italian-estate.com/guides/italy-reciprocity-property-foreigners/
+Updated: 2026-07-27
+US and UK: full buying rights. Canada: provincial check. Notaio verifies MAECI reciprocity before rogito. Country list and how to confirm your passport.
+
+### Italy Registration Tax: Stamp Duty Equivalent 2026
+URL: https://italian-estate.com/guides/italy-registration-tax-property/
+Updated: 2026-06-15
+Italy has no stamp duty. The imposta di registro does that job, at 2% or 9% of cadastral value rather than price. Rates, mechanics and worked examples.
+
+### Italy Rental Yield Guide for Foreign Buyers (2026)
+URL: https://italian-estate.com/guides/italy-rental-yield-guide/
+Updated: 2026-06-27
+Comprehensive guide to Italian rental yields by region. Milan 2-5%, Tuscany 4-7%, Puglia 5-8%, Sicily 6-10%. Tax strategies, STR regulations, worked examples.
+
+### Lake Como Property Investment Guide (2026) in Italy
+URL: https://italian-estate.com/guides/lake-como-property-investment-guide/
+Updated: 2026-06-27
+Lake Como property investment guide: lakefront €8,000 to 25,000/m², 2 to 3% yields, foreign buyer data, STR rules, sub-markets, risks & due diligence.
+
+### Liguria Property Investment Guide (2026) in Italy
+URL: https://italian-estate.com/guides/liguria-property-investment-guide/
+Updated: 2026-06-15
+Liguria property investment: prime Riviera €3,500-8,000/m², Portofino and Cinque Terre 3-5% yields, British/German/Swiss buyer data, landslide risks.
+
+### Marche Property Guide for Foreign Buyers
+URL: https://italian-estate.com/guides/marche-property-investment-guide/
+Updated: 2026-06-18
+Marche property guide: Ancona €1,541/m², Urbino UNESCO, region avg €1,499/m², Adriatic coast, yields 4-5.5%, central Italy value.
+
+### Milan Property Investment Guide for Foreign
+URL: https://italian-estate.com/guides/milan-property-investment-guide/
+Updated: 2026-06-15
+Milan property investment: centro €4,500-7,500/m², 3-5% long-term yields, 22% foreign buyer share, Porta Nuova and Scali Ferroviari regeneration zones.
+
+### Mistakes Foreign Buyers Italy Guide (2026) for Buyers
+URL: https://italian-estate.com/guides/mistakes-foreign-buyers-italy/
+Updated: 2026-06-14
+Critical mistakes foreign buyers make when purchasing Italian property. Agent-paid lawyers, abusivismo edilizio, skipping visura catastale, CIN assumptions,…
+
+### Molise Housing Market: Prices and What to Check
+URL: https://italian-estate.com/guides/molise-property-investment-guide/
+Updated: 2026-09-07
+Italy's cheapest mainland region asks EUR 1,036 to 1,139 per sqm, with 35 km of coast at Termoli and an inland floor near EUR 669. What the discount buys.
+
+### Moving to Italy from the UK in 2026: What Brexit Changed
+URL: https://italian-estate.com/guides/moving-to-italy-from-uk/
+Updated: 2026-09-06
+The driving licence deal expires in March 2028. The S1 form makes healthcare free for pensioners and costs everyone else EUR 2,000. Your pension is not frozen.
+
+### Moving to Italy from the USA 2026: Visas, Costs, Steps
+URL: https://italian-estate.com/guides/moving-to-italy-from-usa/
+Updated: 2026-09-06
+Which visa an American can actually get, the order the steps have to happen in, what the first year costs, and why your US tax return follows you across.
+
+### Non Resident Mortgage Italy Guide (2026)
+URL: https://italian-estate.com/guides/non-resident-mortgage-italy/
+Updated: 2026-07-27
+Italy mortgage for foreign buyers: 50-60% LTV, Intesa and UniCredit, 6-10 week approval. Income docs, Euribor 2026 rates and top rejection reasons.
+
+### Notaio Role in Italian Property Buys 2026 in Italy
+URL: https://italian-estate.com/guides/notaio-italy-property-role/
+Updated: 2026-06-15
+Complete guide to the role of the Italian notary (notaio) in property transactions. Learn about their duties, fees, escrow services, and purchase taxes.
+
+### Nuda Proprietà: Bare Ownership Property Investment in Italy
+URL: https://italian-estate.com/guides/nuda-proprieta-bare-ownership-italy/
+Updated: 2026-08-22
+Buy Italian property 25-50% below market via nuda proprietà: MEF age coefficients, usufruct rules, risks and exit. Screen live deals at /get-shortlist/.
+
+### Piedmont Property Investment Guide (2026) in Italy
+URL: https://italian-estate.com/guides/piedmont-property-investment-guide/
+Updated: 2026-06-18
+Piedmont property guide: Turin €2,200/m², Langhe wine hills, Alba Barolo, 4-5% urban yields, Alps access, Milan commuter value.
+
+### Power of Attorney for Italy Property (2026)
+URL: https://italian-estate.com/guides/power-of-attorney-property-italy/
+Updated: 2026-06-15
+Complete guide to granting Power of Attorney (Procura Speciale) for your Italian property purchase. Learn about drafting, apostille, and legal costs.
+
+### Preliminare Trascritto: Registered Contract Protection
+URL: https://italian-estate.com/guides/preliminare-trascritto-italy/
+Updated: 2026-08-26
+How transcribing the preliminary contract shields Italian buyers: art. 2645-bis priority, the 1-year/3-year lapse rule, costs and when it pays. /get-shortlist/.
+
+### Puglia Property Guide: Yields & Areas 2026
+URL: https://italian-estate.com/guides/puglia-property-investment-guide/
+Updated: 2026-06-14
+Complete Puglia property investment guide. 2,300 foreign purchases, Ostuni #1 comune nationally, 5-8% yields, trulli restoration, coastal opportunities.
+
+### Rent-to-Buy in Italy (Affitto con Riscatto): How It Works
+URL: https://italian-estate.com/guides/rent-to-buy-italy-affitto-con-riscatto/
+Updated: 2026-08-22
+Italy's rent-to-buy: canone split, 10-year registered protection, walk-away economics for both sides, tax during the rental phase. Plan at /get-shortlist/.
+
+### Retire in Italy 2026: The Visa, the 7% Tax, the Real Costs
+URL: https://italian-estate.com/guides/retire-in-italy/
+Updated: 2026-09-06
+The elective residence visa forbids all work. The 7% pensioner tax now reaches towns of 30,000. Healthcare costs EUR 2,000 a year and expires every December.
+
+### The Rogito: Italy's Deed of Sale and the Gap After It
+URL: https://italian-estate.com/guides/rogito-italian-deed-of-sale/
+Updated: 2026-09-07
+Signing does not make you owner against the world. Transcription does, and the free deposit protection that covers the gap has to be asked for.
+
+### Rome Property Investment Guide 2026: Prices & Yields
+URL: https://italian-estate.com/guides/rome-property-investment-guide/
+Updated: 2026-06-15
+Rome property investment 2026: prime €3,500-6,500/m², Jubilee demand +44.7% foreign enquiries, centro storico heritage rules, CIN licensing, yields 2.5-5%.
+
+### The Salva Casa Decree: What It Changes for Property Buyers
+URL: https://italian-estate.com/guides/salva-casa-decree-property-buyers/
+Updated: 2026-08-26
+Italy's 2024 Salva Casa reform: graduated tolerances up to 6%, easier sanatoria, stato legittimo and mini-flat rules for resale buyers. Ask at /get-shortlist/.
+
+### Sardinia Property Investment Guide (2026) in Italy
+URL: https://italian-estate.com/guides/sardinia-property-investment-guide/
+Updated: 2026-06-27
+Sardinia property investment: €2,500-12,000/m² by zone, 3-6% yields, Costa Smeralda ultra-luxury. German/Swiss/Nordic buyers, maritime concessions, STR rules.
+
+### Seismic Zones and Earthquake Risk for Italian Buyers
+URL: https://italian-estate.com/guides/seismic-zones-italy-property/
+Updated: 2026-08-26
+Italy's zones 1-4 explained: what classification means for price, insurance, retrofit costs and the sismabonus, with an Abruzzo case. Screen at /get-shortlist/.
+
+### Selling Property in Italy as a Foreigner: Process and Costs
+URL: https://italian-estate.com/guides/selling-property-italy-foreigner/
+Updated: 2026-08-22
+Sell-side playbook: documents (APE, planimetria, agibilità), mandates 3-5%, pricing, plusvalenza and the superbonus 10-year rule. Start at /get-shortlist/.
+
+### Short Term Rental Rules Italy Guide (2026) for Buyers
+URL: https://italian-estate.com/guides/short-term-rental-rules-italy/
+Updated: 2026-06-14
+Italy short-term rental regulations 2026: CIN national ID, cedolare secca tax rates, business threshold 3 properties, tourist taxes, permits SCIA. Complete…
+
+### Sicily Property Guide for Foreign Buyers in Italy
+URL: https://italian-estate.com/guides/sicily-property-investment-guide/
+Updated: 2026-06-14
+Sicily property investment guide. €1,168/m² regional average, 6-10% yields, foreign buyers €5.5B/€428k avg, Palermo/Catania/Taormina sub-markets, frontier…
+
+### Buying After the Superbonus: Credits, Risks, Renovated Stock
+URL: https://italian-estate.com/guides/superbonus-aftermath-property-buyers/
+Updated: 2026-08-26
+Buying superbonus-renovated Italian property: credit checks, contractor disputes, unfinished sites, protective questions. Vet at /get-shortlist/.
+
+### Transferring Money to Italy for a Property Purchase
+URL: https://italian-estate.com/guides/transferring-money-to-italy-property/
+Updated: 2026-08-22
+Moving purchase funds to Italy: SEPA vs SWIFT vs FX brokers, assegno circolare, AML checks, notary price deposit, €5,000 cash cap. Plan at /get-shortlist/.
+
+### Tuscany Inland Property Guide 2026: Arezzo & Val d'Orcia
+URL: https://italian-estate.com/guides/tuscany-inland-property-guide/
+Updated: 2026-06-18
+Tuscany inland guide: Siena UNESCO, Arezzo value €1,450/m², Val d'Orcia UNESCO hills, yields 3-6%, inland vs coast strategy.
+
+### Tuscany Property Investment Guide (2026)
+URL: https://italian-estate.com/guides/tuscany-property-investment-guide/
+Updated: 2026-06-27
+Complete guide to buying property in Tuscany for investment. Market data, yields 4-7%, foreign buyer profile, STR rules, sub-regions (Florence €4,737/m²,…
+
+### UK Tax on Italy Holiday Home: 2026 Owner
+URL: https://italian-estate.com/guides/uk-tax-italy-holiday-home/
+Updated: 2026-07-10
+UK owners of Italian homes: SA105 rental reporting, cedolare secca 21-26%, IMU bills, UK CGT on sale and treaty relief that limits double tax.
+
+### Umbria Property Guide for Foreign Buyers
+URL: https://italian-estate.com/guides/umbria-property-investment-guide/
+Updated: 2026-06-18
+Umbria property guide: Perugia €1,347/m², Assisi UNESCO €2,525/m², region avg €1,180/m², yields 4-5.5%, green heart Italy.
+
+### Us Tax Italy Rental Property Guide (2026)
+URL: https://italian-estate.com/guides/us-tax-italy-rental-property/
+Updated: 2026-06-15
+US owners must report Italian rental income on Schedule E, claim FTC on Form 1116, file FBAR/FATCA if accounts exceed $10k, understand cedolare secca 21%/26%.
+
+### Usucapione: Adverse Possession in Italy and Absent Owners
+URL: https://italian-estate.com/guides/usucapione-adverse-possession-italy/
+Updated: 2026-09-07
+Twenty years of possession transfers Italian title, ten with good faith, five on rural land. Why a foreign owner who visits twice a year is the exposed party.
+
+### Venice Property Guide for Foreign Buyers in Italy
+URL: https://italian-estate.com/guides/venice-property-investment-guide/
+Updated: 2026-06-27
+Venice property investment 2026: UNESCO constraints, STR two-track licensing, Mestre vs historic center €1,800-5,600/m², acqua alta insurance, yields 2-5%.
+
+### Vineyard Property Investment Italy Guide (2026)
+URL: https://italian-estate.com/guides/vineyard-property-investment-italy-guide/
+Updated: 2026-06-16
+Vineyard property in Italy: Langhe, Chianti, Tuscany prices per hectare, cantina licenses, agricultural land rules for non-EU buyers, lifestyle vs yield.
+
+### Visura Catastale: What It Proves, and What It Cannot
+URL: https://italian-estate.com/guides/visura-catastale-italy-explained/
+Updated: 2026-09-07
+The Italian cadastre does not prove ownership. It sets your tax, decides whether you get the prima casa rate, and names someone who may not be the owner.
+
+## Area guides (48)
+
+### Alba Property: Company Buses Decide Where People Live
+URL: https://italian-estate.com/areas/alba/
+Updated: 2026-08-28
+Ferrero's shuttle network gathers workers from the Langhe valleys each morning. Which villages it serves shapes residential demand across the whole district.
+
+### Ancona Property: A 1982 Landslide Still Draws the Map
+URL: https://italian-estate.com/areas/ancona/
+Updated: 2026-08-28
+342 hectares moved in one night in December 1982, taking 280 buildings and two hospitals. The slope is still the first question about any Ancona address.
+
+### Arezzo Property: A Letting Calendar That Repeats Monthly
+URL: https://italian-estate.com/areas/arezzo/
+Updated: 2026-08-28
+The antiques fair fills Arezzo on the first weekend of every month, and a gold district of 1,200 firms fills it the rest of the time. Two calendars, one city.
+
+### Assisi Property: A Demand Calendar Set by Statute
+URL: https://italian-estate.com/areas/assisi/
+Updated: 2026-08-28
+Law 151 of 8 October 2025 made 4 October a national holiday again from 2026, the centenary year. Assisi's letting year is liturgical, not seasonal.
+
+### Bari Property: The Basso Is Rarely a Registered Dwelling
+URL: https://italian-estate.com/areas/bari/
+Updated: 2026-08-28
+Bari Vecchia's ground-floor rooms often sit in non-residential cadastral categories. The 2024 Salva Casa derogations changed what can be done about it.
+
+### Bellagio Property: The Dock Is Not in the Deed
+URL: https://italian-estate.com/areas/bellagio/
+Updated: 2026-08-28
+Lake Como's shore is public domain. A jetty, mooring or lakeside beach is held under a concession granted by the basin authority, not conveyed with the villa.
+
+### Bologna Property: The Portico Is Private and You Pay
+URL: https://italian-estate.com/areas/bologna/
+Updated: 2026-08-28
+Bologna's UNESCO porticoes are privately owned and publicly used. Maintenance of the pavement, columns and ceiling sits in the condominium accounts.
+
+### Campobasso Property: Read the Building's Date First
+URL: https://italian-estate.com/areas/campobasso/
+Updated: 2026-08-28
+Italy's modern seismic code was written after the 2002 collapse in this province. Before March 2003 the comuni here carried no anti-seismic duty at all.
+
+### Carovigno Property: Torre Guaceto Sets the Rules
+URL: https://italian-estate.com/areas/carovigno/
+Updated: 2026-08-28
+A state nature reserve of about 1,200 hectares on land and 600 at sea, zoned A to D, decides what a Carovigno property may do with pools, water and access.
+
+### Chianti Property: You Buy an Entitlement, Not a View
+URL: https://italian-estate.com/areas/chianti/
+Updated: 2026-08-28
+A Chianti hillside sells a registered vineyard entitlement. Planting authorisations do not transfer between companies, and the DOCG rules decide eligibility.
+
+### Chieti Property Investment University Hill
+URL: https://italian-estate.com/areas/chieti/
+Updated: 2026-08-20
+Chieti property guide 2026: university hill town ~€1,080/m² comune, provincial rent ~€6.96/m²/mo, gross yields 4.5-5.5%, Università Chieti-Pescara tenants.
+
+### Cisternino Property Investment Guide Valle in Italy
+URL: https://italian-estate.com/areas/cisternino/
+Updated: 2026-08-20
+Cisternino Valle d'Itria property from €150k. Authentic hill village, 5-6% yields, lower entry than Ostuni. Trulli, masseria, foreign buyer guide.
+
+### Como Property: The 2023 Agreement Rewrote Who Pays Tax
+URL: https://italian-estate.com/areas/como/
+Updated: 2026-08-28
+Law 83/2023 brought the new Italy-Switzerland commuter agreement into force on 17 July 2023. Where you live decides whether it applies to you at all.
+
+### Costa Smeralda Property Guide for Buyers in Italy
+URL: https://italian-estate.com/areas/costa-smeralda/
+Updated: 2026-08-20
+Costa Smeralda property prices €6,000-15,000+/m²: Porto Cervo ultra-luxury, 2-4% gross yields, yacht marina lifestyle, consorzio planning rules.
+
+### Florence Property: The Short-Let Door Closed in May 2025
+URL: https://italian-estate.com/areas/florence/
+Updated: 2026-08-28
+Florence capped short lets in the historic core to units already in use during 2024, banned keyboxes on facades and set a 28 square metre floor.
+
+### Genoa Property: The Public Lift Is the Transport Link
+URL: https://italian-estate.com/areas/genoa/
+Updated: 2026-08-28
+Twelve municipal lifts, two funiculars and a rack railway are part of Genoa's transit network. Which one serves an address matters more than distance does.
+
+### Langhe Property Guide: Piedmont Wine 2026
+URL: https://italian-estate.com/areas/langhe/
+Updated: 2026-08-20
+Langhe property guide: Barolo hills €1,800-4,500/m², agriturismo yields, UNESCO vineyards, truffle tourism, Piedmont wine country.
+
+### Lecce Property: Xylella Obligations Attach to the Land
+URL: https://italian-estate.com/areas/lecce/
+Updated: 2026-08-28
+The whole province sits in the Salento infected zone under EU rules. Felling, monitoring and replanting duties run with the land, not with the seller.
+
+### Lucca Property Investment Guide for Foreign in Italy
+URL: https://italian-estate.com/areas/lucca/
+Updated: 2026-08-20
+Lucca walled-city prices €2,800-4,500/m², Garfagnana villas, Versilia coast access, 4-6% yields, STR rules and heritage limits for British and German buyers.
+
+### Matera Property: What a Sasso Title Actually Contains
+URL: https://italian-estate.com/areas/matera/
+Updated: 2026-08-28
+Much of the Sassi is State property the comune holds on a ninety-nine year concession and sub-concedes for thirty. The first cohort is now expiring.
+
+### Milan Navigli Property Guide: Buyers 2026 in Italy
+URL: https://italian-estate.com/areas/milan-navigli/
+Updated: 2026-08-20
+Milan Navigli property: €5,000-7,000/m² canal prices, nightlife rental demand, young-professional tenants, and STR rules vs centro caps. Investor guide.
+
+### Modena Property: The Building File Carries a 2012 Date
+URL: https://italian-estate.com/areas/modena/
+Updated: 2026-08-28
+The May 2012 earthquakes left the province with a documentary record per building: agibilità assessments, repair projects and public contribution files.
+
+### Monte Argentario Tuscany Coast Guide 2026 in Italy
+URL: https://italian-estate.com/areas/monte-argentario/
+Updated: 2026-08-20
+Monte Argentario guide: Tuscany coast promontory, Porto Ercole and Santo Stefano, €3,500-8,000/m², Gate-away +13.6% enquiry growth in 2025.
+
+### Naples Property and the Volcanic Zoning That Binds It
+URL: https://italian-estate.com/areas/naples/
+Updated: 2026-08-28
+Two volcanic emergency zones govern building in Naples. The Campi Flegrei perimeter now reaches Posillipo and Bagnoli, and it decides what a deed permits.
+
+### Noto Property: One Building Type, One Failure Mode
+URL: https://italian-estate.com/areas/noto/
+Updated: 2026-08-28
+Eight Val di Noto towns were rebuilt after 1693 in a few decades, in one stone and one technique. The whole stock therefore ages and fails together.
+
+### Ostuni Property Guide: Prices & Yields 2026 in Italy
+URL: https://italian-estate.com/areas/ostuni/
+Updated: 2026-08-20
+Ostuni property guide: Italy's top foreign-buyer comune, €470k villas, 5-8% yields, trulli and pools near Valle d'Itria and the Adriatic coast.
+
+### Palermo Property: Your Building Has an Assigned Category
+URL: https://italian-estate.com/areas/palermo/
+Updated: 2026-08-28
+The 1993 detailed plan for Palermo's historic centre assigns every building a permitted intervention category. It decides what you may do before you buy.
+
+### Parma Property: Letting to the EU Agency Tenant Class
+URL: https://italian-estate.com/areas/parma/
+Updated: 2026-08-28
+EFSA gives Parma a tenant nobody else in Italy has: fixed-term EU staff on two to four year postings that no standard Italian lease form was built for.
+
+### Perugia Property: A Rental Market That Turns Monthly
+URL: https://italian-estate.com/areas/perugia/
+Updated: 2026-08-28
+The university for foreigners enrols by the month, with quarterly cohorts in January, April, July and October. Perugia has no academic-year vacancy.
+
+### Pescara Property: A Seafront Held on State Concessions
+URL: https://italian-estate.com/areas/pescara/
+Updated: 2026-08-28
+The beach in front of a Pescara apartment is state property under concession, and those concessions have been in legal dispute for two decades.
+
+### Polignano a Mare Coastal Guide: Yields 2026
+URL: https://italian-estate.com/areas/polignano-a-mare/
+Updated: 2026-08-20
+Polignano a Mare property: cliff-town STR market, Lama Monachile, €2,500-4,500/m², 5-8% yields, parking and seasonality risks for buyers.
+
+### Portofino Property: Valuing Where There Are No Sales
+URL: https://italian-estate.com/areas/portofino/
+Updated: 2026-08-28
+A comune of 359 residents inside a regional park produces too few transactions to price. Valuation here is a method problem before it is a market problem.
+
+### Potenza Property: A City Built by One 1981 Statute
+URL: https://italian-estate.com/areas/potenza/
+Updated: 2026-08-28
+Law 219 of 14 May 1981 rebuilt and expanded the towns hit by the Irpinia earthquake. In Potenza that vintage of construction is most of the housing stock.
+
+### Rome Centro Storico Property Guide (2026)
+URL: https://italian-estate.com/areas/rome-centro-storico/
+Updated: 2026-08-20
+Rome centro storico property: €5,500-9,000/m² prime streets, Soprintendenza heritage rules, Jubilee 2026 demand, STR licensing caps and condominium bans.
+
+### Sanremo Property: The Greenhouses Are the Land Supply
+URL: https://italian-estate.com/areas/sanremo/
+Updated: 2026-08-28
+On a coast with no flat ground left, disused floriculture greenhouses are the only meaningful development supply, and they have their own planning regime.
+
+### Santa Margherita Ligure Property Riviera in Italy
+URL: https://italian-estate.com/areas/santa-margherita-ligure/
+Updated: 2026-08-20
+Santa Margherita property: €4,000-8,000/m² coastal, Portofino adjacency, yacht marina, 3-4.5% yields, British/Swiss buyers.
+
+### Savona Property Investment Liguria Ponente
+URL: https://italian-estate.com/areas/savona/
+Updated: 2026-08-20
+Savona property guide: €2,000-2,800/m² coastal value, port economy, Genoa 40 min, 4-5% yields, western Liguria entry tickets.
+
+### Scalea Calabria Coastal Property Guide 2026
+URL: https://italian-estate.com/areas/scalea/
+Updated: 2026-08-20
+Scalea property guide 2026: Tyrrhenian coast value play, €800-1,400/m², 6-8% STR yields, Gate-away rising comune for foreign buyers.
+
+### Siena Property Guide: Tuscany Prices 2026 in Italy
+URL: https://italian-estate.com/areas/siena/
+Updated: 2026-08-20
+Siena real estate: UNESCO centro €2,200-4,500/m², countryside casali from €350k. Yields 3-6% STR/long-term. Investment guide to heritage rules & strategy.
+
+### Sorrento Property Guide Amalfi Gateway 2026
+URL: https://italian-estate.com/areas/sorrento/
+Updated: 2026-08-20
+Sorrento property guide 2026: €3,500-6,500/m² prices, Amalfi gateway, Capri ferries, 3-5% yields, British/American buyers, CIN licensing.
+
+### Syracuse Sicily Property Guide for Buyers in Italy
+URL: https://italian-estate.com/areas/syracuse/
+Updated: 2026-08-20
+Syracuse property investment: Ortigia UNESCO quarter €700-1,600/m², 6-9% yields. 60% cheaper than Taormina with strong yield potential.
+
+### Taormina Sicily Property Investment Guide in Italy
+URL: https://italian-estate.com/areas/taormina/
+Updated: 2026-08-20
+Taormina property guide: premium coastal town with Mount Etna views, €2,000-4,500/m² pricing, 5-7% STR yields, risks, buyer profiles for 2026.
+
+### Termoli Property Investment Adriatic Coast in Italy
+URL: https://italian-estate.com/areas/termoli/
+Updated: 2026-08-20
+Termoli property guide 2026: Adriatic coast ~€1,861/m² sale, rent ~€9.67/m²/mo, gross STR yields 4-6%, Molise beach hub below Abruzzo Pescara.
+
+### Turin Property Investment: Piedmont Prices in Italy
+URL: https://italian-estate.com/areas/turin/
+Updated: 2026-08-20
+Turin property guide: €1,600-3,000/m², Crocetta and San Salvario demand, 4-5% yields, Milan discount, Alps access, university tenants.
+
+### Urbino Property Guide: Marche UNESCO 2026 in Italy
+URL: https://italian-estate.com/areas/urbino/
+Updated: 2026-08-20
+Urbino property guide 2026: UNESCO hill town, university tenants, OMI ~€943/m² comune, Idealista ~€1,518/m², yields 4-5%.
+
+### Val Dorcia Property: Prices & Yield (2026) in Italy
+URL: https://italian-estate.com/areas/val-dorcia/
+Updated: 2026-08-20
+Val d'Orcia property guide 2026: UNESCO hills ~€2,500/m², Pienza €2,980/m², agriturismo 4-6% yields, farmhouses from €520k inland Tuscany.
+
+### Valle d'Itria Trulli Property Guide 2026
+URL: https://italian-estate.com/areas/valle-d-itria/
+Updated: 2026-08-20
+Valle d'Itria trulli investment in Ostuni, Locorotondo, Cisternino: €800-1,500/m² restoration, 5-7% yields, UNESCO landscape building rules.
+
+### Versilia Property Guide: Coast Prices 2026 in Italy
+URL: https://italian-estate.com/areas/versilia/
+Updated: 2026-08-20
+Versilia property guide: Viareggio €3,500-6,000/m², Forte dei Marmi €8,000-15,000/m², 3-6% yields, British and German beach demand, STR rules.
+
+## Market comparisons (30)
+
+### Ancona vs Urbino: One Town Has as Many Students as People
+URL: https://italian-estate.com/compare/ancona-vs-urbino-property/
+Updated: 2026-08-28
+Urbino has about 13,849 residents and roughly 14,400 enrolled students. Ancona has a port, a hospital and a university. Concentration against diversification.
+
+### Arezzo vs Siena Tuscany Property Guide 2026 in Italy
+URL: https://italian-estate.com/compare/arezzo-vs-siena-property/
+Updated: 2026-06-18
+Compare Arezzo (~€1,450/m²) and Siena (~€3,200/m²) Tuscany property. Yields, UNESCO rules, STR, resale liquidity for inland investors.
+
+### Bologna vs Florence: Building Supply or Banning It
+URL: https://italian-estate.com/compare/bologna-vs-florence-property/
+Updated: 2026-08-28
+Bologna is adding thousands of student beds that compete with private landlords. Florence has capped short lets instead. Two opposite answers to one shortage.
+
+### Campobasso vs Termoli: Both Fail the Pensioner Test
+URL: https://italian-estate.com/compare/campobasso-vs-termoli-property/
+Updated: 2026-08-28
+The 7% regime for foreign pensioners needs a southern comune under 30,000 residents from April 2026. Campobasso has 47,547 and Termoli 31,836.
+
+### Cedolare Secca Vs Irpef Italy Rental (2026) for Buyers
+URL: https://italian-estate.com/compare/cedolare-secca-vs-irpef-italy-rental/
+Updated: 2026-06-26
+Compare Italy's 21% cedolare secca flat tax vs progressive IRPEF on rental income. Non-resident rules, STR vs LTR, when IRPEF wins, CIN docs.
+
+### Italy Elective Residence vs Investor Visa (2026)
+URL: https://italian-estate.com/compare/elective-residence-vs-investor-visa-italy/
+Updated: 2026-06-25
+Italy ERV vs Investor Visa 2026: passive income vs €250k investment, stay rules, property role, flat tax, family and renewal compared. Free shortlist.
+
+### Flat Tax vs Italy Investor Visa Compared (2026)
+URL: https://italian-estate.com/compare/flat-tax-vs-investor-visa-italy/
+Updated: 2026-06-25
+Article 24-bis flat tax (€300k/year from 2026) vs Italy Investor Visa: cost, stay rules, property strategy, and when to combine both in 2026.
+
+### Florence vs Rome: One Restriction Hides in the Deed
+URL: https://italian-estate.com/compare/florence-vs-rome-property-investment/
+Updated: 2026-08-28
+Florence restricts short letting through a public municipal cap. Rome's price and use restrictions sit inside convenzioni that only the deed chain reveals.
+
+### Florence vs Siena: A Failed Short Let Has No Fallback
+URL: https://italian-estate.com/compare/florence-vs-siena-property/
+Updated: 2026-08-28
+Around 2,200 Monte dei Paschi staff work in Siena and the plan is under revision. Florence has other employers; Siena's residential fallback is thinner.
+
+### Genoa vs Florence Property Investment Guide in Italy
+URL: https://italian-estate.com/compare/genoa-vs-florence-property/
+Updated: 2026-08-20
+Genoa vs Florence property: €2,200 vs €4,750/m², 4-5% vs 2.5-4% yields, port city vs art tourism, Liguria vs Tuscany guide.
+
+### Italy vs Croatia: The 9% Versus 3% Gap Is Not Real
+URL: https://italian-estate.com/compare/italy-vs-croatia-property-investment/
+Updated: 2026-08-28
+Croatia charges 3% on market value. Italy charges 9% on cadastral value under prezzo-valore, which is a far smaller number than the price paid.
+
+### Italy Vs France Property Investment (2026) for Buyers
+URL: https://italian-estate.com/compare/italy-vs-france-property-investment/
+Updated: 2026-08-20
+Italy beats France on yield (4.3% vs 3.5%). Milan €5,653/m² vs Paris €10k+. IFI vs IMU, STR rules, and a free Italy property shortlist.
+
+### Italy Vs Greece Property Investment (2026) for Buyers
+URL: https://italian-estate.com/compare/italy-vs-greece-property-investment/
+Updated: 2026-08-19
+Italy vs Greece property 2026: Golden Visa €400k-€800k vs no Italy RE visa, Athens yields vs Italy 4.3%, liquidity, islands vs Puglia and Sicily.
+
+### Italy Vs Malta Property Investment (2026) for Buyers
+URL: https://italian-estate.com/compare/italy-vs-malta-property-investment/
+Updated: 2026-06-27
+Italy vs Malta property 2026: MPRP €375k vs Italy Investor Visa €250k, Malta citizenship ended, yields, tax, lifestyle, and residency paths compared.
+
+### Italy vs Portugal Property Compared 2026 for Buyers
+URL: https://italian-estate.com/compare/italy-vs-portugal-property-investment/
+Updated: 2026-08-20
+Compare Italy and Portugal for property investment: rental yields, entry prices, Golden Visa changes, taxes, foreign buyer rules, and STR regulations.…
+
+### Italy vs Spain: One Country Taxes Simply Holding It
+URL: https://italian-estate.com/compare/italy-vs-spain-property-investment/
+Updated: 2026-08-28
+Spain charges an annual wealth tax on net assets above €700,000, non-residents included. Italy has no equivalent charge on a property held by a foreigner.
+
+### Lake Como Vs Liguria Property Guide (2026) in Italy
+URL: https://italian-estate.com/compare/lake-como-vs-liguria-property/
+Updated: 2026-06-14
+Lake Como vs Liguria property: €8,000-25,000/m² lakefront vs €3,000-10,000+ Riviera coast, 2-3% vs 2-4% yields, HNW lifestyle comparison 2026.
+
+### Lake Garda vs Lake Como Property Guide 2026 in Italy
+URL: https://italian-estate.com/compare/lake-garda-vs-lake-como-property/
+Updated: 2026-06-27
+Lake Garda vs Lake Como property: €2,800-9,000/m² vs €8,000-25,000/m² lakefront, yields 2.5-4.5% vs 2-3%, STR rules, German buyers, Milan vs Verona.
+
+### Matera vs Potenza Property Compared 2026 in Italy
+URL: https://italian-estate.com/compare/matera-vs-potenza-property/
+Updated: 2026-08-19
+Compare Matera UNESCO (~€2,060/m², rent €8.85) vs Potenza capital (~€1,355/m²). Yields, tenants, resale for Basilicata investors.
+
+### Milan vs Florence: A Tax Residence or Just a House
+URL: https://italian-estate.com/compare/milan-vs-florence-property-investment/
+Updated: 2026-08-28
+Italy's substitute tax for new residents doubled to €200,000 in 2024. Milan is where those people move; Florence is where they buy something to look at.
+
+### Milan vs Rome: One City Sells You an Open File
+URL: https://italian-estate.com/compare/milan-vs-rome-property-investment/
+Updated: 2026-08-28
+Rome received around 600,000 building amnesty applications and roughly a third are still unresolved. In Milan that document problem barely exists.
+
+### Naples vs Rome Property Guide Compared 2026 in Italy
+URL: https://italian-estate.com/compare/naples-vs-rome-property-investment/
+Updated: 2026-06-16
+Naples vs Rome property 2026: lower entry €/m², 4-5% yields vs Rome 2.5-5%, Centro Storico UNESCO, Amalfi access, risk perception and liquidity.
+
+### Off-Plan vs Resale Italy Property Compared (2026)
+URL: https://italian-estate.com/compare/off-plan-vs-resale-property-italy/
+Updated: 2026-06-27
+Off-plan vs resale Italy property: 10% VAT vs 9% tax, caparra risk, developer guarantees, Milan off-plan vs Puglia resale timeline and yield. Free shortlist.
+
+### Perugia vs Assisi: The Empty Months Fall Opposite
+URL: https://italian-estate.com/compare/perugia-vs-assisi-property/
+Updated: 2026-08-28
+Perugia's language courses start every month including July. Assisi fills on devotional dates and empties between them. The troughs do not overlap.
+
+### Pescara vs Chieti: The Faculty Chooses Your City
+URL: https://italian-estate.com/compare/pescara-vs-chieti-property/
+Updated: 2026-08-28
+One university, two campuses, two municipalities. Medicine and the sciences sit in Chieti; economics, architecture and engineering sit in Pescara.
+
+### Puglia vs Tuscany Property Compared 2026 in Italy
+URL: https://italian-estate.com/compare/puglia-vs-tuscany-property/
+Updated: 2026-08-20
+Puglia vs Tuscany property: yields 5-8% vs 4-7%, entry prices, STR rules, liquidity, and buyer profiles compared with 2026 market data.
+
+### Sicily vs Puglia Property Investment 2026 in Italy
+URL: https://italian-estate.com/compare/sicily-vs-puglia-property/
+Updated: 2026-06-14
+Sicily vs Puglia property comparison: €1,168/m² vs €1,422/m², yields 6-10% interior vs 5-8%, liquidity, STR, buyer profiles, infrastructure 2026.
+
+### Turin vs Milan: Surplus Homes Against Surplus Households
+URL: https://italian-estate.com/compare/turin-vs-milan-property/
+Updated: 2026-08-28
+Turin's unoccupied dwelling rate runs near 23.3% and Milan's near 12.4%. One city has too much housing and the other has too many people wanting it.
+
+### Tuscany vs Lake Como: Drive-To Money or Seasonal Airlift
+URL: https://italian-estate.com/compare/tuscany-vs-lake-como-property/
+Updated: 2026-08-28
+Como is reached year-round through Milan's hubs. Tuscany's inland second homes depend on Pisa and Florence, where routes shrink in winter.
+
+### Venice Vs Milan Property Investment (2026) in Italy
+URL: https://italian-estate.com/compare/venice-vs-milan-property-investment/
+Updated: 2026-08-20
+Venice vs Milan property 2026: lagoon STR caps vs Milan 3-5% yields, €4,500-7,500/m² Milan vs Venice UNESCO pricing, liquidity and business rental.
+
+## Project reviews (65)
+
+### Houses for Sale in Ravello: Prices and Constraints
+URL: https://italian-estate.com/projects/amalfi-ravello-villa/
+Updated: 2026-08-20
+Ravello is a village of 2,500 people on a UNESCO headland. What comes to market, why villas start near EUR 1.5M, and what the vincolo controls.
+
+### Ancona Centro Apartments Review 2026: Prices & Area
+URL: https://italian-estate.com/projects/ancona-centro-apartments/
+Updated: 2026-08-20
+Ancona centro apartments from €190k. Adriatic port, hospital tenants, university corridor, 4.5-5.5% yields, Marche regional capital review.
+
+### Apartments for Sale in Arezzo Historic Centre
+URL: https://italian-estate.com/projects/arezzo-centro-apartments/
+Updated: 2026-09-07
+Restored lift-served flats inside the walls and along the Giotto corridor, from about EUR 220,000. What the asking prices hide and what to check first.
+
+### ARIA Ex Macello Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/aria-ex-macello-milan/
+Updated: 2026-08-19
+ARIA Ex Macello Calvairate Milan review. 1,200 homes, carbon-negative Reinventing Cities winner, Redo SGR, IED campus, 600-bed PBSA, 2026-2027.
+
+### Assisi Historic Apartments Review 2026: Buyer Guide
+URL: https://italian-estate.com/projects/assisi-historic-apartments/
+Updated: 2026-06-18
+Assisi historic apartments from €280k. UNESCO centro €2,525/m², pilgrimage STR, 4-5% yields, Umbria heritage buyer review.
+
+### Bellagio Villa Lake Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/bellagio-villa-lake-view/
+Updated: 2026-08-19
+Bellagio trophy villas with lake views from €2M+. Lake Como prestige, thin liquidity, 2-3% yields, Engel & Voelkers seed luxury review.
+
+### Bliss UpTown Milan Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/bliss-uptown-milan/
+Updated: 2026-08-20
+Bliss UpTown Milan in Cascina Merlata by Near/EuroMilano. UpTown masterplan on-market stock near MIND and Metro M1. Compare Inspire and Feel pricing.
+
+### Bologna Bloom Living Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/bologna-bloom-living/
+Updated: 2026-08-19
+Bologna Bloom Living off-plan from €197k. 145 Class A homes, Navile regeneration, Lombardini22 towers, November 2027 delivery, Abitare Co sales.
+
+### Campobasso Centro Apartments Review 2026 in Italy
+URL: https://italian-estate.com/projects/campobasso-centro-apartments/
+Updated: 2026-08-19
+Campobasso centro apartments from €155k. Regional capital, hospital tenants, 4.5-5.5% yields, Molise value floor, inland urban review.
+
+### Carovigno New Villa Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/carovigno-villa-new-build/
+Updated: 2026-08-19
+New-build villa near Carovigno Adriatic coast from €350k. Pool-ready Puglia stock, Gate-away #2 comune, 10 min Ostuni, Brindisi airport access.
+
+### Chianti Farmhouse Restoration Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/chianti-farmhouse-restoration/
+Updated: 2026-08-20
+Chianti casale restoration from €300k plus renovation. Greve, Radda vineyard views, agriturismo 5-6% gross, landscape vincolo buyer guide.
+
+### Chieti University Apartments Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/chieti-university-apartments/
+Updated: 2026-08-20
+Chieti university apartments from €165k. Medical student tenants, comune ~€1,080/m², 4.5-5.5% gross yields, Abruzzo hill town buyer guide.
+
+### COIMA Guido Reni Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/coima-guido-reni-rome/
+Updated: 2026-08-20
+COIMA and Eagle Hills €400m Guido Reni barracks redevelopment in Rome Flaminio. Mixed-use near MAXXI, Science Museum, ~2029 completion.
+
+### COIMA Milan Olympic Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/coima-olympic-village-milan/
+Updated: 2026-08-19
+COIMA Porta Romana Olympic Village: 1,700 student beds, SOM design, opens Sept 2026. Italy's largest student residence after Games.
+
+### COIMA Via Carcani Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/coima-via-carcani-trastevere/
+Updated: 2026-08-19
+COIMA office-to-residential conversion at Via Carcani Trastevere Rome. Institutional regeneration, Class A stock, Trastevere premium corridor.
+
+### Como Lakefront Residence Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/como-lakefront-residence/
+Updated: 2026-08-20
+Lake Como lakefront new build from €800,000. Class A apartments, Como-Cernobbio corridor, 2-3.5% LT yields, Milan FNM commuter, Swiss-German buyer guide.
+
+### Costa Smeralda Apartment Review 2026: Prices & Area
+URL: https://italian-estate.com/projects/costa-smeralda-apartment/
+Updated: 2026-08-20
+Costa Smeralda apartments from €600k. Porto Rotondo and Romazzino sea views, 2-4% yields, consorzio rules, marina lifestyle buyer guide.
+
+### Feel UpTown Milan Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/feel-uptown-milan/
+Updated: 2026-06-15
+Feel UpTown Milan from €517,000 in Cascina Merlata. Near/EuroMilano delivering stock near MIND, Metro M1, and UpTown district amenities.
+
+### Fivizzano Lunigiana Village Property Investment
+URL: https://italian-estate.com/projects/fivizzano-village-property/
+Updated: 2026-08-19
+Fivizzano Lunigiana village homes from €130k. Gate-away growth, Medici walls, 7,300 residents, Cinque Terre 40 min, restoration buyer guide.
+
+### Florence Oltrarno Apartment Investment Review
+URL: https://italian-estate.com/projects/florence-oltrarno-apartment/
+Updated: 2026-08-19
+Tranio seed Florence Oltrarno apartments from €400k. UNESCO south bank, artisan district STR, Santo Spirito yields, foreign buyer guide.
+
+### Genoa Waterfront Apartments Port Renovation Review
+URL: https://italian-estate.com/projects/genoa-waterfront-apartments/
+Updated: 2026-06-18
+Genoa waterfront apartments from €350k. Old Port area, Darsena stock, Albaro spillover, 4-5% yields, Liguria urban coastal review.
+
+### L'Innesto Milan Social Housing Carbon Neutral 2026
+URL: https://italian-estate.com/projects/innesto-milan-social-housing/
+Updated: 2026-08-19
+L'Innesto Scalo Greco-Breda review. 400 social homes, 300 student beds, 63k sqm, 72% green, Redo SGR zero-carbon housing, Bicocca link.
+
+### Inspire UpTown Milan Apartments from €348,500 2028
+URL: https://italian-estate.com/projects/inspire-uptown-milan/
+Updated: 2026-08-19
+Modern apartments near EuroMilano district in Cascina Merlata. 1-3 bedrooms from €348,500 to €977,000. Completion Q2 2028. Prime Milan investment opportunity.
+
+### Langhe Barolo Vineyard Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/langhe-barolo-vineyard-property/
+Updated: 2026-08-20
+Langhe Barolo vineyard property from €650k. UNESCO cascina, agriturismo 4-6% gross, wine hills, Piedmont rural investment buyer guide.
+
+### Lecce Urbs20 Villas Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/lecce-urbs20-villas/
+Updated: 2026-08-20
+Urbs20 Lecce: 20 semi-detached Class A3 villas near Parco del Galateo. From €425,000, 137-194 sqm, garage included. Grimaldi Store off-plan.
+
+### Lendlease MIND Milan Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/lendlease-mind-milan/
+Updated: 2026-08-19
+Lendlease residential at Milan MIND innovation district from €380k. Cascina Merlata corridor, Class A off-plan, corporate tenant demand, Q2 2028 completion.
+
+### Lucca Villa Historic Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/lucca-villa-historic-renovation/
+Updated: 2026-08-19
+Lucca hillside villa restoration from €600k. Walled-city proximity, Garfagnana views, 4-6% STR yields, heritage renovation buyer guide.
+
+### Maciachini Urban Retreat Review 2026: Prices & Area
+URL: https://italian-estate.com/projects/maciachini-urban-retreat/
+Updated: 2026-06-17
+Okam Italy Maciachini Urban Retreat: 2-5 room Class A apartments near Maciachini metro. Industrial regeneration, private garden. Pre-sales opening soon.
+
+### Matera Sassi Apartments Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/matera-sassi-apartments/
+Updated: 2026-08-19
+Matera Sassi apartments from €220k. UNESCO cave and palazzo stock, STR 4-6% yields, rent ~€8.85/m², Basilicata heritage review.
+
+### Meli 26 Navigli Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/meli-navigli-milan/
+Updated: 2026-08-19
+22 Class A4 apartments at Meli 26 along Milan Naviglio Martesana by Okam Italy and Studio Asti. 2,700 sqm off-plan, Q1 2028 handover. Pricing on request.
+
+### MilanoSesto Urban Regeneration Review 2026
+URL: https://italian-estate.com/projects/milano-sesto-urban-regeneration/
+Updated: 2026-08-19
+MilanoSesto Falck site review. 1.4M sqm COIMA Near SGR, Unione Zero 480 homes, 600+ PBSA, Foster+Partners, Italy largest regen.
+
+### Monte Argentario Sea Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/monte-argentario-sea-view/
+Updated: 2026-06-17
+Sea-view villas on Monte Argentario from €700k. Porto Ercole and Santo Stefano Tyrrhenian stock, marina lifestyle, pairs with area guide.
+
+### Noto Baroque Masseria on Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/noto-baroque-masseria/
+Updated: 2026-08-20
+Noto masseria from €300k in Val di Noto UNESCO. Stone + land + pool. 5-7% countryside STR, 6-8% centro. Buyer guide for Sicily.
+
+### Nunziare VII Lusciano Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/nunziare-vii-lusciano/
+Updated: 2026-08-20
+Nunziare VII Lusciano off-plan from €395k. 8 full-electric nZEB A4 units, 130 sqm, Q1 2028 delivery, Cecere Management buyer guide.
+
+### Ostuni Lamia Chiavi Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/ostuni-lamia-chiavi-in-mano/
+Updated: 2026-08-19
+Ostuni lamia chiavi in mano villa about 95 sqm by Pregio Immobiliare. Turnkey Puglia build near Ostuni old town. POA pricing, off-plan delivery.
+
+### Ostuni Masseria Pool Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/ostuni-masseria-pool-apuliadeluxe/
+Updated: 2026-08-19
+Apulia Deluxe masseria with pool near Ostuni from €800k POA. Luxury Puglia olive estate, heritage stone, infinity pool. Apulia Deluxe flagship tier.
+
+### Ostuni New Villa Review 2026: Prices & Yield in Italy
+URL: https://italian-estate.com/projects/ostuni-new-villa-pool-470k/
+Updated: 2026-06-14
+Newly built 3-bedroom villa with private pool in Ostuni's countryside. 150m² living space, olive grove views, completion 2026. €470,000 investment opportunity.
+
+### Ostuni Rascina Villa Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/ostuni-rascina-villa-construction/
+Updated: 2026-08-20
+Ostuni Rascina villa under construction: 300 sqm built, 14,788 sqm land, pool. Gruppo Invest D'Amico listing in Puglia countryside. Price on application.
+
+### Ostuni Trulli Modern Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/ostuni-trulli-modern-villa/
+Updated: 2026-08-19
+Unique combination of contemporary villa and restored ancient trulli on 2-hectare olive estate. Apulia Deluxe development near Ostuni. POA pricing for…
+
+### Palermo Centro Renovation Review 2026: Buyer Guide
+URL: https://italian-estate.com/projects/palermo-centro-renovation/
+Updated: 2026-08-19
+Palermo historic center apartment renovations from €180k. Baroque lanes, 4-6% STR yields, affordable Sicily entry, heritage due diligence guide.
+
+### Perugia Centro Apartments Umbria Value Review 2026
+URL: https://italian-estate.com/projects/perugia-centro-apartments/
+Updated: 2026-06-18
+Perugia centro apartments from €195k. University tenants, hospital corridor, 4.5-5.5% yields, Umbria cheapest major city review.
+
+### Pescara Centro Apartments Review 2026: Buyer Guide
+URL: https://italian-estate.com/projects/pescara-centro-apartments/
+Updated: 2026-08-20
+Pescara centro apartments from €195k. Adriatic coast, hospital and university tenants, STR supplements, 4.5-6% yields, Abruzzo regional hub review.
+
+### Porto Cervo Villa Development Sardinia Review 2026
+URL: https://italian-estate.com/projects/porto-cervo-villa-development/
+Updated: 2026-08-20
+Porto Cervo villa development from €1.5M on Costa Smeralda. Consorzio planning, marina lifestyle, yacht buyer guide, ultra-luxury Sardinia.
+
+### Portofino Apartment Renovation Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/portofino-apartment-renovation/
+Updated: 2026-08-20
+Portofino harbour apartments from €1M. Parco di Portofino rules, yacht marina lifestyle, 2-3% trophy STR gross, E&V Liguria buyer guide.
+
+### Potenza Centro Apartments Review 2026: Buyer Guide
+URL: https://italian-estate.com/projects/potenza-centro-apartments/
+Updated: 2026-08-19
+Potenza centro apartments from €165k. Regional capital, hospital/university tenants, ~€1,355/m², 4.5-5.5% yields, Basilicata review.
+
+### Prandina 34 Navigli Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/prandina-navigli-milan/
+Updated: 2026-08-19
+30 Class A apartments in Milan Navigli Martesana by Okam Italy, Albero Architecture and FRIMM. 3,500 sqm off-plan, Q2 2028 handover. Pricing on request.
+
+### Rapallo Sea View Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/rapallo-sea-view-apartments/
+Updated: 2026-08-20
+Rapallo sea view apartments from €450k. Levante Riviera, Santa Margherita adjacency, 3-4.5% yields, yacht coast buyer guide.
+
+### Rome Jubilee Centro Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/rome-jubilee-centro-storico/
+Updated: 2026-08-19
+Rome centro storico resale premium for Jubilee 2026: UNESCO apartments, STR licensing, €5k-12k/m², foreign buyer due diligence guide.
+
+### Sanremo Sea View Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/sanremo-sea-view-apartments/
+Updated: 2026-08-19
+Sanremo Ligurian Riviera apartments from €400k. Sea-view terraces, Milan weekend market, 3-5% STR yields, Italian Song Festival buyer guide.
+
+### Scalea Calabria Coastal Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/scalea-calabria-coastal/
+Updated: 2026-06-17
+Tyrrhenian coast apartments and villas in Scalea from €180k. Gate-away value comune, 6-8% STR potential, beaches below Amalfi tickets.
+
+### Semproniano Maremma Farmhouse Review 2026
+URL: https://italian-estate.com/projects/semproniano-farmhouse-restoration/
+Updated: 2026-08-20
+Semproniano Maremma farmhouse value from €220k. Gate-away growth comune, Saturnia proximity, €1,024/m² band, restoration casali buyer guide.
+
+### Siena Country Villa Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/siena-country-villa-pool/
+Updated: 2026-08-19
+Siena countryside villas with pool from €450k. Crete Senesi views, agriturismo potential, 4-6% yields, UNESCO proximity buyer guide.
+
+### Sorrento Coastal Apartment Review 2026: Buyer Guide
+URL: https://italian-estate.com/projects/sorrento-coastal-apartment/
+Updated: 2026-08-19
+Sorrento coastal apartments from €350k. Amalfi gateway STR, Capri ferries, British buyer guide, CIN licensing and parking due diligence.
+
+### Taormina Sea View Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/taormina-sea-view-residence/
+Updated: 2026-08-19
+Taormina sea view apartments and villas from €400k. Etna backdrop STR, premium Sicily coast, CIN licensing. Gate-away seed investment review.
+
+### Termoli Coast Apartments Review 2026: Prices & Area
+URL: https://italian-estate.com/projects/termoli-coast-apartments/
+Updated: 2026-08-19
+Termoli coast apartments from €185k. Adriatic beach STR, summer rental, 4.5-6% gross yields, CIN licensing, Molise Adriatic coast hub review.
+
+### Tranio Como Carate Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/tranio-como-carate-urio-2br/
+Updated: 2026-08-19
+Tranio seed 2-bedroom apartments in Carate Urio Lake Como from €350k. East shore lake views, Milan commuter access, Swiss buyer guide.
+
+### Tranio Florence Historic Review 2026: Prices & Area
+URL: https://italian-estate.com/projects/tranio-florence-historic-center/
+Updated: 2026-08-19
+Tranio seed Florence historic center apartments from €500k. UNESCO north bank, Duomo corridor STR rules, foreign buyer due diligence guide.
+
+### Puglia Masseria New Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/tranio-puglia-masseria-new/
+Updated: 2026-08-19
+Tranio seed Puglia masseria new build from agency portfolios. Olive grove villas, pool-ready stock near Ostuni. Foreign buyer entry Puglia 2026.
+
+### Tranio Rome EUR Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/tranio-rome-eur-apartment/
+Updated: 2026-08-20
+Tranio seed Rome EUR district apartments from €350k. Modern Class A stock, metro access, corporate tenant demand, foreign buyer guide.
+
+### Sicily Noto Stone Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/tranio-sicily-noto-stone-house/
+Updated: 2026-08-20
+Tranio seed Noto stone house restoration from €250k. Val di Noto baroque corridor, limestone casale, STR weekly bookings Sicily 2026.
+
+### Turin Crocetta Apartments Review 2026: Buyer Guide
+URL: https://italian-estate.com/projects/turin-crocetta-apartments/
+Updated: 2026-08-20
+Turin Crocetta apartments from €280k. Elegant district, metro links, 4-5% yields, Politecnico tenants, Piedmont urban review.
+
+### UnaPavia Pavia Student Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/unapavia-pavia-residential/
+Updated: 2026-08-20
+UnaPavia ex Neca Pavia review. 80k sqm Near SGR, 346 homes, 700 student beds, €144M invest, green 50%, Milan AV 30 min rail.
+
+### Urbino University Apartments Review 2026
+URL: https://italian-estate.com/projects/urbino-university-apartments/
+Updated: 2026-08-20
+Urbino university apartments from €175k. UNESCO hill town, student tenants, OMI ~€943/m² comune, 4-5% yields, Marche value entry review.
+
+### Val d'Orcia Agriturismo Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/val-dorcia-agriturismo-farmhouse/
+Updated: 2026-06-18
+Val d'Orcia agriturismo farmhouse from €520k. UNESCO hills, licensed hospitality, 4-6% seasonal yields, Pienza/Montalcino review.
+
+### Valle d'Itria Trulli Review 2026: Prices & Yield
+URL: https://italian-estate.com/projects/valle-d-itria-trulli-restoration/
+Updated: 2026-08-20
+Apulia Deluxe Valle d'Itria trulli restoration from €200k renovation budget. Heritage trulli cones, UNESCO landscape, Soprintendenza permits Puglia.
+
+## Developer profiles (15)
+
+### Albero Architecture Milan OKAM Partner Profile 2026
+URL: https://italian-estate.com/developers/albero-architecture/
+Updated: 2026-06-18
+Albero Architecture Milan profile. OKAM Prandina promoter with FRIMM, Naviglio Martesana off-plan, foreign buyer due diligence guide.
+
+### Apulia Deluxe Developer Profile: Ostuni Villa Projects 2026
+URL: https://italian-estate.com/developers/apulia-deluxe/
+Updated: 2026-06-17
+Apulia Deluxe builds luxury trulli and villa projects near Ostuni, Puglia. Heritage restoration, olive estate developments, POA pricing from €800k.
+
+### Studio Asti Architetti Milan Architecture Profile 2026
+URL: https://italian-estate.com/developers/asti-architetti/
+Updated: 2026-06-18
+Studio Asti Architetti Milan profile. Paolo Asti Polytechnic studio, OKAM Navigli design partner, Prandina and Meli 26, heritage retrofit.
+
+### COIMA SGR Developer Profile Rome Milan Projects 2026
+URL: https://italian-estate.com/developers/coima/
+Updated: 2026-06-17
+COIMA SGR institutional developer: Guido Reni Rome, Milan Olympic Village 1,700 beds, Porta Romana regeneration, ESG City Impact Fund.
+
+### D'Amico Gruppo Developer Profile: Ostuni Puglia Villas 2026
+URL: https://italian-estate.com/developers/damico-gruppo/
+Updated: 2026-06-17
+Gruppo Invest D'Amico builds and markets Ostuni countryside villas. Rascina construction, large plots, pool compounds. Puglia agency-developer network.
+
+### Engel & Völkers Italy: Lake Como Luxury from €600k · 2026
+URL: https://italian-estate.com/developers/engel-volkers-italy/
+Updated: 2026-06-25
+Engel & Völkers Italy, Lake Como, Liguria, Tuscany from €600k+. HNWI buyer profile, flagship projects & independent due diligence checklist.
+
+### FRIMM Developer Profile Milan Navigli Projects Okam 2026
+URL: https://italian-estate.com/developers/frimm/
+Updated: 2026-06-17
+FRIMM co-develops Milan Navigli towers with Okam Italy. Prandina 34, Meli Martesana off-plan. Institutional Milan developer profile 2026.
+
+### Gate-away Italy Partner Network Agency Profile 2026
+URL: https://italian-estate.com/developers/gate-away-partner-network/
+Updated: 2026-06-18
+Gate-away Italy agency network profile. 15k listings, US 25% enquiries, Tuscany 14.77%, Ostuni #1 comune, foreign buyer portal guide.
+
+### Lendlease Developer Profile Milan MIND Innovation 2026
+URL: https://italian-estate.com/developers/lendlease/
+Updated: 2026-06-18
+Lendlease Italy residential at Milan MIND district. Institutional off-plan Cascina Merlata, Class A apartments, corporate tenant pipeline profile.
+
+### Near Milan EuroMilano Developer: UpTown Cascina Merlata 2028
+URL: https://italian-estate.com/developers/near-milan/
+Updated: 2026-06-15
+Near Milan and EuroMilano build Cascina Merlata UpTown: Inspire, Feel, Bliss towers from €348,500. Q2 2028 completion, M1 metro, MIND district proximity.
+
+### Nunziare Luxury Projects Cecere Developer Profile 2026
+URL: https://italian-estate.com/developers/nunziare-luxury-projects/
+Updated: 2026-06-18
+Nunziare Luxury Projects by Cecere Management. Campania nZEB line, Nunziare VII Lusciano, full-electric A4, foreign buyer off-plan guide.
+
+### Okam Italy Developer Profile: Milan Navigli Projects 2026
+URL: https://italian-estate.com/developers/okam-italy/
+Updated: 2026-06-15
+Okam Italy develops Milan Navigli regeneration: Prandina, Meli, Maciachini. FRIMM partnership, foreign-buyer off-plan sales, Q2 2028 handover.
+
+### Ostuni Domus Developer Profile: Turnkey Puglia Villas 2026
+URL: https://italian-estate.com/developers/ostuni-domus/
+Updated: 2026-06-17
+Ostuni Domus builds turnkey villas near Ostuni from €470,000. 150 sqm 3-bed pool homes, Q3 2026 handover. Foreign-buyer friendly Puglia developer.
+
+### Pregio Immobiliare: Ostuni Lamia Turnkey Villas 2026
+URL: https://italian-estate.com/developers/pregio-immobiliare/
+Updated: 2026-06-17
+Pregio Immobiliare builds chiavi in mano lamia villas near Ostuni from POA. Turnkey Puglia delivery, ~95 sqm lamia stock, foreign-buyer marketing.
+
+### Redo SGR Italy Institutional Regeneration Profile 2026
+URL: https://italian-estate.com/developers/redo-sgr-italy/
+Updated: 2026-06-18
+Redo SGR Near SGR profile. FIL Lombardia manager, ARIA Ex Macello, L'Innesto Milan, Reinventing Cities winner, social housing Italy.
+
+## News (4)
+
+### Foreign Buyers Drive €5.5 Billion Italian | Italy News
+URL: https://italian-estate.com/news/foreign-buyers-italy-5-5-billion-2025/
+Updated: 2026-06-15
+Scenari Immobiliari and Milano Finanza report foreign buyers spent €5.5 billion on Italian homes in 2025, up 10% YoY. About 8,700 families bought at €632k avg.
+
+### Gate-away Report: US Leads Italy Searches | Italy News
+URL: https://italian-estate.com/news/gate-away-international-buyers-report-2025/
+Updated: 2026-06-15
+Gate-away's 2025 report shows Italy property enquiries down 5.89% YoY but up 65% over five years. USA leads at 25%, UK fastest growth, Tuscany 14.77% share.
+
+### Italy Residential Transactions Hit 767,000 | Italy News
+URL: https://italian-estate.com/news/italy-residential-transactions-767000-2025/
+Updated: 2026-06-15
+OMI provisional data shows Italy recorded about 767,000 residential transactions in 2025, up 6.4-6.6% year-on-year. Lombardy and Tuscany led volume.
+
+### Milan Living Sector Investment Update 2026 | Italy News
+URL: https://italian-estate.com/news/milan-living-sector-investment-2025/
+Updated: 2026-06-15
+Milan residential asking prices averaged €5,653/m² in 2025, up 3.14% YoY. Living-sector capital targets Porta Nuova, MIND, and Cascina Merlata regeneration.

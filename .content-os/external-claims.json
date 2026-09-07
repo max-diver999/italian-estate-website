@@ -163,6 +163,272 @@
       "files": [
         "guides/italy-citizenship-by-descent.mdx"
       ]
+    },
+    {
+      "id": "it-investor-visa-ru-by-suspension",
+      "jurisdiction": "IT",
+      "claim": "Italy suspended its Investor Visa for Russian and Belarusian nationals in July 2023, acting on European Commission Recommendation C(2022)554. The bar extends to dual nationals holding either passport, so a second citizenship does not reopen the route.",
+      "source": "Ministry of Enterprise investor visa portal (investorvisa.mise.gov.it) suspension notice; European Commission Recommendation C(2022)554 of 28 March 2022",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/italy-golden-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-investor-visa-ru-share-pre-suspension",
+      "jurisdiction": "IT",
+      "claim": "Before the suspension, Italy had issued investor visas to at least 32 Russian citizens from 36 applications, more than the 12 issued to United States applicants and the 12 issued to United Kingdom applicants combined.",
+      "source": "Italian Ministry of Enterprise application data as reported when the suspension was announced, August 2023",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-09-06",
+      "files": [
+        "guides/italy-golden-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-investor-visa-permit-duration",
+      "jurisdiction": "IT",
+      "claim": "The investor residence permit is issued for two years and renews in three-year increments, each renewal conditional on the qualifying investment still being in place. Nulla osta review runs about 25 to 35 days and the qualifying transfer must complete within three months of entry.",
+      "source": "Ministry of Enterprise investor visa policy guidance; consistent with the programme portal",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/italy-golden-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-dnv-legal-basis",
+      "jurisdiction": "IT",
+      "claim": "Italy's digital nomad and remote worker route was created by an inter-ministerial decree of 29 February 2024, in force from 5 April 2024, with operational detail set by a later implementing decree signed by the Ministers of the Interior, Labour and Foreign Affairs, and was folded into the Immigration Code in 2026. It sits outside the decreto flussi quota and needs no employment clearance.",
+      "source": "Inter-ministerial decree 29 February 2024; Italian consular visa pages, checked 6 September 2026",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/italy-digital-nomad-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-dnv-income-floor",
+      "jurisdiction": "IT",
+      "claim": "The income floor is three times the annual healthcare exemption threshold, about EUR 24,790 a year or EUR 2,066 a month. Consular practice sits above it, commonly EUR 25,500 to EUR 28,000, while the New York consulate has continued to reference EUR 24,789.",
+      "source": "Italian consular visa pages, London and New York, checked 6 September 2026; the statutory basis is the healthcare exemption multiple",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/italy-digital-nomad-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-dnv-consular-divergence",
+      "jurisdiction": "IT",
+      "claim": "Consulates implement the same decree differently: the Italian Consulate General in London publishes the route as being for self-employed applicants only, while New York publishes it as a combined digital nomad and remote worker visa.",
+      "source": "Published visa pages of the Italian Consulates General in London and New York, checked 6 September 2026",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/italy-digital-nomad-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-irpef-bands-2026",
+      "jurisdiction": "IT",
+      "claim": "IRPEF bands for 2026 are 23% up to EUR 28,000, 33% from EUR 28,001 to EUR 50,000 and 43% above EUR 50,000. The middle band was cut from 35% to 33% by the 2026 budget law, the reduction applies only up to EUR 200,000 of income, and the maximum annual saving is about EUR 440.",
+      "source": "Legge di Bilancio 2026, Legge 30 dicembre 2025 n. 199",
+      "asOf": "2026-01-01",
+      "reviewBy": "2027-01-31",
+      "files": [
+        "guides/italy-digital-nomad-visa.mdx"
+      ]
+    },
+    {
+      "id": "it-7pct-pensioner-regime",
+      "jurisdiction": "IT",
+      "claim": "Foreign pensioners transferring tax residence to a qualifying comune in Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sicily or Sardinia may elect a 7% substitute tax on ALL foreign-source income, for the year of transfer and the nine following, ten tax periods in all. They must not have been Italian tax resident in any of the five preceding years. Article 26 of Law 11 March 2026 no. 34 amended Article 24-ter TUIR to raise the population ceiling from 20,000 to 30,000 residents, in force 7 April 2026, bringing roughly 74 further comuni into scope.",
+      "source": "Article 24-ter TUIR as amended by Article 26 of Legge 11 marzo 2026 n. 34 (Legge annuale PMI), published in Gazzetta Ufficiale 23 March 2026, in force 7 April 2026",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/calabria-property-investment-guide.mdx",
+        "guides/retire-in-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-ssn-voluntary-contribution",
+      "jurisdiction": "IT",
+      "claim": "Voluntary SSN registration for a non-EU retiree costs between EUR 2,000 and about EUR 2,788.87 a year, scaled to income, paid on form F24. The contribution is tied to the calendar year and expires on 31 December whatever month it was paid, so registering late in a year means paying again in January.",
+      "source": "Italian SSN voluntary registration rules for non-EU residents, contribution schedule current at September 2026",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/retire-in-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-erv-income-and-tar-ruling",
+      "jurisdiction": "IT",
+      "claim": "The elective residence visa income test is EUR 31,160 a year for the main applicant, plus 20% for a dependent spouse and 5% per dependent child, putting a couple near EUR 38,000. In July 2025 the administrative court in Rome overturned a refusal in which a consulate had applied the threshold per person rather than to the household.",
+      "source": "Italian consular guidance on the elective residence visa; July 2025 administrative court ruling reported on the per-person application of the threshold",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/retire-in-italy.mdx",
+        "guides/italy-elective-residence-visa-property.mdx"
+      ]
+    },
+    {
+      "id": "uk-it-driving-licence-agreement",
+      "jurisdiction": "IT",
+      "claim": "A bilateral Italy-UK agreement on mutual recognition of driving licences has been in force since 30 March 2023 and is valid until 30 March 2028. A UK licence may be exchanged for an Italian one without theory or practical test where the holder has been resident in Italy for less than six years at the time of application; those resident by 31 December 2020 are exempt from the six-year limit.",
+      "source": "Italy-UK agreement on mutual recognition of driving licences, in force 30 March 2023 (UK treaty series CS UK Italy 1.2023)",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-09-06",
+      "files": [
+        "guides/moving-to-italy-from-uk.mdx"
+      ]
+    },
+    {
+      "id": "uk-s1-italy-healthcare",
+      "jurisdiction": "IT",
+      "claim": "A UK national at State Pension age can claim an S1 form before leaving the UK, which gives access to the Italian national health service with the cost met by the UK government. Those below State Pension age register with the SSN voluntarily and pay the contribution themselves, or hold private cover.",
+      "source": "UK-EU social security coordination under the Withdrawal Agreement and the Trade and Cooperation Agreement; Italian SSN registration rules",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-03-06",
+      "files": [
+        "guides/moving-to-italy-from-uk.mdx"
+      ]
+    },
+    {
+      "id": "uk-state-pension-uprating-italy",
+      "jurisdiction": "IT",
+      "claim": "The UK State Pension is not frozen in Italy and continues to uprate annually. Protection derives from the Withdrawal Agreement for those resident before 31 December 2020 and from the Trade and Cooperation Agreement for later arrivals.",
+      "source": "UK-EU Withdrawal Agreement and Trade and Cooperation Agreement, social security coordination provisions",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-09-06",
+      "files": [
+        "guides/moving-to-italy-from-uk.mdx"
+      ]
+    },
+    {
+      "id": "eu-transfer-of-residence-relief",
+      "jurisdiction": "EU",
+      "claim": "Personal property imported when transferring normal residence from a third country into the EU is admitted free of import duty and VAT, provided the person had normal residence outside the EU for at least twelve consecutive months, the goods were owned and used for at least six months before shipment, they arrive within twelve months of establishing the new residence, and they are not sold, lent, pledged or rented for twelve months after clearance without notifying customs.",
+      "source": "Council Regulation (EC) No 1186/2009, Title II, reliefs on transfer of normal residence",
+      "asOf": "2026-09-06",
+      "reviewBy": "2028-09-06",
+      "files": [
+        "guides/moving-to-italy-from-uk.mdx"
+      ]
+    },
+    {
+      "id": "it-condo-buyer-arrears-liability",
+      "jurisdiction": "IT",
+      "claim": "A buyer of an Italian condominium unit is jointly liable with the seller for contributions relating to the current management year and the preceding one, with no distinction between ordinary and extraordinary charges. The year is the management year of 365 days set by the assembly or the regolamento, not the calendar year. The seller remains jointly bound until the transfer is notified to the administrator.",
+      "source": "Article 63, fourth paragraph, of the provisions implementing the Italian Civil Code (disposizioni di attuazione del codice civile)",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-09-06",
+      "files": [
+        "guides/condominium-fees-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-condo-arrears-enforcement",
+      "jurisdiction": "IT",
+      "claim": "An administrator may obtain an immediately enforceable payment order (decreto ingiuntivo immediatamente esecutivo) for unpaid contributions without assembly authorisation, and may suspend a defaulting owner from shared services capable of separate enjoyment once arrears exceed six months. Under article 1129 the administrator must begin recovery within six months of the close of the financial year in which the debt arose unless the assembly exempts them.",
+      "source": "Article 63 and article 1129 of the Italian Civil Code and its implementing provisions",
+      "asOf": "2026-09-06",
+      "reviewBy": "2027-09-06",
+      "files": [
+        "guides/condominium-fees-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-condo-stairs-lifts-split",
+      "jurisdiction": "IT",
+      "claim": "Stairs and lifts are maintained and replaced at 50% in proportion to the value of each unit and 50% in proportion to each floor's height above ground, so upper floors carry more of a lift replacement than lower floors of the same size.",
+      "source": "Article 1124 of the Italian Civil Code",
+      "asOf": "2026-09-06",
+      "reviewBy": "2028-09-06",
+      "files": [
+        "guides/condominium-fees-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-usucapione-periods",
+      "jurisdiction": "IT",
+      "claim": "Ownership of Italian immovable property passes by usucapione after 20 years of possession that is actual, open, exclusive, continuous and without the owner's permission (art. 1158). The period is 10 years where the possessor acquired in good faith from a non-owner under a duly registered title capable of transferring ownership (art. 1159). Possession is interrupted where the owner retakes the property for more than one year or serves a formal act asserting ownership.",
+      "source": "Italian Civil Code articles 1158 and 1159",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/usucapione-adverse-possession-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-usucapione-rural-1159bis",
+      "jurisdiction": "IT",
+      "claim": "Article 1159-bis shortens usucapione for small rural property: 15 years for rural land with annexed buildings in communes classified as mountain by law, and 5 years from registration where such property was acquired in good faith from a non-owner under a registered title. It also reaches rural land in non-mountain communes whose income falls below limits set by special law. The land must be entered in the rural cadastre and actually used for agriculture from the start of the possession relied on.",
+      "source": "Italian Civil Code article 1159-bis, with Cassazione case law on the requirement of actual agricultural use",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/usucapione-adverse-possession-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-usucapione-mediation",
+      "jurisdiction": "IT",
+      "claim": "Mediation is a compulsory precondition to litigating disputes over real rights, usucapione included, since Decree Law 69 of 21 June 2013 converted by Law 98 of 9 August 2013. A mediation agreement ascertaining usucapione is transcribable in the land registers under article 2643 number 12-bis, provided the record is signed and the signatures authenticated by an authorised public official. Possession alone produces no registrable title.",
+      "source": "D.L. 69/2013 converted by L. 98/2013; Italian Civil Code article 2643 no. 12-bis",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/usucapione-adverse-possession-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-servitu-apparent-requirement",
+      "jurisdiction": "IT",
+      "claim": "A right of way can be acquired by usucapione only where it is apparent, meaning evidenced by permanent visible works such as a made track, gate or bridge. A non-apparent right of way, such as walking across open land leaving no permanent trace, cannot be acquired by possession.",
+      "source": "Italian Civil Code provisions on servitù prediali and the apparent-servitude requirement",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/usucapione-adverse-possession-italy.mdx"
+      ]
+    },
+    {
+      "id": "it-rogito-registration-vs-transcription",
+      "jurisdiction": "IT",
+      "claim": "Signing the rogito transfers ownership between the parties, but the transfer becomes effective against third parties only on transcription in the registri immobiliari. Registration with the Agenzia delle Entrate, which the notaio must complete within 30 days, is a tax act giving the deed a certain date and does not confer opposability. Priority runs from the moment of transcription.",
+      "source": "Italian rules on registration of deeds (30-day term) and on transcription in the land registers as the act conferring effect against third parties",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/rogito-italian-deed-of-sale.mdx"
+      ]
+    },
+    {
+      "id": "it-notaio-price-deposit",
+      "jurisdiction": "IT",
+      "claim": "Either party may require the notaio to hold the balance of the purchase price in a dedicated segregated account until the transfer is transcribed. Introduced by Law 147/2013 and made optional on the request of a party by the 2017 competition law with effect from 29 August 2017. The sums sit outside the notaio's own estate, do not fall into any marital property regime, and cannot be attached by the creditors of the notaio or of the seller.",
+      "source": "Law 147/2013 as amended by Law 124/2017 (legge annuale per il mercato e la concorrenza), in force 29 August 2017; Consiglio Nazionale del Notariato guidance on the deposit of the price",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/rogito-italian-deed-of-sale.mdx"
+      ]
+    },
+    {
+      "id": "it-preliminare-trascritto",
+      "jurisdiction": "IT",
+      "claim": "A preliminary contract of sale may be transcribed under article 2645-bis where made as a public act or a private deed with authenticated signatures. Transcription gives a reservation effect that prevails over transcriptions and registrations made against the seller afterwards, including seizures, sequestrations and judicial mortgages. The effect ceases, and is treated as never having occurred, if the final deed is not transcribed within one year of the date agreed for it and in any case within three years of the preliminary being transcribed.",
+      "source": "Italian Civil Code article 2645-bis",
+      "asOf": "2026-09-07",
+      "reviewBy": "2028-09-07",
+      "files": [
+        "guides/rogito-italian-deed-of-sale.mdx"
+      ]
     }
   ]
 }

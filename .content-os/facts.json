@@ -170,6 +170,132 @@
       "statement": "Share of Italian residential transactions bought by foreign citizens in 2025, about 39,000 homes out of 766,756 normalised transactions",
       "source": "Gate-away international buyers data for 2025 cross-referenced with OMI (Osservatorio del Mercato Immobiliare, Agenzia delle Entrate) transaction totals; verified against independent search results 2026-09-06",
       "asOf": "2026-09-06"
+    },
+    {
+      "figure": "€2,188",
+      "statement": "National average asking price per square metre for an Italian home, April 2026 reading, up 4.24% year on year. Asking price, not the notarised value OMI records.",
+      "source": "Immobiliare.it national asking-price index, April 2026 reading; registered in market-stats.json as italy_avg_price_sqm",
+      "asOf": "2026-04-30"
+    },
+    {
+      "figure": "€5,653",
+      "statement": "Average asking price per square metre in the comune of Milan, April 2026. Distinct from the province at €4,148 and from Abitare Co metropolitan-area readings; district comparables are a further cut again.",
+      "source": "Immobiliare.it comune di Milano asking-price index, April 2026; cross-checked against a second index reading €5,481/sqm the same month",
+      "asOf": "2026-04-30"
+    },
+    {
+      "figure": "6.4%",
+      "statement": "Growth in Italian residential transactions in 2025, to 766,757 normalised sales from 719,578 in 2024. The market expanded; earlier site copy asserted a contraction.",
+      "source": "Agenzia delle Entrate / OMI, Rapporto Immobiliare 2026 — Il settore residenziale, published 21 May 2026 with ABI",
+      "asOf": "2025-12-31"
+    },
+    {
+      "figure": "10%",
+      "statement": "Lower bound of the all-in closing cost band this site publishes for a non-resident second home. An editorial composition decision on how to present a spread, not a measured market average.",
+      "source": "Owner decision recorded 2026-08-20 in market-stats.json (closing_cost_stack_non_resident), reconciling 7 competing bands across 125 pages",
+      "asOf": "2026-08-20"
+    },
+    {
+      "figure": "15%",
+      "statement": "Upper bound of that same published closing cost band for a non-resident second home bought through an agency. Prima casa sits below it; a new-build with VAT can exceed it.",
+      "source": "Owner decision recorded 2026-08-20 in market-stats.json (closing_cost_stack_non_resident), reconciling 7 competing bands across 125 pages",
+      "asOf": "2026-08-20"
+    },
+    {
+      "figure": "50%",
+      "statement": "Bonus ristrutturazioni deduction rate for 2026 where the renovated unit is the owner's main residence, spread over ten annual instalments within a 96,000 EUR cap per unit.",
+      "source": "Legge di Bilancio 2026 (L. 199/2025), confirming the bonus casa rates for the 2026 tax year",
+      "asOf": "2026-01-01"
+    },
+    {
+      "figure": "36%",
+      "statement": "Bonus ristrutturazioni deduction rate for 2026 on second homes and other residential units, the rate that applies to a property bought to let.",
+      "source": "Legge di Bilancio 2026 (L. 199/2025); the rate falls to 30% on second homes from 2027",
+      "asOf": "2026-01-01"
+    },
+    {
+      "figure": "5%",
+      "statement": "Statutory revaluation applied to the rendita catastale before the cadastral multiplier is used to reach cadastral value.",
+      "source": "L. 662/1996 art. 3 comma 48, the rivalutazione della rendita catastale still in force",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "5%",
+      "statement": "Forfait deduction allowed against gross rental income under the progressive IRPEF regime, in place of itemised expenses.",
+      "source": "TUIR art. 37, the standard abbattimento forfettario on canone di locazione",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "60%",
+      "statement": "Upper end of the loan-to-value Italian banks typically lend to a non-resident buyer, against materially higher ratios for residents. Market practice, not a statutory cap.",
+      "source": "Italian retail bank non-resident lending practice, tier B, cross-checked across lender product sheets 2026",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "30%",
+      "statement": "Lower bound of the gap between cadastral value and market price on Italian residential stock, the reason IMU looks small against a purchase price. Rule of thumb, tier B.",
+      "source": "OMI cadastral versus market value comparisons; the gap commonly runs 30% to 50% and varies by comune",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "20%",
+      "statement": "Deposit an Italian resident borrower is typically asked for, against 30% to 50% for a non-resident. Market practice rather than regulation.",
+      "source": "Italian retail mortgage market practice 2026, tier B, cross-checked across lender criteria",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "25%",
+      "statement": "Upper band of professional property management fees as a share of rent, reached on short-let mandates where the manager handles turnover and compliance.",
+      "source": "Italian letting and STR management mandates, tier B, observed fee schedules across Milan, Rome, Florence and Puglia",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "6%",
+      "statement": "Upper end of Italian estate agency commission charged to the buyer side before IVA, against a floor near 2% where a seller splits the fee.",
+      "source": "Italian agency mandate practice, tier B; FIAIP and regional usi e consuetudini put the common band at 2% to 6% plus IVA",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "€2,000,000",
+      "statement": "Investment in Italian government bonds that qualifies for the Investor Visa, the highest of the four thresholds and the lowest risk of them.",
+      "source": "Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "€500,000",
+      "statement": "Investment in the share capital of an Italian limited company that qualifies for the Investor Visa. Halved to EUR 250,000 where the company is a registered innovative startup.",
+      "source": "Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "€250,000",
+      "statement": "Investment in a registered Italian innovative startup that qualifies for the Investor Visa. The cheapest entry to the programme and the one carrying the most equity risk.",
+      "source": "Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "€1,000,000",
+      "statement": "Philanthropic donation to a public interest project that qualifies for the Investor Visa. Non-recoverable, unlike the bond and equity routes.",
+      "source": "Ministry of Enterprise investor visa portal, investorvisa.mise.gov.it, qualifying investment categories",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "12%",
+      "statement": "Upper end of the narrower all-in closing cost band this site publishes for an ordinary second home, where agency commission is modest or split. The wider 10% to 15% band covers the same purchase with full agency and independent legal review.",
+      "source": "Owner decision recorded 2026-08-20 in market-stats.json (closing_cost_stack_non_resident); the 10% to 12% form is the same band stated for a lighter fee structure",
+      "asOf": "2026-08-20"
+    },
+    {
+      "figure": "18 months",
+      "statement": "Deadline to transfer residence to the comune where the property sits, to keep the prima casa reduced rate. The term runs from the rogito, and the undertaking must be declared in the deed itself or the benefit never arises.",
+      "source": "DPR 131/1986, Tariffa Parte I art. 1, Nota II-bis; Corte di Cassazione ordinanza 9433/2018 on the term running from the deed rather than completion of works",
+      "asOf": "2026-09-06"
+    },
+    {
+      "figure": "12 months",
+      "statement": "Deadline for filing the dichiarazione di successione, running from the opening of the succession, which is normally the date of death. Omission carries a penalty of 120% to 240% of the tax assessed.",
+      "source": "Agenzia delle Entrate, dichiarazione di successione filing rules and penalty schedule",
+      "asOf": "2026-09-06"
     }
   ]
 }

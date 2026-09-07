@@ -145,6 +145,8 @@ function listChanged() {
   names = [...new Set(names.map((n) => n.trim()).filter(Boolean))];
   return names
     .filter((f) => f.startsWith('src/content/') && /\.mdx?$/.test(f))
+      // a deletion in the batch still appears in git diff; skip what is no longer on disk
+      .filter((f) => existsSync(new URL(`../${f}`, import.meta.url)))
     .map((f) => {
       const [, , coll, file] = f.split('/');
       return { coll, slug: file.replace(/\.mdx?$/, ''), path: join(ROOT, f) };

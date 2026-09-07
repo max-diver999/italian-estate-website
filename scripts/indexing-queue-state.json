@@ -3,7 +3,7 @@
   "site": "https://italian-estate.com",
   "projectId": "italian-estate-indexing",
   "dailyQuota": 200,
-  "updatedAt": "2026-06-15T11:08:00Z",
+  "updatedAt": "2026-09-07T11:27:14Z",
   "methodology": "Truth = live sitemap vs submitted-urls.json entries[] (italian-estate.com only). Explicit URL batches only.",
   "scripts": {
     "google": "node scripts/submit-google-explicit.mjs URL...",
@@ -12,12 +12,17 @@
     "sitemapList": "scripts/italy-sitemap-urls.txt"
   },
   "summary": {
-    "sitemapTotal": 50,
-    "backlogRemaining": 0,
-    "quotaUsedToday": 69,
-    "quotaRemainingToday": 131,
-    "estimatedDaysLeft": 0,
-    "note": "Google 50/50 complete earlier today (69 API calls incl. 13 resubmits). Bing 50/50 sent in batch-bing."
+    "sitemapTotal": 317,
+    "distinctUrlsEverSubmitted": 293,
+    "backlogRemaining": 38,
+    "backlogBySection": {
+      "guides": 20,
+      "property-for-sale": 17,
+      "image-credits": 1
+    },
+    "quotaUsedToday": 0,
+    "quotaRemainingToday": 200,
+    "note": "Stale since 2026-06-15, when the sitemap held 50 URLs. It now holds 317. The 38-URL backlog is in indexing-batch-pending.json and is not submitted: indexing needs Maxim plus Cursor, and must follow the deploy."
   },
   "batches": [
     {
