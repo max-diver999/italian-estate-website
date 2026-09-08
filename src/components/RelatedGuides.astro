@@ -25,7 +25,12 @@ interface Props {
   max?: number;
 }
 
-const { slugs = [], currentSlug = '', title = 'Related guides', max = 6 } = Astro.props;
+// max was 6 while the corpus curated up to 16, so 303 hand-picked links on 132
+// pages were assigned and never rendered: the layout passed the whole list, this
+// component sliced it, and nothing reported the difference. 16 covers every list
+// in the corpus and the grid is two columns, so it also keeps rows full. Raise it
+// if lists grow rather than let the overflow disappear.
+const { slugs = [], currentSlug = '', title = 'Related guides', max = 16 } = Astro.props;
 
 const COLLECTIONS = ['guides', 'compare', 'areas', 'projects', 'developers', 'news'] as const;
 
