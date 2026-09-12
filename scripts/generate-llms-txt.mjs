@@ -114,12 +114,12 @@ const short = [
   '',
   '## Start here',
   '',
-  `- ${SITE}/guides/buy-property-italy-foreigner/ — eligibility, reciprocity and the full sequence`,
-  `- ${SITE}/guides/due-diligence-italy-property/ — what to check, and in what order`,
-  `- ${SITE}/guides/cost-of-buying-property-italy/ — the transaction stack for a non-resident`,
-  `- ${SITE}/guides/rogito-italian-deed-of-sale/ — the deed, and the two protections buyers miss`,
-  `- ${SITE}/guides/visura-catastale-italy-explained/ — why the cadastre does not prove ownership`,
-  `- ${SITE}/guides/abusi-edilizi-buying-property-italy/ — unpermitted works, the commonest deal-breaker`,
+  `- ${SITE}/guides/buy-property-italy-foreigner/: eligibility, reciprocity and the full sequence`,
+  `- ${SITE}/guides/due-diligence-italy-property/: what to check, and in what order`,
+  `- ${SITE}/guides/cost-of-buying-property-italy/: the transaction stack for a non-resident`,
+  `- ${SITE}/guides/rogito-italian-deed-of-sale/: the deed, and the two protections buyers miss`,
+  `- ${SITE}/guides/visura-catastale-italy-explained/: why the cadastre does not prove ownership`,
+  `- ${SITE}/guides/abusi-edilizi-buying-property-italy/: unpermitted works, the commonest deal-breaker`,
   '',
   '## Sections',
   '',
@@ -135,7 +135,7 @@ const short = [
 
 /* ---------------- llms-full.txt: the corpus ---------------- */
 const full = [
-  '# Italian Estate — full page index',
+  '# Italian Estate: full page index',
   '',
   `${total} research pages on buying property in Italy, written for foreign buyers.`,
   `Generated from the live corpus. Site: ${SITE}`,
@@ -169,7 +169,7 @@ if (CHECK) {
     }
   };
   const stale = cur('llms.txt') !== shortTxt || cur('llms-full.txt') !== fullTxt;
-  console.log(stale ? 'llms.txt / llms-full.txt are STALE — run npm run gen:llms' : 'llms files up to date');
+  console.log(stale ? 'llms.txt / llms-full.txt are STALE, run npm run gen:llms' : 'llms files up to date');
   process.exit(stale ? 1 : 0);
 }
 
