@@ -10,6 +10,8 @@ import { SITE } from '../data/site';
 import { resolveStickyCta } from '../../scripts/lib/italian-estate-cta-router.mjs';
 
 interface Props {
+  /** Дополнительная разметка от страницы, например цена проекта. */
+  extraSchema?: Record<string, unknown> | null;
   title: string;
   description: string;
   pubDate: Date;
@@ -49,6 +51,7 @@ const {
   contextLabel = title,
   articleSlug = '',
   articleCollection = 'guides',
+  extraSchema,
 } = Astro.props;
 
 const stickyCta = articleSlug
@@ -124,7 +127,7 @@ const breadcrumbSchema = {
   ],
 };
 
-const schemas = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
+const schemas = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : []), ...(extraSchema ? [extraSchema] : [])];
 const heroPreload = heroImage ? lcpPreloadFromCloudinary(heroImage, 'hero') : null;
 ---
 <BaseLayout

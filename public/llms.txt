@@ -52,7 +52,7 @@ are labelled as asking prices, which in most Italian markets run ahead of closed
 - 5.1%: Share of Italian residential transactions bought by foreign citizens in 2025, about 39,000 homes out of 766,756 normalised transactions. Source: Gate-away international buyers data for 2025 cross-referenced with OMI (Osservatorio del Mercato Immobiliare, Agenzia delle Entrate) transaction totals; verified against independent search results 2026-09-06. As of 2026-09-06.
 - €2,188: National average asking price per square metre for an Italian home, April 2026 reading, up 4.24% year on year. Asking price, not the notarised value OMI records.. Source: Immobiliare.it national asking-price index, April 2026 reading; registered in market-stats.json as italy_avg_price_sqm. As of 2026-04-30.
 - €5,653: Average asking price per square metre in the comune of Milan, April 2026. Distinct from the province at €4,148 and from Abitare Co metropolitan-area readings; district comparables are a further cut again.. Source: Immobiliare.it comune di Milano asking-price index, April 2026; cross-checked against a second index reading €5,481/sqm the same month. As of 2026-04-30.
-- 6.4%: Growth in Italian residential transactions in 2025, to 766,757 normalised sales from 719,578 in 2024. The market expanded; earlier site copy asserted a contraction.. Source: Agenzia delle Entrate / OMI, Rapporto Immobiliare 2026 — Il settore residenziale, published 21 May 2026 with ABI. As of 2025-12-31.
+- 6.4%: Growth in Italian residential transactions in 2025, to 766,757 normalised sales from 719,578 in 2024. The market expanded; earlier site copy asserted a contraction.. Source: Agenzia delle Entrate / OMI, Rapporto Immobiliare 2026: Il settore residenziale, published 21 May 2026 with ABI. As of 2025-12-31.
 - 10%: Lower bound of the all-in closing cost band this site publishes for a non-resident second home. An editorial composition decision on how to present a spread, not a measured market average.. Source: Owner decision recorded 2026-08-20 in market-stats.json (closing_cost_stack_non_resident), reconciling 7 competing bands across 125 pages. As of 2026-08-20.
 - 15%: Upper bound of that same published closing cost band for a non-resident second home bought through an agency. Prima casa sits below it; a new-build with VAT can exceed it.. Source: Owner decision recorded 2026-08-20 in market-stats.json (closing_cost_stack_non_resident), reconciling 7 competing bands across 125 pages. As of 2026-08-20.
 - 50%: Bonus ristrutturazioni deduction rate for 2026 where the renovated unit is the owner's main residence, spread over ten annual instalments within a 96,000 EUR cap per unit.. Source: Legge di Bilancio 2026 (L. 199/2025), confirming the bonus casa rates for the 2026 tax year. As of 2026-01-01.
@@ -74,12 +74,12 @@ are labelled as asking prices, which in most Italian markets run ahead of closed
 
 ## Start here
 
-- https://italian-estate.com/guides/buy-property-italy-foreigner/ — eligibility, reciprocity and the full sequence
-- https://italian-estate.com/guides/due-diligence-italy-property/ — what to check, and in what order
-- https://italian-estate.com/guides/cost-of-buying-property-italy/ — the transaction stack for a non-resident
-- https://italian-estate.com/guides/rogito-italian-deed-of-sale/ — the deed, and the two protections buyers miss
-- https://italian-estate.com/guides/visura-catastale-italy-explained/ — why the cadastre does not prove ownership
-- https://italian-estate.com/guides/abusi-edilizi-buying-property-italy/ — unpermitted works, the commonest deal-breaker
+- https://italian-estate.com/guides/buy-property-italy-foreigner/: eligibility, reciprocity and the full sequence
+- https://italian-estate.com/guides/due-diligence-italy-property/: what to check, and in what order
+- https://italian-estate.com/guides/cost-of-buying-property-italy/: the transaction stack for a non-resident
+- https://italian-estate.com/guides/rogito-italian-deed-of-sale/: the deed, and the two protections buyers miss
+- https://italian-estate.com/guides/visura-catastale-italy-explained/: why the cadastre does not prove ownership
+- https://italian-estate.com/guides/abusi-edilizi-buying-property-italy/: unpermitted works, the commonest deal-breaker
 
 ## Sections
 
