@@ -1,10 +1,10 @@
 ---
 export const prerender = true;
 
-const reportDate = '3 September 2026';
-const reportVersion = 'v3.8';
+const reportDate = '16 September 2026';
+const reportVersion = 'v3.9';
 const launchDate = 'May 2026';
-const dataThrough = '31 August 2026';
+const dataThrough = '13 September 2026';
 
 /** Ahrefs DR — null until first verified crawl (target 8–12 Q3) */
 const ahrefsDr: number | null = null;
@@ -67,7 +67,7 @@ const ga4Sessions = monthlyGa4.reduce((s, m) => s + m.sessions, 0);
 const ga4Organic = 160;
 const ga4AiAssistant = 13;
 const confirmedLeads = 0;
-const gsc28d = { clicks: 32, impressions: 3637, ctr: 0.88, position: 28.8 };
+const gsc28d = { clicks: 41, impressions: 5076, ctr: 0.81, position: 25.9 };
 const gscPagesWithClicks = 17;
 const bing28d = { clicks: 58, impressions: 4009 };
 const bingLifetime = { clicks: 63, impressions: 4447 };
@@ -993,6 +993,15 @@ const chartPayload = JSON.stringify({
 
   <div class="section-title">Change history</div>
   <div class="changelog">
+          <div class="changelog-item">
+      <div class="changelog-date">16 Sep 2026</div>
+      <div class="changelog-content">
+        <div class="changelog-title">Site report v3.9 · GSC/GA4 MCP refresh</div>
+        <div class="changelog-desc">GSC 28d: 41 clk / 5 076 imp. GA4 Aug 602 · Sep 232.</div>
+        <div class="changelog-tags"><span class="tag green">Report v3.9</span><span class="tag blue">GSC MCP</span><span class="tag amber">GA4 MCP</span></div>
+      </div>
+    </div>
+
         <div class="changelog-item">
               <div class="changelog-item">
       <div class="changelog-date">3 Sep 2026 (v3.8)</div>
