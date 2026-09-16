@@ -2,12 +2,23 @@ const TRANSFORM_TOKEN_RE = /^(w_|h_|c_|f_|q_|g_|e_|b_|dpr_|fl_|a_)/;
 
 export type CloudinaryRole = 'hero' | 'inline' | 'thumb';
 
-const ECO = 'q_auto:eco,g_auto,f_auto';
+/*
+ * g_auto говорит Cloudinary, какую часть кадра оставить ПРИ ОБРЕЗКЕ. Без режима обрезки он
+ * бессмыслен, и Cloudinary отвечает 400, а не игнорирует его.
+ *
+ * Он стоял во всех наборах, включая те, где обрезки нет. Из-за этого не грузилась ни одна главная
+ * картинка статьи и ни одна картинка внутри текста: пустое место наверху страницы. Живы были только
+ * карточки, потому что там единственный вариант с c_fill, и поэтому беда выглядела точечной.
+ * Та же поломка найдена 16.09.2026 на invest-spain-property.com и оттуда проверена здесь.
+ */
+const ECO = 'q_auto:eco,f_auto';
+/** Только там, где есть c_fill: тогда g_auto действительно выбирает, что оставить в кадре. */
+const ECO_CROP = 'q_auto:eco,g_auto,f_auto';
 
 const ROLE_WIDTHS: Record<CloudinaryRole, string[]> = {
   hero: [`w_360,${ECO}`, `w_640,${ECO}`, `w_960,${ECO}`, `w_1200,${ECO}`],
   inline: [`w_640,${ECO}`, `w_960,${ECO}`],
-  thumb: [`w_320,${ECO}`, `w_400,${ECO}`, `w_640,h_360,c_fill,${ECO}`],
+  thumb: [`w_320,${ECO}`, `w_400,${ECO}`, `w_640,h_360,c_fill,${ECO_CROP}`],
 };
 
 const ROLE_SIZES: Record<CloudinaryRole, string> = {
