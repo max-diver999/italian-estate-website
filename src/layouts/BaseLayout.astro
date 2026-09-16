@@ -159,24 +159,28 @@ const allSchemas = [orgSchema, ...schemas, ...(webPageSchema ? [webPageSchema] :
       --color-border-soft: #eeeeec;
       --font-sans: 'DM Sans', system-ui, sans-serif;
     }
-    html { -webkit-font-smoothing: antialiased; }
-    body {
-      margin: 0;
-      background: var(--color-page);
-      color: var(--color-muted);
-      font-family: var(--font-sans);
-      line-height: 1.65;
-      font-size: 1rem;
-      min-height: 100dvh;
-      display: flex;
-      flex-direction: column;
-    }
-    body > main { flex: 1 0 auto; }
-    h1, h2, h3 {
-      font-family: var(--font-sans);
-      color: var(--color-ink);
-      line-height: 1.25;
-      font-weight: 600;
+    /* В @layer base, как и такие же правила в global.css: правило вне слоя бьёт любую утилиту
+       Tailwind, и заголовок с классом цвета красился бы этим цветом, а не своим. */
+    @layer base {
+      html { -webkit-font-smoothing: antialiased; }
+      body {
+        margin: 0;
+        background: var(--color-page);
+        color: var(--color-muted);
+        font-family: var(--font-sans);
+        line-height: 1.65;
+        font-size: 1rem;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+      }
+      body > main { flex: 1 0 auto; }
+      h1, h2, h3 {
+        font-family: var(--font-sans);
+        color: var(--color-ink);
+        line-height: 1.25;
+        font-weight: 600;
+      }
     }
     .hero-visual {
       position: relative;
