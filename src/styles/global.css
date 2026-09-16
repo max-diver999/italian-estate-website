@@ -16,26 +16,38 @@
   --font-sans: 'DM Sans', system-ui, sans-serif;
 }
 
-html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+/* Правила для голых тегов лежат в @layer base.
+ *
+ * Tailwind v4 кладёт свои утилиты в @layer utilities. Правило, написанное вне слоя, бьёт любое
+ * правило внутри слоя независимо от веса селектора. Пока эти строки лежали вне слоя, класс
+ * text-[#d6d3d1] на ссылках подвала не мог перебить цвет ссылки: семь ссылок рисовались
+ * зелёным по тёмному с контрастом 2.54 при норме 4.5, хотя в разметке стоял светлый цвет.
+ *
+ * Внутри @layer base порядок обычный: Preflight перебивается, а утилиты выигрывают.
+ * Сторожит scripts/test-css-layers.mjs. Замерено 16.09.2026 на живом сайте.
+ */
+@layer base {
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
 
-body {
-  background: var(--color-page);
-  color: var(--color-muted);
-  font-family: var(--font-sans);
-  line-height: 1.65;
-  font-size: 1rem;
+  body {
+    background: var(--color-page);
+    color: var(--color-muted);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    font-size: 1rem;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  a { color: var(--color-teal); text-decoration: none; }
+  a:hover { color: var(--color-teal-dark); }
 }
-
-h1, h2, h3, h4 {
-  font-family: var(--font-sans);
-  color: var(--color-ink);
-  line-height: 1.25;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-a { color: var(--color-teal); text-decoration: none; }
-a:hover { color: var(--color-teal-dark); }
 
 .btn-primary {
   display: inline-flex;
@@ -99,18 +111,22 @@ a:hover { color: var(--color-teal-dark); }
   flex-shrink: 0;
 }
 
-input:not([type="checkbox"]):not([type="radio"]), select, textarea {
-  width: 100%;
-  border: 1px solid var(--color-border);
-  border-radius: 0.625rem;
-  padding: 0.65rem 0.85rem;
-  background: #fff;
-  /* 16px exactly. Safari on iOS zooms the page when a focused field is smaller
-   * than this and never zooms back out, which puts the submit button off screen
-   * on every mobile form fill. Do not drop this below 1rem. */
-  font-size: 1rem;
-  font-family: var(--font-sans);
-  color: var(--color-ink);
+/* Тоже в @layer base: вне слоя это правило перебивало бы любую утилиту Tailwind на поле формы.
+   Внутри слоя оно по-прежнему сильнее Preflight, который снимает полю рамку. */
+@layer base {
+  input:not([type="checkbox"]):not([type="radio"]), select, textarea {
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: 0.625rem;
+    padding: 0.65rem 0.85rem;
+    background: #fff;
+    /* 16px exactly. Safari on iOS zooms the page when a focused field is smaller
+     * than this and never zooms back out, which puts the submit button off screen
+     * on every mobile form fill. Do not drop this below 1rem. */
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+  }
 }
 input[type="checkbox"],
 input[type="radio"] {
