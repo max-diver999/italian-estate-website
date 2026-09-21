@@ -1,0 +1,80 @@
+{
+  "site": "italian-estate-website",
+  "source_cloud": "bwppi9gc",
+  "r2_public_base": "https://pub-2855c73eea384110b510f25966292c37.r2.dev",
+  "changed": 14,
+  "errors": 0,
+  "items": [
+    {
+      "mdx": "italian-estate-website/src/content/guides/1-euro-houses-italy.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/1-euro-houses-italy/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/1-euro-houses-italy/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/best-places-to-live-italy.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/best-places-to-live-italy/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/best-places-to-live-italy/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/caparra-confirmatoria-italy-deposit.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/caparra-confirmatoria-italy-deposit/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/caparra-confirmatoria-italy-deposit/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/condominium-fees-italy.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/condominium-fees-italy/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/condominium-fees-italy/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/cost-of-living-italy.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/cost-of-living-italy/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/cost-of-living-italy/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/english-guides-wrong-italian-property.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/english-guides-wrong-italian-property/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/english-guides-wrong-italian-property/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/italy-citizenship-by-descent.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/italy-citizenship-by-descent/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/italy-citizenship-by-descent/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/italy-digital-nomad-visa.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/italy-digital-nomad-visa/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/italy-digital-nomad-visa/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/moving-to-italy-from-uk.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/moving-to-italy-from-uk/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/moving-to-italy-from-uk/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/moving-to-italy-from-usa.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/moving-to-italy-from-usa/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/moving-to-italy-from-usa/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/retire-in-italy.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/retire-in-italy/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/retire-in-italy/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/rogito-italian-deed-of-sale.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/rogito-italian-deed-of-sale/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/rogito-italian-deed-of-sale/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/usucapione-adverse-possession-italy.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/usucapione-adverse-possession-italy/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/usucapione-adverse-possession-italy/hero.webp"
+    },
+    {
+      "mdx": "italian-estate-website/src/content/guides/visura-catastale-italy-explained.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/visura-catastale-italy-explained/hero",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/visura-catastale-italy-explained/hero.webp"
+    }
+  ],
+  "failed": []
+}
