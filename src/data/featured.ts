@@ -17,4 +17,4 @@ export const FEATURED_AREA_SLUGS = [] as const;
 
 /** Homepage hero fallback until project MDX ship. */
 export const HOMEPAGE_HERO_IMAGE =
-  'https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474880/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp';
+  'https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp';
