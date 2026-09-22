@@ -1,3 +1,4 @@
+import r2Widths from '../data/r2-image-widths.json';
 const TRANSFORM_TOKEN_RE = /^(w_|h_|c_|f_|q_|g_|e_|b_|dpr_|fl_|a_)/;
 
 export type CloudinaryRole = 'hero' | 'inline' | 'thumb';
@@ -59,10 +60,45 @@ export function cloudinaryDeliveryUrl(url: string, transform: string): string {
   return `https://res.cloudinary.com/${cloud}/image/upload/${transform}/${publicId}`;
 }
 
+const R2_HOST = 'pub-2855c73eea384110b510f25966292c37.r2.dev';
+type R2Entry = { w: number; h: number; variants: number[] };
+
+/**
+ * Картинки, переехавшие на Cloudflare R2.
+ *
+ * Раньше эта функция на любом не-Cloudinary адресе возвращала просто { src } и молча теряла и
+ * список ширин, и размеры кадра: замер 22.09.2026 показал ноль картинок с выбором размера из 49
+ * на списке районов, телефон качал 10 272 КБ, столько же, сколько компьютер.
+ *
+ * Какие ширины реально залиты, знает манифест (scripts/r2-add-widths.mjs). Гадать нельзя: браузер
+ * попросит несуществующий файл и получит 404 вместо картинки.
+ */
+export function r2Responsive(
+  url: string,
+  role: CloudinaryRole = 'inline',
+): { src: string; srcset?: string; sizes?: string; width?: number; height?: number } | null {
+  const i = url.indexOf(R2_HOST);
+  if (i < 0) return null;
+  const key = url.slice(i + R2_HOST.length).replace(/^\//, '').split('?')[0];
+  const entry = (r2Widths as Record<string, R2Entry>)[key];
+  if (!entry) return null;
+
+  const variants = (entry.variants || []).filter((w) => w < entry.w).sort((a, b) => a - b);
+  const base = `https://${R2_HOST}/${key}`;
+  const srcset = variants.length
+    ? [...variants.map((w) => `${base.replace(/\.webp$/i, `-w${w}.webp`)} ${w}w`), `${base} ${entry.w}w`].join(', ')
+    : undefined;
+
+  return { src: url, srcset, sizes: srcset ? ROLE_SIZES[role] : undefined, width: entry.w, height: entry.h };
+}
+
 export function responsiveCloudinary(
   url: string,
   role: CloudinaryRole = 'inline',
-): { src: string; srcset?: string; sizes?: string } {
+): { src: string; srcset?: string; sizes?: string; width?: number; height?: number } {
+  const fromR2 = r2Responsive(url, role);
+  if (fromR2) return fromR2;
+
   if (!isCloudinaryUrl(url)) {
     return { src: url };
   }

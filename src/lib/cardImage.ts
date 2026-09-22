@@ -1,3 +1,25 @@
+import { r2Responsive } from './cloudinary';
+
+/**
+ * Карточка в списке с выбором размера.
+ *
+ * Ширина слота померена на живой странице 22.09.2026: при экране 375 карточка занимает 325 точек,
+ * при 900 ровно 402, при 1440 ровно 310. Круглое 100vw здесь врёт и заставляет браузер брать файл
+ * шире нужного.
+ */
+export const CARD_SIZES =
+  '(max-width: 599px) calc(100vw - 50px), (max-width: 1023px) calc(50vw - 48px), 310px';
+
+export type CardImage = { src: string; srcset?: string; sizes?: string; width?: number; height?: number };
+
+export function getCardImage(src: string | undefined, size: 'card' | 'hero' = 'card'): CardImage | null {
+  if (!src?.trim()) return null;
+  const fromR2 = r2Responsive(src.trim(), 'thumb');
+  if (fromR2) return { ...fromR2, sizes: size === 'card' ? CARD_SIZES : fromR2.sizes };
+  const url = getCardImageUrl(src, size);
+  return url ? { src: url } : null;
+}
+
 /**
  * Card thumbnail URLs — Cloudinary crop when available; external CDN as-is.
  */
