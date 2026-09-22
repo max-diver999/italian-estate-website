@@ -54,12 +54,34 @@ function loadBaseline() {
   }
 }
 
+const { analyzeCadence, cadenceIssues } = await import('./lib/ai-cadence.mjs');
+const { LANG, cadenceProfileFor } = await import('./lib/cadence-thresholds.mjs');
+
 const argv = process.argv.slice(2);
 const has = (f) => argv.includes(f);
 const valOf = (f, d) => {
   const i = argv.indexOf(f);
   return i >= 0 && argv[i + 1] ? argv[i + 1] : d;
 };
+
+/**
+ * Статьи пачки: слаги из approved_slugs в .content-os/lock.json. Там они
+ * записаны как "guides/some-slug", поэтому сравниваем по последнему сегменту
+ * пути, как на английском Пхукете. Без лока статьёй пачки считается каждый
+ * изменённый файл (режим без --all и --slug).
+ */
+function batchSlugsFromLock() {
+  try {
+    const lock = JSON.parse(readFileSync(join(ROOT, '.content-os/lock.json'), 'utf8'));
+    if (Array.isArray(lock.approved_slugs) && lock.approved_slugs.length) {
+      return new Set(lock.approved_slugs.map((s) => s.split('/').pop()));
+    }
+  } catch {
+    /* no lock */
+  }
+  return null;
+}
+const batchSlugs = batchSlugsFromLock();
 
 /** Batch policy is 2500; the legacy corpus baseline is 2000. */
 const MIN_WORDS = Number(valOf('--min-words', '2500'));
@@ -275,6 +297,20 @@ for (const { coll, slug, path } of targets) {
   const human = analyzeHumanSignals(body, { emLimit: EM_DASH_LIMIT[coll] ?? EM_DASH_LIMIT.default });
   for (const issue of human.issues) {
     if (['unclosed-bold', 'corpus-stamp', 'em-dash-heavy'].includes(issue.kind)) fail(`${issue.kind}: ${issue.detail}`);
+  }
+
+  // AI-каденция: для статьи ИЗ ПАЧКИ замечания это ошибки. Статья новая,
+  // поправить антитезу и ритм дешевле, чем потом чистить корпус. Невидимые
+  // символы это ошибка для любого файла.
+  // Пороги в scripts/lib/cadence-thresholds.mjs, откалиброваны по корпусу.
+  {
+    const isBatchArticle = batchSlugs ? batchSlugs.has(slug) : !has('--all') && !has('--slug');
+    const cadence = analyzeCadence(raw, { lang: LANG });
+    const { issues, hard } = cadenceIssues(cadence, cadenceProfileFor(coll));
+    for (const h of hard) fail(`${h.kind} - ${h.detail}`);
+    if (isBatchArticle) {
+      for (const i of issues) fail(`${i.kind} - ${i.detail}`);
+    }
   }
 
   // --- duplication: within file, then across the corpus ---
