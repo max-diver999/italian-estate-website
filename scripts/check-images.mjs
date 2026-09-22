@@ -44,7 +44,7 @@ const attr = (tag, name) => {
   return m ? m[1] : '';
 };
 
-const problems = { tiny: [], noSrcset: [], noSize: [], iconAsPhoto: [] };
+const problems = { tiny: [], noSrcset: [], noSize: [], iconAsPhoto: [], smallSource: [] };
 const seen = new Set();
 const pages = htmlFiles(DIST);
 
@@ -57,8 +57,8 @@ for (const file of pages) {
     if (!src || src.startsWith('data:')) continue;
 
     /** Иконка в роли фотографии: ловим по размерам блока, а не по вере в имя файла. */
-    const w = Number(attr(tag, 'width') || 0);
-    if (NOT_A_PHOTO.test(src) && w >= 600) problems.iconAsPhoto.push({ page, src });
+    const boxW = Number(attr(tag, 'width') || 0);
+    if (NOT_A_PHOTO.test(src) && boxW >= 600) problems.iconAsPhoto.push({ page, src });
 
     if (!src.includes(R2_HOST)) continue;
 
@@ -66,7 +66,15 @@ for (const file of pages) {
 
     const srcset = attr(tag, 'srcset');
     const candidates = srcset ? srcset.split(',').filter((c) => /\s\d+w\s*$/.test(c.trim())).length : 0;
-    if (candidates < 2) problems.noSrcset.push({ page, src, candidates });
+    /**
+     * Файл уже меньше самой узкой ступени (360): выбирать не из чего, телефон и так получает свой
+     * размер. Это не провал выбора размера, а маленький исходник, и о нём говорим отдельно, чтобы
+     * он не терялся: такое фото стоит заменить на нормальное. Найдено 22.09.2026 на Мексике, где
+     * 15 туристических снимков по 323 точки попали в гейт как «телефон качает файл для компьютера».
+     */
+    const w = Number(attr(tag, 'width') || 0);
+    if (candidates < 2 && w > 0 && w <= 400) problems.smallSource.push({ page, src, w });
+    else if (candidates < 2) problems.noSrcset.push({ page, src, candidates });
 
     seen.add(src.split('?')[0]);
   }
@@ -106,6 +114,13 @@ report('Пустые или неоткрывающиеся картинки', pr
 report('Без выбора размера (телефон качает файл для компьютера)', noSrcset, (x) => `${x.page}  ${x.src}`);
 report('Без размеров кадра (страница прыгает при загрузке)', noSize, (x) => `${x.page}  ${x.src}`);
 report('Иконка в роли фотографии', icons, (x) => `${x.page}  ${x.src}`);
+
+const small = uniq(problems.smallSource, 'src');
+if (small.length) {
+  console.log(`\nМаленькие исходники, их стоит заменить нормальным фото (сборку не валят): ${small.length}`);
+  for (const x of small.slice(0, 15)) console.log(`  ${x.w}px  ${x.page}  ${x.src}`);
+  if (small.length > 15) console.log(`  и ещё ${small.length - 15}`);
+}
 
 if (failed) {
   console.log('\nСборка не принимается. Это те самые случаи, которые в сентябре 2026 доехали до живых сайтов.');

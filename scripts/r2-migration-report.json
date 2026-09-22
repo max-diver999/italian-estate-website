@@ -1,79 +1,289 @@
 {
-  "site": "italian-estate-website",
-  "source_cloud": "bwppi9gc",
+  "site": "_worktrees/italy-off-phuket",
+  "source_cloud": "dphvjbqb4",
   "r2_public_base": "https://pub-2855c73eea384110b510f25966292c37.r2.dev",
-  "changed": 14,
+  "changed": 56,
   "errors": 0,
   "items": [
     {
-      "mdx": "italian-estate-website/src/content/guides/1-euro-houses-italy.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/1-euro-houses-italy/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/1-euro-houses-italy/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/areas/cisternino.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474880/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/best-places-to-live-italy.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/best-places-to-live-italy/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/best-places-to-live-italy/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/areas/ostuni.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474880/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_1.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_1.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/caparra-confirmatoria-italy-deposit.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/caparra-confirmatoria-italy-deposit/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/caparra-confirmatoria-italy-deposit/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/areas/ostuni.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474880/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/condominium-fees-italy.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/condominium-fees-italy/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/condominium-fees-italy/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/guides/agriturismo-investment-italy-guide.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474880/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_1.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_1.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/cost-of-living-italy.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/cost-of-living-italy/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/cost-of-living-italy/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/guides/agriturismo-investment-italy-guide.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474881/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_2.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_2.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/english-guides-wrong-italian-property.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/english-guides-wrong-italian-property/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/english-guides-wrong-italian-property/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/guides/airbnb-investment-italy-guide.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474874/more-group/italy/projects/prandina-navigli-milan/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/prandina-navigli-milan/inline_1.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/italy-citizenship-by-descent.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/italy-citizenship-by-descent/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/italy-citizenship-by-descent/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/guides/airbnb-investment-italy-guide.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474875/more-group/italy/projects/maciachini-urban-retreat/inline_1.png",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/maciachini-urban-retreat/inline_1.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/italy-digital-nomad-visa.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/italy-digital-nomad-visa/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/italy-digital-nomad-visa/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/guides/buy-property-italy-under-200000.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/w_960,q_85,f_webp/v1781474880/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/moving-to-italy-from-uk.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/moving-to-italy-from-uk/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/moving-to-italy-from-uk/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/guides/cedolare-secca-italy-rental-property.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/prandina-navigli-milan/inline_2.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/prandina-navigli-milan/inline_2.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/moving-to-italy-from-usa.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/moving-to-italy-from-usa/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/moving-to-italy-from-usa/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/guides/digital-nomad-italy-property-guide.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474874/more-group/italy/projects/prandina-navigli-milan/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/prandina-navigli-milan/inline_1.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/retire-in-italy.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/retire-in-italy/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/retire-in-italy/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/guides/digital-nomad-italy-property-guide.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474875/more-group/italy/projects/maciachini-urban-retreat/inline_1.png",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/maciachini-urban-retreat/inline_1.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/rogito-italian-deed-of-sale.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/rogito-italian-deed-of-sale/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/rogito-italian-deed-of-sale/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/guides/italy-property-taxes-foreign-buyers-guide.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/w_960,q_85,f_webp/v1781474882/more-group/italy/projects/ostuni-new-villa-pool-470k/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/hero.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/usucapione-adverse-possession-italy.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/usucapione-adverse-possession-italy/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/usucapione-adverse-possession-italy/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/guides/mistakes-foreign-buyers-italy.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474875/more-group/italy/projects/maciachini-urban-retreat/inline_1.png",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/maciachini-urban-retreat/inline_1.webp"
     },
     {
-      "mdx": "italian-estate-website/src/content/guides/visura-catastale-italy-explained.mdx",
-      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/w_1200,q_85,f_webp/more-group/italy/guides/visura-catastale-italy-explained/hero",
-      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/guides/visura-catastale-italy-explained/hero.webp"
+      "file": "_worktrees/italy-off-phuket/src/content/guides/mistakes-foreign-buyers-italy.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474880/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_1.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/guides/uk-tax-italy-holiday-home.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_2.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/guides/us-tax-italy-rental-property.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/inspire-uptown-milan/inline_2.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/inspire-uptown-milan/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/guides/vineyard-property-investment-italy-guide.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/guides/vineyard-property-investment-italy-guide.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474880/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_2.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/aria-ex-macello-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/inspire-uptown-milan/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/inspire-uptown-milan/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/bliss-uptown-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474878/more-group/italy/projects/feel-uptown-milan/inline_1.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/feel-uptown-milan/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/bliss-uptown-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474879/more-group/italy/projects/feel-uptown-milan/inline_2.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/feel-uptown-milan/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/carovigno-villa-new-build.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/carovigno-villa-new-build.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_2.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/feel-uptown-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474878/more-group/italy/projects/feel-uptown-milan/hero.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/feel-uptown-milan/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/feel-uptown-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474878/more-group/italy/projects/feel-uptown-milan/inline_1.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/feel-uptown-milan/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/feel-uptown-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474879/more-group/italy/projects/feel-uptown-milan/inline_2.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/feel-uptown-milan/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/innesto-milan-social-housing.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/inspire-uptown-milan/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/inspire-uptown-milan/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/inspire-uptown-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/inspire-uptown-milan/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/inspire-uptown-milan/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/inspire-uptown-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/inspire-uptown-milan/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/inspire-uptown-milan/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/inspire-uptown-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/inspire-uptown-milan/inline_2.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/inspire-uptown-milan/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/lecce-urbs20-villas.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474881/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_2.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/lendlease-mind-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/inspire-uptown-milan/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/inspire-uptown-milan/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/maciachini-urban-retreat.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474875/more-group/italy/projects/maciachini-urban-retreat/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/maciachini-urban-retreat/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/maciachini-urban-retreat.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474875/more-group/italy/projects/maciachini-urban-retreat/inline_1.png",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/maciachini-urban-retreat/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/maciachini-urban-retreat.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474875/more-group/italy/projects/maciachini-urban-retreat/inline_2.png",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/maciachini-urban-retreat/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/meli-navigli-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474874/more-group/italy/projects/prandina-navigli-milan/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/prandina-navigli-milan/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/meli-navigli-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474873/more-group/italy/projects/prandina-navigli-milan/inline_2.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/prandina-navigli-milan/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/milano-sesto-urban-regeneration.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/inspire-uptown-milan/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/inspire-uptown-milan/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/ostuni-lamia-chiavi-in-mano.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474881/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/ostuni-lamia-chiavi-in-mano.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_2.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/ostuni-masseria-pool-apuliadeluxe.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474880/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/ostuni-masseria-pool-apuliadeluxe.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/ostuni-new-villa-pool-470k.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-new-villa-pool-470k/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/ostuni-new-villa-pool-470k.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/ostuni-new-villa-pool-470k.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_2.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/ostuni-rascina-villa-construction.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/ostuni-trulli-modern-villa.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/ostuni-trulli-modern-villa.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_2.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/prandina-navigli-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474874/more-group/italy/projects/prandina-navigli-milan/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/prandina-navigli-milan/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/prandina-navigli-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474874/more-group/italy/projects/prandina-navigli-milan/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/prandina-navigli-milan/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/prandina-navigli-milan.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474874/more-group/italy/projects/prandina-navigli-milan/inline_2.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/prandina-navigli-milan/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/tranio-puglia-masseria-new.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/tranio-puglia-masseria-new.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_2.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-new-villa-pool-470k/inline_2.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/valle-d-itria-trulli-restoration.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474880/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.jpg",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/content/projects/valle-d-itria-trulli-restoration.mdx",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474882/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp"
+    },
+    {
+      "file": "_worktrees/italy-off-phuket/src/data/featured.ts",
+      "old": "https://res.cloudinary.com/dphvjbqb4/image/upload/v1781474880/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp"
     }
   ],
   "failed": []

@@ -2509,6 +2509,32 @@
       768
     ]
   },
+  "more-group/italy/projects/feel-uptown-milan/hero.webp": {
+    "w": 1104,
+    "h": 786,
+    "variants": [
+      360,
+      640,
+      768,
+      960
+    ]
+  },
+  "more-group/italy/projects/feel-uptown-milan/inline_1.webp": {
+    "w": 960,
+    "h": 624,
+    "variants": [
+      360,
+      640,
+      768
+    ]
+  },
+  "more-group/italy/projects/feel-uptown-milan/inline_2.webp": {
+    "w": 546,
+    "h": 609,
+    "variants": [
+      360
+    ]
+  },
   "more-group/italy/projects/fivizzano-village-property/hero.webp": {
     "w": 1200,
     "h": 900,
@@ -2567,6 +2593,34 @@
       960
     ]
   },
+  "more-group/italy/projects/inspire-uptown-milan/hero.webp": {
+    "w": 1080,
+    "h": 675,
+    "variants": [
+      360,
+      640,
+      768,
+      960
+    ]
+  },
+  "more-group/italy/projects/inspire-uptown-milan/inline_1.webp": {
+    "w": 960,
+    "h": 504,
+    "variants": [
+      360,
+      640,
+      768
+    ]
+  },
+  "more-group/italy/projects/inspire-uptown-milan/inline_2.webp": {
+    "w": 960,
+    "h": 540,
+    "variants": [
+      360,
+      640,
+      768
+    ]
+  },
   "more-group/italy/projects/langhe-barolo-vineyard-property/hero.webp": {
     "w": 1200,
     "h": 900,
@@ -2623,6 +2677,30 @@
       360,
       640,
       768
+    ]
+  },
+  "more-group/italy/projects/maciachini-urban-retreat/hero.webp": {
+    "w": 1200,
+    "h": 800,
+    "variants": [
+      360,
+      640,
+      768,
+      960
+    ]
+  },
+  "more-group/italy/projects/maciachini-urban-retreat/inline_1.webp": {
+    "w": 512,
+    "h": 512,
+    "variants": [
+      360
+    ]
+  },
+  "more-group/italy/projects/maciachini-urban-retreat/inline_2.webp": {
+    "w": 512,
+    "h": 512,
+    "variants": [
+      360
     ]
   },
   "more-group/italy/projects/matera-sassi-apartments/hero.webp": {
@@ -2740,6 +2818,34 @@
       960
     ]
   },
+  "more-group/italy/projects/ostuni-new-villa-pool-470k/hero.webp": {
+    "w": 1024,
+    "h": 768,
+    "variants": [
+      360,
+      640,
+      768,
+      960
+    ]
+  },
+  "more-group/italy/projects/ostuni-new-villa-pool-470k/inline_1.webp": {
+    "w": 960,
+    "h": 443,
+    "variants": [
+      360,
+      640,
+      768
+    ]
+  },
+  "more-group/italy/projects/ostuni-new-villa-pool-470k/inline_2.webp": {
+    "w": 960,
+    "h": 720,
+    "variants": [
+      360,
+      640,
+      768
+    ]
+  },
   "more-group/italy/projects/ostuni-rascina-villa-construction/hero.webp": {
     "w": 1200,
     "h": 800,
@@ -2748,6 +2854,34 @@
       640,
       768,
       960
+    ]
+  },
+  "more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp": {
+    "w": 1200,
+    "h": 675,
+    "variants": [
+      360,
+      640,
+      768,
+      960
+    ]
+  },
+  "more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_1.webp": {
+    "w": 960,
+    "h": 540,
+    "variants": [
+      360,
+      640,
+      768
+    ]
+  },
+  "more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/inline_2.webp": {
+    "w": 960,
+    "h": 540,
+    "variants": [
+      360,
+      640,
+      768
     ]
   },
   "more-group/italy/projects/ostuni-trulli-modern-villa/hero.webp": {
@@ -2873,6 +3007,30 @@
       640,
       768
     ]
+  },
+  "more-group/italy/projects/prandina-navigli-milan/hero.webp": {
+    "w": 1200,
+    "h": 800,
+    "variants": [
+      360,
+      640,
+      768,
+      960
+    ]
+  },
+  "more-group/italy/projects/prandina-navigli-milan/inline_1.webp": {
+    "w": 960,
+    "h": 679,
+    "variants": [
+      360,
+      640,
+      768
+    ]
+  },
+  "more-group/italy/projects/prandina-navigli-milan/inline_2.webp": {
+    "w": 100,
+    "h": 71,
+    "variants": []
   },
   "more-group/italy/projects/rapallo-sea-view-apartments/hero.webp": {
     "w": 1200,

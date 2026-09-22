@@ -135,8 +135,9 @@ const allSchemas = [orgSchema, ...schemas, ...(webPageSchema ? [webPageSchema] :
 
   <link rel="preload" href={dmSans400} as="font" type="font/woff2" crossorigin />
 
-  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
-  <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+  <!-- Картинки с 22.09.2026 живут на R2; на Cloudinary у сайта не осталось ни одной. -->
+  <link rel="preconnect" href="https://pub-2855c73eea384110b510f25966292c37.r2.dev" />
+  <link rel="dns-prefetch" href="https://pub-2855c73eea384110b510f25966292c37.r2.dev" />
 
   {preloadImage && (
     <link
