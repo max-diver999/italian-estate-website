@@ -2236,6 +2236,17 @@
       1200
     ]
   },
+  "more-group/italy/heroes/ancona-426ff45b.webp": {
+    "w": 1200,
+    "h": 824,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960
+    ]
+  },
   "more-group/italy/heroes/ancona-centro-apartments-79ffdbca.webp": {
     "w": 1347,
     "h": 825,
@@ -2392,6 +2403,18 @@
       1200
     ]
   },
+  "more-group/italy/heroes/buy-property-italy-under-500000-b262ec1f.webp": {
+    "w": 1600,
+    "h": 786,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/campobasso-centro-apartments-76672e9d.webp": {
     "w": 1600,
     "h": 1200,
@@ -2425,6 +2448,18 @@
       640,
       768,
       960
+    ]
+  },
+  "more-group/italy/heroes/carovigno-villa-new-build-99602fb9.webp": {
+    "w": 1600,
+    "h": 901,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
     ]
   },
   "more-group/italy/heroes/chianti-farmhouse-restoration-4a34f4d7.webp": {
@@ -2562,6 +2597,18 @@
   "more-group/italy/heroes/emilia-romagna-property-investment-guide-99412f9b.webp": {
     "w": 1600,
     "h": 1067,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/flat-tax-vs-investor-visa-italy-8271f8a6.webp": {
+    "w": 1440,
+    "h": 615,
     "variants": [
       360,
       480,
@@ -3049,9 +3096,33 @@
       1200
     ]
   },
+  "more-group/italy/heroes/prandina-navigli-milan-52daba6e.webp": {
+    "w": 1280,
+    "h": 560,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/pregio-immobiliare-17934dea.webp": {
     "w": 1600,
     "h": 900,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/preliminare-trascritto-italy-a07a7d68.webp": {
+    "w": 1600,
+    "h": 1000,
     "variants": [
       360,
       480,
@@ -3085,6 +3156,18 @@
       1200
     ]
   },
+  "more-group/italy/heroes/sanremo-sea-view-apartments-f69a7ec2.webp": {
+    "w": 1600,
+    "h": 1000,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/santa-margherita-ligure-5698c1af.webp": {
     "w": 1600,
     "h": 1205,
@@ -3100,6 +3183,18 @@
   "more-group/italy/heroes/sardinia-property-investment-guide-852170e2.webp": {
     "w": 1600,
     "h": 786,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/savona-e60e3996.webp": {
+    "w": 1600,
+    "h": 1205,
     "variants": [
       360,
       480,
@@ -3263,6 +3358,18 @@
       1200
     ]
   },
+  "more-group/italy/heroes/turin-58adc28d.webp": {
+    "w": 1600,
+    "h": 900,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/turin-crocetta-apartments-ade91890.webp": {
     "w": 1600,
     "h": 1200,
@@ -3374,6 +3481,18 @@
   "more-group/italy/heroes/versilia-221ed327.webp": {
     "w": 1600,
     "h": 1200,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/visura-catastale-italy-explained-fb80f4ab.webp": {
+    "w": 1600,
+    "h": 1000,
     "variants": [
       360,
       480,

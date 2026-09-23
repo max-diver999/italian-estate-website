@@ -25,6 +25,7 @@ const {
   author,
   readingTime,
   heroImage,
+  heroAlt,
   relatedSlugs,
   faq,
   noindex,
@@ -68,6 +69,7 @@ const priceSchema = typeof priceFromEUR === 'number' && priceFromEUR > 0
   {author}
   readingTime={readingTime ?? 8}
   {heroImage}
+  {heroAlt}
   {relatedSlugs}
   {faq}
   {noindex}
