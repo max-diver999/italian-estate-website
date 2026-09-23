@@ -36,9 +36,7 @@
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "pages": [
-      "/areas/ancona/",
-      "/projects/ancona-centro-apartments/",
-      "/projects/ancona-centro-apartments/"
+      "/areas/ancona/"
     ]
   },
   {
@@ -188,9 +186,7 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
-      "/projects/como-lakefront-residence/",
-      "/projects/tranio-como-carate-urio-2br/",
-      "/projects/tranio-como-carate-urio-2br/"
+      "/projects/como-lakefront-residence/"
     ]
   },
   {
@@ -200,7 +196,6 @@
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "pages": [
-      "/compare/lake-como-vs-liguria-property/",
       "/guides/lake-como-property-investment-guide/"
     ]
   },
@@ -273,13 +268,7 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
-      "/compare/bologna-vs-florence-property/",
-      "/compare/tuscany-vs-lake-como-property/",
-      "/guides/florence-property-investment-guide/",
-      "/projects/chianti-farmhouse-restoration/",
-      "/projects/chianti-farmhouse-restoration/",
-      "/projects/tranio-florence-historic-center/",
-      "/projects/tranio-florence-historic-center/"
+      "/guides/florence-property-investment-guide/"
     ]
   },
   {
@@ -341,9 +330,7 @@
     "license": "Public domain",
     "licenseUrl": "",
     "pages": [
-      "/areas/turin/",
-      "/projects/turin-crocetta-apartments/",
-      "/projects/turin-crocetta-apartments/"
+      "/areas/turin/"
     ]
   },
   {
@@ -353,8 +340,7 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
-      "/compare/flat-tax-vs-investor-visa-italy/",
-      "/developers/coima/"
+      "/compare/flat-tax-vs-investor-visa-italy/"
     ]
   },
   {
@@ -364,7 +350,6 @@
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "pages": [
-      "/compare/elective-residence-vs-investor-visa-italy/",
       "/guides/milan-property-investment-guide/"
     ]
   },
@@ -447,9 +432,7 @@
     "license": "CC BY-SA 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
     "pages": [
-      "/areas/perugia/",
-      "/projects/perugia-centro-apartments/",
-      "/projects/perugia-centro-apartments/"
+      "/areas/perugia/"
     ]
   },
   {
@@ -469,9 +452,7 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
-      "/areas/arezzo/",
-      "/projects/arezzo-centro-apartments/",
-      "/projects/arezzo-centro-apartments/"
+      "/areas/arezzo/"
     ]
   },
   {
@@ -503,8 +484,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
       "/areas/genoa/",
-      "/areas/genoa/",
-      "/projects/genoa-waterfront-apartments/"
+      "/areas/genoa/"
     ]
   },
   {
@@ -545,17 +525,6 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "pages": [
       "/guides/amalfi-coast-property-investment-guide/"
-    ]
-  },
-  {
-    "file": "Potenza_dall'alto.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Potenza_dall%27alto.jpg",
-    "artist": "Rosrea",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "pages": [
-      "/projects/potenza-centro-apartments/",
-      "/projects/potenza-centro-apartments/"
     ]
   },
   {
@@ -602,17 +571,6 @@
     ]
   },
   {
-    "file": "Rome_skyline_panorama.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Rome_skyline_panorama.jpg",
-    "artist": "Nicholas Hartmann",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "pages": [
-      "/projects/rome-jubilee-centro-storico/",
-      "/projects/rome-jubilee-centro-storico/"
-    ]
-  },
-  {
     "file": "San_Giuseppe_dei_Teatini_(Palermo)_-_Dome.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:San_Giuseppe_dei_Teatini_(Palermo)_-_Dome.jpg",
     "artist": "Livioandronico2013",
@@ -640,16 +598,6 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "pages": [
       "/areas/savona/"
-    ]
-  },
-  {
-    "file": "Scalea-panorama.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Scalea-panorama.jpg",
-    "artist": "Giovanni Grimone / Grimone at German Wikipedia",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "pages": [
-      "/areas/scalea/"
     ]
   },
   {
@@ -685,17 +633,6 @@
     ]
   },
   {
-    "file": "Termoli.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Termoli.jpg",
-    "artist": "Sometimesacactus",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "pages": [
-      "/compare/campobasso-vs-termoli-property/",
-      "/guides/molise-property-investment-guide/"
-    ]
-  },
-  {
     "file": "The_bay_of_Sorrento_during_the_late_afternoon.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:The_bay_of_Sorrento_during_the_late_afternoon.jpg",
     "artist": "H.A.W.C 101",
@@ -718,16 +655,6 @@
     ]
   },
   {
-    "file": "Via_centro_storico_cisternino.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Via_centro_storico_cisternino.jpg",
-    "artist": "Kiuz",
-    "license": "Public domain",
-    "licenseUrl": "",
-    "pages": [
-      "/areas/cisternino/"
-    ]
-  },
-  {
     "file": "Via_dell'oriuolo_28,_archivio_notarile_01.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Via_dell%27oriuolo_28,_archivio_notarile_01.jpg",
     "artist": "Sailko",
@@ -744,19 +671,7 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
-      "/compare/matera-vs-potenza-property/",
-      "/projects/matera-sassi-apartments/",
-      "/projects/matera-sassi-apartments/"
-    ]
-  },
-  {
-    "file": "Vista_su_Campobasso_dal_Castello_Monforte.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Vista_su_Campobasso_dal_Castello_Monforte.jpg",
-    "artist": "Horcrux",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "pages": [
-      "/projects/campobasso-centro-apartments/"
+      "/compare/matera-vs-potenza-property/"
     ]
   }
 ]

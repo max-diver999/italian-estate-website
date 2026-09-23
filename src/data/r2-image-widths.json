@@ -2224,9 +2224,33 @@
       1200
     ]
   },
+  "more-group/italy/heroes/ancona-centro-apartments-79ffdbca.webp": {
+    "w": 1347,
+    "h": 825,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/ancona-vs-urbino-property-02e1a88a.webp": {
     "w": 1600,
     "h": 1038,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/arezzo-centro-apartments-6d2cb97f.webp": {
+    "w": 1448,
+    "h": 756,
     "variants": [
       360,
       480,
@@ -2249,6 +2273,18 @@
     ]
   },
   "more-group/italy/heroes/basilicata-property-investment-guide-f276e8ae.webp": {
+    "w": 1600,
+    "h": 1067,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/bellagio-7b8b3204.webp": {
     "w": 1600,
     "h": 1067,
     "variants": [
@@ -2308,9 +2344,81 @@
       1200
     ]
   },
+  "more-group/italy/heroes/bologna-vs-florence-property-b8e6b91f.webp": {
+    "w": 1600,
+    "h": 900,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/campobasso-centro-apartments-76672e9d.webp": {
+    "w": 1600,
+    "h": 1200,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/campobasso-vs-termoli-property-b95767a5.webp": {
+    "w": 1600,
+    "h": 1067,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/chianti-farmhouse-restoration-4a34f4d7.webp": {
+    "w": 1600,
+    "h": 800,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/chieti-university-apartments-09411a7c.webp": {
     "w": 1600,
     "h": 1067,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/cisternino-60d221d0.webp": {
+    "w": 1600,
+    "h": 1063,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/coima-ca5037f4.webp": {
+    "w": 1600,
+    "h": 900,
     "variants": [
       360,
       480,
@@ -2380,6 +2488,18 @@
       1200
     ]
   },
+  "more-group/italy/heroes/elective-residence-vs-investor-visa-italy-9b2566f5.webp": {
+    "w": 1600,
+    "h": 1067,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/emilia-romagna-property-investment-guide-99412f9b.webp": {
     "w": 1600,
     "h": 1067,
@@ -2416,6 +2536,18 @@
       1200
     ]
   },
+  "more-group/italy/heroes/foreign-buyers-italy-5-5-billion-2025-e126ec24.webp": {
+    "w": 1600,
+    "h": 900,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/genoa-vs-florence-property-f4c901bd.webp": {
     "w": 1600,
     "h": 1067,
@@ -2428,9 +2560,57 @@
       1200
     ]
   },
+  "more-group/italy/heroes/genoa-waterfront-apartments-b71b1cc2.webp": {
+    "w": 1600,
+    "h": 1200,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/how-to-buy-italy-property-remotely-aa469ddf.webp": {
     "w": 1600,
     "h": 900,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/italy-property-for-scandinavian-buyers-46d8951b.webp": {
+    "w": 1280,
+    "h": 800,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/italy-property-for-swiss-buyers-e25aa527.webp": {
+    "w": 1600,
+    "h": 1200,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/italy-property-management-costs-cb47017d.webp": {
+    "w": 1600,
+    "h": 1068,
     "variants": [
       360,
       480,
@@ -2455,6 +2635,18 @@
   "more-group/italy/heroes/italy-vs-croatia-property-investment-ca4dd69b.webp": {
     "w": 1600,
     "h": 900,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/lake-como-vs-liguria-property-8967896d.webp": {
+    "w": 1445,
+    "h": 612,
     "variants": [
       360,
       480,
@@ -2548,6 +2740,18 @@
       1200
     ]
   },
+  "more-group/italy/heroes/matera-sassi-apartments-e7d49cbf.webp": {
+    "w": 1600,
+    "h": 956,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/milan-navigli-164af495.webp": {
     "w": 1445,
     "h": 612,
@@ -2582,6 +2786,17 @@
       768,
       960,
       1200
+    ]
+  },
+  "more-group/italy/heroes/molise-property-investment-guide-eb9d4ed7.webp": {
+    "w": 1200,
+    "h": 800,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960
     ]
   },
   "more-group/italy/heroes/monte-argentario-sea-view-d7b34fcb.webp": {
@@ -2646,6 +2861,18 @@
   "more-group/italy/heroes/palermo-24eb5147.webp": {
     "w": 1600,
     "h": 900,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/perugia-centro-apartments-a94b046a.webp": {
+    "w": 1600,
+    "h": 888,
     "variants": [
       360,
       480,
@@ -2739,7 +2966,31 @@
       1200
     ]
   },
+  "more-group/italy/heroes/potenza-centro-apartments-7379ff90.webp": {
+    "w": 1600,
+    "h": 1067,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/pregio-immobiliare-17934dea.webp": {
+    "w": 1600,
+    "h": 900,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/rome-jubilee-centro-storico-ba27f701.webp": {
     "w": 1600,
     "h": 900,
     "variants": [
@@ -2773,6 +3024,17 @@
       768,
       960,
       1200
+    ]
+  },
+  "more-group/italy/heroes/scalea-1ed6be8a.webp": {
+    "w": 1200,
+    "h": 630,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960
     ]
   },
   "more-group/italy/heroes/scalea-calabria-coastal-264490b8.webp": {
@@ -2859,9 +3121,45 @@
       1200
     ]
   },
+  "more-group/italy/heroes/tranio-como-carate-urio-2br-154c921c.webp": {
+    "w": 1440,
+    "h": 1080,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/tranio-florence-historic-center-7f15ad8f.webp": {
+    "w": 1600,
+    "h": 900,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
   "more-group/italy/heroes/tranio-sicily-noto-stone-house-acd7ecaa.webp": {
     "w": 1600,
     "h": 1062,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/turin-crocetta-apartments-ade91890.webp": {
+    "w": 1600,
+    "h": 1200,
     "variants": [
       360,
       480,
@@ -2898,6 +3196,18 @@
   "more-group/italy/heroes/tuscany-property-investment-guide-639c3e5b.webp": {
     "w": 1600,
     "h": 1067,
+    "variants": [
+      360,
+      480,
+      640,
+      768,
+      960,
+      1200
+    ]
+  },
+  "more-group/italy/heroes/tuscany-vs-lake-como-property-b9f4b6c1.webp": {
+    "w": 1600,
+    "h": 833,
     "variants": [
       360,
       480,
