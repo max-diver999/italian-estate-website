@@ -30,17 +30,6 @@
     ]
   },
   {
-    "file": "Alba_italy.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Alba_italy.jpg",
-    "artist": "Cloud7",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "pages": [
-      "/areas/alba/",
-      "/areas/alba/"
-    ]
-  },
-  {
     "file": "Ancona_porto.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Ancona_porto.jpg",
     "artist": "Asthorone",
@@ -48,8 +37,6 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "pages": [
       "/areas/ancona/",
-      "/compare/ancona-vs-urbino-property/",
-      "/guides/marche-property-investment-guide/",
       "/projects/ancona-centro-apartments/",
       "/projects/ancona-centro-apartments/"
     ]
@@ -61,10 +48,7 @@
     "license": "Public domain",
     "licenseUrl": "",
     "pages": [
-      "/areas/assisi/",
-      "/compare/perugia-vs-assisi-property/",
-      "/projects/assisi-historic-apartments/",
-      "/projects/assisi-historic-apartments/"
+      "/areas/assisi/"
     ]
   },
   {
@@ -88,17 +72,6 @@
     ]
   },
   {
-    "file": "Bellagio,_general_view,_Lake_Como,_Italy_LOC_4712018238.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Bellagio,_general_view,_Lake_Como,_Italy_LOC_4712018238.jpg",
-    "artist": "The Library of Congress from Washington, DC, United States",
-    "license": "No restrictions",
-    "licenseUrl": "https://www.flickr.com/commons/usage/",
-    "pages": [
-      "/projects/bellagio-villa-lake-view/",
-      "/projects/bellagio-villa-lake-view/"
-    ]
-  },
-  {
     "file": "Bologna_-_Piazza_Santo_Stefano_(42730799645).jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Bologna_-_Piazza_Santo_Stefano_(42730799645).jpg",
     "artist": "Fred Romero from Paris, France",
@@ -106,21 +79,6 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "pages": [
       "/guides/italy-digital-nomad-visa/"
-    ]
-  },
-  {
-    "file": "Bologna_SanPetronio_MeridianGiandomenicoCassini.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Bologna_SanPetronio_MeridianGiandomenicoCassini.jpg",
-    "artist": "CEphoto, Uwe Aranas",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "pages": [
-      "/areas/bologna/",
-      "/areas/bologna/",
-      "/guides/bologna-property-investment-guide/",
-      "/guides/emilia-romagna-property-investment-guide/",
-      "/projects/bologna-bloom-living/",
-      "/projects/bologna-bloom-living/"
     ]
   },
   {
@@ -170,9 +128,7 @@
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "pages": [
-      "/developers/nunziare-luxury-projects/",
-      "/projects/nunziare-vii-lusciano/",
-      "/projects/nunziare-vii-lusciano/"
+      "/developers/nunziare-luxury-projects/"
     ]
   },
   {
@@ -192,21 +148,7 @@
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "pages": [
-      "/areas/noto/",
-      "/projects/noto-baroque-masseria/",
-      "/projects/tranio-sicily-noto-stone-house/",
-      "/projects/tranio-sicily-noto-stone-house/"
-    ]
-  },
-  {
-    "file": "Chieti_16_(RaBoe).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Chieti_16_(RaBoe).jpg",
-    "artist": "Ra Boe",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "pages": [
-      "/projects/chieti-university-apartments/",
-      "/projects/chieti-university-apartments/"
+      "/projects/noto-baroque-masseria/"
     ]
   },
   {
@@ -269,12 +211,7 @@
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "pages": [
-      "/guides/costa-smeralda-property-investment-guide/",
-      "/guides/sardinia-property-investment-guide/",
-      "/projects/costa-smeralda-apartment/",
-      "/projects/costa-smeralda-apartment/",
-      "/projects/porto-cervo-villa-development/",
-      "/projects/porto-cervo-villa-development/"
+      "/guides/costa-smeralda-property-investment-guide/"
     ]
   },
   {
@@ -284,10 +221,7 @@
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "pages": [
-      "/areas/val-dorcia/",
-      "/guides/tuscany-inland-property-guide/",
-      "/projects/val-dorcia-agriturismo-farmhouse/",
-      "/projects/val-dorcia-agriturismo-farmhouse/"
+      "/areas/val-dorcia/"
     ]
   },
   {
@@ -340,10 +274,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
       "/compare/bologna-vs-florence-property/",
-      "/compare/genoa-vs-florence-property/",
       "/compare/tuscany-vs-lake-como-property/",
       "/guides/florence-property-investment-guide/",
-      "/guides/tuscany-property-investment-guide/",
       "/projects/chianti-farmhouse-restoration/",
       "/projects/chianti-farmhouse-restoration/",
       "/projects/tranio-florence-historic-center/",
@@ -388,10 +320,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
       "/areas/langhe/",
-      "/areas/langhe/",
-      "/guides/piedmont-property-investment-guide/",
-      "/projects/langhe-barolo-vineyard-property/",
-      "/projects/langhe-barolo-vineyard-property/"
+      "/areas/langhe/"
     ]
   },
   {
@@ -413,7 +342,6 @@
     "licenseUrl": "",
     "pages": [
       "/areas/turin/",
-      "/compare/turin-vs-milan-property/",
       "/projects/turin-crocetta-apartments/",
       "/projects/turin-crocetta-apartments/"
     ]
@@ -426,9 +354,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
       "/compare/flat-tax-vs-investor-visa-italy/",
-      "/developers/coima/",
-      "/projects/coima-guido-reni-rome/",
-      "/projects/coima-guido-reni-rome/"
+      "/developers/coima/"
     ]
   },
   {
@@ -439,8 +365,6 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "pages": [
       "/compare/elective-residence-vs-investor-visa-italy/",
-      "/compare/milan-vs-florence-property-investment/",
-      "/compare/milan-vs-rome-property-investment/",
       "/guides/milan-property-investment-guide/"
     ]
   },
@@ -471,7 +395,6 @@
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "pages": [
-      "/areas/noto/",
       "/projects/noto-baroque-masseria/"
     ]
   },
@@ -482,9 +405,7 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
-      "/areas/urbino/",
-      "/projects/urbino-university-apartments/",
-      "/projects/urbino-university-apartments/"
+      "/areas/urbino/"
     ]
   },
   {
@@ -516,10 +437,7 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
-      "/compare/pescara-vs-chieti-property/",
-      "/guides/abruzzo-property-investment-guide/",
-      "/projects/pescara-centro-apartments/",
-      "/projects/pescara-centro-apartments/"
+      "/compare/pescara-vs-chieti-property/"
     ]
   },
   {
@@ -530,7 +448,6 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
     "pages": [
       "/areas/perugia/",
-      "/guides/umbria-property-investment-guide/",
       "/projects/perugia-centro-apartments/",
       "/projects/perugia-centro-apartments/"
     ]
@@ -564,20 +481,7 @@
     "license": "CC BY-SA 1.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
     "pages": [
-      "/compare/arezzo-vs-siena-property/",
-      "/compare/florence-vs-siena-property/",
-      "/projects/siena-country-villa-pool/",
-      "/projects/siena-country-villa-pool/"
-    ]
-  },
-  {
-    "file": "Polignano_a_Mare_-_Isola_di_San_Paolo_-_startrail.png",
-    "source": "https://commons.wikimedia.org/wiki/File:Polignano_a_Mare_-_Isola_di_San_Paolo_-_startrail.png",
-    "artist": "Calogero77",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "pages": [
-      "/compare/italy-vs-croatia-property-investment/"
+      "/compare/arezzo-vs-siena-property/"
     ]
   },
   {
@@ -589,16 +493,6 @@
     "pages": [
       "/projects/unapavia-pavia-residential/",
       "/projects/unapavia-pavia-residential/"
-    ]
-  },
-  {
-    "file": "Ponte_Vecchio_Florence.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Ponte_Vecchio_Florence.jpg",
-    "artist": "Tzen",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "pages": [
-      "/areas/florence/"
     ]
   },
   {
@@ -620,8 +514,7 @@
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "pages": [
-      "/areas/monte-argentario/",
-      "/projects/monte-argentario-sea-view/"
+      "/areas/monte-argentario/"
     ]
   },
   {
@@ -631,8 +524,7 @@
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "pages": [
-      "/areas/monte-argentario/",
-      "/projects/monte-argentario-sea-view/"
+      "/areas/monte-argentario/"
     ]
   },
   {
@@ -642,10 +534,7 @@
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "pages": [
-      "/developers/engel-volkers-italy/",
-      "/guides/liguria-property-investment-guide/",
-      "/projects/portofino-apartment-renovation/",
-      "/projects/portofino-apartment-renovation/"
+      "/developers/engel-volkers-italy/"
     ]
   },
   {
@@ -713,17 +602,6 @@
     ]
   },
   {
-    "file": "Roma,_Piazza_di_Santa_Maria_in_Trastevere_(2).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Roma,_Piazza_di_Santa_Maria_in_Trastevere_(2).jpg",
-    "artist": "Palickap",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "pages": [
-      "/projects/coima-via-carcani-trastevere/",
-      "/projects/coima-via-carcani-trastevere/"
-    ]
-  },
-  {
     "file": "Rome_skyline_panorama.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Rome_skyline_panorama.jpg",
     "artist": "Nicholas Hartmann",
@@ -771,9 +649,7 @@
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "pages": [
-      "/areas/scalea/",
-      "/projects/scalea-calabria-coastal/",
-      "/projects/scalea-calabria-coastal/"
+      "/areas/scalea/"
     ]
   },
   {
@@ -809,17 +685,6 @@
     ]
   },
   {
-    "file": "Terme_di_Saturnia_-_Cascate_del_Mulino-0518.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Terme_di_Saturnia_-_Cascate_del_Mulino-0518.jpg",
-    "artist": "Raimond Spekking",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "pages": [
-      "/projects/semproniano-farmhouse-restoration/",
-      "/projects/semproniano-farmhouse-restoration/"
-    ]
-  },
-  {
     "file": "Termoli.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Termoli.jpg",
     "artist": "Sometimesacactus",
@@ -827,8 +692,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
       "/compare/campobasso-vs-termoli-property/",
-      "/guides/molise-property-investment-guide/",
-      "/projects/termoli-coast-apartments/"
+      "/guides/molise-property-investment-guide/"
     ]
   },
   {
@@ -874,17 +738,6 @@
     ]
   },
   {
-    "file": "Viareggio_–_Panorama_preso_dal_Fanale_(xilografia).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Viareggio_%E2%80%93_Panorama_preso_dal_Fanale_(xilografia).jpg",
-    "artist": "Unknown author",
-    "license": "Public domain",
-    "licenseUrl": "",
-    "pages": [
-      "/areas/versilia/",
-      "/areas/versilia/"
-    ]
-  },
-  {
     "file": "View_of_Sassi_di_Matera,_Matera,_Italy_(PPL1-Corrected)_julesvernex2.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:View_of_Sassi_di_Matera,_Matera,_Italy_(PPL1-Corrected)_julesvernex2.jpg",
     "artist": "Jules Verne Times Two",
@@ -892,7 +745,6 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "pages": [
       "/compare/matera-vs-potenza-property/",
-      "/guides/basilicata-property-investment-guide/",
       "/projects/matera-sassi-apartments/",
       "/projects/matera-sassi-apartments/"
     ]
