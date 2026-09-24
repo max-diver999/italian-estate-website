@@ -11,9 +11,22 @@ export const FEATURED_PROJECT_SLUGS = [
 /** Hero spotlight — links to full project review from homepage banner. */
 export const HOMEPAGE_HERO_PROJECT_SLUG = 'ostuni-trulli-modern-villa-apuliadeluxe' as const;
 
-export const FEATURED_GUIDE_SLUGS = [] as const;
+/** «Start here» на главной и в хабе гайдов. До 24.09.2026 список был пуст с первого дня сайта,
+ *  и блок на главной печатал заглушку вместо карточек. */
+export const FEATURED_GUIDE_SLUGS = [
+  'buy-property-italy-foreigner',
+  'how-to-buy-italy-property-step-by-step',
+  'cost-of-buying-property-italy',
+  'italy-golden-visa',
+] as const;
 
-export const FEATURED_AREA_SLUGS = [] as const;
+/** «Investment areas» на главной: по одному рынку из четырёх, названных в первом экране. */
+export const FEATURED_AREA_SLUGS = [
+  'chianti',
+  'milan-navigli',
+  'polignano-a-mare',
+  'como',
+] as const;
 
 /** Homepage hero fallback until project MDX ship. */
 export const HOMEPAGE_HERO_IMAGE =

@@ -1,6 +1,7 @@
 ---
 import globalStyles from '../styles/global.css?url';
 import dmSans400 from '@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff2?url';
+import bodoni500 from '@fontsource/bodoni-moda/files/bodoni-moda-latin-500-normal.woff2?url';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
@@ -106,7 +107,7 @@ const allSchemas = [orgSchema, ...schemas, ...(webPageSchema ? [webPageSchema] :
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#2c6b62" />
+  <meta name="theme-color" content="#2b211b" />
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   {noindex
@@ -134,6 +135,7 @@ const allSchemas = [orgSchema, ...schemas, ...(webPageSchema ? [webPageSchema] :
   <link rel="manifest" href="/site.webmanifest" />
 
   <link rel="preload" href={dmSans400} as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href={bodoni500} as="font" type="font/woff2" crossorigin />
 
   <!-- Картинки с 22.09.2026 живут на R2; на Cloudinary у сайта не осталось ни одной. -->
   <link rel="preconnect" href="https://pub-2855c73eea384110b510f25966292c37.r2.dev" />
@@ -151,13 +153,17 @@ const allSchemas = [orgSchema, ...schemas, ...(webPageSchema ? [webPageSchema] :
 
   <style is:inline>
     :root {
-      --color-page: #f7f8f6;
-      --color-surface: #ffffff;
-      --color-ink: #1f2421;
-      --color-muted: #5d645f;
-      --color-teal: #2c6b62;
-      --color-border: #e6e6e3;
-      --color-border-soft: #eeeeec;
+      --color-page: #f7f2e9;
+      --color-surface: #fffcf6;
+      --color-ink: #241b16;
+      --color-muted: #66594e;
+      --color-teal: #3d5e46;
+      --color-border: #e4d9c6;
+      --color-border-soft: #ede4d5;
+      --color-frame: #2b211b;
+      --color-frame-text: #f6efe4;
+      --color-camel: #c9a06a;
+      --font-serif: 'Bodoni Moda', 'Didot', Georgia, serif;
       --font-sans: 'DM Sans', system-ui, sans-serif;
     }
     /* В @layer base, как и такие же правила в global.css: правило вне слоя бьёт любую утилиту
@@ -177,9 +183,9 @@ const allSchemas = [orgSchema, ...schemas, ...(webPageSchema ? [webPageSchema] :
       }
       body > main { flex: 1 0 auto; }
       h1, h2, h3 {
-        font-family: var(--font-sans);
+        font-family: var(--font-serif);
         color: var(--color-ink);
-        line-height: 1.25;
+        line-height: 1.15;
         font-weight: 600;
       }
     }

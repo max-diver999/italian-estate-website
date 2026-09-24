@@ -48,94 +48,91 @@ const heroPreload = lcpPreloadFromCloudinary(heroImageSrc, 'hero');
   preloadImageSrcset={heroPreload.srcset}
   preloadImageSizes={heroPreload.sizes ?? '100vw'}
 >
-  <section class="border-b border-[var(--color-border-soft)] bg-[var(--color-surface)]">
-    <div class="site-container py-14 md:py-20 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-      <div>
-        <span class="badge-pill mb-5">Independent research</span>
-        <h1 class="text-3xl md:text-[2.35rem] mb-5 leading-tight">
-          Italy property investment research, before you buy
+  <section class="it-hero bg-[var(--color-frame)]">
+    <div class="it-hero__grid">
+      <div class="it-hero__copy">
+        <span class="it-eyebrow mb-5">Italy property · Independent research</span>
+        <h1 class="it-hero__title">
+          Italy property investment research,<br />
+          <em>before you buy.</em>
         </h1>
-        <p class="text-base md:text-lg text-[var(--color-muted)] mb-8 max-w-xl">
+        <p class="it-hero__lede">
           Tuscany, Milan, Puglia and Lake Como: 4.3% average yields, codice fiscale guides, investor visa rules, Milan vs Rome comparisons, and due diligence for US and UK buyers.
         </p>
-        <div class="flex flex-wrap gap-3 mb-10">
-          <a href="/guides/" class="btn-primary px-6 py-3">Browse guides</a>
-          <a href="/projects/" class="btn-secondary px-6 py-3">Project reviews</a>
-          <a href="/get-shortlist/" class="btn-secondary px-6 py-3">Free shortlist →</a>
+        <div class="flex flex-wrap gap-2 mb-8">
+          <span class="it-chip">{publishedProjects.length} projects reviewed</span>
+          <span class="it-chip">{publishedGuides.length} buyer guides</span>
+          <span class="it-chip">{publishedAreas.length} areas</span>
         </div>
-        <div class="grid grid-cols-3 gap-3 max-w-md">
-          <div class="stat-pill">
-            <strong>{publishedGuides.length}</strong>
-            <span>Guides</span>
-          </div>
-          <div class="stat-pill">
-            <strong>{publishedProjects.length}</strong>
-            <span>Projects</span>
-          </div>
-          <div class="stat-pill">
-            <strong>{publishedAreas.length}</strong>
-            <span>Areas</span>
-          </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="/guides/" class="it-btn it-btn--camel no-underline">Browse guides</a>
+          <a href="/projects/" class="it-btn it-btn--ghost no-underline">Project reviews</a>
+          <a href="/get-shortlist/" class="it-btn it-btn--ghost no-underline">Free shortlist →</a>
         </div>
       </div>
-      <div class="hero-visual min-h-[280px] md:min-h-[380px] relative">
-        <ResponsiveImage
-          src={heroImageSrc}
-          alt={heroProject ? `${heroProject.data.title}, featured Italy project` : 'Ostuni trulli villa, Puglia'}
-          role="hero"
-          loading="eager"
-          fetchpriority="high"
-          width={1200}
-          height={560}
-          sizes="(max-width: 1024px) 100vw, 50vw"
-        />
-        <div class="hero-visual__overlay" />
-        <p class="hero-visual__caption">Puglia · Ostuni countryside</p>
-        {heroProject && (
-          <div class="hero-project-card">
-            <div class="hero-project-card__copy">
-              <p class="hero-project-card__eyebrow">Featured · {formatAreaLabel(heroProject.data.area)}</p>
-              <p class="hero-project-card__title">{heroProject.data.title.replace(/ Review:.*$/, '').replace(/ 2026.*$/, '')}</p>
-              <p class="hero-project-card__meta">{projectHeroLine(heroProject)}</p>
+
+      <a
+        href={heroProject ? `/projects/${heroProject.id}/` : '/projects/'}
+        class="it-hero__media no-underline"
+        aria-label={heroProject ? heroProject.data.title : 'Project reviews'}
+      >
+        <div class="it-hero__photo">
+          <ResponsiveImage
+            src={heroImageSrc}
+            alt={heroProject ? `${heroProject.data.title}, featured Italy project` : 'Ostuni trulli villa, Puglia'}
+            role="hero"
+            class="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+            fetchpriority="high"
+            width={1400}
+            height={900}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
+          <div class="it-hero__shade" aria-hidden="true"></div>
+          {heroProject && (
+            <div class="it-hero__caption">
+              <span class="it-hero__caption-kicker">Featured · {formatAreaLabel(heroProject.data.area)}</span>
+              <span class="it-hero__caption-title">{heroProject.data.title.replace(/ Review:?.*$/, '').replace(/ 2026.*$/, '')}</span>
+              <span class="it-hero__caption-meta">{projectHeroLine(heroProject)}</span>
             </div>
-            <a href={`/projects/${heroProject.id}/`} class="hero-project-card__cta">View project →</a>
-          </div>
-        )}
-      </div>
+          )}
+        </div>
+      </a>
     </div>
   </section>
 
-  <section class="border-b border-[var(--color-border-soft)] bg-[var(--color-brand)] text-white py-8">
+  <section class="border-b border-[var(--color-frame-line)] bg-[var(--color-frame-soft)] py-9">
     <div class="site-container grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
       <div>
-        <p class="text-2xl md:text-3xl font-semibold">{publishedProjects.length}+</p>
-        <p class="text-sm opacity-85 mt-1">Projects reviewed</p>
+        <p class="it-stat">{publishedProjects.length}+</p>
+        <p class="it-stat-label">Projects reviewed</p>
       </div>
       <div>
-        <p class="text-2xl md:text-3xl font-semibold">{publishedGuides.length}</p>
-        <p class="text-sm opacity-85 mt-1">Buyer guides</p>
+        <p class="it-stat">{publishedGuides.length}</p>
+        <p class="it-stat-label">Buyer guides</p>
       </div>
       <div>
-        <p class="text-2xl md:text-3xl font-semibold">{publishedAreas.length}</p>
-        <p class="text-sm opacity-85 mt-1">Investment areas</p>
+        <p class="it-stat">{publishedAreas.length}</p>
+        <p class="it-stat-label">Investment areas</p>
       </div>
       <div>
-        <p class="text-2xl md:text-3xl font-semibold">€470K+</p>
-        <p class="text-sm opacity-85 mt-1">Puglia entry (EUR)</p>
+        <p class="it-stat">€470K+</p>
+        <p class="it-stat-label">Puglia entry (EUR)</p>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="site-container">
-      <div class="flex items-end justify-between gap-4 mb-8">
+      <div class="flex items-end justify-between gap-4 mb-10">
         <div>
-          <h2 class="text-2xl mb-2">Featured project reviews</h2>
-          <p class="text-[var(--color-muted)]">Click through for pricing, photos, yield math and due diligence, not developer brochures.</p>
+          <span class="it-kicker">Project reviews</span>
+          <h2 class="it-section-title">Featured project reviews</h2>
+          <p class="text-[var(--color-muted)] max-w-xl">Click through for pricing, photos, yield math and due diligence, not developer brochures.</p>
         </div>
         <a href="/projects/" class="link-arrow shrink-0 hidden sm:inline">All {publishedProjects.length} projects →</a>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10">
         {homepageProjects.length > 0 ? homepageProjects.map((project) => (
           <ProjectCard
             href={`/projects/${project.id}/`}
@@ -149,70 +146,231 @@ const heroPreload = lcpPreloadFromCloudinary(heroImageSrc, 'hero');
             priceFromEur={project.data.priceFromEUR}
           />
         )) : (
-          <p class="text-[var(--color-muted)] col-span-full py-8">Project reviews publishing soon: parser batch 1 ready on Cloudinary.</p>
+          <p class="text-[var(--color-muted)] col-span-full py-8">Project reviews publishing soon.</p>
         )}
       </div>
-      <div class="mt-8 text-center sm:hidden">
+      <div class="mt-10 text-center sm:hidden">
         <a href="/projects/" class="btn-secondary px-6 py-3">Browse all {publishedProjects.length} projects</a>
       </div>
     </div>
   </section>
 
-  <section class="section bg-[var(--color-surface)] border-y border-[var(--color-border-soft)]">
-    <div class="site-container">
-      <div class="flex items-end justify-between gap-4 mb-8">
-        <div>
-          <h2 class="text-2xl mb-2">Start here</h2>
-          <p class="text-[var(--color-muted)]">High-intent guides for foreign buyers.</p>
+  {featuredGuides.length > 0 && (
+    <section class="section bg-[var(--color-surface-muted)] border-y border-[var(--color-border-soft)]">
+      <div class="site-container">
+        <div class="flex items-end justify-between gap-4 mb-10">
+          <div>
+            <span class="it-kicker">Buyer guides</span>
+            <h2 class="it-section-title">Start here</h2>
+            <p class="text-[var(--color-muted)]">High-intent guides for foreign buyers.</p>
+          </div>
+          <a href="/guides/" class="link-arrow shrink-0 hidden sm:inline">All guides →</a>
         </div>
-        <a href="/guides/" class="link-arrow shrink-0 hidden sm:inline">All guides →</a>
-      </div>
-      <div class="grid sm:grid-cols-2 gap-5">
-        {featuredGuides.length > 0 ? featuredGuides.map((guide) => (
-          <ContentCard
-            href={`/guides/${guide.id}/`}
-            title={guide.data.title}
-            description={guide.data.description}
-            image={guide.data.heroImage}
-            badges={['Guide', ...(guide.data.tags?.slice(0, 1) ?? [])]}
-            meta={`${guide.data.readingTime ?? 8} min read`}
-          />
-        )) : (
-          <p class="text-[var(--color-muted)] col-span-full py-4">Buyer guides batch publishing next: see content map in research dossier.</p>
-        )}
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="site-container">
-      <div class="flex items-end justify-between gap-4 mb-8">
-        <div>
-          <h2 class="text-2xl mb-2">Investment areas</h2>
-          <p class="text-[var(--color-muted)]">Micro-market guides: yields, buyer fit, and red flags.</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+          {featuredGuides.map((guide) => (
+            <ContentCard
+              href={`/guides/${guide.id}/`}
+              title={guide.data.title}
+              description={guide.data.description}
+              image={guide.data.heroImage}
+              badges={['Guide', ...(guide.data.tags?.slice(0, 1) ?? [])]}
+              meta={`${guide.data.readingTime ?? 8} min read`}
+            />
+          ))}
         </div>
-        <a href="/areas/" class="link-arrow shrink-0 hidden sm:inline">All areas →</a>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        {featuredAreas.map((area) => (
-          <ContentCard
-            href={`/areas/${area.id}/`}
-            title={area.data.title}
-            description={area.data.description}
-            image={area.data.heroImage}
-            badges={['Area', formatAreaLabel(area.id)]}
-            meta={`${area.data.readingTime ?? 10} min read`}
-          />
-        ))}
-      </div>
-    </div>
-  </section>
+    </section>
+  )}
 
-  <section class="section bg-[var(--color-surface)] border-t border-[var(--color-border-soft)]">
+  {featuredAreas.length > 0 && (
+    <section class="section">
+      <div class="site-container">
+        <div class="flex items-end justify-between gap-4 mb-10">
+          <div>
+            <span class="it-kicker">Where to buy</span>
+            <h2 class="it-section-title">Investment areas</h2>
+            <p class="text-[var(--color-muted)]">Micro-market guides: yields, buyer fit, and red flags.</p>
+          </div>
+          <a href="/areas/" class="link-arrow shrink-0 hidden sm:inline">All areas →</a>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+          {featuredAreas.map((area) => (
+            <ContentCard
+              href={`/areas/${area.id}/`}
+              title={area.data.title}
+              description={area.data.description}
+              image={area.data.heroImage}
+              badges={['Area', formatAreaLabel(area.id)]}
+              meta={`${area.data.readingTime ?? 10} min read`}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section bg-[var(--color-surface-muted)] border-t border-[var(--color-border-soft)]">
     <div class="site-container max-w-xl">
-      <h2 class="text-2xl mb-3">Get a shortlist</h2>
+      <span class="it-kicker">Free shortlist</span>
+      <h2 class="it-section-title">Get a shortlist</h2>
       <p class="text-[var(--color-muted)] mb-8">Tell us budget and market, and we match you with vetted local partners. No obligation.</p>
       <LeadForm context="Homepage shortlist" />
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  /* minmax(0, 1fr), а не 1fr: у фото соотношение сторон, и его минимальная ширина
+     распирала колонку шире телефона, текст первого экрана уезжал за край. */
+  .it-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .it-hero__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.25rem 1.5rem 2rem;
+  }
+  .it-eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--color-camel);
+  }
+  .it-hero__title {
+    margin: 0 0 1.25rem;
+    font-size: clamp(2.2rem, 5.2vw, 3.35rem);
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--color-frame-text);
+  }
+  .it-hero__title em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--color-camel);
+  }
+  .it-hero__lede {
+    max-width: 36rem;
+    margin: 0 0 1.75rem;
+    font-size: 1.05rem;
+    color: var(--color-frame-muted);
+  }
+  .it-chip {
+    padding: 0.4rem 0.95rem;
+    border: 1px solid rgba(246, 239, 228, 0.3);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-frame-text);
+  }
+  .it-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+  .it-btn--camel { background: var(--color-camel); color: var(--color-frame) !important; }
+  .it-btn--camel:hover { background: #d8b07a; }
+  .it-btn--ghost { border: 1px solid rgba(246, 239, 228, 0.35); color: var(--color-frame-text) !important; }
+  .it-btn--ghost:hover { border-color: var(--color-camel); color: var(--color-camel) !important; }
+  .it-hero__media {
+    display: block;
+    padding: 0 1.5rem 2.75rem;
+  }
+  .it-hero__photo {
+    position: relative;
+    min-width: 0;
+    aspect-ratio: 4 / 3;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(16, 10, 6, 0.5);
+  }
+  .it-hero__shade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(28, 20, 15, 0.82) 0%, rgba(28, 20, 15, 0.1) 48%, transparent 70%);
+  }
+  .it-hero__caption {
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .it-hero__caption-kicker {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-camel);
+  }
+  .it-hero__caption-title {
+    font-family: var(--font-serif);
+    font-size: 1.45rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fbf6ee;
+  }
+  .it-hero__caption-meta {
+    font-size: 0.82rem;
+    color: #e3d6c5;
+  }
+  /* Цифры рублёным шрифтом: у Бодони волосяные штрихи, и на тёмном знак евро и четвёрка
+     читались как «C 170K». */
+  .it-stat {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: clamp(1.75rem, 3vw, 2.2rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--color-camel);
+  }
+  .it-stat-label {
+    margin: 0.35rem 0 0;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-frame-muted);
+  }
+  .it-kicker {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-camel-deep);
+  }
+  .it-section-title {
+    margin: 0 0 0.6rem;
+    font-size: clamp(1.8rem, 3vw, 2.3rem);
+    font-weight: 500;
+  }
+  @media (min-width: 1024px) {
+    .it-hero__grid {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      min-height: min(78svh, 720px);
+    }
+    .it-hero__copy {
+      padding: 4rem 3.5rem 4rem max(2rem, calc((100vw - 68rem) / 2 + 1.5rem));
+    }
+    .it-hero__media {
+      display: flex;
+      padding: 2.5rem max(2rem, calc((100vw - 68rem) / 2 + 1.5rem)) 2.5rem 0;
+    }
+    .it-hero__photo {
+      width: 100%;
+      min-height: 420px;
+      aspect-ratio: auto;
+    }
+  }
+</style>

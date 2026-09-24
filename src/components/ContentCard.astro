@@ -9,6 +9,7 @@ interface Props {
   imageAlt?: string;
   badges?: string[];
   meta?: string;
+  price?: string;
   metaAccent?: boolean;
   placeholder?: string;
 }
@@ -21,14 +22,30 @@ const {
   imageAlt,
   badges = [],
   meta,
+  price,
   metaAccent = false,
-  placeholder = '🏝️',
+  placeholder = 'Photo pending',
 } = Astro.props;
 
 const photo = getCardImage(image, 'card');
+
+// Галерейная витрина: метки и мета живут одной приглушённой строкой над заголовком.
+// Метка, повторяющая сам заголовок, в плоской строке читается как мусор, её отбрасываем.
+const titleLower = title.toLowerCase();
+const isTitleEcho = (badge: string) =>
+  badge.length >= 12 &&
+  titleLower.includes(badge.toLowerCase()) &&
+  badge.length / title.length >= 0.5;
+const metaLine = [
+  ...badges.filter((b) => b && !isTitleEcho(b)).slice(0, 3),
+  ...(meta && !metaAccent ? [meta] : []),
+]
+  .filter(Boolean)
+  .join(' · ');
+const accentPrice = price ?? (metaAccent ? meta : undefined);
 ---
 
-<a href={href} class="content-card surface-card is-link block no-underline overflow-hidden h-full">
+<a href={href} class="content-card block no-underline h-full">
   {photo ? (
     <div class="content-card__media">
       <img
@@ -48,17 +65,11 @@ const photo = getCardImage(image, 'card');
     </div>
   )}
   <div class="content-card__body">
-    {badges.length > 0 && (
-      <div class="content-card__badges">
-        {badges.slice(0, 3).map((badge) => (
-          <span class="badge-pill">{badge}</span>
-        ))}
-      </div>
-    )}
-    <h3 class="content-card__title">{title}</h3>
+    {metaLine && <span class="content-card__tags">{metaLine}</span>}
+    <div class="content-card__head">
+      <h3 class="content-card__title">{title}</h3>
+      {accentPrice && <span class="content-card__price">{accentPrice}</span>}
+    </div>
     {description && <p class="content-card__desc">{description}</p>}
-    {meta && (
-      <p class:list={['content-card__meta', metaAccent && 'content-card__meta--accent']}>{meta}</p>
-    )}
   </div>
 </a>

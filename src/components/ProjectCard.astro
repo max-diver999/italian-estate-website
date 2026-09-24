@@ -33,7 +33,7 @@ const badges = [
 ].filter(Boolean);
 
 const price = formatEur(priceFromEur);
-const meta = [price && `From ${price}`, developer].filter(Boolean).join(' · ');
+const priceLabel = price ? `From ${price}` : undefined;
 ---
 
 <ContentCard
@@ -42,7 +42,7 @@ const meta = [price && `From ${price}`, developer].filter(Boolean).join(' · ');
   description={description}
   image={image}
   badges={badges}
-  meta={meta}
-  metaAccent={!!price}
-  placeholder="🏢"
+  meta={developer}
+  price={priceLabel}
+  placeholder="Render pending"
 />

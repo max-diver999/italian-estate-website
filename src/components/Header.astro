@@ -26,20 +26,19 @@ const about = [
   { label: 'Contact', href: '/contact/' },
 ];
 ---
-<header class="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[rgba(255,255,255,0.9)] backdrop-blur-md">
+<header class="site-header sticky top-0 z-50 border-b border-[var(--color-frame-line)] bg-[var(--color-frame)]">
   <div class="site-container flex items-center justify-between gap-3 py-4">
-    <a href="/" class="flex items-center gap-2 no-underline min-w-0">
-      <img src="/favicon.svg?v=3" alt="" width="32" height="32" class="rounded-lg" />
-      <span class="text-lg font-semibold text-[var(--color-ink)] whitespace-nowrap">{SITE.name}</span>
+    <a href="/" class="site-wordmark no-underline min-w-0" aria-label={SITE.name}>
+      <span class="site-wordmark__first">Italian</span><span class="site-wordmark__rest"> Estate</span>
     </a>
-    <nav class="hidden lg:flex items-center gap-5 text-sm font-medium" aria-label="Primary">
+    <nav class="hidden lg:flex items-center gap-6" aria-label="Primary">
       {nav.map((item) => (
-        <a href={item.href} class="text-[var(--color-muted)] hover:text-[var(--color-ink)] no-underline">{item.label}</a>
+        <a href={item.href} class="site-header__link no-underline">{item.label}</a>
       ))}
     </nav>
     <div class="flex items-center gap-2 shrink-0">
       <CurrencyToggle variant="header" />
-      <a href="/get-shortlist/" class="btn-primary mobile-header-cta text-sm px-4 py-2 shrink-0">Free shortlist</a>
+      <a href="/get-shortlist/" class="site-header__cta mobile-header-cta no-underline shrink-0">Free shortlist</a>
       <button
         type="button"
         id="site-nav-toggle"
@@ -81,6 +80,42 @@ const about = [
 </header>
 
 <style>
+  .site-wordmark {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+  .site-wordmark__first { color: var(--color-camel); font-weight: 600; font-style: italic; }
+  .site-wordmark__rest { color: var(--color-frame-text); font-weight: 500; }
+  .site-header__link {
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-frame-muted);
+    transition: color 0.2s ease;
+  }
+  .site-header__link:hover { color: var(--color-camel); }
+  .site-header__cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1.05rem;
+    border-radius: 6px;
+    background: var(--color-camel);
+    color: var(--color-frame) !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: background 0.2s ease;
+  }
+  .site-header__cta:hover { background: #d8b07a; }
+  .site-header :global(.site-fx-toggle--header) {
+    background: transparent;
+    border-color: var(--color-frame-line);
+    color: var(--color-frame-muted);
+  }
   .site-nav-toggle {
     display: inline-flex;
     align-items: center;
@@ -88,10 +123,10 @@ const about = [
     width: 44px;
     height: 44px;
     margin-right: -0.5rem;
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-frame-line);
     border-radius: 10px;
     background: transparent;
-    color: var(--color-ink);
+    color: var(--color-frame-text);
     cursor: pointer;
   }
   .site-nav-toggle__bars { display: block; width: 18px; }

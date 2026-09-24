@@ -84,6 +84,7 @@
     "@astrojs/mdx": "5.0.2",
     "@astrojs/sitemap": "3.7.1",
     "@astrojs/vercel": "10.0.2",
+    "@fontsource/bodoni-moda": "^5.3.0",
     "@fontsource/dm-sans": "^5.3.0",
     "@tailwindcss/vite": "4.2.2",
     "astro": "6.0.8",
