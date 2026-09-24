@@ -30,4 +30,4 @@ export const FEATURED_AREA_SLUGS = [
 
 /** Homepage hero fallback until project MDX ship. */
 export const HOMEPAGE_HERO_IMAGE =
-  'https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp';
+  'https://media.oper-stack.com/more-group/italy/projects/ostuni-trulli-modern-villa-apuliadeluxe/hero.webp';
