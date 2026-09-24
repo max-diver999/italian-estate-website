@@ -26,7 +26,7 @@ const comparisons = (await getCollection('compare'))
           title={item.data.title}
           description={item.data.description}
           image={item.data.heroImage}
-          badges={['Comparison', ...(item.data.tags?.slice(0, 1) ?? [])]}
+          badges={['Comparison']}
           meta={`${item.data.readingTime ?? 8} min read`}
         />
       ))}
