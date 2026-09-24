@@ -60,7 +60,14 @@ export function cloudinaryDeliveryUrl(url: string, transform: string): string {
   return `https://res.cloudinary.com/${cloud}/image/upload/${transform}/${publicId}`;
 }
 
-const R2_HOST = 'pub-2855c73eea384110b510f25966292c37.r2.dev';
+/**
+ * Адрес хранилища картинок. С 24.09.2026 картинки отдаёт свой домен media.oper-stack.com: у старого
+ * адреса r2.dev лимит частоты запросов и нет кэша. Файлы те же, другое только начало адреса.
+ * Старый адрес код понимает, пока все статьи и загрузчик не переехали; размеры в srcset
+ * всегда строятся с нового.
+ */
+const R2_HOST = 'media.oper-stack.com';
+const R2_HOSTS = [R2_HOST, 'pub-2855c73eea384110b510f25966292c37.r2.dev'];
 type R2Entry = { w: number; h: number; variants: number[] };
 
 /**
@@ -77,9 +84,10 @@ export function r2Responsive(
   url: string,
   role: CloudinaryRole = 'inline',
 ): { src: string; srcset?: string; sizes?: string; width?: number; height?: number } | null {
-  const i = url.indexOf(R2_HOST);
+  const iHost = R2_HOSTS.find((h) => url.includes(h)) ?? R2_HOST;
+  const i = url.indexOf(iHost);
   if (i < 0) return null;
-  const key = url.slice(i + R2_HOST.length).replace(/^\//, '').split('?')[0];
+  const key = url.slice(i + iHost.length).replace(/^\//, '').split('?')[0];
   const entry = (r2Widths as Record<string, R2Entry>)[key];
   if (!entry) return null;
 
