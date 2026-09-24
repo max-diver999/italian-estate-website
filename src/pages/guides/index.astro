@@ -45,7 +45,7 @@ const priority = FEATURED_GUIDE_SLUGS.map((slug) => guides.find((g) => g.id === 
               title={guide.data.title}
               description={guide.data.description}
               image={guide.data.heroImage}
-              badges={['Pillar', ...(guide.data.tags?.slice(0, 1) ?? [])]}
+              badges={[]}
               meta={`${guide.data.readingTime ?? 8} min read`}
             />
           ))}
@@ -61,7 +61,7 @@ const priority = FEATURED_GUIDE_SLUGS.map((slug) => guides.find((g) => g.id === 
             title={guide.data.title}
             description={guide.data.description}
             image={guide.data.heroImage}
-            badges={guide.data.tags?.slice(0, 2) ?? []}
+            badges={[]}
             meta={`${guide.data.readingTime ?? 8} min read`}
           />
         </div>
