@@ -86,5 +86,13 @@
   "llms": {
     "generated": true,
     "note": "llms.txt is built by scripts/generate-llms-txt.mjs, which predates this pack and is left alone."
+  },
+  "catalog": {
+    "collection": "projects",
+    "priceField": "priceFromEUR",
+    "currency": "EUR",
+    "areaField": "area",
+    "typeField": "propertyType",
+    "statusField": "status"
   }
 }
