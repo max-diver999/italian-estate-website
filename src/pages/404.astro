@@ -1,0 +1,84 @@
+---
+/**
+ * Своя страница «не найдено». Без неё Vercel отдавал голую заглушку Astro «404: Not found»
+ * без шапки и подвала: посетитель с битой ссылки попадал в тупик (замер 24.09.2026).
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { FEATURED_GUIDE_SLUGS } from '../data/featured';
+
+const guides = await getCollection('guides');
+const featured = FEATURED_GUIDE_SLUGS.map((slug) => guides.find((g) => g.id === slug && !g.data.noindex)).filter(
+  (g): g is NonNullable<typeof g> => Boolean(g),
+);
+const sections = [
+  { label: 'Guides', href: '/guides/', note: 'Buying, taxes and due diligence' },
+  { label: 'Areas', href: '/areas/', note: 'Cities, regions and local markets' },
+  { label: 'Projects', href: '/projects/', note: 'Italian developments and residences' },
+  { label: 'Compare', href: '/compare/', note: 'Locations and investment strategies' },
+];
+---
+<BaseLayout
+  title="Page not found | Italian Estate"
+  description="This page does not exist or has moved. Browse Italian property guides, areas and projects."
+  noindex={true}
+>
+  <section class="site-container nf">
+    <p class="nf__code" aria-hidden="true">404</p>
+    <h1 class="nf__title">This page does not exist or has moved</h1>
+    <p class="nf__lead">The link may be old or mistyped. Everything on the site is one click away from here.</p>
+
+    <div class="nf__actions">
+      <a href="/" class="btn-primary px-6 py-3">Home</a>
+      <a href="/guides/" class="btn-secondary px-6 py-3">All guides</a>
+    </div>
+
+    <div class="nf__grid">
+      {featured.length > 0 && (
+        <div>
+          <p class="nf__label">Start with</p>
+          <ul class="nf__list">
+            {featured.map((g) => (
+              <li><a href={`/guides/${g.id}/`}>{g.data.title.replace(/\s*\|\s*[^|]+$/, '')}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <div>
+        <p class="nf__label">Sections</p>
+        <ul class="nf__list">
+          {sections.map((s) => (
+            <li><a href={s.href}>{s.label}</a> <span class="nf__note">{s.note}</span></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .nf { max-width: 52rem; padding-block: clamp(3rem, 8vw, 6rem); }
+  .nf__code {
+    font-family: var(--font-serif);
+    font-size: clamp(4rem, 12vw, 7rem);
+    line-height: 1;
+    color: var(--color-border, #d8cfc2);
+    margin: 0 0 1rem;
+  }
+  /* Размер задан классом: глобальный h1 вне слоя иначе перебил бы утилиту. */
+  .nf__title { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin: 0 0 1rem; }
+  .nf__lead { font-size: 1.1rem; color: var(--color-muted); margin: 0 0 2rem; max-width: 36rem; }
+  .nf__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 3rem; }
+  .nf__grid { display: grid; gap: 2rem; }
+  @media (min-width: 640px) { .nf__grid { grid-template-columns: 1fr 1fr; } }
+  .nf__label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    margin: 0 0 0.75rem;
+  }
+  .nf__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+  .nf__note { color: var(--color-muted); font-size: 0.9rem; }
+</style>
