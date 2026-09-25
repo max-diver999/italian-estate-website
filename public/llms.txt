@@ -90,6 +90,76 @@ are labelled as asking prices, which in most Italian markets run ahead of closed
 - Developer profiles (15): https://italian-estate.com/developers/
 - News (4): https://italian-estate.com/news/
 
+## Project catalog with prices
+
+One line per project: name, area, property type, status, entry price, page. Append `.md` to any page URL for its full markdown review.
+
+- [Ancona Centro Apartments](https://italian-estate.com/projects/ancona-centro-apartments/): Ancona, apartment, resale, from €190,000
+- [Apartments for Sale in Arezzo Historic Centre](https://italian-estate.com/projects/arezzo-centro-apartments/): Arezzo, apartment, resale, from €220,000
+- [Assisi Historic Apartments](https://italian-estate.com/projects/assisi-historic-apartments/): Assisi, apartment, resale, from €280,000
+- [Bellagio Villa Lake](https://italian-estate.com/projects/bellagio-villa-lake-view/): Bellagio, villa, resale, from €2,000,000
+- [Bologna Bloom Living](https://italian-estate.com/projects/bologna-bloom-living/): Bologna, apartment, off-plan, from €197,000
+- [Campobasso Centro Apartments Review 2026 in Italy](https://italian-estate.com/projects/campobasso-centro-apartments/): Campobasso, apartment, resale, from €155,000
+- [Carovigno New Villa](https://italian-estate.com/projects/carovigno-villa-new-build/): Carovigno, villa, off-plan, from €350,000
+- [Chianti Farmhouse Restoration](https://italian-estate.com/projects/chianti-farmhouse-restoration/): Chianti, farmhouse, restoration, from €300,000
+- [Chieti University Apartments](https://italian-estate.com/projects/chieti-university-apartments/): Chieti, apartment, resale, from €165,000
+- [Tranio Como Carate](https://italian-estate.com/projects/tranio-como-carate-urio-2br/): Como, apartment, mixed, from €350,000
+- [Como Lakefront Residence](https://italian-estate.com/projects/como-lakefront-residence/): Como, apartment, off-plan, from €800,000
+- [Costa Smeralda Apartment](https://italian-estate.com/projects/costa-smeralda-apartment/): Costa Smeralda, apartment, resale, from €600,000
+- [Porto Cervo Villa Development Sardinia](https://italian-estate.com/projects/porto-cervo-villa-development/): Costa Smeralda, villa, mixed, from €1,500,000
+- [Florence Oltrarno Apartment](https://italian-estate.com/projects/florence-oltrarno-apartment/): Florence, apartment, resale, from €400,000
+- [Tranio Florence Historic](https://italian-estate.com/projects/tranio-florence-historic-center/): Florence, apartment, resale, from €500,000
+- [Genoa Waterfront Apartments Port Renovation](https://italian-estate.com/projects/genoa-waterfront-apartments/): Genoa, apartment, resale, from €350,000
+- [Langhe Barolo Vineyard](https://italian-estate.com/projects/langhe-barolo-vineyard-property/): Langhe, villa, resale, from €650,000
+- [Lecce Urbs20 Villas](https://italian-estate.com/projects/lecce-urbs20-villas/): Lecce, villa, off-plan, from €425,000
+- [Lucca Villa Historic](https://italian-estate.com/projects/lucca-villa-historic-renovation/): Lucca, villa, restoration, from €600,000
+- [Matera Sassi Apartments](https://italian-estate.com/projects/matera-sassi-apartments/): Matera, apartment, resale, from €220,000
+- [Inspire UpTown Milan Apartments from €348,500](https://italian-estate.com/projects/inspire-uptown-milan/): Milan, apartment, off-plan, from €348,500
+- [Lendlease MIND Milan](https://italian-estate.com/projects/lendlease-mind-milan/): Milan, apartment, off-plan, from €380,000
+- [Feel UpTown Milan](https://italian-estate.com/projects/feel-uptown-milan/): Milan, apartment, delivering, from €517,000
+- [ARIA Ex Macello](https://italian-estate.com/projects/aria-ex-macello-milan/): Milan, mixed-use district, off-plan, price on request
+- [Bliss UpTown Milan](https://italian-estate.com/projects/bliss-uptown-milan/): Milan, apartment, on market, price on request
+- [COIMA Milan Olympic](https://italian-estate.com/projects/coima-olympic-village-milan/): Milan, student housing, delivering, price on request
+- [L'Innesto Milan Social Housing Carbon Neutral](https://italian-estate.com/projects/innesto-milan-social-housing/): Milan, apartment, off-plan, price on request
+- [Maciachini Urban Retreat](https://italian-estate.com/projects/maciachini-urban-retreat/): Milan, apartment, off-plan, price on request
+- [Meli 26 Navigli](https://italian-estate.com/projects/meli-navigli-milan/): Milan, apartment, off-plan, price on request
+- [MilanoSesto Urban Regeneration](https://italian-estate.com/projects/milano-sesto-urban-regeneration/): Milan, mixed-use district, off-plan, price on request
+- [Prandina 34 Navigli](https://italian-estate.com/projects/prandina-navigli-milan/): Milan, apartment, off-plan, price on request
+- [UnaPavia Pavia Student](https://italian-estate.com/projects/unapavia-pavia-residential/): Milan, mixed-use district, off-plan, price on request
+- [Monte Argentario Sea](https://italian-estate.com/projects/monte-argentario-sea-view/): Monte Argentario, villa, on market, from €700,000
+- [Nunziare VII Lusciano Naples](https://italian-estate.com/projects/nunziare-vii-lusciano/): Naples, apartment, off-plan, from €395,000
+- [Sicily Noto Stone](https://italian-estate.com/projects/tranio-sicily-noto-stone-house/): Noto, stone house, restoration, from €250,000
+- [Noto Baroque Masseria on](https://italian-estate.com/projects/noto-baroque-masseria/): Noto, masseria, mixed, from €300,000
+- [Puglia Masseria New Ostuni](https://italian-estate.com/projects/tranio-puglia-masseria-new/): Ostuni, masseria, off-plan, from €380,000
+- [Ostuni New Villa](https://italian-estate.com/projects/ostuni-new-villa-pool-470k/): Ostuni, villa, near completion, from €470,000
+- [Ostuni Masseria Pool](https://italian-estate.com/projects/ostuni-masseria-pool-apuliadeluxe/): Ostuni, masseria, approved project, from €800,000
+- [Ostuni Lamia Chiavi](https://italian-estate.com/projects/ostuni-lamia-chiavi-in-mano/): Ostuni, villa, off-plan, price on request
+- [Ostuni Rascina Villa](https://italian-estate.com/projects/ostuni-rascina-villa-construction/): Ostuni, villa, under construction, price on request
+- [Ostuni Trulli Modern](https://italian-estate.com/projects/ostuni-trulli-modern-villa/): Ostuni, villa, approved project, price on request
+- [Palermo Centro Renovation](https://italian-estate.com/projects/palermo-centro-renovation/): Palermo, apartment, restoration, from €180,000
+- [Perugia Centro Apartments Umbria Value](https://italian-estate.com/projects/perugia-centro-apartments/): Perugia, apartment, resale, from €195,000
+- [Pescara Centro Apartments](https://italian-estate.com/projects/pescara-centro-apartments/): Pescara, apartment, resale, from €195,000
+- [Portofino Apartment Renovation](https://italian-estate.com/projects/portofino-apartment-renovation/): Portofino, apartment, resale, from €1,000,000
+- [Potenza Centro Apartments](https://italian-estate.com/projects/potenza-centro-apartments/): Potenza, apartment, resale, from €165,000
+- [Houses for Sale in Ravello](https://italian-estate.com/projects/amalfi-ravello-villa/): Ravello, villa, resale, from €1,500,000
+- [Tranio Rome EUR](https://italian-estate.com/projects/tranio-rome-eur-apartment/): Rome, apartment, off-plan, from €350,000
+- [Rome Jubilee Centro](https://italian-estate.com/projects/rome-jubilee-centro-storico/): Rome, apartment, resale, from €450,000
+- [COIMA Guido Reni](https://italian-estate.com/projects/coima-guido-reni-rome/): Rome, mixed use, off-plan, price on request
+- [COIMA Via Carcani](https://italian-estate.com/projects/coima-via-carcani-trastevere/): Rome, apartment, off-plan, price on request
+- [Sanremo Sea View](https://italian-estate.com/projects/sanremo-sea-view-apartments/): Sanremo, apartment, resale, from €400,000
+- [Rapallo Sea View](https://italian-estate.com/projects/rapallo-sea-view-apartments/): Santa Margherita Ligure, apartment, resale, from €450,000
+- [Scalea Calabria Coastal](https://italian-estate.com/projects/scalea-calabria-coastal/): Scalea, apartment, on market, from €180,000
+- [Siena Country Villa](https://italian-estate.com/projects/siena-country-villa-pool/): Siena, villa, resale, from €450,000
+- [Sorrento Coastal Apartment](https://italian-estate.com/projects/sorrento-coastal-apartment/): Sorrento, apartment, resale, from €350,000
+- [Taormina Sea View](https://italian-estate.com/projects/taormina-sea-view-residence/): Taormina, apartment, mixed, from €400,000
+- [Termoli Coast Apartments](https://italian-estate.com/projects/termoli-coast-apartments/): Termoli, apartment, resale, from €185,000
+- [Turin Crocetta Apartments](https://italian-estate.com/projects/turin-crocetta-apartments/): Turin, apartment, resale, from €280,000
+- [Fivizzano Lunigiana Village Property Investment](https://italian-estate.com/projects/fivizzano-village-property/): Tuscany, village house, on market, from €130,000
+- [Semproniano Maremma Farmhouse](https://italian-estate.com/projects/semproniano-farmhouse-restoration/): Tuscany, farmhouse, on market, from €220,000
+- [Urbino University Apartments](https://italian-estate.com/projects/urbino-university-apartments/): Urbino, apartment, resale, from €175,000
+- [Val d'Orcia Agriturismo](https://italian-estate.com/projects/val-dorcia-agriturismo-farmhouse/): Val d'Orcia, farmhouse, resale, from €520,000
+- [Valle d'Itria Trulli](https://italian-estate.com/projects/valle-d-itria-trulli-restoration/): Valle d'Itria, trulli, restoration project, from €200,000
+
 ## Full corpus (283 pages, with summaries)
 
 https://italian-estate.com/llms-full.txt
